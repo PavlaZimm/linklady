@@ -1,0 +1,30 @@
+{
+  "/": {
+    "title": "Linklady.cz - Pomáhám firmám růst online | SEO, PPC, AI asistenti",
+    "description": "SEO, AI asistenti, automatizace, data - vše co potřebujete pro chytrý marketing. Pavla Zimmermannová, online marketing od roku 2015.",
+    "openGraph": {
+      "images": "https://linklady.cz/og-image.jpg"
+    }
+  },
+  "/o-mne": {
+    "title": "O mně - Pavla Zimmermannová | Linklady.cz",
+    "description": "Online marketingu se věnuji od roku 2015. Specializuji se na SEO, PPC reklamu, content marketing a technické úpravy webů.",
+    "openGraph": {
+      "images": "https://linklady.cz/og-image.jpg"
+    }
+  },
+  "/blog": {
+    "title": "Blog - Marketing tipy a trendy | Linklady.cz",
+    "description": "Aktuální články o SEO, PPC reklamě, automatizaci a AI nástrojích pro online marketing.",
+    "openGraph": {
+      "images": "https://linklady.cz/og-image.jpg"
+    }
+  },
+  "/kontakt": {
+    "title": "Kontakt - Napište mi | Linklady.cz",
+    "description": "Kontaktujte mě pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace vašeho online marketingu.",
+    "openGraph": {
+      "images": "https://linklady.cz/og-image.jpg"
+    }
+  }
+}
