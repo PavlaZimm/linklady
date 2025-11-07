@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // Enable static HTML export for GitHub Pages
   reactStrictMode: false,
   eslint: {
     ignoreDuringBuilds: true,
