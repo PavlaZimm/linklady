@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export', // Enable static HTML export for GitHub Pages
+  basePath: '/macaly-dtpbv0z40aetemlctkuzwvr0', // GitHub Pages subpath
+  assetPrefix: '/macaly-dtpbv0z40aetemlctkuzwvr0/', // Ensure assets load correctly
   reactStrictMode: false,
   eslint: {
     ignoreDuringBuilds: true,
