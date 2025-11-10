@@ -1,4 +1,5 @@
 import Navigation from '@/components/navigation'
+import Footer from '@/components/footer'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
 
@@ -224,48 +225,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <a href="/" className="text-lg font-semibold hover:text-yellow-400">
-                Home
-              </a>
-              <div className="flex space-x-4 mt-4">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <span className="sr-only">Facebook</span>
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                  </svg>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <span className="sr-only">Instagram</span>
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297z"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            
-            <div className="bg-primary p-6 rounded-lg">
-              <h3 className="font-semibold mb-2">Pavla Zimmermannová</h3>
-              <p className="text-sm mb-2">Vedena na FÚ Bílina.</p>
-              <p className="text-sm mb-2">IČO: 04352041</p>
-              <p className="text-sm">
-                E-mail:{' '}
-                <a href="mailto:zimmermannovap@gmail.com" className="hover:text-yellow-400">
-                  zimmermannovap@gmail.com
-                </a>
-              </p>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            © 2025 – linklady.cz.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
