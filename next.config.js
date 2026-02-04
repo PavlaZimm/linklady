@@ -11,7 +11,18 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
-  images: { unoptimized: true },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.linklady.cz',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
+    ],
+  },
   devIndicators: false,
   allowedDevOrigins: [
     "*.macaly.dev",
