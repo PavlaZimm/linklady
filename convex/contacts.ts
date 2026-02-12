@@ -25,8 +25,6 @@ export const submitContactForm = mutation({
       status: "pending",
     });
 
-    console.log("New contact submission created:", contactId);
-
     // Schedule the email notification action to run immediately after this transaction
     await ctx.scheduler.runAfter(0, internal.contacts.sendNotificationEmail, {
       contactFormId: contactId,
@@ -50,7 +48,6 @@ export const sendNotificationEmail = internalAction({
     });
 
     if (!contactForm) {
-      console.error("Contact form not found:", args.contactFormId);
       return;
     }
 
@@ -79,20 +76,17 @@ ${contactForm.message}`,
       });
 
       if (response.ok) {
-        console.log("Email notification sent successfully");
         await ctx.runMutation(internal.contacts.updateContactFormStatus, {
           contactFormId: args.contactFormId,
           status: "sent",
         });
       } else {
-        console.error("Failed to send email notification:", response.status, response.statusText);
         await ctx.runMutation(internal.contacts.updateContactFormStatus, {
           contactFormId: args.contactFormId,
           status: "failed",
         });
       }
     } catch (error) {
-      console.error("Error sending email notification:", error);
       await ctx.runMutation(internal.contacts.updateContactFormStatus, {
         contactFormId: args.contactFormId,
         status: "failed",
@@ -124,8 +118,9 @@ export const updateContactFormStatus = internalMutation({
   },
 });
 
-// Query to get all contact submissions (for admin purposes)
-export const getAllContacts = query({
+// Internal query to get all contact submissions (for admin purposes only)
+// Changed from public query to internalQuery for security
+export const getAllContacts = internalQuery({
   handler: async (ctx) => {
     return await ctx.db.query("contacts").order("desc").collect();
   },
