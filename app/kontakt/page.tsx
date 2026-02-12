@@ -27,111 +27,23 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form */}
+      {/* Contact CTA */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-purple-50 rounded-lg p-8 md:p-12">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-primary mb-4">Napište mi</h2>
-              <p className="text-gray-600">
-                Vyplňte formulář a já se vám ozvu do 24 hodin
-              </p>
-            </div>
-            
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                    Jméno *
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    className="w-full px-4 py-3 border-2 border-purple-200 rounded-lg focus:border-primary focus:outline-none"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                    Příjmení *
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    className="w-full px-4 py-3 border-2 border-purple-200 rounded-lg focus:border-primary focus:outline-none"
-                    required
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  E-mail *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full px-4 py-3 border-2 border-purple-200 rounded-lg focus:border-primary focus:outline-none"
-                  required
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                  Telefonní číslo
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  className="w-full px-4 py-3 border-2 border-purple-200 rounded-lg focus:border-primary focus:outline-none"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                  Jaká služba vás zajímá?
-                </label>
-                <select
-                  id="service"
-                  name="service"
-                  className="w-full px-4 py-3 border-2 border-purple-200 rounded-lg focus:border-primary focus:outline-none"
-                >
-                  <option value="">Vyberte službu</option>
-                  <option value="seo">SEO optimalizace</option>
-                  <option value="ppc">PPC kampaně</option>
-                  <option value="ai">AI agenti</option>
-                  <option value="automation">Automatizace</option>
-                  <option value="consultation">Konzultace</option>
-                  <option value="other">Jiné</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Zpráva
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  className="w-full px-4 py-3 border-2 border-purple-200 rounded-lg focus:border-primary focus:outline-none"
-                  placeholder="Popište váš projekt nebo co potřebujete..."
-                ></textarea>
-              </div>
-              
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="bg-yellow-400 text-purple-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
-                >
-                  Odeslat zprávu
-                </button>
-              </div>
-            </form>
+          <div className="bg-purple-50 rounded-lg p-8 md:p-12 text-center">
+            <h2 className="text-3xl font-bold text-primary mb-4">Napište mi</h2>
+            <p className="text-gray-600 mb-8 text-lg">
+              Ráda vám pomohu s online marketingem, SEO, PPC kampaněmi nebo automatizací.
+            </p>
+            <a
+              href="mailto:zimmermannovap@gmail.com"
+              className="inline-flex items-center bg-yellow-400 text-purple-900 px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors text-lg"
+            >
+              <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              zimmermannovap@gmail.com
+            </a>
           </div>
         </div>
       </section>
