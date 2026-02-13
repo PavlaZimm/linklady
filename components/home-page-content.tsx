@@ -23,7 +23,7 @@ import AnalyticsChart from '@/components/analytics-chart';
 export default function HomePageContent() {
   const servicesRef = useScrollAnimation();
   const aboutRef = useScrollAnimation();
-  const contactRef = useScrollAnimation();
+  const ctaRef = useScrollAnimation();
 
   return (
     <div className="min-h-screen bg-white">
@@ -231,74 +231,30 @@ export default function HomePageContent() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30" ref={contactRef}>
+      {/* CTA Section */}
+      <section className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30" ref={ctaRef}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 fade-in-up">
+          <div className="text-center fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold text-purple-900 mb-6">
-              Napište <span className="text-yellow-600">mi</span>
+              Pojďme <span className="text-yellow-600">spolupracovat</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Pojďme si promluvit o vašem projektu a najít nejlepší řešení pro váš růst
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10">
+              Pomůžu vám s online marketingem, SEO, PPC kampaněmi nebo automatizací. Ozvěte se mi a najdeme nejlepší řešení pro váš růst.
             </p>
-          </div>
-          
-          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 fade-in-up animate-delay-1">
-            <form className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-3">Jméno</label>
-                  <input
-                    type="text"
-                    className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-3">Příjmení</label>
-                  <input
-                    type="text"
-                    className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                    required
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3">E-mail</label>
-                <input
-                  type="email"
-                  className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                  required
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3">Telefon (nepovinné)</label>
-                <input
-                  type="tel"
-                  className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3">Zpráva</label>
-                <textarea
-                  rows={5}
-                  className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg resize-none"
-                  placeholder="Popište váš projekt nebo co potřebujete..."
-                ></textarea>
-              </div>
-              
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="bg-yellow-400 text-purple-900 px-12 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
-                >
-                  Odeslat zprávu
-                </button>
-              </div>
-            </form>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Link
+                href="/kontakt"
+                className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
+              >
+                Kontaktujte mě
+              </Link>
+              <a
+                href="mailto:zimmermannovap@gmail.com"
+                className="inline-block border-2 border-purple-600 text-purple-900 px-10 py-5 rounded-full font-semibold text-lg hover:bg-purple-600 hover:text-white transition-all duration-300 text-center"
+              >
+                zimmermannovap@gmail.com
+              </a>
+            </div>
           </div>
         </div>
       </section>
