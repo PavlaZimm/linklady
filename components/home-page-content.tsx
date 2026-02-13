@@ -83,37 +83,13 @@ export default function HomePageContent() {
               Komplexní online marketing řešení pro růst vašeho byznysu
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* SEO */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* SEO & PPC */}
             <div className="group service-card text-white p-8 rounded-2xl fade-in-up relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                  alt="SEO analýza a grafy"
-                  fill
-                  className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
-              </div>
-              <div className="relative z-10">
-                <div className="w-20 h-20 bg-yellow-400 rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-6 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold mb-6">SEO</h3>
-                <p className="text-base opacity-90 leading-relaxed">
-                  Strategické SEO zahrnuje analýzu klíčových slov, optimalizaci meta tagů, strukturovaný obsah a chytré interní prolinkování. Zaměřuji se i na lokální SEO – zajišťuji firemní zápisy, lokální klíčová slova a mapové služby.
-                </p>
-              </div>
-            </div>
-
-            {/* PPC */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-1 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
-              <div className="absolute inset-0">
-                <Image
-                  src="https://images.pexels.com/photos/6476563/pexels-photo-6476563.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                  alt="PPC kampaně a reklama"
+                  alt="SEO a PPC analýza"
                   fill
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -125,15 +101,63 @@ export default function HomePageContent() {
                     <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-6">PPC</h3>
+                <h3 className="text-2xl font-bold mb-6">SEO & PPC</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Spravuji výkonné PPC kampaně v Google Ads, Skliku. Cílím na relevantní publikum, optimalizuji rozpočty a reklamy tak, aby přinášely maximální konverze a návratnost investic. Od strategie po reporting.
+                  Strategické SEO – analýza klíčových slov, optimalizace meta tagů, lokální SEO a interní prolinkování. K tomu výkonné PPC kampaně v Google Ads a Skliku s maximální návratností investic.
+                </p>
+              </div>
+            </div>
+
+            {/* Tvorba webu */}
+            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-1 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="absolute inset-0">
+                <Image
+                  src="https://images.pexels.com/photos/6476563/pexels-photo-6476563.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  alt="Tvorba webových stránek"
+                  fill
+                  className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
+              </div>
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-yellow-400 rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-6 transition-transform duration-300">
+                  <svg className="w-10 h-10 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-6">Tvorba webu</h3>
+                <p className="text-base opacity-90 leading-relaxed">
+                  Vytvářím moderní, rychlé a responzivní webové stránky optimalizované pro vyhledávače. Od návrhu po spuštění – weby, které vypadají skvěle a přinášejí výsledky.
+                </p>
+              </div>
+            </div>
+
+            {/* Video střih */}
+            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-2 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="absolute inset-0">
+                <Image
+                  src="https://images.pexels.com/photos/7279706/pexels-photo-7279706.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  alt="Video střih a produkce"
+                  fill
+                  className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
+              </div>
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-yellow-400 rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-6 transition-transform duration-300">
+                  <svg className="w-10 h-10 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-6">Video střih</h3>
+                <p className="text-base opacity-90 leading-relaxed">
+                  Profesionální střih videa pro sociální sítě, reklamy a prezentace. Od krátkých reels po delší firemní videa – obsah, který zaujme a buduje značku.
                 </p>
               </div>
             </div>
 
             {/* AI agenti */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-2 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-3 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/8294566/pexels-photo-8294566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
@@ -157,7 +181,7 @@ export default function HomePageContent() {
             </div>
 
             {/* Automatizace */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-3 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-4 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/7279706/pexels-photo-7279706.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
