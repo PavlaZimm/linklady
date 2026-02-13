@@ -13,10 +13,10 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <Image
-                src="https://www.linklady.cz/wp-content/uploads/2025/04/logo.png"
+              <img
+                src="/logo.svg"
                 alt="Linklady.cz"
-                width={120}
+                width={140}
                 height={40}
                 className="h-8 w-auto"
               />

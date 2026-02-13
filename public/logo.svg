@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Link icon -->
+  <g transform="translate(2, 8)">
+    <path d="M10 14a4 4 0 0 1-4-4 4 4 0 0 1 4-4h4v2h-4a2 2 0 0 0-2 2 2 2 0 0 0 2 2h4v2h-4z" fill="#facc15"/>
+    <path d="M14 6a4 4 0 0 1 4 4 4 4 0 0 1-4 4h-4v-2h4a2 2 0 0 0 2-2 2 2 0 0 0-2-2h-4V6h4z" fill="url(#grad)"/>
+    <path d="M8 9h8v2H8z" fill="#7c3aed"/>
+  </g>
+  <!-- Text -->
+  <text x="32" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="url(#grad)">
+    Link<tspan fill="#facc15">lady</tspan><tspan fill="#9ca3af" font-size="14">.cz</tspan>
+  </text>
+</svg>
