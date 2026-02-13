@@ -231,74 +231,25 @@ export default function HomePageContent() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
+      {/* Contact CTA Section */}
       <section className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30" ref={contactRef}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 fade-in-up">
+          <div className="text-center fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold text-purple-900 mb-6">
               Napište <span className="text-yellow-600">mi</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10">
               Pojďme si promluvit o vašem projektu a najít nejlepší řešení pro váš růst
             </p>
-          </div>
-          
-          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 fade-in-up animate-delay-1">
-            <form className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-3">Jméno</label>
-                  <input
-                    type="text"
-                    className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-3">Příjmení</label>
-                  <input
-                    type="text"
-                    className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                    required
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3">E-mail</label>
-                <input
-                  type="email"
-                  className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                  required
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3">Telefon (nepovinné)</label>
-                <input
-                  type="tel"
-                  className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3">Zpráva</label>
-                <textarea
-                  rows={5}
-                  className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg resize-none"
-                  placeholder="Popište váš projekt nebo co potřebujete..."
-                ></textarea>
-              </div>
-              
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="bg-yellow-400 text-purple-900 px-12 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
-                >
-                  Odeslat zprávu
-                </button>
-              </div>
-            </form>
+            <a
+              href="mailto:zimmermannovap@gmail.com"
+              className="inline-flex items-center bg-yellow-400 text-purple-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+            >
+              <svg className="w-6 h-6 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <span className="break-all sm:break-normal">zimmermannovap@gmail.com</span>
+            </a>
           </div>
         </div>
       </section>
