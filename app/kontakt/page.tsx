@@ -1,4 +1,5 @@
 import Navigation from '@/components/navigation'
+import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
 
@@ -141,9 +142,9 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <a href="/" className="text-lg font-semibold hover:text-yellow-400">
+              <Link href="/" className="text-lg font-semibold hover:text-yellow-400">
                 Home
-              </a>
+              </Link>
               <div className="flex space-x-4 mt-4">
                 <a href="https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                   <span className="sr-only">LinkedIn</span>
