@@ -4,15 +4,56 @@ import type { NextRequest } from 'next/server'
 export function middleware(request: NextRequest) {
   const response = NextResponse.next()
 
-  // Security headers
+  // --- HSTS: Force HTTPS for 2 years, include subdomains, allow preload list ---
+  response.headers.set(
+    'Strict-Transport-Security',
+    'max-age=63072000; includeSubDomains; preload'
+  )
+
+  // --- Content Security Policy ---
+  const csp = [
+    "default-src 'self'",
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com",
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "img-src 'self' data: https://www.linklady.cz https://images.pexels.com https://www.google-analytics.com",
+    "font-src 'self' https://fonts.gstatic.com",
+    "connect-src 'self' https://*.convex.cloud https://*.convex.site wss://*.convex.cloud https://www.google-analytics.com",
+    "frame-src 'none'",
+    "object-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    "frame-ancestors 'none'",
+    "upgrade-insecure-requests",
+  ].join('; ')
+  response.headers.set('Content-Security-Policy', csp)
+
+  // --- Clickjacking protection (redundant with CSP frame-ancestors but good defense-in-depth) ---
   response.headers.set('X-Frame-Options', 'DENY')
+
+  // --- Prevent MIME type sniffing ---
   response.headers.set('X-Content-Type-Options', 'nosniff')
+
+  // --- Referrer policy ---
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
+
+  // --- XSS protection (legacy browsers) ---
   response.headers.set('X-XSS-Protection', '1; mode=block')
+
+  // --- Restrict browser features ---
   response.headers.set(
     'Permissions-Policy',
-    'camera=(), microphone=(), geolocation=()'
+    'camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()'
   )
+
+  // --- Prevent cross-domain policy file loading (Flash/PDF) ---
+  response.headers.set('X-Permitted-Cross-Domain-Policies', 'none')
+
+  // --- Prevent DNS prefetching leaks ---
+  response.headers.set('X-DNS-Prefetch-Control', 'off')
+
+  // --- Cross-Origin policies ---
+  response.headers.set('Cross-Origin-Opener-Policy', 'same-origin')
+  response.headers.set('Cross-Origin-Resource-Policy', 'same-origin')
 
   return response
 }
