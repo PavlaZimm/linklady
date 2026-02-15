@@ -23,7 +23,7 @@ import AnalyticsChart from '@/components/analytics-chart';
 export default function HomePageContent() {
   const servicesRef = useScrollAnimation();
   const aboutRef = useScrollAnimation();
-  const contactRef = useScrollAnimation();
+  const ctaRef = useScrollAnimation();
 
   return (
     <div className="min-h-screen bg-white">
@@ -83,37 +83,13 @@ export default function HomePageContent() {
               Komplexní online marketing řešení pro růst vašeho byznysu
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* SEO */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* SEO & PPC */}
             <div className="group service-card text-white p-8 rounded-2xl fade-in-up relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                  alt="SEO analýza a grafy"
-                  fill
-                  className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
-              </div>
-              <div className="relative z-10">
-                <div className="w-20 h-20 bg-yellow-400 rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-6 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold mb-6">SEO</h3>
-                <p className="text-base opacity-90 leading-relaxed">
-                  Strategické SEO zahrnuje analýzu klíčových slov, optimalizaci meta tagů, strukturovaný obsah a chytré interní prolinkování. Zaměřuji se i na lokální SEO – zajišťuji firemní zápisy, lokální klíčová slova a mapové služby.
-                </p>
-              </div>
-            </div>
-
-            {/* PPC */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-1 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
-              <div className="absolute inset-0">
-                <Image
-                  src="https://images.pexels.com/photos/6476563/pexels-photo-6476563.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                  alt="PPC kampaně a reklama"
+                  alt="SEO a PPC analýza dat"
                   fill
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -125,19 +101,67 @@ export default function HomePageContent() {
                     <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-6">PPC</h3>
+                <h3 className="text-2xl font-bold mb-6">SEO & PPC</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Spravuji výkonné PPC kampaně v Google Ads, Skliku. Cílím na relevantní publikum, optimalizuji rozpočty a reklamy tak, aby přinášely maximální konverze a návratnost investic. Od strategie po reporting.
+                  Získejte více zákazníků z Googlu i Seznamu. Řeším kompletní SEO – od technického auditu přes keyword strategii až po lokální viditelnost. PPC kampaně v Google Ads a Skliku nastavuji tak, aby každá koruna pracovala na maximum.
+                </p>
+              </div>
+            </div>
+
+            {/* Tvorba webu */}
+            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-1 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="absolute inset-0">
+                <Image
+                  src="https://images.pexels.com/photos/6476563/pexels-photo-6476563.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  alt="Tvorba moderních webových stránek"
+                  fill
+                  className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
+              </div>
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-yellow-400 rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-6 transition-transform duration-300">
+                  <svg className="w-10 h-10 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-6">Tvorba webu</h3>
+                <p className="text-base opacity-90 leading-relaxed">
+                  Moderní weby, které prodávají. Navrhuji a realizuji responzivní stránky s důrazem na rychlost, UX a konverze. Každý web stavím s myšlenkou na SEO od prvního řádku kódu.
+                </p>
+              </div>
+            </div>
+
+            {/* Video střih */}
+            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-2 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="absolute inset-0">
+                <Image
+                  src="https://images.pexels.com/photos/7279706/pexels-photo-7279706.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  alt="Profesionální video střih"
+                  fill
+                  className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
+              </div>
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-yellow-400 rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-6 transition-transform duration-300">
+                  <svg className="w-10 h-10 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-6">Video střih</h3>
+                <p className="text-base opacity-90 leading-relaxed">
+                  Video obsah, který zaujme na první sekundu. Stříhám reels, stories, reklamní spoty i firemní prezentace. Dodám hotový obsah připravený k publikaci na sociálních sítích.
                 </p>
               </div>
             </div>
 
             {/* AI agenti */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-2 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-3 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/8294566/pexels-photo-8294566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                  alt="AI technologie a automatizace"
+                  alt="AI technologie pro marketing"
                   fill
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -151,17 +175,17 @@ export default function HomePageContent() {
                 </div>
                 <h3 className="text-2xl font-bold mb-6">AI agenti</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Nasazuji chytré AI nástroje pro analýzu webu, struktury a rychlosti. Vytvářím automatické sitemap soubory a zajišťuji, aby se váš web co nejlépe indexoval a zobrazoval ve vyhledávání.
+                  Nasazuji AI tam, kde to dává smysl. Chatboti pro zákaznickou podporu, automatická analýza dat, generování obsahu i monitoring konkurence. Ušetříte hodiny práce týdně.
                 </p>
               </div>
             </div>
 
-            {/* Automatizace */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-3 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            {/* Automatizace & Make */}
+            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-4 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
-                  src="https://images.pexels.com/photos/7279706/pexels-photo-7279706.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                  alt="Automatizace marketingových procesů"
+                  src="https://images.pexels.com/photos/8294566/pexels-photo-8294566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  alt="Automatizace a Make.com"
                   fill
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -173,9 +197,9 @@ export default function HomePageContent() {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-6">Automatizace</h3>
+                <h3 className="text-2xl font-bold mb-6">Automatizace & Make</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Automatizuji rutinní úkoly – od správy firemních zápisů po generování obsahu. Využívám chytré nástroje a skripty, které šetří čas, snižují náklady a zvyšují online dosah.
+                  Zbavím vás rutiny. Propojuji nástroje přes Make.com, automatizuji reporting, e-mailové sekvence i publikování obsahu. Váš marketing poběží i když spíte.
                 </p>
               </div>
             </div>
@@ -231,74 +255,30 @@ export default function HomePageContent() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30" ref={contactRef}>
+      {/* CTA Section */}
+      <section className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30" ref={ctaRef}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 fade-in-up">
+          <div className="text-center fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold text-purple-900 mb-6">
-              Napište <span className="text-yellow-600">mi</span>
+              Pojďme <span className="text-yellow-600">spolupracovat</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Pojďme si promluvit o vašem projektu a najít nejlepší řešení pro váš růst
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10">
+              Pomůžu vám s online marketingem, SEO, PPC kampaněmi nebo automatizací. Ozvěte se mi a najdeme nejlepší řešení pro váš růst.
             </p>
-          </div>
-          
-          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 fade-in-up animate-delay-1">
-            <form className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-3">Jméno</label>
-                  <input
-                    type="text"
-                    className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-3">Příjmení</label>
-                  <input
-                    type="text"
-                    className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                    required
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3">E-mail</label>
-                <input
-                  type="email"
-                  className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                  required
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3">Telefon (nepovinné)</label>
-                <input
-                  type="tel"
-                  className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-3">Zpráva</label>
-                <textarea
-                  rows={5}
-                  className="w-full px-6 py-4 border-2 border-purple-100 rounded-2xl focus:border-purple-500 focus:outline-none transition-colors text-lg resize-none"
-                  placeholder="Popište váš projekt nebo co potřebujete..."
-                ></textarea>
-              </div>
-              
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="bg-yellow-400 text-purple-900 px-12 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
-                >
-                  Odeslat zprávu
-                </button>
-              </div>
-            </form>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Link
+                href="/kontakt"
+                className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
+              >
+                Kontaktujte mě
+              </Link>
+              <a
+                href="mailto:zimmermannovap@gmail.com"
+                className="inline-block border-2 border-purple-600 text-purple-900 px-10 py-5 rounded-full font-semibold text-lg hover:bg-purple-600 hover:text-white transition-all duration-300 text-center"
+              >
+                zimmermannovap@gmail.com
+              </a>
+            </div>
           </div>
         </div>
       </section>

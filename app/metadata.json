@@ -1,30 +1,58 @@
 {
   "/": {
-    "title": "Linklady.cz - Pomáhám firmám růst online | SEO, PPC, AI asistenti",
-    "description": "SEO, AI asistenti, automatizace, data - vše co potřebujete pro chytrý marketing. Pavla Zimmermannová, online marketing od roku 2015.",
+    "title": "Linklady.cz – Pomáhám firmám růst online | SEO, PPC, AI asistenti",
+    "description": "Pavla Zimmermannová – specialistka na SEO, PPC kampaně, AI asistenty a automatizaci. Komplexní online marketing řešení pro růst vašeho byznysu od roku 2015.",
+    "keywords": ["online marketing", "SEO", "PPC", "AI agenti", "automatizace", "Pavla Zimmermannová", "linklady", "Google Ads", "Sklik"],
+    "alternates": {
+      "canonical": "https://linklady.cz"
+    },
     "openGraph": {
-      "images": "https://linklady.cz/og-image.jpg"
+      "title": "Linklady.cz – Pomáhám firmám růst online",
+      "description": "SEO, PPC kampaně, AI asistenti a automatizace. Pavla Zimmermannová – online marketing od roku 2015.",
+      "url": "https://linklady.cz",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Pavla Zimmermannová – online marketing" }]
     }
   },
   "/o-mne": {
-    "title": "O mně - Pavla Zimmermannová | Linklady.cz",
-    "description": "Online marketingu se věnuji od roku 2015. Specializuji se na SEO, PPC reklamu, content marketing a technické úpravy webů.",
+    "title": "O mně – Pavla Zimmermannová | Online marketing specialistka",
+    "description": "Online marketingu se věnuji od roku 2015. Specializuji se na SEO, PPC reklamu, content marketing, AI nástroje a technické úpravy webů. Zjistěte více o mých zkušenostech.",
+    "keywords": ["Pavla Zimmermannová", "online marketing specialistka", "SEO specialistka", "PPC specialistka", "Czechitas"],
+    "alternates": {
+      "canonical": "https://linklady.cz/o-mne"
+    },
     "openGraph": {
-      "images": "https://linklady.cz/og-image.jpg"
+      "title": "O mně – Pavla Zimmermannová",
+      "description": "Online marketing specialistka od roku 2015. SEO, PPC, content marketing a AI nástroje.",
+      "url": "https://linklady.cz/o-mne",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Pavla Zimmermannová" }]
     }
   },
   "/blog": {
-    "title": "Blog - Marketing tipy a trendy | Linklady.cz",
-    "description": "Aktuální články o SEO, PPC reklamě, automatizaci a AI nástrojích pro online marketing.",
+    "title": "Blog – Marketing tipy, SEO trendy a AI nástroje",
+    "description": "Aktuální články o SEO strategiích, PPC reklamě, automatizaci a AI nástrojích pro online marketing. Praktické tipy pro růst vašeho byznysu.",
+    "keywords": ["SEO blog", "marketing tipy", "PPC reklama", "AI nástroje", "automatizace marketingu", "online marketing trendy"],
+    "alternates": {
+      "canonical": "https://linklady.cz/blog"
+    },
     "openGraph": {
-      "images": "https://linklady.cz/og-image.jpg"
+      "title": "Blog – Marketing tipy a trendy | Linklady.cz",
+      "description": "SEO strategie, PPC kampaně, AI nástroje a automatizace. Praktické tipy z online marketingu.",
+      "url": "https://linklady.cz/blog",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Linklady.cz Blog" }]
     }
   },
   "/kontakt": {
-    "title": "Kontakt - Napište mi | Linklady.cz",
-    "description": "Kontaktujte mě pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace vašeho online marketingu.",
+    "title": "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
+    "description": "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace. Online marketing na míru vašim potřebám.",
+    "keywords": ["kontakt", "konzultace SEO", "konzultace online marketing", "Pavla Zimmermannová kontakt"],
+    "alternates": {
+      "canonical": "https://linklady.cz/kontakt"
+    },
     "openGraph": {
-      "images": "https://linklady.cz/og-image.jpg"
+      "title": "Kontakt – Linklady.cz",
+      "description": "Kontaktujte mě pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace.",
+      "url": "https://linklady.cz/kontakt",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Kontakt – Linklady.cz" }]
     }
   }
 }
