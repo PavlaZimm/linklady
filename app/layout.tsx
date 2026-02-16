@@ -1,5 +1,6 @@
 import "./globals.css"
 
+import Script from "next/script"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, Poppins } from "next/font/google"
 
@@ -161,6 +162,18 @@ export default function RootLayout({
   return (
     <html lang="cs">
         <head>
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-FXX3CY3CHM"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-FXX3CY3CHM');
+            `}
+          </Script>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
