@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   },
   other: {
     "theme-color": "#7c3aed",
-    "google-site-verification": "",
+    "google-site-verification": "googleefe3afe42c601fcd",
   },
 }
 
