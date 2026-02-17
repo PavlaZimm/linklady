@@ -29,7 +29,7 @@ export default function Navigation() {
                 href="/"
                 className="text-gray-900 hover:text-primary px-3 py-2 text-base font-semibold transition-colors"
               >
-                Home
+                Domů
               </Link>
               <Link
                 href="/o-mne"
@@ -82,7 +82,7 @@ export default function Navigation() {
                 onClick={() => setIsOpen(false)}
                 className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
               >
-                Home
+                Domů
               </Link>
               <Link
                 href="/o-mne"

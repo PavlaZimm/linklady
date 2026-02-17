@@ -20,9 +20,9 @@ export default function ContactPage() {
             <div className="absolute top-1/2 -left-8 w-16 h-16 bg-yellow-300 rounded-full opacity-25"></div>
             <div className="absolute -top-8 right-4 w-20 h-20 bg-purple-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Kontakt</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Ozvěte se</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto relative z-10">
-              Napište mi pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace
+              Konzultace zdarma. Řeknete mi o svém projektu, já vám ukážu, jak ho posunout.
             </p>
           </div>
         </div>
@@ -32,9 +32,9 @@ export default function ContactPage() {
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-purple-50 rounded-lg p-8 md:p-12 text-center">
-            <h2 className="text-3xl font-bold text-primary mb-4">Napište mi</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">Pojďme to rozjet</h2>
             <p className="text-gray-600 mb-8 text-lg">
-              Ráda vám pomohu s online marketingem, SEO, PPC kampaněmi nebo automatizací.
+              Napište mi a do 24 hodin se vám ozvu s konkrétním návrhem, jak váš byznys posunout online.
             </p>
             <a
               href="mailto:zimmermannovap@gmail.com"
@@ -143,7 +143,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <Link href="/" className="text-lg font-semibold hover:text-yellow-400">
-                Home
+                Domů
               </Link>
               <div className="flex space-x-4 mt-4">
                 <a href="https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
@@ -169,7 +169,7 @@ export default function ContactPage() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            © 2025 – linklady.cz.
+            © 2026 – linklady.cz.
           </div>
         </div>
       </footer>

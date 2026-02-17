@@ -115,7 +115,7 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <Link href="/" className="text-lg font-semibold hover:text-yellow-400">
-                Home
+                Domů
               </Link>
               <div className="flex space-x-4 mt-4">
                 <a href="https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
@@ -141,7 +141,7 @@ export default function BlogPage() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            © 2025 – linklady.cz.
+            © 2026 – linklady.cz.
           </div>
         </div>
       </footer>

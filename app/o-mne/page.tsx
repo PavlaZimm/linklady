@@ -26,9 +26,9 @@ export default function AboutPage() {
               <div className="absolute top-1/2 -left-8 w-16 h-16 bg-yellow-300 rounded-full opacity-25"></div>
               <div className="absolute -top-8 right-4 w-20 h-20 bg-purple-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
               
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">O mně</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Pavla Zimmermannová</h1>
               <p className="text-xl opacity-90 max-w-3xl mx-auto relative z-10">
-                Online marketingu a webovému prostředí se věnuji od roku 2015
+                10 let v online marketingu. Od SEO strategií po AI automatizace.
               </p>
             </div>
             
@@ -54,25 +54,23 @@ export default function AboutPage() {
             
             <div className="prose prose-lg">
               <p className="text-lg text-gray-700 mb-6">
-                Online marketingu a webovému prostředí se věnuji od roku <strong>2015</strong>. 
-                Začínala jsem s tvorbou webů a postupně se ponořila do <strong>SEO, PPC reklamy, 
-                content marketingu a technických úprav webů</strong>.
+                V online marketingu působím od roku <strong>2015</strong>.
+                Za tu dobu jsem prošla tvorbou webů, <strong>SEO, PPC reklamou,
+                content marketingem i technickými úpravami</strong> – a dnes to všechno propojuji do funkčních strategií pro své klienty.
               </p>
-              
+
               <p className="text-lg text-gray-700 mb-6">
-                Baví mě propojovat <strong>data, strategii a kreativitu</strong>, ať už při 
-                optimalizaci webů, nastavování kampaní nebo zavádění automatizací.
+                Pracuji na průsečíku <strong>dat, strategie a kreativity</strong>. Neříkám, co by se mělo dělat – dělám to. Každý projekt pro mě začíná analýzou a končí měřitelnými výsledky.
               </p>
-              
+
               <p className="text-lg text-gray-700 mb-6">
-                Dnes pracuji s klienty, kteří chtějí růst – ať už lokálně, nebo na širším trhu. 
-                Využívám také moderní nástroje a <strong>umělou inteligenci</strong>, díky kterým 
-                jsou procesy efektivnější a výsledky měřitelnější.
+                Moji klienti chtějí růst – lokálně i na širším trhu. Dodávám jim nástroje od SEO a kampaní
+                po <strong>AI automatizace</strong>, které šetří čas a přinášejí reálný dopad na byznys.
               </p>
-              
+
               <p className="text-lg text-gray-700 mb-8">
-                Zakládám si na <strong>férové komunikaci</strong>, funkčních řešeních a přehlednosti. 
-                Online je prostor, který se neustále mění – a to mě na něm baví nejvíc.
+                Zakládám si na <strong>férové komunikaci</strong> a funkčních řešeních.
+                Online se neustále mění – a já se měním s ním. To je moje konkurenční výhoda.
               </p>
             </div>
           </div>
@@ -83,18 +81,18 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Vzdělávání a rozvoj
+            Neustálý rozvoj
           </h2>
-          
+
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 mb-6">
-              Pravidelně se <strong>vzdělávám u <a href="https://www.czechitas.cz/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Czechitas</a></strong>, 
-              inspiruji se u <strong><a href="https://www.holkyzmarketingu.cz/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Holek z marketingu</a></strong> 
-              a sleduji aktuální trendy i know-how od dalších odborníků, například z <strong>agentury Luumo</strong>.
+              Vzdělávám se u <strong><a href="https://www.czechitas.cz/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Czechitas</a></strong>,
+              sleduji komunitu <strong><a href="https://www.holkyzmarketingu.cz/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Holky z marketingu</a></strong>
+              a čerpám know-how od expertů jako je <strong>agentura Luumo</strong>.
             </p>
-            
+
             <p className="text-lg text-gray-700">
-              Neustálý rozvoj je pro mne samozřejmostí.
+              V oboru, který se mění každý měsíc, je neustálý rozvoj nutnost – ne volba.
             </p>
           </div>
         </div>
@@ -104,7 +102,7 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Moje služby
+            V čem vynikám
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -115,7 +113,7 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">SEO</h3>
-              <p className="text-gray-600">Strategické SEO a lokální optimalizace</p>
+              <p className="text-gray-600">Kompletní SEO strategie a lokální dominance</p>
             </div>
             
             <div className="text-center">
@@ -125,7 +123,7 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">PPC</h3>
-              <p className="text-gray-600">Google Ads a Sklik kampaně</p>
+              <p className="text-gray-600">Google Ads a Sklik s maximální návratností</p>
             </div>
             
             <div className="text-center">
@@ -135,7 +133,7 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">AI agenti</h3>
-              <p className="text-gray-600">Chytré nástroje pro analýzu a optimalizaci</p>
+              <p className="text-gray-600">Automatizace, která šetří desítky hodin měsíčně</p>
             </div>
             
             <div className="text-center">
@@ -145,7 +143,7 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Automatizace</h3>
-              <p className="text-gray-600">Automatizace rutinních úkolů</p>
+              <p className="text-gray-600">Make.com workflow pro bezchybný provoz</p>
             </div>
           </div>
           
@@ -154,7 +152,7 @@ export default function AboutPage() {
               href="/kontakt"
               className="inline-block bg-yellow-400 text-purple-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
             >
-              Získat konzultaci
+              Domluvit konzultaci
             </Link>
           </div>
         </div>
@@ -166,7 +164,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <Link href="/" className="text-lg font-semibold hover:text-yellow-400">
-                Home
+                Domů
               </Link>
               <div className="flex space-x-4 mt-4">
                 <a href="https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
@@ -192,7 +190,7 @@ export default function AboutPage() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            © 2025 – linklady.cz.
+            © 2026 – linklady.cz.
           </div>
         </div>
       </footer>
