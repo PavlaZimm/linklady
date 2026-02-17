@@ -23,10 +23,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://linklady.cz"),
   title: {
-    default: "Linklady.cz | Pavla Zimmermannová – Online Marketing, SEO & Automatizace",
+    default: "Linklady.cz | SEO, PPC a AI automatizace – Pavla Zimmermannová",
     template: "%s | Linklady.cz",
   },
-  description: "Pavla Zimmermannová – specialistka na online marketing od roku 2015. SEO, PPC kampaně, AI asistenti a automatizace pro růst vašeho byznysu.",
+  description: "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky pro váš byznys.",
   keywords: [
     "online marketing",
     "SEO",
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: "https://linklady.cz",
     siteName: "Linklady.cz",
-    title: "Linklady.cz | Pavla Zimmermannová – Online Marketing",
-    description: "SEO, PPC kampaně, AI asistenti a automatizace. Pomáhám firmám růst online od roku 2015.",
+    title: "Linklady.cz | SEO, PPC a AI automatizace",
+    description: "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
     images: [
       {
         url: "/profile.jpg",
@@ -66,8 +66,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Linklady.cz | Pavla Zimmermannová – Online Marketing",
-    description: "SEO, PPC kampaně, AI asistenti a automatizace. Pomáhám firmám růst online od roku 2015.",
+    title: "Linklady.cz | SEO, PPC a AI automatizace",
+    description: "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
     images: ["/profile.jpg"],
   },
   robots: {

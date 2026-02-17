@@ -1,14 +1,14 @@
 {
   "/": {
-    "title": "Linklady.cz – Pomáhám firmám růst online | SEO, PPC, AI asistenti",
-    "description": "Pavla Zimmermannová – specialistka na SEO, PPC kampaně, AI asistenty a automatizaci. Komplexní online marketing řešení pro růst vašeho byznysu od roku 2015.",
+    "title": "Linklady.cz – SEO, PPC a AI automatizace | Pavla Zimmermannová",
+    "description": "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky, ne prázdné sliby.",
     "keywords": ["online marketing", "SEO", "PPC", "AI agenti", "automatizace", "Pavla Zimmermannová", "linklady", "Google Ads", "Sklik"],
     "alternates": {
       "canonical": "https://linklady.cz"
     },
     "openGraph": {
-      "title": "Linklady.cz – Pomáhám firmám růst online",
-      "description": "SEO, PPC kampaně, AI asistenti a automatizace. Pavla Zimmermannová – online marketing od roku 2015.",
+      "title": "Linklady.cz – SEO, PPC a AI automatizace",
+      "description": "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
       "url": "https://linklady.cz",
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Pavla Zimmermannová – online marketing" }]
     }

@@ -34,21 +34,14 @@ export default function HomePageContent() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="fade-in-up">
               <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-                Pomáhám firmám<br />
-                <span className="text-yellow-400">růst online</span>
+                Vaše firma na<br />
+                <span className="text-yellow-400">prvních místech</span>
               </h1>
               <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
-                SEO, AI asistenti, automatizace, data
+                SEO strategie, PPC kampaně, AI automatizace
               </p>
               <p className="text-lg mb-10 opacity-80 leading-relaxed">
-                Vše co potřebujete pro chytrý marketing a růst vašeho byznysu
-              </p>
-              <p className="mb-10 opacity-70 text-base bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <span className="font-medium">Webové stránky procházejí úpravami</span><br />
-                Kontaktujte mne na e-mailu:{' '}
-                <a href="mailto:zimmermannovap@gmail.com" className="underline hover:no-underline font-medium text-yellow-300">
-                  zimmermannovap@gmail.com
-                </a>
+                10 let zkušeností v online marketingu. Měřitelné výsledky, ne prázdné sliby.
               </p>
               <div className="flex flex-col sm:flex-row gap-6">
                 <Link
@@ -77,10 +70,10 @@ export default function HomePageContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Moje <span className="text-purple-600">služby</span>
+              Co pro vás <span className="text-purple-600">udělám</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Komplexní online marketing řešení pro růst vašeho byznysu
+              Od strategie po realizaci. Kompletní online marketing pod jednou střechou.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -103,7 +96,7 @@ export default function HomePageContent() {
                 </div>
                 <h3 className="text-2xl font-bold mb-6">SEO & PPC</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Získejte více zákazníků z Googlu i Seznamu. Řeším kompletní SEO – od technického auditu přes keyword strategii až po lokální viditelnost. PPC kampaně v Google Ads a Skliku nastavuji tak, aby každá koruna pracovala na maximum.
+                  Víc zákazníků z Googlu i Seznamu. Kompletní SEO od technického auditu přes keyword strategii po lokální viditelnost. PPC kampaně v Google Ads a Skliku stavím tak, aby každá koruna přinesla maximum.
                 </p>
               </div>
             </div>
@@ -127,7 +120,7 @@ export default function HomePageContent() {
                 </div>
                 <h3 className="text-2xl font-bold mb-6">Tvorba webu</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Moderní weby, které prodávají. Navrhuji a realizuji responzivní stránky s důrazem na rychlost, UX a konverze. Každý web stavím s myšlenkou na SEO od prvního řádku kódu.
+                  Weby, které prodávají. Rychlé, responzivní a optimalizované pro konverze. Každý web stavím s myšlenkou na SEO od prvního řádku kódu – žádné kompromisy.
                 </p>
               </div>
             </div>
@@ -151,7 +144,7 @@ export default function HomePageContent() {
                 </div>
                 <h3 className="text-2xl font-bold mb-6">Video střih</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Video obsah, který zaujme na první sekundu. Stříhám reels, stories, reklamní spoty i firemní prezentace. Dodám hotový obsah připravený k publikaci na sociálních sítích.
+                  Obsah, který zaujme na první sekundu. Reels, stories, reklamní spoty i firemní prezentace. Hotový obsah připravený k publikaci – vy řešíte byznys, já video.
                 </p>
               </div>
             </div>
@@ -175,7 +168,7 @@ export default function HomePageContent() {
                 </div>
                 <h3 className="text-2xl font-bold mb-6">AI agenti</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Nasazuji AI tam, kde to dává smysl. Chatboti pro zákaznickou podporu, automatická analýza dat, generování obsahu i monitoring konkurence. Ušetříte hodiny práce týdně.
+                  AI tam, kde to dává smysl a šetří peníze. Chatboti pro zákaznickou podporu, analýza dat, generování obsahu i monitoring konkurence. Ušetříte desítky hodin měsíčně.
                 </p>
               </div>
             </div>
@@ -199,7 +192,31 @@ export default function HomePageContent() {
                 </div>
                 <h3 className="text-2xl font-bold mb-6">Automatizace & Make</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Zbavím vás rutiny. Propojuji nástroje přes Make.com, automatizuji reporting, e-mailové sekvence i publikování obsahu. Váš marketing poběží i když spíte.
+                  Konec rutiny. Propojuji nástroje přes Make.com, automatizuji reporting, e-mailové sekvence i publikování obsahu. Váš marketing poběží i když spíte.
+                </p>
+              </div>
+            </div>
+
+            {/* Content marketing */}
+            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-4 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="absolute inset-0">
+                <Image
+                  src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  alt="Content marketing a strategie"
+                  fill
+                  className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
+              </div>
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-yellow-400 rounded-2xl flex items-center justify-center mb-8 transform group-hover:rotate-6 transition-transform duration-300">
+                  <svg className="w-10 h-10 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-6">Content marketing</h3>
+                <p className="text-base opacity-90 leading-relaxed">
+                  Obsah, který přivádí zákazníky a buduje důvěru. Blog, sociální sítě, newsletter – vše s jasnou strategií a měřitelnými výsledky.
                 </p>
               </div>
             </div>
@@ -226,22 +243,20 @@ export default function HomePageContent() {
             </div>
             <div className="fade-in-up animate-delay-1 order-1 lg:order-2">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-                O <span className="text-purple-600">mně</span>
+                Pavla <span className="text-purple-600">Zimmermannová</span>
               </h2>
               <div className="prose prose-lg text-gray-600 space-y-6">
                 <p className="text-xl leading-relaxed">
-                  Online marketingu a webovému prostředí se věnuji od roku <strong className="text-purple-600">2015</strong>. 
-                  Začínala jsem s tvorbou webů a postupně se ponořila do <strong className="text-purple-600">SEO, PPC reklamy, 
-                  content marketingu a technických úprav webů</strong>.
+                  V online marketingu působím od roku <strong className="text-purple-600">2015</strong>.
+                  Za tu dobu jsem prošla tvorbou webů, <strong className="text-purple-600">SEO, PPC reklamou,
+                  content marketingem i technickými úpravami</strong> – a dnes to všechno propojuji do funkčních strategií.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Baví mě propojovat <strong className="text-purple-600">data, strategii a kreativitu</strong>, ať už při 
-                  optimalizaci webů, nastavování kampaní nebo zavádění automatizací.
+                  Pracuji na průsečíku <strong className="text-purple-600">dat, strategie a kreativity</strong>. Neříkám, co by se mělo dělat – dělám to.
                 </p>
                 <p className="text-lg leading-relaxed mb-8">
-                  Dnes pracuji s klienty, kteří chtějí růst – ať už lokálně, nebo na širším trhu. 
-                  Využívám také moderní nástroje a <strong className="text-purple-600">umělou inteligenci</strong>, díky kterým 
-                  jsou procesy efektivnější a výsledky měřitelnější.
+                  Moji klienti chtějí růst a já jim k tomu dodávám nástroje – od SEO a kampaní
+                  po <strong className="text-purple-600">AI automatizace</strong>, které šetří čas a přinášejí měřitelné výsledky.
                 </p>
                 <Link
                   href="/o-mne"
@@ -260,10 +275,10 @@ export default function HomePageContent() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold text-purple-900 mb-6">
-              Pojďme <span className="text-yellow-600">spolupracovat</span>
+              Připraveni <span className="text-yellow-600">růst?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10">
-              Pomůžu vám s online marketingem, SEO, PPC kampaněmi nebo automatizací. Ozvěte se mi a najdeme nejlepší řešení pro váš růst.
+              Řekněte mi o svém projektu a já vám ukážu, co pro vás online marketing dokáže. Konzultace je zdarma a nezávazná.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
@@ -290,8 +305,8 @@ export default function HomePageContent() {
             <div>
               <h3 className="text-2xl font-bold mb-6 text-yellow-400">Linklady.cz</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Specializuji se na online marketing, SEO, PPC kampaně a automatizaci procesů. 
-                Pomáhám firmám růst v digitálním prostředí.
+                Online marketing, SEO, PPC kampaně a AI automatizace.
+                Měřitelné výsledky pro firmy, které chtějí růst.
               </p>
               <div className="flex space-x-4">
                 <a href="https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400 transition-colors">
@@ -306,7 +321,7 @@ export default function HomePageContent() {
             <div>
               <h4 className="text-lg font-semibold mb-6 text-white">Rychlé odkazy</h4>
               <ul className="space-y-3">
-                <li><Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">Domů</Link></li>
+                <li><Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">Úvod</Link></li>
                 <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400 transition-colors">O mně</Link></li>
                 <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Blog</Link></li>
                 <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
@@ -330,7 +345,7 @@ export default function HomePageContent() {
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
             <p className="text-gray-400">
-              © 2025 Linklady.cz – Všechna práva vyhrazena
+              © 2026 Linklady.cz – Všechna práva vyhrazena
             </p>
           </div>
         </div>
