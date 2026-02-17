@@ -60,7 +60,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-lg text-gray-700 mb-6">
-                Pracuji na průsečíku <strong>dat, strategie a kreativity</strong>. Neříkám, co by se mělo dělat – dělám to. Každý projekt pro mě začíná analýzou a končí měřitelnými výsledky.
+                Propojuji <strong>data, strategii a kreativitu</strong>. Každý projekt pro mě začíná analýzou a končí měřitelnými výsledky.
               </p>
 
               <p className="text-lg text-gray-700 mb-6">
@@ -70,7 +70,7 @@ export default function AboutPage() {
 
               <p className="text-lg text-gray-700 mb-8">
                 Zakládám si na <strong>férové komunikaci</strong> a funkčních řešeních.
-                Online se neustále mění – a já se měním s ním. To je moje konkurenční výhoda.
+                Online se neustále mění – a já se měním s ním.
               </p>
             </div>
           </div>
