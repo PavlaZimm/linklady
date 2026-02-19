@@ -20,9 +20,9 @@ export default function ContactPage() {
             <div className="absolute top-1/2 -left-8 w-16 h-16 bg-yellow-300 rounded-full opacity-25"></div>
             <div className="absolute -top-8 right-4 w-20 h-20 bg-purple-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Ozvěte se</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Kontakt</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto relative z-10">
-              Konzultace zdarma. Řeknete mi o svém projektu, já vám ukážu, jak ho posunout.
+              Ráda se dozvím víc o vašem projektu. Konzultace je zdarma a nezávazná.
             </p>
           </div>
         </div>
@@ -32,9 +32,9 @@ export default function ContactPage() {
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-purple-50 rounded-lg p-8 md:p-12 text-center">
-            <h2 className="text-3xl font-bold text-primary mb-4">Pojďme to rozjet</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">Napište mi</h2>
             <p className="text-gray-600 mb-8 text-lg">
-              Napište mi a do 24 hodin se vám ozvu s konkrétním návrhem, jak váš byznys posunout online.
+              Napište mi a do 24 hodin se vám ozvu. Společně najdeme cestu, jak váš byznys posunout online.
             </p>
             <a
               href="mailto:zimmermannovap@gmail.com"

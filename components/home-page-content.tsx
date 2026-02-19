@@ -252,7 +252,7 @@ export default function HomePageContent() {
                   content marketingem i technickými úpravami</strong> – a dnes to všechno propojuji do funkčních strategií.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Pracuji na průsečíku <strong className="text-purple-600">dat, strategie a kreativity</strong>. Neříkám, co by se mělo dělat – dělám to.
+                  Propojuji <strong className="text-purple-600">data, strategii a kreativitu</strong> – a soustředím se na to, co přináší reálné výsledky.
                 </p>
                 <p className="text-lg leading-relaxed mb-8">
                   Moji klienti chtějí růst a já jim k tomu dodávám nástroje – od SEO a kampaní
@@ -275,10 +275,10 @@ export default function HomePageContent() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold text-purple-900 mb-6">
-              Připraveni <span className="text-yellow-600">růst?</span>
+              Pojďme <span className="text-yellow-600">spolupracovat</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10">
-              Řekněte mi o svém projektu a já vám ukážu, co pro vás online marketing dokáže. Konzultace je zdarma a nezávazná.
+              Řekněte mi o svém projektu a společně najdeme řešení, které vám přinese výsledky. Konzultace je zdarma.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
