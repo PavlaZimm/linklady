@@ -174,6 +174,11 @@ export default function RootLayout({
               gtag('config', 'G-FXX3CY3CHM');
             `}
           </Script>
+          <Script
+            src="https://analytics.ahrefs.com/analytics.js"
+            data-key="bq++w6F/akp3AQs/1X59sw"
+            strategy="afterInteractive"
+          />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
