@@ -107,7 +107,7 @@ const jsonLd = {
           name: "Kolik stojí tvorba webových stránek v Bílině?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Cena závisí na rozsahu projektu. Jednoduchý web (vizitka) začíná od 15 000 Kč, firemní web s více stránkami od 25 000 Kč a e-shop od 40 000 Kč. Každý projekt oceňuji individuálně po úvodní konzultaci zdarma.",
+            text: "Cena závisí na rozsahu projektu. Jednoduchý web (vizitka) začíná od 9 000 Kč, firemní web s více stránkami od 25 000 Kč a e-shop od 40 000 Kč. Každý projekt oceňuji individuálně po úvodní konzultaci zdarma.",
           },
         },
         {
@@ -538,7 +538,7 @@ export default function TvorbaWebuBilinaPage() {
                 Kolik stojí tvorba webových stránek v Bílině?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Cena závisí na rozsahu projektu. Jednoduchý web (vizitka) začíná od 15 000 Kč, firemní web s více stránkami od 25 000 Kč a e-shop od 40 000 Kč. Každý projekt oceňuji individuálně po úvodní konzultaci zdarma.
+                Cena závisí na rozsahu projektu. Jednoduchý web (vizitka) začíná od 9 000 Kč, firemní web s více stránkami od 25 000 Kč a e-shop od 40 000 Kč. Každý projekt oceňuji individuálně po úvodní konzultaci zdarma.
               </p>
             </div>
 
