@@ -134,6 +134,14 @@ const jsonLd = {
             text: "Ano. SEO je součástí každého webu, který vytvořím. Optimalizuji rychlost načítání, strukturu URL, meta tagy, nadpisy, obrázky i strukturovaná data. Web bude připravený na to, aby ho Google indexoval a zobrazoval ve výsledcích vyhledávání.",
           },
         },
+        {
+          "@type": "Question",
+          name: "Děláte weby i pro firmy mimo Bílinu?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Samozřejmě. Sídlím v Bílině, ale pracuji s klienty z celého Ústeckého kraje i celé České republiky. Většinu komunikace řešíme online, takže vzdálenost není překážka.",
+          },
+        },
       ],
     },
   ],
