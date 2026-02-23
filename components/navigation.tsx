@@ -38,6 +38,12 @@ export default function Navigation() {
                 O mně
               </Link>
               <Link
+                href="/ebook"
+                className="text-gray-900 hover:text-primary px-3 py-2 text-base font-semibold transition-colors"
+              >
+                E-book
+              </Link>
+              <Link
                 href="/blog"
                 className="text-gray-900 hover:text-primary px-3 py-2 text-base font-semibold transition-colors"
               >
@@ -90,6 +96,13 @@ export default function Navigation() {
                 className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
               >
                 O mně
+              </Link>
+              <Link
+                href="/ebook"
+                onClick={() => setIsOpen(false)}
+                className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
+              >
+                E-book
               </Link>
               <Link
                 href="/blog"
