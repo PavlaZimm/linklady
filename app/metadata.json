@@ -41,6 +41,20 @@
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Linklady.cz Blog" }]
     }
   },
+  "/tvorba-webu-bilina": {
+    "title": "Tvorba webových stránek Bílina – Moderní weby na míru",
+    "description": "Profesionální tvorba webových stránek v Bílině a okolí. Rychlé, responzivní weby s SEO optimalizací. Osobní přístup, konzultace zdarma. Pavla Zimmermannová.",
+    "keywords": ["tvorba webových stránek Bílina", "tvorba webu Bílina", "webové stránky Bílina", "webdesign Bílina", "tvorba webových stránek Teplice", "tvorba webů Ústecký kraj", "weby na míru", "responzivní web", "SEO optimalizace", "webové stránky na míru"],
+    "alternates": {
+      "canonical": "https://linklady.cz/tvorba-webu-bilina"
+    },
+    "openGraph": {
+      "title": "Tvorba webových stránek Bílina – Moderní weby na míru",
+      "description": "Profesionální tvorba webových stránek v Bílině. Rychlé, responzivní weby s SEO. Konzultace zdarma.",
+      "url": "https://linklady.cz/tvorba-webu-bilina",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Tvorba webových stránek Bílina – Pavla Zimmermannová" }]
+    }
+  },
   "/kontakt": {
     "title": "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
     "description": "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace. Online marketing na míru vašim potřebám.",

@@ -122,6 +122,12 @@ export default function HomePageContent() {
                 <p className="text-base opacity-90 leading-relaxed">
                   Weby, které prodávají. Rychlé, responzivní a optimalizované pro konverze. Každý web stavím s myšlenkou na SEO od prvního řádku kódu – žádné kompromisy.
                 </p>
+                <Link
+                  href="/tvorba-webu-bilina"
+                  className="inline-block mt-4 text-yellow-400 font-semibold hover:text-yellow-300 transition-colors"
+                >
+                  Tvorba webu v Bílině →
+                </Link>
               </div>
             </div>
 
@@ -325,6 +331,7 @@ export default function HomePageContent() {
                 <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400 transition-colors">O mně</Link></li>
                 <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Blog</Link></li>
                 <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
+                <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400 transition-colors">Tvorba webu Bílina</Link></li>
               </ul>
             </div>
             
