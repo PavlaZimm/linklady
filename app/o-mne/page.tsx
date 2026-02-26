@@ -10,9 +10,83 @@ import siteMetadata from '@/app/metadata.json'
 
 export const metadata: Metadata = siteMetadata['/o-mne']
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://linklady.cz/o-mne/#webpage",
+      url: "https://linklady.cz/o-mne",
+      name: "O mně – Pavla Zimmermannová | Online marketing specialistka",
+      description: "Online marketingu se věnuji od roku 2015. Specializuji se na SEO, PPC reklamu, content marketing, AI nástroje a technické úpravy webů.",
+      isPartOf: { "@id": "https://linklady.cz/#website" },
+      mainEntity: { "@id": "https://linklady.cz/#person" },
+      inLanguage: "cs",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Úvod",
+          item: "https://linklady.cz",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "O mně",
+          item: "https://linklady.cz/o-mne",
+        },
+      ],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://linklady.cz/#person",
+      name: "Pavla Zimmermannová",
+      url: "https://linklady.cz/o-mne",
+      image: {
+        "@type": "ImageObject",
+        url: "https://linklady.cz/profile.jpg",
+        width: 400,
+        height: 500,
+      },
+      jobTitle: "Online marketing specialistka",
+      description: "V online marketingu působím od roku 2015. Specializuji se na SEO, PPC reklamu, content marketing, AI nástroje a automatizaci marketingu.",
+      worksFor: { "@id": "https://linklady.cz/#business" },
+      knowsAbout: [
+        "SEO optimalizace",
+        "PPC kampaně",
+        "Google Ads",
+        "Sklik",
+        "AI agenti",
+        "Automatizace marketingu",
+        "Content marketing",
+        "Lokální SEO",
+        "Make.com",
+        "Tvorba webových stránek",
+      ],
+      sameAs: [
+        "https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/",
+      ],
+      alumniOf: [
+        {
+          "@type": "Organization",
+          name: "Czechitas",
+          url: "https://www.czechitas.cz/",
+        },
+      ],
+    },
+  ],
+}
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
       
       {/* Hero Section */}

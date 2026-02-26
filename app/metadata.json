@@ -55,6 +55,20 @@
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Tvorba webových stránek Bílina – Pavla Zimmermannová" }]
     }
   },
+  "/ebook": {
+    "title": "E-book: Jak správně promptovat AI | Linklady.cz",
+    "description": "Naučte se efektivně komunikovat s AI. Praktický e-book o promptování – od základů po pokročilé techniky. Získejte lepší výsledky z ChatGPT, Claude a dalších AI nástrojů.",
+    "keywords": ["promptování", "jak promptovat", "AI prompty", "ChatGPT návod", "prompt engineering", "AI e-book", "umělá inteligence", "efektivní prompty", "Claude prompty"],
+    "alternates": {
+      "canonical": "https://linklady.cz/ebook"
+    },
+    "openGraph": {
+      "title": "E-book: Jak správně promptovat AI | Linklady.cz",
+      "description": "Praktický e-book o promptování AI. Od základů po pokročilé techniky pro lepší výsledky.",
+      "url": "https://linklady.cz/ebook",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "E-book Jak správně promptovat AI – Linklady.cz" }]
+    }
+  },
   "/kontakt": {
     "title": "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
     "description": "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace. Online marketing na míru vašim potřebám.",

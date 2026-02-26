@@ -141,12 +141,16 @@ const jsonLd = {
         "@type": "Country",
         name: "Česká republika",
       },
-      serviceType: [
-        "SEO optimalizace",
-        "PPC kampaně",
-        "AI asistenti",
-        "Automatizace marketingu",
-      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Online marketing služby",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO optimalizace" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "PPC kampaně" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI asistenti" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Automatizace marketingu" } },
+        ],
+      },
       sameAs: [
         "https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/",
       ],

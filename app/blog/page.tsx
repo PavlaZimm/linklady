@@ -5,9 +5,46 @@ import siteMetadata from '@/app/metadata.json'
 
 export const metadata: Metadata = siteMetadata['/blog']
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://linklady.cz/blog/#webpage",
+      url: "https://linklady.cz/blog",
+      name: "Blog – Marketing tipy, SEO trendy a AI nástroje",
+      description: "Aktuální články o SEO strategiích, PPC reklamě, automatizaci a AI nástrojích pro online marketing.",
+      isPartOf: { "@id": "https://linklady.cz/#website" },
+      keywords: "SEO strategie, PPC kampaně, AI nástroje, automatizace procesů, lokální SEO",
+      inLanguage: "cs",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Úvod",
+          item: "https://linklady.cz",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://linklady.cz/blog",
+        },
+      ],
+    },
+  ],
+}
+
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
       
       {/* Hero Section */}

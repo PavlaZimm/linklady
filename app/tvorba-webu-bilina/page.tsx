@@ -39,7 +39,10 @@ const jsonLd = {
       serviceType: "Tvorba webových stránek",
       offers: {
         "@type": "Offer",
+        price: "9000",
+        priceCurrency: "CZK",
         availability: "https://schema.org/InStock",
+        description: "Cena od 9 000 Kč za jednoduchý web",
         areaServed: {
           "@type": "Country",
           name: "Česká republika",
@@ -107,7 +110,7 @@ const jsonLd = {
           name: "Kolik stojí tvorba webových stránek v Bílině?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Cena závisí na rozsahu projektu. Jednoduchý web (vizitka) začíná od 15 000 Kč, firemní web s více stránkami od 25 000 Kč a e-shop od 40 000 Kč. Každý projekt oceňuji individuálně po úvodní konzultaci zdarma.",
+            text: "Cena závisí na rozsahu projektu. Jednoduchý web (vizitka) začíná od 9 000 Kč, firemní web s více stránkami od 25 000 Kč a e-shop od 40 000 Kč. Každý projekt oceňuji individuálně po úvodní konzultaci zdarma.",
           },
         },
         {
@@ -132,6 +135,14 @@ const jsonLd = {
           acceptedAnswer: {
             "@type": "Answer",
             text: "Ano. SEO je součástí každého webu, který vytvořím. Optimalizuji rychlost načítání, strukturu URL, meta tagy, nadpisy, obrázky i strukturovaná data. Web bude připravený na to, aby ho Google indexoval a zobrazoval ve výsledcích vyhledávání.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Děláte weby i pro firmy mimo Bílinu?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Samozřejmě. Sídlím v Bílině, ale pracuji s klienty z celého Ústeckého kraje i celé České republiky. Většinu komunikace řešíme online, takže vzdálenost není překážka.",
           },
         },
       ],
@@ -538,7 +549,7 @@ export default function TvorbaWebuBilinaPage() {
                 Kolik stojí tvorba webových stránek v Bílině?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Cena závisí na rozsahu projektu. Jednoduchý web (vizitka) začíná od 15 000 Kč, firemní web s více stránkami od 25 000 Kč a e-shop od 40 000 Kč. Každý projekt oceňuji individuálně po úvodní konzultaci zdarma.
+                Cena závisí na rozsahu projektu. Jednoduchý web (vizitka) začíná od 9 000 Kč, firemní web s více stránkami od 25 000 Kč a e-shop od 40 000 Kč. Každý projekt oceňuji individuálně po úvodní konzultaci zdarma.
               </p>
             </div>
 

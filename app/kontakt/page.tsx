@@ -5,9 +5,98 @@ import siteMetadata from '@/app/metadata.json'
 
 export const metadata: Metadata = siteMetadata['/kontakt']
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://linklady.cz/kontakt/#webpage",
+      url: "https://linklady.cz/kontakt",
+      name: "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
+      description: "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace.",
+      isPartOf: { "@id": "https://linklady.cz/#website" },
+      inLanguage: "cs",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Úvod",
+          item: "https://linklady.cz",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Kontakt",
+          item: "https://linklady.cz/kontakt",
+        },
+      ],
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://linklady.cz/#business",
+      name: "Linklady.cz – Pavla Zimmermannová",
+      url: "https://linklady.cz",
+      email: "zimmermannovap@gmail.com",
+      taxID: "04352041",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Bílina",
+        addressCountry: "CZ",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        email: "zimmermannovap@gmail.com",
+        availableLanguage: ["cs", "en"],
+        areaServed: {
+          "@type": "Country",
+          name: "Česká republika",
+        },
+      },
+      founder: { "@id": "https://linklady.cz/#person" },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Jak dlouho trvá SEO optimalizace?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "SEO je dlouhodobý proces. První výsledky jsou viditelné obvykle za 3-6 měsíců, ale plný efekt se projeví za 6-12 měsíců v závislosti na konkurenci a stavu webu.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kolik stojí PPC kampaň?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Cena závisí na rozpočtu, který chcete investovat do reklam, plus poplatek za správu. Minimální doporučený rozpočet je 10 000 Kč měsíčně pro efektivní kampaň.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Jak fungují AI agenti?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "AI agenti automatizují analýzu webu, sledování pozic, generování reportů a další rutinní úkoly. Šetří čas a poskytují přesnější data než ruční zpracování.",
+          },
+        },
+      ],
+    },
+  ],
+}
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
       
       {/* Hero Section */}
