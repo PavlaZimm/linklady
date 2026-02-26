@@ -39,7 +39,10 @@ const jsonLd = {
       serviceType: "Tvorba webových stránek",
       offers: {
         "@type": "Offer",
+        price: "9000",
+        priceCurrency: "CZK",
         availability: "https://schema.org/InStock",
+        description: "Cena od 9 000 Kč za jednoduchý web",
         areaServed: {
           "@type": "Country",
           name: "Česká republika",

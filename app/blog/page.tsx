@@ -15,13 +15,7 @@ const jsonLd = {
       name: "Blog – Marketing tipy, SEO trendy a AI nástroje",
       description: "Aktuální články o SEO strategiích, PPC reklamě, automatizaci a AI nástrojích pro online marketing.",
       isPartOf: { "@id": "https://linklady.cz/#website" },
-      about: [
-        "SEO strategie a optimalizace",
-        "PPC kampaně a jejich řízení",
-        "AI nástroje v marketingu",
-        "Automatizace procesů",
-        "Lokální SEO tipy",
-      ],
+      keywords: "SEO strategie, PPC kampaně, AI nástroje, automatizace procesů, lokální SEO",
       inLanguage: "cs",
     },
     {

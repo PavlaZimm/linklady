@@ -22,12 +22,20 @@ const jsonLd = {
       "@id": "https://linklady.cz/ebook/#product",
       name: "Jak správně promptovat AI",
       description: "Praktický e-book o promptování AI. Naučte se psát efektivní prompty a získejte lepší výsledky z ChatGPT, Claude a dalších AI nástrojů.",
+      image: "https://linklady.cz/profile.jpg",
       brand: {
         "@type": "Brand",
         name: "Linklady.cz",
       },
       author: { "@id": "https://linklady.cz/#person" },
       category: "E-book",
+      offers: {
+        "@type": "Offer",
+        url: "https://linklady.cz/ebook",
+        availability: "https://schema.org/InStock",
+        priceCurrency: "CZK",
+        price: "0",
+      },
     },
     {
       "@type": "BreadcrumbList",
