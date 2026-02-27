@@ -13,11 +13,11 @@ export function middleware(request: NextRequest) {
   // --- Content Security Policy ---
   const csp = [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com",
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.ahrefs.com",
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-    "img-src 'self' data: https://www.linklady.cz https://images.pexels.com https://www.google-analytics.com",
+    "img-src 'self' data: https://www.linklady.cz https://linklady.cz https://images.pexels.com https://www.google-analytics.com",
     "font-src 'self' https://fonts.gstatic.com",
-    "connect-src 'self' https://*.convex.cloud https://*.convex.site wss://*.convex.cloud https://www.google-analytics.com",
+    "connect-src 'self' https://*.convex.cloud https://*.convex.site wss://*.convex.cloud https://www.google-analytics.com https://analytics.ahrefs.com https://www.googletagmanager.com",
     "frame-src 'none'",
     "object-src 'none'",
     "base-uri 'self'",
@@ -60,6 +60,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.jpg|.*\\.png|.*\\.svg|.*\\.ico|.*\\.webp|.*\\.html).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|robots\\.txt|sitemap\\.xml|.*\\.jpg|.*\\.png|.*\\.svg|.*\\.ico|.*\\.webp|.*\\.html).*)',
   ],
 }
