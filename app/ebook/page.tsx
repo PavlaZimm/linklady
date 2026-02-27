@@ -2,6 +2,7 @@ import Navigation from '@/components/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
+import JsonLd from '@/components/json-ld'
 
 export const metadata: Metadata = siteMetadata['/ebook']
 
@@ -60,10 +61,7 @@ const jsonLd = {
 export default function EbookPage() {
   return (
     <div className="min-h-screen bg-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <Navigation />
 
       {/* Hero Section */}

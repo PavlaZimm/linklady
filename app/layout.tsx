@@ -1,8 +1,10 @@
 import "./globals.css"
 
+import { headers } from "next/headers"
 import Script from "next/script"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, Poppins } from "next/font/google"
+import JsonLd from "@/components/json-ld"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -158,19 +160,22 @@ const jsonLd = {
   ],
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const nonce = (await headers()).get('x-nonce') ?? ''
+
   return (
     <html lang="cs">
         <head>
           <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-FXX3CY3CHM"
             strategy="afterInteractive"
+            nonce={nonce}
           />
-          <Script id="google-analytics" strategy="afterInteractive">
+          <Script id="google-analytics" strategy="afterInteractive" nonce={nonce}>
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
@@ -182,11 +187,9 @@ export default function RootLayout({
             src="https://analytics.ahrefs.com/analytics.js"
             data-key="bq++w6F/akp3AQs/1X59sw"
             strategy="afterInteractive"
+            nonce={nonce}
           />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          />
+          <JsonLd data={jsonLd} />
         </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}

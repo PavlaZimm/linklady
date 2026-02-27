@@ -2,18 +2,13 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
-  const response = NextResponse.next()
+  // --- Generate cryptographic nonce for CSP (replaces unsafe-inline for scripts) ---
+  const nonce = Buffer.from(crypto.randomUUID()).toString('base64')
 
-  // --- HSTS: Force HTTPS for 2 years, include subdomains, allow preload list ---
-  response.headers.set(
-    'Strict-Transport-Security',
-    'max-age=63072000; includeSubDomains; preload'
-  )
-
-  // --- Content Security Policy ---
+  // --- Content Security Policy (nonce-based, no unsafe-eval) ---
   const csp = [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.ahrefs.com",
+    `script-src 'self' 'nonce-${nonce}' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.ahrefs.com`,
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "img-src 'self' data: https://www.linklady.cz https://linklady.cz https://images.pexels.com https://www.google-analytics.com",
     "font-src 'self' https://fonts.gstatic.com",
@@ -25,7 +20,24 @@ export function middleware(request: NextRequest) {
     "frame-ancestors 'none'",
     "upgrade-insecure-requests",
   ].join('; ')
+
+  // Pass nonce to Server Components via request header
+  const requestHeaders = new Headers(request.headers)
+  requestHeaders.set('x-nonce', nonce)
+  requestHeaders.set('Content-Security-Policy', csp)
+
+  const response = NextResponse.next({
+    request: { headers: requestHeaders },
+  })
+
+  // --- CSP ---
   response.headers.set('Content-Security-Policy', csp)
+
+  // --- HSTS: Force HTTPS for 2 years, include subdomains, allow preload list ---
+  response.headers.set(
+    'Strict-Transport-Security',
+    'max-age=63072000; includeSubDomains; preload'
+  )
 
   // --- Clickjacking protection (redundant with CSP frame-ancestors but good defense-in-depth) ---
   response.headers.set('X-Frame-Options', 'DENY')
