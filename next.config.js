@@ -37,6 +37,17 @@ const nextConfig = {
         destination: '/o-mne',
         permanent: true,
       },
+      // Old WordPress blog articles → blog page
+      {
+        source: '/5-duvodu-proc-na-nic-necekat-a-zacit-s-linkbuildingem',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu',
+        destination: '/blog',
+        permanent: true,
+      },
     ]
   },
   images: {
