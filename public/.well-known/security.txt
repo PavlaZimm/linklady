@@ -1,0 +1,4 @@
+Contact: mailto:zimmermannovap@gmail.com
+Preferred-Languages: cs, en
+Canonical: https://linklady.cz/.well-known/security.txt
+Expires: 2027-02-27T00:00:00.000Z

@@ -2,6 +2,7 @@ import Navigation from '@/components/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
+import JsonLd from '@/components/json-ld'
 
 export const metadata: Metadata = siteMetadata['/tvorba-webu-bilina']
 
@@ -156,10 +157,7 @@ export default function TvorbaWebuBilinaPage() {
       <Navigation />
 
       {/* JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
 
       {/* Hero Section */}
       <section className="hero-gradient text-white py-20 relative overflow-hidden">
