@@ -69,6 +69,20 @@
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "E-book Jak správně promptovat AI – Linklady.cz" }]
     }
   },
+  "/automatizace": {
+    "title": "Automatizace procesů pro firmy | Make.com, n8n, Zapier | Linklady.cz",
+    "description": "Automatizace procesů šetří čas a peníze. Pomáhám firmám nastavit automatizace v marketingu, CRM, HR i fakturaci přes Make.com a další nástroje. Bez programování.",
+    "keywords": ["automatizace", "procesní automatizace", "automatizace procesů", "ai automatizace", "make automatizace", "automatizace bez programování", "automatizace malých firem", "automatizace crm"],
+    "alternates": {
+      "canonical": "https://linklady.cz/automatizace"
+    },
+    "openGraph": {
+      "title": "Automatizace procesů pro firmy – ušetřete hodiny práce týdně",
+      "description": "Nastavím vám automatizace přes Make.com, n8n nebo Zapier. Marketing, fakturace, CRM, HR – vše bez programování.",
+      "url": "https://linklady.cz/automatizace",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Automatizace procesů – Pavla Zimmermannová" }]
+    }
+  },
   "/kontakt": {
     "title": "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
     "description": "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace. Online marketing na míru vašim potřebám.",

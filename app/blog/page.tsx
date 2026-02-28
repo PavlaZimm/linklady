@@ -63,56 +63,34 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Coming Soon */}
+      {/* Blog Articles */}
       <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-purple-50 rounded-lg p-12">
-            <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
-              </svg>
-            </div>
-            
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Blog se připravuje
-            </h2>
-            
-            <p className="text-lg text-gray-600 mb-8">
-              Pracuji na zajímavých článcích o SEO, PPC reklamě, AI nástrojích a automatizaci. 
-              Brzy zde najdete praktické tipy a trendy z online marketingu.
-            </p>
-            
-            <div className="space-y-4 text-left max-w-md mx-auto">
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span className="text-gray-700">SEO strategie a optimalizace</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span className="text-gray-700">PPC kampaně a jejich řízení</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span className="text-gray-700">AI nástroje v marketingu</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span className="text-gray-700">Automatizace procesů</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span className="text-gray-700">Lokální SEO tipy</span>
-              </div>
-            </div>
-            
-            <div className="mt-8">
-              <Link
-                href="/kontakt"
-                className="inline-block bg-yellow-400 text-purple-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
-              >
-                Zeptejte se na konzultaci
-              </Link>
-            </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-8">
+
+            {/* Article Card */}
+            <Link href="/blog/prodej-firmy-strategicky-krok" className="group block">
+              <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                <div className="p-8">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">Business</span>
+                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">M&amp;A</span>
+                  </div>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                    Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Prodej vybudovaného podniku je pro většinu majitelů jedním z nejdůležitějších životních rozhodnutí. Jak probíhá proces M&amp;A a na co si dát pozor?
+                  </p>
+                  <div className="flex items-center text-sm text-gray-500">
+                    <time dateTime="2026-02-27">27. února 2026</time>
+                    <span className="mx-2">|</span>
+                    <span>Pavla Zimmermannová</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+
           </div>
         </div>
       </section>
