@@ -200,6 +200,12 @@ export default function HomePageContent() {
                 <p className="text-base opacity-90 leading-relaxed">
                   Konec rutiny. Propojuji nástroje přes Make.com, automatizuji reporting, e-mailové sekvence i publikování obsahu. Váš marketing poběží i když spíte.
                 </p>
+                <Link
+                  href="/automatizace"
+                  className="inline-block mt-4 text-yellow-400 font-semibold hover:text-yellow-300 transition-colors"
+                >
+                  Více o automatizaci →
+                </Link>
               </div>
             </div>
 
@@ -333,6 +339,7 @@ export default function HomePageContent() {
                 <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Blog</Link></li>
                 <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
                 <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400 transition-colors">Tvorba webu Bílina</Link></li>
+                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400 transition-colors">Automatizace</Link></li>
               </ul>
             </div>
             
