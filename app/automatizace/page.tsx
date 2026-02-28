@@ -303,7 +303,7 @@ export default function AutomatizacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Klasická automatizace funguje na principu „když se stane X, udělej Y". Ale co když potřebujete, aby systém rozuměl kontextu? Třeba aby rozpoznal, jestli je e-mail od zákazníka reklamace nebo dotaz, a podle toho ho přesměroval?
+            Klasická automatizace funguje na principu &bdquo;když se stane X, udělej Y&ldquo;. Ale co když potřebujete, aby systém rozuměl kontextu? Třeba aby rozpoznal, jestli je e-mail od zákazníka reklamace nebo dotaz, a podle toho ho přesměroval?
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -382,7 +382,7 @@ export default function AutomatizacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Nastavím a otestuji</h3>
-                <p className="text-gray-700">Scénáře postavím, důkladně otestuji na reálných datech a ujistím se, že vše běží spolehlivě. Žádné „snad to bude fungovat" – automatizace musí být stoprocentní.</p>
+                <p className="text-gray-700">Scénáře postavím, důkladně otestuji na reálných datech a ujistím se, že vše běží spolehlivě. Žádné &bdquo;snad to bude fungovat&ldquo; – automatizace musí být stoprocentní.</p>
               </div>
             </div>
 
