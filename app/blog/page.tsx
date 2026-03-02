@@ -14,9 +14,9 @@ const jsonLd = {
       "@id": "https://linklady.cz/blog/#webpage",
       url: "https://linklady.cz/blog",
       name: "Blog – Marketing tipy, SEO trendy a AI nástroje",
-      description: "Aktuální články o SEO strategiích, PPC reklamě, automatizaci a AI nástrojích pro online marketing.",
+      description: "Aktuální články o SEO strategiích, automatizaci a AI nástrojích pro online marketing.",
       isPartOf: { "@id": "https://linklady.cz/#website" },
-      keywords: "SEO strategie, PPC kampaně, AI nástroje, automatizace procesů, lokální SEO",
+      keywords: "SEO strategie, AI nástroje, automatizace procesů, lokální SEO",
       inLanguage: "cs",
     },
     {
@@ -57,7 +57,7 @@ export default function BlogPage() {
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Blog</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto relative z-10">
-              Aktuální články o SEO, PPC reklamě, automatizaci a AI nástrojích pro online marketing
+              Aktuální články o SEO, automatizaci a AI nástrojích pro online marketing
             </p>
           </div>
         </div>

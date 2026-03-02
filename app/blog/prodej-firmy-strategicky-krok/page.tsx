@@ -248,7 +248,7 @@ export default function ProdejFirmyArticle() {
               Potřebujete pomoci s online prezentací vaší firmy?
             </h3>
             <p className="text-gray-700 mb-4">
-              Ať už prodáváte firmu, nebo ji chcete posunout dál - silná online přítomnost zvyšuje hodnotu vašeho podnikání. Pomohu vám se SEO, PPC kampaněmi i automatizací marketingu.
+              Ať už prodáváte firmu, nebo ji chcete posunout dál - silná online přítomnost zvyšuje hodnotu vašeho podnikání. Pomohu vám se SEO i automatizací marketingu.
             </p>
             <Link
               href="/kontakt"
