@@ -727,7 +727,7 @@ export default function SeoKonzultantUstiPage() {
               Pojďme váš web dostat na první stránku
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto leading-relaxed mb-4">
-              Napište mi a do 24 hodin se ozvum. Probereme váš web a navrhnu SEO strategii na míru – zdarma a nezávazně.
+              Napište mi a do 24 hodin se ozvu. Probereme váš web a navrhnu SEO strategii na míru – zdarma a nezávazně.
             </p>
             <p className="text-lg opacity-80 mb-10">
               Odpovídám do 24 hodin. Konzultace je zdarma.
