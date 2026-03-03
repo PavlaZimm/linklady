@@ -431,6 +431,117 @@ export default function VibecodingPage() {
         </div>
       </section>
 
+      {/* 8 výhod profesionálních nástrojů */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="bg-purple-100 text-purple-700 text-sm font-bold px-4 py-2 rounded-full inline-block mb-6">Proč profesionální nástroje</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              8 důvodů, proč zvolit <span className="text-purple-600">profi nástroje</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Bolt.new a Lovable jsou skvělé na start. Ale pokud to myslíte vážně, profesionální nástroje jako Claude Code vám dají něco úplně jiného.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* 1. Plná kontrola */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
+              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h4v4H7V7zm6 0h4v2h-4V7zm0 4h4v2h-4v-2zm-6 4h10v2H7v-2z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Vaše soubory, vaše pravidla</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Pracujete přímo ve svých složkách a se svými soubory. Žádná cizí platforma, žádná závislost. Kód je váš od první chvíle.
+              </p>
+            </div>
+
+            {/* 2. Jakákoliv komplexita */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
+              <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Bez limitu složitosti</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Jakkoliv složité projekty, jakýkoliv programovací jazyk. Webová appka, Python skript nebo mobilní aplikace – vše z jednoho nástroje.
+              </p>
+            </div>
+
+            {/* 3. Agent od tvůrce modelu */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
+              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Od tvůrce AI modelu</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Claude Code pochází přímo od Anthropic – firmy, která vytvořila samotný AI model. Agent a model jsou laděné k sobě jako celek.
+              </p>
+            </div>
+
+            {/* 4. Žádný prostředník */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
+              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Přímo u zdroje</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Žádný prostředník, který přeprodává tokeny s přirážkou. Komunikujete přímo s API od tvůrce modelu – transparentní cena, plný výkon.
+              </p>
+            </div>
+
+            {/* 5. Opus 4 bez omezení */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
+              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Nejlepší model bez omezení</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Přímý přístup ke Claude Opus – nejmocnějšímu modelu pro programování. Žádné uměle snížené limity, žádná degradace kvality.
+              </p>
+            </div>
+
+            {/* 6. Práce s kontextem */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
+              <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Chytré řízení kontextu</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Pomocí .md souborů elegantně řídíte, co AI ví o vašem projektu. Pravidla, styl kódu, architektura – vše na jednom místě.
+              </p>
+            </div>
+
+            {/* 7. Ekosystém */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
+              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Obrovský ekosystém</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Skills, pluginy, MCP servery – aktivní komunita neustále rozšiřuje možnosti. Co dnes nejde, zítra může být hotové díky komunitě.
+              </p>
+            </div>
+
+            {/* 8. Nejen weby */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
+              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Daleko víc než jen weby</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Desktopové aplikace, webové scrapery, hlasové nástroje, CLI skripty, automatizace – profi nástroje neznají hranice jednoho typu projektu.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-500 text-sm">
+              Webové nástroje (Bolt, Lovable) jsou ideální na rychlé prototypy. Pro reálné, škálovatelné projekty ale potřebujete profesionální nástroj.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Co se dá vytvořit */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
