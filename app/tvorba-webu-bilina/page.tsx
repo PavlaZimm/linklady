@@ -391,7 +391,7 @@ export default function TvorbaWebuBilinaPage() {
             Chcete web, který vám přivede zákazníky?
           </h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-            Napište mi a do 24 hodin se ozvum. Probereme váš projekt a navrhnu řešení na míru – zdarma a nezávazně.
+            Napište mi a do 24 hodin se ozvu. Probereme váš projekt a navrhnu řešení na míru – zdarma a nezávazně.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

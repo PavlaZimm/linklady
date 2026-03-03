@@ -135,7 +135,7 @@ const jsonLd = {
           name: "Děláte SEO i pro firmy mimo Ústí nad Labem?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Ano. Sídlím v Bílině a pracuji s klienty z celého Ústeckého kraje – Teplice, Most, Děčín, Litoměřice, Chomutov i dalších měst. Většinu práce řeším online, ale rád se setkám i osobně.",
+            text: "Ano. Sídlím v Bílině a pracuji s klienty z celého Ústeckého kraje – Teplice, Most, Děčín, Litoměřice, Chomutov i dalších měst. Většinu práce řeším online, ale ráda se setkám i osobně.",
           },
         },
         {

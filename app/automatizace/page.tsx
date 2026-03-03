@@ -421,7 +421,7 @@ export default function AutomatizacePage() {
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Freelanceri a OSVČ</strong> – automatizace fakturace, follow-upů, plánování</span>
+              <span className="text-gray-700"><strong className="text-gray-900">Freelanceři a OSVČ</strong> – automatizace fakturace, follow-upů, plánování</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
