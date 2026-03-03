@@ -584,9 +584,9 @@ export default function VibecodingPage() {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Automatizace</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3"><Link href="/automatizace" className="hover:text-primary">Automatizace</Link></h3>
               <p className="text-gray-600 leading-relaxed">
-                Automatické skripty, API integrace, datové pipeline, chatboty. Propojení systémů, které vám ušetří hodiny rutinní práce.
+                Automatické skripty, API integrace, datové pipeline, chatboty. Propojení systémů, které vám ušetří hodiny rutinní práce. <Link href="/automatizace" className="text-primary font-semibold hover:underline">Více o automatizaci →</Link>
               </p>
             </div>
 
@@ -855,7 +855,9 @@ export default function VibecodingPage() {
                 <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400 transition-colors">O mně</Link></li>
                 <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400 transition-colors">SEO Ústí nad Labem</Link></li>
                 <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400 transition-colors">Tvorba webů</Link></li>
+                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400 transition-colors">Automatizace</Link></li>
                 <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400 transition-colors">E-book</Link></li>
+                <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Blog</Link></li>
                 <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
               </ul>
             </div>

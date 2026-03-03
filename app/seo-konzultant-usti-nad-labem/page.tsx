@@ -771,7 +771,7 @@ export default function SeoKonzultantUstiPage() {
             <div>
               <h3 className="text-2xl font-bold mb-6 text-yellow-400">Linklady.cz</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                SEO optimalizace, tvorba webů a AI automatizace.
+                SEO optimalizace, <Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400">tvorba webů</Link> a <Link href="/automatizace" className="text-gray-300 hover:text-yellow-400">AI automatizace</Link>.
                 SEO konzultant pro firmy v Ústí nad Labem a Ústeckém kraji.
               </p>
               <div className="flex space-x-4">
@@ -791,6 +791,8 @@ export default function SeoKonzultantUstiPage() {
                 <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400 transition-colors">O mně</Link></li>
                 <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400 transition-colors">Tvorba webů</Link></li>
                 <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400 transition-colors">Automatizace</Link></li>
+                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400 transition-colors">Vibecoding</Link></li>
+                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400 transition-colors">E-book</Link></li>
                 <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Blog</Link></li>
                 <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
               </ul>
