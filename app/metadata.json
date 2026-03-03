@@ -83,6 +83,34 @@
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Automatizace procesů – Pavla Zimmermannová" }]
     }
   },
+  "/seo-konzultant-usti-nad-labem": {
+    "title": "SEO konzultant Ústí nad Labem – SEO optimalizace pro firmy | Linklady.cz",
+    "description": "SEO konzultant v Ústí nad Labem. SEO optimalizace, lokální SEO, technické SEO a obsahový marketing s měřitelnými výsledky. 10 let zkušeností, konzultace zdarma.",
+    "keywords": ["SEO konzultant Ústí nad Labem", "SEO optimalizace Ústí nad Labem", "SEO Ústí nad Labem", "SEO optimalizace Ústí", "lokální SEO Ústecký kraj", "SEO audit", "technické SEO", "SEO specialistka"],
+    "alternates": {
+      "canonical": "https://linklady.cz/seo-konzultant-usti-nad-labem"
+    },
+    "openGraph": {
+      "title": "SEO konzultant Ústí nad Labem – SEO optimalizace pro firmy",
+      "description": "SEO optimalizace s měřitelnými výsledky pro firmy v Ústí nad Labem a Ústeckém kraji. Konzultace zdarma.",
+      "url": "https://linklady.cz/seo-konzultant-usti-nad-labem",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "SEO konzultant Ústí nad Labem – Pavla Zimmermannová" }]
+    }
+  },
+  "/vibecoding": {
+    "title": "Vibecoding – Co je to, nástroje a školení | Linklady.cz",
+    "description": "Co je vibecoding? Kompletní průvodce programováním pomocí AI. Nejlepší vibecoding nástroje (Claude Code, Cursor, Bolt) a školení vibecoding pro firmy i jednotlivce.",
+    "keywords": ["vibecoding", "co je vibecoding", "vibecoding cz", "vibecoding nástroje", "vibecoding tools", "vibecoding ai", "claude code vibecoding", "vibecoding školení", "vibecoding kurz", "vibe coding", "programování pomocí AI", "AI tvorba aplikací"],
+    "alternates": {
+      "canonical": "https://linklady.cz/vibecoding"
+    },
+    "openGraph": {
+      "title": "Vibecoding – Programování pomocí AI | Školení a nástroje",
+      "description": "Co je vibecoding? Průvodce tvorbou aplikací pomocí AI. Nástroje, tipy a školení vibecoding.",
+      "url": "https://linklady.cz/vibecoding",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Vibecoding – Školení tvorby aplikací pomocí AI" }]
+    }
+  },
   "/kontakt": {
     "title": "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
     "description": "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, AI asistentů nebo automatizace. Online marketing na míru vašim potřebám.",

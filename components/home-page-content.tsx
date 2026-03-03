@@ -98,6 +98,12 @@ export default function HomePageContent() {
                 <p className="text-base opacity-90 leading-relaxed">
                   Víc zákazníků z Googlu i Seznamu. Kompletní SEO od technického auditu přes keyword strategii po lokální viditelnost. Organický růst, který funguje dlouhodobě.
                 </p>
+                <Link
+                  href="/seo-konzultant-usti-nad-labem"
+                  className="inline-block mt-4 text-yellow-400 font-semibold hover:text-yellow-300 transition-colors"
+                >
+                  SEO konzultant Ústí nad Labem →
+                </Link>
               </div>
             </div>
 
@@ -176,6 +182,12 @@ export default function HomePageContent() {
                 <p className="text-base opacity-90 leading-relaxed">
                   AI tam, kde to dává smysl a šetří peníze. Chatboti pro zákaznickou podporu, analýza dat, generování obsahu i monitoring konkurence. Ušetříte desítky hodin měsíčně.
                 </p>
+                <Link
+                  href="/vibecoding"
+                  className="inline-block mt-4 text-yellow-400 font-semibold hover:text-yellow-300 transition-colors"
+                >
+                  Vibecoding – tvorba pomocí AI →
+                </Link>
               </div>
             </div>
 
@@ -340,6 +352,8 @@ export default function HomePageContent() {
                 <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
                 <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400 transition-colors">Tvorba webu Bílina</Link></li>
                 <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400 transition-colors">Automatizace</Link></li>
+                <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400 transition-colors">SEO Ústí nad Labem</Link></li>
+                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400 transition-colors">Vibecoding</Link></li>
               </ul>
             </div>
             
