@@ -199,117 +199,232 @@ export default function VibecodingPage() {
         </div>
       </section>
 
-      {/* Vibecoding nástroje */}
+      {/* Můj hlavní nástroj – Claude Code */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Nejlepší <span className="text-purple-600">vibecoding nástroje</span>
+              Můj vibecoding nástroj: <span className="text-purple-600">Claude Code</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Přehled nástrojů pro vibecoding, které používám a učím na školeních. Každý má své silné stránky.
+              Existují desítky vibecoding nástrojů. Já používám Claude Code od Anthropic – a mám k tomu dobrý důvod.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Claude Code */}
-            <div className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-purple-100 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+
+          <div className="bg-gradient-to-br from-purple-600 to-purple-800 text-white p-10 md:p-14 rounded-3xl shadow-2xl mb-16 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-1/3 h-full yellow-gradient opacity-30 rounded-l-full transform translate-x-1/4"></div>
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-14 h-14 bg-yellow-400 rounded-2xl flex items-center justify-center">
+                    <svg className="w-7 h-7 text-purple-900" fill="currentColor" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold">Claude Code</h3>
+                    <p className="text-yellow-400 font-semibold">od Anthropic – můj hlavní nástroj</p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Claude Code</h3>
+                <p className="text-lg opacity-90 leading-relaxed mb-6">
+                  Claude Code je <strong>profesionální vibecoding nástroj</strong>, který pracuje přímo ve vašem terminálu. Rozumí celému projektu, upravuje desítky souborů najednou, řeší složité problémy a dokáže vytvořit kompletní produkční aplikaci.
+                </p>
+                <p className="text-lg opacity-90 leading-relaxed">
+                  Na rozdíl od webových nástrojů jako Bolt nebo Lovable, Claude Code dává <strong>plnou kontrolu nad kódem</strong>. Výsledek je čistý, profesionální a připravený na produkci. Tento web – linklady.cz – je kompletně vytvořen pomocí Claude Code.
+                </p>
               </div>
-              <p className="text-gray-600 leading-relaxed mb-3">
-                Od Anthropic. Nejsilnější AI pro komplexní programování. Rozumí celému projektu, upravuje více souborů najednou a řeší i složité problémy.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full">Komplexní projekty</span>
-                <span className="bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full">Pro pokročilé</span>
+              <div>
+                <div className="space-y-4">
+                  <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <h4 className="font-bold text-yellow-400 mb-1">Rozumí celému projektu</h4>
+                    <p className="text-sm opacity-80">Vidí všechny soubory, chápe architekturu a dělá změny konzistentně napříč celou aplikací.</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <h4 className="font-bold text-yellow-400 mb-1">Produkční kvalita</h4>
+                    <p className="text-sm opacity-80">Generuje čistý, typově bezpečný kód s SEO, strukturovanými daty a best practices.</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <h4 className="font-bold text-yellow-400 mb-1">Plná kontrola</h4>
+                    <p className="text-sm opacity-80">Kód je váš. Žádný vendor lock-in, žádné limity. Nasadíte kamkoliv – Vercel, vlastní server, cokoliv.</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <h4 className="font-bold text-yellow-400 mb-1">Nejchytřejší AI model</h4>
+                    <p className="text-sm opacity-80">Claude Opus 4 je nejschopnější AI model pro programování. Řeší i problémy, kde jiné nástroje selhávají.</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            {/* Cursor */}
-            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+          {/* Srovnání nástrojů */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Přehled vibecoding <span className="text-purple-600">nástrojů</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Každý nástroj má své místo. Tady je přehled těch nejlepších – seřazený podle toho, pro koho se hodí.
+            </p>
+          </div>
+
+          {/* Pro začátečníky */}
+          <div className="mb-12">
+            <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <span className="bg-green-100 text-green-700 text-sm px-3 py-1 rounded-full">Pro začátečníky</span>
+              Začínáte? Tyhle nástroje nepotřebují žádné technické znalosti
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Bolt.new */}
+              <div className="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-2xl border border-yellow-100 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center">
+                    <svg className="w-6 h-6 text-purple-900" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900">Bolt.new</h4>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Cursor</h3>
+                <p className="text-gray-600 leading-relaxed mb-4 text-sm">
+                  Webový nástroj pro rychlou tvorbu aplikací. Popíšete, co chcete, a Bolt vytvoří funkční web přímo v prohlížeči. Ideální pro prototypy, landing pages a MVP.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Bez instalace, vše v prohlížeči
+                  </div>
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Rychlé výsledky za minuty
+                  </div>
+                  <div className="flex items-start gap-2 text-gray-400">
+                    <span className="font-bold">−</span> Omezená kontrola nad kódem
+                  </div>
+                </div>
               </div>
-              <p className="text-gray-600 leading-relaxed mb-3">
-                AI-powered editor kódu. Ideální pro vývojáře, kteří chtějí zrychlit práci. Autocomplete, chat a editace přímo v editoru.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full">Editor kódu</span>
-                <span className="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full">Pro vývojáře</span>
+
+              {/* Lovable */}
+              <div className="bg-gradient-to-br from-pink-50 to-white p-6 rounded-2xl border border-pink-100 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-pink-500 rounded-xl flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900">Lovable</h4>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-4 text-sm">
+                  AI platforma zaměřená na tvorbu krásných webových aplikací. Skvělý design, Supabase integrace pro databáze a rychlé prototypování s vizuálním výstupem.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Krásný design out-of-the-box
+                  </div>
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Snadná práce s databází
+                  </div>
+                  <div className="flex items-start gap-2 text-gray-400">
+                    <span className="font-bold">−</span> Méně flexibility pro vlastní řešení
+                  </div>
+                </div>
+              </div>
+
+              {/* Replit Agent */}
+              <div className="bg-gradient-to-br from-orange-50 to-white p-6 rounded-2xl border border-orange-100 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900">Replit Agent</h4>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-4 text-sm">
+                  Celé vývojové prostředí v prohlížeči. Popíšete, co chcete, a Agent vytvoří, nasadí a spustí aplikaci. Vše online, včetně hostingu.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Vše v jednom – kód, hosting, databáze
+                  </div>
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Okamžité nasazení
+                  </div>
+                  <div className="flex items-start gap-2 text-gray-400">
+                    <span className="font-bold">−</span> Závislost na platformě
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            {/* Bolt.new */}
-            <div className="bg-gradient-to-br from-yellow-50 to-white p-8 rounded-2xl border border-yellow-100 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 text-purple-900" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+          {/* Pro pokročilé */}
+          <div>
+            <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <span className="bg-purple-100 text-purple-700 text-sm px-3 py-1 rounded-full">Pro pokročilé</span>
+              Chcete plnou kontrolu? Profesionální nástroje pro seriózní projekty
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Claude Code */}
+              <div className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition-shadow duration-300 relative">
+                <div className="absolute -top-3 right-4">
+                  <span className="bg-yellow-400 text-purple-900 text-xs font-bold px-3 py-1 rounded-full">Doporučuji</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Bolt.new</h3>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900">Claude Code</h4>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-4 text-sm">
+                  Profesionální CLI nástroj od Anthropic. Pracuje v terminálu, rozumí celému projektu a generuje produkční kód. Můj hlavní nástroj – tímhle jsem vytvořila linklady.cz.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Nejchytřejší AI pro kódování
+                  </div>
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Plná kontrola, žádný lock-in
+                  </div>
+                  <div className="flex items-start gap-2 text-gray-400">
+                    <span className="font-bold">−</span> Vyžaduje terminál (CLI)
+                  </div>
+                </div>
               </div>
-              <p className="text-gray-600 leading-relaxed mb-3">
-                Webový nástroj pro rychlou tvorbu aplikací. Popíšete, co chcete, a Bolt vytvoří funkční web v prohlížeči. Ideální pro prototypy a MVP.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-yellow-100 text-yellow-700 text-xs px-2 py-1 rounded-full">Bez instalace</span>
-                <span className="bg-yellow-100 text-yellow-700 text-xs px-2 py-1 rounded-full">Pro začátečníky</span>
-              </div>
-            </div>
 
-            {/* Lovable */}
-            <div className="bg-gradient-to-br from-pink-50 to-white p-8 rounded-2xl border border-pink-100 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-pink-500 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              {/* Cursor */}
+              <div className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl border border-blue-100 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900">Cursor</h4>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Lovable</h3>
+                <p className="text-gray-600 leading-relaxed mb-4 text-sm">
+                  AI-powered editor kódu postavený na VS Code. Autocomplete, inline chat, editace celých souborů. Skvělý pro vývojáře, kteří chtějí AI přímo v editoru.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Známé prostředí (VS Code)
+                  </div>
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Inline editace a autocomplete
+                  </div>
+                  <div className="flex items-start gap-2 text-gray-400">
+                    <span className="font-bold">−</span> Placený (po free trialu)
+                  </div>
+                </div>
               </div>
-              <p className="text-gray-600 leading-relaxed mb-3">
-                AI platforma zaměřená na tvorbu krásných webových aplikací. Skvělý design, komponenty a rychlé prototypování.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Design-first</span>
-                <span className="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Webové aplikace</span>
-              </div>
-            </div>
 
-            {/* Windsurf */}
-            <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl border border-green-100 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.38 8.57l-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44zm-9.79 6.84a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83z"/></svg>
+              {/* Windsurf */}
+              <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl border border-green-100 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.38 8.57l-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44zm-9.79 6.84a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83z"/></svg>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900">Windsurf</h4>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Windsurf</h3>
-              </div>
-              <p className="text-gray-600 leading-relaxed mb-3">
-                AI editor od Codeium. Kombinuje chat s editací kódu. Flows funkce umožňuje AI autonomně provádět změny napříč projektem.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">AI editor</span>
-                <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">Autonomní</span>
-              </div>
-            </div>
-
-            {/* Replit Agent */}
-            <div className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl border border-orange-100 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+                <p className="text-gray-600 leading-relaxed mb-4 text-sm">
+                  AI editor od Codeium. Flows funkce umožňuje AI autonomně provádět rozsáhlé změny napříč projektem. Dobrá alternativa ke Cursoru.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Autonomní editace celých projektů
+                  </div>
+                  <div className="flex items-start gap-2 text-green-700">
+                    <span className="font-bold">+</span> Štědrý free tier
+                  </div>
+                  <div className="flex items-start gap-2 text-gray-400">
+                    <span className="font-bold">−</span> Menší komunita než Cursor
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Replit Agent</h3>
-              </div>
-              <p className="text-gray-600 leading-relaxed mb-3">
-                Celé vývojové prostředí v prohlížeči. Popíšete, co chcete, a Agent vytvoří, nasadí a spustí aplikaci. Vše online, bez instalace.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-orange-100 text-orange-700 text-xs px-2 py-1 rounded-full">V prohlížeči</span>
-                <span className="bg-orange-100 text-orange-700 text-xs px-2 py-1 rounded-full">Vše v jednom</span>
               </div>
             </div>
           </div>
