@@ -99,14 +99,14 @@
   },
   "/vibecoding": {
     "title": "Vibecoding – Co je to, nástroje a školení | Linklady.cz",
-    "description": "Co je vibecoding? Kompletní průvodce programováním pomocí AI. Nejlepší vibecoding nástroje (Claude Code, Cursor, Bolt) a školení vibecoding pro firmy i jednotlivce.",
+    "description": "Co je vibecoding? Kompletní průvodce programováním pomocí AI. Nejlepší vibecoding nástroje (Claude Code, Cursor, Bolt) a školení vibecodingu pro firmy i jednotlivce.",
     "keywords": ["vibecoding", "co je vibecoding", "vibecoding cz", "vibecoding nástroje", "vibecoding tools", "vibecoding ai", "claude code vibecoding", "vibecoding školení", "vibecoding kurz", "vibe coding", "programování pomocí AI", "AI tvorba aplikací"],
     "alternates": {
       "canonical": "https://linklady.cz/vibecoding"
     },
     "openGraph": {
       "title": "Vibecoding – Programování pomocí AI | Školení a nástroje",
-      "description": "Co je vibecoding? Průvodce tvorbou aplikací pomocí AI. Nástroje, tipy a školení vibecoding.",
+      "description": "Co je vibecoding? Průvodce tvorbou aplikací pomocí AI. Nástroje, tipy a školení vibecodingu.",
       "url": "https://linklady.cz/vibecoding",
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Vibecoding – Školení tvorby aplikací pomocí AI" }]
     }

@@ -250,9 +250,9 @@ export default function TvorbaWebuBilinaPage() {
                   <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">SEO od základu</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3"><Link href="/seo-konzultant-usti-nad-labem" className="hover:text-primary">SEO od základu</Link></h3>
               <p className="text-gray-600 leading-relaxed">
-                Každý web stavím s myšlenkou na SEO. Správná struktura, rychlost načítání, meta tagy, strukturovaná data – vše pro lepší pozice ve vyhledávačích.
+                Každý web stavím s myšlenkou na <Link href="/seo-konzultant-usti-nad-labem" className="text-primary font-semibold hover:underline">SEO</Link>. Správná struktura, rychlost načítání, meta tagy, strukturovaná data – vše pro lepší pozice ve vyhledávačích.
               </p>
             </div>
 
@@ -391,7 +391,7 @@ export default function TvorbaWebuBilinaPage() {
             Chcete web, který vám přivede zákazníky?
           </h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-            Napište mi a do 24 hodin se ozvum. Probereme váš projekt a navrhnu řešení na míru – zdarma a nezávazně.
+            Napište mi a do 24 hodin se ozvu. Probereme váš projekt a navrhnu řešení na míru – zdarma a nezávazně.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -574,7 +574,7 @@ export default function TvorbaWebuBilinaPage() {
                 Zahrnuje tvorba webu i SEO optimalizaci?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Ano. SEO je součástí každého webu, který vytvořím. Optimalizuji rychlost načítání, strukturu URL, meta tagy, nadpisy, obrázky i strukturovaná data. Web bude připravený na to, aby ho Google indexoval a zobrazoval ve výsledcích vyhledávání.
+                Ano. <Link href="/seo-konzultant-usti-nad-labem" className="text-primary font-semibold hover:underline">SEO</Link> je součástí každého webu, který vytvořím. Optimalizuji rychlost načítání, strukturu URL, meta tagy, nadpisy, obrázky i strukturovaná data. Web bude připravený na to, aby ho Google indexoval a zobrazoval ve výsledcích vyhledávání.
               </p>
             </div>
 
@@ -661,6 +661,10 @@ export default function TvorbaWebuBilinaPage() {
               <ul className="space-y-3">
                 <li><Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">Úvod</Link></li>
                 <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400 transition-colors">O mně</Link></li>
+                <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400 transition-colors">SEO Ústí nad Labem</Link></li>
+                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400 transition-colors">Automatizace</Link></li>
+                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400 transition-colors">Vibecoding</Link></li>
+                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400 transition-colors">E-book</Link></li>
                 <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Blog</Link></li>
                 <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
               </ul>

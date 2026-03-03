@@ -135,7 +135,7 @@ const jsonLd = {
           name: "Děláte SEO i pro firmy mimo Ústí nad Labem?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Ano. Sídlím v Bílině a pracuji s klienty z celého Ústeckého kraje – Teplice, Most, Děčín, Litoměřice, Chomutov i dalších měst. Většinu práce řeším online, ale rád se setkám i osobně.",
+            text: "Ano. Sídlím v Bílině a pracuji s klienty z celého Ústeckého kraje – Teplice, Most, Děčín, Litoměřice, Chomutov i dalších měst. Většinu práce řeším online, ale ráda se setkám i osobně.",
           },
         },
         {
@@ -727,7 +727,7 @@ export default function SeoKonzultantUstiPage() {
               Pojďme váš web dostat na první stránku
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto leading-relaxed mb-4">
-              Napište mi a do 24 hodin se ozvum. Probereme váš web a navrhnu SEO strategii na míru – zdarma a nezávazně.
+              Napište mi a do 24 hodin se ozvu. Probereme váš web a navrhnu SEO strategii na míru – zdarma a nezávazně.
             </p>
             <p className="text-lg opacity-80 mb-10">
               Odpovídám do 24 hodin. Konzultace je zdarma.
@@ -771,7 +771,7 @@ export default function SeoKonzultantUstiPage() {
             <div>
               <h3 className="text-2xl font-bold mb-6 text-yellow-400">Linklady.cz</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                SEO optimalizace, tvorba webů a AI automatizace.
+                SEO optimalizace, <Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400">tvorba webů</Link> a <Link href="/automatizace" className="text-gray-300 hover:text-yellow-400">AI automatizace</Link>.
                 SEO konzultant pro firmy v Ústí nad Labem a Ústeckém kraji.
               </p>
               <div className="flex space-x-4">
@@ -791,6 +791,8 @@ export default function SeoKonzultantUstiPage() {
                 <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400 transition-colors">O mně</Link></li>
                 <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400 transition-colors">Tvorba webů</Link></li>
                 <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400 transition-colors">Automatizace</Link></li>
+                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400 transition-colors">Vibecoding</Link></li>
+                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400 transition-colors">E-book</Link></li>
                 <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Blog</Link></li>
                 <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
               </ul>

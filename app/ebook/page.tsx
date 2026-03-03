@@ -411,8 +411,11 @@ export default function EbookPage() {
               Přestaňte hádat,<br />
               <span className="text-yellow-600">začněte promptovat</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-4">
               Investice do dovednosti, která vám ušetří desítky hodin měsíčně.
+            </p>
+            <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed mb-10">
+              Chcete jít ještě dál? Podívejte se na <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link> – tvorbu aplikací pomocí AI.
             </p>
             {/* TODO: Replace href with actual sales link */}
             <a
@@ -450,7 +453,10 @@ export default function EbookPage() {
               <ul className="space-y-3">
                 <li><Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">Úvod</Link></li>
                 <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400 transition-colors">O mně</Link></li>
-                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400 transition-colors">E-book</Link></li>
+                <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400 transition-colors">SEO Ústí nad Labem</Link></li>
+                <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400 transition-colors">Tvorba webů</Link></li>
+                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400 transition-colors">Automatizace</Link></li>
+                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400 transition-colors">Vibecoding</Link></li>
                 <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Blog</Link></li>
                 <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
               </ul>

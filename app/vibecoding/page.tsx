@@ -14,7 +14,7 @@ const jsonLd = {
       "@id": "https://linklady.cz/vibecoding/#webpage",
       url: "https://linklady.cz/vibecoding",
       name: "Vibecoding – Co je to a jak s ním začít | Linklady.cz",
-      description: "Vibecoding je nový způsob tvorby softwaru pomocí AI. Místo psaní kódu říkáte AI, co chcete – a ona to naprogramuje za vás. Školení vibecoding pro firmy i jednotlivce.",
+      description: "Vibecoding je nový způsob tvorby softwaru pomocí AI. Místo psaní kódu říkáte AI, co chcete – a ona to naprogramuje za vás. Školení vibecodingu pro firmy i jednotlivce.",
       isPartOf: { "@id": "https://linklady.cz/#website" },
       about: {
         "@type": "Thing",
@@ -26,8 +26,8 @@ const jsonLd = {
     {
       "@type": "Course",
       "@id": "https://linklady.cz/vibecoding/#course",
-      name: "Školení vibecoding – Tvorba aplikací pomocí AI",
-      description: "Praktické školení vibecoding pro firmy a jednotlivce. Naučte se vytvářet weby, aplikace a automatizace pomocí AI nástrojů jako Claude Code, Cursor, Bolt a dalších.",
+      name: "Školení vibecodingu – Tvorba aplikací pomocí AI",
+      description: "Praktické školení vibecodingu pro firmy a jednotlivce. Naučte se vytvářet weby, aplikace a automatizace pomocí AI nástrojů jako Claude Code, Cursor, Bolt a dalších.",
       provider: { "@id": "https://linklady.cz/#business" },
       educationalLevel: "Beginner to Intermediate",
       teaches: "Vytváření aplikací pomocí AI nástrojů (vibecoding)",
@@ -35,7 +35,7 @@ const jsonLd = {
       offers: {
         "@type": "Offer",
         availability: "https://schema.org/InStock",
-        description: "Individuální i skupinové školení vibecoding",
+        description: "Individuální i skupinové školení vibecodingu",
         areaServed: {
           "@type": "Country",
           name: "Česká republika",
@@ -83,23 +83,23 @@ const jsonLd = {
           name: "Musím umět programovat, abych mohl dělat vibecoding?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Ne, to je hlavní výhoda vibecoding. Stačí umět popsat, co chcete vytvořit. Základní znalost webových technologií (HTML, CSS) je výhodou, ale není nutná. Na školení vás naučím pracovat s AI nástroji bez předchozích zkušeností s programováním.",
+            text: "Ne, to je hlavní výhoda vibecodingu. Stačí umět popsat, co chcete vytvořit. Základní znalost webových technologií (HTML, CSS) je výhodou, ale není nutná. Na školení vás naučím pracovat s AI nástroji bez předchozích zkušeností s programováním.",
           },
         },
         {
           "@type": "Question",
-          name: "Co se dá vytvořit pomocí vibecoding?",
+          name: "Co se dá vytvořit pomocí vibecodingu?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Pomocí vibecoding lze vytvořit webové stránky, webové aplikace, landing pages, interní firemní nástroje, automatizace, chatboty, dashboardy i jednoduché mobilní aplikace. Limity se posouvají každý měsíc – AI nástroje se zlepšují extrémně rychle.",
+            text: "Pomocí vibecodingu lze vytvořit webové stránky, webové aplikace, landing pages, interní firemní nástroje, automatizace, chatboty, dashboardy i jednoduché mobilní aplikace. Limity se posouvají každý měsíc – AI nástroje se zlepšují extrémně rychle.",
           },
         },
         {
           "@type": "Question",
-          name: "Nabízíte školení vibecoding?",
+          name: "Nabízíte školení vibecodingu?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Ano, nabízím individuální i skupinová školení vibecoding pro firmy i jednotlivce. Školení probíhá online nebo osobně. Naučíte se pracovat s nejlepšími AI nástroji, správně promptovat a vytvářet funkční aplikace. Kontaktujte mě pro více informací.",
+            text: "Ano, nabízím individuální i skupinová školení vibecodingu pro firmy i jednotlivce. Školení probíhá online nebo osobně. Naučíte se pracovat s nejlepšími AI nástroji, správně promptovat a vytvářet funkční aplikace. Kontaktujte mě pro více informací.",
           },
         },
       ],
@@ -135,14 +135,14 @@ export default function VibecodingPage() {
               Nový způsob tvorby webů a aplikací. Místo psaní kódu říkáte AI, co chcete – a ona to naprogramuje za vás.
             </p>
             <p className="text-lg mb-10 opacity-80 leading-relaxed">
-              Školení vibecoding pro firmy i jednotlivce. Naučte se vytvářet funkční aplikace bez jediného řádku kódu.
+              Školení vibecodingu pro firmy i jednotlivce. Naučte se vytvářet funkční aplikace bez jediného řádku kódu.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <Link
                 href="/kontakt"
                 className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
               >
-                Chci školení vibecoding
+                Chci školení vibecodingu
               </Link>
               <a
                 href="#co-je-vibecoding"
@@ -547,7 +547,7 @@ export default function VibecodingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Co se dá vytvořit <span className="text-purple-600">vibecoding</span>
+              Co se dá vytvořit <span className="text-purple-600">vibecodingem</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Vibecoding není jen hračka. Lidi s ním tvoří reálné produkty, které vydělávají peníze.
@@ -584,9 +584,9 @@ export default function VibecodingPage() {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Automatizace</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3"><Link href="/automatizace" className="hover:text-primary">Automatizace</Link></h3>
               <p className="text-gray-600 leading-relaxed">
-                Automatické skripty, API integrace, datové pipeline, chatboty. Propojení systémů, které vám ušetří hodiny rutinní práce.
+                Automatické skripty, API integrace, datové pipeline, chatboty. Propojení systémů, které vám ušetří hodiny rutinní práce. <Link href="/automatizace" className="text-primary font-semibold hover:underline">Více o automatizaci →</Link>
               </p>
             </div>
 
@@ -629,12 +629,12 @@ export default function VibecodingPage() {
         </div>
       </section>
 
-      {/* Školení vibecoding */}
+      {/* Školení vibecodingu */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Školení <span className="text-purple-600">vibecoding</span>
+              Školení <span className="text-purple-600">vibecodingu</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Naučte se vytvářet weby a aplikace pomocí AI. Praktické školení s reálnými projekty – ne jen teorie.
@@ -729,7 +729,7 @@ export default function VibecodingPage() {
               href="/kontakt"
               className="inline-block bg-yellow-400 text-purple-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl text-center"
             >
-              Začít s vibecoding
+              Začít s vibecodingem
             </Link>
             <Link
               href="/ebook"
@@ -745,7 +745,7 @@ export default function VibecodingPage() {
       <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            Časté otázky o vibecoding
+            Časté otázky o vibecodingu
           </h2>
 
           <div className="space-y-6">
@@ -772,25 +772,25 @@ export default function VibecodingPage() {
                 Musím umět programovat, abych mohl dělat vibecoding?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Ne, to je hlavní výhoda vibecoding. Stačí umět popsat, co chcete vytvořit. Základní znalost webových technologií je výhodou, ale není nutná. Na školení vás naučím pracovat s AI nástroji bez předchozích zkušeností s programováním.
+                Ne, to je hlavní výhoda vibecodingu. Stačí umět popsat, co chcete vytvořit. Základní znalost webových technologií je výhodou, ale není nutná. Na školení vás naučím pracovat s AI nástroji bez předchozích zkušeností s programováním.
               </p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-2xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Co se dá vytvořit pomocí vibecoding?
+                Co se dá vytvořit pomocí vibecodingu?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Pomocí vibecoding lze vytvořit webové stránky, webové aplikace, landing pages, interní firemní nástroje, automatizace, chatboty, dashboardy i jednoduché mobilní aplikace. Limity se posouvají každý měsíc – AI nástroje se zlepšují extrémně rychle.
+                Pomocí vibecodingu lze vytvořit webové stránky, webové aplikace, landing pages, interní firemní nástroje, automatizace, chatboty, dashboardy i jednoduché mobilní aplikace. Limity se posouvají každý měsíc – AI nástroje se zlepšují extrémně rychle.
               </p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-2xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Nabízíte školení vibecoding?
+                Nabízíte školení vibecodingu?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Ano, nabízím individuální i skupinová školení vibecoding pro firmy i jednotlivce. Školení probíhá online nebo osobně. Naučíte se pracovat s nejlepšími AI nástroji, správně promptovat a vytvářet funkční aplikace. Kontaktujte mě pro více informací.
+                Ano, nabízím individuální i skupinová školení vibecodingu pro firmy i jednotlivce. Školení probíhá online nebo osobně. Naučíte se pracovat s nejlepšími AI nástroji, správně promptovat a vytvářet funkční aplikace. Kontaktujte mě pro více informací.
               </p>
             </div>
           </div>
@@ -803,7 +803,7 @@ export default function VibecodingPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Začněte s vibecoding ještě dnes
+              Začněte s vibecodingem ještě dnes
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto leading-relaxed mb-4">
               Napište mi a domluvíme se na školení. Ukážu vám, jak vytvořit první projekt pomocí AI – rychle, prakticky a bez zbytečné teorie.
@@ -816,7 +816,7 @@ export default function VibecodingPage() {
                 href="/kontakt"
                 className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
               >
-                Chci školení vibecoding
+                Chci školení vibecodingu
               </Link>
               <a
                 href="mailto:zimmermannovap@gmail.com"
@@ -855,7 +855,9 @@ export default function VibecodingPage() {
                 <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400 transition-colors">O mně</Link></li>
                 <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400 transition-colors">SEO Ústí nad Labem</Link></li>
                 <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400 transition-colors">Tvorba webů</Link></li>
+                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400 transition-colors">Automatizace</Link></li>
                 <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400 transition-colors">E-book</Link></li>
+                <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Blog</Link></li>
                 <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
               </ul>
             </div>

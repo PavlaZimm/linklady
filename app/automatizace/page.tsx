@@ -307,7 +307,7 @@ export default function AutomatizacePage() {
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Právě tady přichází ke slovu <strong>AI automatizace</strong>. Propojením automatizačních nástrojů s umělou inteligencí vznikají scénáře, které by ještě před pár lety zněly jako sci-fi:
+            Právě tady přichází ke slovu <strong>AI automatizace</strong>. Propojením automatizačních nástrojů s <Link href="/vibecoding" className="text-primary font-semibold hover:underline">umělou inteligencí</Link> vznikají scénáře, které by ještě před pár lety zněly jako sci-fi:
           </p>
 
           <ul className="space-y-4 mb-8">
@@ -330,7 +330,7 @@ export default function AutomatizacePage() {
           </ul>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            V praxi to vypadá tak, že v <a href="https://www.make.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Make.com</a> napojíte modul s AI (třeba ChatGPT nebo Claude) do svého automatizačního scénáře. Funguje to překvapivě jednoduše a výsledky jsou často lepší, než byste čekali.
+            V praxi to vypadá tak, že v <a href="https://www.make.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Make.com</a> napojíte modul s AI (třeba ChatGPT nebo Claude) do svého automatizačního scénáře. Funguje to překvapivě jednoduše a výsledky jsou často lepší, než byste čekali. Chcete se naučit s AI pracovat efektivněji? Podívejte se na můj <Link href="/ebook" className="text-primary font-semibold hover:underline">e-book o promptování AI</Link>.
           </p>
 
           {/* Section: Bez programování */}
@@ -421,7 +421,7 @@ export default function AutomatizacePage() {
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Freelanceri a OSVČ</strong> – automatizace fakturace, follow-upů, plánování</span>
+              <span className="text-gray-700"><strong className="text-gray-900">Freelanceři a OSVČ</strong> – automatizace fakturace, follow-upů, plánování</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
@@ -487,14 +487,15 @@ export default function AutomatizacePage() {
               <Link href="/" className="text-lg font-semibold hover:text-yellow-400">
                 Domů
               </Link>
-              <div className="flex space-x-4 mt-4">
-                <a href="https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                  <span className="sr-only">LinkedIn</span>
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                </a>
-              </div>
+              <ul className="mt-4 space-y-2 text-sm">
+                <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400">O mně</Link></li>
+                <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400">SEO Ústí nad Labem</Link></li>
+                <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400">Tvorba webů</Link></li>
+                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400">Vibecoding</Link></li>
+                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400">E-book</Link></li>
+                <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400">Blog</Link></li>
+                <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400">Kontakt</Link></li>
+              </ul>
             </div>
 
             <div className="bg-primary p-6 rounded-lg">
