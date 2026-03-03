@@ -55,6 +55,43 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Pro jaké AI nástroje jsou prompty v e-booku?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Principy fungují univerzálně – pro ChatGPT, Claude, Gemini i další. E-book se zaměřuje na techniky, které platí napříč nástroji.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Potřebuji nějaké technické znalosti?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ne. E-book je psaný srozumitelně a je určený pro každého, kdo chce s AI pracovat efektivněji. Žádné programování ani technické zázemí nepotřebujete.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "V jakém formátu e-book dostanu?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "E-book je ve formátu PDF, který si přečtete na počítači, tabletu i mobilu. Po zaplacení ho dostanete okamžitě ke stažení.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Můžu se na něco zeptat po přečtení?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Samozřejmě! Napište mi na zimmermannovap@gmail.com a ráda poradím.",
+          },
+        },
+      ],
+    },
   ],
 }
 
