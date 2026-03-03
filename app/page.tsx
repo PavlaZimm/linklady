@@ -13,8 +13,8 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://linklady.cz/#webpage",
       url: "https://linklady.cz",
-      name: "Linklady.cz – SEO, PPC a AI automatizace | Pavla Zimmermannová",
-      description: "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky, ne prázdné sliby.",
+      name: "Linklady.cz – SEO a AI automatizace | Pavla Zimmermannová",
+      description: "Vaše firma na prvních místech. SEO strategie a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky, ne prázdné sliby.",
       isPartOf: { "@id": "https://linklady.cz/#website" },
       about: { "@id": "https://linklady.cz/#business" },
       inLanguage: "cs",
@@ -38,8 +38,8 @@ const jsonLd = {
         {
           "@type": "ListItem",
           position: 1,
-          name: "SEO & PPC",
-          description: "Kompletní SEO od technického auditu přes keyword strategii po lokální viditelnost. PPC kampaně v Google Ads a Skliku.",
+          name: "SEO",
+          description: "Kompletní SEO od technického auditu přes keyword strategii po lokální viditelnost.",
         },
         {
           "@type": "ListItem",

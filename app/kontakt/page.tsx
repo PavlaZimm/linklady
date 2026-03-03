@@ -14,7 +14,7 @@ const jsonLd = {
       "@id": "https://linklady.cz/kontakt/#webpage",
       url: "https://linklady.cz/kontakt",
       name: "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
-      description: "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace.",
+      description: "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, AI asistentů nebo automatizace.",
       isPartOf: { "@id": "https://linklady.cz/#website" },
       inLanguage: "cs",
     },
@@ -72,10 +72,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Kolik stojí PPC kampaň?",
+          name: "Co všechno se dá automatizovat?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Cena závisí na rozpočtu, který chcete investovat do reklam, plus poplatek za správu. Minimální doporučený rozpočet je 10 000 Kč měsíčně pro efektivní kampaň.",
+            text: "Automatizovat se dá téměř cokoliv – od e-mailových sekvencí, přes CRM a fakturaci, až po publikování na sociální sítě. Používám nástroje jako Make.com, n8n nebo Zapier.",
           },
         },
         {
@@ -175,7 +175,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Specializace</h3>
               <p className="text-gray-600">
-                SEO, PPC, AI nástroje<br />
+                SEO, AI nástroje<br />
                 a automatizace
               </p>
             </div>
@@ -203,11 +203,11 @@ export default function ContactPage() {
             
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Kolik stojí PPC kampaň?
+                Co všechno se dá automatizovat?
               </h3>
               <p className="text-gray-600">
-                Cena závisí na rozpočtu, který chcete investovat do reklam, plus poplatek za správu. 
-                Minimální doporučený rozpočet je 10 000 Kč měsíčně pro efektivní kampaň.
+                Automatizovat se dá téměř cokoliv – od e-mailových sekvencí, přes CRM a fakturaci,
+                až po publikování na sociální sítě. Používám nástroje jako Make.com, n8n nebo Zapier.
               </p>
             </div>
             

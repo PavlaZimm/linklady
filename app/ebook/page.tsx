@@ -432,7 +432,7 @@ export default function EbookPage() {
             <div>
               <h3 className="text-2xl font-bold mb-6 text-yellow-400">Linklady.cz</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Online marketing, SEO, PPC kampaně a AI automatizace.
+                Online marketing, SEO a AI automatizace.
                 Měřitelné výsledky pro firmy, které chtějí růst.
               </p>
               <div className="flex space-x-4">

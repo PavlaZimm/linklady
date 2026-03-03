@@ -25,17 +25,14 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://linklady.cz"),
   title: {
-    default: "Linklady.cz | SEO, PPC a AI automatizace – Pavla Zimmermannová",
+    default: "Linklady.cz | SEO a AI automatizace – Pavla Zimmermannová",
     template: "%s | Linklady.cz",
   },
-  description: "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky pro váš byznys.",
+  description: "Vaše firma na prvních místech. SEO strategie a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky pro váš byznys.",
   keywords: [
     "online marketing",
     "SEO",
     "SEO specialistka",
-    "PPC",
-    "Google Ads",
-    "Sklik",
     "AI agenti",
     "automatizace marketingu",
     "lokální SEO",
@@ -55,8 +52,8 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: "https://linklady.cz",
     siteName: "Linklady.cz",
-    title: "Linklady.cz | SEO, PPC a AI automatizace",
-    description: "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
+    title: "Linklady.cz | SEO a AI automatizace",
+    description: "Vaše firma na prvních místech. SEO strategie a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
     images: [
       {
         url: "/profile.jpg",
@@ -68,8 +65,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Linklady.cz | SEO, PPC a AI automatizace",
-    description: "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
+    title: "Linklady.cz | SEO a AI automatizace",
+    description: "Vaše firma na prvních místech. SEO strategie a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
     images: ["/profile.jpg"],
   },
   robots: {
@@ -97,7 +94,7 @@ const jsonLd = {
       "@id": "https://linklady.cz/#website",
       url: "https://linklady.cz",
       name: "Linklady.cz",
-      description: "Online marketing, SEO, PPC a automatizace",
+      description: "Online marketing, SEO a automatizace",
       publisher: { "@id": "https://linklady.cz/#person" },
       inLanguage: "cs",
     },
@@ -108,19 +105,17 @@ const jsonLd = {
       url: "https://linklady.cz",
       image: "https://linklady.cz/profile.jpg",
       jobTitle: "Online marketing specialistka",
-      description: "Specialistka na SEO, PPC kampaně, AI asistenty a automatizaci marketingu od roku 2015.",
+      description: "Specialistka na SEO, AI asistenty a automatizaci marketingu od roku 2015.",
       sameAs: [
         "https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/",
       ],
       knowsAbout: [
         "SEO",
-        "PPC",
-        "Google Ads",
-        "Sklik",
         "AI agenti",
         "automatizace marketingu",
         "content marketing",
         "lokální SEO",
+        "tvorba webů",
       ],
     },
     {
@@ -130,7 +125,7 @@ const jsonLd = {
       url: "https://linklady.cz",
       logo: "https://linklady.cz/logo.svg",
       image: "https://linklady.cz/profile.jpg",
-      description: "Online marketing služby – SEO, PPC kampaně, AI asistenti a automatizace.",
+      description: "Online marketing služby – SEO, AI asistenti a automatizace.",
       email: "zimmermannovap@gmail.com",
       founder: { "@id": "https://linklady.cz/#person" },
       taxID: "04352041",
@@ -148,9 +143,9 @@ const jsonLd = {
         name: "Online marketing služby",
         itemListElement: [
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO optimalizace" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "PPC kampaně" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI asistenti" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Automatizace marketingu" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tvorba webových stránek" } },
         ],
       },
       sameAs: [

@@ -1,42 +1,42 @@
 {
   "/": {
-    "title": "Linklady.cz – SEO, PPC a AI automatizace | Pavla Zimmermannová",
-    "description": "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky, ne prázdné sliby.",
-    "keywords": ["online marketing", "SEO", "PPC", "AI agenti", "automatizace", "Pavla Zimmermannová", "linklady", "Google Ads", "Sklik"],
+    "title": "Linklady.cz – SEO a AI automatizace | Pavla Zimmermannová",
+    "description": "Vaše firma na prvních místech. SEO strategie a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky, ne prázdné sliby.",
+    "keywords": ["online marketing", "SEO", "AI agenti", "automatizace", "Pavla Zimmermannová", "linklady"],
     "alternates": {
       "canonical": "https://linklady.cz"
     },
     "openGraph": {
-      "title": "Linklady.cz – SEO, PPC a AI automatizace",
-      "description": "Vaše firma na prvních místech. SEO strategie, PPC kampaně a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
+      "title": "Linklady.cz – SEO a AI automatizace",
+      "description": "Vaše firma na prvních místech. SEO strategie a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
       "url": "https://linklady.cz",
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Pavla Zimmermannová – online marketing" }]
     }
   },
   "/o-mne": {
     "title": "O mně – Pavla Zimmermannová | Online marketing specialistka",
-    "description": "Online marketingu se věnuji od roku 2015. Specializuji se na SEO, PPC reklamu, content marketing, AI nástroje a technické úpravy webů. Zjistěte více o mých zkušenostech.",
-    "keywords": ["Pavla Zimmermannová", "online marketing specialistka", "SEO specialistka", "PPC specialistka", "Czechitas"],
+    "description": "Online marketingu se věnuji od roku 2015. Specializuji se na SEO, content marketing, AI nástroje, automatizaci a technické úpravy webů. Zjistěte více o mých zkušenostech.",
+    "keywords": ["Pavla Zimmermannová", "online marketing specialistka", "SEO specialistka", "AI automatizace", "Czechitas"],
     "alternates": {
       "canonical": "https://linklady.cz/o-mne"
     },
     "openGraph": {
       "title": "O mně – Pavla Zimmermannová",
-      "description": "Online marketing specialistka od roku 2015. SEO, PPC, content marketing a AI nástroje.",
+      "description": "Online marketing specialistka od roku 2015. SEO, content marketing, AI nástroje a automatizace.",
       "url": "https://linklady.cz/o-mne",
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Pavla Zimmermannová" }]
     }
   },
   "/blog": {
     "title": "Blog – Marketing tipy, SEO trendy a AI nástroje",
-    "description": "Aktuální články o SEO strategiích, PPC reklamě, automatizaci a AI nástrojích pro online marketing. Praktické tipy pro růst vašeho byznysu.",
-    "keywords": ["SEO blog", "marketing tipy", "PPC reklama", "AI nástroje", "automatizace marketingu", "online marketing trendy"],
+    "description": "Aktuální články o SEO strategiích, automatizaci a AI nástrojích pro online marketing. Praktické tipy pro růst vašeho byznysu.",
+    "keywords": ["SEO blog", "marketing tipy", "AI nástroje", "automatizace marketingu", "online marketing trendy"],
     "alternates": {
       "canonical": "https://linklady.cz/blog"
     },
     "openGraph": {
       "title": "Blog – Marketing tipy a trendy | Linklady.cz",
-      "description": "SEO strategie, PPC kampaně, AI nástroje a automatizace. Praktické tipy z online marketingu.",
+      "description": "SEO strategie, AI nástroje a automatizace. Praktické tipy z online marketingu.",
       "url": "https://linklady.cz/blog",
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Linklady.cz Blog" }]
     }
@@ -85,14 +85,14 @@
   },
   "/kontakt": {
     "title": "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
-    "description": "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace. Online marketing na míru vašim potřebám.",
+    "description": "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, AI asistentů nebo automatizace. Online marketing na míru vašim potřebám.",
     "keywords": ["kontakt", "konzultace SEO", "konzultace online marketing", "Pavla Zimmermannová kontakt"],
     "alternates": {
       "canonical": "https://linklady.cz/kontakt"
     },
     "openGraph": {
       "title": "Kontakt – Linklady.cz",
-      "description": "Kontaktujte mě pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace.",
+      "description": "Kontaktujte mě pro konzultaci ohledně SEO, AI asistentů nebo automatizace.",
       "url": "https://linklady.cz/kontakt",
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Kontakt – Linklady.cz" }]
     }

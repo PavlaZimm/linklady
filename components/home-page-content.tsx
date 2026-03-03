@@ -38,7 +38,7 @@ export default function HomePageContent() {
                 <span className="text-yellow-400">prvních místech</span>
               </h1>
               <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
-                SEO strategie, PPC kampaně, AI automatizace
+                SEO strategie a AI automatizace
               </p>
               <p className="text-lg mb-10 opacity-80 leading-relaxed">
                 10 let zkušeností v online marketingu. Měřitelné výsledky, ne prázdné sliby.
@@ -77,12 +77,12 @@ export default function HomePageContent() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* SEO & PPC */}
+            {/* SEO */}
             <div className="group service-card text-white p-8 rounded-2xl fade-in-up relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                  alt="SEO a PPC analýza dat"
+                  alt="SEO analýza dat"
                   fill
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -94,9 +94,9 @@ export default function HomePageContent() {
                     <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-6">SEO & PPC</h3>
+                <h3 className="text-2xl font-bold mb-6">SEO</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Víc zákazníků z Googlu i Seznamu. Kompletní SEO od technického auditu přes keyword strategii po lokální viditelnost. PPC kampaně v Google Ads a Skliku stavím tak, aby každá koruna přinesla maximum.
+                  Víc zákazníků z Googlu i Seznamu. Kompletní SEO od technického auditu přes keyword strategii po lokální viditelnost. Organický růst, který funguje dlouhodobě.
                 </p>
               </div>
             </div>
@@ -260,7 +260,7 @@ export default function HomePageContent() {
               <div className="prose prose-lg text-gray-600 space-y-6">
                 <p className="text-xl leading-relaxed">
                   V online marketingu působím od roku <strong className="text-purple-600">2015</strong>.
-                  Za tu dobu jsem prošla tvorbou webů, <strong className="text-purple-600">SEO, PPC reklamou,
+                  Za tu dobu jsem prošla tvorbou webů, <strong className="text-purple-600">SEO,
                   content marketingem i technickými úpravami</strong> – a dnes to všechno propojuji do funkčních strategií.
                 </p>
                 <p className="text-lg leading-relaxed">
@@ -317,7 +317,7 @@ export default function HomePageContent() {
             <div>
               <h3 className="text-2xl font-bold mb-6 text-yellow-400">Linklady.cz</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Online marketing, SEO, PPC kampaně a AI automatizace.
+                Online marketing, SEO a AI automatizace.
                 Měřitelné výsledky pro firmy, které chtějí růst.
               </p>
               <div className="flex space-x-4">

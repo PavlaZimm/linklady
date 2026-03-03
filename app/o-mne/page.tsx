@@ -19,7 +19,7 @@ const jsonLd = {
       "@id": "https://linklady.cz/o-mne/#webpage",
       url: "https://linklady.cz/o-mne",
       name: "O mně – Pavla Zimmermannová | Online marketing specialistka",
-      description: "Online marketingu se věnuji od roku 2015. Specializuji se na SEO, PPC reklamu, content marketing, AI nástroje a technické úpravy webů.",
+      description: "Online marketingu se věnuji od roku 2015. Specializuji se na SEO, content marketing, AI nástroje, automatizaci a technické úpravy webů.",
       isPartOf: { "@id": "https://linklady.cz/#website" },
       mainEntity: { "@id": "https://linklady.cz/#person" },
       inLanguage: "cs",
@@ -53,13 +53,10 @@ const jsonLd = {
         height: 500,
       },
       jobTitle: "Online marketing specialistka",
-      description: "V online marketingu působím od roku 2015. Specializuji se na SEO, PPC reklamu, content marketing, AI nástroje a automatizaci marketingu.",
+      description: "V online marketingu působím od roku 2015. Specializuji se na SEO, content marketing, AI nástroje a automatizaci marketingu.",
       worksFor: { "@id": "https://linklady.cz/#business" },
       knowsAbout: [
         "SEO optimalizace",
-        "PPC kampaně",
-        "Google Ads",
-        "Sklik",
         "AI agenti",
         "Automatizace marketingu",
         "Content marketing",
@@ -127,7 +124,7 @@ export default function AboutPage() {
             <div className="prose prose-lg">
               <p className="text-lg text-gray-700 mb-6">
                 V online marketingu působím od roku <strong>2015</strong>.
-                Za tu dobu jsem prošla tvorbou webů, <strong>SEO, PPC reklamou,
+                Za tu dobu jsem prošla tvorbou webů, <strong>SEO,
                 content marketingem i technickými úpravami</strong> – a dnes to všechno propojuji do funkčních strategií pro své klienty.
               </p>
 
@@ -194,8 +191,8 @@ export default function AboutPage() {
                   <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">PPC</h3>
-              <p className="text-gray-600">Google Ads a Sklik s maximální návratností</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Tvorba webů</h3>
+              <p className="text-gray-600">Moderní weby s SEO od prvního řádku kódu</p>
             </div>
             
             <div className="text-center">
