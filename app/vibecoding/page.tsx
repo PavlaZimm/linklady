@@ -634,7 +634,7 @@ export default function VibecodingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Školení <span className="text-purple-600">vibecoding</span>
+              Školení <span className="text-purple-600">vibecodingu</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Naučte se vytvářet weby a aplikace pomocí AI. Praktické školení s reálnými projekty – ne jen teorie.
