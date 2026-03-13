@@ -33,9 +33,8 @@ const jsonLd = {
       offers: {
         "@type": "Offer",
         url: "https://linklady.cz/ebook",
-        availability: "https://schema.org/InStock",
+        availability: "https://schema.org/PreOrder",
         priceCurrency: "CZK",
-        price: "0",
       },
     },
     {
@@ -203,7 +202,7 @@ export default function EbookPage() {
                   <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Každý, kdo chce umět AI</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Každý, kdo chce ovládnout AI</h3>
               <p className="text-gray-600 leading-relaxed">
                 Žádné technické znalosti nepotřebujete. E-book je psaný srozumitelně a s praktickými příklady.
               </p>

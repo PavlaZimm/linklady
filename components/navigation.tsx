@@ -13,12 +13,13 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img
+              <Image
                 src="/logo.svg"
                 alt="Linklady.cz"
                 width={140}
                 height={40}
                 className="h-8 w-auto"
+                priority
               />
             </Link>
           </div>

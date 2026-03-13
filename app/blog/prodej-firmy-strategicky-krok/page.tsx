@@ -114,7 +114,7 @@ export default function ProdejFirmyArticle() {
               Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu
             </h1>
             <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10">
-              M&A proces krok za krokem - od ocenění přes výběr investora až po bezpečné uzavření transakce
+              M&A proces krok za krokem – od ocenění přes výběr investora až po bezpečné uzavření transakce
             </p>
             <div className="mt-6 text-sm opacity-70 relative z-10">
               <time dateTime="2026-02-27">27. února 2026</time>
