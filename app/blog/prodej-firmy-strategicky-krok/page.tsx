@@ -4,8 +4,8 @@ import type { Metadata } from 'next'
 import JsonLd from '@/components/json-ld'
 
 export const metadata: Metadata = {
-  title: "Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu",
-  description: "Prodej vybudovaného podniku je jedním z nejdůležitějších rozhodnutí. Zjistěte, jak probíhá proces M&A, na co si dát pozor a jak najít správného investora.",
+  title: "▷ Prodej firmy jako strategický krok – Průvodce M&A",
+  description: "Prodej firmy je životní rozhodnutí ✅ Jak probíhá M&A proces, na co si dát pozor a jak najít správného investora. Kompletní průvodce prodejem podniku.",
   keywords: [
     "prodej firmy",
     "prodej podniku",
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: "https://linklady.cz/blog/prodej-firmy-strategicky-krok",
     siteName: "Linklady.cz",
-    title: "Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu",
-    description: "Prodej vybudovaného podniku je jedním z nejdůležitějších rozhodnutí. Zjistěte, jak probíhá proces M&A a jak najít správného investora.",
+    title: "▷ Prodej firmy jako strategický krok – Průvodce M&A procesem",
+    description: "Prodej firmy je životní rozhodnutí. Jak probíhá M&A proces a jak najít správného investora.",
     images: [
       {
         url: "/profile.jpg",
         width: 500,
         height: 600,
-        alt: "Pavla Zimmermannová – online marketing specialistka",
+        alt: "Prodej firmy – průvodce M&A procesem od Pavly Zimmermannové",
       },
     ],
   },
@@ -114,7 +114,7 @@ export default function ProdejFirmyArticle() {
               Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu
             </h1>
             <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10">
-              M&A proces krok za krokem - od ocenění přes výběr investora až po bezpečné uzavření transakce
+              M&A proces krok za krokem – od ocenění přes výběr investora až po bezpečné uzavření transakce
             </p>
             <div className="mt-6 text-sm opacity-70 relative z-10">
               <time dateTime="2026-02-27">27. února 2026</time>
