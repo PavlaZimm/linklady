@@ -234,7 +234,7 @@ export default function SeoKonzultantUstiPage() {
               Proč investovat do <span className="text-purple-600">SEO optimalizace</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              93 % online zážitků začíná vyhledávačem. Pokud váš web není na první stránce Googlu, vaši zákazníci najdou konkurenci.
+              93 % aktivit na internetu začíná ve vyhledávači. Pokud váš web není na první stránce Googlu, vaši zákazníci najdou konkurenci.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
