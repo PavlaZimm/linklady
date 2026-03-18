@@ -1,25 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 44">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 44">
   <defs>
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#663399;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#8855bb;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#663399;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4C1D95;stop-opacity:1" />
-    </linearGradient>
   </defs>
-  <!-- Icon: bold chain link -->
-  <g transform="translate(4, 6)">
-    <rect width="32" height="32" rx="8" fill="url(#iconGrad)" />
-    <path d="M13.5 21.5a4.5 4.5 0 0 1 0-6.36l1.42 1.42a2.5 2.5 0 0 0 0 3.54l-1.42 1.4z" fill="#facc15" opacity="0.9"/>
-    <path d="M18.5 10.5a4.5 4.5 0 0 1 0 6.36l-1.42-1.42a2.5 2.5 0 0 0 0-3.54l1.42-1.4z" fill="#facc15" opacity="0.9"/>
-    <path d="M14 15h4v2h-4z" fill="#facc15" rx="1"/>
-    <path d="M12 20a4 4 0 0 1-1.17-7.83l.58 1.91A2 2 0 1 0 12 18v2z" fill="rgba(255,255,255,0.3)"/>
-    <path d="M20 12a4 4 0 0 1 1.17 7.83l-.58-1.91A2 2 0 1 0 20 14v-2z" fill="rgba(255,255,255,0.3)"/>
-  </g>
-  <!-- Text -->
-  <text x="44" y="31" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5">
+  <text x="4" y="31" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5">
     <tspan fill="url(#grad)">Link</tspan><tspan fill="#facc15">lady</tspan>
   </text>
 </svg>
