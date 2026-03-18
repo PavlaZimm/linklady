@@ -1,12 +1,100 @@
 import Navigation from '@/components/navigation'
+import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
+import JsonLd from '@/components/json-ld'
 
 export const metadata: Metadata = siteMetadata['/kontakt']
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://linklady.cz/kontakt/#webpage",
+      url: "https://linklady.cz/kontakt",
+      name: "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
+      description: "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, AI asistentů nebo automatizace.",
+      isPartOf: { "@id": "https://linklady.cz/#website" },
+      inLanguage: "cs",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Úvod",
+          item: "https://linklady.cz",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Kontakt",
+          item: "https://linklady.cz/kontakt",
+        },
+      ],
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://linklady.cz/#business",
+      name: "Linklady.cz – Pavla Zimmermannová",
+      url: "https://linklady.cz",
+      email: "zimmermannovap@gmail.com",
+      taxID: "04352041",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Bílina",
+        addressCountry: "CZ",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        email: "zimmermannovap@gmail.com",
+        availableLanguage: ["cs", "en"],
+        areaServed: {
+          "@type": "Country",
+          name: "Česká republika",
+        },
+      },
+      founder: { "@id": "https://linklady.cz/#person" },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Jak dlouho trvá SEO optimalizace?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "SEO je dlouhodobý proces. První výsledky jsou viditelné obvykle za 3-6 měsíců, ale plný efekt se projeví za 6-12 měsíců v závislosti na konkurenci a stavu webu.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Co všechno se dá automatizovat?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Automatizovat se dá téměř cokoliv – od e-mailových sekvencí, přes CRM a fakturaci, až po publikování na sociální sítě. Používám nástroje jako Make.com, n8n nebo Zapier.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Jak fungují AI agenti?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "AI agenti automatizují analýzu webu, sledování pozic, generování reportů a další rutinní úkoly. Šetří čas a poskytují přesnější data než ruční zpracování.",
+          },
+        },
+      ],
+    },
+  ],
+}
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd data={jsonLd} />
       <Navigation />
       
       {/* Hero Section */}
@@ -21,7 +109,7 @@ export default function ContactPage() {
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Kontakt</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto relative z-10">
-              Napište mi pro konzultaci ohledně SEO, PPC kampaní, AI asistentů nebo automatizace
+              Ráda se dozvím víc o vašem projektu. Konzultace je zdarma a nezávazná.
             </p>
           </div>
         </div>
@@ -33,16 +121,16 @@ export default function ContactPage() {
           <div className="bg-purple-50 rounded-lg p-8 md:p-12 text-center">
             <h2 className="text-3xl font-bold text-primary mb-4">Napište mi</h2>
             <p className="text-gray-600 mb-8 text-lg">
-              Ráda vám pomohu s online marketingem, SEO, PPC kampaněmi nebo automatizací.
+              Napište mi a do 24 hodin se vám ozvu. Společně najdeme cestu, jak váš byznys posunout online.
             </p>
             <a
               href="mailto:zimmermannovap@gmail.com"
-              className="inline-flex items-center justify-center bg-yellow-400 text-purple-900 px-6 sm:px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors text-base sm:text-lg max-w-full"
+              className="inline-flex items-center bg-yellow-400 text-purple-900 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors text-base sm:text-lg"
             >
               <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
               </svg>
-              <span className="truncate">zimmermannovap@gmail.com</span>
+              zimmermannovap@gmail.com
             </a>
           </div>
         </div>
@@ -87,7 +175,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Specializace</h3>
               <p className="text-gray-600">
-                SEO, PPC, AI nástroje<br />
+                SEO, AI nástroje<br />
                 a automatizace
               </p>
             </div>
@@ -108,18 +196,18 @@ export default function ContactPage() {
                 Jak dlouho trvá SEO optimalizace?
               </h3>
               <p className="text-gray-600">
-                SEO je dlouhodobý proces. První výsledky jsou viditelné obvykle za 3-6 měsíců, 
+                <Link href="/seo-konzultant-usti-nad-labem" className="text-primary font-semibold hover:underline">SEO</Link> je dlouhodobý proces. První výsledky jsou viditelné obvykle za 3-6 měsíců,
                 ale plný efekt se projeví za 6-12 měsíců v závislosti na konkurenci a stavu webu.
               </p>
             </div>
             
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Kolik stojí PPC kampaň?
+                Co všechno se dá automatizovat?
               </h3>
               <p className="text-gray-600">
-                Cena závisí na rozpočtu, který chcete investovat do reklam, plus poplatek za správu. 
-                Minimální doporučený rozpočet je 10 000 Kč měsíčně pro efektivní kampaň.
+                <Link href="/automatizace" className="text-primary font-semibold hover:underline">Automatizovat</Link> se dá téměř cokoliv – od e-mailových sekvencí, přes CRM a fakturaci,
+                až po publikování na sociální sítě. Používám nástroje jako Make.com, n8n nebo Zapier.
               </p>
             </div>
             
@@ -128,7 +216,7 @@ export default function ContactPage() {
                 Jak fungují AI agenti?
               </h3>
               <p className="text-gray-600">
-                AI agenti automatizují analýzu webu, sledování pozic, generování reportů a další 
+                <Link href="/vibecoding" className="text-primary font-semibold hover:underline">AI agenti</Link> automatizují analýzu webu, sledování pozic, generování reportů a další
                 rutinní úkoly. Šetří čas a poskytují přesnější data než ruční zpracování.
               </p>
             </div>
@@ -141,17 +229,18 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <a href="/" className="text-lg font-semibold hover:text-yellow-400">
-                Home
-              </a>
-              <div className="flex space-x-4 mt-4">
-                <a href="https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                  <span className="sr-only">LinkedIn</span>
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                </a>
-              </div>
+              <Link href="/" className="text-lg font-semibold hover:text-yellow-400">
+                Domů
+              </Link>
+              <ul className="mt-4 space-y-2 text-sm">
+                <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400">O mně</Link></li>
+                <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400">SEO Ústí nad Labem</Link></li>
+                <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400">Tvorba webů</Link></li>
+                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400">Automatizace</Link></li>
+                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400">Vibecoding</Link></li>
+                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400">E-book</Link></li>
+                <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400">Blog</Link></li>
+              </ul>
             </div>
             
             <div className="bg-primary p-6 rounded-lg">
@@ -168,7 +257,7 @@ export default function ContactPage() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            © 2025 – linklady.cz.
+            © 2026 – linklady.cz.
           </div>
         </div>
       </footer>

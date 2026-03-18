@@ -13,12 +13,13 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img
+              <Image
                 src="/logo.svg"
                 alt="Linklady.cz"
                 width={140}
                 height={40}
                 className="h-8 w-auto"
+                priority
               />
             </Link>
           </div>
@@ -29,13 +30,19 @@ export default function Navigation() {
                 href="/"
                 className="text-gray-900 hover:text-primary px-3 py-2 text-base font-semibold transition-colors"
               >
-                Home
+                Domů
               </Link>
               <Link
                 href="/o-mne"
                 className="text-gray-900 hover:text-primary px-3 py-2 text-base font-semibold transition-colors"
               >
                 O mně
+              </Link>
+              <Link
+                href="/ebook"
+                className="text-gray-900 hover:text-primary px-3 py-2 text-base font-semibold transition-colors"
+              >
+                E-book
               </Link>
               <Link
                 href="/blog"
@@ -82,7 +89,7 @@ export default function Navigation() {
                 onClick={() => setIsOpen(false)}
                 className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
               >
-                Home
+                Domů
               </Link>
               <Link
                 href="/o-mne"
@@ -90,6 +97,13 @@ export default function Navigation() {
                 className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
               >
                 O mně
+              </Link>
+              <Link
+                href="/ebook"
+                onClick={() => setIsOpen(false)}
+                className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
+              >
+                E-book
               </Link>
               <Link
                 href="/blog"

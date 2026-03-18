@@ -2,12 +2,47 @@ import Navigation from '@/components/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
+import JsonLd from '@/components/json-ld'
 
 export const metadata: Metadata = siteMetadata['/blog']
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://linklady.cz/blog/#webpage",
+      url: "https://linklady.cz/blog",
+      name: "Blog – Marketing tipy, SEO trendy a AI nástroje",
+      description: "Aktuální články o SEO strategiích, automatizaci a AI nástrojích pro online marketing.",
+      isPartOf: { "@id": "https://linklady.cz/#website" },
+      keywords: "SEO strategie, AI nástroje, automatizace procesů, lokální SEO",
+      inLanguage: "cs",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Úvod",
+          item: "https://linklady.cz",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://linklady.cz/blog",
+        },
+      ],
+    },
+  ],
+}
 
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd data={jsonLd} />
       <Navigation />
       
       {/* Hero Section */}
@@ -22,62 +57,40 @@ export default function BlogPage() {
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Blog</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto relative z-10">
-              Aktuální články o SEO, PPC reklamě, automatizaci a AI nástrojích pro online marketing
+              Aktuální články o SEO, automatizaci a AI nástrojích pro online marketing
             </p>
           </div>
         </div>
       </section>
 
-      {/* Coming Soon */}
+      {/* Blog Articles */}
       <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-purple-50 rounded-lg p-12">
-            <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
-              </svg>
-            </div>
-            
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Blog se připravuje
-            </h2>
-            
-            <p className="text-lg text-gray-600 mb-8">
-              Pracuji na zajímavých článcích o SEO, PPC reklamě, AI nástrojích a automatizaci. 
-              Brzy zde najdete praktické tipy a trendy z online marketingu.
-            </p>
-            
-            <div className="space-y-4 text-left max-w-md mx-auto">
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span className="text-gray-700">SEO strategie a optimalizace</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span className="text-gray-700">PPC kampaně a jejich řízení</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span className="text-gray-700">AI nástroje v marketingu</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span className="text-gray-700">Automatizace procesů</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span className="text-gray-700">Lokální SEO tipy</span>
-              </div>
-            </div>
-            
-            <div className="mt-8">
-              <Link
-                href="/kontakt"
-                className="inline-block bg-yellow-400 text-purple-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
-              >
-                Zeptejte se na konzultaci
-              </Link>
-            </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-8">
+
+            {/* Article Card */}
+            <Link href="/blog/prodej-firmy-strategicky-krok" className="group block">
+              <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                <div className="p-8">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">Business</span>
+                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">M&amp;A</span>
+                  </div>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                    Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Prodej vybudovaného podniku je pro většinu majitelů jedním z nejdůležitějších životních rozhodnutí. Jak probíhá proces M&amp;A a na co si dát pozor?
+                  </p>
+                  <div className="flex items-center text-sm text-gray-500">
+                    <time dateTime="2026-02-27">27. února 2026</time>
+                    <span className="mx-2">|</span>
+                    <span>Pavla Zimmermannová</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+
           </div>
         </div>
       </section>
@@ -115,16 +128,17 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <Link href="/" className="text-lg font-semibold hover:text-yellow-400">
-                Home
+                Domů
               </Link>
-              <div className="flex space-x-4 mt-4">
-                <a href="https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                  <span className="sr-only">LinkedIn</span>
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                </a>
-              </div>
+              <ul className="mt-4 space-y-2 text-sm">
+                <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400">O mně</Link></li>
+                <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400">SEO Ústí nad Labem</Link></li>
+                <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400">Tvorba webů</Link></li>
+                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400">Automatizace</Link></li>
+                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400">Vibecoding</Link></li>
+                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400">E-book</Link></li>
+                <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400">Kontakt</Link></li>
+              </ul>
             </div>
             
             <div className="bg-primary p-6 rounded-lg">
@@ -141,7 +155,7 @@ export default function BlogPage() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            © 2025 – linklady.cz.
+            © 2026 – linklady.cz.
           </div>
         </div>
       </footer>

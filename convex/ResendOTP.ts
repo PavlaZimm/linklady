@@ -3,9 +3,10 @@ import { alphabet, generateRandomString } from "oslo/crypto"
 
 export const ResendOTP = Email({
   id: "resend-otp",
-  maxAge: 60 * 15,
+  maxAge: 60 * 10, // 10 minutes (shorter window = harder brute force)
   async generateVerificationToken() {
-    return generateRandomString(6, alphabet("0-9"))
+    // 8 alphanumeric chars = 36^8 = ~2.8 trillion combinations (vs 10^6 before)
+    return generateRandomString(8, alphabet("0-9", "a-z"))
   },
   async sendVerificationRequest({ identifier: email, token }) {
     const response = await fetch(`${process.env.OTP_ENDPOINT}`, {

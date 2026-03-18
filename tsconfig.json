@@ -13,20 +13,19 @@
     "jsx": "preserve",
     "incremental": true,
 
-    // Disable all strict checks
-    "strict": false,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "alwaysStrict": false,
-    "strictPropertyInitialization": false,
-    "noImplicitReturns": false,
-    "noFallthroughCasesInSwitch": false,
+    // Security: enable strict TypeScript checks
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictPropertyInitialization": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "exactOptionalPropertyTypes": false,
     "checkJs": false,
 
-    // Enable only critical checks that prevent build errors
     "strictFunctionTypes": true,
     "strictNullChecks": true,
 

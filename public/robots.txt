@@ -1,8 +1,10 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://www.linklady.cz/sitemap.xml
+User-agent: Googlebot
+Allow: /
 
-# Crawl-delay for bots
-Crawl-delay: 1
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://linklady.cz/sitemap.xml

@@ -1,15 +1,54 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
+  },
+  // Security: restrict powered-by header leakage
+  poweredByHeader: false,
+  // Redirects from old WordPress URLs to current pages
+  async redirects() {
+    return [
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/home/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/author/pavla-zimmermannova',
+        destination: '/o-mne',
+        permanent: true,
+      },
+      {
+        source: '/author/pavla-zimmermannova/',
+        destination: '/o-mne',
+        permanent: true,
+      },
+      {
+        source: '/author/:slug',
+        destination: '/o-mne',
+        permanent: true,
+      },
+      // Old WordPress blog articles → blog page
+      {
+        source: '/5-duvodu-proc-na-nic-necekat-a-zacit-s-linkbuildingem',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu',
+        destination: '/blog',
+        permanent: true,
+      },
+    ]
   },
   images: {
     remotePatterns: [
