@@ -1,3 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40">
-  <text x="0" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#7c3aed">linklady</text>
+  <text x="0" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700">
+    <tspan fill="#7c3aed">link</tspan><tspan fill="#facc15">lady</tspan>
+  </text>
 </svg>
