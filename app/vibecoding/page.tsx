@@ -564,6 +564,9 @@ export default function VibecodingPage() {
               <p className="text-gray-600 leading-relaxed">
                 Landing pages, firemní weby, portfolia, blogy. Kompletní weby s responzivním designem a SEO – vytvořené za hodiny místo týdnů.
               </p>
+              <a href="https://kastrup.cz/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-purple-600 hover:text-purple-800 font-medium text-sm transition-colors">
+                Ukázka: Magazín kastrup.cz →
+              </a>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
