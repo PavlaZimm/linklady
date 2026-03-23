@@ -624,6 +624,9 @@ export default function VibecodingPage() {
               <p className="text-gray-600 leading-relaxed">
                 Jednoduché webové hry, interaktivní vizualizace, generativní umění. Vibecoding je skvělý na kreativní experimentování.
               </p>
+              <a href="https://guineapig-peach.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-purple-600 hover:text-purple-800 font-medium text-sm transition-colors">
+                Ukázka: Hra vytvořená vibecodingem →
+              </a>
             </div>
           </div>
         </div>
