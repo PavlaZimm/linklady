@@ -277,7 +277,7 @@ export default function VibecodingPage() {
                   <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-purple-900" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900">Bolt.new</h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://bolt.new/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Bolt.new</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   Webový nástroj pro rychlou tvorbu aplikací. Popíšete, co chcete, a Bolt vytvoří funkční web přímo v prohlížeči. Ideální pro prototypy, landing pages a MVP.
@@ -301,7 +301,7 @@ export default function VibecodingPage() {
                   <div className="w-12 h-12 bg-pink-500 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900">Lovable</h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://lovable.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Lovable</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   AI platforma zaměřená na tvorbu krásných webových aplikací. Skvělý design, Supabase integrace pro databáze a rychlé prototypování s vizuálním výstupem.
@@ -325,7 +325,7 @@ export default function VibecodingPage() {
                   <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900">Replit Agent</h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://replit.com/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Replit Agent</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   Celé vývojové prostředí v prohlížeči. Popíšete, co chcete, a Agent vytvoří, nasadí a spustí aplikaci. Vše online, včetně hostingu.
@@ -361,7 +361,7 @@ export default function VibecodingPage() {
                   <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900">Claude Code</h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Claude Code</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   Profesionální CLI nástroj od Anthropic. Pracuje v terminálu, rozumí celému projektu a generuje produkční kód. Můj hlavní nástroj – tímhle jsem vytvořila linklady.cz.
@@ -385,7 +385,7 @@ export default function VibecodingPage() {
                   <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900">Cursor</h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://cursor.com/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Cursor</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   AI-powered editor kódu postavený na VS Code. Autocomplete, inline chat, editace celých souborů. Skvělý pro vývojáře, kteří chtějí AI přímo v editoru.
@@ -409,7 +409,7 @@ export default function VibecodingPage() {
                   <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.38 8.57l-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44zm-9.79 6.84a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900">Windsurf</h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://windsurf.com/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Windsurf</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   AI editor od Codeium. Flows funkce umožňuje AI autonomně provádět rozsáhlé změny napříč projektem. Dobrá alternativa ke Cursoru.
