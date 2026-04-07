@@ -437,6 +437,17 @@ export default function WebovaAplikacePage() {
                 <p className="text-gray-700">Hosting a deploy platforma optimalizovaná pro Next.js. Automatické nasazení z&nbsp;Gitu, CDN po celém světě, SSL certifikát zdarma.</p>
               </div>
             </div>
+            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Make.com</h3>
+                <p className="text-gray-700">Vizuální platforma pro <Link href="/automatizace" className="text-primary font-semibold hover:underline">automatizaci procesů</Link> a propojení aplikací. Pomocí Make propojuji webové aplikace s&nbsp;externími službami – CRM, e-maily, fakturace, Google Sheets a stovky dalších integrací. Bez jediného řádku kódu.</p>
+              </div>
+            </div>
           </div>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
