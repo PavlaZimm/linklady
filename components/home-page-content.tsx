@@ -187,8 +187,14 @@ export default function HomePageContent() {
                   AI tam, kde to dává smysl a šetří peníze. Chatboti pro zákaznickou podporu, analýza dat, generování obsahu i monitoring konkurence. Ušetříte desítky hodin měsíčně.
                 </p>
                 <Link
-                  href="/vibecoding"
+                  href="/ai-agent"
                   className="inline-block mt-4 text-yellow-400 font-semibold hover:text-yellow-300 transition-colors"
+                >
+                  Co je AI agent →
+                </Link>
+                <Link
+                  href="/vibecoding"
+                  className="inline-block mt-2 text-yellow-400/80 font-semibold hover:text-yellow-300 transition-colors text-sm"
                 >
                   Vibecoding – tvorba pomocí AI →
                 </Link>
