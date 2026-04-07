@@ -84,6 +84,7 @@ export default function HomePageContent() {
                   src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="SEO analýza dat"
                   fill
+                  loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
@@ -114,6 +115,7 @@ export default function HomePageContent() {
                   src="https://images.pexels.com/photos/6476563/pexels-photo-6476563.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="Tvorba moderních webových stránek"
                   fill
+                  loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
@@ -144,6 +146,7 @@ export default function HomePageContent() {
                   src="https://images.pexels.com/photos/7279706/pexels-photo-7279706.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="Profesionální video střih"
                   fill
+                  loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
@@ -168,6 +171,7 @@ export default function HomePageContent() {
                   src="https://images.pexels.com/photos/8294566/pexels-photo-8294566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="AI technologie pro marketing"
                   fill
+                  loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
@@ -183,8 +187,14 @@ export default function HomePageContent() {
                   AI tam, kde to dává smysl a šetří peníze. Chatboti pro zákaznickou podporu, analýza dat, generování obsahu i monitoring konkurence. Ušetříte desítky hodin měsíčně.
                 </p>
                 <Link
-                  href="/vibecoding"
+                  href="/ai-agent"
                   className="inline-block mt-4 text-yellow-400 font-semibold hover:text-yellow-300 transition-colors"
+                >
+                  Co je AI agent →
+                </Link>
+                <Link
+                  href="/vibecoding"
+                  className="inline-block mt-2 text-yellow-400/80 font-semibold hover:text-yellow-300 transition-colors text-sm"
                 >
                   Vibecoding – tvorba pomocí AI →
                 </Link>
@@ -198,6 +208,7 @@ export default function HomePageContent() {
                   src="https://images.pexels.com/photos/8294566/pexels-photo-8294566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="Automatizace a Make.com"
                   fill
+                  loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>
@@ -228,6 +239,7 @@ export default function HomePageContent() {
                   src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="Content marketing a strategie"
                   fill
+                  loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/95 to-purple-800/95"></div>

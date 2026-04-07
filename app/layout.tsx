@@ -9,17 +9,20 @@ import JsonLd from "@/components/json-ld"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 })
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 })
 
 const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["400", "500", "600", "700"],
   subsets: ["latin", "latin-ext"],
+  display: "swap",
 })
 
 export const metadata: Metadata = {

@@ -119,6 +119,13 @@ export default function Navigation() {
               >
                 Kontakt
               </Link>
+              <Link
+                href="/kontakt"
+                onClick={() => setIsOpen(false)}
+                className="block mx-3 mt-3 px-4 py-3 bg-purple-600 text-white text-center text-lg font-bold rounded-xl hover:bg-purple-700 transition-colors"
+              >
+                Nezávazná konzultace zdarma
+              </Link>
             </div>
           </div>
         )}
