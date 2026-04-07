@@ -729,6 +729,146 @@ export default function VibecodingPage() {
         </div>
       </section>
 
+      {/* Rizika a limity vibecodingu */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="bg-red-100 text-red-700 text-sm font-bold px-4 py-2 rounded-full inline-block mb-6">Buďte realisti</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Rizika a limity <span className="text-purple-600">vibecodingu</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Vibecoding není kouzelná hůlka. Abyste ho využili správně, musíte znát i jeho slabiny.
+            </p>
+          </div>
+
+          {/* [OBRÁZEK 1: Schéma/infografika - "Vibecoding: výhody vs. rizika"] */}
+          {/* Rozměr: cca 800×450px, formát: WebP nebo PNG */}
+          {/* Umístění: public/images/vibecoding-rizika.webp */}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-red-50 p-8 rounded-2xl border border-red-100">
+              <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Technický dluh</h3>
+              <p className="text-gray-600 leading-relaxed">
+                AI generuje kód, který funguje – ale ne vždy je čistý a udržitelný. Bez kontroly se snadno nahromadí technický dluh, který vás později stojí víc času, než jste ušetřili.
+              </p>
+            </div>
+
+            <div className="bg-red-50 p-8 rounded-2xl border border-red-100">
+              <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Bezpečnostní díry</h3>
+              <p className="text-gray-600 leading-relaxed">
+                AI neřeší bezpečnost automaticky. Může vygenerovat kód zranitelný vůči SQL injection, XSS nebo úniku dat. Bez bezpečnostní kontroly nasazujete časovanou bombu.
+              </p>
+            </div>
+
+            <div className="bg-red-50 p-8 rounded-2xl border border-red-100">
+              <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 9h-2V7h2v4zm0 4h-2v-2h2v2z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Licenční rizika</h3>
+              <p className="text-gray-600 leading-relaxed">
+                AI modely se učí na existujícím kódu. Občas vygenerují úryvky, které mohou pocházet z licenčně chráněných zdrojů. U komerčních projektů je tohle potenciální právní problém.
+              </p>
+            </div>
+
+            <div className="bg-red-50 p-8 rounded-2xl border border-red-100">
+              <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Falešný pocit jistoty</h3>
+              <p className="text-gray-600 leading-relaxed">
+                &bdquo;Funguje to, tak je to hotové&ldquo; – nejčastější past vibecodingu. Kód může fungovat na první pohled, ale skrývat chyby, které se projeví až v produkci. Testování je nutnost, ne luxus.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-purple-50 border-l-4 border-primary rounded-lg p-8 mt-12">
+            <h3 className="text-xl font-bold text-gray-900 mb-3">
+              Jak to řeším já?
+            </h3>
+            <p className="text-gray-700 leading-relaxed">
+              Právě proto používám profesionální nástroje jako Claude Code a důsledně kontroluji vygenerovaný kód. Na školení vás naučím, jak se těmto rizikům vyhnout – jak testovat, jak psát bezpečný kód a jak poznat, kdy AI udělala chybu. Vibecoding v rukou zkušeného člověka je silný nástroj. Bez kontroly je to rychlá jízdenka do technického dluhu.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pro koho je vibecoding */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Pro koho vibecoding <span className="text-purple-600">je a není</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Vibecoding má obrovský potenciál, ale není pro každého stejně. Tady je upřímné zhodnocení.
+            </p>
+          </div>
+
+          {/* [OBRÁZEK 2: Fotka ze školení / workshop s lidmi u počítačů] */}
+          {/* Rozměr: cca 1200×600px, formát: WebP nebo JPG */}
+          {/* Umístění: public/images/vibecoding-skoleni.webp */}
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="bg-white p-10 rounded-2xl shadow-lg border border-green-200">
+              <h3 className="text-2xl font-bold text-green-700 mb-6 flex items-center gap-3">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Vibecoding je pro vás, pokud:
+              </h3>
+              <ul className="space-y-4 text-gray-600">
+                <li className="flex items-start gap-3">
+                  <span className="text-green-500 font-bold mt-0.5">+</span>
+                  <span><strong className="text-gray-900">Máte nápad a chcete ho rychle otestovat</strong> – prototyp za hodiny místo týdnů</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-500 font-bold mt-0.5">+</span>
+                  <span><strong className="text-gray-900">Jste podnikatel nebo marketér</strong> – potřebujete landing page, interní nástroj nebo automatizaci, ale nechcete čekat na vývojáře</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-500 font-bold mt-0.5">+</span>
+                  <span><strong className="text-gray-900">Chcete se naučit tvořit</strong> – vibecoding je nejpřístupnější vstup do světa tvorby softwaru</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-500 font-bold mt-0.5">+</span>
+                  <span><strong className="text-gray-900">Jste vývojář a chcete zrychlit</strong> – AI jako asistent pro rutinní úkoly, boilerplate a prototypy</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-10 rounded-2xl shadow-lg border border-red-200">
+              <h3 className="text-2xl font-bold text-red-700 mb-6 flex items-center gap-3">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/></svg>
+                Vibecoding nestačí, pokud:
+              </h3>
+              <ul className="space-y-4 text-gray-600">
+                <li className="flex items-start gap-3">
+                  <span className="text-red-500 font-bold mt-0.5">−</span>
+                  <span><strong className="text-gray-900">Stavíte kritickou aplikaci</strong> – bankovnictví, zdravotnictví nebo bezpečnostní systémy vyžadují ruční kontrolu každého řádku</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-500 font-bold mt-0.5">−</span>
+                  <span><strong className="text-gray-900">Nechcete rozumět výsledku</strong> – slepé kopírování AI kódu bez kontroly vede k problémům</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-500 font-bold mt-0.5">−</span>
+                  <span><strong className="text-gray-900">Očekáváte dokonalost na první pokus</strong> – vibecoding je iterativní proces, ne jednorázové kouzlo</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-500 font-bold mt-0.5">−</span>
+                  <span><strong className="text-gray-900">Chcete nahradit celý vývojový tým</strong> – AI agent je skvělý spolupracovník, ale zatím ne náhrada za zkušeného <Link href="/ai-agent" className="text-primary hover:underline">AI agenta</Link> s lidským dohledem</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Proč se učit vibecoding */}
       <section className="py-16 hero-gradient text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
