@@ -1,11 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 44">
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#663399;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8855bb;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <text x="4" y="31" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5">
-    <tspan fill="url(#grad)">Link</tspan><tspan fill="#facc15">lady</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40">
+  <text x="0" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700">
+    <tspan fill="#7c3aed">link</tspan><tspan fill="#facc15">lady</tspan>
   </text>
 </svg>
