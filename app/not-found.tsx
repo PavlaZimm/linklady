@@ -1,5 +1,6 @@
 import Navigation from '@/components/navigation'
 import Link from 'next/link'
+import SiteFooter from '@/components/site-footer'
 
 export default function NotFound() {
   return (
@@ -51,6 +52,8 @@ export default function NotFound() {
           </div>
         </div>
       </section>
+
+      <SiteFooter />
     </div>
   )
 }

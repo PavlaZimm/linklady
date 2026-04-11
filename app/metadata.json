@@ -124,5 +124,33 @@
       "url": "https://linklady.cz/kontakt",
       "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Kontakt na Pavlu Zimmermannovou – SEO a online marketing" }]
     }
+  },
+  "/ai-agent": {
+    "title": "▷ AI agent – Co to je, jak funguje a využití v praxi",
+    "description": "AI agent není chatbot ✅ Autonomní software, který plánuje, rozhoduje a jedná za vás. Typy, využití a jak začít – srozumitelně a bez buzzwordů.",
+    "keywords": ["ai agent", "agent ai", "co je ai agent", "ai agent co to je", "co je to ai agent", "umělá inteligence agent", "ai agenti", "ai agent chatbot", "ai agent pro firmy", "nejlepší ai agent"],
+    "alternates": {
+      "canonical": "https://linklady.cz/ai-agent"
+    },
+    "openGraph": {
+      "title": "▷ AI agent – Kompletní průvodce pro rok 2026",
+      "description": "AI agent není chatbot. Je to autonomní software, který plánuje, rozhoduje a jedná za vás. Zjistěte, jak ho využít ve firmě a ušetřit hodiny práce.",
+      "url": "https://linklady.cz/ai-agent",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "AI agent – průvodce od Pavly Zimmermannové" }]
+    }
+  },
+  "/webova-aplikace": {
+    "title": "▷ Webová aplikace – Co to je a kdy ji potřebujete",
+    "description": "Co je webová aplikace a čím se liší od webu? ✅ Průvodce webovými aplikacemi na míru – typy, technologie, výhody a kdy se vyplatí. Prakticky.",
+    "keywords": ["webová aplikace", "webova aplikace", "webová aplikace na míru", "co je webová aplikace", "progresivní webová aplikace", "webové aplikace", "tvorba webových aplikací", "webová aplikace vs web", "webová aplikace pro firmy"],
+    "alternates": {
+      "canonical": "https://linklady.cz/webova-aplikace"
+    },
+    "openGraph": {
+      "title": "▷ Webová aplikace – Kompletní průvodce na míru",
+      "description": "Webová aplikace není jen web. Je to interaktivní software v prohlížeči, který řeší konkrétní problémy. Zjistěte, kdy se vyplatí a jak ji nechat vytvořit.",
+      "url": "https://linklady.cz/webova-aplikace",
+      "images": [{ "url": "/profile.jpg", "width": 500, "height": 600, "alt": "Webová aplikace – tvorba webových aplikací od Pavly Zimmermannové" }]
+    }
   }
 }

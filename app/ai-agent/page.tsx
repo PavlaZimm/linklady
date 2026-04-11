@@ -1,43 +1,11 @@
 import Navigation from '@/components/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
+import SiteFooter from '@/components/site-footer'
 
-export const metadata: Metadata = {
-  title: "Co je AI agent? Kompletní průvodce | Linklady.cz",
-  description: "Co je AI agent a jak funguje? Srozumitelný průvodce světem AI agentů – typy, využití v praxi, rozdíl oproti chatbotům a jak s nimi začít. Česky a bez buzzwordů.",
-  keywords: [
-    "ai agent",
-    "agent ai",
-    "co je ai agent",
-    "ai agent co to je",
-    "co je to ai agent",
-    "umělá inteligence agent",
-    "ai agenti",
-    "ai agent chatbot",
-    "nejlepší krypto ai agent",
-    "ai agent pro firmy",
-  ],
-  alternates: {
-    canonical: "https://linklady.cz/ai-agent",
-  },
-  openGraph: {
-    type: "website",
-    locale: "cs_CZ",
-    url: "https://linklady.cz/ai-agent",
-    siteName: "Linklady.cz",
-    title: "Co je AI agent? Kompletní průvodce pro rok 2026",
-    description: "AI agent není chatbot. Je to autonomní software, který plánuje, rozhoduje a jedná za vás. Zjistěte, jak ho využít ve firmě.",
-    images: [
-      {
-        url: "/profile.jpg",
-        width: 500,
-        height: 600,
-        alt: "Pavla Zimmermannová – AI agenti a automatizace",
-      },
-    ],
-  },
-}
+export const metadata: Metadata = siteMetadata['/ai-agent']
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -147,8 +115,11 @@ export default function AiAgentPage() {
             <h1 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 max-w-4xl mx-auto leading-tight">
               AI agent: Co to je, jak funguje a k&nbsp;čemu ho využijete
             </h1>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10">
-              Srozumitelný průvodce světem AI agentů. Bez buzzwordů, bez hype – jen to, co potřebujete vědět.
+            <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10 mb-4">
+              Srozumitelný průvodce světem AI agentů. Bez buzzwordů, bez hype – jen to, co potřebujete vědět a co můžete ve firmě reálně využít.
+            </p>
+            <p className="text-sm opacity-75 max-w-2xl mx-auto relative z-10">
+              Podle Gartneru bude do konce roku 2026 <strong className="text-yellow-300">40&nbsp;%</strong> firemních aplikací využívat AI agenty. Nenechte konkurenci utéct.
             </p>
           </div>
         </div>
@@ -471,45 +442,7 @@ export default function AiAgentPage() {
         </div>
       </article>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <Link href="/" className="text-lg font-semibold hover:text-yellow-400">
-                Domů
-              </Link>
-              <ul className="mt-4 space-y-2 text-sm">
-                <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400">O mně</Link></li>
-                <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400">SEO Ústí nad Labem</Link></li>
-                <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400">Tvorba webů</Link></li>
-                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400">Automatizace</Link></li>
-                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400">Vibecoding</Link></li>
-                <li><Link href="/ai-agent" className="text-gray-300 hover:text-yellow-400">AI Agent</Link></li>
-                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400">E-book</Link></li>
-                <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400">Blog</Link></li>
-                <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400">Kontakt</Link></li>
-              </ul>
-            </div>
-
-            <div className="bg-primary p-6 rounded-lg">
-              <h3 className="font-semibold mb-2">Pavla Zimmermannová</h3>
-              <p className="text-sm mb-2">Vedena na FÚ Bílina.</p>
-              <p className="text-sm mb-2">IČO: 04352041</p>
-              <p className="text-sm">
-                E-mail:{' '}
-                <a href="mailto:zimmermannovap@gmail.com" className="hover:text-yellow-400">
-                  zimmermannovap@gmail.com
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            © 2026 – linklady.cz.
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }
