@@ -220,18 +220,52 @@ export default function TvorbaWebuBilinaPage() {
       </section>
 
       {/* Obsah stránky – kotvy */}
-      <nav className="py-10 bg-white border-b border-gray-100">
+      <section className="py-12 bg-gradient-to-br from-gray-50 to-purple-50/30">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">Obsah stránky</h2>
-          <ol className="space-y-2 list-decimal list-inside text-gray-600">
-            <li><a href="#co-ziskate" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Co získáte s novým webem</a></li>
-            <li><a href="#ukazky-praci" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Ukázky mé práce</a></li>
-            <li><a href="#jak-probiha-spoluprace" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Jak probíhá spolupráce</a></li>
-            <li><a href="#pro-koho" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Pro koho tvořím weby</a></li>
-            <li><a href="#faq" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Často kladené otázky</a></li>
-          </ol>
+          <nav className="bg-white rounded-2xl shadow-lg border border-purple-100 p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center">
+                <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+              </div>
+              <h2 className="text-xl font-bold text-gray-900">Obsah stránky</h2>
+            </div>
+            <ol className="space-y-1">
+              <li>
+                <a href="#co-ziskate" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
+                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">1</span>
+                  <span className="font-medium">Co získáte s novým webem</span>
+                </a>
+              </li>
+              <li>
+                <a href="#ukazky-praci" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
+                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">2</span>
+                  <span className="font-medium">Ukázky mé práce</span>
+                </a>
+              </li>
+              <li>
+                <a href="#jak-probiha-spoluprace" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
+                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">3</span>
+                  <span className="font-medium">Jak probíhá spolupráce</span>
+                </a>
+              </li>
+              <li>
+                <a href="#pro-koho" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
+                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">4</span>
+                  <span className="font-medium">Pro koho tvořím weby</span>
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
+                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">5</span>
+                  <span className="font-medium">Často kladené otázky</span>
+                </a>
+              </li>
+            </ol>
+          </nav>
         </div>
-      </nav>
+      </section>
 
       {/* Co získáte */}
       <section id="co-ziskate" className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30 scroll-mt-4">
