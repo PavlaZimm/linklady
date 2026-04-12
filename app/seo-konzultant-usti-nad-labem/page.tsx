@@ -227,8 +227,23 @@ export default function SeoKonzultantUstiPage() {
         </div>
       </section>
 
+      {/* Obsah stránky – kotvy */}
+      <nav className="py-10 bg-white border-b border-gray-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">Obsah stránky</h2>
+          <ol className="space-y-2 list-decimal list-inside text-gray-600">
+            <li><a href="#proc-seo" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Proč investovat do SEO optimalizace</a></li>
+            <li><a href="#seo-sluzby" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">SEO služby, které skutečně fungují</a></li>
+            <li><a href="#jak-probiha-spoluprace" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Jak probíhá SEO spolupráce</a></li>
+            <li><a href="#pro-koho" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Pro koho je SEO optimalizace</a></li>
+            <li><a href="#ustecky-kraj" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">SEO optimalizace v Ústeckém kraji</a></li>
+            <li><a href="#faq" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Často kladené otázky</a></li>
+          </ol>
+        </div>
+      </nav>
+
       {/* Proč SEO */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
+      <section id="proc-seo" className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30 scroll-mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -321,7 +336,7 @@ export default function SeoKonzultantUstiPage() {
       </section>
 
       {/* Co nabízím */}
-      <section className="py-24 bg-white">
+      <section id="seo-sluzby" className="py-24 bg-white scroll-mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -469,7 +484,7 @@ export default function SeoKonzultantUstiPage() {
       </section>
 
       {/* Jak SEO funguje */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
+      <section id="jak-probiha-spoluprace" className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30 scroll-mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -588,7 +603,7 @@ export default function SeoKonzultantUstiPage() {
       </section>
 
       {/* Pro koho je SEO */}
-      <section className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30">
+      <section id="pro-koho" className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30 scroll-mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -622,7 +637,7 @@ export default function SeoKonzultantUstiPage() {
       </section>
 
       {/* SEO pro Ústecký kraj */}
-      <section className="py-24 bg-white">
+      <section id="ustecky-kraj" className="py-24 bg-white scroll-mt-4">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
             SEO optimalizace v <span className="text-purple-600">Ústeckém kraji</span>
@@ -664,7 +679,7 @@ export default function SeoKonzultantUstiPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
+      <section id="faq" className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30 scroll-mt-4">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
             Často kladené otázky o SEO v Ústí nad Labem
