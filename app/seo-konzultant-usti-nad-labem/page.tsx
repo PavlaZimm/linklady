@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
+import SiteFooter from '@/components/site-footer'
 
 export const metadata: Metadata = siteMetadata['/seo-konzultant-usti-nad-labem']
 
@@ -184,10 +185,10 @@ export default function SeoKonzultantUstiPage() {
               <span className="text-yellow-400">Ústí nad Labem</span>
             </h1>
             <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
-              Dostaňte svůj web na první stránku Googlu. SEO optimalizace s měřitelnými výsledky pro firmy v Ústí nad Labem a celém Ústeckém kraji.
+              Na první stránku Googlu i Seznamu – bez plýtvání na reklamy. SEO strategie s měřitelnými výsledky pro firmy v Ústí nad Labem a celém Ústeckém kraji.
             </p>
             <p className="text-lg mb-10 opacity-80 leading-relaxed">
-              SEO specialistka s 10 lety praxe. Pomohu vám získat více zákazníků z organického vyhledávání – bez placených reklam.
+              Jsem SEO specialistka s 10 lety praxe. Od technického auditu přes obsahovou strategii až po lokální SEO – vše s jedním cílem: přivést vám víc zákazníků, kteří už nakupují.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <Link
@@ -226,8 +227,23 @@ export default function SeoKonzultantUstiPage() {
         </div>
       </section>
 
+      {/* Obsah stránky – kotvy */}
+      <nav className="py-10 bg-white border-b border-gray-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">Obsah stránky</h2>
+          <ol className="space-y-2 list-decimal list-inside text-gray-600">
+            <li><a href="#proc-seo" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Proč investovat do SEO optimalizace</a></li>
+            <li><a href="#seo-sluzby" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">SEO služby, které skutečně fungují</a></li>
+            <li><a href="#jak-probiha-spoluprace" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Jak probíhá SEO spolupráce</a></li>
+            <li><a href="#pro-koho" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Pro koho je SEO optimalizace</a></li>
+            <li><a href="#ustecky-kraj" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">SEO optimalizace v Ústeckém kraji</a></li>
+            <li><a href="#faq" className="text-purple-600 hover:text-purple-800 hover:underline transition-colors">Často kladené otázky</a></li>
+          </ol>
+        </div>
+      </nav>
+
       {/* Proč SEO */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
+      <section id="proc-seo" className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30 scroll-mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -320,7 +336,7 @@ export default function SeoKonzultantUstiPage() {
       </section>
 
       {/* Co nabízím */}
-      <section className="py-24 bg-white">
+      <section id="seo-sluzby" className="py-24 bg-white scroll-mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -468,7 +484,7 @@ export default function SeoKonzultantUstiPage() {
       </section>
 
       {/* Jak SEO funguje */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
+      <section id="jak-probiha-spoluprace" className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30 scroll-mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -587,7 +603,7 @@ export default function SeoKonzultantUstiPage() {
       </section>
 
       {/* Pro koho je SEO */}
-      <section className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30">
+      <section id="pro-koho" className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30 scroll-mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -621,7 +637,7 @@ export default function SeoKonzultantUstiPage() {
       </section>
 
       {/* SEO pro Ústecký kraj */}
-      <section className="py-24 bg-white">
+      <section id="ustecky-kraj" className="py-24 bg-white scroll-mt-4">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
             SEO optimalizace v <span className="text-purple-600">Ústeckém kraji</span>
@@ -663,7 +679,7 @@ export default function SeoKonzultantUstiPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
+      <section id="faq" className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30 scroll-mt-4">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
             Často kladené otázky o SEO v Ústí nad Labem
@@ -764,63 +780,7 @@ export default function SeoKonzultantUstiPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold mb-6 text-yellow-400">Linklady.cz</h3>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                SEO optimalizace, <Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400">tvorba webů</Link> a <Link href="/automatizace" className="text-gray-300 hover:text-yellow-400">AI automatizace</Link>.
-                SEO konzultant pro firmy v Ústí nad Labem a Ústeckém kraji.
-              </p>
-              <div className="flex space-x-4">
-                <a href="https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                  <span className="sr-only">LinkedIn</span>
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-6 text-white">Rychlé odkazy</h4>
-              <ul className="space-y-3">
-                <li><Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">Úvod</Link></li>
-                <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400 transition-colors">O mně</Link></li>
-                <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400 transition-colors">Tvorba webů</Link></li>
-                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400 transition-colors">Automatizace</Link></li>
-                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400 transition-colors">Vibecoding</Link></li>
-                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400 transition-colors">E-book</Link></li>
-                <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Blog</Link></li>
-                <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400 transition-colors">Kontakt</Link></li>
-              </ul>
-            </div>
-
-            <div className="bg-purple-800/50 p-8 rounded-2xl border border-purple-700/50">
-              <h4 className="text-lg font-semibold mb-4 text-yellow-400">Pavla Zimmermannová</h4>
-              <div className="space-y-2 text-sm text-gray-300">
-                <p>SEO konzultant Ústí nad Labem</p>
-                <p>Vedena na FÚ Bílina</p>
-                <p>IČO: 04352041</p>
-                <p>
-                  E-mail:{' '}
-                  <a href="mailto:zimmermannovap@gmail.com" className="text-yellow-400 hover:text-yellow-300 transition-colors">
-                    zimmermannovap@gmail.com
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-            <p className="text-gray-400">
-              © 2026 Linklady.cz – Všechna práva vyhrazena
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

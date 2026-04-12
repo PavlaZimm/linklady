@@ -1,42 +1,11 @@
 import Navigation from '@/components/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
+import SiteFooter from '@/components/site-footer'
 
-export const metadata: Metadata = {
-  title: "Webová aplikace – co to je, jak funguje a kdy ji potřebujete | Linklady.cz",
-  description: "Co je webová aplikace a čím se liší od běžného webu? Srozumitelný průvodce webovými aplikacemi na míru – typy, technologie, výhody a kdy se vám vyplatí. Česky a prakticky.",
-  keywords: [
-    "webová aplikace",
-    "webova aplikace",
-    "webová aplikace na míru",
-    "co je webová aplikace",
-    "progresivní webová aplikace",
-    "webové aplikace",
-    "tvorba webových aplikací",
-    "webová aplikace vs web",
-    "webová aplikace pro firmy",
-  ],
-  alternates: {
-    canonical: "https://linklady.cz/webova-aplikace",
-  },
-  openGraph: {
-    type: "website",
-    locale: "cs_CZ",
-    url: "https://linklady.cz/webova-aplikace",
-    siteName: "Linklady.cz",
-    title: "Webová aplikace – co to je, jak funguje a kdy ji potřebujete",
-    description: "Webová aplikace není jen web. Je to interaktivní software v prohlížeči, který řeší konkrétní problémy. Zjistěte, kdy se vám vyplatí a jak ji nechat vytvořit.",
-    images: [
-      {
-        url: "/profile.jpg",
-        width: 500,
-        height: 600,
-        alt: "Pavla Zimmermannová – tvorba webových aplikací",
-      },
-    ],
-  },
-}
+export const metadata: Metadata = siteMetadata['/webova-aplikace']
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -146,8 +115,11 @@ export default function WebovaAplikacePage() {
             <h1 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 max-w-4xl mx-auto leading-tight">
               Webová aplikace: Co to je, jak funguje a&nbsp;kdy ji potřebujete
             </h1>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10">
-              Všechno, co potřebujete vědět o&nbsp;webových aplikacích. Srozumitelně, bez technického žargonu.
+            <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10 mb-4">
+              Všechno, co potřebujete vědět o&nbsp;webových aplikacích. Srozumitelně, bez technického žargonu – ať už ji chcete poptat, nebo se v&nbsp;nabídkách jen lépe zorientovat.
+            </p>
+            <p className="text-sm opacity-75 max-w-2xl mx-auto relative z-10">
+              Rozdíl mezi webem a webovou aplikací, typy, technologie, orientační ceny i&nbsp;kdy se skutečně vyplatí.
             </p>
           </div>
         </div>
@@ -437,6 +409,17 @@ export default function WebovaAplikacePage() {
                 <p className="text-gray-700">Hosting a deploy platforma optimalizovaná pro Next.js. Automatické nasazení z&nbsp;Gitu, CDN po celém světě, SSL certifikát zdarma.</p>
               </div>
             </div>
+            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Make.com</h3>
+                <p className="text-gray-700">Vizuální platforma pro <Link href="/automatizace" className="text-primary font-semibold hover:underline">automatizaci procesů</Link> a propojení aplikací. Pomocí Make propojuji webové aplikace s&nbsp;externími službami – CRM, e-maily, fakturace, Google Sheets a stovky dalších integrací. Bez jediného řádku kódu.</p>
+              </div>
+            </div>
           </div>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -493,46 +476,7 @@ export default function WebovaAplikacePage() {
         </div>
       </article>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <Link href="/" className="text-lg font-semibold hover:text-yellow-400">
-                Domů
-              </Link>
-              <ul className="mt-4 space-y-2 text-sm">
-                <li><Link href="/o-mne" className="text-gray-300 hover:text-yellow-400">O mně</Link></li>
-                <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400">SEO Ústí nad Labem</Link></li>
-                <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400">Tvorba webů</Link></li>
-                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400">Automatizace</Link></li>
-                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400">Vibecoding</Link></li>
-                <li><Link href="/ai-agent" className="text-gray-300 hover:text-yellow-400">AI Agent</Link></li>
-                <li><Link href="/webova-aplikace" className="text-gray-300 hover:text-yellow-400">Webová aplikace</Link></li>
-                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400">E-book</Link></li>
-                <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400">Blog</Link></li>
-                <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400">Kontakt</Link></li>
-              </ul>
-            </div>
-
-            <div className="bg-primary p-6 rounded-lg">
-              <h3 className="font-semibold mb-2">Pavla Zimmermannová</h3>
-              <p className="text-sm mb-2">Vedena na FÚ Bílina.</p>
-              <p className="text-sm mb-2">IČO: 04352041</p>
-              <p className="text-sm">
-                E-mail:{' '}
-                <a href="mailto:zimmermannovap@gmail.com" className="hover:text-yellow-400">
-                  zimmermannovap@gmail.com
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            © 2026 – linklady.cz.
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

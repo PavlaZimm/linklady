@@ -8,6 +8,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
+import SiteFooter from '@/components/site-footer'
 
 export const metadata: Metadata = siteMetadata['/o-mne']
 
@@ -227,43 +228,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <Link href="/" className="text-lg font-semibold hover:text-yellow-400">
-                Domů
-              </Link>
-              <ul className="mt-4 space-y-2 text-sm">
-                <li><Link href="/seo-konzultant-usti-nad-labem" className="text-gray-300 hover:text-yellow-400">SEO Ústí nad Labem</Link></li>
-                <li><Link href="/tvorba-webu-bilina" className="text-gray-300 hover:text-yellow-400">Tvorba webů</Link></li>
-                <li><Link href="/automatizace" className="text-gray-300 hover:text-yellow-400">Automatizace</Link></li>
-                <li><Link href="/vibecoding" className="text-gray-300 hover:text-yellow-400">Vibecoding</Link></li>
-                <li><Link href="/ebook" className="text-gray-300 hover:text-yellow-400">E-book</Link></li>
-                <li><Link href="/blog" className="text-gray-300 hover:text-yellow-400">Blog</Link></li>
-                <li><Link href="/kontakt" className="text-gray-300 hover:text-yellow-400">Kontakt</Link></li>
-              </ul>
-            </div>
-            
-            <div className="bg-primary p-6 rounded-lg">
-              <h3 className="font-semibold mb-2">Pavla Zimmermannová</h3>
-              <p className="text-sm mb-2">Vedena na FÚ Bílina.</p>
-              <p className="text-sm mb-2">IČO: 04352041</p>
-              <p className="text-sm">
-                E-mail:{' '}
-                <a href="mailto:zimmermannovap@gmail.com" className="hover:text-yellow-400">
-                  zimmermannovap@gmail.com
-                </a>
-              </p>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            © 2026 – linklady.cz.
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }
