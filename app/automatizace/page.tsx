@@ -1,4 +1,5 @@
 import Navigation from '@/components/navigation'
+import ContactForm from '@/components/contact-form'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
@@ -429,20 +430,13 @@ export default function AutomatizacePage() {
             </div>
           </div>
 
-          {/* CTA Box */}
-          <div className="bg-purple-50 border-l-4 border-primary rounded-lg p-8 mt-12">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              Chcete zjistit, co všechno se dá ve vaší firmě automatizovat?
-            </h3>
-            <p className="text-gray-700 mb-4">
-              Ozvěte se mi a probereme to. Zdarma vám řeknu, kde vidím největší potenciál a kolik času i peněz vám automatizace může ušetřit. Žádné závazky.
-            </p>
-            <Link
-              href="/kontakt"
-              className="inline-block bg-yellow-400 text-purple-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
-            >
-              Domluvit konzultaci zdarma
-            </Link>
+          {/* Poptávka */}
+          <div id="poptavka" className="mt-12 scroll-mt-24">
+            <ContactForm
+              service="Automatizace procesů"
+              title="Co ve firmě děláte pořád ručně?"
+              subtitle="Napište mi to a já vám zdarma řeknu, kde vidím největší potenciál a kolik času to může ušetřit. Bez závazků."
+            />
           </div>
         </div>
       </article>

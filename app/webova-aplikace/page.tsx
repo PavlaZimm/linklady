@@ -1,4 +1,5 @@
 import Navigation from '@/components/navigation'
+import ContactForm from '@/components/contact-form'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
@@ -113,14 +114,169 @@ export default function WebovaAplikacePage() {
             </nav>
 
             <h1 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 max-w-4xl mx-auto leading-tight">
-              Webová aplikace: Co to je, jak funguje a&nbsp;kdy ji potřebujete
+              Webová aplikace na&nbsp;míru: cena, termín a&nbsp;jak to probíhá
             </h1>
             <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10 mb-4">
-              Všechno, co potřebujete vědět o&nbsp;webových aplikacích. Srozumitelně, bez technického žargonu – ať už ji chcete poptat, nebo se v&nbsp;nabídkách jen lépe zorientovat.
+              Dělám webové aplikace pro malé firmy. Hodinovka je 1&nbsp;200&nbsp;Kč, odhad dostanete do&nbsp;24&nbsp;hodin a&nbsp;první verzi si naklikáte během několika dní, ne za&nbsp;dva měsíce.
             </p>
             <p className="text-sm opacity-75 max-w-2xl mx-auto relative z-10">
-              Rozdíl mezi webem a webovou aplikací, typy, technologie, orientační ceny i&nbsp;kdy se skutečně vyplatí.
+              Níž najdete ceny, ukázky hotových aplikací a&nbsp;taky vysvětlení, čím se webová aplikace liší od&nbsp;obyčejného webu.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Ceny */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Kolik to stojí
+          </h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            Většina firem cenu nezveřejní a&nbsp;pošle vás do&nbsp;formuláře. Tady je rovnou, ať víte, jestli si mě vůbec můžete dovolit.
+          </p>
+
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full border-collapse text-left">
+              <tbody>
+                <tr className="border-b border-gray-200">
+                  <td className="py-4 pr-4 font-semibold text-gray-900">Hodinová sazba</td>
+                  <td className="py-4 text-2xl font-bold text-primary whitespace-nowrap">1&nbsp;200&nbsp;Kč</td>
+                </tr>
+                <tr className="border-b border-gray-200">
+                  <td className="py-4 pr-4 font-semibold text-gray-900">Jednoduchý web</td>
+                  <td className="py-4 text-lg text-gray-800 whitespace-nowrap">od&nbsp;9&nbsp;000&nbsp;Kč</td>
+                </tr>
+                <tr className="border-b border-gray-200">
+                  <td className="py-4 pr-4 font-semibold text-gray-900">Webová aplikace</td>
+                  <td className="py-4 text-lg text-gray-800">
+                    počítá se po&nbsp;hodinách, rozsah stanovíme po&nbsp;konzultaci
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            U&nbsp;aplikace se cena odhaduje předem v&nbsp;hodinách, ne odhadem od&nbsp;oka. <strong>Napíšete, co potřebujete, a&nbsp;do&nbsp;24&nbsp;hodin víte, o&nbsp;kolik hodin práce jde.</strong> Když se v&nbsp;průběhu ukáže, že to chce něco navíc, dozvíte se to dřív, než to začnu dělat.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Za&nbsp;9&nbsp;000&nbsp;Kč vznikne prezentační web, ne rezervační systém. Ať se nedivíte.
+          </p>
+        </div>
+      </section>
+
+      {/* Ukázky */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Co jsem udělala
+          </h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            Všechno níž běží naživo, můžete si to rozklikat.
+          </p>
+
+          <div className="space-y-6">
+            <div className="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <a href="https://yes-cz-rfq.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-primary/40">
+                  Poptávkový systém pro Yes.cz
+                </a>
+              </h3>
+              <p className="text-gray-700">
+                Formulář, ve&nbsp;kterém si zákazník naskládá produkty po&nbsp;značkách, zadá množství, termín dodání a&nbsp;podmínky. Dvojjazyčně, česky i&nbsp;anglicky. Tohle už není web, tohle je nástroj, který někdo denně používá.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <a href="https://autoskolajana.cz/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-primary/40">
+                  Autoškola Jana, Bílina
+                </a>
+              </h3>
+              <p className="text-gray-700">
+                Web autoškoly s&nbsp;ceníkem, termíny kurzů a&nbsp;aktualitami, které si škola spravuje sama. Postavené na&nbsp;Next.js s&nbsp;databází, takže se nic nemusí přepisovat v&nbsp;kódu.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <a href="https://www.flyqueens.cz/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-primary/40">
+                  FlyQueens
+                </a>
+              </h3>
+              <p className="text-gray-700">
+                Aplikace na&nbsp;sledování letů. Data se tahají z&nbsp;externího zdroje a&nbsp;zobrazují v&nbsp;reálném čase.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <a href="https://vsepromineraly.cz/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-primary/40">
+                  Vše pro minerály
+                </a>
+              </h3>
+              <p className="text-gray-700">
+                E-shop s&nbsp;krabičkami, vitrínami a&nbsp;podstavci pro sběratele minerálů.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <a href="https://kastrup.cz/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-primary/40">
+                  Kastrup.cz
+                </a>
+              </h3>
+              <p className="text-gray-700">
+                Obsahový průvodce Dánskem. Velký web s&nbsp;vlastní redakční částí, kde se články spravují bez zásahu do&nbsp;kódu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Na co se lidi ptají, než zadají práci */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+            Co se ptáte, než něco zadáte
+          </h2>
+
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Používáte AI? Nenapíše to celé stroj?</h3>
+              <p className="text-gray-700">
+                Používám, a&nbsp;říkám to nahlas. Díky tomu jde práce rychleji a&nbsp;proto můžu mít hodinovku 1&nbsp;200 a&nbsp;ne trojnásobek. <strong>Ale za&nbsp;výsledek ručím svým jménem</strong>, ne jménem nástroje. Každý řádek, který odevzdám, jsem si přečetla a&nbsp;otestovala.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Co když si v&nbsp;průběhu rozmyslím zadání?</h3>
+              <p className="text-gray-700">
+                To se stává skoro vždycky a&nbsp;je to v&nbsp;pořádku. Účtuju po&nbsp;hodinách, takže změna není drama, jen se posune odhad. Řeknu vám, kolik hodin to přidá, ještě než se do&nbsp;toho pustím.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Komu patří kód?</h3>
+              <p className="text-gray-700">
+                Vám. Dostanete přístup do&nbsp;repozitáře i&nbsp;k&nbsp;hostingu. Kdybychom se rozešli, web běží dál a&nbsp;může na&nbsp;něm pracovat kdokoli jiný. Nikde vás nedržím.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Pracujete sama? Co když onemocníte?</h3>
+              <p className="text-gray-700">
+                Pracuju sama a&nbsp;je to jediná věc, kterou proti agentuře nemám. Zato víte, kdo váš projekt dělá, a&nbsp;mluvíte přímo s&nbsp;ním. U&nbsp;agentury se s&nbsp;programátorem nepotkáte. Termíny proto slibuju s&nbsp;rezervou, ne nejlepší možný scénář.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Co neberu</h3>
+              <p className="text-gray-700">
+                Velké e-shopy s&nbsp;napojením na&nbsp;skladové systémy a&nbsp;mobilní aplikace do&nbsp;App Store. Na&nbsp;to jsou lepší lidi a&nbsp;nebudu se učit za&nbsp;vaše peníze.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -129,12 +285,16 @@ export default function WebovaAplikacePage() {
       <article className="py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            A&nbsp;když si ještě nejste jistí, co vlastně potřebujete
+          </h2>
+
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Gmail, Google Docs, internetové bankovnictví, Fakturoid – to všechno jsou <strong>webové aplikace</strong>. Vypadají jako běžné weby, ale dělají mnohem víc. Místo pouhého zobrazování informací vám umožňují pracovat – psát, počítat, objednávat, komunikovat. A to všechno přímo v&nbsp;prohlížeči, bez instalace čehokoliv.
+            Gmail, Google Docs, internetové bankovnictví, Fakturoid, to všechno jsou <strong>webové aplikace</strong>. Vypadají jako běžné weby, ale dělají mnohem víc. Místo pouhého zobrazování informací vám umožňují pracovat, tedy psát, počítat, objednávat, komunikovat. A&nbsp;to všechno přímo v&nbsp;prohlížeči, bez instalace čehokoliv.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            V&nbsp;tomhle článku vám vysvětlím, <strong>co je webová aplikace</strong>, čím se liší od klasického webu, jaké typy existují a kdy dává smysl nechat si jednu vytvořit na míru.
+            Zbytek stránky vysvětluje, <strong>co je webová aplikace</strong>, čím se liší od&nbsp;klasického webu, jaké typy existují a&nbsp;kdy dává smysl nechat si jednu vytvořit na&nbsp;míru.
           </p>
 
           {/* Co je webová aplikace */}
@@ -359,7 +519,7 @@ export default function WebovaAplikacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Nasazení a předání</h3>
-                <p className="text-gray-700">Aplikaci nasadím na produkci (Vercel, vlastní server), zaškolím vás a předám kompletní dokumentaci. Kód je váš – žádný vendor lock-in.</p>
+                <p className="text-gray-700">Aplikaci nasadím na produkci – na váš hosting nebo na server, který vám poradím vybrat. Zaškolím vás a předám kompletní dokumentaci. Kód je váš, nikde nezůstáváte přivázaní ke mně.</p>
               </div>
             </div>
           </div>
@@ -382,7 +542,7 @@ export default function WebovaAplikacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Next.js + React</h3>
-                <p className="text-gray-700">Framework od Vercelu pro tvorbu rychlých, SEO-optimalizovaných webových aplikací. Používají ho Netflix, TikTok i Notion.</p>
+                <p className="text-gray-700">Framework pro rychlé webové aplikace, které navíc umí Google dobře přečíst. Používají ho Netflix, TikTok i&nbsp;Notion. Na tomhle stojí většina toho, co dělám nového.</p>
               </div>
             </div>
 
@@ -405,10 +565,23 @@ export default function WebovaAplikacePage() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Vercel</h3>
-                <p className="text-gray-700">Hosting a deploy platforma optimalizovaná pro Next.js. Automatické nasazení z&nbsp;Gitu, CDN po celém světě, SSL certifikát zdarma.</p>
+                <h3 className="font-semibold text-gray-900 mb-1">PHP</h3>
+                <p className="text-gray-700">Poptávkový systém pro Yes.cz a&nbsp;jeden z&nbsp;webů níž jsem psala v&nbsp;PHP. Běží na&nbsp;běžném hostingu, kde už firma nejspíš platí prostor, takže se nikam nemusí stěhovat. Když se do&nbsp;PHP hodí i&nbsp;váš projekt, řeknu to rovnou.</p>
               </div>
             </div>
+
+            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zM13 18h7v-2h-7v2z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Claude Code</h3>
+                <p className="text-gray-700">Kód píšu s&nbsp;<a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Claude Code</a> od&nbsp;Anthropicu, tedy metodou, které se říká <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link>. Neznamená to, že za&nbsp;mě někdo myslí. Znamená to, že věci, které bych psala tři dny, mám za&nbsp;odpoledne, a&nbsp;vy to poznáte na&nbsp;počtu hodin ve&nbsp;faktuře.</p>
+              </div>
+            </div>
+
             <div className="flex items-start bg-purple-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -423,7 +596,7 @@ export default function WebovaAplikacePage() {
           </div>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            A hlavně – celý vývoj zrychluju pomocí <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> s&nbsp;<a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Claude Code</a>. Díky tomu dostanete výsledek rychleji a za rozumnější cenu. Zajímá vás, jak efektivně pracovat s&nbsp;AI? Podívejte se na můj <Link href="/ebook" className="text-primary font-semibold hover:underline">e-book o&nbsp;promptování</Link>.
+            Stack vybírám podle projektu, ne podle toho, co je právě v&nbsp;módě. Chcete umět pracovat s&nbsp;AI podobně? Sepsala jsem to do&nbsp;<Link href="/ebook" className="text-primary font-semibold hover:underline">e-booku o&nbsp;promptování</Link>.
           </p>
 
           {/* FAQ */}
@@ -458,20 +631,13 @@ export default function WebovaAplikacePage() {
             </div>
           </div>
 
-          {/* CTA Box */}
-          <div className="bg-purple-50 border-l-4 border-primary rounded-lg p-8 mt-12">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              Potřebujete webovou aplikaci na míru?
-            </h3>
-            <p className="text-gray-700 mb-4">
-              Pomůžu vám navrhnout a vytvořit webovou aplikaci přesně podle vašich potřeb. Díky AI nástrojům dodám výsledek rychleji a za rozumnější cenu. Ozvěte se – úvodní konzultace je zdarma.
-            </p>
-            <Link
-              href="/kontakt"
-              className="inline-block bg-yellow-400 text-purple-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
-            >
-              Domluvit konzultaci zdarma
-            </Link>
+          {/* Formulář */}
+          <div className="mt-12">
+            <ContactForm
+              service="Webová aplikace na míru"
+              title="Napište, co potřebujete"
+              subtitle="Do 24 hodin dostanete odhad v hodinách a cenu. Konzultace je zdarma a nezávazná."
+            />
           </div>
         </div>
       </article>

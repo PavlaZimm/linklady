@@ -1,4 +1,5 @@
 import Navigation from '@/components/navigation'
+import ContactForm from '@/components/contact-form'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
@@ -184,7 +185,7 @@ export default function TvorbaWebuBilinaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <Link
-                href="/kontakt"
+                href="#poptavka"
                 className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
               >
                 Chci konzultaci zdarma
@@ -681,6 +682,19 @@ export default function TvorbaWebuBilinaPage() {
                 <span>Osobní schůzka v Bílině</span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Poptávka */}
+          <div id="poptavka" className="mt-12 scroll-mt-24">
+            <ContactForm
+              service="Tvorba webu"
+              title="Napište, jaký web potřebujete"
+              subtitle="Stačí pár vět: co firma dělá a co má web umět. Do 24 hodin dostanete cenu a termín. Jsem z Bíliny, můžeme se potkat i osobně."
+            />
           </div>
         </div>
       </section>
