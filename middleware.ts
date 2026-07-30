@@ -12,7 +12,7 @@ export function middleware(request: NextRequest) {
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "img-src 'self' data: https://www.linklady.cz https://linklady.cz https://images.pexels.com https://www.google-analytics.com",
     "font-src 'self' https://fonts.gstatic.com",
-    "connect-src 'self' https://*.convex.cloud https://*.convex.site wss://*.convex.cloud https://www.google-analytics.com https://analytics.ahrefs.com https://www.googletagmanager.com",
+    "connect-src 'self' https://*.convex.cloud https://*.convex.site wss://*.convex.cloud https://www.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://*.google-analytics.com https://stats.g.doubleclick.net https://analytics.ahrefs.com https://www.googletagmanager.com",
     "frame-src 'none'",
     "object-src 'none'",
     "base-uri 'self'",

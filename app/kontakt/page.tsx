@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
 import SiteFooter from '@/components/site-footer'
+import ContactForm from '@/components/contact-form'
 
 export const metadata: Metadata = siteMetadata['/kontakt']
 
@@ -116,24 +117,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact CTA */}
+      {/* Contact form */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-purple-50 rounded-lg p-8 md:p-12 text-center">
-            <h2 className="text-3xl font-bold text-primary mb-4">Napište mi</h2>
-            <p className="text-gray-600 mb-8 text-lg">
-              Napište mi a do 24 hodin se vám ozvu. Společně najdeme cestu, jak váš byznys posunout online.
-            </p>
-            <a
-              href="mailto:zimmermannovap@gmail.com"
-              className="inline-flex items-center bg-yellow-400 text-purple-900 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors text-base sm:text-lg"
-            >
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-              zimmermannovap@gmail.com
-            </a>
-          </div>
+          <ContactForm />
         </div>
       </section>
 
