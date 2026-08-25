@@ -239,7 +239,7 @@
     }
   },
   "/kontakt": {
-    "title": "Kontakt: nezávazná konzultace zdarma | Linklady",
+    "title": "Kontakt: nezávazná konzultace zdarma",
     "description": "Napište mi, co řešíte, a odpovím do 24 hodin. Weby, SEO, AI agenti a automatizace pro firmy na severu Čech. Konzultace zdarma.",
     "keywords": [
       "kontakt",
@@ -328,7 +328,7 @@
     }
   },
   "/reference": {
-    "title": "Reference: weby, které jsem postavila | Linklady.cz",
+    "title": "Reference: weby, které jsem postavila",
     "description": "Web pro výrobní firmu, autoškolu i spolek. U každého píšu, co jsem dělala a proč to tak je. Dva ze tří odešly z Webnode.",
     "keywords": [
       "reference",

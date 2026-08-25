@@ -35,6 +35,7 @@ type Reference = {
   odkaz: string
   gradient: string
   textNaDlazdici: string
+  barvaTextu: string
   popis: string
   co: string[]
   stitky: string[]
@@ -48,6 +49,7 @@ const reference: Reference[] = [
     odkaz: 'https://allforminerals.com/',
     gradient: 'from-orange-400 to-amber-700',
     textNaDlazdici: 'allforminerals.com',
+    barvaTextu: 'text-white',
     popis:
       'Česká rodinná firma vyrábí od roku 1994 vitríny, boxy a stojany pro sběratele minerálů, muzea a galerie. Web měla na Webnode a potřebovala katalog, který unese stovky produktů.',
     co: [
@@ -65,6 +67,7 @@ const reference: Reference[] = [
     odkaz: 'https://autoskolajana.cz/',
     gradient: 'from-purple-500 to-purple-800',
     textNaDlazdici: 'autoskolajana.cz',
+    barvaTextu: 'text-white',
     popis:
       'Autoškola v Bílině s tradicí od roku 1992, skupiny A, B, C, D i E. Lokální služba, u které rozhoduje, jestli ji lidé najdou při hledání v okolí.',
     co: [
@@ -81,6 +84,7 @@ const reference: Reference[] = [
     odkaz: 'https://ceskysvaznovosedlice.vercel.app/',
     gradient: 'from-yellow-400 to-yellow-600',
     textNaDlazdici: 'Svaz žen Novosedlice',
+    barvaTextu: 'text-yellow-950',
     popis:
       'Spolek v Novosedlicích u Teplic pořádá akce pro obec. Původní web běžel na Webnode a nikdo z členek do něj neuměl zasáhnout, aniž by něco rozbil.',
     co: [
@@ -125,7 +129,7 @@ export default function ReferencePage() {
                 <div
                   className={`bg-gradient-to-br ${r.gradient} p-8 flex items-center justify-center h-40`}
                 >
-                  <span className="text-2xl font-bold text-white text-center leading-tight">
+                  <span className={`text-2xl font-bold ${r.barvaTextu} text-center leading-tight`}>
                     {r.textNaDlazdici}
                   </span>
                 </div>
