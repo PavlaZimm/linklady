@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://linklady.cz/sitemap.xml',
+    sitemap: 'https://www.linklady.cz/sitemap.xml',
   }
 }

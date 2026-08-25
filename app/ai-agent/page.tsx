@@ -1,4 +1,5 @@
 import Navigation from '@/components/navigation'
+import ContactForm from '@/components/contact-form'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
@@ -12,11 +13,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://linklady.cz/ai-agent/#webpage",
-      url: "https://linklady.cz/ai-agent",
+      "@id": "https://www.linklady.cz/ai-agent/#webpage",
+      url: "https://www.linklady.cz/ai-agent",
       name: "Co je AI agent? Kompletní průvodce",
       description: "Srozumitelný průvodce světem AI agentů – co to je, jak funguje, typy agentů a praktické využití.",
-      isPartOf: { "@id": "https://linklady.cz/#website" },
+      isPartOf: { "@id": "https://www.linklady.cz/#website" },
       about: {
         "@type": "Thing",
         name: "AI Agent",
@@ -31,58 +32,13 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "Úvod",
-          item: "https://linklady.cz",
+          item: "https://www.linklady.cz",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "AI Agent",
-          item: "https://linklady.cz/ai-agent",
-        },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Co je AI agent?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "AI agent je autonomní softwarový systém postavený na umělé inteligenci, který dokáže samostatně plánovat, rozhodovat se a vykonávat úkoly. Na rozdíl od běžného chatbotu nepotřebuje neustálé vedení – stačí mu zadat cíl a on najde cestu, jak ho dosáhnout.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Jaký je rozdíl mezi AI agentem a chatbotem?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Chatbot reaguje na jednotlivé zprávy – zeptáte se, odpoví. AI agent jde dál: dokáže si rozložit složitý úkol na kroky, použít nástroje (prohlížeč, databázi, API), učit se z výsledků a pracovat autonomně, dokud úkol nesplní.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Jsou AI agenti bezpeční?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Záleží na implementaci. Kvalitní AI agenti mají bezpečnostní vrstvy – omezená oprávnění, lidský dohled nad důležitými rozhodnutími a auditní záznamy. Důležité je nastavit jasné hranice toho, co agent smí a nesmí dělat.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Kolik stojí AI agent?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Cena závisí na typu agenta. Jednoduchý chatbot pro zákaznickou podporu lze provozovat za stovky korun měsíčně. Složitější automatizační agenti stojí tisíce korun, ale typicky se investice vrátí díky ušetřenému času a zvýšené produktivitě.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Potřebuji k používání AI agenta umět programovat?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ne nutně. Existují platformy jako Make.com nebo Zapier, kde si AI agenta sestavíte vizuálně bez kódu. Pro pokročilejší scénáře se hodí základní technické znalosti, ale i ty se dají rychle naučit – například pomocí vibecodingu.",
-          },
+          item: "https://www.linklady.cz/ai-agent",
         },
       ],
     },
@@ -337,6 +293,56 @@ export default function AiAgentPage() {
             Čísla mluví jasně: jen v&nbsp;první polovině roku 2025 vzrostl počet firem vyvíjejících vlastní AI agenty o&nbsp;<strong>119 %</strong>. Průměrný počet zákaznických konverzací vedených AI agentem se zvýšil <strong>22&times;</strong>. Kdo teď nezačne, bude za rok dohánět konkurenci.
           </p>
 
+          {/* AI agent v marketingu */}
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+            AI agent v&nbsp;marketingu: co s&nbsp;ním dělám já
+          </h2>
+
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            Tohle není teorie z&nbsp;prezentace. Provozuju šest vlastních webů a agenta na nich používám denně. Popíšu tedy radši, co skutečně dělá, než co by teoreticky mohl.
+          </p>
+
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <strong>Čte data místo mě.</strong> Agent si sáhne do Search Console na všechny weby najednou, srovná je meziročně a vrátí seznam stránek, kde se něco zlomilo. Ručně to trvá odpoledne, agentovi minutu. Důležitější je ale to, co se z&nbsp;toho dá vyčíst: na dvou mých webech nezávisle vyšlo, že <strong>dotazy typu &bdquo;kam na&ldquo; a &bdquo;co vidět&ldquo; klikají několikanásobně víc než dotazy na holý údaj</strong>, a to i&nbsp;při horší pozici. Bez agenta bych to nespočítala, protože by se mi do toho nechtělo.
+          </p>
+
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <strong>Ověřuje čísla u&nbsp;zdroje.</strong> Než se do článku dostane cena nebo otevírací doba, agent otevře oficiální web provozovatele a údaj přečte tam. Co nenajde, označí jako neověřené a do textu to nedá.
+          </p>
+
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <strong>Hlídá, co zestárlo.</strong> Ceníky a otevírací doby v&nbsp;článcích tichounce lžou už po pár měsících. Agent projde odkazy a údaje a nahlásí, co přestalo sedět.
+          </p>
+
+          <div className="bg-purple-50 border-l-4 border-primary rounded-r-lg p-6 mb-8">
+            <p className="text-lg text-gray-800 leading-relaxed mb-3">
+              <strong>A teď to nepříjemné, protože bez toho by to byla reklama.</strong>
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Agent si během té práce dvakrát domyslel údaj, který v&nbsp;žádném zdroji nebyl, a jednou dvě věci prohodil. Všechno se to našlo při kontrole, ale nenašlo by se to samo. <strong>AI agent bez člověka, který za výsledek ručí, je riziko, ne úspora.</strong> Kdo vám slibuje opak, buď to nezkoušel, nebo vám něco prodává.
+            </p>
+          </div>
+
+          {/* Co ovlivňuje cenu */}
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+            Co ovlivňuje cenu AI agenta
+          </h2>
+
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            Paušální ceník u&nbsp;agentů nedává smysl, protože stejně znějící zadání se liší v&nbsp;práci klidně desetkrát. Tohle jsou věci, které cenu tlačí nahoru a&nbsp;dolů:
+          </p>
+
+          <ul className="space-y-3 mb-8 text-lg text-gray-700">
+            <li><strong>Kolik systémů má agent obsluhovat.</strong> Jeden nástroj je jednoduché. Pět propojených, kde si každý drží data po svém, je něco úplně jiného.</li>
+            <li><strong>Jestli existují data v&nbsp;použitelné podobě.</strong> Když jsou informace v&nbsp;PDF, v&nbsp;e-mailech a v&nbsp;hlavě jednoho kolegy, největší část práce je dostat je ven, ne postavit agenta.</li>
+            <li><strong>Co se stane, když se agent splete.</strong> U&nbsp;interní pomůcky se to opraví. U&nbsp;něčeho, co mluví se zákazníkem nebo hýbe penězi, se musí postavit kontroly, a to je násobek práce.</li>
+            <li><strong>Provoz, ne jen postavení.</strong> Agent není nábytek. Modely se mění, rozhraní se mění, a co dnes funguje, za půl roku nemusí.</li>
+          </ul>
+
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            Napište mi, co má agent dělat, a řeknu vám rovnou, jestli to má smysl a v&nbsp;jakém řádu se pohybujeme. Když to bude blbost, řeknu to taky.
+          </p>
+
           {/* Jak začít */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
             Jak začít s&nbsp;AI agentem
@@ -424,20 +430,13 @@ export default function AiAgentPage() {
             </div>
           </div>
 
-          {/* CTA Box */}
-          <div className="bg-purple-50 border-l-4 border-primary rounded-lg p-8 mt-12">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              Chcete AI agenta ve&nbsp;vaší firmě?
-            </h3>
-            <p className="text-gray-700 mb-4">
-              Pomůžu vám vybrat správný typ AI agenta, nastavit ho a nasadit do provozu. Ať už potřebujete chatbota pro zákazníky, automatizaci procesů nebo pomoc s&nbsp;vibecodingem – ozvěte se a probereme to. Úvodní konzultace je zdarma.
-            </p>
-            <Link
-              href="/kontakt"
-              className="inline-block bg-yellow-400 text-purple-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
-            >
-              Domluvit konzultaci zdarma
-            </Link>
+          {/* Poptávka */}
+          <div id="poptavka" className="mt-12 scroll-mt-24">
+            <ContactForm
+              service="AI asistent nebo agent"
+              title="Chcete AI agenta ve firmě?"
+              subtitle="Napište, co vám žere čas. Odpovím do 24 hodin a řeknu rovnou, jestli na to agent je, nebo jestli stačí jednodušší automatizace. Konzultace zdarma."
+            />
           </div>
         </div>
       </article>

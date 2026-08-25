@@ -11,12 +11,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://linklady.cz/#webpage",
-      url: "https://linklady.cz",
+      "@id": "https://www.linklady.cz/#webpage",
+      url: "https://www.linklady.cz",
       name: "Linklady.cz – SEO a AI automatizace | Pavla Zimmermannová",
       description: "Vaše firma na prvních místech. SEO strategie a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky, ne prázdné sliby.",
-      isPartOf: { "@id": "https://linklady.cz/#website" },
-      about: { "@id": "https://linklady.cz/#business" },
+      isPartOf: { "@id": "https://www.linklady.cz/#website" },
+      about: { "@id": "https://www.linklady.cz/#business" },
       inLanguage: "cs",
     },
     {
@@ -26,13 +26,13 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "Úvod",
-          item: "https://linklady.cz",
+          item: "https://www.linklady.cz",
         },
       ],
     },
     {
       "@type": "ItemList",
-      "@id": "https://linklady.cz/#services",
+      "@id": "https://www.linklady.cz/#services",
       name: "Služby online marketingu",
       itemListElement: [
         {
@@ -46,7 +46,7 @@ const jsonLd = {
           position: 2,
           name: "Tvorba webu",
           description: "Rychlé, responzivní weby optimalizované pro konverze. SEO od prvního řádku kódu.",
-          url: "https://linklady.cz/tvorba-webu-bilina",
+          url: "https://www.linklady.cz/tvorba-webu-bilina",
         },
         {
           "@type": "ListItem",

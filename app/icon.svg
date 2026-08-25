@@ -1,5 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#663399"/>
-  <text x="7" y="24" font-family="Georgia, serif" font-weight="bold" font-size="22" fill="#FFC107">L</text>
-  <circle cx="24" cy="9" r="3" fill="#FFC107" opacity="0.85"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="linklady">
+  <defs>
+    <mask id="prekryv">
+      <rect width="32" height="32" fill="#fff"/>
+      <circle cx="20.2" cy="11.8" r="6.3" fill="none" stroke="#000" stroke-width="6.6"/>
+    </mask>
+  </defs>
+  <circle cx="16" cy="16" r="16" fill="#663399"/>
+  <circle cx="11.8" cy="20.2" r="6.3" fill="none" stroke="#FFC107" stroke-width="3.6" mask="url(#prekryv)"/>
+  <circle cx="20.2" cy="11.8" r="6.3" fill="none" stroke="#FFC107" stroke-width="3.6"/>
 </svg>

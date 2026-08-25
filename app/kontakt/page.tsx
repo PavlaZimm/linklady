@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
 import SiteFooter from '@/components/site-footer'
+import ContactForm from '@/components/contact-form'
 
 export const metadata: Metadata = siteMetadata['/kontakt']
 
@@ -12,11 +13,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "ContactPage",
-      "@id": "https://linklady.cz/kontakt/#webpage",
-      url: "https://linklady.cz/kontakt",
+      "@id": "https://www.linklady.cz/kontakt/#webpage",
+      url: "https://www.linklady.cz/kontakt",
       name: "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
       description: "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, AI asistentů nebo automatizace.",
-      isPartOf: { "@id": "https://linklady.cz/#website" },
+      isPartOf: { "@id": "https://www.linklady.cz/#website" },
       inLanguage: "cs",
     },
     {
@@ -26,21 +27,21 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "Úvod",
-          item: "https://linklady.cz",
+          item: "https://www.linklady.cz",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Kontakt",
-          item: "https://linklady.cz/kontakt",
+          item: "https://www.linklady.cz/kontakt",
         },
       ],
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://linklady.cz/#business",
+      "@id": "https://www.linklady.cz/#business",
       name: "Linklady.cz – Pavla Zimmermannová",
-      url: "https://linklady.cz",
+      url: "https://www.linklady.cz",
       email: "zimmermannovap@gmail.com",
       taxID: "04352041",
       address: {
@@ -58,36 +59,7 @@ const jsonLd = {
           name: "Česká republika",
         },
       },
-      founder: { "@id": "https://linklady.cz/#person" },
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Jak dlouho trvá SEO optimalizace?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "SEO je dlouhodobý proces. První výsledky jsou viditelné obvykle za 3-6 měsíců, ale plný efekt se projeví za 6-12 měsíců v závislosti na konkurenci a stavu webu.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Co všechno se dá automatizovat?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Automatizovat se dá téměř cokoliv – od e-mailových sekvencí, přes CRM a fakturaci, až po publikování na sociální sítě. Používám nástroje jako Make.com, n8n nebo Zapier.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Jak fungují AI agenti?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "AI agenti automatizují analýzu webu, sledování pozic, generování reportů a další rutinní úkoly. Šetří čas a poskytují přesnější data než ruční zpracování.",
-          },
-        },
-      ],
+      founder: { "@id": "https://www.linklady.cz/#person" },
     },
   ],
 }
@@ -116,24 +88,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact CTA */}
+      {/* Contact form */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-purple-50 rounded-lg p-8 md:p-12 text-center">
-            <h2 className="text-3xl font-bold text-primary mb-4">Napište mi</h2>
-            <p className="text-gray-600 mb-8 text-lg">
-              Napište mi a do 24 hodin se vám ozvu. Společně najdeme cestu, jak váš byznys posunout online.
-            </p>
-            <a
-              href="mailto:zimmermannovap@gmail.com"
-              className="inline-flex items-center bg-yellow-400 text-purple-900 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors text-base sm:text-lg"
-            >
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-              zimmermannovap@gmail.com
-            </a>
-          </div>
+          <ContactForm />
         </div>
       </section>
 

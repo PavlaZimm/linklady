@@ -12,32 +12,35 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://linklady.cz/ebook/#webpage",
-      url: "https://linklady.cz/ebook",
+      "@id": "https://www.linklady.cz/ebook/#webpage",
+      url: "https://www.linklady.cz/ebook",
       name: "E-book: Jak správně promptovat AI",
       description: "Praktický e-book o promptování AI – od základů po pokročilé techniky.",
-      isPartOf: { "@id": "https://linklady.cz/#website" },
+      isPartOf: { "@id": "https://www.linklady.cz/#website" },
       inLanguage: "cs",
     },
-    {
-      "@type": "Product",
-      "@id": "https://linklady.cz/ebook/#product",
-      name: "Jak správně promptovat AI",
-      description: "Praktický e-book o promptování AI. Naučte se psát efektivní prompty a získejte lepší výsledky z ChatGPT, Claude a dalších AI nástrojů.",
-      image: "https://linklady.cz/profile.jpg",
-      brand: {
-        "@type": "Brand",
-        name: "Linklady.cz",
-      },
-      author: { "@id": "https://linklady.cz/#person" },
-      category: "E-book",
-      offers: {
-        "@type": "Offer",
-        url: "https://linklady.cz/ebook",
-        availability: "https://schema.org/PreOrder",
-        priceCurrency: "CZK",
-      },
-    },
+    // ⚠️ Schema Product je dočasně vypnuté (4. 8. 2026).
+    // Mělo `offers` bez povinného pole `price`, což je neplatné. Search Console
+    // to hlásila jako „Produktové úryvky" a „Záznamy obchodníka" a generovalo to chyby.
+    // Až bude e-book na prodej za konkrétní částku, vrátit i s cenou:
+    //
+    // {
+    //   "@type": "Product",
+    //   "@id": "https://www.linklady.cz/ebook/#product",
+    //   name: "Jak správně promptovat AI",
+    //   description: "Praktický e-book o promptování AI…",
+    //   image: "https://www.linklady.cz/profile.jpg",
+    //   brand: { "@type": "Brand", name: "Linklady.cz" },
+    //   author: { "@id": "https://www.linklady.cz/#person" },
+    //   category: "E-book",
+    //   offers: {
+    //     "@type": "Offer",
+    //     url: "https://www.linklady.cz/ebook",
+    //     price: "___",                      // ← doplnit skutečnou cenu, bez ní je schema neplatné
+    //     priceCurrency: "CZK",
+    //     availability: "https://schema.org/InStock",
+    //   },
+    // },
     {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -45,50 +48,13 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "Úvod",
-          item: "https://linklady.cz",
+          item: "https://www.linklady.cz",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "E-book",
-          item: "https://linklady.cz/ebook",
-        },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Pro jaké AI nástroje jsou prompty v e-booku?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Principy fungují univerzálně – pro ChatGPT, Claude, Gemini i další. E-book se zaměřuje na techniky, které platí napříč nástroji.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Potřebuji nějaké technické znalosti?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ne. E-book je psaný srozumitelně a je určený pro každého, kdo chce s AI pracovat efektivněji. Žádné programování ani technické zázemí nepotřebujete.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "V jakém formátu e-book dostanu?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "E-book je ve formátu PDF, který si přečtete na počítači, tabletu i mobilu. Po zaplacení ho dostanete okamžitě ke stažení.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Můžu se na něco zeptat po přečtení?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Samozřejmě! Napište mi na zimmermannovap@gmail.com a ráda poradím.",
-          },
+          item: "https://www.linklady.cz/ebook",
         },
       ],
     },

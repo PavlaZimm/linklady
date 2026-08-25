@@ -1,6 +1,17 @@
 import Navigation from '@/components/navigation'
 import Link from 'next/link'
 import SiteFooter from '@/components/site-footer'
+import type { Metadata } from 'next'
+
+// Bez tohohle dědila 404 titulek celého webu a v Analytics nešlo poznat,
+// kolik lidí na ni spadlo.
+export const metadata: Metadata = {
+  // Bez suffixu, ten přidává šablona v layoutu („%s | Linklady.cz").
+  title: 'Stránka nenalezena (404)',
+  description:
+    'Tahle stránka neexistuje nebo se přesunula. Zkuste úvod, nebo mi napište, co jste hledali.',
+  robots: { index: false, follow: true },
+}
 
 export default function NotFound() {
   return (
