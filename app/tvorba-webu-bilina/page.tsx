@@ -13,10 +13,10 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://linklady.cz/tvorba-webu-bilina/#service",
+      "@id": "https://www.linklady.cz/tvorba-webu-bilina/#service",
       name: "Tvorba webových stránek Bílina",
       description: "Profesionální tvorba webových stránek v Bílině a okolí. Moderní weby optimalizované pro vyhledávače, rychlé a responzivní. SEO od prvního řádku kódu.",
-      provider: { "@id": "https://linklady.cz/#business" },
+      provider: { "@id": "https://www.linklady.cz/#business" },
       areaServed: [
         {
           "@type": "City",
@@ -54,10 +54,10 @@ const jsonLd = {
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://linklady.cz/#localbusiness",
+      "@id": "https://www.linklady.cz/#localbusiness",
       name: "Linklady.cz – Tvorba webových stránek Bílina",
-      url: "https://linklady.cz/tvorba-webu-bilina",
-      image: "https://linklady.cz/profile.jpg",
+      url: "https://www.linklady.cz/tvorba-webu-bilina",
+      image: "https://www.linklady.cz/profile.jpg",
       email: "zimmermannovap@gmail.com",
       taxID: "04352041",
       address: {
@@ -95,58 +95,13 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "Úvod",
-          item: "https://linklady.cz",
+          item: "https://www.linklady.cz",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Tvorba webových stránek Bílina",
-          item: "https://linklady.cz/tvorba-webu-bilina",
-        },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Kolik stojí tvorba webových stránek v Bílině?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Cena závisí na rozsahu projektu. Jednoduchý web (vizitka) začíná od 9 000 Kč, firemní web s více stránkami od 25 000 Kč a e-shop od 40 000 Kč. Každý projekt oceňuji individuálně po úvodní konzultaci zdarma.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Jak dlouho trvá vytvoření webových stránek?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Jednoduchý web (vizitka) je hotový za 1–2 týdny. Firemní web s více stránkami trvá 2–4 týdny. E-shop nebo složitější projekt 4–8 týdnů. Záleží na rozsahu a rychlosti dodání podkladů.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Budou moje webové stránky optimalizované pro mobily?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ano, každý web stavím jako responzivní – perfektně se zobrazí na mobilu, tabletu i počítači. Responzivní design je dnes základ a Google ho vyžaduje pro dobré pozice ve vyhledávání.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Zahrnuje tvorba webu i SEO optimalizaci?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ano. SEO je součástí každého webu, který vytvořím. Optimalizuji rychlost načítání, strukturu URL, meta tagy, nadpisy, obrázky i strukturovaná data. Web bude připravený na to, aby ho Google indexoval a zobrazoval ve výsledcích vyhledávání.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Děláte weby i pro firmy mimo Bílinu?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Samozřejmě. Sídlím v Bílině, ale pracuji s klienty z celého Ústeckého kraje i celé České republiky. Většinu komunikace řešíme online, takže vzdálenost není překážka.",
-          },
+          item: "https://www.linklady.cz/tvorba-webu-bilina",
         },
       ],
     },

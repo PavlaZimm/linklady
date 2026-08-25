@@ -13,11 +13,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://linklady.cz/webova-aplikace/#webpage",
-      url: "https://linklady.cz/webova-aplikace",
+      "@id": "https://www.linklady.cz/webova-aplikace/#webpage",
+      url: "https://www.linklady.cz/webova-aplikace",
       name: "Webová aplikace – co to je, jak funguje a kdy ji potřebujete",
       description: "Srozumitelný průvodce webovými aplikacemi – co to je, typy, technologie a kdy se vyplatí.",
-      isPartOf: { "@id": "https://linklady.cz/#website" },
+      isPartOf: { "@id": "https://www.linklady.cz/#website" },
       about: {
         "@type": "Thing",
         name: "Webová aplikace",
@@ -32,58 +32,13 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "Úvod",
-          item: "https://linklady.cz",
+          item: "https://www.linklady.cz",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Webová aplikace",
-          item: "https://linklady.cz/webova-aplikace",
-        },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Co je webová aplikace?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Webová aplikace je interaktivní software, který běží v prohlížeči a umožňuje uživatelům provádět konkrétní úkoly – od správy objednávek přes fakturaci až po komunikaci. Na rozdíl od běžného webu, který hlavně zobrazuje informace, webová aplikace s daty aktivně pracuje.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Jaký je rozdíl mezi webem a webovou aplikací?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Web (webová stránka) primárně zobrazuje informace – text, obrázky, videa. Webová aplikace umožňuje interakci: přihlášení, zadávání dat, zpracování objednávek, generování reportů. Gmail je webová aplikace, firemní prezentace je web.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Co je progresivní webová aplikace (PWA)?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Progresivní webová aplikace (PWA) je webová aplikace, která se chová jako mobilní aplikace – lze ji nainstalovat na telefon, funguje offline a posílá notifikace. Kombinuje výhody webu (žádná instalace z App Store) s výhodami nativní aplikace (rychlost, offline režim).",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Kolik stojí webová aplikace na míru?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Cena závisí na složitosti. Jednoduchá webová aplikace (formuláře, dashboard) začíná na tisících korun. Složitější systémy s databází, autentizací a API integrací stojí desetitisíce a více. Díky vibecodingu a AI nástrojům se ale náklady výrazně snižují.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Potřebuji programátora na tvorbu webové aplikace?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Záleží na složitosti. Jednoduché aplikace lze dnes vytvořit pomocí no-code nástrojů nebo vibecodingu bez programátorských znalostí. Pro složitější projekty s vlastní logikou a integrací je programátor nebo vibecoding s AI nástrojem jako Claude Code ideální volba.",
-          },
+          item: "https://www.linklady.cz/webova-aplikace",
         },
       ],
     },

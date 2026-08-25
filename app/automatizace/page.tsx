@@ -13,15 +13,15 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://linklady.cz/automatizace/#webpage",
-      url: "https://linklady.cz/automatizace",
+      "@id": "https://www.linklady.cz/automatizace/#webpage",
+      url: "https://www.linklady.cz/automatizace",
       name: "Automatizace procesů pro firmy",
       description: "Automatizace procesů šetří čas a peníze. Pomáhám firmám nastavit automatizace v marketingu, CRM, HR i fakturaci.",
-      isPartOf: { "@id": "https://linklady.cz/#website" },
+      isPartOf: { "@id": "https://www.linklady.cz/#website" },
       about: {
         "@type": "Service",
         name: "Automatizace procesů",
-        provider: { "@id": "https://linklady.cz/#person" },
+        provider: { "@id": "https://www.linklady.cz/#person" },
         serviceType: "Procesní automatizace",
         areaServed: {
           "@type": "Country",
@@ -37,50 +37,13 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "Úvod",
-          item: "https://linklady.cz",
+          item: "https://www.linklady.cz",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Automatizace",
-          item: "https://linklady.cz/automatizace",
-        },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Co je automatizace procesů?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Automatizace procesů znamená nahrazení opakujících se manuálních úkonů softwarem. Místo toho, abyste ručně přepisovali data z e-mailů do tabulek nebo posílali follow-up zprávy, to za vás udělá nástroj jako Make.com nebo n8n.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Potřebuji k automatizaci umět programovat?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ne. Nástroje jako Make.com nebo Zapier fungují vizuálně – scénáře skládáte z bloků přetahováním myší. Žádný kód není potřeba.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Kolik stojí automatizace pro malou firmu?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Make.com má bezplatný plán s 1 000 operacemi měsíčně. Placené plány začínají na cca 250 Kč/měsíc. U většiny malých firem se investice vrátí během prvního měsíce díky ušetřenému času.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Jaké procesy se dají automatizovat?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Prakticky cokoliv, co děláte opakovaně: e-mailový marketing, správa CRM, fakturace, reporting, publikování na sociální sítě, onboarding zaměstnanců, zpracování objednávek a mnoho dalšího.",
-          },
+          item: "https://www.linklady.cz/automatizace",
         },
       ],
     },

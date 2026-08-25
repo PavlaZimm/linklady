@@ -7,4 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://linklady.cz/sitemap.xml
+Sitemap: https://www.linklady.cz/sitemap.xml

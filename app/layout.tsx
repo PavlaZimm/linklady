@@ -5,6 +5,7 @@ import Script from "next/script"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, Poppins } from "next/font/google"
 import JsonLd from "@/components/json-ld"
+import { ConvexClientProvider } from "@/components/convex-client-provider"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +27,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://linklady.cz"),
+  metadataBase: new URL("https://www.linklady.cz"),
   title: {
     default: "Linklady.cz | SEO a AI automatizace – Pavla Zimmermannová",
     template: "%s | Linklady.cz",
@@ -44,16 +45,16 @@ export const metadata: Metadata = {
     "Pavla Zimmermannová",
     "linklady",
   ],
-  authors: [{ name: "Pavla Zimmermannová", url: "https://linklady.cz/o-mne" }],
+  authors: [{ name: "Pavla Zimmermannová", url: "https://www.linklady.cz/o-mne" }],
   creator: "Pavla Zimmermannová",
   publisher: "Linklady.cz",
   alternates: {
-    canonical: "https://linklady.cz",
+    canonical: "https://www.linklady.cz",
   },
   openGraph: {
     type: "website",
     locale: "cs_CZ",
-    url: "https://linklady.cz",
+    url: "https://www.linklady.cz",
     siteName: "Linklady.cz",
     title: "Linklady.cz | SEO a AI automatizace",
     description: "Vaše firma na prvních místech. SEO strategie a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
@@ -94,19 +95,19 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://linklady.cz/#website",
-      url: "https://linklady.cz",
+      "@id": "https://www.linklady.cz/#website",
+      url: "https://www.linklady.cz",
       name: "Linklady.cz",
       description: "Online marketing, SEO a automatizace",
-      publisher: { "@id": "https://linklady.cz/#person" },
+      publisher: { "@id": "https://www.linklady.cz/#person" },
       inLanguage: "cs",
     },
     {
       "@type": "Person",
-      "@id": "https://linklady.cz/#person",
+      "@id": "https://www.linklady.cz/#person",
       name: "Pavla Zimmermannová",
-      url: "https://linklady.cz",
-      image: "https://linklady.cz/profile.jpg",
+      url: "https://www.linklady.cz",
+      image: "https://www.linklady.cz/profile.jpg",
       jobTitle: "Online marketing specialistka",
       description: "Specialistka na SEO, AI asistenty a automatizaci marketingu od roku 2015.",
       sameAs: [
@@ -123,14 +124,14 @@ const jsonLd = {
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://linklady.cz/#business",
+      "@id": "https://www.linklady.cz/#business",
       name: "Linklady.cz – Pavla Zimmermannová",
-      url: "https://linklady.cz",
-      logo: "https://linklady.cz/logo.svg",
-      image: "https://linklady.cz/profile.jpg",
+      url: "https://www.linklady.cz",
+      logo: "https://www.linklady.cz/logo.svg",
+      image: "https://www.linklady.cz/profile.jpg",
       description: "Online marketing služby – SEO, AI asistenti a automatizace.",
       email: "zimmermannovap@gmail.com",
-      founder: { "@id": "https://linklady.cz/#person" },
+      founder: { "@id": "https://www.linklady.cz/#person" },
       taxID: "04352041",
       address: {
         "@type": "PostalAddress",
@@ -192,7 +193,7 @@ export default async function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
         >
-          {children}
+          <ConvexClientProvider>{children}</ConvexClientProvider>
         </body>
     </html>
   )

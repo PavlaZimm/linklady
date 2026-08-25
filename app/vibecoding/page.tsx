@@ -13,11 +13,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://linklady.cz/vibecoding/#webpage",
-      url: "https://linklady.cz/vibecoding",
+      "@id": "https://www.linklady.cz/vibecoding/#webpage",
+      url: "https://www.linklady.cz/vibecoding",
       name: "Vibecoding – Co je to a jak s ním začít | Linklady.cz",
       description: "Vibecoding je nový způsob tvorby softwaru pomocí AI. Místo psaní kódu říkáte AI, co chcete – a ona to naprogramuje za vás. Školení vibecodingu pro firmy i jednotlivce.",
-      isPartOf: { "@id": "https://linklady.cz/#website" },
+      isPartOf: { "@id": "https://www.linklady.cz/#website" },
       about: {
         "@type": "Thing",
         name: "Vibecoding",
@@ -27,10 +27,10 @@ const jsonLd = {
     },
     {
       "@type": "Course",
-      "@id": "https://linklady.cz/vibecoding/#course",
+      "@id": "https://www.linklady.cz/vibecoding/#course",
       name: "Školení vibecodingu – Tvorba aplikací pomocí AI",
       description: "Praktické školení vibecodingu pro firmy a jednotlivce. Naučte se vytvářet weby, aplikace a automatizace pomocí AI nástrojů jako Claude Code, Cursor, Bolt a dalších.",
-      provider: { "@id": "https://linklady.cz/#business" },
+      provider: { "@id": "https://www.linklady.cz/#business" },
       educationalLevel: "Beginner to Intermediate",
       teaches: "Vytváření aplikací pomocí AI nástrojů (vibecoding)",
       inLanguage: "cs",
@@ -51,58 +51,13 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "Úvod",
-          item: "https://linklady.cz",
+          item: "https://www.linklady.cz",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Vibecoding",
-          item: "https://linklady.cz/vibecoding",
-        },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Co je vibecoding?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Vibecoding (vibe coding) je způsob tvorby softwaru, kde místo ručního psaní kódu popisujete v běžném jazyce, co chcete vytvořit, a AI nástroj to naprogramuje za vás. Termín zavedl Andrej Karpathy (spoluzakladatel OpenAI) v roce 2025.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Jaké nástroje se používají na vibecoding?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Mezi nejpopulárnější vibecoding nástroje patří Claude Code (Anthropic), Cursor, Bolt.new, Windsurf, Replit Agent, GitHub Copilot a Lovable. Každý se hodí na jiný typ projektu – od webů po komplexní aplikace.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Musím umět programovat, abych mohl dělat vibecoding?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ne, to je hlavní výhoda vibecodingu. Stačí umět popsat, co chcete vytvořit. Základní znalost webových technologií (HTML, CSS) je výhodou, ale není nutná. Na školení vás naučím pracovat s AI nástroji bez předchozích zkušeností s programováním.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Co se dá vytvořit pomocí vibecodingu?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Pomocí vibecodingu lze vytvořit webové stránky, webové aplikace, landing pages, interní firemní nástroje, automatizace, chatboty, dashboardy i jednoduché mobilní aplikace. Limity se posouvají každý měsíc – AI nástroje se zlepšují extrémně rychle.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Nabízíte školení vibecodingu?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ano, nabízím individuální i skupinová školení vibecodingu pro firmy i jednotlivce. Školení probíhá online nebo osobně. Naučíte se pracovat s nejlepšími AI nástroji, správně promptovat a vytvářet funkční aplikace. Kontaktujte mě pro více informací.",
-          },
+          item: "https://www.linklady.cz/vibecoding",
         },
       ],
     },
@@ -796,6 +751,58 @@ export default function VibecodingPage() {
             </h3>
             <p className="text-gray-700 leading-relaxed">
               Právě proto používám profesionální nástroje jako Claude Code a důsledně kontroluji vygenerovaný kód. Na školení vás naučím, jak se těmto rizikům vyhnout – jak testovat, jak psát bezpečný kód a jak poznat, kdy AI udělala chybu. Vibecoding v rukou zkušeného člověka je silný nástroj. Bez kontroly je to rychlá jízdenka do technického dluhu.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Web a aplikace na míru vibecodingem */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Web a aplikace <span className="text-purple-600">na míru</span> vibecodingem
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Co se tím doopravdy mění pro cenu a pro termín. A co se nemění, i&nbsp;když se to slibuje.
+            </p>
+          </div>
+
+          <div className="prose prose-lg max-w-none">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Nejčastější otázka zní, jestli vibecodingem vznikne levnější web. Odpověď je: mění se to, za co platíte, ne nutně kolik.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <strong>Zkracuje se cesta od nápadu k&nbsp;něčemu, na co se dá kliknout.</strong> První použitelná verze vzniká v&nbsp;řádu hodin, ne týdnů. To je ta skutečná změna, protože o&nbsp;většině rozhodnutí se dřív dohadovalo nad obrázkem v&nbsp;prezentaci. Teď se dohadujeme nad věcí, která běží.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <strong>Nezkracuje se to, co přijde potom.</strong> Nasazení, rychlost, přístupnost, bezpečnost, měření, obsah. Tady vibecoding neušetří skoro nic a je poctivé to říct dopředu. Kdo tvrdí, že hotový web vznikne za odpoledne, mluví o&nbsp;prototypu, ne o&nbsp;webu, který má vydělávat.
+            </p>
+
+            <div className="bg-purple-50 border-l-4 border-purple-600 rounded-r-lg p-6 my-8">
+              <p className="text-gray-800 leading-relaxed">
+                <strong>Kde to dává největší smysl:</strong> vnitřní nástroje a věci, které si firma nikdy nenechala udělat, protože se to nevyplatilo. Kalkulačka, přehled, formulář, který někam zapisuje. Dřív to nestálo za projekt. Teď stojí.
+              </p>
+            </div>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <strong>Kde bych do toho nešla:</strong> tam, kde jde o&nbsp;peníze zákazníků, citlivá data nebo o&nbsp;věc, na které stojí provoz firmy. Ne že by to nešlo. Ale kontrola a odpovědnost tam stojí víc než samotné napsání, takže úspora zmizí a riziko zůstane.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+              Na co se ptát, než si někoho najmete
+            </h3>
+            <ul className="space-y-3 text-lg text-gray-700 mb-8">
+              <li><strong>Kdo bude umět ten kód změnit za rok?</strong> Když odpověď zní &bdquo;zase AI&ldquo;, zeptejte se, kdo pozná, že to udělala špatně.</li>
+              <li><strong>Co se stane, když to spadne v&nbsp;neděli večer?</strong></li>
+              <li><strong>Dostanu to celé, nebo to poběží u&nbsp;někoho, kdo mi to může vypnout?</strong></li>
+              <li><strong>Je v&nbsp;ceně měření?</strong> Web bez měření je hezký obrázek, ne nástroj.</li>
+            </ul>
+
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Napište mi, co potřebujete. Když bude na váš případ lepší hotové řešení za pár stovek měsíčně, řeknu vám to, i&nbsp;když si tím zakážu zakázku.
             </p>
           </div>
         </div>

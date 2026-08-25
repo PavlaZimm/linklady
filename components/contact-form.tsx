@@ -5,12 +5,21 @@ import { useMutation } from 'convex/react'
 import { api } from '@/convex/_generated/api'
 
 type Props = {
-  /** Předvyplněná služba, ať se v Convexu pozná, ze které stránky poptávka přišla. */
+  /** Předvyplněná služba, ať se pozná, ze které stránky poptávka přišla. */
   service?: string
   /** Nadpis nad formulářem. */
   title?: string
   /** Věta pod nadpisem. */
   subtitle?: string
+}
+
+type Poptavka = {
+  name: string
+  email: string
+  subject: string
+  message: string
+  phone?: string
+  service?: string
 }
 
 const SLUZBY = [
@@ -22,12 +31,66 @@ const SLUZBY = [
   'Něco jiného',
 ]
 
-export default function ContactForm({
+const EMAIL = 'zimmermannovap@gmail.com'
+
+/**
+ * Formulář má dvě varianty odeslání a vybírá se při buildu:
+ *
+ *  · když je nastavená NEXT_PUBLIC_CONVEX_URL, ukládá se poptávka do Convexu
+ *  · když nastavená není, otevře se předvyplněný e-mail
+ *
+ * Důvod: `useMutation` bez běžícího Convex klienta vyhodí výjimku a shodí
+ * celou stránku (HTTP 500). Hooky se nedají volat podmíněně, proto jsou
+ * varianty jako dvě komponenty a přepíná se mezi nimi až v exportu.
+ */
+export default function ContactForm(props: Props) {
+  if (!process.env.NEXT_PUBLIC_CONVEX_URL) {
+    return <VariantaEmail {...props} />
+  }
+  return <VariantaConvex {...props} />
+}
+
+function VariantaConvex(props: Props) {
+  const submit = useMutation(api.contacts.submitContactForm)
+  return (
+    <Formular
+      {...props}
+      odeslatData={async (d) => {
+        await submit(d)
+      }}
+    />
+  )
+}
+
+function VariantaEmail(props: Props) {
+  return (
+    <Formular
+      {...props}
+      odeslatData={async (d) => {
+        const telo = [
+          `Jméno: ${d.name}`,
+          `E-mail: ${d.email}`,
+          d.phone ? `Telefon: ${d.phone}` : null,
+          d.service ? `Co potřebuje: ${d.service}` : null,
+          '',
+          d.message,
+        ]
+          .filter(Boolean)
+          .join('\n')
+        window.location.href =
+          `mailto:${EMAIL}?subject=${encodeURIComponent(d.subject)}` +
+          `&body=${encodeURIComponent(telo)}`
+      }}
+    />
+  )
+}
+
+function Formular({
   service,
   title = 'Napište mi',
   subtitle = 'Odpovím do 24 hodin. Konzultace je zdarma a nezávazná.',
-}: Props) {
-  const submit = useMutation(api.contacts.submitContactForm)
+  odeslatData,
+}: Props & { odeslatData: (d: Poptavka) => Promise<void> }) {
   const [stav, setStav] = useState<'klid' | 'posilam' | 'hotovo' | 'chyba'>('klid')
   const [chyba, setChyba] = useState<string>('')
 
@@ -44,7 +107,7 @@ export default function ContactForm({
     setStav('posilam')
     setChyba('')
     try {
-      await submit({
+      await odeslatData({
         name: (f.get('name') as string).trim(),
         email: (f.get('email') as string).trim(),
         subject: ((f.get('service') as string) || service || 'Poptávka z webu').trim(),
@@ -171,8 +234,8 @@ export default function ContactForm({
         {stav === 'chyba' && (
           <p role="alert" className="text-red-700 bg-red-50 border border-red-200 rounded-lg px-4 py-3">
             {chyba} Kdyby to nešlo, napište mi prosím na{' '}
-            <a href="mailto:zimmermannovap@gmail.com" className="underline font-medium">
-              zimmermannovap@gmail.com
+            <a href={`mailto:${EMAIL}`} className="underline font-medium">
+              {EMAIL}
             </a>
             .
           </p>

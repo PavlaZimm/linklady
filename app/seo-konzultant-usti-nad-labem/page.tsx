@@ -12,10 +12,10 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://linklady.cz/seo-konzultant-usti-nad-labem/#service",
+      "@id": "https://www.linklady.cz/seo-konzultant-usti-nad-labem/#service",
       name: "SEO konzultant Ústí nad Labem",
       description: "SEO optimalizace a konzultace pro firmy v Ústí nad Labem a Ústeckém kraji. Komplexní SEO strategie, technické SEO, lokální SEO a obsahový marketing s měřitelnými výsledky.",
-      provider: { "@id": "https://linklady.cz/#business" },
+      provider: { "@id": "https://www.linklady.cz/#business" },
       areaServed: [
         {
           "@type": "City",
@@ -59,10 +59,10 @@ const jsonLd = {
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://linklady.cz/seo-konzultant-usti-nad-labem/#localbusiness",
+      "@id": "https://www.linklady.cz/seo-konzultant-usti-nad-labem/#localbusiness",
       name: "Linklady.cz – SEO konzultant Ústí nad Labem",
-      url: "https://linklady.cz/seo-konzultant-usti-nad-labem",
-      image: "https://linklady.cz/profile.jpg",
+      url: "https://www.linklady.cz/seo-konzultant-usti-nad-labem",
+      image: "https://www.linklady.cz/profile.jpg",
       email: "zimmermannovap@gmail.com",
       taxID: "04352041",
       address: {
@@ -102,58 +102,13 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "Úvod",
-          item: "https://linklady.cz",
+          item: "https://www.linklady.cz",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "SEO konzultant Ústí nad Labem",
-          item: "https://linklady.cz/seo-konzultant-usti-nad-labem",
-        },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Kolik stojí SEO optimalizace v Ústí nad Labem?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Cena SEO optimalizace závisí na rozsahu projektu, konkurenci ve vašem oboru a aktuálním stavu webu. Jednorázový SEO audit začíná od 5 000 Kč, měsíční SEO správa od 8 000 Kč. Po úvodní analýze vám připravím nabídku na míru.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Jak dlouho trvá, než se SEO projeví ve výsledcích?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "SEO je dlouhodobá strategie. První výsledky (zlepšení pozic, nárůst organické návštěvnosti) jsou viditelné typicky za 3–6 měsíců. Plný efekt se projeví za 6–12 měsíců. Záleží na konkurenci, stavu webu a zvoleném rozsahu optimalizace.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Děláte SEO i pro firmy mimo Ústí nad Labem?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ano. Sídlím v Bílině a pracuji s klienty z celého Ústeckého kraje – Teplice, Most, Děčín, Litoměřice, Chomutov i dalších měst. Většinu práce řeším online, ale ráda se setkám i osobně.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Co zahrnuje SEO audit?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "SEO audit zahrnuje kompletní analýzu technického stavu webu (rychlost, indexace, chyby), on-page faktorů (titulky, meta popisy, nadpisy, obsah), off-page faktorů (zpětné odkazy) a analýzu konkurence. Výstupem je podrobná zpráva s konkrétními doporučeními a prioritami.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Jaký je rozdíl mezi lokálním a celostátním SEO?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Lokální SEO se zaměřuje na zobrazení ve výsledcích pro vyhledávání s lokálním záměrem – například 'instalatér Ústí nad Labem'. Zahrnuje optimalizaci Google Business profilu, lokálních citací a recenzí. Celostátní SEO cílí na obecnější klíčová slova bez lokálního omezení a vyžaduje silnější obsahovou strategii.",
-          },
+          item: "https://www.linklady.cz/seo-konzultant-usti-nad-labem",
         },
       ],
     },
