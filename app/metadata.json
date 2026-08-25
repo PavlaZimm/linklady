@@ -326,5 +326,32 @@
         }
       ]
     }
+  },
+  "/reference": {
+    "title": "Reference: weby, které jsem postavila | Linklady.cz",
+    "description": "Web pro výrobní firmu, autoškolu i spolek. U každého píšu, co jsem dělala a proč to tak je. Dva ze tří odešly z Webnode.",
+    "keywords": [
+      "reference",
+      "ukázky práce",
+      "tvorba webu reference",
+      "portfolio webů",
+      "weby na míru"
+    ],
+    "alternates": {
+      "canonical": "https://www.linklady.cz/reference"
+    },
+    "openGraph": {
+      "title": "Reference: weby, které jsem postavila",
+      "description": "Web pro výrobní firmu, autoškolu i spolek. U každého píšu, co jsem dělala a proč to tak je.",
+      "url": "https://www.linklady.cz/reference",
+      "images": [
+        {
+          "url": "/profile.jpg",
+          "width": 500,
+          "height": 600,
+          "alt": "Pavla Zimmermannová – reference, weby na míru"
+        }
+      ]
+    }
   }
 }
