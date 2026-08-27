@@ -8,19 +8,20 @@ import { NextResponse } from 'next/server'
  * podruhé. Na mobilu bez nastavené pošty se často nestane vůbec nic
  * a poptávka je pryč.
  *
- * Odesílá se přes Resend, které má zdarma 3 000 e-mailů měsíčně.
- * Volá se obyčejným fetchem, aby kvůli tomu nepřibývala závislost.
+ * Odesílá se přes Google Apps Script, který zprávu pošle z Pavlina
+ * vlastního Gmailu. Zdarma, bez účtu u třetí strany a bez nové
+ * závislosti v projektu. Gmail zvládne 100 zpráv denně, což je pro
+ * tenhle web násobně víc, než bude kdy potřeba.
  *
  * Nastavení na Vercelu (Settings → Environment Variables):
- *   RESEND_API_KEY   klíč z resend.com
- *   POPTAVKY_FROM    odesílatel na ověřené doméně, např. web@linklady.cz
- *   POPTAVKY_TO      kam poptávky chodí (výchozí je adresa níž)
+ *   POPTAVKA_SCRIPT_URL   adresa nasazeného skriptu (.../exec)
+ *   POPTAVKA_TAJEMSTVI    heslo, které skript očekává
  *
- * Dokud klíč nastavený není, vrací tahle cesta 501 a formulář si sám
- * spadne zpátky na mailto. Web tím pádem funguje pořád stejně jako dřív.
+ * Celý postup je v dokumenty/formular-postup.md.
+ *
+ * ⚠️ Dokud nastavené není, vrací tahle cesta 501 a formulář si sám
+ * spadne zpátky na mailto. Web se tím pádem nechová hůř než dřív.
  */
-
-const KAM = process.env.POPTAVKY_TO || 'zimmermannovap@gmail.com'
 
 type Telo = {
   name?: string
@@ -37,8 +38,8 @@ function ocisti(s: unknown, max = 2000): string {
 }
 
 export async function POST(req: Request) {
-  const klic = process.env.RESEND_API_KEY
-  if (!klic) {
+  const cil = process.env.POPTAVKA_SCRIPT_URL
+  if (!cil) {
     // Není chyba, jen to zatím není nastavené. Formulář použije mailto.
     return NextResponse.json({ ok: false, duvod: 'nenastaveno' }, { status: 501 })
   }
@@ -65,32 +66,28 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false, duvod: 'email' }, { status: 400 })
   }
 
-  const radky = [
-    `Jméno: ${jmeno}`,
-    `E-mail: ${email}`,
-    ocisti(d.phone, 60) ? `Telefon: ${ocisti(d.phone, 60)}` : null,
-    ocisti(d.service, 200) ? `Co potřebuje: ${ocisti(d.service, 200)}` : null,
-    '',
-    zprava,
-  ].filter(Boolean)
-
   try {
-    const r = await fetch('https://api.resend.com/emails', {
+    const r = await fetch(cil, {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${klic}`,
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        from: process.env.POPTAVKY_FROM || 'Poptávka z webu <onboarding@resend.dev>',
-        to: [KAM],
-        reply_to: email,
-        subject: ocisti(d.subject, 200) || `Poptávka z webu: ${jmeno}`,
-        text: radky.join('\n'),
+        tajemstvi: process.env.POPTAVKA_TAJEMSTVI || '',
+        name: jmeno,
+        email,
+        phone: ocisti(d.phone, 60),
+        service: ocisti(d.service, 200),
+        message: zprava,
+        subject: ocisti(d.subject, 200),
       }),
+      // Apps Script odpovídá přesměrováním na googleusercontent
+      redirect: 'follow',
     })
     if (!r.ok) {
       return NextResponse.json({ ok: false, duvod: 'odeslani' }, { status: 502 })
+    }
+    const vysledek = await r.json().catch(() => ({ ok: true }))
+    if (vysledek?.ok === false) {
+      return NextResponse.json({ ok: false, duvod: 'skript' }, { status: 502 })
     }
     return NextResponse.json({ ok: true })
   } catch {
