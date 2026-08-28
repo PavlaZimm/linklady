@@ -107,7 +107,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "SEO konzultant Ústí nad Labem",
+          name: "SEO optimalizace Ústí nad Labem",
           item: "https://www.linklady.cz/seo-konzultant-usti-nad-labem",
         },
       ],
@@ -132,11 +132,11 @@ export default function SeoKonzultantUstiPage() {
               <ol className="flex items-center space-x-2">
                 <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
                 <li><span>/</span></li>
-                <li className="text-yellow-400">SEO konzultant Ústí nad Labem</li>
+                <li className="text-yellow-400">SEO optimalizace Ústí nad Labem</li>
               </ol>
             </nav>
             <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-              SEO konzultant<br />
+              SEO optimalizace<br />
               <span className="text-yellow-400">Ústí nad Labem</span>
             </h1>
             <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
