@@ -67,6 +67,20 @@ function VariantaEmail(props: Props) {
     <Formular
       {...props}
       odeslatData={async (d) => {
+        // Nejdřív zkusit odeslat přímo z webu. Když server e-mail
+        // nastavený nemá, vrátí 501 a spadneme zpátky na mailto,
+        // aby poptávka nezmizela.
+        try {
+          const r = await fetch('/api/poptavka', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(d),
+          })
+          if (r.ok) return
+        } catch {
+          // síť selhala, zkusíme mailto
+        }
+
         const telo = [
           `Jméno: ${d.name}`,
           `E-mail: ${d.email}`,

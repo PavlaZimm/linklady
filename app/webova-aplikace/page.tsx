@@ -190,6 +190,32 @@ export default function WebovaAplikacePage() {
         </div>
       </section>
 
+      {/* Zkratka ke konzultaci.
+          Formulář je až na konci stránky, ale Search Console ukazuje, že sem
+          většina lidí přichází na dotaz „webová aplikace", tedy si nejdřív
+          čtou, co to vlastně je. K formuláři dole se nedostanou. */}
+      <section className="py-12 bg-gradient-to-br from-purple-50 to-white border-y border-purple-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="sm:flex sm:items-center sm:justify-between gap-6">
+            <div className="mb-5 sm:mb-0">
+              <p className="text-xl font-bold text-gray-900 mb-1">
+                Máte v&nbsp;hlavě konkrétní zadání?
+              </p>
+              <p className="text-gray-600">
+                Napište, co potřebujete. Do&nbsp;24&nbsp;hodin dostanete odhad
+                v&nbsp;hodinách a cenu, nezávazně a zdarma.
+              </p>
+            </div>
+            <Link
+              href="/kontakt"
+              className="inline-block flex-shrink-0 bg-primary text-white px-7 py-3.5 rounded-lg font-bold hover:bg-purple-800 transition-colors"
+            >
+              Chci odhad ceny
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Na co se lidi ptají, než zadají práci */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

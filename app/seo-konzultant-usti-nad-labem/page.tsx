@@ -13,7 +13,7 @@ const jsonLd = {
     {
       "@type": "Service",
       "@id": "https://www.linklady.cz/seo-konzultant-usti-nad-labem/#service",
-      name: "SEO konzultant Ústí nad Labem",
+      name: "SEO optimalizace Ústí nad Labem",
       description: "SEO optimalizace a konzultace pro firmy v Ústí nad Labem a Ústeckém kraji. Komplexní SEO strategie, technické SEO, lokální SEO a obsahový marketing s měřitelnými výsledky.",
       provider: { "@id": "https://www.linklady.cz/#business" },
       areaServed: [
@@ -107,7 +107,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "SEO konzultant Ústí nad Labem",
+          name: "SEO optimalizace Ústí nad Labem",
           item: "https://www.linklady.cz/seo-konzultant-usti-nad-labem",
         },
       ],
@@ -132,15 +132,15 @@ export default function SeoKonzultantUstiPage() {
               <ol className="flex items-center space-x-2">
                 <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
                 <li><span>/</span></li>
-                <li className="text-yellow-400">SEO konzultant Ústí nad Labem</li>
+                <li className="text-yellow-400">SEO optimalizace Ústí nad Labem</li>
               </ol>
             </nav>
             <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-              SEO konzultant<br />
+              SEO optimalizace<br />
               <span className="text-yellow-400">Ústí nad Labem</span>
             </h1>
             <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
-              Na první stránku Googlu i Seznamu – bez plýtvání na reklamy. SEO strategie s měřitelnými výsledky pro firmy v Ústí nad Labem a celém Ústeckém kraji.
+              SEO konzultant pro Ústecký kraj. Na první stránku Googlu i Seznamu – bez plýtvání na reklamy. SEO strategie s měřitelnými výsledky pro firmy v Ústí nad Labem a celém Ústeckém kraji.
             </p>
             <p className="text-lg mb-10 opacity-80 leading-relaxed">
               Jsem SEO specialistka s 10 lety praxe. Od technického auditu přes obsahovou strategii až po lokální SEO – vše s jedním cílem: přivést vám víc zákazníků, kteří už nakupují.
@@ -171,7 +171,7 @@ export default function SeoKonzultantUstiPage() {
               </div>
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Měřitelné výsledky</span>
+                <span>Audit od 5 000 Kč</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
