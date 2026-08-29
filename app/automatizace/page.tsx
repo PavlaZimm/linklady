@@ -57,6 +57,28 @@ export default function AutomatizacePage() {
       <Navigation />
 
       {/* Hero Section */}
+      {/* Vymezení proti průmyslové automatizaci.
+          SERP na "automatizace malých firem" (29. 8. 2026) vede
+          k robotizaci ve výrobě: Omron, iROZHLAS o robotech, katalog
+          průmyslových firem. Kdo hledá odstranění administrativy,
+          si to musí hned poznat. */}
+      <section className="py-10 bg-amber-50 border-y border-amber-200">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-lg text-gray-900 font-semibold mb-2">
+            Žádní roboti ve výrobě.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Když se dneska hledá automatizace pro malou firmu, vyskočí
+            robotické rameno a články o&nbsp;robotizaci průmyslu. Tahle
+            stránka je o&nbsp;něčem jiném: o&nbsp;administrativě, která vám
+            každý týden sežere odpoledne. Faktury, které přepisujete ručně.
+            E-maily, které chodí pořád stejné. Data, která přenášíte
+            z&nbsp;jednoho místa na&nbsp;druhé. Na tohle nepotřebujete
+            výrobní halu ani programátora.
+          </p>
+        </div>
+      </section>
+
       <section className="hero-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center relative">
@@ -74,7 +96,7 @@ export default function AutomatizacePage() {
             </nav>
 
             <h1 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 max-w-4xl mx-auto leading-tight">
-              Automatizace procesů pro firmy: Ušetřete hodiny práce každý týden
+              Automatizace pro malé firmy: co se vyplatí a co ne
             </h1>
             <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10 mb-4">
               Propojím vaše nástroje přes Make.com, n8n nebo Zapier, zautomatizuji rutinu a vy se budete moct soustředit na to, co vás živí.
@@ -379,7 +401,7 @@ export default function AutomatizacePage() {
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Kolik stojí automatizace pro malou firmu?</h3>
-              <p className="text-gray-700">Make.com má bezplatný plán s 1 000 operacemi měsíčně. Placené plány začínají na cca 250 Kč/měsíc. U většiny malých firem se investice vrátí během prvního měsíce díky ušetřenému času.</p>
+              <p className="text-gray-700">Jsou to dvě různé částky. Nástroj: Make.com má bezplatný plán s&nbsp;1 000 operacemi měsíčně, placené začínají kolem 250&nbsp;Kč měsíčně. A moje práce na nastavení: 1&nbsp;200&nbsp;Kč za hodinu. Jednoduchá automatizace bývá hotová za dvě až čtyři hodiny, takže se vejdete do pěti tisíc i s&nbsp;prvním rokem provozu nástroje.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
