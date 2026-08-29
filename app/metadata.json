@@ -239,7 +239,7 @@
     }
   },
   "/kontakt": {
-    "title": "Kontakt: nezávazná konzultace zdarma | Linklady",
+    "title": "Kontakt: nezávazná konzultace zdarma",
     "description": "Napište mi, co řešíte, a odpovím do 24 hodin. Weby, SEO, AI agenti a automatizace pro firmy na severu Čech. Konzultace zdarma.",
     "keywords": [
       "kontakt",
@@ -323,6 +323,33 @@
           "width": 500,
           "height": 600,
           "alt": "Webová aplikace – tvorba webových aplikací od Pavly Zimmermannové"
+        }
+      ]
+    }
+  },
+  "/reference": {
+    "title": "Reference: weby, které jsem postavila",
+    "description": "Web pro výrobní firmu, autoškolu i spolek. U každého píšu, co jsem dělala a proč to tak je. Dva ze tří odešly z Webnode.",
+    "keywords": [
+      "reference",
+      "ukázky práce",
+      "tvorba webu reference",
+      "portfolio webů",
+      "weby na míru"
+    ],
+    "alternates": {
+      "canonical": "https://www.linklady.cz/reference"
+    },
+    "openGraph": {
+      "title": "Reference: weby, které jsem postavila",
+      "description": "Web pro výrobní firmu, autoškolu i spolek. U každého píšu, co jsem dělala a proč to tak je.",
+      "url": "https://www.linklady.cz/reference",
+      "images": [
+        {
+          "url": "/profile.jpg",
+          "width": 500,
+          "height": 600,
+          "alt": "Pavla Zimmermannová – reference, weby na míru"
         }
       ]
     }
