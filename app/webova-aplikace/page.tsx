@@ -463,6 +463,13 @@ export default function WebovaAplikacePage() {
             Díky <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> a <Link href="/ai-agent" className="text-primary font-semibold hover:underline">AI agentům</Link> dnes dokážu vytvořit funkční webovou aplikaci výrazně rychleji a levněji než tradiční vývojářský tým. Takhle to probíhá:
           </p>
 
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            Chcete si nejdřív ujasnit zadání, technologie a jednotlivé fáze? Připravila jsem podrobný návod{' '}
+            <Link href="/blog/jak-vytvorit-webovou-aplikaci" className="text-primary font-semibold hover:underline">
+              jak vytvořit webovou aplikaci krok za krokem
+            </Link>.
+          </p>
+
           <div className="space-y-6 mb-8">
             <div className="flex items-start bg-purple-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">

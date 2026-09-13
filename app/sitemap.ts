@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/ai-agent', lastModified: '2026-08-25' },
     { path: '/webova-aplikace', lastModified: '2026-09-13' },
     { path: '/blog/prodej-firmy-strategicky-krok', lastModified: '2026-02-27' },
+    { path: '/blog/jak-vytvorit-webovou-aplikaci', lastModified: '2026-09-13' },
     { path: '/kontakt', lastModified: '2026-08-25' },
   ] as const
 

@@ -69,6 +69,28 @@ export default function BlogPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8">
 
+            <Link href="/blog/jak-vytvorit-webovou-aplikaci" className="group block">
+              <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                <div className="p-8">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">Webové aplikace</span>
+                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">Praktický návod</span>
+                  </div>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                    Jak vytvořit webovou aplikaci krok za krokem
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Od prvního zadání přes prototyp a testování až po spuštění. Co musí být v zadání, jak vybrat způsob vývoje a čemu se vyhnout.
+                  </p>
+                  <div className="flex items-center text-sm text-gray-500">
+                    <time dateTime="2026-09-13">13. září 2026</time>
+                    <span className="mx-2">|</span>
+                    <span>Pavla Zimmermannová</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+
             {/* Article Card */}
             <Link href="/blog/prodej-firmy-strategicky-krok" className="group block">
               <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
