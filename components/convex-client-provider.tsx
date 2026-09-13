@@ -1,7 +1,6 @@
 "use client"
 
-import { ConvexAuthProvider } from "@convex-dev/auth/react"
-import { ConvexReactClient } from "convex/react"
+import { ConvexProvider, ConvexReactClient } from "convex/react"
 import { ReactNode } from "react"
 
 // Only create the client if the URL is available
@@ -14,5 +13,5 @@ export function ConvexClientProvider({ children }: { children: ReactNode }) {
     return <>{children}</>
   }
 
-  return <ConvexAuthProvider client={convex}>{children}</ConvexAuthProvider>
+  return <ConvexProvider client={convex}>{children}</ConvexProvider>
 }

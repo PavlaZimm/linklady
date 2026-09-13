@@ -1,12 +1,7 @@
-'use client'
-
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
-
   return (
     <nav className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,81 +54,43 @@ export default function Navigation() {
             </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              type="button"
-              onClick={() => setIsOpen(!isOpen)}
-              className="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
-            >
+          <details className="group relative md:hidden">
+            <summary className="inline-flex cursor-pointer list-none items-center justify-center rounded-md bg-white p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 [&::-webkit-details-marker]:hidden">
               <span className="sr-only">Otevřít hlavní menu</span>
-              {isOpen ? (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              )}
-            </button>
-          </div>
-        </div>
+              <svg className="h-6 w-6 group-open:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg className="hidden h-6 w-6 group-open:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </summary>
 
-        {/* Mobile menu */}
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              <Link
-                href="/"
-                onClick={() => setIsOpen(false)}
-                className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
-              >
+            <div className="absolute right-0 top-full z-50 mt-2 w-[min(22rem,calc(100vw-2rem))] rounded-xl border border-gray-100 bg-white p-2 shadow-xl">
+              <Link href="/" className="block rounded-lg px-3 py-2 text-lg font-semibold text-gray-900 transition-colors hover:bg-purple-50 hover:text-primary">
                 Domů
               </Link>
-              <Link
-                href="/o-mne"
-                onClick={() => setIsOpen(false)}
-                className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
-              >
+              <Link href="/o-mne" className="block rounded-lg px-3 py-2 text-lg font-semibold text-gray-900 transition-colors hover:bg-purple-50 hover:text-primary">
                 O mně
               </Link>
-              <Link
-                href="/ebook"
-                onClick={() => setIsOpen(false)}
-                className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
-              >
+              <Link href="/ebook" className="block rounded-lg px-3 py-2 text-lg font-semibold text-gray-900 transition-colors hover:bg-purple-50 hover:text-primary">
                 E-book
               </Link>
-              <Link
-                href="/blog"
-                onClick={() => setIsOpen(false)}
-                className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
-              >
+              <Link href="/blog" className="block rounded-lg px-3 py-2 text-lg font-semibold text-gray-900 transition-colors hover:bg-purple-50 hover:text-primary">
                 Blog
               </Link>
-              <Link
-                href="/kontakt"
-                onClick={() => setIsOpen(false)}
-                className="text-gray-900 hover:text-primary block px-3 py-2 text-lg font-semibold transition-colors"
-              >
+              <Link href="/kontakt" className="block rounded-lg px-3 py-2 text-lg font-semibold text-gray-900 transition-colors hover:bg-purple-50 hover:text-primary">
                 Kontakt
               </Link>
-              <Link
-                href="/kontakt"
-                onClick={() => setIsOpen(false)}
-                className="block mx-3 mt-3 px-4 py-3 bg-purple-600 text-white text-center text-lg font-bold rounded-xl hover:bg-purple-700 transition-colors"
-              >
+              <Link href="/kontakt" className="mt-2 block rounded-xl bg-purple-600 px-4 py-3 text-center text-lg font-bold text-white transition-colors hover:bg-purple-700">
                 Nezávazná konzultace zdarma
               </Link>
             </div>
-          </div>
-        )}
+          </details>
+        </div>
       </div>
     </nav>
   )
 }
-
 
 
 

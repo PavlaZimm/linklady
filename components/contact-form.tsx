@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useMutation } from 'convex/react'
 import { api } from '@/convex/_generated/api'
+import { ConvexClientProvider } from '@/components/convex-client-provider'
 
 type Props = {
   /** Předvyplněná služba, ať se pozná, ze které stránky poptávka přišla. */
@@ -47,7 +48,11 @@ export default function ContactForm(props: Props) {
   if (!process.env.NEXT_PUBLIC_CONVEX_URL) {
     return <VariantaEmail {...props} />
   }
-  return <VariantaConvex {...props} />
+  return (
+    <ConvexClientProvider>
+      <VariantaConvex {...props} />
+    </ConvexClientProvider>
+  )
 }
 
 function VariantaConvex(props: Props) {

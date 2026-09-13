@@ -1,30 +1,8 @@
 import "./globals.css"
 
 import { headers } from "next/headers"
-import Script from "next/script"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Poppins } from "next/font/google"
 import JsonLd from "@/components/json-ld"
-import { ConvexClientProvider } from "@/components/convex-client-provider"
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap",
-})
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
-})
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.linklady.cz"),
@@ -169,33 +147,45 @@ export default async function RootLayout({
   return (
     <html lang="cs">
         <head>
-          <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-FXX3CY3CHM"
-            strategy="afterInteractive"
+          <script
             nonce={nonce}
-          />
-          <Script id="google-analytics" strategy="afterInteractive" nonce={nonce}>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-FXX3CY3CHM');
-            `}
-          </Script>
-          <Script
-            src="https://analytics.ahrefs.com/analytics.js"
-            data-key="bq++w6F/akp3AQs/1X59sw"
-            strategy="afterInteractive"
-            nonce={nonce}
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function () {
+                  function loadAnalytics() {
+                    window.dataLayer = window.dataLayer || [];
+                    window.gtag = function () { window.dataLayer.push(arguments); };
+                    window.gtag('js', new Date());
+                    window.gtag('config', 'G-FXX3CY3CHM');
+
+                    var googleScript = document.createElement('script');
+                    googleScript.async = true;
+                    googleScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-FXX3CY3CHM';
+                    document.head.appendChild(googleScript);
+
+                    var ahrefsScript = document.createElement('script');
+                    ahrefsScript.async = true;
+                    ahrefsScript.src = 'https://analytics.ahrefs.com/analytics.js';
+                    ahrefsScript.setAttribute('data-key', 'bq++w6F/akp3AQs/1X59sw');
+                    document.head.appendChild(ahrefsScript);
+                  }
+
+                  function scheduleAnalytics() {
+                    window.setTimeout(loadAnalytics, 5000);
+                  }
+
+                  if (document.readyState === 'complete') {
+                    scheduleAnalytics();
+                  } else {
+                    window.addEventListener('load', scheduleAnalytics, { once: true });
+                  }
+                })();
+              `,
+            }}
           />
           <JsonLd data={jsonLd} />
         </head>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
-        >
-          <ConvexClientProvider>{children}</ConvexClientProvider>
-        </body>
+        <body className="antialiased">{children}</body>
     </html>
   )
 }
-

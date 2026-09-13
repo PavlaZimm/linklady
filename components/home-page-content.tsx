@@ -13,19 +13,12 @@
 
 
 
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
-import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import AnalyticsChart from '@/components/analytics-chart';
 import SiteFooter from '@/components/site-footer';
 
 export default function HomePageContent() {
-  const servicesRef = useScrollAnimation();
-  const aboutRef = useScrollAnimation();
-  const ctaRef = useScrollAnimation();
-
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -33,7 +26,7 @@ export default function HomePageContent() {
         <div className="absolute top-0 right-0 w-1/2 h-full yellow-gradient opacity-80 rounded-l-full transform translate-x-1/4"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="fade-in-up">
+            <div>
               <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
                 Vaše firma na<br />
                 <span className="text-yellow-400">prvních místech</span>
@@ -59,7 +52,7 @@ export default function HomePageContent() {
                 </Link>
               </div>
             </div>
-            <div className="flex justify-center fade-in-up animate-delay-1">
+            <div className="flex justify-center">
               <AnalyticsChart />
             </div>
           </div>
@@ -67,9 +60,9 @@ export default function HomePageContent() {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30" ref={servicesRef}>
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 fade-in-up">
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Co pro vás <span className="text-purple-600">udělám</span>
             </h2>
@@ -79,12 +72,13 @@ export default function HomePageContent() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* SEO */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <div className="group service-card text-white p-8 rounded-2xl relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="SEO analýza dat"
                   fill
+                  sizes="(min-width: 1280px) 384px, (min-width: 1024px) 30vw, (min-width: 768px) 45vw, calc(100vw - 2rem)"
                   loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -110,12 +104,13 @@ export default function HomePageContent() {
             </div>
 
             {/* Tvorba webu */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-1 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <div className="group service-card text-white p-8 rounded-2xl relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/6476563/pexels-photo-6476563.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="Tvorba moderních webových stránek"
                   fill
+                  sizes="(min-width: 1280px) 384px, (min-width: 1024px) 30vw, (min-width: 768px) 45vw, calc(100vw - 2rem)"
                   loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -141,12 +136,13 @@ export default function HomePageContent() {
             </div>
 
             {/* Video střih */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-2 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <div className="group service-card text-white p-8 rounded-2xl relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/7279706/pexels-photo-7279706.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="Profesionální video střih"
                   fill
+                  sizes="(min-width: 1280px) 384px, (min-width: 1024px) 30vw, (min-width: 768px) 45vw, calc(100vw - 2rem)"
                   loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -166,12 +162,13 @@ export default function HomePageContent() {
             </div>
 
             {/* AI agenti */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-3 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <div className="group service-card text-white p-8 rounded-2xl relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/8294566/pexels-photo-8294566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="AI technologie pro marketing"
                   fill
+                  sizes="(min-width: 1280px) 384px, (min-width: 1024px) 30vw, (min-width: 768px) 45vw, calc(100vw - 2rem)"
                   loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -203,12 +200,13 @@ export default function HomePageContent() {
             </div>
 
             {/* Automatizace & Make */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-4 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <div className="group service-card text-white p-8 rounded-2xl relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/8294566/pexels-photo-8294566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="Automatizace a Make.com"
                   fill
+                  sizes="(min-width: 1280px) 384px, (min-width: 1024px) 30vw, (min-width: 768px) 45vw, calc(100vw - 2rem)"
                   loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -234,12 +232,13 @@ export default function HomePageContent() {
             </div>
 
             {/* Content marketing */}
-            <div className="group service-card text-white p-8 rounded-2xl fade-in-up animate-delay-4 relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <div className="group service-card text-white p-8 rounded-2xl relative overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="absolute inset-0">
                 <Image
                   src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="Content marketing a strategie"
                   fill
+                  sizes="(min-width: 1280px) 384px, (min-width: 1024px) 30vw, (min-width: 768px) 45vw, calc(100vw - 2rem)"
                   loading="lazy"
                   className="object-cover opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                 />
@@ -262,10 +261,10 @@ export default function HomePageContent() {
       </section>
 
       {/* About Section */}
-      <section className="py-24 bg-white" ref={aboutRef}>
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="fade-in-up order-2 lg:order-1">
+            <div className="order-2 lg:order-1">
               <div className="relative">
                 <Image
                   src="/profile.jpg"
@@ -278,7 +277,7 @@ export default function HomePageContent() {
                 <div className="absolute -top-6 -left-6 w-24 h-24 bg-purple-600 rounded-full opacity-20"></div>
               </div>
             </div>
-            <div className="fade-in-up animate-delay-1 order-1 lg:order-2">
+            <div className="order-1 lg:order-2">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
                 Pavla <span className="text-purple-600">Zimmermannová</span>
               </h2>
@@ -308,9 +307,9 @@ export default function HomePageContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30" ref={ctaRef}>
+      <section className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center fade-in-up">
+          <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-purple-900 mb-6">
               Pojďme <span className="text-yellow-600">spolupracovat</span>
             </h2>
@@ -339,8 +338,6 @@ export default function HomePageContent() {
     </div>
   );
 }
-
-
 
 
 

@@ -1,5 +1,3 @@
-'use client';
-
 export default function AnalyticsChart() {
   return (
     <div className="relative w-full max-w-lg mx-auto">
