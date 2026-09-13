@@ -1,12 +1,12 @@
 import Navigation from '@/components/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
 import SiteFooter from '@/components/site-footer'
 import ContactForm from '@/components/contact-form'
+import { getPageMetadata } from '@/lib/page-metadata'
 
-export const metadata: Metadata = siteMetadata['/kontakt']
+export const metadata: Metadata = getPageMetadata('/kontakt')
 
 const jsonLd = {
   "@context": "https://schema.org",

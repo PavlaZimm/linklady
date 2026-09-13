@@ -2,11 +2,11 @@ import Navigation from '@/components/navigation'
 import ContactForm from '@/components/contact-form'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
 import SiteFooter from '@/components/site-footer'
+import { getPageMetadata } from '@/lib/page-metadata'
 
-export const metadata: Metadata = siteMetadata['/webova-aplikace']
+export const metadata: Metadata = getPageMetadata('/webova-aplikace')
 
 const jsonLd = {
   "@context": "https://schema.org",

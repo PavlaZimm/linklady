@@ -1,11 +1,15 @@
 import Navigation from '@/components/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
-import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
 import SiteFooter from '@/components/site-footer'
+import { getPageMetadata } from '@/lib/page-metadata'
 
-export const metadata: Metadata = siteMetadata['/ebook']
+export const metadata: Metadata = getPageMetadata('/ebook')
+
+const ebookSalesUrl = process.env.NEXT_PUBLIC_EBOOK_SALES_URL
+const ebookCtaHref = ebookSalesUrl ?? '/kontakt'
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -314,15 +318,16 @@ export default function EbookPage() {
                 </li>
               </ul>
 
-              {/* TODO: Replace href with actual sales link */}
               <a
-                href="#"
+                href={ebookCtaHref}
                 className="block w-full bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
               >
-                Koupit e-book
+                {ebookSalesUrl ? 'Koupit e-book' : 'Mám zájem o e-book'}
               </a>
               <p className="text-sm opacity-60 mt-4">
-                Po kliknutí budete přesměrováni na platební stránku
+                {ebookSalesUrl
+                  ? 'Po kliknutí budete přesměrováni na platební stránku'
+                  : 'Napište mi a pošlu vám informace k získání e-booku'}
               </p>
             </div>
           </div>
@@ -341,9 +346,12 @@ export default function EbookPage() {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-shrink-0">
                 <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg">
-                  <img
+                  <Image
                     src="/profile.jpg"
                     alt="Pavla Zimmermannová"
+                    width={128}
+                    height={128}
+                    sizes="128px"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -420,12 +428,11 @@ export default function EbookPage() {
             <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed mb-10">
               Chcete jít ještě dál? Podívejte se na <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link> – tvorbu aplikací pomocí AI.
             </p>
-            {/* TODO: Replace href with actual sales link */}
             <a
-              href="#"
+              href={ebookCtaHref}
               className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
             >
-              Koupit e-book
+              {ebookSalesUrl ? 'Koupit e-book' : 'Mám zájem o e-book'}
             </a>
           </div>
         </div>

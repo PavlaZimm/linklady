@@ -5,8 +5,9 @@ import JsonLd from '@/components/json-ld'
 import SiteFooter from '@/components/site-footer'
 
 export const metadata: Metadata = {
-  title: "▷ Prodej firmy jako strategický krok – Průvodce M&A",
-  description: "Prodej firmy je životní rozhodnutí ✅ Jak probíhá M&A proces, na co si dát pozor a jak najít správného investora. Kompletní průvodce prodejem podniku.",
+  title: "Prodej firmy: průvodce M&A procesem",
+  description: "Prodej firmy je životní rozhodnutí. Zjistěte, jak probíhá M&A proces, na co si dát pozor a jak najít správného investora.",
+  authors: [{ name: "Pavla Zimmermannová", url: "https://www.linklady.cz/o-mne" }],
   keywords: [
     "prodej firmy",
     "prodej podniku",
@@ -35,6 +36,12 @@ export const metadata: Metadata = {
         alt: "Prodej firmy – průvodce M&A procesem od Pavly Zimmermannové",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Prodej firmy: průvodce M&A procesem",
+    description: "Jak probíhá prodej firmy, ocenění, výběr investora a bezpečné uzavření transakce.",
+    images: ["/profile.jpg"],
   },
 }
 

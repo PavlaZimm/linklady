@@ -6,11 +6,11 @@ import Navigation from '@/components/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
 import SiteFooter from '@/components/site-footer'
+import { getPageMetadata } from '@/lib/page-metadata'
 
-export const metadata: Metadata = siteMetadata['/o-mne']
+export const metadata: Metadata = getPageMetadata('/o-mne')
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -50,8 +50,8 @@ const jsonLd = {
       image: {
         "@type": "ImageObject",
         url: "https://www.linklady.cz/profile.jpg",
-        width: 400,
-        height: 500,
+        width: 665,
+        height: 1000,
       },
       jobTitle: "Online marketing specialistka",
       description: "V online marketingu působím od roku 2015. Specializuji se na SEO, content marketing, AI nástroje a automatizaci marketingu.",
@@ -232,6 +232,4 @@ export default function AboutPage() {
     </div>
   )
 }
-
-
 

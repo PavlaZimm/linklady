@@ -2,79 +2,23 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.linklady.cz'
+  const pages = [
+    { path: '', lastModified: '2026-08-25' },
+    { path: '/o-mne', lastModified: '2026-08-25' },
+    { path: '/blog', lastModified: '2026-08-25' },
+    { path: '/ebook', lastModified: '2026-08-25' },
+    { path: '/tvorba-webu-bilina', lastModified: '2026-08-25' },
+    { path: '/automatizace', lastModified: '2026-08-29' },
+    { path: '/vibecoding', lastModified: '2026-08-25' },
+    { path: '/seo-konzultant-usti-nad-labem', lastModified: '2026-08-28' },
+    { path: '/ai-agent', lastModified: '2026-08-25' },
+    { path: '/webova-aplikace', lastModified: '2026-08-28' },
+    { path: '/blog/prodej-firmy-strategicky-krok', lastModified: '2026-02-27' },
+    { path: '/kontakt', lastModified: '2026-08-25' },
+  ] as const
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/o-mne`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/ebook`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/tvorba-webu-bilina`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/automatizace`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/vibecoding`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-konzultant-usti-nad-labem`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/ai-agent`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/webova-aplikace`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/blog/prodej-firmy-strategicky-krok`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/kontakt`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-  ]
+  return pages.map(({ path, lastModified }) => ({
+    url: `${baseUrl}${path}`,
+    lastModified,
+  }))
 }

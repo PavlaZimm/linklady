@@ -1,11 +1,11 @@
 import Navigation from '@/components/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
 import SiteFooter from '@/components/site-footer'
+import { getPageMetadata } from '@/lib/page-metadata'
 
-export const metadata: Metadata = siteMetadata['/seo-konzultant-usti-nad-labem']
+export const metadata: Metadata = getPageMetadata('/seo-konzultant-usti-nad-labem')
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -56,44 +56,6 @@ const jsonLd = {
           name: "Česká republika",
         },
       },
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.linklady.cz/seo-konzultant-usti-nad-labem/#localbusiness",
-      name: "Linklady.cz – SEO konzultant Ústí nad Labem",
-      url: "https://www.linklady.cz/seo-konzultant-usti-nad-labem",
-      image: "https://www.linklady.cz/profile.jpg",
-      email: "zimmermannovap@gmail.com",
-      taxID: "04352041",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Bílina",
-        addressRegion: "Ústecký kraj",
-        addressCountry: "CZ",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: "50.6607",
-        longitude: "14.0323",
-      },
-      areaServed: [
-        { "@type": "City", name: "Ústí nad Labem" },
-        { "@type": "City", name: "Teplice" },
-        { "@type": "City", name: "Most" },
-        { "@type": "City", name: "Děčín" },
-        { "@type": "City", name: "Litoměřice" },
-        { "@type": "City", name: "Chomutov" },
-        { "@type": "City", name: "Bílina" },
-      ],
-      priceRange: "$$",
-      knowsAbout: [
-        "SEO optimalizace",
-        "Lokální SEO",
-        "Technické SEO",
-        "Obsahový marketing",
-        "SEO audit",
-        "Linkbuilding",
-      ],
     },
     {
       "@type": "BreadcrumbList",

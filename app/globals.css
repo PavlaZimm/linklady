@@ -87,6 +87,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: clip;
   }
 }
 
@@ -171,7 +172,6 @@ body > nextjs-portal {
     transition-duration: 0.01ms !important;
   }
 }
-
 
 
 

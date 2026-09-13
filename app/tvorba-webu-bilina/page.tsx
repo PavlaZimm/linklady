@@ -2,11 +2,11 @@ import Navigation from '@/components/navigation'
 import ContactForm from '@/components/contact-form'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import siteMetadata from '@/app/metadata.json'
 import JsonLd from '@/components/json-ld'
 import SiteFooter from '@/components/site-footer'
+import { getPageMetadata } from '@/lib/page-metadata'
 
-export const metadata: Metadata = siteMetadata['/tvorba-webu-bilina']
+export const metadata: Metadata = getPageMetadata('/tvorba-webu-bilina')
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -51,42 +51,6 @@ const jsonLd = {
           name: "Česká republika",
         },
       },
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.linklady.cz/#localbusiness",
-      name: "Linklady.cz – Tvorba webových stránek Bílina",
-      url: "https://www.linklady.cz/tvorba-webu-bilina",
-      image: "https://www.linklady.cz/profile.jpg",
-      email: "zimmermannovap@gmail.com",
-      taxID: "04352041",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Bílina",
-        addressRegion: "Ústecký kraj",
-        addressCountry: "CZ",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: "50.5483",
-        longitude: "13.7756",
-      },
-      areaServed: [
-        { "@type": "City", name: "Bílina" },
-        { "@type": "City", name: "Teplice" },
-        { "@type": "City", name: "Most" },
-        { "@type": "City", name: "Ústí nad Labem" },
-        { "@type": "City", name: "Duchcov" },
-        { "@type": "City", name: "Litvínov" },
-      ],
-      priceRange: "$$",
-      knowsAbout: [
-        "Tvorba webových stránek",
-        "SEO optimalizace",
-        "Webdesign",
-        "Responzivní weby",
-        "E-shopy",
-      ],
     },
     {
       "@type": "BreadcrumbList",

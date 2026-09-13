@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // Keep SEO metadata in <head> for every crawler and social preview bot.
+  htmlLimitedBots: /.*/,
   eslint: {
     ignoreDuringBuilds: false,
   },

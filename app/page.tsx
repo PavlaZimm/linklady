@@ -1,10 +1,10 @@
 import Navigation from '@/components/navigation'
 import type { Metadata } from 'next'
-import siteMetadata from '@/app/metadata.json'
 import HomePageContent from '@/components/home-page-content'
 import JsonLd from '@/components/json-ld'
+import { getPageMetadata } from '@/lib/page-metadata'
 
-export const metadata: Metadata = siteMetadata['/']
+export const metadata: Metadata = getPageMetadata('/')
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -40,6 +40,7 @@ const jsonLd = {
           position: 1,
           name: "SEO",
           description: "Kompletní SEO od technického auditu přes keyword strategii po lokální viditelnost.",
+          url: "https://www.linklady.cz/seo-konzultant-usti-nad-labem",
         },
         {
           "@type": "ListItem",
@@ -59,12 +60,14 @@ const jsonLd = {
           position: 4,
           name: "AI agenti",
           description: "Chatboti pro zákaznickou podporu, analýza dat, generování obsahu i monitoring konkurence.",
+          url: "https://www.linklady.cz/ai-agent",
         },
         {
           "@type": "ListItem",
           position: 5,
           name: "Automatizace & Make.com",
           description: "Propojení nástrojů přes Make.com, automatizace reportingu, e-mailových sekvencí i publikování obsahu.",
+          url: "https://www.linklady.cz/automatizace",
         },
         {
           "@type": "ListItem",
@@ -86,6 +89,4 @@ export default function Home() {
     </>
   )
 }
-
-
 
