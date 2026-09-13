@@ -69,13 +69,13 @@ export default function WebovaAplikacePage() {
             </nav>
 
             <h1 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 max-w-4xl mx-auto leading-tight">
-              Webová aplikace na&nbsp;míru: cena, termín a&nbsp;jak to probíhá
+              Webová aplikace: co to je, příklady a&nbsp;vývoj na&nbsp;míru
             </h1>
             <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10 mb-4">
-              Dělám webové aplikace pro malé firmy. Hodinovka je 1&nbsp;200&nbsp;Kč, odhad dostanete do&nbsp;24&nbsp;hodin a&nbsp;první verzi si naklikáte během několika dní, ne za&nbsp;dva měsíce.
+              Webová aplikace je program, který běží v&nbsp;prohlížeči. Umožňuje se přihlásit, pracovat s&nbsp;daty, vyřizovat objednávky nebo automatizovat firemní procesy bez instalace do&nbsp;počítače.
             </p>
             <p className="text-sm opacity-75 max-w-2xl mx-auto relative z-10">
-              Níž najdete ceny, ukázky hotových aplikací a&nbsp;taky vysvětlení, čím se webová aplikace liší od&nbsp;obyčejného webu.
+              Níž najdete konkrétní příklady, rozdíl oproti běžnému webu, ceny a&nbsp;postup vývoje aplikace na&nbsp;míru pro malé firmy.
             </p>
           </div>
         </div>

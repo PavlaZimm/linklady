@@ -82,8 +82,8 @@
     }
   },
   "/tvorba-webu-bilina": {
-    "title": "Tvorba webových stránek Bílina: ceny a termín",
-    "description": "Tvorba webových stránek v Bílině a okolí. Weby s SEO od základu, konkrétní cena a termín předem. Nezávazná konzultace zdarma.",
+    "title": "Tvorba webových stránek Bílina od 9 000 Kč",
+    "description": "Rychlý web na míru se SEO v ceně pro firmy v Bílině a okolí. Jednoduchý web od 9 000 Kč, konkrétní cena a termín předem.",
     "keywords": [
       "tvorba webových stránek Bílina",
       "tvorba webu Bílina",
@@ -100,8 +100,8 @@
       "canonical": "https://www.linklady.cz/tvorba-webu-bilina"
     },
     "openGraph": {
-      "title": "Tvorba webových stránek Bílina: ceny a termín",
-      "description": "Tvorba webových stránek v Bílině a okolí. Weby s SEO od základu, konkrétní cena a termín předem. Nezávazná konzultace zdarma.",
+      "title": "Tvorba webových stránek Bílina od 9 000 Kč",
+      "description": "Rychlý web na míru se SEO v ceně pro firmy v Bílině a okolí. Jednoduchý web od 9 000 Kč, konkrétní cena a termín předem.",
       "url": "https://www.linklady.cz/tvorba-webu-bilina",
       "images": [
         {
@@ -175,8 +175,8 @@
     }
   },
   "/seo-konzultant-usti-nad-labem": {
-    "title": "SEO optimalizace Ústí nad Labem | konzultace",
-    "description": "SEO optimalizace pro firmy v Ústí nad Labem a okolí. Audit od 5 000 Kč, měsíční správa od 8 000 Kč. Cenu víte předem, konzultace zdarma.",
+    "title": "SEO optimalizace Ústí nad Labem od 5 000 Kč",
+    "description": "SEO pro firmy v Ústí nad Labem: technický audit, obsah, lokální SEO a měřitelné výsledky. Konzultace zdarma, odpověď do 24 hodin.",
     "keywords": [
       "SEO konzultant Ústí nad Labem",
       "SEO optimalizace Ústí nad Labem",
@@ -191,8 +191,8 @@
       "canonical": "https://www.linklady.cz/seo-konzultant-usti-nad-labem"
     },
     "openGraph": {
-      "title": "SEO konzultant Ústí nad Labem pro firmy",
-      "description": "SEO konzultace pro firmy v Ústí nad Labem a okolí. Rozbor webu, konkrétní plán a měřitelné výsledky. První konzultace zdarma.",
+      "title": "SEO optimalizace Ústí nad Labem od 5 000 Kč",
+      "description": "Technický audit, obsah, lokální SEO a měřitelné výsledky pro firmy v Ústí nad Labem. Konzultace zdarma.",
       "url": "https://www.linklady.cz/seo-konzultant-usti-nad-labem",
       "images": [
         {
@@ -205,8 +205,8 @@
     }
   },
   "/vibecoding": {
-    "title": "Vibecoding: aplikace na míru rychleji a levněji",
-    "description": "Co je vibecoding a jak se s ním dělají aplikace na míru. Kde se hodí, kde naopak ne, a co to znamená pro cenu a pro termín.",
+    "title": "Vibecoding: co to je, nástroje a praktický návod",
+    "description": "Co je vibecoding, jaké AI nástroje použít a kde jsou jeho limity. Praktický návod i školení pro firmy a jednotlivce.",
     "keywords": [
       "vibecoding",
       "co je vibecoding",
@@ -225,8 +225,8 @@
       "canonical": "https://www.linklady.cz/vibecoding"
     },
     "openGraph": {
-      "title": "Vibecoding: aplikace na míru rychleji a levněji",
-      "description": "Co je vibecoding a jak se s ním dělají aplikace na míru. Kde se hodí, kde naopak ne, a co to znamená pro cenu a pro termín.",
+      "title": "Vibecoding: co to je, nástroje a praktický návod",
+      "description": "Co je vibecoding, jaké AI nástroje použít a kde jsou jeho limity. Praktický návod i školení pro firmy a jednotlivce.",
       "url": "https://www.linklady.cz/vibecoding",
       "images": [
         {
@@ -297,8 +297,8 @@
     }
   },
   "/webova-aplikace": {
-    "title": "Webová aplikace na míru: cena, termín a postup",
-    "description": "Webová aplikace na míru od jednoho člověka, ne od agentury. Hodina 1 200 Kč, jednoduchý web od 9 000 Kč. Cenu víte předem.",
+    "title": "Webová aplikace: co to je, příklady a vývoj na míru",
+    "description": "Co je webová aplikace, jak funguje a čím se liší od webu? Podívejte se na příklady, cenu a postup vývoje aplikace na míru.",
     "keywords": [
       "webová aplikace",
       "webova aplikace",
@@ -314,8 +314,8 @@
       "canonical": "https://www.linklady.cz/webova-aplikace"
     },
     "openGraph": {
-      "title": "Webová aplikace na míru: cena, termín a postup",
-      "description": "Vývoj webové aplikace na míru. Kolik to stojí, jak dlouho to trvá a jak probíhá spolupráce. Prototyp za dny, ne za měsíce.",
+      "title": "Webová aplikace: co to je, příklady a vývoj na míru",
+      "description": "Co je webová aplikace, jak funguje a čím se liší od webu? Příklady, cena a postup vývoje aplikace na míru.",
       "url": "https://www.linklady.cz/webova-aplikace",
       "images": [
         {
