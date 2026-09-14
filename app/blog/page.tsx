@@ -140,30 +140,31 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Newsletter Signup */}
+      {/* Další krok pro čtenáře. Skutečný newsletter zatím není napojený,
+          proto tu není formulář, který by e-mail nikam neodeslal. */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Nechte si poslat novinky
+            Chcete další praktické návody?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Buďte první, kdo se dozví o nových článcích a tipech z online marketingu.
+            Začněte e-bookem o práci s AI, nebo mi napište, co chcete zlepšit na svém webu či ve firmě.
           </p>
-          
-          <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Váš e-mail"
-              className="flex-1 px-4 py-3 border-2 border-purple-200 rounded-lg focus:border-primary focus:outline-none"
-              required
-            />
-            <button
-              type="submit"
-              className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/ebook"
+              className="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-primary px-7 py-3.5 font-semibold text-white transition-colors hover:bg-purple-800"
             >
-              Odebírat
-            </button>
-          </form>
+              Prohlédnout e-book
+            </Link>
+            <Link
+              href="/kontakt"
+              className="inline-flex w-full sm:w-auto items-center justify-center rounded-full border-2 border-primary px-7 py-3 font-semibold text-primary transition-colors hover:bg-purple-50"
+            >
+              Probrat vlastní projekt
+            </Link>
+          </div>
         </div>
       </section>
 
