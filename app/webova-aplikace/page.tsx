@@ -187,6 +187,12 @@ export default function WebovaAplikacePage() {
               </p>
             </div>
           </div>
+          <p className="text-lg text-gray-700 leading-relaxed mt-8">
+            Další ukázky, jejich zadání a použité principy najdete v článku{' '}
+            <Link href="/blog/webove-aplikace-priklady" className="text-primary font-semibold hover:underline">
+              webové aplikace: příklady z praxe a využití ve firmách
+            </Link>.
+          </p>
         </div>
       </section>
 

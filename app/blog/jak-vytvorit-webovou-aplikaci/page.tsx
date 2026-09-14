@@ -240,6 +240,12 @@ export default function JakVytvoritWebovouAplikaciPage() {
                 <p className="text-gray-700">Sledování letů načítá informace z externího zdroje a převádí je do přehledu, který je použitelný i na telefonu.</p>
               </div>
             </div>
+            <p className="text-lg text-gray-700 leading-relaxed mb-12">
+              Podrobnější rozbor těchto i dalších realizací najdete v přehledu{' '}
+              <Link href="/blog/webove-aplikace-priklady" className="text-primary font-semibold hover:underline">
+                webové aplikace – příklady a využití ve firmách
+              </Link>.
+            </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-16 mb-6">Nejčastější chyby</h2>
             <ul className="space-y-4 text-gray-700 mb-12">
