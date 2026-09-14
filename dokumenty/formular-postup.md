@@ -103,9 +103,9 @@ u `/api/poptavka` není chyba.
 
 ## Co se stane, když to nenastavíš
 
-**Nic se nerozbije.** Formulář nejdřív zkusí server a když odesílání
-nastavené není, spadne zpátky na `mailto` přesně jako dnes. Web tedy
-funguje pořád, jen bez té výhody.
+**Nic se neztratí.** Formulář nejdřív zkusí server a když odesílání
+nastavené není, jasně řekne, že zpráva ještě neodešla, a nabídne tlačítko
+s předvyplněným e-mailem. Návštěvník tak nikdy neuvidí falešné potvrzení.
 
 ## Proč zrovna takhle
 

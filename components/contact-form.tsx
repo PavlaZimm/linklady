@@ -1,9 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { useMutation } from 'convex/react'
-import { api } from '@/convex/_generated/api'
-import { ConvexClientProvider } from '@/components/convex-client-provider'
 
 type Props = {
   /** Předvyplněná služba, ať se pozná, ze které stránky poptávka přišla. */
@@ -34,56 +31,27 @@ const SLUZBY = [
 
 const EMAIL = 'zimmermannovap@gmail.com'
 
-/**
- * Formulář má dvě varianty odeslání a vybírá se při buildu:
- *
- *  · když je nastavená NEXT_PUBLIC_CONVEX_URL, ukládá se poptávka do Convexu
- *  · když nastavená není, otevře se předvyplněný e-mail
- *
- * Důvod: `useMutation` bez běžícího Convex klienta vyhodí výjimku a shodí
- * celou stránku (HTTP 500). Hooky se nedají volat podmíněně, proto jsou
- * varianty jako dvě komponenty a přepíná se mezi nimi až v exportu.
- */
+type VysledekOdeslani =
+  | { ok: true }
+  | { ok: false; mailto: string }
+
+/** Poptávky posíláme vždy přes vlastní serverovou cestu. */
 export default function ContactForm(props: Props) {
-  if (!process.env.NEXT_PUBLIC_CONVEX_URL) {
-    return <VariantaEmail {...props} />
-  }
-  return (
-    <ConvexClientProvider>
-      <VariantaConvex {...props} />
-    </ConvexClientProvider>
-  )
-}
-
-function VariantaConvex(props: Props) {
-  const submit = useMutation(api.contacts.submitContactForm)
   return (
     <Formular
       {...props}
       odeslatData={async (d) => {
-        await submit(d)
-      }}
-    />
-  )
-}
-
-function VariantaEmail(props: Props) {
-  return (
-    <Formular
-      {...props}
-      odeslatData={async (d) => {
-        // Nejdřív zkusit odeslat přímo z webu. Když server e-mail
-        // nastavený nemá, vrátí 501 a spadneme zpátky na mailto,
-        // aby poptávka nezmizela.
+        // Když serverové odesílání není dostupné, nabídneme návštěvníkovi
+        // připravený e-mail. Nikdy ale netvrdíme, že se zpráva odeslala.
         try {
           const r = await fetch('/api/poptavka', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(d),
           })
-          if (r.ok) return
+          if (r.ok) return { ok: true }
         } catch {
-          // síť selhala, zkusíme mailto
+          // Síť selhala, nabídneme ruční odeslání e-mailem.
         }
 
         const telo = [
@@ -96,9 +64,12 @@ function VariantaEmail(props: Props) {
         ]
           .filter(Boolean)
           .join('\n')
-        window.location.href =
-          `mailto:${EMAIL}?subject=${encodeURIComponent(d.subject)}` +
-          `&body=${encodeURIComponent(telo)}`
+        return {
+          ok: false,
+          mailto:
+            `mailto:${EMAIL}?subject=${encodeURIComponent(d.subject)}` +
+            `&body=${encodeURIComponent(telo)}`,
+        }
       }}
     />
   )
@@ -109,9 +80,10 @@ function Formular({
   title = 'Napište mi',
   subtitle = 'Odpovím do 24 hodin. Konzultace je zdarma a nezávazná.',
   odeslatData,
-}: Props & { odeslatData: (d: Poptavka) => Promise<void> }) {
-  const [stav, setStav] = useState<'klid' | 'posilam' | 'hotovo' | 'chyba'>('klid')
+}: Props & { odeslatData: (d: Poptavka) => Promise<VysledekOdeslani> }) {
+  const [stav, setStav] = useState<'klid' | 'posilam' | 'hotovo' | 'zaloha' | 'chyba'>('klid')
   const [chyba, setChyba] = useState<string>('')
+  const [mailto, setMailto] = useState<string>(`mailto:${EMAIL}`)
 
   async function odeslat(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -126,7 +98,7 @@ function Formular({
     setStav('posilam')
     setChyba('')
     try {
-      await odeslatData({
+      const vysledek = await odeslatData({
         name: (f.get('name') as string).trim(),
         email: (f.get('email') as string).trim(),
         subject: ((f.get('service') as string) || service || 'Poptávka z webu').trim(),
@@ -134,6 +106,11 @@ function Formular({
         phone: ((f.get('phone') as string) || '').trim() || undefined,
         service: service || ((f.get('service') as string) || undefined),
       })
+      if (!vysledek.ok) {
+        setMailto(vysledek.mailto)
+        setStav('zaloha')
+        return
+      }
       setStav('hotovo')
       if (typeof window !== 'undefined' && (window as any).gtag) {
         ;(window as any).gtag('event', 'generate_lead', {
@@ -258,6 +235,21 @@ function Formular({
             </a>
             .
           </p>
+        )}
+
+        {stav === 'zaloha' && (
+          <div role="alert" className="bg-amber-50 border border-amber-300 rounded-lg px-4 py-4">
+            <p className="font-semibold text-amber-950">Automatické odeslání se nepodařilo.</p>
+            <p className="mt-1 text-amber-900">
+              Vaše zpráva ještě nebyla odeslána. Pokračujte prosím přes připravený e-mail.
+            </p>
+            <a
+              href={mailto}
+              className="inline-flex mt-3 items-center justify-center bg-yellow-400 text-purple-900 px-5 py-2.5 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
+            >
+              Odeslat e-mailem
+            </a>
+          </div>
         )}
 
         <button

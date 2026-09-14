@@ -19,8 +19,8 @@ import { NextResponse } from 'next/server'
  *
  * Celý postup je v dokumenty/formular-postup.md.
  *
- * ⚠️ Dokud nastavené není, vrací tahle cesta 501 a formulář si sám
- * spadne zpátky na mailto. Web se tím pádem nechová hůř než dřív.
+ * ⚠️ Dokud nastavené není, vrací tahle cesta 501 a formulář nabídne
+ * ruční odeslání připraveného e-mailu. Nikdy nehlásí falešný úspěch.
  */
 
 type Telo = {
@@ -40,7 +40,7 @@ function ocisti(s: unknown, max = 2000): string {
 export async function POST(req: Request) {
   const cil = process.env.POPTAVKA_SCRIPT_URL
   if (!cil) {
-    // Není chyba, jen to zatím není nastavené. Formulář použije mailto.
+    // Není nastavené. Formulář nabídne návštěvníkovi připravený e-mail.
     return NextResponse.json({ ok: false, duvod: 'nenastaveno' }, { status: 501 })
   }
 
