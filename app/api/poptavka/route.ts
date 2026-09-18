@@ -1,95 +1,69 @@
 import { NextResponse } from 'next/server'
+import { randomUUID } from 'node:crypto'
+import { ConvexHttpClient } from 'convex/browser'
+import { ConvexError } from 'convex/values'
+import { api } from '@/convex/_generated/api'
+import { contactSchema } from '@/lib/contact-validation'
+import { sendContactEmail } from '@/lib/contact-resend'
 
-/**
- * Příjem poptávky z kontaktního formuláře.
- *
- * Proč tahle cesta existuje: formulář se do teď odesílal přes `mailto:`,
- * což otevře e-mailový program návštěvníka a nechá ho odeslat zprávu
- * podruhé. Na mobilu bez nastavené pošty se často nestane vůbec nic
- * a poptávka je pryč.
- *
- * Odesílá se přes Google Apps Script, který zprávu pošle z Pavlina
- * vlastního Gmailu. Zdarma, bez účtu u třetí strany a bez nové
- * závislosti v projektu. Gmail zvládne 100 zpráv denně, což je pro
- * tenhle web násobně víc, než bude kdy potřeba.
- *
- * Nastavení na Vercelu (Settings → Environment Variables):
- *   POPTAVKA_SCRIPT_URL   adresa nasazeného skriptu (.../exec)
- *   POPTAVKA_TAJEMSTVI    heslo, které skript očekává
- *
- * Celý postup je v dokumenty/formular-postup.md.
- *
- * ⚠️ Dokud nastavené není, vrací tahle cesta 501 a formulář nabídne
- * ruční odeslání připraveného e-mailu. Nikdy nehlásí falešný úspěch.
- */
-
-type Telo = {
-  name?: string
-  email?: string
-  phone?: string
-  service?: string
-  message?: string
-  subject?: string
-  web?: string // honeypot
-}
-
-function ocisti(s: unknown, max = 2000): string {
-  return typeof s === 'string' ? s.trim().slice(0, max) : ''
-}
+export const runtime = 'nodejs'
 
 export async function POST(req: Request) {
-  const cil = process.env.POPTAVKA_SCRIPT_URL
-  if (!cil) {
-    // Není nastavené. Formulář nabídne návštěvníkovi připravený e-mail.
-    return NextResponse.json({ ok: false, duvod: 'nenastaveno' }, { status: 501 })
+  const origin = req.headers.get('origin')
+  if (origin && origin !== new URL(req.url).origin) {
+    return NextResponse.json({ ok: false, duvod: 'puvod' }, { status: 403 })
   }
-
-  let d: Telo
+  let raw: unknown
   try {
-    d = await req.json()
+    const body = await req.text()
+    if (body.length > 16000) return NextResponse.json({ ok: false, duvod: 'velikost' }, { status: 413 })
+    raw = JSON.parse(body)
   } catch {
     return NextResponse.json({ ok: false, duvod: 'necitelne' }, { status: 400 })
   }
-
-  // Roboti vyplňují i skrytá pole. Tváříme se, že se odeslalo.
-  if (ocisti(d.web)) {
-    return NextResponse.json({ ok: true })
+  const parsed = contactSchema.safeParse(raw)
+  if (!parsed.success) {
+    return NextResponse.json({ ok: false, duvod: 'udaje', message: 'Zkontrolujte povinná pole, e-mail a délku zprávy (nejvýše 5 000 znaků).' }, { status: 400 })
   }
-
-  const jmeno = ocisti(d.name, 200)
-  const email = ocisti(d.email, 200)
-  const zprava = ocisti(d.message)
-  if (!jmeno || !email || !zprava) {
-    return NextResponse.json({ ok: false, duvod: 'chybi-udaje' }, { status: 400 })
+  const { web, ...data } = parsed.data
+  if (web) return NextResponse.json({ ok: true, accepted: false })
+  if (process.env.RESEND_API_KEY) {
+    const outcome = await sendContactEmail({ ...data, requestId: data.requestId || randomUUID() }, req)
+    if (outcome === 'limited') return NextResponse.json({ ok: false, duvod: 'limit', message: 'Dosáhli jsme limitu odesílání. Zkuste to prosím později nebo napište e-mailem.' }, { status: 429 })
+    if (outcome !== 'accepted') return NextResponse.json({ ok: false, duvod: 'odeslani' }, { status: 503 })
+    return NextResponse.json({ ok: true, accepted: true, receipt: 'queued' })
   }
-  if (!/^[^@\s]+@[^@\s.]+\.[^@\s]+$/.test(email)) {
-    return NextResponse.json({ ok: false, duvod: 'email' }, { status: 400 })
+  const convexUrl = process.env.CONVEX_URL || process.env.NEXT_PUBLIC_CONVEX_URL
+  if (convexUrl) {
+    try {
+      const client = new ConvexHttpClient(convexUrl)
+      await client.mutation(api.contacts.submitContactForm, data)
+      return NextResponse.json({ ok: true, accepted: true, receipt: 'stored' })
+    } catch (error) {
+      if (error instanceof ConvexError && error.data === 'RATE_LIMIT') {
+        return NextResponse.json({ ok: false, duvod: 'limit', message: 'Příliš mnoho zpráv. Zkuste to prosím za hodinu.' }, { status: 429 })
+      }
+      // No second writer after an ambiguous database failure.
+      return NextResponse.json({ ok: false, duvod: 'ulozeni' }, { status: 503 })
+    }
   }
-
+  const target = process.env.POPTAVKA_SCRIPT_URL
+  const secret = process.env.POPTAVKA_TAJEMSTVI
+  if (!target || !secret) return NextResponse.json({ ok: false, duvod: 'nenastaveno' }, { status: 503 })
   try {
-    const r = await fetch(cil, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        tajemstvi: process.env.POPTAVKA_TAJEMSTVI || '',
-        name: jmeno,
-        email,
-        phone: ocisti(d.phone, 60),
-        service: ocisti(d.service, 200),
-        message: zprava,
-        subject: ocisti(d.subject, 200),
-      }),
-      // Apps Script odpovídá přesměrováním na googleusercontent
-      redirect: 'follow',
+    const response = await fetch(target, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...data, requestId: data.requestId || randomUUID(), tajemstvi: secret }),
+      redirect: 'follow', signal: AbortSignal.timeout(12000),
     })
-    if (!r.ok) {
+    const result: unknown = await response.json()
+    if (response.ok && typeof result === 'object' && result !== null && 'duvod' in result && result.duvod === 'limit') {
+      return NextResponse.json({ ok: false, duvod: 'limit', message: 'Příliš mnoho zpráv. Zkuste to prosím za hodinu.' }, { status: 429 })
+    }
+    if (!response.ok || typeof result !== 'object' || result === null || !('ok' in result) || result.ok !== true) {
       return NextResponse.json({ ok: false, duvod: 'odeslani' }, { status: 502 })
     }
-    const vysledek = await r.json().catch(() => ({ ok: true }))
-    if (vysledek?.ok === false) {
-      return NextResponse.json({ ok: false, duvod: 'skript' }, { status: 502 })
-    }
-    return NextResponse.json({ ok: true })
+    return NextResponse.json({ ok: true, accepted: true, receipt: 'receipt' in result && result.receipt === 'stored' ? 'stored' : 'sent' })
   } catch {
     return NextResponse.json({ ok: false, duvod: 'sit' }, { status: 502 })
   }
