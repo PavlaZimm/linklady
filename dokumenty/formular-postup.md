@@ -1,118 +1,25 @@
-# Formulář: jak rozchodit odesílání zdarma
+# Kontaktní formulář – Resend do Gmailu
 
-Formulář na webu se do teď odesílal přes `mailto:`, tedy otevřel
-návštěvníkovi jeho e-mailový program a nechal ho odeslat zprávu podruhé.
-Na mobilu bez nastavené pošty se často nestalo nic.
+## Stav 18. 9. 2026
 
-Tohle to spraví **zdarma, bez placené služby a bez registrace u třetí
-strany.** Poptávka půjde přes Google Apps Script, který zprávu odešle
-z tvého vlastního Gmailu.
+Doména linklady.cz je v Resendu ověřená. Omezený odesílací klíč je uložen ve Vercelu jako tajná proměnná RESEND_API_KEY pro Production. Implementace prošla 25 testy kontaktní route a odesílání, kontrolou TypeScriptu a produkčním sestavením. Změna ještě není nasazená a skutečné doručení nebylo otestováno.
 
-**Limit Gmailu je 100 zpráv denně**, což je pro web s 25 prokliky
-za čtvrt roku násobně víc, než kdy bude potřeba.
+Bezplatný Upstash Redis linklady-form-limit byl vytvořen ve Frankfurtu a připojen k produkčnímu projektu Linklady. Přístupové údaje jsou citlivé serverové proměnné. Implementace podporuje proměnné UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN (podporovány jsou i KV_REST_API_URL / KV_REST_API_TOKEN). Žádné tajemství nepatří do klientského kódu ani Gitu.
 
----
+## Chování připravené implementace
 
-## Krok 1: založ skript (5 minut)
+Server validuje vstupy a odesílá čistý text přes Resend z formular@linklady.cz pouze na zimmermannovap@gmail.com. Reply-To obsahuje adresu návštěvníka, takže lze odpovědět přímo z Gmailu. Při nastaveném RESEND_API_KEY se nepoužije původní Convex ani Google větev.
 
-1. Otevři **script.google.com** a přihlas se svým Googlem.
-2. Klikni na **Nový projekt**.
-3. Smaž, co je v editoru, a vlož tenhle kód:
+Společné atomické počítadlo dovolí 5 podání za hodinu na e-mail a IP a 90 za den celkem. Redis ukládá krátkodobé HMAC identifikátory, otisky žádostí a časy; neukládá texty poptávek ani původní adresy. Počítají se i pokusy, při kterých následně odesílání selže. Opakování stejného požadavku používá stejný idempotency key u Resendu. Bez funkčního počítadla se e-mail neodešle.
 
-```javascript
-// Příjem poptávky z webu linklady.cz a odeslání na vlastní Gmail.
-const KAM = 'zimmermannovap@gmail.com';
-const TAJEMSTVI = 'sem-vloz-vlastni-heslo';
+Úspěch formulář zobrazí až po přijetí zprávy Resendem. To samo nepotvrzuje umístění v doručené poště. Při chybě zůstanou vyplněná data zachovaná a návštěvník může použít e-mailový odkaz. Poptávky nemají další záložní databázi. Google skript nebyl nasazen.
 
-function doPost(e) {
-  try {
-    const d = JSON.parse(e.postData.contents);
+## Dokončení a ověření
 
-    // Jednoduchá ochrana, aby skript nemohl použít kdokoli.
-    if (d.tajemstvi !== TAJEMSTVI) {
-      return odpoved({ ok: false, duvod: 'neopravneno' });
-    }
+1. Ověřit názvy připojených proměnných pro počítadlo v Production projektu Linklady.
+2. Nasadit změny přes feature branch, PR a sloučení do main.
+3. Odeslat jednu jasně označenou testovací poptávku z webu; ověřit výsledek formuláře a skutečný stav doručení v Resendu.
+4. Samostatně ověřit skutečný limit počítadla bez opakovaného odesílání e-mailů.
 
-    const radky = [
-      'Jméno: ' + (d.name || ''),
-      'E-mail: ' + (d.email || ''),
-      d.phone ? 'Telefon: ' + d.phone : '',
-      d.service ? 'Co potřebuje: ' + d.service : '',
-      '',
-      d.message || '',
-    ].filter(String).join('\n');
-
-    MailApp.sendEmail({
-      to: KAM,
-      subject: d.subject || ('Poptávka z webu: ' + (d.name || '')),
-      body: radky,
-      replyTo: d.email || KAM,
-    });
-
-    return odpoved({ ok: true });
-  } catch (err) {
-    return odpoved({ ok: false, duvod: String(err) });
-  }
-}
-
-function odpoved(o) {
-  return ContentService
-    .createTextOutput(JSON.stringify(o))
-    .setMimeType(ContentService.MimeType.JSON);
-}
-```
-
-4. **Změň `sem-vloz-vlastni-heslo`** na libovolné vlastní heslo. Nemusí
-   to být nic složitého, třeba `linklady-formular-2026`. Jen ho budeš
-   potřebovat ve druhém kroku, tak si ho zkopíruj.
-
-## Krok 2: nasaď skript
-
-1. Vpravo nahoře **Nasadit → Nové nasazení**.
-2. U položky Typ klikni na ozubené kolo a vyber **Webová aplikace**.
-3. Nastav:
-   - **Spustit jako:** já (tvoje adresa)
-   - **Kdo má přístup:** **Kdokoli**
-4. Klikni **Nasadit** a povol oprávnění, na které se Google zeptá.
-   Zeptá se, jestli smí posílat e-maily tvým jménem. To je v pořádku,
-   je to tvůj vlastní skript.
-5. Zkopíruj **URL webové aplikace**. Vypadá jako
-   `https://script.google.com/macros/s/DLOUHY-KOD/exec`.
-
-⚠️ **Ta adresa je přístupový údaj. Neposílej ji do chatu.**
-
-## Krok 3: vlož obojí do Vercelu
-
-Ve Vercelu u projektu **Settings → Environment Variables** přidej:
-
-| název | hodnota |
-|---|---|
-| `POPTAVKA_SCRIPT_URL` | URL z kroku 2 |
-| `POPTAVKA_TAJEMSTVI` | heslo z kroku 1 |
-
-Pak **Deployments → poslední nasazení → Redeploy**, aby se proměnné
-načetly.
-
-## Krok 4: vyzkoušej
-
-Otevři na webu kontaktní formulář, vyplň ho a odešli. Do minuty ti má
-přijít e-mail. Když nepřijde, mrkni ve Vercelu do **Logs**, jestli tam
-u `/api/poptavka` není chyba.
-
----
-
-## Co se stane, když to nenastavíš
-
-**Nic se neztratí.** Formulář nejdřív zkusí server a když odesílání
-nastavené není, jasně řekne, že zpráva ještě neodešla, a nabídne tlačítko
-s předvyplněným e-mailem. Návštěvník tak nikdy neuvidí falešné potvrzení.
-
-## Proč zrovna takhle
-
-- **Zdarma a bez třetí strany.** Nepotřebuje účet u Resendu, Formspree
-  ani nikde jinde, běží to na tvém Googlu.
-- **Formsubmit.co, který se běžně doporučuje, se z českého O2 vůbec
-  nenačte.** Ověřeno 27. 8. 2026: DNS ho překládá na adresu
-  s certifikátem pro o2.cz a spojení selže. Návštěvníci z O2 by
-  formulář neodeslali.
-- **Žádná nová závislost v projektu.** Volá se to obyčejným požadavkem.
+Testy: npx vitest run tests/contact-route.test.ts tests/contact-resend.test.ts
+Sestavení: npm run build

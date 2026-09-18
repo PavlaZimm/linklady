@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 type Props = {
   /** Předvyplněná služba, ať se pozná, ze které stránky poptávka přišla. */
@@ -18,6 +19,8 @@ type Poptavka = {
   message: string
   phone?: string
   service?: string
+  web?: string
+  requestId?: string
 }
 
 const SLUZBY = [
@@ -32,7 +35,7 @@ const SLUZBY = [
 const EMAIL = 'zimmermannovap@gmail.com'
 
 type VysledekOdeslani =
-  | { ok: true }
+  | { ok: true; accepted: boolean }
   | { ok: false; mailto: string }
 
 /** Poptávky posíláme vždy přes vlastní serverovou cestu. */
@@ -48,10 +51,13 @@ export default function ContactForm(props: Props) {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(d),
+            signal: AbortSignal.timeout(15000),
           })
-          if (r.ok) return { ok: true }
-        } catch {
-          // Síť selhala, nabídneme ruční odeslání e-mailem.
+          const result = await r.json().catch(() => null)
+          if (r.ok && result?.ok === true) return { ok: true, accepted: result.accepted === true }
+          if (r.status === 400 || r.status === 429) throw new Error(result?.message || 'Zkontrolujte vyplněné údaje.')
+        } catch (error) {
+          if (error instanceof Error && !['TimeoutError', 'AbortError', 'TypeError', 'SyntaxError'].includes(error.name)) throw error
         }
 
         const telo = [
@@ -84,51 +90,56 @@ function Formular({
   const [stav, setStav] = useState<'klid' | 'posilam' | 'hotovo' | 'zaloha' | 'chyba'>('klid')
   const [chyba, setChyba] = useState<string>('')
   const [mailto, setMailto] = useState<string>(`mailto:${EMAIL}`)
+  const successRef = useRef<HTMLHeadingElement>(null)
+  const requestRef = useRef({ fingerprint: '', id: '' })
+  const started = useRef(false)
+  const sending = useRef(false)
+  useEffect(() => { if (stav === 'hotovo') successRef.current?.focus() }, [stav])
 
   async function odeslat(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const f = new FormData(e.currentTarget)
 
-    // Honeypot: roboti vyplní i skryté pole, lidi ne.
-    if ((f.get('web') as string)?.length) {
-      setStav('hotovo')
-      return
-    }
-
+    if (sending.current) return
+    sending.current = true
     setStav('posilam')
     setChyba('')
     try {
-      const vysledek = await odeslatData({
+      const payload = {
         name: (f.get('name') as string).trim(),
         email: (f.get('email') as string).trim(),
         subject: ((f.get('service') as string) || service || 'Poptávka z webu').trim(),
         message: (f.get('message') as string).trim(),
         phone: ((f.get('phone') as string) || '').trim() || undefined,
         service: service || ((f.get('service') as string) || undefined),
-      })
+        web: ((f.get('web') as string) || '').trim(),
+      }
+      const fingerprint = JSON.stringify(payload)
+      if (requestRef.current.fingerprint !== fingerprint) requestRef.current = { fingerprint, id: crypto.randomUUID() }
+      const vysledek = await odeslatData({ ...payload, requestId: requestRef.current.id })
       if (!vysledek.ok) {
         setMailto(vysledek.mailto)
         setStav('zaloha')
+        trackEvent('form_error', { form_location: service ?? 'kontakt', reason: 'delivery' })
         return
       }
       setStav('hotovo')
-      if (typeof window !== 'undefined' && (window as any).gtag) {
-        ;(window as any).gtag('event', 'generate_lead', {
-          form_location: service ?? 'kontakt',
-        })
-      }
+      if (vysledek.accepted) trackEvent('generate_lead', { form_location: service ?? 'kontakt' })
     } catch (err) {
       setStav('chyba')
+      trackEvent('form_error', { form_location: service ?? 'kontakt', reason: 'validation_or_limit' })
       setChyba(err instanceof Error ? err.message : 'Zprávu se nepodařilo odeslat.')
+    } finally {
+      sending.current = false
     }
   }
 
   if (stav === 'hotovo') {
     return (
       <div className="bg-purple-50 rounded-lg p-8 md:p-12 text-center">
-        <h2 className="text-3xl font-bold text-primary mb-4">Mám to, díky</h2>
+        <h2 ref={successRef} tabIndex={-1} className="text-3xl font-bold text-primary mb-4">Poptávka je přijatá, děkuji</h2>
         <p className="text-gray-700 text-lg">
-          Ozvu se do 24 hodin. Když to bude spěchat, zavolejte.
+          Ozvu se do 24 hodin na uvedený e-mail.
         </p>
       </div>
     )
@@ -139,7 +150,9 @@ function Formular({
       <h2 className="text-3xl font-bold text-primary mb-3">{title}</h2>
       <p className="text-gray-600 mb-8 text-lg">{subtitle}</p>
 
-      <form onSubmit={odeslat} className="space-y-5" noValidate={false}>
+      <form onSubmit={odeslat} aria-busy={stav === 'posilam'} className="space-y-5" onFocus={() => {
+        if (!started.current) { started.current = true; trackEvent('form_start', { form_location: service ?? 'kontakt' }) }
+      }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
             <label htmlFor="cf-name" className="block text-sm font-medium text-gray-800 mb-1.5">
@@ -193,9 +206,10 @@ function Formular({
               <select
                 id="cf-service"
                 name="service"
-                defaultValue={SLUZBY[0]}
+                defaultValue=""
                 className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
               >
+                <option value="">Vyberte, pokud víte</option>
                 {SLUZBY.map((s) => (
                   <option key={s} value={s}>
                     {s}
@@ -241,10 +255,11 @@ function Formular({
           <div role="alert" className="bg-amber-50 border border-amber-300 rounded-lg px-4 py-4">
             <p className="font-semibold text-amber-950">Automatické odeslání se nepodařilo.</p>
             <p className="mt-1 text-amber-900">
-              Vaše zpráva ještě nebyla odeslána. Pokračujte prosím přes připravený e-mail.
+              Přijetí zprávy se nepodařilo potvrdit. Zkuste odeslání znovu nebo pokračujte přes připravený e-mail.
             </p>
             <a
               href={mailto}
+              onClick={() => trackEvent('contact_email_click', { form_location: service ?? 'kontakt' })}
               className="inline-flex mt-3 items-center justify-center bg-yellow-400 text-purple-900 px-5 py-2.5 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
             >
               Odeslat e-mailem
@@ -257,11 +272,11 @@ function Formular({
           disabled={stav === 'posilam'}
           className="inline-flex items-center justify-center bg-yellow-400 text-purple-900 px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors text-lg disabled:opacity-60 disabled:cursor-not-allowed w-full sm:w-auto"
         >
-          {stav === 'posilam' ? 'Odesílám…' : 'Chci nezávaznou konzultaci'}
+          {stav === 'posilam' ? 'Odesílám…' : 'Odeslat nezávaznou poptávku'}
         </button>
 
         <p className="text-sm text-gray-500">
-          Údaje použiju jen na odpověď na vaši zprávu. Nikam je nepředávám.
+          Údaje použiju k vyřízení vaší poptávky. Formulář technicky zpracovává Vercel a e-mail odesílá Resend.
         </p>
       </form>
     </div>
