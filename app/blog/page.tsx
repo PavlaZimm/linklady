@@ -1,3 +1,4 @@
+import { restoredArticles } from '@/lib/restored-articles'
 import Navigation from '@/components/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -68,6 +69,17 @@ export default function BlogPage() {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8">
+            {restoredArticles.map(article => (
+              <Link key={article.slug} href={`/${article.slug}/`} className="group block">
+                <article className="rounded-2xl border border-purple-100 bg-white p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow">
+                  <p className="text-sm text-purple-700 font-semibold mb-3">{article.category}</p>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary">{article.title}</h2>
+                  <p className="text-gray-600 leading-relaxed mb-4">{article.description}</p>
+                  <p className="text-sm text-gray-500">Pavla Zimmermannová · Aktualizováno <time dateTime="2026-09-19">19. 9. 2026</time></p>
+                </article>
+              </Link>
+            ))}
+
 
             <Link href="/blog/webove-aplikace-priklady" className="group block">
               <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">

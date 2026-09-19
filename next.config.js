@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // Preserve the original WordPress URLs for the restored articles.
+  skipTrailingSlashRedirect: true,
   // Keep SEO metadata in <head> for every crawler and social preview bot.
   htmlLimitedBots: /.*/,
   eslint: {
@@ -41,26 +43,6 @@ const nextConfig = {
       },
       // Staré adresy z WordPressu → tematicky nejbližší stránka
       // (doplněno 25. 8. 2026 podle GSC: 1 614 zobrazení končilo na 404)
-      {
-        source: '/11-tipu-jak-ziskat-validni-zpetny-odkaz',
-        destination: '/seo-konzultant-usti-nad-labem',
-        permanent: true,
-      },
-      {
-        source: '/11-tipu-jak-ziskat-validni-zpetny-odkaz/',
-        destination: '/seo-konzultant-usti-nad-labem',
-        permanent: true,
-      },
-      {
-        source: '/3-typy-zpetnych-odkazu-ktery-je-ten-spravny',
-        destination: '/seo-konzultant-usti-nad-labem',
-        permanent: true,
-      },
-      {
-        source: '/3-typy-zpetnych-odkazu-ktery-je-ten-spravny/',
-        destination: '/seo-konzultant-usti-nad-labem',
-        permanent: true,
-      },
       {
         source: '/ziskejte-zpetne-odkazy-pet-tipu-ktere-pomohou-kazdemu',
         destination: '/seo-konzultant-usti-nad-labem',
@@ -152,16 +134,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/barterova-spoluprace-idealni-marketingovy-tah',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/barterova-spoluprace-idealni-marketingovy-tah/',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
         source: '/google-analytics-4-co-prinasi-a-komu-se-vyplati-prejit',
         destination: '/blog',
         permanent: true,
@@ -214,11 +186,6 @@ const nextConfig = {
       // Old WordPress blog articles → blog page
       {
         source: '/5-duvodu-proc-na-nic-necekat-a-zacit-s-linkbuildingem',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu',
         destination: '/blog',
         permanent: true,
       },
