@@ -1,7 +1,17 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import { canonicalArticlePath } from '@/lib/restored-article-paths'
 
 export function middleware(request: NextRequest) {
+  const pathname = request.nextUrl.pathname
+  const canonical = canonicalArticlePath(pathname)
+  const destination = canonical ?? (pathname !== '/' && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname)
+  if (destination !== pathname) {
+    const url = new URL(request.url)
+    url.pathname = destination
+    return NextResponse.redirect(url, 308)
+  }
+
   // --- Generate cryptographic nonce for CSP (replaces unsafe-inline for scripts) ---
   const nonce = Buffer.from(crypto.randomUUID()).toString('base64')
 

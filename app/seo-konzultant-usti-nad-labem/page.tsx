@@ -736,6 +736,18 @@ export default function SeoKonzultantUstiPage() {
         </div>
       </section>
 
+      <section className="bg-purple-50 py-12" aria-labelledby="seo-guides-heading">
+        <div className="max-w-4xl mx-auto px-5 sm:px-6">
+          <h2 id="seo-guides-heading" className="text-2xl font-bold text-gray-900 mb-5">Než začnete se zpětnými odkazy</h2>
+          <p className="text-gray-700 mb-5">Projděte si, jak vybrat vhodné odkazy a posoudit jejich přínos pro váš web.</p>
+          <ul className="space-y-4">
+            <li><Link href="/3-typy-zpetnych-odkazu-ktery-je-ten-spravny/" className="text-purple-800 underline">Tři typy zpětných odkazů a jejich přínos</Link></li>
+            <li><Link href="/11-tipu-jak-ziskat-validni-zpetny-odkaz/" className="text-purple-800 underline">Jak získat zpětné odkazy: jedenáct postupů</Link></li>
+            <li><Link href="/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/" className="text-purple-800 underline">Jak vybírat a oslovovat weby pro linkbuilding</Link></li>
+          </ul>
+        </div>
+      </section>
+
       <SiteFooter />
     </div>
   )

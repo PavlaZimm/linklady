@@ -1,11 +1,12 @@
 import { MetadataRoute } from 'next'
+import { restoredArticles, articleUpdated } from '@/lib/restored-articles'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.linklady.cz'
   const pages = [
     { path: '', lastModified: '2026-08-25' },
     { path: '/o-mne', lastModified: '2026-08-25' },
-    { path: '/blog', lastModified: '2026-09-14' },
+    { path: '/blog', lastModified: '2026-09-19' },
     { path: '/ebook', lastModified: '2026-08-25' },
     { path: '/tvorba-webu-bilina', lastModified: '2026-09-13' },
     { path: '/automatizace', lastModified: '2026-08-29' },
@@ -19,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/kontakt', lastModified: '2026-08-25' },
   ] as const
 
-  return pages.map(({ path, lastModified }) => ({
+  return [...pages, ...restoredArticles.map(article => ({ path: `/${article.slug}/`, lastModified: articleUpdated }))].map(({ path, lastModified }) => ({
     url: `${baseUrl}${path}`,
     lastModified,
   }))
