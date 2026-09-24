@@ -183,7 +183,7 @@ export default function AboutPage() {
                 </svg>
               </div>
               <Link href="/seo-konzultant-usti-nad-labem" className="text-xl font-semibold text-gray-900 mb-2 hover:text-primary block">SEO</Link>
-              <p className="text-gray-600">Kompletní SEO strategie a lokální dominance</p>
+              <p className="text-gray-600">Audit, opravy webu a lokální SEO</p>
             </div>
             
             <div className="text-center">
