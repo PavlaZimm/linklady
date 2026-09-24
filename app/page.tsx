@@ -39,7 +39,7 @@ const jsonLd = {
           "@type": "ListItem",
           position: 1,
           name: "SEO",
-          description: "Kompletní SEO od technického auditu přes keyword strategii po lokální viditelnost.",
+          description: "Audit webu, technické opravy, obsah podle hledaných dotazů a lokální SEO.",
           url: "https://www.linklady.cz/seo-konzultant-usti-nad-labem",
         },
         {

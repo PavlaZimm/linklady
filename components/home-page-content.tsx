@@ -92,7 +92,7 @@ export default function HomePageContent() {
                 </div>
                 <h3 className="text-2xl font-bold mb-6">SEO</h3>
                 <p className="text-base opacity-90 leading-relaxed">
-                  Víc zákazníků z Googlu i Seznamu. Kompletní SEO od technického auditu přes keyword strategii po lokální viditelnost. Organický růst, který funguje dlouhodobě.
+                  Aby vás lidé našli na Googlu i Seznamu. Audit webu, opravy, texty podle toho, co zákazníci hledají, a firemní profil na Googlu. Výsledky přicházejí postupně a nezmizí, když přestanete platit za reklamu.
                 </p>
                 <Link
                   href="/seo-konzultant-usti-nad-labem"

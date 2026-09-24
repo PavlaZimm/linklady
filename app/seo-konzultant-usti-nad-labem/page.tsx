@@ -102,10 +102,10 @@ export default function SeoKonzultantUstiPage() {
               <span className="text-yellow-400">Ústí nad Labem</span>
             </h1>
             <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
-              SEO konzultant pro Ústecký kraj. Na první stránku Googlu i Seznamu – bez plýtvání na reklamy. SEO strategie s měřitelnými výsledky pro firmy v Ústí nad Labem a celém Ústeckém kraji.
+              SEO konzultantka pro firmy v Ústí nad Labem a celém Ústeckém kraji. Pomůžu vám, aby vás lidé našli na Googlu i Seznamu ve chvíli, kdy hledají to, co nabízíte.
             </p>
             <p className="text-lg mb-10 opacity-80 leading-relaxed">
-              Jsem SEO specialistka s 10 lety praxe. Od technického auditu přes obsahovou strategii až po lokální SEO – vše s jedním cílem: přivést vám víc zákazníků, kteří už nakupují.
+              Jmenuji se Pavla Zimmermannová a online marketingu se věnuji od roku 2015. Zkontroluju technický stav webu, texty i firemní profil na Googlu a řeknu vám, co opravit nejdřív. Pracuju sama, takže víte, kdo na vašem webu dělá.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <Link
@@ -166,7 +166,7 @@ export default function SeoKonzultantUstiPage() {
               <li>
                 <a href="#seo-sluzby" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
                   <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">2</span>
-                  <span className="font-medium">SEO služby, které skutečně fungují</span>
+                  <span className="font-medium">Co pro váš web udělám</span>
                 </a>
               </li>
               <li>
@@ -206,7 +206,7 @@ export default function SeoKonzultantUstiPage() {
               Proč investovat do <span className="text-purple-600">SEO optimalizace</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              93 % aktivit na internetu začíná ve vyhledávači. Pokud váš web není na první stránce Googlu, vaši zákazníci najdou konkurenci.
+              Kdo shání účetní, instalatéra nebo autoservis, často začne v Googlu nebo na Seznamu. Když tam váš web není, zákazník zavolá jinam.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -232,7 +232,7 @@ export default function SeoKonzultantUstiPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Lokální viditelnost v Ústí</h3>
               <p className="text-gray-600 leading-relaxed">
-                Lokální SEO zajistí, že vás lidé najdou, když hledají služby ve vašem okolí. Google mapy, lokální výsledky – tam potřebujete být.
+                Lokální SEO pomáhá, aby se vaše firma ukázala v mapách a ve výsledcích ve chvíli, kdy lidé hledají služby ve svém okolí.
               </p>
             </div>
 
@@ -245,7 +245,7 @@ export default function SeoKonzultantUstiPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Dlouhodobý efekt</h3>
               <p className="text-gray-600 leading-relaxed">
-                SEO je investice, která se násobí. Dobře optimalizovaný web přivádí zákazníky měsíce i roky – na rozdíl od reklam, které přestanou fungovat, jakmile je vypnete.
+                Reklama přestane fungovat ve chvíli, kdy ji vypnete. Dobře nastavený web přivádí zákazníky i dlouho po úpravách. Počítejte ale s tím, že první změny bývají vidět až za několik měsíců.
               </p>
             </div>
 
@@ -258,7 +258,7 @@ export default function SeoKonzultantUstiPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Důvěryhodnost značky</h3>
               <p className="text-gray-600 leading-relaxed">
-                Lidé důvěřují organickým výsledkům víc než reklamám. Pozice na první stránce Googlu buduje autoritu vaší firmy.
+                Firmu, kterou lidé ve výsledcích vidí opakovaně, si zapamatují. Pomáhá k tomu i vyplněný firemní profil s recenzemi.
               </p>
             </div>
 
@@ -269,9 +269,9 @@ export default function SeoKonzultantUstiPage() {
                   <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Vyšší konverze</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Návštěvníci, kteří už hledají</h3>
               <p className="text-gray-600 leading-relaxed">
-                Návštěvníci z organického vyhledávání mají jasný záměr – hledají řešení svého problému. Proto konvertují lépe než návštěvníci z jiných kanálů.
+                Kdo napíše do Googlu &bdquo;instalatér Ústí nad Labem&ldquo;, už řeší, komu zavolat. Stačí mu rychle ukázat, co děláte, kolik to stojí a jak vás kontaktovat.
               </p>
             </div>
 
@@ -282,9 +282,9 @@ export default function SeoKonzultantUstiPage() {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Předběhněte konkurenci</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Soupeříte jen s okolím</h3>
               <p className="text-gray-600 leading-relaxed">
-                Většina firem v Ústeckém kraji SEO neřeší. To je vaše příležitost – kdo začne dřív, získá náskok, který se těžko dohání.
+                V lokálním vyhledávání se neměříte s celou republikou, jen s firmami ze svého okolí. Když mají slabé weby, dají se dohnat rychleji.
               </p>
             </div>
           </div>
@@ -296,10 +296,10 @@ export default function SeoKonzultantUstiPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              SEO služby, které <span className="text-purple-600">skutečně fungují</span>
+              Co pro váš web <span className="text-purple-600">udělám</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Kompletní SEO optimalizace na míru. Od auditu po dlouhodobou správu – vše s transparentním reportingem.
+              Můžete si objednat jen audit, nebo i opravy a pravidelnou péči. Při dlouhodobé spolupráci dostanete každý měsíc report, co jsem udělala a co se změnilo.
             </p>
           </div>
 
@@ -315,7 +315,7 @@ export default function SeoKonzultantUstiPage() {
                 <h3 className="text-2xl font-bold text-gray-900">SEO audit</h3>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Kompletní analýza vašeho webu – technický stav, on-page faktory, obsah, zpětné odkazy a konkurence. Dostanete jasný plán, co opravit a v jakém pořadí.
+                Projdu technický stav webu, texty, zpětné odkazy a konkurenci. Dostanete seznam, co opravit a v jakém pořadí.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
@@ -348,7 +348,7 @@ export default function SeoKonzultantUstiPage() {
                 <h3 className="text-2xl font-bold text-gray-900">On-page SEO</h3>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Optimalizace obsahu a struktury vašeho webu. Titulky, meta popisy, nadpisy, interní prolinkování, obrázky – vše, co ovlivňuje pozice přímo na webu.
+                Upravím titulky, popisky, nadpisy, obrázky a odkazy mezi stránkami. Tedy všechno, co ovlivňuje pozice přímo na vašem webu.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
@@ -381,7 +381,7 @@ export default function SeoKonzultantUstiPage() {
                 <h3 className="text-2xl font-bold text-gray-900">Technické SEO</h3>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Technický základ, na kterém stojí vše ostatní. Rychlost načítání, správná indexace, strukturovaná data, mobilní optimalizace.
+                Když se web pomalu načítá nebo ho Google nemůže správně projít, dobré texty samy nepomůžou. Hlídám rychlost, indexaci, strukturovaná data a zobrazení na mobilu.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
@@ -414,12 +414,12 @@ export default function SeoKonzultantUstiPage() {
                 <h3 className="text-2xl font-bold text-gray-900">Lokální SEO Ústí nad Labem</h3>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Zviditelněte svou firmu v lokálních výsledcích vyhledávání. Google Business profil, lokální citace, recenze – vše pro maximální viditelnost v Ústí a okolí.
+                Aby vás lidé z Ústí a okolí našli v mapách i v místních výsledcích. Nastavím firemní profil na Googlu, zápisy v katalozích (například Firmy.cz) a postup, jak sbírat recenze.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                  Optimalizace Google Business profilu
+                  Optimalizace firemního profilu na Googlu
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
@@ -447,7 +447,7 @@ export default function SeoKonzultantUstiPage() {
               Jak probíhá <span className="text-purple-600">SEO spolupráce</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Žádné černé skříňky. Přesně víte, co dělám, proč to dělám a jaké výsledky přináší.
+              U každého kroku víte, co dělám a proč.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -472,7 +472,7 @@ export default function SeoKonzultantUstiPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">SEO audit a analýza</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Kompletní audit webu – technický stav, obsah, konkurence, klíčová slova. Dostanete zprávu s konkrétními doporučeními seřazenými podle priority a dopadu.
+                  Projdu technický stav webu, obsah, konkurenci a klíčová slova. Dostanete zprávu s doporučeními seřazenými podle toho, co vašemu webu pomůže nejvíc.
                 </p>
               </div>
             </div>
@@ -485,7 +485,7 @@ export default function SeoKonzultantUstiPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Implementace a optimalizace</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Na základě auditu provedu optimalizace – technické opravy, úpravy obsahu, nastavení strukturovaných dat, optimalizace rychlosti. Vše systematicky a s dokumentací.
+                  Podle auditu opravím technické chyby, upravím texty, nastavím strukturovaná data a podle potřeby zrychlím web. Každou změnu zapíšu, abyste věděli, co se na webu dělo.
                 </p>
               </div>
             </div>
@@ -498,7 +498,7 @@ export default function SeoKonzultantUstiPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Obsahová strategie</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Připravím plán obsahu zaměřený na klíčová slova, která přivádí zákazníky. Blog články, landing pages, případové studie – obsah, který Google miluje.
+                  Připravím plán obsahu podle toho, co lidé ve vašem oboru opravdu hledají: články na blog, samostatné stránky služeb nebo případové studie.
                 </p>
               </div>
             </div>
@@ -511,7 +511,7 @@ export default function SeoKonzultantUstiPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Monitoring a reporting</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Průběžně sleduji pozice, návštěvnost a konverze. Každý měsíc dostanete přehledný report s výsledky a dalšími kroky. Žádné tajemství.
+                  Sleduji pozice, návštěvnost a poptávky z webu. Každý měsíc dostanete přehledný report s výsledky a dalšími kroky.
                 </p>
               </div>
             </div>
@@ -524,7 +524,7 @@ export default function SeoKonzultantUstiPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Průběžná optimalizace</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  SEO není jednorázová akce. Průběžně vyhodnocuji data, upravuji strategii a reaguji na změny algoritmů. Vaše pozice se neustále zlepšují.
+                  SEO není jednorázová akce. Vyhodnocuji data, upravuji plán a reaguji na změny ve vyhledávačích. Pozice vám nikdo zaručit nemůže, ale vždycky vám ukážu, co se změnilo a proč.
                 </p>
               </div>
             </div>
@@ -566,26 +566,26 @@ export default function SeoKonzultantUstiPage() {
               Pro koho je <span className="text-purple-600">SEO optimalizace</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              SEO se vyplatí každé firmě, která chce stabilní přísun zákazníků z internetu.
+              SEO dává smysl, když vaši zákazníci hledají vaše služby na internetu.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Lokální firmy v Ústí</h3>
               <p className="text-gray-600 leading-relaxed">
-                Restaurace, řemeslníci, lékaři, autoservisy – každý, kdo chce, aby ho místní zákazníci našli na Googlu. Lokální SEO vás dostane do map i organických výsledků.
+                Restaurace, řemeslníci, lékaři nebo autoservisy. Každý, koho mají místní zákazníci najít na Googlu. Lokální SEO pomáhá dostat se do map i do běžných výsledků.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-3">E-shopy</h3>
               <p className="text-gray-600 leading-relaxed">
-                Organická návštěvnost z vyhledávačů je pro e-shopy klíčová. Optimalizace kategorií, produktů a blogu přinese návštěvníky, kteří chtějí nakoupit.
+                Upravím kategorie, produkty a blog tak, aby na ně z vyhledávačů chodili lidé, kteří chtějí nakoupit.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Služby a B2B</h3>
               <p className="text-gray-600 leading-relaxed">
-                Účetní, advokáti, IT firmy, marketingové agentury – pokud vaši klienti hledají vaše služby na Googlu, SEO je nejefektivnější způsob, jak je oslovit.
+                Účetní, advokáti, IT firmy nebo agentury. Když vaši klienti hledají dodavatele na Googlu, SEO pomůže, aby našli právě vás.
               </p>
             </div>
           </div>
@@ -600,13 +600,13 @@ export default function SeoKonzultantUstiPage() {
           </h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Sídlím v Bílině a <strong>Ústecký kraj znám osobně</strong>. Rozumím lokálnímu trhu, vím, jak lidé v regionu hledají a jaká klíčová slova používají. To je výhoda, kterou vzdálená agentura z Prahy nemá.
+              Sídlím v Bílině a <strong>Ústecký kraj znám z vlastní zkušenosti</strong>. Vím, jak tu lidé hledají místní služby, a když je potřeba, sejdeme se osobně.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Pracuji s firmami v <strong>Ústí nad Labem, Teplicích, Mostě, Děčíně, Litoměřicích, Chomutově</strong> a dalších městech kraje. Ať už máte kamenný obchod, službu nebo e-shop – pomohu vám získat více zákazníků z organického vyhledávání.
+              SEO nabízím firmám v <strong>Ústí nad Labem, Teplicích, Mostě, Děčíně, Litoměřicích, Chomutově</strong> i v dalších městech kraje. Ať máte kamenný obchod, službu nebo e-shop.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Každý projekt začínám <strong>analýzou a konzultací zdarma</strong>. Podívám se na váš web, zhodnotím konkurenci v oboru a navrhnu strategii na míru. Bez závazků, bez zbytečných slibů – jen data a reálné možnosti.
+              Každý projekt začínám <strong>analýzou a konzultací zdarma</strong>. Podívám se na váš web a konkurenci v oboru a navrhnu, jak postupovat. Nic vám nebudu slibovat, dokud neuvidím data.
             </p>
           </div>
 
@@ -674,7 +674,7 @@ export default function SeoKonzultantUstiPage() {
                 Co zahrnuje SEO audit?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                SEO audit zahrnuje kompletní analýzu technického stavu webu (rychlost, indexace, chyby), on-page faktorů (titulky, meta popisy, nadpisy, obsah), off-page faktorů (zpětné odkazy) a analýzu konkurence. Výstupem je podrobná zpráva s konkrétními doporučeními a prioritami.
+                SEO audit zahrnuje kontrolu technického stavu webu (rychlost, indexace, chyby), on-page faktorů (titulky, meta popisy, nadpisy, obsah), off-page faktorů (zpětné odkazy) a analýzu konkurence. Výstupem je podrobná zpráva s konkrétními doporučeními a prioritami.
               </p>
             </div>
 
@@ -696,13 +696,13 @@ export default function SeoKonzultantUstiPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Pojďme váš web dostat na první stránku
+              Zjistěme, co vašemu webu chybí
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto leading-relaxed mb-4">
-              Napište mi a do 24 hodin se ozvu. Probereme váš web a navrhnu SEO strategii na míru – zdarma a nezávazně.
+              Pošlete mi adresu webu a napište, co od něj čekáte. Probereme, kde má rezervy, a navrhnu další postup.
             </p>
             <p className="text-lg opacity-80 mb-10">
-              Odpovídám do 24 hodin. Konzultace je zdarma.
+              Odpovídám do 24 hodin. Konzultace je zdarma a k ničemu vás nezavazuje.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
