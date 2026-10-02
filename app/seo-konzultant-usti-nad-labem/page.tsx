@@ -14,7 +14,7 @@ const jsonLd = {
       "@type": "Service",
       "@id": "https://www.linklady.cz/seo-konzultant-usti-nad-labem/#service",
       name: "SEO optimalizace Ústí nad Labem",
-      description: "SEO optimalizace a konzultace pro firmy v Ústí nad Labem a Ústeckém kraji. Komplexní SEO strategie, technické SEO, lokální SEO a obsahový marketing s měřitelnými výsledky.",
+      description: "SEO konzultace pro firmy v Ústí nad Labem a Ústeckém kraji. Audit s prioritami oprav, technické a lokální SEO i pravidelná správa podle domluveného rozsahu.",
       provider: { "@id": "https://www.linklady.cz/#business" },
       areaServed: [
         {
@@ -85,9 +85,10 @@ export default function SeoKonzultantUstiPage() {
       {/* JSON-LD */}
       <JsonLd data={jsonLd} />
 
+      <main>
       {/* Hero Section */}
       <section className="hero-gradient text-white py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full yellow-gradient opacity-80 rounded-l-full transform translate-x-1/4"></div>
+        <div aria-hidden="true" className="hidden lg:block absolute top-0 right-0 w-1/4 h-full yellow-gradient opacity-30 rounded-l-full transform translate-x-1/2 pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <nav aria-label="Breadcrumb" className="mb-6 text-sm opacity-80">
@@ -98,21 +99,21 @@ export default function SeoKonzultantUstiPage() {
               </ol>
             </nav>
             <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-              SEO optimalizace<br />
+              SEO konzultantka<br />
               <span className="text-yellow-400">Ústí nad Labem</span>
             </h1>
             <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
-              SEO konzultantka pro firmy v Ústí nad Labem a celém Ústeckém kraji. Pomůžu vám, aby vás lidé našli na Googlu i Seznamu ve chvíli, kdy hledají to, co nabízíte.
+              Máte web, ale z vyhledávání přichází málo poptávek? Projdu jeho technický stav, obsah a dostupná data. Dostanete konkrétní doporučení, co opravit nejdřív a jak změny vyhodnotit.
             </p>
             <p className="text-lg mb-10 opacity-80 leading-relaxed">
-              Jmenuji se Pavla Zimmermannová a online marketingu se věnuji od roku 2015. Zkontroluju technický stav webu, texty i firemní profil na Googlu a řeknu vám, co opravit nejdřív. Pracuju sama, takže víte, kdo na vašem webu dělá.
+              Jsem Pavla Zimmermannová, SEO konzultantka z Bíliny. Pomáhám firmám v Ústí nad Labem a celém Ústeckém kraji s SEO optimalizací i lokální viditelností. Úvodní konzultace je zdarma; rozsah další práce a cenu si domluvíme předem.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <Link
                 href="/kontakt"
                 className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
               >
-                Chci SEO konzultaci zdarma
+                Probrat můj web
               </Link>
               <a
                 href="mailto:zimmermannovap@gmail.com"
@@ -144,57 +145,47 @@ export default function SeoKonzultantUstiPage() {
         </div>
       </section>
 
-      {/* Obsah stránky – kotvy */}
-      <section className="py-12 bg-gradient-to-br from-gray-50 to-purple-50/30">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="bg-white rounded-2xl shadow-lg border border-purple-100 p-8">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center">
-                <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                </svg>
-              </div>
-              <h2 className="text-xl font-bold text-gray-900">Obsah stránky</h2>
-            </div>
-            <ol className="space-y-1">
-              <li>
-                <a href="#proc-seo" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">1</span>
-                  <span className="font-medium">Proč investovat do SEO optimalizace</span>
-                </a>
-              </li>
-              <li>
-                <a href="#seo-sluzby" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">2</span>
-                  <span className="font-medium">Co pro váš web udělám</span>
-                </a>
-              </li>
-              <li>
-                <a href="#jak-probiha-spoluprace" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">3</span>
-                  <span className="font-medium">Jak probíhá SEO spolupráce</span>
-                </a>
-              </li>
-              <li>
-                <a href="#pro-koho" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">4</span>
-                  <span className="font-medium">Pro koho je SEO optimalizace</span>
-                </a>
-              </li>
-              <li>
-                <a href="#ustecky-kraj" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">5</span>
-                  <span className="font-medium">SEO optimalizace v Ústeckém kraji</span>
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">6</span>
-                  <span className="font-medium">Často kladené otázky</span>
-                </a>
-              </li>
-            </ol>
-          </nav>
+      <nav aria-label="Na této stránce" className="border-b border-purple-100 bg-purple-50">
+        <div className="max-w-7xl mx-auto px-5 py-5 flex flex-wrap gap-x-6 gap-y-3 text-purple-900 font-medium">
+          <a href="#cena" className="underline underline-offset-4">Cena a rozsah</a>
+          <a href="#vystup" className="underline underline-offset-4">Co dostanete</a>
+          <a href="#jak-probiha-spoluprace" className="underline underline-offset-4">Průběh spolupráce</a>
+          <a href="#ukazka" className="underline underline-offset-4">Ukázka práce</a>
+          <a href="#faq" className="underline underline-offset-4">Časté otázky</a>
+        </div>
+      </nav>
+
+      <section id="cena" className="py-14 sm:py-20 scroll-mt-6">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">Kolik stojí spolupráce a co zahrnuje</h2>
+          <p className="text-lg text-gray-700 max-w-3xl mb-9">Začneme tím, co váš web potřebuje. Audit si můžete objednat samostatně. Opravy a pravidelnou péči domluvíme podle jeho výsledků a vašeho rozpočtu.</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { title: 'Úvodní konzultace', price: 'Zdarma', text: 'Probereme adresu webu, vaše služby a problém, který chcete vyřešit. Doporučím, zda začít auditem, konkrétní opravou, nebo jiným krokem.', detail: 'Slouží k domluvě dalšího postupu. Podrobný audit je samostatná služba.' },
+              { title: 'Jednorázový SEO audit', price: 'Od 5 000 Kč', text: 'Prověřím technický stav, obsah, vyhledávací dotazy a konkurenci v dohodnutém rozsahu. Dostanete zprávu s konkrétními doporučeními a prioritami.', detail: 'Realizaci doporučených oprav nacením zvlášť podle domluveného rozsahu.' },
+              { title: 'Pravidelná SEO správa', price: 'Od 8 000 Kč / měsíc', text: 'Navážeme dohodnutými úpravami webu a obsahu. Každý měsíc projdeme provedenou práci, dostupné výsledky a plán dalších kroků.', detail: 'Rozsah úprav a obsahu si stanovíme v nabídce podle potřeb webu.' },
+            ].map(item => <div key={item.title} className="rounded-2xl border border-purple-100 bg-purple-50/50 p-6 sm:p-7">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+              <p className="text-2xl font-bold text-purple-800 mb-5">{item.price}</p>
+              <p className="text-gray-700 leading-relaxed mb-4">{item.text}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{item.detail}</p>
+            </div>)}
+          </div>
+          <p className="text-gray-700 mt-6">Konečnou cenu, rozsah a termín potvrdíme před zahájením práce. Záleží na velikosti webu, dostupných datech a náročnosti úprav.</p>
+          <Link href="/kontakt" className="inline-block mt-7 rounded-full bg-purple-800 px-7 py-4 font-semibold text-white hover:bg-purple-900">Poslat web k domluvě</Link>
+        </div>
+      </section>
+
+      <section id="vystup" className="bg-purple-50 py-14 sm:py-20 scroll-mt-6">
+        <div className="max-w-4xl mx-auto px-5 sm:px-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Co si odnesete z auditu</h2>
+          <ul className="list-disc pl-6 space-y-4 text-lg text-gray-700">
+            <li><strong>Konkrétní nálezy:</strong> které stránky mají problém a jak se projevuje.</li>
+            <li><strong>Pořadí oprav:</strong> co řešit nejdřív a co může počkat.</li>
+            <li><strong>Doporučený postup:</strong> co změnit v textu, nastavení nebo technickém řešení webu.</li>
+            <li><strong>Způsob ověření:</strong> jak poznat, že je chyba opravená, a které údaje potom sledovat.</li>
+          </ul>
+          <p className="mt-7 text-gray-700 leading-relaxed">Při vyhodnocení oddělíme zobrazení ve vyhledávání, návštěvy a skutečné poptávky. Pokud měření chybí nebo máme málo dat, uvedu to ve výstupu.</p>
         </div>
       </section>
 
@@ -459,7 +450,7 @@ export default function SeoKonzultantUstiPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Úvodní konzultace zdarma</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Probereme vaše cíle, aktuální stav webu a možnosti. Podívám se na váš web, zhodnotím situaci a doporučím další kroky. Schůzka online nebo osobně v Ústeckém kraji.
+                  Pošlete adresu webu, popis služby a co vám dnes nefunguje. Probereme cíle a domluvíme rozsah, cenu i termín případné placené práce. Konzultace může proběhnout online nebo osobně v Ústeckém kraji.
                 </p>
               </div>
             </div>
@@ -485,7 +476,7 @@ export default function SeoKonzultantUstiPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Implementace a optimalizace</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Podle auditu opravím technické chyby, upravím texty, nastavím strukturovaná data a podle potřeby zrychlím web. Každou změnu zapíšu, abyste věděli, co se na webu dělo.
+                  Pokud se domluvíme i na realizaci, provedu schválené úpravy nebo připravím zadání pro vašeho správce webu. Změny zaznamenám a zkontroluji jejich funkčnost.
                 </p>
               </div>
             </div>
@@ -511,7 +502,7 @@ export default function SeoKonzultantUstiPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Monitoring a reporting</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Sleduji pozice, návštěvnost a poptávky z webu. Každý měsíc dostanete přehledný report s výsledky a dalšími kroky.
+                  Při pravidelné správě sleduji pozice, návštěvnost a evidované poptávky. Každý měsíc dostanete přehled provedených změn, dostupných výsledků a dalších kroků.
                 </p>
               </div>
             </div>
@@ -524,7 +515,7 @@ export default function SeoKonzultantUstiPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Průběžná optimalizace</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  SEO není jednorázová akce. Vyhodnocuji data, upravuji plán a reaguji na změny ve vyhledávačích. Pozice vám nikdo zaručit nemůže, ale vždycky vám ukážu, co se změnilo a proč.
+                  U průběžné spolupráce podle dat upravujeme priority. Samostatný audit končí předáním doporučení; další péče záleží na naší domluvě. Konkrétní pozice ani počet poptávek neslibuji.
                 </p>
               </div>
             </div>
@@ -606,7 +597,7 @@ export default function SeoKonzultantUstiPage() {
               SEO nabízím firmám v <strong>Ústí nad Labem, Teplicích, Mostě, Děčíně, Litoměřicích, Chomutově</strong> i v dalších městech kraje. Ať máte kamenný obchod, službu nebo e-shop.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Každý projekt začínám <strong>analýzou a konzultací zdarma</strong>. Podívám se na váš web a konkurenci v oboru a navrhnu, jak postupovat. Nic vám nebudu slibovat, dokud neuvidím data.
+              Každý projekt začínám <strong>úvodní konzultací zdarma</strong>. Podívám se na váš web a konkurenci v oboru a navrhnu, jak postupovat. Nic vám nebudu slibovat, dokud neuvidím data.
             </p>
           </div>
 
@@ -634,6 +625,19 @@ export default function SeoKonzultantUstiPage() {
         </div>
       </section>
 
+      <section id="ukazka" className="py-14 sm:py-20 bg-purple-50 scroll-mt-6">
+        <div className="max-w-4xl mx-auto px-5 sm:px-6">
+          <p className="text-sm font-semibold text-purple-800 mb-3">Ukázka z vlastního webu</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Obnova čtyř původních článků na Linklady</h2>
+          <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+            <p><strong>Problém:</strong> původní adresy článků vedly na obecný blog nebo stránku služby. Návštěvník na nich nenašel text, který hledal.</p>
+            <p><strong>Úprava:</strong> články jsme aktualizovali a vrátili na původní adresy. Doplnili jsme titulky, popisky, související odkazy a položky v sitemap.</p>
+            <p><strong>Ověření:</strong> při nasazení 19. 9. 2026 jsme zkontrolovali dostupnost článků, správné adresy a interní odkazy. To dokládá provedenou opravu; přínos pro návštěvnost a poptávky je potřeba vyhodnotit samostatně.</p>
+          </div>
+          <Link href="/barterova-spoluprace-idealni-marketingovy-tah/" className="inline-block mt-6 text-purple-800 font-semibold underline underline-offset-4">Prohlédnout obnovený článek o barterové spolupráci</Link>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section id="faq" className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30 scroll-mt-4">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -656,7 +660,7 @@ export default function SeoKonzultantUstiPage() {
                 Jak dlouho trvá, než se SEO projeví ve výsledcích?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                SEO je dlouhodobá strategie. První výsledky (zlepšení pozic, nárůst organické návštěvnosti) jsou viditelné typicky za 3–6 měsíců. Plný efekt se projeví za 6–12 měsíců. Záleží na konkurenci, stavu webu a zvoleném rozsahu optimalizace.
+                Opravenou chybu můžeme ověřit po nasazení. Změny ve vyhledávání a poptávkách vyhodnocujeme v delším období podle dostupných dat. Termín růstu slíbit nemohu; záleží na stavu webu, konkurenci i provedených změnách.
               </p>
             </div>
 
@@ -692,14 +696,14 @@ export default function SeoKonzultantUstiPage() {
 
       {/* CTA Section */}
       <section className="py-24 hero-gradient text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full yellow-gradient opacity-60 rounded-l-full transform translate-x-1/4"></div>
+        <div aria-hidden="true" className="hidden lg:block absolute top-0 right-0 w-1/4 h-full yellow-gradient opacity-20 rounded-l-full transform translate-x-1/2 pointer-events-none"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Zjistěme, co vašemu webu chybí
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto leading-relaxed mb-4">
-              Pošlete mi adresu webu a napište, co od něj čekáte. Probereme, kde má rezervy, a navrhnu další postup.
+              Do zprávy přidejte adresu webu, co nabízíte a kde chcete získávat zákazníky. Napište také, zda vám chybí návštěvnost, nebo lidé přicházejí a neozývají se. Podle toho navrhnu další postup.
             </p>
             <p className="text-lg opacity-80 mb-10">
               Odpovídám do 24 hodin. Konzultace je zdarma a k ničemu vás nezavazuje.
@@ -709,7 +713,7 @@ export default function SeoKonzultantUstiPage() {
                 href="/kontakt"
                 className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
               >
-                Chci SEO konzultaci zdarma
+                Probrat můj web
               </Link>
               <a
                 href="mailto:zimmermannovap@gmail.com"
@@ -748,6 +752,7 @@ export default function SeoKonzultantUstiPage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
     </div>
   )
