@@ -150,7 +150,6 @@ export default function SeoKonzultantUstiPage() {
           <a href="#cena" className="underline underline-offset-4">Cena a rozsah</a>
           <a href="#vystup" className="underline underline-offset-4">Co dostanete</a>
           <a href="#jak-probiha-spoluprace" className="underline underline-offset-4">Průběh spolupráce</a>
-          <a href="#ukazka" className="underline underline-offset-4">Ukázka práce</a>
           <a href="#faq" className="underline underline-offset-4">Časté otázky</a>
         </div>
       </nav>
@@ -622,19 +621,6 @@ export default function SeoKonzultantUstiPage() {
               <span className="font-semibold text-gray-900">Chomutov</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="ukazka" className="py-14 sm:py-20 bg-purple-50 scroll-mt-6">
-        <div className="max-w-4xl mx-auto px-5 sm:px-6">
-          <p className="text-sm font-semibold text-purple-800 mb-3">Ukázka z vlastního webu</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Obnova čtyř původních článků na Linklady</h2>
-          <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-            <p><strong>Problém:</strong> původní adresy článků vedly na obecný blog nebo stránku služby. Návštěvník na nich nenašel text, který hledal.</p>
-            <p><strong>Úprava:</strong> články jsme aktualizovali a vrátili na původní adresy. Doplnili jsme titulky, popisky, související odkazy a položky v sitemap.</p>
-            <p><strong>Ověření:</strong> při nasazení 19. 9. 2026 jsme zkontrolovali dostupnost článků, správné adresy a interní odkazy. To dokládá provedenou opravu; přínos pro návštěvnost a poptávky je potřeba vyhodnotit samostatně.</p>
-          </div>
-          <Link href="/barterova-spoluprace-idealni-marketingovy-tah/" className="inline-block mt-6 text-purple-800 font-semibold underline underline-offset-4">Prohlédnout obnovený článek o barterové spolupráci</Link>
         </div>
       </section>
 
