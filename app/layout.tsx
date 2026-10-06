@@ -105,7 +105,7 @@ const jsonLd = {
       "@id": "https://www.linklady.cz/#business",
       name: "Linklady.cz – Pavla Zimmermannová",
       url: "https://www.linklady.cz",
-      logo: "https://www.linklady.cz/logo.svg",
+      logo: "https://www.linklady.cz/logo.png",
       image: "https://www.linklady.cz/profile.jpg",
       description: "Online marketing služby – SEO, AI asistenti a automatizace.",
       email: "zimmermannovap@gmail.com",
