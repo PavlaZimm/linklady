@@ -9,11 +9,11 @@ export default function Navigation() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Linklady.cz"
-                width={140}
-                height={40}
-                className="h-8 w-auto"
+                width={1890}
+                height={449}
+                className="h-9 w-auto"
                 priority
               />
             </Link>
