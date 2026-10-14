@@ -8,8 +8,17 @@ const out = __dirname;
     viewport: { width: 1440, height: 1000 },
   });
   const errors = [];
+  const expectedConsole = [];
+  let expectedUnavailable = false;
   page.on("pageerror", (e) => errors.push(e.message));
-  const base = process.env.QA_URL || "http://127.0.0.1:3102";
+  page.on("console", (m) => {
+    if (m.type() === "error") {
+      if (expectedUnavailable && m.text().includes("status of 503"))
+        expectedConsole.push(m.text());
+      else errors.push(m.text());
+    }
+  });
+  const base = process.env.QA_URL || "http://127.0.0.1:3103";
   const routes = [
     "/",
     "/projekty",
@@ -60,6 +69,7 @@ const out = __dirname;
     screenshots: [],
     interactions: [],
     pageErrors: errors,
+    expectedConsoleMessages: expectedConsole,
   };
   const internal = new Set();
   for (const route of routes) {
@@ -208,6 +218,20 @@ const out = __dirname;
   report.interactions.push(
     "Mobile menu: open, Escape, navigation close; filters 9/2/4/3/9",
   );
+  for (const route of ["/projekty/flyqueens", "/sluzby/seo"]) {
+    await page.goto(base + route, { waitUntil: "networkidle" });
+    await page.getByRole("button", { name: "Otevřít menu" }).click();
+    assert.equal(
+      await page
+        .getByRole("button", { name: "Zavřít menu" })
+        .getAttribute("aria-expanded"),
+      "true",
+    );
+    await page.keyboard.press("Escape");
+  }
+  report.interactions.push(
+    "Static project and service detail menus hydrate and respond to Escape",
+  );
   await page.goto(base + "/kontakt");
   const fill = async () => {
     await page.getByLabel("Jméno").fill("Test uživatelského rozhraní");
@@ -218,6 +242,7 @@ const out = __dirname;
   };
   await fill();
   let body;
+  expectedUnavailable = true;
   await page.route("**/api/poptavka", async (route) => {
     body = route.request().postDataJSON();
     await route.fulfill({
@@ -237,6 +262,7 @@ const out = __dirname;
       .getAttribute("href"),
   );
   await page.unroute("**/api/poptavka");
+  expectedUnavailable = false;
   await page.reload();
   await fill();
   await page.route("**/api/poptavka", (route) =>

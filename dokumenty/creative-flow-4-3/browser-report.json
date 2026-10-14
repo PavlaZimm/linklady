@@ -1,0 +1,469 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "canonical": "https://www.linklady.cz"
+    },
+    {
+      "route": "/projekty",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/projekty"
+    },
+    {
+      "route": "/sluzby",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/sluzby"
+    },
+    {
+      "route": "/o-mne",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/o-mne"
+    },
+    {
+      "route": "/kontakt",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/kontakt"
+    },
+    {
+      "route": "/blog",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/blog"
+    },
+    {
+      "route": "/ebook",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/ebook"
+    },
+    {
+      "route": "/seo-konzultant-usti-nad-labem",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/seo-konzultant-usti-nad-labem"
+    },
+    {
+      "route": "/tvorba-webu-bilina",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/tvorba-webu-bilina"
+    },
+    {
+      "route": "/ai-agent",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/ai-agent"
+    },
+    {
+      "route": "/automatizace",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/automatizace"
+    },
+    {
+      "route": "/vibecoding",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/vibecoding"
+    },
+    {
+      "route": "/webova-aplikace",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/webova-aplikace"
+    },
+    {
+      "route": "/blog/jak-vytvorit-webovou-aplikaci",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/blog/jak-vytvorit-webovou-aplikaci"
+    },
+    {
+      "route": "/blog/webove-aplikace-priklady",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/blog/webove-aplikace-priklady"
+    },
+    {
+      "route": "/blog/prodej-firmy-strategicky-krok",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/blog/prodej-firmy-strategicky-krok"
+    },
+    {
+      "route": "/11-tipu-jak-ziskat-validni-zpetny-odkaz/",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/11-tipu-jak-ziskat-validni-zpetny-odkaz/"
+    },
+    {
+      "route": "/3-typy-zpetnych-odkazu-ktery-je-ten-spravny/",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/3-typy-zpetnych-odkazu-ktery-je-ten-spravny/"
+    },
+    {
+      "route": "/barterova-spoluprace-idealni-marketingovy-tah/",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/barterova-spoluprace-idealni-marketingovy-tah/"
+    },
+    {
+      "route": "/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/"
+    },
+    {
+      "route": "/projekty/flyqueens",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/projekty/flyqueens"
+    },
+    {
+      "route": "/projekty/spacelady",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/projekty/spacelady"
+    },
+    {
+      "route": "/projekty/attersee",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/projekty/attersee"
+    },
+    {
+      "route": "/projekty/ithaka",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/projekty/ithaka"
+    },
+    {
+      "route": "/projekty/tripradar",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/projekty/tripradar"
+    },
+    {
+      "route": "/projekty/bilinsko",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/projekty/bilinsko"
+    },
+    {
+      "route": "/projekty/csz-novosedlice",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/projekty/csz-novosedlice"
+    },
+    {
+      "route": "/projekty/vse-pro-mineraly",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/projekty/vse-pro-mineraly"
+    },
+    {
+      "route": "/projekty/autoskola-jana",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/projekty/autoskola-jana"
+    },
+    {
+      "route": "/sluzby/seo",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/sluzby/seo"
+    },
+    {
+      "route": "/sluzby/linkbuilding",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/sluzby/linkbuilding"
+    },
+    {
+      "route": "/sluzby/tvorba-webu",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/sluzby/tvorba-webu"
+    },
+    {
+      "route": "/sluzby/webove-aplikace",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/sluzby/webove-aplikace"
+    },
+    {
+      "route": "/sluzby/ai-automatizace",
+      "status": 200,
+      "canonical": "https://www.linklady.cz/sluzby/ai-automatizace"
+    }
+  ],
+  "axe": [
+    {
+      "route": "/",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/sluzby",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/o-mne",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/kontakt",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/blog",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/ebook",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/seo-konzultant-usti-nad-labem",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/tvorba-webu-bilina",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/ai-agent",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/automatizace",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/vibecoding",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/webova-aplikace",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/blog/jak-vytvorit-webovou-aplikaci",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/blog/webove-aplikace-priklady",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/blog/prodej-firmy-strategicky-krok",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/11-tipu-jak-ziskat-validni-zpetny-odkaz/",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/3-typy-zpetnych-odkazu-ktery-je-ten-spravny/",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/barterova-spoluprace-idealni-marketingovy-tah/",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/flyqueens",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/spacelady",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/attersee",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/ithaka",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/tripradar",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/bilinsko",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/csz-novosedlice",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/vse-pro-mineraly",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/autoskola-jana",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/sluzby/seo",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/sluzby/linkbuilding",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/sluzby/tvorba-webu",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/sluzby/webove-aplikace",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/sluzby/ai-automatizace",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "/projekty",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "/projekty/flyqueens",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "/projekty/spacelady",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "/projekty/attersee",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "/projekty/ithaka",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "/o-mne",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "/kontakt",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "/blog",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "/sluzby/seo",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/flyqueens",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/spacelady",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/attersee",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/projekty/ithaka",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/o-mne",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/kontakt",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/blog",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "/sluzby/seo",
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "home-390.png",
+    "portfolio-390.png",
+    "home-768.png",
+    "portfolio-768.png",
+    "home-1440.png",
+    "portfolio-1440.png"
+  ],
+  "interactions": [
+    "Mobile menu: open, Escape, navigation close; filters 9/2/4/3/9",
+    "Static project and service detail menus hydrate and respond to Escape",
+    "Contact: mocked 503 fallback and mocked 200 success, no email sent",
+    "Real API rejects invalid payload with 400"
+  ],
+  "pageErrors": [],
+  "expectedConsoleMessages": [
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "contrast": {
+    "hero": "rgb(255, 255, 255)",
+    "mint": "rgb(164, 237, 214)",
+    "fly": "rgb(255, 255, 255)"
+  }
+}

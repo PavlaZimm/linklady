@@ -30,9 +30,25 @@ npm run build
 npm run lint
 npx tsc --noEmit
 npx vitest run
-npm run start -- --hostname 127.0.0.1 --port 3101
+npm run start -- --hostname 127.0.0.1 --port 3103
 ```
 
 `browser-check.cjs` vyžaduje externě dostupný `playwright` a `axe-core` (např. přes `NODE_PATH`), lokální Chrome a volitelně `QA_URL`. Testuje HTTP odpovědi a canonical adresy 34 stránek, interní odkazy, H1/main, přetečení při 320/390/768/1440 px, mobilní menu/Escape, čtyři filtry, barvy nadpisů a kontaktní formulář. Úspěch i výpadek odeslání jsou simulované v browseru; skutečné API dostává jen neplatný payload. Žádný skutečný lead se neodesílá.
 
 Screenshoty `home-*` a `portfolio-*` dokládají 390, 768 a 1440 px. `browser-report.json` obsahuje výsledek axe a funkčních kontrol. `lighthouse-summary.json` obsahuje laboratorní měření homepage pro mobil a desktop. INP ani 75. percentil skutečných návštěv nelze prokázat z lokálního Lighthouse; vyžadují field data po případném schváleném nasazení.
+
+## Finální výsledky (14. 10. 2026)
+
+- Produkční build Next.js 15.5.27: PASS; TypeScript: PASS; lint: PASS; Vitest: 33/33.
+- Browser: 34 obsahových URL a 34 interních cílů, jedna H1 a main na každé stránce, správné canonical adresy. Přetečení nenalezeno při 320/390/768/1440 px na ověřovaných hlavních stránkách a detailech.
+- Axe: 54 auditů (všech 34 URL na desktopu + hlavní stránky na mobilu/desktopu), bez nalezeného porušení WCAG 2 A/AA, 2.1 AA nebo 2.2 AA. Automatický audit nenahrazuje ruční ověření čtečkou obrazovky.
+- Menu: otevření, Escape s návratem fokusu, zavření po přechodu a hydratace i na detailech. Filtry: 9/2/4/3/9, aria-pressed a živý počet výsledků.
+- Kontakt: simulovaná úspěšná odpověď 200 a výpadek 503 se záložním e-mailem. Očekávaný konzolový log simulované 503 je v reportu oddělený od chyb aplikace. Skutečný neplatný požadavek vrací 400; test neodesílá skutečný e-mail ani lead.
+- Lighthouse 13.5.0, lokální produkční build, simulovaná mobilní síť/CPU: výkon 95, přístupnost 100, best practices 100, SEO 100; LCP 1,7 s, CLS 0, TBT 240 ms. Desktop: výkon 99, ostatní kategorie 100; LCP 0,7 s, CLS 0, TBT 110 ms. Dřívější Lighthouse 12 nebyl vhodný pro aktuální Chrome a výsledky při souběžné práci nebyly stabilní; finální uložené měření proběhlo nástrojem 13.5 samostatně.
+- Vzdálený Preview: ověřeno 7 reprezentativních URL, mobilní menu, filtr, hydratace služby a skutečná validace API (400). Žádné page errors. Deployment `dpl_FhbtasjsgYujuHsZG6wvNTFQZf8R`, projekt `prj_KWpLseu1YPwIr3VJ19QF3KOVdSq7`, target `preview`, stav `READY`.
+
+[Preview](https://linklady-ahco2bzis-pavlazimms-projects.vercel.app) · [Pull request #46](https://github.com/PavlaZimm/linklady/pull/46)
+
+Preview má původní Vercel Authentication: pro otevření může být nutné přihlášení majitelky do Vercelu. Testování používá krátkodobý projektový OIDC token pouze v hlavičce konkrétního Preview originu. Ochrana deploymentu se nemění. Produkční doména není přiřazená a produkce se nenasazuje.
+
+Zdrojový commit ověřeného Preview: `c6d3945aeed70ca091cf75d93a438940b4574239`, větev `codex/creative-flow-4-3`. Commit s důkazy doplňuje jen dokumentaci, reporty a screenshoty.
