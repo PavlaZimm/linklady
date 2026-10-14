@@ -85,68 +85,26 @@ export default function SeoKonzultantUstiPage() {
       {/* JSON-LD */}
       <JsonLd data={jsonLd} />
 
-      <main>
+      <main id="main-content">
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20 relative overflow-hidden">
-        <div aria-hidden="true" className="hidden lg:block absolute top-0 right-0 w-1/4 h-full yellow-gradient opacity-30 rounded-l-full transform translate-x-1/2 pointer-events-none"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl">
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm opacity-80">
-              <ol className="flex items-center space-x-2">
-                <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
-                <li><span>/</span></li>
-                <li className="text-yellow-400">SEO optimalizace Ústí nad Labem</li>
-              </ol>
-            </nav>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+      <header className="cf-page-hero">
+        <div className="cf-wrap">
+          <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
+          <h1>
               SEO konzultantka<br />
-              <span className="text-yellow-400">Ústí nad Labem</span>
+              <span className="text-[#A4EDD6]">Ústí nad Labem</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
+          <p>
               Máte web, ale z vyhledávání přichází málo poptávek? Projdu jeho technický stav, obsah a dostupná data. Dostanete konkrétní doporučení, co opravit nejdřív a jak změny vyhodnotit.
             </p>
-            <p className="text-lg mb-10 opacity-80 leading-relaxed">
-              Jsem Pavla Zimmermannová, SEO konzultantka z Bíliny. Pomáhám firmám v Ústí nad Labem a celém Ústeckém kraji s SEO optimalizací i lokální viditelností. Úvodní konzultace je zdarma; rozsah další práce a cenu si domluvíme předem.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6">
-              <Link
-                href="/kontakt"
-                className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
-              >
+          <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link><Link href="/kontakt" className="cf-button">
                 Probrat můj web
-              </Link>
-              <a
-                href="mailto:zimmermannovap@gmail.com"
-                className="inline-block border-2 border-white/80 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-900 transition-all duration-300 backdrop-blur-sm text-center"
-              >
-                zimmermannovap@gmail.com
-              </a>
-            </div>
-            {/* Trust signály */}
-            <div className="flex flex-wrap gap-6 mt-10 text-sm opacity-80">
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>10+ let zkušeností</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Konzultace zdarma</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Audit od 5 000 Kč</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Ústecký kraj</span>
-              </div>
-            </div>
-          </div>
+              </Link></div>
         </div>
-      </section>
+      </header>
 
-      <nav aria-label="Na této stránce" className="border-b border-purple-100 bg-purple-50">
-        <div className="max-w-7xl mx-auto px-5 py-5 flex flex-wrap gap-x-6 gap-y-3 text-purple-900 font-medium">
+      <nav aria-label="Na této stránce" className="border-b border-blue-100 bg-blue-50">
+        <div className="max-w-7xl mx-auto px-5 py-5 flex flex-wrap gap-x-6 gap-y-3 text-primary font-medium">
           <a href="#cena" className="underline underline-offset-4">Cena a rozsah</a>
           <a href="#vystup" className="underline underline-offset-4">Co dostanete</a>
           <a href="#jak-probiha-spoluprace" className="underline underline-offset-4">Průběh spolupráce</a>
@@ -163,19 +121,19 @@ export default function SeoKonzultantUstiPage() {
               { title: 'Úvodní konzultace', price: 'Zdarma', text: 'Probereme adresu webu, vaše služby a problém, který chcete vyřešit. Doporučím, zda začít auditem, konkrétní opravou, nebo jiným krokem.', detail: 'Slouží k domluvě dalšího postupu. Podrobný audit je samostatná služba.' },
               { title: 'Jednorázový SEO audit', price: 'Od 5 000 Kč', text: 'Prověřím technický stav, obsah, vyhledávací dotazy a konkurenci v dohodnutém rozsahu. Dostanete zprávu s konkrétními doporučeními a prioritami.', detail: 'Realizaci doporučených oprav nacením zvlášť podle domluveného rozsahu.' },
               { title: 'Pravidelná SEO správa', price: 'Od 8 000 Kč / měsíc', text: 'Navážeme dohodnutými úpravami webu a obsahu. Každý měsíc projdeme provedenou práci, dostupné výsledky a plán dalších kroků.', detail: 'Rozsah úprav a obsahu si stanovíme v nabídce podle potřeb webu.' },
-            ].map(item => <div key={item.title} className="rounded-2xl border border-purple-100 bg-purple-50/50 p-6 sm:p-7">
+            ].map(item => <div key={item.title} className="rounded-2xl border border-blue-100 bg-blue-50/50 p-6 sm:p-7">
               <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-              <p className="text-2xl font-bold text-purple-800 mb-5">{item.price}</p>
+              <p className="text-2xl font-bold text-primary mb-5">{item.price}</p>
               <p className="text-gray-700 leading-relaxed mb-4">{item.text}</p>
               <p className="text-sm text-gray-600 leading-relaxed">{item.detail}</p>
             </div>)}
           </div>
           <p className="text-gray-700 mt-6">Konečnou cenu, rozsah a termín potvrdíme před zahájením práce. Záleží na velikosti webu, dostupných datech a náročnosti úprav.</p>
-          <Link href="/kontakt" className="inline-block mt-7 rounded-full bg-purple-800 px-7 py-4 font-semibold text-white hover:bg-purple-900">Poslat web k domluvě</Link>
+          <Link href="/kontakt" className="inline-block mt-7 rounded-full bg-blue-800 px-7 py-4 font-semibold text-white hover:bg-blue-900">Poslat web k domluvě</Link>
         </div>
       </section>
 
-      <section id="vystup" className="bg-purple-50 py-14 sm:py-20 scroll-mt-6">
+      <section id="vystup" className="bg-blue-50 py-14 sm:py-20 scroll-mt-6">
         <div className="max-w-4xl mx-auto px-5 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Co si odnesete z auditu</h2>
           <ul className="list-disc pl-6 space-y-4 text-lg text-gray-700">
@@ -193,7 +151,7 @@ export default function SeoKonzultantUstiPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Proč investovat do <span className="text-purple-600">SEO optimalizace</span>
+              Proč investovat do <span className="text-primary">SEO optimalizace</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Kdo shání účetní, instalatéra nebo autoservis, často začne v Googlu nebo na Seznamu. Když tam váš web není, zákazník zavolá jinam.
@@ -202,8 +160,8 @@ export default function SeoKonzultantUstiPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Organická návštěvnost */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
                 </svg>
               </div>
@@ -215,8 +173,8 @@ export default function SeoKonzultantUstiPage() {
 
             {/* Lokální viditelnost */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-[#ffe5db] rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-[#2946cf]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
               </div>
@@ -254,8 +212,8 @@ export default function SeoKonzultantUstiPage() {
 
             {/* Lepší konverze */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
                 </svg>
               </div>
@@ -267,8 +225,8 @@ export default function SeoKonzultantUstiPage() {
 
             {/* Konkurenční výhoda */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-[#ffe5db] rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-[#2946cf]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               </div>
@@ -286,7 +244,7 @@ export default function SeoKonzultantUstiPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Co pro váš web <span className="text-purple-600">udělám</span>
+              Co pro váš web <span className="text-primary">udělám</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Můžete si objednat jen audit, nebo i opravy a pravidelnou péči. Při dlouhodobé spolupráci dostanete každý měsíc report, co jsem udělala a co se změnilo.
@@ -295,9 +253,9 @@ export default function SeoKonzultantUstiPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* SEO Audit */}
-            <div className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-purple-100">
+            <div className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-blue-100">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-2xl flex items-center justify-center">
+                <div className="w-14 h-14 bg-primary text-white rounded-2xl flex items-center justify-center">
                   <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                   </svg>
@@ -309,19 +267,19 @@ export default function SeoKonzultantUstiPage() {
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Technický audit (rychlost, indexace, chyby)
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Analýza klíčových slov a obsahu
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Analýza konkurence v Ústí nad Labem
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Podrobná zpráva s prioritami
                 </li>
               </ul>
@@ -330,7 +288,7 @@ export default function SeoKonzultantUstiPage() {
             {/* On-page SEO */}
             <div className="bg-gradient-to-br from-yellow-50 to-white p-8 rounded-2xl border border-yellow-100">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 bg-yellow-400 text-purple-900 rounded-2xl flex items-center justify-center">
+                <div className="w-14 h-14 bg-[#FF795E] text-[#151D32] rounded-2xl flex items-center justify-center">
                   <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
                   </svg>
@@ -342,19 +300,19 @@ export default function SeoKonzultantUstiPage() {
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-[#2946cf] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Optimalizace title tagů a meta popisů
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-[#2946cf] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Struktura nadpisů (H1–H6)
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-[#2946cf] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Interní prolinkování a URL struktura
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-[#2946cf] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Optimalizace obrázků a alt textů
                 </li>
               </ul>
@@ -434,7 +392,7 @@ export default function SeoKonzultantUstiPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Jak probíhá <span className="text-purple-600">SEO spolupráce</span>
+              Jak probíhá <span className="text-primary">SEO spolupráce</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               U každého kroku víte, co dělám a proč.
@@ -444,7 +402,7 @@ export default function SeoKonzultantUstiPage() {
             {/* Krok 1 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
+                <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Úvodní konzultace zdarma</h3>
@@ -457,7 +415,7 @@ export default function SeoKonzultantUstiPage() {
             {/* Krok 2 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
+                <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">SEO audit a analýza</h3>
@@ -470,7 +428,7 @@ export default function SeoKonzultantUstiPage() {
             {/* Krok 3 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
+                <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Implementace a optimalizace</h3>
@@ -483,7 +441,7 @@ export default function SeoKonzultantUstiPage() {
             {/* Krok 4 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold">4</div>
+                <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">4</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Obsahová strategie</h3>
@@ -496,7 +454,7 @@ export default function SeoKonzultantUstiPage() {
             {/* Krok 5 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold">5</div>
+                <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">5</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Monitoring a reporting</h3>
@@ -509,7 +467,7 @@ export default function SeoKonzultantUstiPage() {
             {/* Krok 6 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-yellow-400 text-purple-900 rounded-full flex items-center justify-center text-xl font-bold">6</div>
+                <div className="w-14 h-14 bg-[#FF795E] text-[#151D32] rounded-full flex items-center justify-center text-xl font-bold">6</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Průběžná optimalizace</h3>
@@ -534,13 +492,13 @@ export default function SeoKonzultantUstiPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/kontakt"
-              className="inline-block bg-yellow-400 text-purple-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl text-center"
+              className="inline-block bg-[#FF795E] text-[#151D32] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#ff927c] transition-all duration-300 transform hover:scale-105 shadow-xl text-center"
             >
               Získat zhodnocení webu zdarma
             </Link>
             <a
               href="mailto:zimmermannovap@gmail.com"
-              className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-900 transition-all duration-300 text-center"
+              className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300 text-center"
             >
               Napsat e-mail
             </a>
@@ -553,7 +511,7 @@ export default function SeoKonzultantUstiPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Pro koho je <span className="text-purple-600">SEO optimalizace</span>
+              Pro koho je <span className="text-primary">SEO optimalizace</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               SEO dává smysl, když vaši zákazníci hledají vaše služby na internetu.
@@ -586,7 +544,7 @@ export default function SeoKonzultantUstiPage() {
       <section id="ustecky-kraj" className="py-24 bg-white scroll-mt-4">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
-            SEO optimalizace v <span className="text-purple-600">Ústeckém kraji</span>
+            SEO optimalizace v <span className="text-primary">Ústeckém kraji</span>
           </h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
@@ -602,22 +560,22 @@ export default function SeoKonzultantUstiPage() {
 
           {/* Města */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="bg-purple-50 p-4 rounded-xl text-center">
+            <div className="bg-blue-50 p-4 rounded-xl text-center">
               <span className="font-semibold text-gray-900">Ústí nad Labem</span>
             </div>
-            <div className="bg-purple-50 p-4 rounded-xl text-center">
+            <div className="bg-blue-50 p-4 rounded-xl text-center">
               <span className="font-semibold text-gray-900">Teplice</span>
             </div>
-            <div className="bg-purple-50 p-4 rounded-xl text-center">
+            <div className="bg-blue-50 p-4 rounded-xl text-center">
               <span className="font-semibold text-gray-900">Most</span>
             </div>
-            <div className="bg-purple-50 p-4 rounded-xl text-center">
+            <div className="bg-blue-50 p-4 rounded-xl text-center">
               <span className="font-semibold text-gray-900">Děčín</span>
             </div>
-            <div className="bg-purple-50 p-4 rounded-xl text-center">
+            <div className="bg-blue-50 p-4 rounded-xl text-center">
               <span className="font-semibold text-gray-900">Litoměřice</span>
             </div>
-            <div className="bg-purple-50 p-4 rounded-xl text-center">
+            <div className="bg-blue-50 p-4 rounded-xl text-center">
               <span className="font-semibold text-gray-900">Chomutov</span>
             </div>
           </div>
@@ -697,28 +655,28 @@ export default function SeoKonzultantUstiPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="/kontakt"
-                className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
+                className="inline-block bg-[#FF795E] text-[#151D32] px-10 py-5 rounded-full font-bold text-lg hover:bg-[#ff927c] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
               >
                 Probrat můj web
               </Link>
               <a
                 href="mailto:zimmermannovap@gmail.com"
-                className="inline-block border-2 border-white/80 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-900 transition-all duration-300 text-center"
+                className="inline-block border-2 border-white/80 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300 text-center"
               >
                 zimmermannovap@gmail.com
               </a>
             </div>
             <div className="flex flex-wrap gap-6 justify-center mt-10 text-sm opacity-80">
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <svg className="w-5 h-5 text-[#A4EDD6]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                 <span>Bez závazků</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <svg className="w-5 h-5 text-[#A4EDD6]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                 <span>Odpověď do 24h</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <svg className="w-5 h-5 text-[#A4EDD6]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                 <span>Z Ústeckého kraje</span>
               </div>
             </div>
@@ -726,14 +684,14 @@ export default function SeoKonzultantUstiPage() {
         </div>
       </section>
 
-      <section className="bg-purple-50 py-12" aria-labelledby="seo-guides-heading">
+      <section className="bg-blue-50 py-12" aria-labelledby="seo-guides-heading">
         <div className="max-w-4xl mx-auto px-5 sm:px-6">
           <h2 id="seo-guides-heading" className="text-2xl font-bold text-gray-900 mb-5">Než začnete se zpětnými odkazy</h2>
           <p className="text-gray-700 mb-5">Projděte si, jak vybrat vhodné odkazy a posoudit jejich přínos pro váš web.</p>
           <ul className="space-y-4">
-            <li><Link href="/3-typy-zpetnych-odkazu-ktery-je-ten-spravny/" className="text-purple-800 underline">Tři typy zpětných odkazů a jejich přínos</Link></li>
-            <li><Link href="/11-tipu-jak-ziskat-validni-zpetny-odkaz/" className="text-purple-800 underline">Jak získat zpětné odkazy: jedenáct postupů</Link></li>
-            <li><Link href="/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/" className="text-purple-800 underline">Jak vybírat a oslovovat weby pro linkbuilding</Link></li>
+            <li><Link href="/3-typy-zpetnych-odkazu-ktery-je-ten-spravny/" className="text-primary underline">Tři typy zpětných odkazů a jejich přínos</Link></li>
+            <li><Link href="/11-tipu-jak-ziskat-validni-zpetny-odkaz/" className="text-primary underline">Jak získat zpětné odkazy: jedenáct postupů</Link></li>
+            <li><Link href="/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/" className="text-primary underline">Jak vybírat a oslovovat weby pro linkbuilding</Link></li>
           </ul>
         </div>
       </section>

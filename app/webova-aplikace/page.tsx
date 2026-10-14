@@ -50,36 +50,21 @@ export default function WebovaAplikacePage() {
     <div className="min-h-screen bg-white">
       <JsonLd data={jsonLd} />
       <Navigation />
+      <main id="main-content">
 
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center relative">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-300 rounded-full opacity-30"></div>
-            <div className="absolute top-1/2 -left-8 w-16 h-16 bg-yellow-300 rounded-full opacity-25"></div>
-            <div className="absolute -top-8 right-4 w-20 h-20 bg-purple-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
-
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm opacity-80 relative z-10">
-              <ol className="flex items-center justify-center space-x-2">
-                <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
-                <li><span className="mx-2">/</span></li>
-                <li className="text-yellow-400">Webová aplikace</li>
-              </ol>
-            </nav>
-
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 max-w-4xl mx-auto leading-tight">
+      <header className="cf-page-hero">
+        <div className="cf-wrap">
+          <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
+          <h1>
               Webová aplikace: co to je, příklady a&nbsp;vývoj na&nbsp;míru
             </h1>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10 mb-4">
+          <p>
               Webová aplikace je program, který běží v&nbsp;prohlížeči. Umožňuje se přihlásit, pracovat s&nbsp;daty, vyřizovat objednávky nebo automatizovat firemní procesy bez instalace do&nbsp;počítače.
             </p>
-            <p className="text-sm opacity-75 max-w-2xl mx-auto relative z-10">
-              Níž najdete konkrétní příklady, rozdíl oproti běžnému webu, ceny a&nbsp;postup vývoje aplikace na&nbsp;míru pro malé firmy.
-            </p>
-          </div>
+          <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link></div>
         </div>
-      </section>
+      </header>
 
       {/* Ceny */}
       <section className="py-16 bg-white">
@@ -200,7 +185,7 @@ export default function WebovaAplikacePage() {
           Formulář je až na konci stránky, ale Search Console ukazuje, že sem
           většina lidí přichází na dotaz „webová aplikace", tedy si nejdřív
           čtou, co to vlastně je. K formuláři dole se nedostanou. */}
-      <section className="py-12 bg-gradient-to-br from-purple-50 to-white border-y border-purple-100">
+      <section className="py-12 bg-gradient-to-br from-purple-50 to-white border-y border-blue-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="sm:flex sm:items-center sm:justify-between gap-6">
             <div className="mb-5 sm:mb-0">
@@ -214,7 +199,7 @@ export default function WebovaAplikacePage() {
             </div>
             <Link
               href="/kontakt"
-              className="inline-block flex-shrink-0 bg-primary text-white px-7 py-3.5 rounded-lg font-bold hover:bg-purple-800 transition-colors"
+              className="inline-block flex-shrink-0 bg-primary text-white px-7 py-3.5 rounded-lg font-bold hover:bg-blue-800 transition-colors"
             >
               Chci odhad ceny
             </Link>
@@ -311,22 +296,22 @@ export default function WebovaAplikacePage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-purple-50 p-6 rounded-lg">
+            <div className="bg-blue-50 p-6 rounded-lg">
               <h3 className="font-bold text-gray-900 mb-3 text-lg">Webová stránka</h3>
               <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start"><div className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Zobrazuje informace</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Stejný obsah pro všechny</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Minimální interakce</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Příklad: blog, portfolio, firemní web</li>
+                <li className="flex items-start"><div className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Zobrazuje informace</li>
+                <li className="flex items-start"><div className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Stejný obsah pro všechny</li>
+                <li className="flex items-start"><div className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Minimální interakce</li>
+                <li className="flex items-start"><div className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Příklad: blog, portfolio, firemní web</li>
               </ul>
             </div>
-            <div className="bg-yellow-50 p-6 rounded-lg">
+            <div className="bg-[#fff0eb] p-6 rounded-lg">
               <h3 className="font-bold text-gray-900 mb-3 text-lg">Webová aplikace</h3>
               <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start"><div className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Zpracovává data a úkoly</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Personalizovaný obsah po přihlášení</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Vysoká interakce (formuláře, dashboardy)</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Příklad: Gmail, Fakturoid, Trello</li>
+                <li className="flex items-start"><div className="w-2 h-2 bg-[#FF795E] rounded-full mr-3 mt-2 flex-shrink-0"></div>Zpracovává data a úkoly</li>
+                <li className="flex items-start"><div className="w-2 h-2 bg-[#FF795E] rounded-full mr-3 mt-2 flex-shrink-0"></div>Personalizovaný obsah po přihlášení</li>
+                <li className="flex items-start"><div className="w-2 h-2 bg-[#FF795E] rounded-full mr-3 mt-2 flex-shrink-0"></div>Vysoká interakce (formuláře, dashboardy)</li>
+                <li className="flex items-start"><div className="w-2 h-2 bg-[#FF795E] rounded-full mr-3 mt-2 flex-shrink-0"></div>Příklad: Gmail, Fakturoid, Trello</li>
               </ul>
             </div>
           </div>
@@ -355,7 +340,7 @@ export default function WebovaAplikacePage() {
               </p>
             </div>
 
-            <div className="border-l-4 border-purple-300 pl-6">
+            <div className="border-l-4 border-blue-300 pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Webová aplikace na míru</h3>
               <p className="text-gray-700 leading-relaxed">
                 <strong>Webová aplikace na míru</strong> je řešení vytvořené přesně pro vaše potřeby. CRM systém, interní nástroj pro správu objednávek, klientský portál nebo kalkulačka služeb. Na rozdíl od krabicového softwaru dělá přesně to, co potřebujete – nic víc, nic míň.
@@ -387,7 +372,7 @@ export default function WebovaAplikacePage() {
           </p>
 
           <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
@@ -399,7 +384,7 @@ export default function WebovaAplikacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
@@ -411,7 +396,7 @@ export default function WebovaAplikacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
@@ -439,23 +424,23 @@ export default function WebovaAplikacePage() {
 
           <ul className="space-y-4 mb-8">
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Potřebujete klientskou zónu</strong> – zákazníci se přihlašují, vidí své objednávky, stahují dokumenty</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Sbíráte a zpracováváte data</strong> – formuláře, průzkumy, objednávky, kalkulačky</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Chcete interní nástroj</strong> – dashboard, CRM, projektové řízení, reporting</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Plánujete SaaS produkt</strong> – software jako služba s&nbsp;předplatným a uživatelskými účty</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Běžný web nestačí</strong> – potřebujete real-time funkce, notifikace, platby nebo integraci s&nbsp;jinými systémy</span>
             </li>
           </ul>
@@ -477,7 +462,7 @@ export default function WebovaAplikacePage() {
           </p>
 
           <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 1
               </div>
@@ -487,7 +472,7 @@ export default function WebovaAplikacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 2
               </div>
@@ -497,7 +482,7 @@ export default function WebovaAplikacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 3
               </div>
@@ -507,7 +492,7 @@ export default function WebovaAplikacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 4
               </div>
@@ -528,7 +513,7 @@ export default function WebovaAplikacePage() {
           </p>
 
           <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
@@ -540,7 +525,7 @@ export default function WebovaAplikacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
@@ -552,7 +537,7 @@ export default function WebovaAplikacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
@@ -564,7 +549,7 @@ export default function WebovaAplikacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zM13 18h7v-2h-7v2z"/>
@@ -576,7 +561,7 @@ export default function WebovaAplikacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
@@ -636,6 +621,7 @@ export default function WebovaAplikacePage() {
         </div>
       </article>
 
+      </main>
       <SiteFooter />
     </div>
   )

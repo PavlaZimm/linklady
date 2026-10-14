@@ -46,24 +46,18 @@ export default function BlogPage() {
     <div className="min-h-screen bg-white">
       <JsonLd data={jsonLd} />
       <Navigation />
+      <main id="main-content">
       
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center relative">
-            {/* Decorative circles */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-300 rounded-full opacity-30"></div>
-            <div className="absolute top-1/2 -left-8 w-16 h-16 bg-yellow-300 rounded-full opacity-25"></div>
-            <div className="absolute -top-8 right-4 w-20 h-20 bg-purple-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
-
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Blog</h1>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto relative z-10">
+      <header className="cf-page-hero">
+        <div className="cf-wrap">
+          <p className="cf-eyebrow">LINKLADY / BLOG</p>
+          <h1>Blog</h1>
+          <p>
               Aktuální články o SEO, automatizaci a AI nástrojích pro online marketing
             </p>
-          </div>
         </div>
-      </section>
+      </header>
 
       {/* Blog Articles */}
       <section className="py-20">
@@ -71,8 +65,8 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 gap-8">
             {restoredArticles.map(article => (
               <Link key={article.slug} href={`/${article.slug}/`} className="group block">
-                <article className="rounded-2xl border border-purple-100 bg-white p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow">
-                  <p className="text-sm text-purple-700 font-semibold mb-3">{article.category}</p>
+                <article className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow">
+                  <p className="text-sm text-primary font-semibold mb-3">{article.category}</p>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary">{article.title}</h2>
                   <p className="text-gray-600 leading-relaxed mb-4">{article.description}</p>
                   <p className="text-sm text-gray-500">Pavla Zimmermannová · Aktualizováno <time dateTime="2026-09-19">19. 9. 2026</time></p>
@@ -85,8 +79,8 @@ export default function BlogPage() {
               <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
                 <div className="p-8">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">Webové aplikace</span>
-                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">Příklady z praxe</span>
+                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Webové aplikace</span>
+                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Příklady z praxe</span>
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
                     Webové aplikace: příklady a využití ve firmách
@@ -107,8 +101,8 @@ export default function BlogPage() {
               <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
                 <div className="p-8">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">Webové aplikace</span>
-                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">Praktický návod</span>
+                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Webové aplikace</span>
+                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Praktický návod</span>
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
                     Jak vytvořit webovou aplikaci krok za krokem
@@ -130,8 +124,8 @@ export default function BlogPage() {
               <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
                 <div className="p-8">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">Business</span>
-                    <span className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full">M&amp;A</span>
+                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Business</span>
+                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">M&amp;A</span>
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
                     Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu
@@ -166,13 +160,13 @@ export default function BlogPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/ebook"
-              className="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-primary px-7 py-3.5 font-semibold text-white transition-colors hover:bg-purple-800"
+              className="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-primary px-7 py-3.5 font-semibold text-white transition-colors hover:bg-blue-800"
             >
               Prohlédnout e-book
             </Link>
             <Link
               href="/kontakt"
-              className="inline-flex w-full sm:w-auto items-center justify-center rounded-full border-2 border-primary px-7 py-3 font-semibold text-primary transition-colors hover:bg-purple-50"
+              className="inline-flex w-full sm:w-auto items-center justify-center rounded-full border-2 border-primary px-7 py-3 font-semibold text-primary transition-colors hover:bg-blue-50"
             >
               Probrat vlastní projekt
             </Link>
@@ -180,6 +174,7 @@ export default function BlogPage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
     </div>
   )

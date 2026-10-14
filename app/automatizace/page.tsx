@@ -55,6 +55,7 @@ export default function AutomatizacePage() {
     <div className="min-h-screen bg-white">
       <JsonLd data={jsonLd} />
       <Navigation />
+      <main id="main-content">
 
       {/* Hero Section */}
       {/* Vymezení proti průmyslové automatizaci.
@@ -79,34 +80,18 @@ export default function AutomatizacePage() {
         </div>
       </section>
 
-      <section className="hero-gradient text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center relative">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-300 rounded-full opacity-30"></div>
-            <div className="absolute top-1/2 -left-8 w-16 h-16 bg-yellow-300 rounded-full opacity-25"></div>
-            <div className="absolute -top-8 right-4 w-20 h-20 bg-purple-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
-
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm opacity-80 relative z-10">
-              <ol className="flex items-center justify-center space-x-2">
-                <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
-                <li><span className="mx-2">/</span></li>
-                <li className="text-yellow-400">Automatizace</li>
-              </ol>
-            </nav>
-
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 max-w-4xl mx-auto leading-tight">
+      <header className="cf-page-hero">
+        <div className="cf-wrap">
+          <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
+          <h1>
               Automatizace pro malé firmy: co se vyplatí a co ne
             </h1>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10 mb-4">
+          <p>
               Propojím vaše nástroje přes Make.com, n8n nebo Zapier, zautomatizuji rutinu a vy se budete moct soustředit na to, co vás živí.
             </p>
-            <p className="text-sm opacity-75 max-w-2xl mx-auto relative z-10">
-              Bez programování • Marketing, CRM, fakturace i HR • Návrh i nasazení pod jednou střechou
-            </p>
-          </div>
+          <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link></div>
         </div>
-      </section>
+      </header>
 
       {/* Article Content */}
       <article className="py-16">
@@ -143,7 +128,7 @@ export default function AutomatizacePage() {
           </p>
 
           <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -155,7 +140,7 @@ export default function AutomatizacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
@@ -167,7 +152,7 @@ export default function AutomatizacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
@@ -179,7 +164,7 @@ export default function AutomatizacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
@@ -191,7 +176,7 @@ export default function AutomatizacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
@@ -232,7 +217,7 @@ export default function AutomatizacePage() {
               </p>
             </div>
 
-            <div className="border-l-4 border-purple-300 pl-6">
+            <div className="border-l-4 border-blue-300 pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">
                 <a href="https://zapier.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Zapier</a>
               </h3>
@@ -310,7 +295,7 @@ export default function AutomatizacePage() {
           </p>
 
           <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 1
               </div>
@@ -320,7 +305,7 @@ export default function AutomatizacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 2
               </div>
@@ -330,7 +315,7 @@ export default function AutomatizacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 3
               </div>
@@ -340,7 +325,7 @@ export default function AutomatizacePage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 4
               </div>
@@ -362,23 +347,23 @@ export default function AutomatizacePage() {
 
           <ul className="space-y-4 mb-8">
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">E-shopy</strong> – automatizace objednávek, fakturace, e-mailových kampaní</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Malé a střední firmy</strong> – automatizace administrativy, CRM, reportingu</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Marketingové agentury</strong> – automatizace publikování, klientského reportingu</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Freelanceři a OSVČ</strong> – automatizace fakturace, follow-upů, plánování</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Personální agentury</strong> – automatizace HR procesů, onboardingu, komunikace s kandidáty</span>
             </li>
           </ul>
@@ -426,6 +411,7 @@ export default function AutomatizacePage() {
         </div>
       </article>
 
+      </main>
       <SiteFooter />
     </div>
   )

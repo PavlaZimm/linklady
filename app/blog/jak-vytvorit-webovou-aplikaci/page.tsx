@@ -109,11 +109,11 @@ export default function JakVytvoritWebovouAplikaciPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <nav aria-label="Breadcrumb" className="mb-6 text-sm opacity-80">
             <ol className="flex flex-wrap items-center justify-center gap-2">
-              <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
+              <li><Link href="/" className="hover:text-[#A4EDD6]">Úvod</Link></li>
               <li aria-hidden="true">/</li>
-              <li><Link href="/blog" className="hover:text-yellow-400">Blog</Link></li>
+              <li><Link href="/blog" className="hover:text-[#A4EDD6]">Blog</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400">Jak vytvořit webovou aplikaci</li>
+              <li className="text-[#A4EDD6]">Jak vytvořit webovou aplikaci</li>
             </ol>
           </nav>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
@@ -125,12 +125,12 @@ export default function JakVytvoritWebovouAplikaciPage() {
           <div className="mt-6 text-sm opacity-75">
             <time dateTime="2026-09-13">13. září 2026</time>
             <span className="mx-2">|</span>
-            <Link href="/o-mne" className="hover:text-yellow-400">Pavla Zimmermannová</Link>
+            <Link href="/o-mne" className="hover:text-[#A4EDD6]">Pavla Zimmermannová</Link>
           </div>
         </div>
       </header>
 
-      <main>
+      <main id="main-content">
         <article className="py-14 md:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-xl text-gray-800 leading-relaxed mb-6">
@@ -140,7 +140,7 @@ export default function JakVytvoritWebovouAplikaciPage() {
               Pokud si nejste jistí rozdílem mezi běžným webem a aplikací, začněte přehledem <Link href="/webova-aplikace" className="text-primary font-semibold hover:underline">co je webová aplikace, jak funguje a kolik stojí</Link>. Tady se zaměříme přímo na její vytvoření.
             </p>
 
-            <aside className="bg-purple-50 border border-purple-100 rounded-2xl p-6 md:p-8 mb-12">
+            <aside className="bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8 mb-12">
               <h2 className="text-xl font-bold text-gray-900 mb-4">Nejdřív rozhodněte, zda aplikaci opravdu potřebujete</h2>
               <ul className="space-y-3 text-gray-700">
                 <li><strong>Stačí web:</strong> když hlavně představujete firmu, služby a kontakt.</li>
@@ -256,12 +256,12 @@ export default function JakVytvoritWebovouAplikaciPage() {
               <li><strong>Spuštění bez měření:</strong> bez analytiky a logování nepoznáte, kde lidé končí a co je potřeba opravit.</li>
             </ul>
 
-            <aside className="bg-gradient-to-br from-purple-50 to-yellow-50 border border-purple-100 rounded-2xl p-8 md:p-10">
+            <aside className="bg-gradient-to-br from-purple-50 to-yellow-50 border border-blue-100 rounded-2xl p-8 md:p-10">
               <h2 className="text-2xl font-bold text-gray-900 mb-3">Máte nápad na webovou aplikaci?</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Napište mi, kdo ji bude používat a co má vyřešit. Do 24 hodin vám řeknu, co patří do první verze, jaký postup dává smysl a kolik hodin přibližně zabere.
               </p>
-              <Link href="/kontakt" className="inline-block bg-primary text-white px-7 py-3.5 rounded-lg font-bold hover:bg-purple-800 transition-colors">
+              <Link href="/kontakt" className="inline-block bg-primary text-white px-7 py-3.5 rounded-lg font-bold hover:bg-blue-800 transition-colors">
                 Chci nezávazný odhad
               </Link>
             </aside>

@@ -84,29 +84,18 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white">
       <JsonLd data={jsonLd} />
       <Navigation />
+      <main id="main-content">
       
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center justify-center">
-            <div className="text-center relative">
-              {/* Decorative circles */}
-              <div className="absolute -top-4 -left-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-300 rounded-full opacity-30"></div>
-              <div className="absolute top-1/2 -left-8 w-16 h-16 bg-yellow-300 rounded-full opacity-25"></div>
-              <div className="absolute -top-8 right-4 w-20 h-20 bg-purple-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
-              
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Pavla Zimmermannová</h1>
-              <p className="text-xl opacity-90 max-w-3xl mx-auto relative z-10">
+      <header className="cf-page-hero">
+        <div className="cf-wrap">
+          <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
+          <h1>Pavla Zimmermannová</h1>
+          <p>
                 10 let v online marketingu. Od SEO strategií po AI automatizace.
               </p>
-            </div>
-            
-            <div className="flex justify-center lg:justify-end">
-            </div>
-          </div>
         </div>
-      </section>
+      </header>
 
       {/* Main Content */}
       <section className="py-20">
@@ -220,7 +209,7 @@ export default function AboutPage() {
           <div className="text-center mt-12">
             <Link
               href="/kontakt"
-              className="inline-block bg-yellow-400 text-purple-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
+              className="inline-block bg-[#FF795E] text-[#151D32] px-8 py-3 rounded-full font-semibold hover:bg-[#ff927c] transition-colors"
             >
               Domluvit konzultaci
             </Link>
@@ -228,6 +217,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
     </div>
   )

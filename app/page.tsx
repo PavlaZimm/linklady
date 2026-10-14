@@ -14,7 +14,7 @@ const jsonLd = {
       "@id": "https://www.linklady.cz/#webpage",
       url: "https://www.linklady.cz",
       name: "Linklady.cz – SEO a AI automatizace | Pavla Zimmermannová",
-      description: "Vaše firma na prvních místech. SEO strategie a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky, ne prázdné sliby.",
+      description: "SEO, moderní weby a AI automatizace. Pavla Zimmermannová propojuje obsah, technologie a kreativitu do funkčních digitálních projektů.",
       isPartOf: { "@id": "https://www.linklady.cz/#website" },
       about: { "@id": "https://www.linklady.cz/#business" },
       inLanguage: "cs",
