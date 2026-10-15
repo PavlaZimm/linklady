@@ -3,6 +3,7 @@ import Image from "next/image";
 import SiteFooter from "./site-footer";
 import ProjectCard from "./project-card";
 import { projects } from "@/lib/projects";
+import GoogleReviews from "./google-reviews";
 export default function HomePageContent() {
   return (
     <>
@@ -158,6 +159,7 @@ export default function HomePageContent() {
             </div>
           </div>
         </section>
+        <GoogleReviews />
         <section className="cf-wrap cf-section cf-about">
           <div className="cf-portrait">
             <Image
