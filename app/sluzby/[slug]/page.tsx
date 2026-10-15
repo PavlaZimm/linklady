@@ -14,7 +14,7 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const s = services.find((s) => s.slug === slug);
-  return s ? pageMetadata(`/sluzby/${slug}`, s.title, s.intro) : {};
+  return s ? pageMetadata(`/sluzby/${slug}`, s.seoTitle ?? s.title, s.intro) : {};
 }
 export default async function Service({ params }: Props) {
   const { slug } = await params;
@@ -35,6 +35,15 @@ export default async function Service({ params }: Props) {
             provider: { "@id": "https://www.linklady.cz/#person" },
           }}
         />
+        <JsonLd data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Úvod", item: "https://www.linklady.cz" },
+            { "@type": "ListItem", position: 2, name: "Služby", item: "https://www.linklady.cz/sluzby" },
+            { "@type": "ListItem", position: 3, name: s.title, item: `https://www.linklady.cz/sluzby/${s.slug}` },
+          ],
+        }} />
         <header className="cf-page-hero">
           <div className="cf-wrap">
             <Link className="cf-back" href="/sluzby">
@@ -60,8 +69,21 @@ export default async function Service({ params }: Props) {
               </ul>
             </section>
           ))}
+          {s.questions && (
+            <section>
+              <h2>Na co se často ptáte</h2>
+              <div className="cf-faq">
+                {s.questions.map(({ question, answer }) => (
+                  <details key={question}><summary>{question}</summary><p>{answer}</p></details>
+                ))}
+              </div>
+            </section>
+          )}
           <section>
-            <h2>Další souvislosti</h2>
+            <h2>Prohlédněte si také</h2>
+            {s.reading?.map(({ href, label }) => (
+              <p key={href}><Link className="cf-text-link" href={href}>{label} ↗</Link></p>
+            ))}
             <p>
               <Link className="cf-text-link" href={s.legacy}>
                 {s.legacyLabel} ↗

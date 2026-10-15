@@ -20,9 +20,9 @@ export default function HomePageContent() {
                 </span>
               </h1>
               <p className="cf-hero-description">
-                Propojuji SEO, moderní weby a AI automatizace. Pomáhám firmám
-                být vidět, získávat zákazníky a proměňovat nápady ve skutečné
-                digitální projekty.
+                Tvořím webové stránky a pomáhám firmám se SEO. Propojím
+                srozumitelnou nabídku, obsah a technologie, aby vás zákazníci
+                našli a snadno se vám ozvali.
               </p>
               <div className="cf-buttons">
                 <Link href="/kontakt" className="cf-button">
@@ -80,13 +80,13 @@ export default function HomePageContent() {
             Spousta možností.
           </h2>
           <p className="cf-lede">
-            Web je jen začátek. Propojuji obsah, použitelnost, vyhledávání a
-            technologie, aby vaše podnikání fungovalo lépe.
+            Potřebujete nový web, nebo chcete zlepšit ten současný?
+            Začneme tím, co pomůže vašim zákazníkům najít vás a pochopit vaši nabídku.
           </p>
-          <div className="cf-service-grid">
+          <div className="cf-service-grid cf-primary-services">
             {[
               {
-                title: "SEO & obsah",
+                title: "SEO služby a konzultace",
                 description:
                   "Audity, klíčová slova, technické SEO, obsah a linkbuilding.",
                 href: "/sluzby/seo",
@@ -94,19 +94,11 @@ export default function HomePageContent() {
                 label: "SEO služby",
               },
               {
-                title: "Weby & aplikace",
-                description: "Responzivní firemní weby i nástroje na míru.",
+                title: "Tvorba webových stránek",
+                description: "Firemní weby na míru, promyšlená struktura, obsah a SEO od začátku.",
                 href: "/sluzby/tvorba-webu",
                 symbol: "▧",
                 label: "Tvorba webů",
-              },
-              {
-                title: "AI & automatizace",
-                description:
-                  "Asistenti, propojení procesů a praktičtí digitální pomocníci.",
-                href: "/sluzby/ai-automatizace",
-                symbol: "✳",
-                label: "Automatizace",
               },
             ].map((s) => (
               <article className="cf-service" key={s.title}>
@@ -121,6 +113,16 @@ export default function HomePageContent() {
               </article>
             ))}
           </div>
+          <aside className="cf-supporting-services" aria-label="Navazující služby">
+            <div>
+              <h3>Potřebujete jít o krok dál?</h3>
+              <p>Web můžeme doplnit aplikací nebo propojit s nástroji, které vám usnadní každodenní práci.</p>
+            </div>
+            <div className="cf-supporting-links">
+              <Link className="cf-text-link" href="/sluzby/webove-aplikace">Webové aplikace ↗</Link>
+              <Link className="cf-text-link" href="/sluzby/ai-automatizace">AI a automatizace ↗</Link>
+            </div>
+          </aside>
         </section>
         <section className="cf-project-section">
           <div className="cf-wrap cf-section">

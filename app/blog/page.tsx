@@ -54,10 +54,34 @@ export default function BlogPage() {
           <p className="cf-eyebrow">LINKLADY / BLOG</p>
           <h1>Blog</h1>
           <p>
-              Aktuální články o SEO, automatizaci a AI nástrojích pro online marketing
+              Praktické čtení o SEO, tvorbě webů a využití AI. Vyberte si téma, které právě řešíte.
             </p>
         </div>
       </header>
+
+      <section className="cf-wrap cf-section" aria-labelledby="blog-topics">
+        <h2 id="blog-topics">Kde chcete začít?</h2>
+        <div className="cf-service-grid">
+          <article className="cf-service">
+            <h3>SEO a obsah</h3>
+            <p>Zpětné odkazy, obsah a viditelnost webu ve vyhledávání.</p>
+            <Link className="cf-text-link" href="/11-tipu-jak-ziskat-validni-zpetny-odkaz/">Jak získávat odkazy ↗</Link>
+            <Link className="cf-text-link" href="/sluzby/seo">Potřebuji pomoc se SEO ↗</Link>
+          </article>
+          <article className="cf-service">
+            <h3>Weby a aplikace</h3>
+            <p>Od zadání a struktury až po funkce, které usnadní práci.</p>
+            <Link className="cf-text-link" href="/blog/jak-vytvorit-webovou-aplikaci">Jak vzniká webová aplikace ↗</Link>
+            <Link className="cf-text-link" href="/sluzby/tvorba-webu">Potřebuji nový web ↗</Link>
+          </article>
+          <article className="cf-service">
+            <h3>AI v praxi</h3>
+            <p>Průvodci AI agenty a tvorbou s pomocí umělé inteligence.</p>
+            <Link className="cf-text-link" href="/ai-agent">AI agenti a asistenti ↗</Link>
+            <Link className="cf-text-link" href="/vibecoding">Co je vibecoding ↗</Link>
+          </article>
+        </div>
+      </section>
 
       {/* Blog Articles */}
       <section className="py-20">

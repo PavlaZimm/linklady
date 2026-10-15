@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-15",
+  "source": "Marketing Miner",
+  "market": "cs",
+  "data": [
+    {
+      "keyword": "seo konzultant",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"seo konzultant\", \"search_volume\": 480, \"cpc\": {\"value\": 48.68, \"text\": \"48.68 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": -13.0, \"peak_month\": \"2026-04-01\", \"monthly_sv\": {\"04\": 880, \"05\": 470, \"06\": 160, \"07\": 310, \"08\": 200, \"09\": 720, \"10\": 580, \"11\": 320, \"12\": 320, \"01\": 580, \"02\": 470, \"03\": 720}}]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "keyword": "seo audit",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"seo audit\", \"search_volume\": 610, \"cpc\": {\"value\": 39.63, \"text\": \"39.63 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": -22.0, \"peak_month\": \"2026-04-01\", \"monthly_sv\": {\"04\": 1200, \"05\": 440, \"06\": 280, \"07\": 280, \"08\": 280, \"09\": 1000, \"10\": 440, \"11\": 1000, \"12\": 360, \"01\": 670, \"02\": 540, \"03\": 820}}]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "keyword": "seo služby",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"seo služby\", \"search_volume\": 320, \"cpc\": {\"value\": 48.73, \"text\": \"48.73 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": -29.0, \"peak_month\": \"2026-04-01\", \"monthly_sv\": {\"04\": 540, \"05\": 280, \"06\": 100, \"07\": 80, \"08\": 130, \"09\": 540, \"10\": 430, \"11\": 360, \"12\": 280, \"01\": 360, \"02\": 280, \"03\": 540}}]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "keyword": "tvorba webových stránek",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"tvorba webových stránek\", \"search_volume\": 1400, \"cpc\": {\"value\": 68.05, \"text\": \"68.05 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": -40.0, \"peak_month\": \"2026-04-01\", \"monthly_sv\": {\"04\": 1900, \"05\": 1300, \"06\": 980, \"07\": 980, \"08\": 980, \"09\": 1900, \"10\": 1300, \"11\": 1300, \"12\": 980, \"01\": 1600, \"02\": 1600, \"03\": 1600}}]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "keyword": "tvorba webových stránek cena",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"tvorba webových stránek cena\", \"search_volume\": 160, \"cpc\": {\"value\": 34.74, \"text\": \"34.74 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": -48.0, \"peak_month\": \"2026-04-01\", \"monthly_sv\": {\"04\": 280, \"05\": 150, \"06\": 120, \"07\": 70, \"08\": 90, \"09\": 150, \"10\": 190, \"11\": 150, \"12\": 120, \"01\": 190, \"02\": 190, \"03\": 190}}]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "keyword": "tvorba webových stránek na míru",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"tvorba webových stránek na míru\", \"search_volume\": 130, \"cpc\": {\"value\": 64.03, \"text\": \"64.03 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": -18.0, \"peak_month\": \"2026-09-01\", \"monthly_sv\": {\"04\": 290, \"05\": 80, \"06\": 80, \"07\": 80, \"08\": 50, \"09\": 360, \"10\": 80, \"11\": 70, \"12\": 80, \"01\": 70, \"02\": 150, \"03\": 190}}]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "keyword": "analýza klíčových slov",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"analýza klíčových slov\", \"search_volume\": 430, \"cpc\": {\"value\": 29.02, \"text\": \"29.02 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": -42.0, \"peak_month\": \"2026-09-01\", \"monthly_sv\": {\"04\": 900, \"05\": 250, \"06\": 110, \"07\": 140, \"08\": 110, \"09\": 1400, \"10\": 480, \"11\": 310, \"12\": 250, \"01\": 400, \"02\": 310, \"03\": 480}}]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "keyword": "lokální seo",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"lokální seo\", \"search_volume\": 180, \"cpc\": {\"value\": 30.25, \"text\": \"30.25 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": 8.0, \"peak_month\": \"2026-09-01\", \"monthly_sv\": {\"04\": 350, \"05\": 70, \"06\": 30, \"07\": 80, \"08\": 120, \"09\": 650, \"10\": 80, \"11\": 80, \"12\": 120, \"01\": 230, \"02\": 150, \"03\": 230}}]}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Navigation from "@/components/navigation";
 import SiteFooter from "@/components/site-footer";
-import { services } from "@/lib/services";
+import { orderedServices } from "@/lib/services";
 import { pageMetadata } from "@/lib/creative-metadata";
 export const metadata = pageMetadata(
   "/sluzby",
-  "SEO, tvorba webů a AI automatizace",
+  "SEO služby a tvorba webových stránek",
   "SEO a obsah, linkbuilding, tvorba webů, webové aplikace a AI automatizace od Pavly Zimmermannové.",
 );
 export default function Services() {
@@ -22,8 +22,8 @@ export default function Services() {
               <em>Spousta možností.</em>
             </h1>
             <p>
-              Vybereme, co vaše podnikání potřebuje právě teď. A postavíme na
-              tom další krok.
+              SEO a tvorba webů jsou základ mé práce. Podle vašeho zadání
+              je doplním obsahem, aplikací nebo automatizací.
             </p>
           </div>
         </header>
@@ -31,8 +31,8 @@ export default function Services() {
           className="cf-section cf-wrap cf-service-index"
           aria-label="Přehled služeb"
         >
-          {services.map((s, i) => (
-            <article key={s.slug}>
+          {orderedServices.map((s, i) => (
+            <article key={s.slug} className={i < 2 ? "cf-main-offer" : undefined}>
               <p className="cf-eyebrow">0{i + 1}</p>
               <h2>{s.title}</h2>
               <p>{s.intro}</p>

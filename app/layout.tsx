@@ -13,11 +13,11 @@ import JsonLd from "@/components/json-ld";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.linklady.cz"),
   title: {
-    default: "Linklady.cz | SEO a AI automatizace – Pavla Zimmermannová",
+    default: "Linklady.cz | SEO a tvorba webů – Pavla Zimmermannová",
     template: "%s | Linklady.cz",
   },
   description:
-    "SEO, moderní weby a AI automatizace. Pavla Zimmermannová propojuje obsah, technologie a kreativitu do funkčních digitálních projektů.",
+    "SEO služby a tvorba webů na míru od Pavly Zimmermannové. Analýza klíčových slov, obsah a funkční web, na kterém zákazníci snadno najdou vaši nabídku.",
   keywords: [
     "online marketing",
     "SEO",
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: "https://www.linklady.cz",
     siteName: "Linklady.cz",
-    title: "Linklady.cz | SEO a AI automatizace",
+    title: "Linklady.cz | SEO a tvorba webů",
     description:
-      "SEO, moderní weby a AI automatizace. Pavla Zimmermannová propojuje obsah, technologie a kreativitu do funkčních digitálních projektů.",
+      "SEO služby a tvorba webů na míru od Pavly Zimmermannové. Analýza klíčových slov, obsah a funkční web, na kterém zákazníci snadno najdou vaši nabídku.",
     images: [
       {
         url: "/profile.jpg",
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Linklady.cz | SEO a AI automatizace",
+    title: "Linklady.cz | SEO a tvorba webů",
     description:
-      "SEO, moderní weby a AI automatizace. Pavla Zimmermannová propojuje obsah, technologie a kreativitu do funkčních digitálních projektů.",
+      "SEO služby a tvorba webů na míru od Pavly Zimmermannové. Analýza klíčových slov, obsah a funkční web, na kterém zákazníci snadno najdou vaši nabídku.",
     images: ["/profile.jpg"],
   },
   robots: {
@@ -87,7 +87,7 @@ const jsonLd = {
       "@id": "https://www.linklady.cz/#website",
       url: "https://www.linklady.cz",
       name: "Linklady.cz",
-      description: "Online marketing, SEO a automatizace",
+      description: "SEO a tvorba webových stránek",
       publisher: { "@id": "https://www.linklady.cz/#person" },
       inLanguage: "cs",
     },
@@ -99,7 +99,7 @@ const jsonLd = {
       image: "https://www.linklady.cz/profile.jpg",
       jobTitle: "Online marketing specialistka",
       description:
-        "Specialistka na SEO, AI asistenty a automatizaci marketingu od roku 2015.",
+        "V online marketingu působí od roku 2015. Věnuje se SEO, obsahu a tvorbě webů.",
       sameAs: [
         "https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/",
       ],
@@ -120,7 +120,7 @@ const jsonLd = {
       logo: "https://www.linklady.cz/logo.png",
       image: "https://www.linklady.cz/profile.jpg",
       description:
-        "Online marketing služby – SEO, AI asistenti a automatizace.",
+        "SEO služby, tvorba webových stránek a navazující digitální řešení.",
       email: "zimmermannovap@gmail.com",
       founder: { "@id": "https://www.linklady.cz/#person" },
       taxID: "04352041",
