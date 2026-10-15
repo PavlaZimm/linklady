@@ -70,75 +70,28 @@ export default function EbookPage() {
     <div className="min-h-screen bg-white">
       <JsonLd data={jsonLd} />
       <Navigation />
+      <main id="main-content">
 
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full yellow-gradient opacity-80 rounded-l-full transform translate-x-1/4"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-block bg-yellow-400/20 text-yellow-300 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-yellow-400/30">
-                E-book
-              </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+      <header className="cf-page-hero">
+        <div className="cf-wrap">
+          <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
+          <h1>
                 Jak správně<br />
-                <span className="text-yellow-400">promptovat AI</span>
+                <span className="text-[#A4EDD6]">promptovat AI</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
+          <p>
                 Praktický průvodce od základů po pokročilé techniky
               </p>
-              <p className="text-lg mb-10 opacity-80 leading-relaxed">
-                Naučte se z AI dostat maximum. Žádné obecné rady – konkrétní postupy, šablony a příklady, které hned použijete.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-6">
-                <a
-                  href="#koupit"
-                  className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
-                >
-                  Chci e-book
-                </a>
-                <a
-                  href="#co-se-naucite"
-                  className="inline-block border-2 border-white/80 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-900 transition-all duration-300 backdrop-blur-sm text-center"
-                >
-                  Co se naučíte
-                </a>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              {/* E-book visual mockup */}
-              <div className="relative">
-                <div className="w-64 h-80 md:w-72 md:h-96 bg-white rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg p-8 flex flex-col justify-between">
-                    <div>
-                      <div className="w-12 h-1 bg-yellow-400 mb-4"></div>
-                      <p className="text-yellow-400 text-sm font-semibold mb-2">LINKLADY.CZ</p>
-                    </div>
-                    <div>
-                      <h2 className="text-white text-2xl md:text-3xl font-bold leading-tight mb-3">
-                        Jak správně promptovat AI
-                      </h2>
-                      <p className="text-purple-200 text-sm">Pavla Zimmermannová</p>
-                    </div>
-                    <div className="w-full h-1 bg-yellow-400/30 rounded-full">
-                      <div className="w-2/3 h-1 bg-yellow-400 rounded-full"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20"></div>
-                <div className="absolute -top-4 -left-4 w-16 h-16 bg-purple-300 rounded-full opacity-30"></div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+      </header>
 
       {/* Pro koho je e-book */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Pro koho je <span className="text-purple-600">e-book</span>
+              Pro koho je <span className="text-primary">e-book</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Ať už s AI teprve začínáte, nebo chcete vytěžit víc z nástrojů, které už používáte.
@@ -146,8 +99,8 @@ export default function EbookPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
               </div>
@@ -157,8 +110,8 @@ export default function EbookPage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-[#ffe5db] rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-[#2946cf]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
                 </svg>
               </div>
@@ -168,8 +121,8 @@ export default function EbookPage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
                 </svg>
               </div>
@@ -188,12 +141,12 @@ export default function EbookPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-                Co se <span className="text-purple-600">naučíte</span>
+                Co se <span className="text-primary">naučíte</span>
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-4 h-4 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-8 h-8 bg-[#FF795E] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
                   </div>
@@ -203,8 +156,8 @@ export default function EbookPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-4 h-4 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-8 h-8 bg-[#FF795E] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
                   </div>
@@ -214,8 +167,8 @@ export default function EbookPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-4 h-4 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-8 h-8 bg-[#FF795E] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
                   </div>
@@ -225,8 +178,8 @@ export default function EbookPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-4 h-4 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-8 h-8 bg-[#FF795E] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
                   </div>
@@ -236,8 +189,8 @@ export default function EbookPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-4 h-4 text-purple-900" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-8 h-8 bg-[#FF795E] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
                   </div>
@@ -251,16 +204,16 @@ export default function EbookPage() {
             <div className="bg-gradient-to-br from-purple-50 to-yellow-50/50 p-10 rounded-3xl">
               <div className="space-y-6">
                 <div className="bg-white p-5 rounded-xl shadow-sm">
-                  <p className="text-sm text-purple-600 font-semibold mb-2">Špatný prompt:</p>
+                  <p className="text-sm text-primary font-semibold mb-2">Špatný prompt:</p>
                   <p className="text-gray-700 italic">&quot;Napiš mi text o marketingu.&quot;</p>
                 </div>
                 <div className="flex justify-center">
-                  <svg className="w-8 h-8 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
                   </svg>
                 </div>
                 <div className="bg-white p-5 rounded-xl shadow-sm border-2 border-yellow-400">
-                  <p className="text-sm text-yellow-600 font-semibold mb-2">Efektivní prompt:</p>
+                  <p className="text-sm text-[#2946cf] font-semibold mb-2">Efektivní prompt:</p>
                   <p className="text-gray-700 italic">&quot;Jsi zkušený copywriter. Napiš článek na blog (800 slov) o 5 SEO trendech pro rok 2026. Cílová skupina: majitelé malých e-shopů. Tón: profesionální, ale přístupný. Každý trend uveď s konkrétním příkladem.&quot;</p>
                 </div>
                 <p className="text-center text-gray-500 text-sm">
@@ -274,15 +227,15 @@ export default function EbookPage() {
 
       {/* CTA / Buy Section */}
       <section id="koupit" className="py-24 bg-gradient-to-br from-purple-600 to-purple-800 text-white relative overflow-hidden">
-        <div className="absolute -top-20 -right-20 w-64 h-64 bg-yellow-400 rounded-full opacity-10"></div>
-        <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-purple-300 rounded-full opacity-20"></div>
+        <div className="absolute -top-20 -right-20 w-64 h-64 bg-[#FF795E] rounded-full opacity-10"></div>
+        <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-blue-300 rounded-full opacity-20"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <span className="inline-block bg-yellow-400/20 text-yellow-300 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-yellow-400/30">
+            <span className="inline-block bg-[#FF795E]/20 text-[#A4EDD6] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-yellow-400/30">
               E-book ke stažení
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Začněte promptovat <span className="text-yellow-400">jako profík</span>
+              Začněte promptovat <span className="text-[#A4EDD6]">jako profík</span>
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto leading-relaxed mb-10">
               Praktický e-book plný konkrétních příkladů, šablon a technik.
@@ -293,25 +246,25 @@ export default function EbookPage() {
               <h3 className="text-2xl font-bold mb-4">Jak správně promptovat AI</h3>
               <ul className="text-left space-y-3 mb-8">
                 <li className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-yellow-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#A4EDD6] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                   </svg>
                   <span className="opacity-90">Kompletní průvodce promptováním</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-yellow-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#A4EDD6] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                   </svg>
                   <span className="opacity-90">Hotové šablony k okamžitému použití</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-yellow-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#A4EDD6] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                   </svg>
                   <span className="opacity-90">Pokročilé techniky a tipy</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-yellow-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#A4EDD6] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                   </svg>
                   <span className="opacity-90">Příklady z praxe (marketing, texty, analýza)</span>
@@ -320,7 +273,7 @@ export default function EbookPage() {
 
               <a
                 href={ebookCtaHref}
-                className="block w-full bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
+                className="block w-full bg-[#FF795E] text-[#151D32] px-10 py-5 rounded-full font-bold text-lg hover:bg-[#ff927c] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
               >
                 {ebookSalesUrl ? 'Koupit e-book' : 'Mám zájem o e-book'}
               </a>
@@ -339,7 +292,7 @@ export default function EbookPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              O <span className="text-purple-600">autorce</span>
+              O <span className="text-primary">autorce</span>
             </h2>
           </div>
           <div className="bg-gradient-to-br from-purple-50 to-yellow-50/30 p-8 md:p-12 rounded-3xl">
@@ -365,7 +318,7 @@ export default function EbookPage() {
                 </p>
                 <Link
                   href="/o-mne"
-                  className="text-purple-600 font-semibold hover:text-purple-700 transition-colors"
+                  className="text-primary font-semibold hover:text-primary transition-colors"
                 >
                   Více o mně →
                 </Link>
@@ -379,7 +332,7 @@ export default function EbookPage() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
-            Časté <span className="text-purple-600">dotazy</span>
+            Časté <span className="text-primary">dotazy</span>
           </h2>
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-2xl shadow-sm">
@@ -404,7 +357,7 @@ export default function EbookPage() {
               <h3 className="text-lg font-bold text-gray-900 mb-2">Můžu se na něco zeptat po přečtení?</h3>
               <p className="text-gray-600 leading-relaxed">
                 Samozřejmě! Napište mi na{' '}
-                <a href="mailto:zimmermannovap@gmail.com" className="text-purple-600 hover:text-purple-700 font-semibold transition-colors">
+                <a href="mailto:zimmermannovap@gmail.com" className="text-primary hover:text-primary font-semibold transition-colors">
                   zimmermannovap@gmail.com
                 </a>{' '}
                 a ráda poradím.
@@ -418,9 +371,9 @@ export default function EbookPage() {
       <section className="py-24 bg-gradient-to-br from-purple-50 to-yellow-50/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-purple-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               Přestaňte hádat,<br />
-              <span className="text-yellow-600">začněte promptovat</span>
+              <span className="text-[#2946cf]">začněte promptovat</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-4">
               Investice do dovednosti, která vám ušetří desítky hodin měsíčně.
@@ -430,7 +383,7 @@ export default function EbookPage() {
             </p>
             <a
               href={ebookCtaHref}
-              className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
+              className="inline-block bg-[#FF795E] text-[#151D32] px-10 py-5 rounded-full font-bold text-lg hover:bg-[#ff927c] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
             >
               {ebookSalesUrl ? 'Koupit e-book' : 'Mám zájem o e-book'}
             </a>
@@ -438,6 +391,7 @@ export default function EbookPage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
     </div>
   )

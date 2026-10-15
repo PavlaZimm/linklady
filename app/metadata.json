@@ -1,21 +1,20 @@
 {
   "/": {
-    "title": "SEO a AI automatizace pro firmy | Linklady",
-    "description": "Weby, SEO a automatizace procesů pro malé firmy na severu Čech. Konkrétní ceny, jasný termín a nezávazná konzultace zdarma.",
+    "title": "SEO a tvorba webových stránek pro firmy",
+    "description": "SEO služby a tvorba webů na míru od Pavly Zimmermannové. Analýza klíčových slov, obsah a funkční web, na kterém zákazníci snadno najdou vaši nabídku.",
     "keywords": [
-      "online marketing",
-      "SEO",
-      "AI agenti",
-      "automatizace",
+      "SEO služby",
+      "tvorba webových stránek",
+      "SEO konzultace",
       "Pavla Zimmermannová",
-      "linklady"
+      "Linklady"
     ],
     "alternates": {
       "canonical": "https://www.linklady.cz"
     },
     "openGraph": {
-      "title": "SEO a AI automatizace pro firmy | Linklady",
-      "description": "Weby, SEO a automatizace procesů pro malé firmy na severu Čech. Konkrétní ceny, jasný termín a nezávazná konzultace zdarma.",
+      "title": "SEO a tvorba webových stránek pro firmy | Linklady.cz",
+      "description": "SEO služby a tvorba webů na míru od Pavly Zimmermannové. Analýza klíčových slov, obsah a funkční web, na kterém zákazníci snadno najdou vaši nabídku.",
       "url": "https://www.linklady.cz",
       "images": [
         {

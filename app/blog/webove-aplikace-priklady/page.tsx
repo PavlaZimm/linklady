@@ -147,11 +147,11 @@ export default function WeboveAplikacePrikladyPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <nav aria-label="Breadcrumb" className="mb-6 text-sm opacity-80">
             <ol className="flex flex-wrap items-center justify-center gap-2">
-              <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
+              <li><Link href="/" className="hover:text-[#A4EDD6]">Úvod</Link></li>
               <li aria-hidden="true">/</li>
-              <li><Link href="/blog" className="hover:text-yellow-400">Blog</Link></li>
+              <li><Link href="/blog" className="hover:text-[#A4EDD6]">Blog</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400">Webové aplikace – příklady</li>
+              <li className="text-[#A4EDD6]">Webové aplikace – příklady</li>
             </ol>
           </nav>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
@@ -163,12 +163,12 @@ export default function WeboveAplikacePrikladyPage() {
           <div className="mt-6 text-sm opacity-75">
             <time dateTime="2026-09-14">14. září 2026</time>
             <span className="mx-2">|</span>
-            <Link href="/o-mne" className="hover:text-yellow-400">Pavla Zimmermannová</Link>
+            <Link href="/o-mne" className="hover:text-[#A4EDD6]">Pavla Zimmermannová</Link>
           </div>
         </div>
       </header>
 
-      <main>
+      <main id="main-content">
         <article className="py-14 md:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-xl text-gray-800 leading-relaxed mb-6">
@@ -178,7 +178,7 @@ export default function WeboveAplikacePrikladyPage() {
               Základní rozdíly, typy a technologie vysvětluje hlavní průvodce <Link href="/webova-aplikace" className="text-primary font-semibold hover:underline">co je webová aplikace</Link>. Tady ukazuji konkrétní příklady a rozhodnutí, která za nimi stojí.
             </p>
 
-            <aside className="bg-purple-50 border border-purple-100 rounded-2xl p-6 md:p-8 mb-14">
+            <aside className="bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8 mb-14">
               <h2 className="text-xl font-bold text-gray-900 mb-3">Jak poznáte webovou aplikaci</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Běžný web předává stejné informace všem. Webová aplikace reaguje na konkrétního uživatele, jeho data nebo aktuální situaci.
@@ -198,7 +198,7 @@ export default function WeboveAplikacePrikladyPage() {
                     <span className="w-9 h-9 rounded-full bg-primary text-white font-bold flex items-center justify-center" aria-hidden="true">
                       {index + 1}
                     </span>
-                    <span className="text-sm font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">{project.label}</span>
+                    <span className="text-sm font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">{project.label}</span>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-5">
                     <a href={project.href} target="_blank" rel="noopener noreferrer" className="hover:text-primary hover:underline">
@@ -279,12 +279,12 @@ export default function WeboveAplikacePrikladyPage() {
               Pokud už máte konkrétní nápad, pokračujte návodem <Link href="/blog/jak-vytvorit-webovou-aplikaci" className="text-primary font-semibold hover:underline">jak vytvořit webovou aplikaci krok za krokem</Link>. Pomůže vám připravit zadání, rozdělit první verzi a vybrat vhodný způsob vývoje.
             </p>
 
-            <aside className="bg-gradient-to-br from-purple-50 to-yellow-50 border border-purple-100 rounded-2xl p-8 md:p-10">
+            <aside className="bg-gradient-to-br from-purple-50 to-yellow-50 border border-blue-100 rounded-2xl p-8 md:p-10">
               <h2 className="text-2xl font-bold text-gray-900 mb-3">Co by webová aplikace mohla vyřešit u vás?</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Popište mi proces, který dnes řešíte ručně, v tabulce nebo přes několik nástrojů. Do 24 hodin vám řeknu, zda stačí jednoduchá automatizace, nebo dává smysl aplikace na míru.
               </p>
-              <Link href="/kontakt" className="inline-block bg-primary text-white px-7 py-3.5 rounded-lg font-bold hover:bg-purple-800 transition-colors">
+              <Link href="/kontakt" className="inline-block bg-primary text-white px-7 py-3.5 rounded-lg font-bold hover:bg-blue-800 transition-colors">
                 Chci nezávazný rozbor
               </Link>
             </aside>

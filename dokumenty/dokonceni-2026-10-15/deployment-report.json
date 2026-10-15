@@ -1,0 +1,14 @@
+{
+  "sourceCommit": "8d3c58b1be3d5dddc644dc909bc7f7d6e53a7f4f",
+  "deploymentId": "dpl_5uFEJFB3EfeKaaNac6vaA3j7LfTX",
+  "url": "https://linklady-ayqzlt8l1-pavlazimms-projects.vercel.app",
+  "target": "preview",
+  "state": "READY",
+  "githubStatus": "success",
+  "remoteHttp": {
+    "/sluzby/seo": 200,
+    "/sluzby/tvorba-webu": 200
+  },
+  "remoteBrowser": "blocked by Vercel authentication; browser reports are local",
+  "accidentalTestProject": "preview-check removed successfully"
+}

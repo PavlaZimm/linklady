@@ -1,16 +1,23 @@
-import "./globals.css"
+import "./globals.css";
+import { Manrope } from "next/font/google";
+const manrope = Manrope({
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  variable: "--font-manrope",
+});
 
-import { headers } from "next/headers"
-import type { Metadata } from "next"
-import JsonLd from "@/components/json-ld"
+import { headers } from "next/headers";
+import type { Metadata } from "next";
+import JsonLd from "@/components/json-ld";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.linklady.cz"),
   title: {
-    default: "Linklady.cz | SEO a AI automatizace – Pavla Zimmermannová",
+    default: "Linklady.cz | SEO a tvorba webů – Pavla Zimmermannová",
     template: "%s | Linklady.cz",
   },
-  description: "Vaše firma na prvních místech. SEO strategie a AI automatizace od specialistky s 10 lety zkušeností. Měřitelné výsledky pro váš byznys.",
+  description:
+    "SEO služby a tvorba webů na míru od Pavly Zimmermannové. Analýza klíčových slov, obsah a funkční web, na kterém zákazníci snadno najdou vaši nabídku.",
   keywords: [
     "online marketing",
     "SEO",
@@ -23,7 +30,9 @@ export const metadata: Metadata = {
     "Pavla Zimmermannová",
     "linklady",
   ],
-  authors: [{ name: "Pavla Zimmermannová", url: "https://www.linklady.cz/o-mne" }],
+  authors: [
+    { name: "Pavla Zimmermannová", url: "https://www.linklady.cz/o-mne" },
+  ],
   creator: "Pavla Zimmermannová",
   publisher: "Linklady.cz",
   alternates: {
@@ -34,8 +43,9 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: "https://www.linklady.cz",
     siteName: "Linklady.cz",
-    title: "Linklady.cz | SEO a AI automatizace",
-    description: "Vaše firma na prvních místech. SEO strategie a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
+    title: "Linklady.cz | SEO a tvorba webů",
+    description:
+      "SEO služby a tvorba webů na míru od Pavly Zimmermannové. Analýza klíčových slov, obsah a funkční web, na kterém zákazníci snadno najdou vaši nabídku.",
     images: [
       {
         url: "/profile.jpg",
@@ -47,8 +57,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Linklady.cz | SEO a AI automatizace",
-    description: "Vaše firma na prvních místech. SEO strategie a AI automatizace. 10 let zkušeností, měřitelné výsledky.",
+    title: "Linklady.cz | SEO a tvorba webů",
+    description:
+      "SEO služby a tvorba webů na míru od Pavly Zimmermannové. Analýza klíčových slov, obsah a funkční web, na kterém zákazníci snadno najdou vaši nabídku.",
     images: ["/profile.jpg"],
   },
   robots: {
@@ -63,10 +74,10 @@ export const metadata: Metadata = {
     },
   },
   other: {
-    "theme-color": "#663399",
+    "theme-color": "#151D32",
     "google-site-verification": "googleefe3afe42c601fcd",
   },
-}
+};
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -76,7 +87,7 @@ const jsonLd = {
       "@id": "https://www.linklady.cz/#website",
       url: "https://www.linklady.cz",
       name: "Linklady.cz",
-      description: "Online marketing, SEO a automatizace",
+      description: "SEO a tvorba webových stránek",
       publisher: { "@id": "https://www.linklady.cz/#person" },
       inLanguage: "cs",
     },
@@ -87,7 +98,8 @@ const jsonLd = {
       url: "https://www.linklady.cz",
       image: "https://www.linklady.cz/profile.jpg",
       jobTitle: "Online marketing specialistka",
-      description: "Specialistka na SEO, AI asistenty a automatizaci marketingu od roku 2015.",
+      description:
+        "V online marketingu působí od roku 2015. Věnuje se SEO, obsahu a tvorbě webů.",
       sameAs: [
         "https://www.linkedin.com/in/pavla-zimmermannov%C3%A1-750112ab/",
       ],
@@ -107,7 +119,8 @@ const jsonLd = {
       url: "https://www.linklady.cz",
       logo: "https://www.linklady.cz/logo.png",
       image: "https://www.linklady.cz/profile.jpg",
-      description: "Online marketing služby – SEO, AI asistenti a automatizace.",
+      description:
+        "SEO služby, tvorba webových stránek a navazující digitální řešení.",
       email: "zimmermannovap@gmail.com",
       founder: { "@id": "https://www.linklady.cz/#person" },
       taxID: "04352041",
@@ -124,10 +137,28 @@ const jsonLd = {
         "@type": "OfferCatalog",
         name: "Online marketing služby",
         itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO optimalizace" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI asistenti" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Automatizace marketingu" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tvorba webových stránek" } },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "SEO optimalizace" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "AI asistenti" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Automatizace marketingu",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Tvorba webových stránek",
+            },
+          },
         ],
       },
       sameAs: [
@@ -135,24 +166,25 @@ const jsonLd = {
       ],
     },
   ],
-}
+};
 
 export default async function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  const nonce = (await headers()).get('x-nonce') ?? ''
+  const nonce = (await headers()).get("x-nonce") ?? "";
 
   return (
-    <html lang="cs">
-        <head>
-          <script
-            nonce={nonce}
-            dangerouslySetInnerHTML={{
-              __html: `
+    <html lang="cs" className={manrope.variable}>
+      <head>
+        <script
+          nonce={nonce}
+          dangerouslySetInnerHTML={{
+            __html: `
                 (function () {
                   function loadAnalytics() {
+                    if (!['www.linklady.cz', 'linklady.cz'].includes(window.location.hostname)) return;
                     window.dataLayer = window.dataLayer || [];
                     window.gtag = function () { window.dataLayer.push(arguments); };
                     window.gtag('js', new Date());
@@ -181,11 +213,11 @@ export default async function RootLayout({
                   }
                 })();
               `,
-            }}
-          />
-          <JsonLd data={jsonLd} />
-        </head>
-        <body className="antialiased">{children}</body>
+          }}
+        />
+        <JsonLd data={jsonLd} />
+      </head>
+      <body className="antialiased">{children}</body>
     </html>
-  )
+  );
 }

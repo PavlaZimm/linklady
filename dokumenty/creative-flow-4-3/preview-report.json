@@ -1,0 +1,35 @@
+{
+  "url": "https://linklady-ahco2bzis-pavlazimms-projects.vercel.app",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/projekty",
+      "status": 200
+    },
+    {
+      "route": "/projekty/flyqueens",
+      "status": 200
+    },
+    {
+      "route": "/projekty/attersee",
+      "status": 200
+    },
+    {
+      "route": "/sluzby/seo",
+      "status": 200
+    },
+    {
+      "route": "/kontakt",
+      "status": 200
+    },
+    {
+      "route": "/blog",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "contactValidation": 400
+}

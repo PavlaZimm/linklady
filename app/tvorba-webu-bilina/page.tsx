@@ -76,76 +76,35 @@ export default function TvorbaWebuBilinaPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
+      <main id="main-content">
 
       {/* JSON-LD */}
       <JsonLd data={jsonLd} />
 
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full yellow-gradient opacity-80 rounded-l-full transform translate-x-1/4"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl">
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm opacity-80">
-              <ol className="flex items-center space-x-2">
-                <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
-                <li><span>/</span></li>
-                <li className="text-yellow-400">Tvorba webových stránek Bílina</li>
-              </ol>
-            </nav>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+      <header className="cf-page-hero">
+        <div className="cf-wrap">
+          <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
+          <h1>
               Tvorba webových stránek<br />
-              <span className="text-yellow-400">Bílina</span> a okolí
+              <span className="text-[#A4EDD6]">Bílina</span> a okolí
             </h1>
-            <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
+          <p>
               Weby, které prodávají – ne jen vypadají. S SEO od prvního řádku kódu a transparentní cenou bez překvapení.
             </p>
-            <p className="text-lg mb-10 opacity-80 leading-relaxed">
-              Tvorba webových stránek na míru pro firmy a podnikatele v Bílině, Teplicích, Mostě a celém Ústeckém kraji. Rychlé načítání, responzivní design, moderní technologie (Next.js, React) a <strong>SEO v ceně</strong> – žádné skryté náklady.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6">
-              <Link
-                href="#poptavka"
-                className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
-              >
+          <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link><Link href="#poptavka" className="cf-button">
                 Chci konzultaci zdarma
-              </Link>
-              <a
-                href="mailto:zimmermannovap@gmail.com"
-                className="inline-block border-2 border-white/80 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-900 transition-all duration-300 backdrop-blur-sm text-center"
-              >
-                zimmermannovap@gmail.com
-              </a>
-            </div>
-            {/* Trust signály */}
-            <div className="flex flex-wrap gap-6 mt-10 text-sm opacity-80">
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>10+ let zkušeností</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Konzultace zdarma</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>SEO v ceně</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Z Bíliny</span>
-              </div>
-            </div>
-          </div>
+              </Link></div>
         </div>
-      </section>
+      </header>
 
       {/* Obsah stránky – kotvy */}
       <section className="py-12 bg-gradient-to-br from-gray-50 to-purple-50/30">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="bg-white rounded-2xl shadow-lg border border-purple-100 p-8">
+          <nav className="bg-white rounded-2xl shadow-lg border border-blue-100 p-8">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center">
-                <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                 </svg>
               </div>
@@ -153,32 +112,32 @@ export default function TvorbaWebuBilinaPage() {
             </div>
             <ol className="space-y-1">
               <li>
-                <a href="#co-ziskate" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">1</span>
+                <a href="#co-ziskate" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-primary transition-all duration-200 group">
+                  <span className="flex-shrink-0 w-7 h-7 bg-blue-100 group-hover:bg-blue-200 rounded-lg flex items-center justify-center text-sm font-bold text-primary transition-colors">1</span>
                   <span className="font-medium">Co získáte s novým webem</span>
                 </a>
               </li>
               <li>
-                <a href="#ukazky-praci" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">2</span>
+                <a href="#ukazky-praci" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-primary transition-all duration-200 group">
+                  <span className="flex-shrink-0 w-7 h-7 bg-blue-100 group-hover:bg-blue-200 rounded-lg flex items-center justify-center text-sm font-bold text-primary transition-colors">2</span>
                   <span className="font-medium">Ukázky mé práce</span>
                 </a>
               </li>
               <li>
-                <a href="#jak-probiha-spoluprace" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">3</span>
+                <a href="#jak-probiha-spoluprace" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-primary transition-all duration-200 group">
+                  <span className="flex-shrink-0 w-7 h-7 bg-blue-100 group-hover:bg-blue-200 rounded-lg flex items-center justify-center text-sm font-bold text-primary transition-colors">3</span>
                   <span className="font-medium">Jak probíhá spolupráce</span>
                 </a>
               </li>
               <li>
-                <a href="#pro-koho" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">4</span>
+                <a href="#pro-koho" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-primary transition-all duration-200 group">
+                  <span className="flex-shrink-0 w-7 h-7 bg-blue-100 group-hover:bg-blue-200 rounded-lg flex items-center justify-center text-sm font-bold text-primary transition-colors">4</span>
                   <span className="font-medium">Pro koho tvořím weby</span>
                 </a>
               </li>
               <li>
-                <a href="#faq" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 group">
-                  <span className="flex-shrink-0 w-7 h-7 bg-purple-100 group-hover:bg-purple-200 rounded-lg flex items-center justify-center text-sm font-bold text-purple-600 transition-colors">5</span>
+                <a href="#faq" className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-primary transition-all duration-200 group">
+                  <span className="flex-shrink-0 w-7 h-7 bg-blue-100 group-hover:bg-blue-200 rounded-lg flex items-center justify-center text-sm font-bold text-primary transition-colors">5</span>
                   <span className="font-medium">Často kladené otázky</span>
                 </a>
               </li>
@@ -192,7 +151,7 @@ export default function TvorbaWebuBilinaPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Co získáte s <span className="text-purple-600">novým webem</span>
+              Co získáte s <span className="text-primary">novým webem</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Každý web stavím tak, aby vypadal skvěle, načítal se rychle a přiváděl vám zákazníky z Googlu i Seznamu.
@@ -201,8 +160,8 @@ export default function TvorbaWebuBilinaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Responzivní design */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M4 6h18V4H2v13H0v3h14v-3H4V6zm20 2h-8v12h8V8zm-2 9h-4v-7h4v7z"/>
                 </svg>
               </div>
@@ -214,8 +173,8 @@ export default function TvorbaWebuBilinaPage() {
 
             {/* SEO optimalizace */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-[#ffe5db] rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-[#2946cf]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                 </svg>
               </div>
@@ -253,8 +212,8 @@ export default function TvorbaWebuBilinaPage() {
 
             {/* Správa obsahu */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
                 </svg>
               </div>
@@ -266,8 +225,8 @@ export default function TvorbaWebuBilinaPage() {
 
             {/* Osobní přístup */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-[#ffe5db] rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-[#2946cf]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
               </div>
@@ -285,7 +244,7 @@ export default function TvorbaWebuBilinaPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Ukázky <span className="text-purple-600">mé práce</span>
+              Ukázky <span className="text-primary">mé práce</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Podívejte se na weby, které jsem vytvořila pro lokální firmy a podnikatele.
@@ -303,15 +262,15 @@ export default function TvorbaWebuBilinaPage() {
                   Web pro lokální autoškolu. Přehledná prezentace služeb, ceník, online přihláška a optimalizace pro lokální vyhledávání. Web přivádí nové žáky z Googlu.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-purple-100 text-purple-700 text-sm px-3 py-1 rounded-full">Webdesign</span>
-                  <span className="bg-purple-100 text-purple-700 text-sm px-3 py-1 rounded-full">SEO</span>
-                  <span className="bg-purple-100 text-purple-700 text-sm px-3 py-1 rounded-full">Lokální byznys</span>
+                  <span className="bg-blue-100 text-primary text-sm px-3 py-1 rounded-full">Webdesign</span>
+                  <span className="bg-blue-100 text-primary text-sm px-3 py-1 rounded-full">SEO</span>
+                  <span className="bg-blue-100 text-primary text-sm px-3 py-1 rounded-full">Lokální byznys</span>
                 </div>
                 <a
                   href="https://autoskolajana.cz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800 transition-colors"
+                  className="inline-flex items-center text-primary font-semibold hover:text-primary transition-colors"
                 >
                   Navštívit web
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -324,7 +283,7 @@ export default function TvorbaWebuBilinaPage() {
             {/* bilinsko.cz */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 p-8 flex items-center justify-center h-48">
-                <span className="text-3xl font-bold text-purple-900">bilinsko.cz</span>
+                <span className="text-3xl font-bold text-primary">bilinsko.cz</span>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Bílinsko.cz</h3>
@@ -332,15 +291,15 @@ export default function TvorbaWebuBilinaPage() {
                   Informační portál pro region Bílina a okolí. Přehled událostí, aktualit a zajímavostí z Bílinska. Web slouží místní komunitě a podporuje lokální dění.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-yellow-100 text-yellow-700 text-sm px-3 py-1 rounded-full">Portál</span>
-                  <span className="bg-yellow-100 text-yellow-700 text-sm px-3 py-1 rounded-full">Bílina</span>
-                  <span className="bg-yellow-100 text-yellow-700 text-sm px-3 py-1 rounded-full">Lokální SEO</span>
+                  <span className="bg-[#ffe5db] text-[#151D32] text-sm px-3 py-1 rounded-full">Portál</span>
+                  <span className="bg-[#ffe5db] text-[#151D32] text-sm px-3 py-1 rounded-full">Bílina</span>
+                  <span className="bg-[#ffe5db] text-[#151D32] text-sm px-3 py-1 rounded-full">Lokální SEO</span>
                 </div>
                 <a
                   href="https://bilinsko.cz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800 transition-colors"
+                  className="inline-flex items-center text-primary font-semibold hover:text-primary transition-colors"
                 >
                   Navštívit web
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -365,13 +324,13 @@ export default function TvorbaWebuBilinaPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/kontakt"
-              className="inline-block bg-yellow-400 text-purple-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl text-center"
+              className="inline-block bg-[#FF795E] text-[#151D32] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#ff927c] transition-all duration-300 transform hover:scale-105 shadow-xl text-center"
             >
               Domluvit schůzku
             </Link>
             <a
               href="mailto:zimmermannovap@gmail.com"
-              className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-900 transition-all duration-300 text-center"
+              className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300 text-center"
             >
               Napsat e-mail
             </a>
@@ -384,7 +343,7 @@ export default function TvorbaWebuBilinaPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Jak probíhá <span className="text-purple-600">spolupráce</span>
+              Jak probíhá <span className="text-primary">spolupráce</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Celý proces je jednoduchý a transparentní. Vždy víte, co se děje a co bude následovat.
@@ -394,12 +353,12 @@ export default function TvorbaWebuBilinaPage() {
             {/* Krok 1 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
+                <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Úvodní schůzka – online nebo osobně</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Domluvíme se na schůzce – můžeme se sejít osobně v Bílině nebo okolí, nebo si zavoláme přes Google Meet / Zoom. Probereme vaše potřeby, představy, cíle a rozpočet. Schůzka je <strong className="text-purple-600">zdarma a nezávazná</strong>.
+                  Domluvíme se na schůzce – můžeme se sejít osobně v Bílině nebo okolí, nebo si zavoláme přes Google Meet / Zoom. Probereme vaše potřeby, představy, cíle a rozpočet. Schůzka je <strong className="text-primary">zdarma a nezávazná</strong>.
                 </p>
               </div>
             </div>
@@ -407,7 +366,7 @@ export default function TvorbaWebuBilinaPage() {
             {/* Krok 2 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
+                <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Cenová nabídka a plán</h3>
@@ -420,7 +379,7 @@ export default function TvorbaWebuBilinaPage() {
             {/* Krok 3 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
+                <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Grafický návrh</h3>
@@ -433,7 +392,7 @@ export default function TvorbaWebuBilinaPage() {
             {/* Krok 4 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold">4</div>
+                <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">4</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Vývoj a kódování</h3>
@@ -446,7 +405,7 @@ export default function TvorbaWebuBilinaPage() {
             {/* Krok 5 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold">5</div>
+                <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">5</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Testování a zpětná vazba</h3>
@@ -459,7 +418,7 @@ export default function TvorbaWebuBilinaPage() {
             {/* Krok 6 */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-yellow-400 text-purple-900 rounded-full flex items-center justify-center text-xl font-bold">6</div>
+                <div className="w-14 h-14 bg-[#FF795E] text-[#151D32] rounded-full flex items-center justify-center text-xl font-bold">6</div>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Spuštění a podpora</h3>
@@ -477,7 +436,7 @@ export default function TvorbaWebuBilinaPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Pro koho <span className="text-purple-600">tvořím weby</span>
+              Pro koho <span className="text-primary">tvořím weby</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -576,28 +535,28 @@ export default function TvorbaWebuBilinaPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="/kontakt"
-                className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
+                className="inline-block bg-[#FF795E] text-[#151D32] px-10 py-5 rounded-full font-bold text-lg hover:bg-[#ff927c] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
               >
                 Chci konzultaci zdarma
               </Link>
               <a
                 href="mailto:zimmermannovap@gmail.com"
-                className="inline-block border-2 border-white/80 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-900 transition-all duration-300 text-center"
+                className="inline-block border-2 border-white/80 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300 text-center"
               >
                 zimmermannovap@gmail.com
               </a>
             </div>
             <div className="flex flex-wrap gap-6 justify-center mt-10 text-sm opacity-80">
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <svg className="w-5 h-5 text-[#A4EDD6]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                 <span>Bez závazků</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <svg className="w-5 h-5 text-[#A4EDD6]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                 <span>Odpověď do 24h</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <svg className="w-5 h-5 text-[#A4EDD6]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                 <span>Osobní schůzka v Bílině</span>
               </div>
             </div>
@@ -618,6 +577,7 @@ export default function TvorbaWebuBilinaPage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
     </div>
   )

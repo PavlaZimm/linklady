@@ -1,0 +1,49 @@
+{
+  "base": "http://127.0.0.1:3103",
+  "routes": [
+    {
+      "path": "/",
+      "canonical": "https://www.linklady.cz",
+      "title": "SEO a tvorba webových stránek pro firmy",
+      "status": 200
+    },
+    {
+      "path": "/sluzby",
+      "canonical": "https://www.linklady.cz/sluzby",
+      "title": "SEO služby a tvorba webových stránek | Linklady.cz",
+      "status": 200
+    },
+    {
+      "path": "/sluzby/seo",
+      "canonical": "https://www.linklady.cz/sluzby/seo",
+      "title": "SEO služby a konzultace pro firmy | Linklady.cz",
+      "status": 200
+    },
+    {
+      "path": "/sluzby/tvorba-webu",
+      "canonical": "https://www.linklady.cz/sluzby/tvorba-webu",
+      "title": "Tvorba webových stránek na míru | Linklady.cz",
+      "status": 200
+    },
+    {
+      "path": "/blog",
+      "canonical": "https://www.linklady.cz/blog",
+      "title": "Blog: SEO tipy, AI nástroje a marketing | Linklady.cz",
+      "status": 200
+    },
+    {
+      "path": "/kontakt",
+      "canonical": "https://www.linklady.cz/kontakt",
+      "title": "Kontakt: nezávazná konzultace zdarma | Linklady.cz",
+      "status": 200
+    }
+  ],
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "errors": [],
+  "form": "Mocked success, correct service attribution; no lead or email sent"
+}

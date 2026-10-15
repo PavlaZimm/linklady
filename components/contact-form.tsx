@@ -136,7 +136,7 @@ function Formular({
 
   if (stav === 'hotovo') {
     return (
-      <div className="bg-purple-50 rounded-lg p-8 md:p-12 text-center">
+      <div className="bg-blue-50 rounded-lg p-8 md:p-12 text-center">
         <h2 ref={successRef} tabIndex={-1} className="text-3xl font-bold text-primary mb-4">Poptávka je přijatá, děkuji</h2>
         <p className="text-gray-700 text-lg">
           Ozvu se do 24 hodin na uvedený e-mail.
@@ -146,7 +146,7 @@ function Formular({
   }
 
   return (
-    <div className="bg-purple-50 rounded-lg p-6 sm:p-8 md:p-12">
+    <div className="bg-blue-50 rounded-lg p-6 sm:p-8 md:p-12">
       <h2 className="text-3xl font-bold text-primary mb-3">{title}</h2>
       <p className="text-gray-600 mb-8 text-lg">{subtitle}</p>
 
@@ -156,7 +156,7 @@ function Formular({
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
             <label htmlFor="cf-name" className="block text-sm font-medium text-gray-800 mb-1.5">
-              Jméno <span className="text-purple-700">*</span>
+              Jméno <span className="text-primary">*</span>
             </label>
             <input
               id="cf-name"
@@ -170,7 +170,7 @@ function Formular({
           </div>
           <div>
             <label htmlFor="cf-email" className="block text-sm font-medium text-gray-800 mb-1.5">
-              E-mail <span className="text-purple-700">*</span>
+              E-mail <span className="text-primary">*</span>
             </label>
             <input
               id="cf-email"
@@ -222,7 +222,7 @@ function Formular({
 
         <div>
           <label htmlFor="cf-message" className="block text-sm font-medium text-gray-800 mb-1.5">
-            Co řešíte <span className="text-purple-700">*</span>
+            Co řešíte <span className="text-primary">*</span>
           </label>
           <textarea
             id="cf-message"
@@ -260,7 +260,7 @@ function Formular({
             <a
               href={mailto}
               onClick={() => trackEvent('contact_email_click', { form_location: service ?? 'kontakt' })}
-              className="inline-flex mt-3 items-center justify-center bg-yellow-400 text-purple-900 px-5 py-2.5 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
+              className="inline-flex mt-3 items-center justify-center bg-[#FF795E] text-[#151D32] px-5 py-2.5 rounded-full font-semibold hover:bg-[#ff927c] transition-colors"
             >
               Odeslat e-mailem
             </a>
@@ -270,7 +270,7 @@ function Formular({
         <button
           type="submit"
           disabled={stav === 'posilam'}
-          className="inline-flex items-center justify-center bg-yellow-400 text-purple-900 px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors text-lg disabled:opacity-60 disabled:cursor-not-allowed w-full sm:w-auto"
+          className="inline-flex items-center justify-center bg-[#FF795E] text-[#151D32] px-8 py-4 rounded-full font-semibold hover:bg-[#ff927c] transition-colors text-lg disabled:opacity-60 disabled:cursor-not-allowed w-full sm:w-auto"
         >
           {stav === 'posilam' ? 'Odesílám…' : 'Odeslat nezávaznou poptávku'}
         </button>

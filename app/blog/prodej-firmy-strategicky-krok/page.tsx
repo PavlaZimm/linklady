@@ -98,40 +98,21 @@ export default function ProdejFirmyArticle() {
     <div className="min-h-screen bg-white">
       <JsonLd data={jsonLd} />
       <Navigation />
+      <main id="main-content">
 
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center relative">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-300 rounded-full opacity-30"></div>
-            <div className="absolute top-1/2 -left-8 w-16 h-16 bg-yellow-300 rounded-full opacity-25"></div>
-            <div className="absolute -top-8 right-4 w-20 h-20 bg-purple-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
-
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm opacity-80 relative z-10">
-              <ol className="flex items-center justify-center space-x-2">
-                <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
-                <li><span className="mx-2">/</span></li>
-                <li><Link href="/blog" className="hover:text-yellow-400">Blog</Link></li>
-                <li><span className="mx-2">/</span></li>
-                <li className="text-yellow-400">Prodej firmy</li>
-              </ol>
-            </nav>
-
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 max-w-4xl mx-auto leading-tight">
+      <header className="cf-page-hero">
+        <div className="cf-wrap">
+          <p className="cf-eyebrow">LINKLADY / BLOG</p>
+          <h1>
               Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu
             </h1>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10">
+          <p>
               M&A proces krok za krokem – od ocenění přes výběr investora až po bezpečné uzavření transakce
             </p>
-            <div className="mt-6 text-sm opacity-70 relative z-10">
-              <time dateTime="2026-02-27">27. února 2026</time>
-              <span className="mx-2">|</span>
-              <span>Pavla Zimmermannová</span>
-            </div>
-          </div>
+          <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link><Link href="/blog" className="cf-button">Blog</Link></div>
         </div>
-      </section>
+      </header>
 
       {/* Article Content */}
       <article className="py-16">
@@ -188,7 +169,7 @@ export default function ProdejFirmyArticle() {
           </p>
 
           <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 1
               </div>
@@ -198,7 +179,7 @@ export default function ProdejFirmyArticle() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 2
               </div>
@@ -208,7 +189,7 @@ export default function ProdejFirmyArticle() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 3
               </div>
@@ -218,7 +199,7 @@ export default function ProdejFirmyArticle() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 4
               </div>
@@ -251,7 +232,7 @@ export default function ProdejFirmyArticle() {
           </p>
 
           {/* CTA Box */}
-          <div className="bg-purple-50 border-l-4 border-primary rounded-lg p-8 mt-12">
+          <div className="bg-blue-50 border-l-4 border-primary rounded-lg p-8 mt-12">
             <h3 className="text-xl font-bold text-gray-900 mb-3">
               Potřebujete pomoci s online prezentací vaší firmy?
             </h3>
@@ -260,7 +241,7 @@ export default function ProdejFirmyArticle() {
             </p>
             <Link
               href="/kontakt"
-              className="inline-block bg-yellow-400 text-purple-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
+              className="inline-block bg-[#FF795E] text-[#151D32] px-8 py-3 rounded-full font-semibold hover:bg-[#ff927c] transition-colors"
             >
               Domluvit konzultaci zdarma
             </Link>
@@ -268,6 +249,7 @@ export default function ProdejFirmyArticle() {
         </div>
       </article>
 
+      </main>
       <SiteFooter />
     </div>
   )

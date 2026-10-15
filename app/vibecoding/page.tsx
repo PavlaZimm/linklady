@@ -68,75 +68,34 @@ export default function VibecodingPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
+      <main id="main-content">
 
       {/* JSON-LD */}
       <JsonLd data={jsonLd} />
 
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full yellow-gradient opacity-80 rounded-l-full transform translate-x-1/4"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl">
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm opacity-80">
-              <ol className="flex items-center space-x-2">
-                <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
-                <li><span>/</span></li>
-                <li className="text-yellow-400">Vibecoding</li>
-              </ol>
-            </nav>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+      <header className="cf-page-hero">
+        <div className="cf-wrap">
+          <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
+          <h1>
               Vibecoding<br />
-              <span className="text-yellow-400">Programování pomocí AI</span>
+              <span className="text-[#A4EDD6]">Programování pomocí AI</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-6 opacity-90 leading-relaxed">
+          <p>
               Nejrychlejší způsob, jak dnes vytvořit funkční web nebo aplikaci. Místo psaní kódu říkáte AI, co chcete – a ona to naprogramuje za vás.
             </p>
-            <p className="text-lg mb-10 opacity-80 leading-relaxed">
-              Praktické školení vibecodingu pro firmy i jednotlivce. Od nuly k prvnímu funkčnímu projektu s Claude Code, Cursor nebo Bolt – bez nutnosti umět programovat.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6">
-              <Link
-                href="#poptavka"
-                className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
-              >
+          <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link><Link href="#poptavka" className="cf-button">
                 Chci školení vibecodingu
-              </Link>
-              <a
-                href="#co-je-vibecoding"
-                className="inline-block border-2 border-white/80 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-900 transition-all duration-300 backdrop-blur-sm text-center"
-              >
-                Co je vibecoding?
-              </a>
-            </div>
-            {/* Trust signály */}
-            <div className="flex flex-wrap gap-6 mt-10 text-sm opacity-80">
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Praktické školení</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Bez předchozích znalostí</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Online i osobně</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Pro firmy i jednotlivce</span>
-              </div>
-            </div>
-          </div>
+              </Link></div>
         </div>
-      </section>
+      </header>
 
       {/* Co je vibecoding */}
       <section id="co-je-vibecoding" className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Co je <span className="text-purple-600">vibecoding</span>?
+              Co je <span className="text-primary">vibecoding</span>?
             </h2>
           </div>
           <div className="prose prose-lg max-w-none">
@@ -161,7 +120,7 @@ export default function VibecodingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Můj vibecoding nástroj: <span className="text-purple-600">Claude Code</span>
+              Můj vibecoding nástroj: <span className="text-primary">Claude Code</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Existují desítky vibecoding nástrojů. Já používám Claude Code od Anthropic – a mám k tomu dobrý důvod.
@@ -173,12 +132,12 @@ export default function VibecodingPage() {
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-14 h-14 bg-yellow-400 rounded-2xl flex items-center justify-center">
-                    <svg className="w-7 h-7 text-purple-900" fill="currentColor" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                  <div className="w-14 h-14 bg-[#FF795E] rounded-2xl flex items-center justify-center">
+                    <svg className="w-7 h-7 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
                   </div>
                   <div>
                     <h3 className="text-3xl font-bold">Claude Code</h3>
-                    <p className="text-yellow-400 font-semibold">od Anthropic – můj hlavní nástroj</p>
+                    <p className="text-[#A4EDD6] font-semibold">od Anthropic – můj hlavní nástroj</p>
                   </div>
                 </div>
                 <p className="text-lg opacity-90 leading-relaxed mb-6">
@@ -191,19 +150,19 @@ export default function VibecodingPage() {
               <div>
                 <div className="space-y-4">
                   <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
-                    <h4 className="font-bold text-yellow-400 mb-1">Rozumí celému projektu</h4>
+                    <h4 className="font-bold text-[#A4EDD6] mb-1">Rozumí celému projektu</h4>
                     <p className="text-sm opacity-80">Vidí všechny soubory, chápe architekturu a dělá změny konzistentně napříč celou aplikací.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
-                    <h4 className="font-bold text-yellow-400 mb-1">Produkční kvalita</h4>
+                    <h4 className="font-bold text-[#A4EDD6] mb-1">Produkční kvalita</h4>
                     <p className="text-sm opacity-80">Generuje čistý, typově bezpečný kód s SEO, strukturovanými daty a best practices.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
-                    <h4 className="font-bold text-yellow-400 mb-1">Plná kontrola</h4>
+                    <h4 className="font-bold text-[#A4EDD6] mb-1">Plná kontrola</h4>
                     <p className="text-sm opacity-80">Kód je váš. Žádný vendor lock-in, žádné limity. Nasadíte kamkoliv – Vercel, vlastní server, cokoliv.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
-                    <h4 className="font-bold text-yellow-400 mb-1">Nejchytřejší AI model</h4>
+                    <h4 className="font-bold text-[#A4EDD6] mb-1">Nejchytřejší AI model</h4>
                     <p className="text-sm opacity-80">Claude Opus 4 je nejschopnější AI model pro programování. Řeší i problémy, kde jiné nástroje selhávají.</p>
                   </div>
                 </div>
@@ -214,7 +173,7 @@ export default function VibecodingPage() {
           {/* Srovnání nástrojů */}
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Přehled vibecoding <span className="text-purple-600">nástrojů</span>
+              Přehled vibecoding <span className="text-primary">nástrojů</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Každý nástroj má své místo. Tady je přehled těch nejlepších – seřazený podle toho, pro koho se hodí.
@@ -231,10 +190,10 @@ export default function VibecodingPage() {
               {/* Bolt.new */}
               <div className="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-2xl border border-yellow-100 hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center">
-                    <svg className="w-6 h-6 text-purple-900" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                  <div className="w-12 h-12 bg-[#FF795E] rounded-xl flex items-center justify-center">
+                    <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900"><a href="https://bolt.new/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Bolt.new</a></h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://bolt.new/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Bolt.new</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   Webový nástroj pro rychlou tvorbu aplikací. Popíšete, co chcete, a Bolt vytvoří funkční web přímo v prohlížeči. Ideální pro prototypy, landing pages a MVP.
@@ -258,7 +217,7 @@ export default function VibecodingPage() {
                   <div className="w-12 h-12 bg-pink-500 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900"><a href="https://lovable.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Lovable</a></h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://lovable.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Lovable</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   AI platforma zaměřená na tvorbu krásných webových aplikací. Skvělý design, Supabase integrace pro databáze a rychlé prototypování s vizuálním výstupem.
@@ -282,7 +241,7 @@ export default function VibecodingPage() {
                   <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900"><a href="https://replit.com/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Replit Agent</a></h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://replit.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Replit Agent</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   Celé vývojové prostředí v prohlížeči. Popíšete, co chcete, a Agent vytvoří, nasadí a spustí aplikaci. Vše online, včetně hostingu.
@@ -305,20 +264,20 @@ export default function VibecodingPage() {
           {/* Pro pokročilé */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-              <span className="bg-purple-100 text-purple-700 text-sm px-3 py-1 rounded-full">Pro pokročilé</span>
+              <span className="bg-blue-100 text-primary text-sm px-3 py-1 rounded-full">Pro pokročilé</span>
               Chcete plnou kontrolu? Profesionální nástroje pro seriózní projekty
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Claude Code */}
-              <div className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl border-2 border-purple-300 hover:shadow-lg transition-shadow duration-300 relative">
+              <div className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl border-2 border-blue-300 hover:shadow-lg transition-shadow duration-300 relative">
                 <div className="absolute -top-3 right-4">
-                  <span className="bg-yellow-400 text-purple-900 text-xs font-bold px-3 py-1 rounded-full">Doporučuji</span>
+                  <span className="bg-[#FF795E] text-[#151D32] text-xs font-bold px-3 py-1 rounded-full">Doporučuji</span>
                 </div>
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900"><a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Claude Code</a></h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Claude Code</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   Profesionální CLI nástroj od Anthropic. Pracuje v terminálu, rozumí celému projektu a generuje produkční kód. Můj hlavní nástroj – tímhle jsem vytvořila linklady.cz.
@@ -342,7 +301,7 @@ export default function VibecodingPage() {
                   <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900"><a href="https://cursor.com/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Cursor</a></h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://cursor.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Cursor</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   AI-powered editor kódu postavený na VS Code. Autocomplete, inline chat, editace celých souborů. Skvělý pro vývojáře, kteří chtějí AI přímo v editoru.
@@ -366,7 +325,7 @@ export default function VibecodingPage() {
                   <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.38 8.57l-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44zm-9.79 6.84a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83z"/></svg>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900"><a href="https://windsurf.com/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">Windsurf</a></h4>
+                  <h4 className="text-lg font-bold text-gray-900"><a href="https://windsurf.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Windsurf</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                   AI editor od Codeium. Flows funkce umožňuje AI autonomně provádět rozsáhlé změny napříč projektem. Dobrá alternativa ke Cursoru.
@@ -392,9 +351,9 @@ export default function VibecodingPage() {
       <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="bg-purple-100 text-purple-700 text-sm font-bold px-4 py-2 rounded-full inline-block mb-6">Proč profesionální nástroje</span>
+            <span className="bg-blue-100 text-primary text-sm font-bold px-4 py-2 rounded-full inline-block mb-6">Proč profesionální nástroje</span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              8 důvodů, proč zvolit <span className="text-purple-600">profi nástroje</span>
+              8 důvodů, proč zvolit <span className="text-primary">profi nástroje</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Bolt.new a Lovable jsou skvělé na start. Ale pokud to myslíte vážně, profesionální nástroje jako Claude Code vám dají něco úplně jiného.
@@ -404,8 +363,8 @@ export default function VibecodingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* 1. Plná kontrola */}
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
-              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h4v4H7V7zm6 0h4v2h-4V7zm0 4h4v2h-4v-2zm-6 4h10v2H7v-2z"/></svg>
+              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h4v4H7V7zm6 0h4v2h-4V7zm0 4h4v2h-4v-2zm-6 4h10v2H7v-2z"/></svg>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Vaše soubory, vaše pravidla</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -415,8 +374,8 @@ export default function VibecodingPage() {
 
             {/* 2. Jakákoliv komplexita */}
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
-              <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <div className="w-12 h-12 bg-[#ffe5db] rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-[#2946cf]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Bez limitu složitosti</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -448,8 +407,8 @@ export default function VibecodingPage() {
 
             {/* 5. Opus 4 bez omezení */}
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
-              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Nejlepší model bez omezení</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -459,8 +418,8 @@ export default function VibecodingPage() {
 
             {/* 6. Práce s kontextem */}
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transition-transform">
-              <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+              <div className="w-12 h-12 bg-[#ffe5db] rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-[#2946cf]" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Chytré řízení kontextu</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -504,7 +463,7 @@ export default function VibecodingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Co se dá vytvořit <span className="text-purple-600">vibecodingem</span>
+              Co se dá vytvořit <span className="text-primary">vibecodingem</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Vibecoding není jen hračka. Lidi s ním tvoří reálné produkty, které vydělávají peníze.
@@ -512,8 +471,8 @@ export default function VibecodingPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <div className="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
                 </svg>
               </div>
@@ -522,18 +481,18 @@ export default function VibecodingPage() {
                 Landing pages, firemní weby, portfolia, blogy. Kompletní weby s responzivním designem a SEO – vytvořené za hodiny místo týdnů.
               </p>
               <div className="flex flex-col gap-2 mt-4">
-                <a href="https://kastrup.cz/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-800 font-medium text-sm transition-colors">
+                <a href="https://kastrup.cz/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:text-primary font-medium text-sm transition-colors">
                   Ukázka: Magazín kastrup.cz →
                 </a>
-                <a href="https://zdemardoprava-cz-kamionov-doprava.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-800 font-medium text-sm transition-colors">
+                <a href="https://zdemardoprava-cz-kamionov-doprava.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:text-primary font-medium text-sm transition-colors">
                   Ukázka: Poptávkový formulář pro dopravu →
                 </a>
               </div>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <div className="w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-14 h-14 bg-[#ffe5db] rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-[#2946cf]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
                 </svg>
               </div>
@@ -541,7 +500,7 @@ export default function VibecodingPage() {
               <p className="text-gray-600 leading-relaxed">
                 SaaS produkty, interní firemní nástroje, dashboardy, CRM systémy. Funkční aplikace s databází a uživatelským rozhraním.
               </p>
-              <a href="https://popelnice.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-purple-600 hover:text-purple-800 font-medium text-sm transition-colors">
+              <a href="https://popelnice.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-primary hover:text-primary font-medium text-sm transition-colors">
                 Ukázka: Vzdělávací aplikace třídění odpadu →
               </a>
             </div>
@@ -571,8 +530,8 @@ export default function VibecodingPage() {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <div className="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/>
                 </svg>
               </div>
@@ -583,8 +542,8 @@ export default function VibecodingPage() {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <div className="w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-14 h-14 bg-[#ffe5db] rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-[#2946cf]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
                 </svg>
               </div>
@@ -592,7 +551,7 @@ export default function VibecodingPage() {
               <p className="text-gray-600 leading-relaxed">
                 Jednoduché webové hry, interaktivní vizualizace, generativní umění. Vibecoding je skvělý na kreativní experimentování.
               </p>
-              <a href="https://guineapig-peach.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-purple-600 hover:text-purple-800 font-medium text-sm transition-colors">
+              <a href="https://guineapig-peach.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-primary hover:text-primary font-medium text-sm transition-colors">
                 Ukázka: Hra vytvořená vibecodingem →
               </a>
             </div>
@@ -605,7 +564,7 @@ export default function VibecodingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Školení <span className="text-purple-600">vibecodingu</span>
+              Školení <span className="text-primary">vibecodingu</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Naučte se vytvářet weby a aplikace pomocí AI. Praktické školení s reálnými projekty – ne jen teorie.
@@ -614,9 +573,9 @@ export default function VibecodingPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Pro jednotlivce */}
-            <div className="bg-gradient-to-br from-purple-50 to-white p-10 rounded-2xl border-2 border-purple-200 relative">
+            <div className="bg-gradient-to-br from-purple-50 to-white p-10 rounded-2xl border-2 border-blue-200 relative">
               <div className="absolute -top-4 left-8">
-                <span className="bg-purple-600 text-white text-sm font-bold px-4 py-1 rounded-full">Pro jednotlivce</span>
+                <span className="bg-primary text-white text-sm font-bold px-4 py-1 rounded-full">Pro jednotlivce</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-4">Individuální školení</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -624,25 +583,25 @@ export default function VibecodingPage() {
               </p>
               <ul className="space-y-3 text-gray-600 mb-8">
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Výběr správného nástroje pro váš projekt
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Jak správně promptovat AI pro nejlepší výsledky
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Praktická tvorba reálného projektu
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Nasazení a publikování výsledku
                 </li>
               </ul>
               <Link
                 href="/kontakt"
-                className="inline-block bg-purple-600 text-white px-8 py-4 rounded-full font-bold hover:bg-purple-700 transition-all duration-300 transform hover:scale-105"
+                className="inline-block bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-[#2945d3] transition-all duration-300 transform hover:scale-105"
               >
                 Domluvit individuální školení
               </Link>
@@ -651,7 +610,7 @@ export default function VibecodingPage() {
             {/* Pro firmy */}
             <div className="bg-gradient-to-br from-yellow-50 to-white p-10 rounded-2xl border-2 border-yellow-300 relative">
               <div className="absolute -top-4 left-8">
-                <span className="bg-yellow-400 text-purple-900 text-sm font-bold px-4 py-1 rounded-full">Pro firmy</span>
+                <span className="bg-[#FF795E] text-[#151D32] text-sm font-bold px-4 py-1 rounded-full">Pro firmy</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-4">Firemní školení</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -659,25 +618,25 @@ export default function VibecodingPage() {
               </p>
               <ul className="space-y-3 text-gray-600 mb-8">
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-[#2946cf] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Přehled vibecoding nástrojů a jejich využití
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-[#2946cf] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Hands-on workshop s reálnými projekty
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-[#2946cf] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Identifikace procesů vhodných pro vibecoding
                 </li>
                 <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <svg className="w-5 h-5 text-[#2946cf] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   Follow-up podpora po školení
                 </li>
               </ul>
               <Link
                 href="/kontakt"
-                className="inline-block bg-yellow-400 text-purple-900 px-8 py-4 rounded-full font-bold hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105"
+                className="inline-block bg-[#FF795E] text-[#151D32] px-8 py-4 rounded-full font-bold hover:bg-[#ff927c] transition-all duration-300 transform hover:scale-105"
               >
                 Domluvit firemní školení
               </Link>
@@ -692,7 +651,7 @@ export default function VibecodingPage() {
           <div className="text-center mb-16">
             <span className="bg-red-100 text-red-700 text-sm font-bold px-4 py-2 rounded-full inline-block mb-6">Buďte realisti</span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Rizika a limity <span className="text-purple-600">vibecodingu</span>
+              Rizika a limity <span className="text-primary">vibecodingu</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Vibecoding není kouzelná hůlka. Abyste ho využili správně, musíte znát i jeho slabiny.
@@ -745,7 +704,7 @@ export default function VibecodingPage() {
             </div>
           </div>
 
-          <div className="bg-purple-50 border-l-4 border-primary rounded-lg p-8 mt-12">
+          <div className="bg-blue-50 border-l-4 border-primary rounded-lg p-8 mt-12">
             <h3 className="text-xl font-bold text-gray-900 mb-3">
               Jak to řeším já?
             </h3>
@@ -761,7 +720,7 @@ export default function VibecodingPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Web a aplikace <span className="text-purple-600">na míru</span> vibecodingem
+              Web a aplikace <span className="text-primary">na míru</span> vibecodingem
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Co se tím doopravdy mění pro cenu a pro termín. A co se nemění, i&nbsp;když se to slibuje.
@@ -781,7 +740,7 @@ export default function VibecodingPage() {
               <strong>Nezkracuje se to, co přijde potom.</strong> Nasazení, rychlost, přístupnost, bezpečnost, měření, obsah. Tady vibecoding neušetří skoro nic a je poctivé to říct dopředu. Kdo tvrdí, že hotový web vznikne za odpoledne, mluví o&nbsp;prototypu, ne o&nbsp;webu, který má vydělávat.
             </p>
 
-            <div className="bg-purple-50 border-l-4 border-purple-600 rounded-r-lg p-6 my-8">
+            <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-lg p-6 my-8">
               <p className="text-gray-800 leading-relaxed">
                 <strong>Kde to dává největší smysl:</strong> vnitřní nástroje a věci, které si firma nikdy nenechala udělat, protože se to nevyplatilo. Kalkulačka, přehled, formulář, který někam zapisuje. Dřív to nestálo za projekt. Teď stojí.
               </p>
@@ -813,7 +772,7 @@ export default function VibecodingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Pro koho vibecoding <span className="text-purple-600">je a není</span>
+              Pro koho vibecoding <span className="text-primary">je a není</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Vibecoding má obrovský potenciál, ale není pro každého stejně. Tady je upřímné zhodnocení.
@@ -890,13 +849,13 @@ export default function VibecodingPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/kontakt"
-              className="inline-block bg-yellow-400 text-purple-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl text-center"
+              className="inline-block bg-[#FF795E] text-[#151D32] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#ff927c] transition-all duration-300 transform hover:scale-105 shadow-xl text-center"
             >
               Začít s vibecodingem
             </Link>
             <Link
               href="/ebook"
-              className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-900 transition-all duration-300 text-center"
+              className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300 text-center"
             >
               E-book o promptování AI
             </Link>
@@ -977,13 +936,13 @@ export default function VibecodingPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="/kontakt"
-                className="inline-block bg-yellow-400 text-purple-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
+                className="inline-block bg-[#FF795E] text-[#151D32] px-10 py-5 rounded-full font-bold text-lg hover:bg-[#ff927c] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-center"
               >
                 Chci školení vibecodingu
               </Link>
               <a
                 href="mailto:zimmermannovap@gmail.com"
-                className="inline-block border-2 border-white/80 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-900 transition-all duration-300 text-center"
+                className="inline-block border-2 border-white/80 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300 text-center"
               >
                 zimmermannovap@gmail.com
               </a>
@@ -1005,6 +964,7 @@ export default function VibecodingPage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
     </div>
   )

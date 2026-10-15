@@ -50,36 +50,21 @@ export default function AiAgentPage() {
     <div className="min-h-screen bg-white">
       <JsonLd data={jsonLd} />
       <Navigation />
+      <main id="main-content">
 
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center relative">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-300 rounded-full opacity-30"></div>
-            <div className="absolute top-1/2 -left-8 w-16 h-16 bg-yellow-300 rounded-full opacity-25"></div>
-            <div className="absolute -top-8 right-4 w-20 h-20 bg-purple-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
-
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm opacity-80 relative z-10">
-              <ol className="flex items-center justify-center space-x-2">
-                <li><Link href="/" className="hover:text-yellow-400">Úvod</Link></li>
-                <li><span className="mx-2">/</span></li>
-                <li className="text-yellow-400">AI Agent</li>
-              </ol>
-            </nav>
-
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 max-w-4xl mx-auto leading-tight">
+      <header className="cf-page-hero">
+        <div className="cf-wrap">
+          <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
+          <h1>
               AI agent: Co to je, jak funguje a k&nbsp;čemu ho využijete
             </h1>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto relative z-10 mb-4">
+          <p>
               Srozumitelný průvodce světem AI agentů. Bez buzzwordů, bez hype – jen to, co potřebujete vědět a co můžete ve firmě reálně využít.
             </p>
-            <p className="text-sm opacity-75 max-w-2xl mx-auto relative z-10">
-              Podle Gartneru bude do konce roku 2026 <strong className="text-yellow-300">40&nbsp;%</strong> firemních aplikací využívat AI agenty. Nenechte konkurenci utéct.
-            </p>
-          </div>
+          <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link></div>
         </div>
-      </section>
+      </header>
 
       {/* Article Content */}
       <article className="py-16">
@@ -120,7 +105,7 @@ export default function AiAgentPage() {
           </p>
 
           <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
@@ -132,7 +117,7 @@ export default function AiAgentPage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/>
@@ -144,7 +129,7 @@ export default function AiAgentPage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -156,7 +141,7 @@ export default function AiAgentPage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -193,7 +178,7 @@ export default function AiAgentPage() {
               </p>
             </div>
 
-            <div className="border-l-4 border-purple-300 pl-6">
+            <div className="border-l-4 border-blue-300 pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Automatizační agenti</h3>
               <p className="text-gray-700 leading-relaxed">
                 Agenti, kteří propojují různé systémy a automatizují pracovní postupy. Napojí se na váš e-mail, CRM, fakturační systém nebo e-shop a pracují za vás. Platformy jako <a href="https://www.make.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Make.com</a> nebo n8n tohle umožňují. Více o&nbsp;tom na stránce o&nbsp;<Link href="/automatizace" className="text-primary font-semibold hover:underline">automatizaci procesů</Link>.
@@ -247,27 +232,27 @@ export default function AiAgentPage() {
 
           <ul className="space-y-4 mb-8">
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Marketing a obsah</strong> – AI agenti analyzují kampaně, generují personalizovaný obsah, optimalizují reklamní rozpočty a připravují reporty</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Zákaznická podpora</strong> – pokročilí chatboti, kteří rozumí kontextu, řeší reklamace, přesměrovávají na správné oddělení a eskalují složité případy</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Vývoj softwaru</strong> – kódovací agenti píšou, testují a nasazují kód. Právě proto roste <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link></span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">HR a nábor</strong> – screening životopisů, automatizace onboardingu, plánování pohovorů</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Analýza dat</strong> – zpracování tabulek, hledání trendů, generování dashboardů a doporučení</span>
             </li>
             <li className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-400 rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
+              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
               <span className="text-gray-700"><strong className="text-gray-900">Finance a účetnictví</strong> – automatická fakturace, párování plateb, příprava podkladů pro daňové přiznání</span>
             </li>
           </ul>
@@ -314,7 +299,7 @@ export default function AiAgentPage() {
             <strong>Hlídá, co zestárlo.</strong> Ceníky a otevírací doby v&nbsp;článcích tichounce lžou už po pár měsících. Agent projde odkazy a údaje a nahlásí, co přestalo sedět.
           </p>
 
-          <div className="bg-purple-50 border-l-4 border-primary rounded-r-lg p-6 mb-8">
+          <div className="bg-blue-50 border-l-4 border-primary rounded-r-lg p-6 mb-8">
             <p className="text-lg text-gray-800 leading-relaxed mb-3">
               <strong>A teď to nepříjemné, protože bez toho by to byla reklama.</strong>
             </p>
@@ -353,7 +338,7 @@ export default function AiAgentPage() {
           </p>
 
           <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 1
               </div>
@@ -363,7 +348,7 @@ export default function AiAgentPage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 2
               </div>
@@ -373,7 +358,7 @@ export default function AiAgentPage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 3
               </div>
@@ -383,7 +368,7 @@ export default function AiAgentPage() {
               </div>
             </div>
 
-            <div className="flex items-start bg-purple-50 rounded-lg p-5">
+            <div className="flex items-start bg-blue-50 rounded-lg p-5">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
                 4
               </div>
@@ -441,6 +426,7 @@ export default function AiAgentPage() {
         </div>
       </article>
 
+      </main>
       <SiteFooter />
     </div>
   )
