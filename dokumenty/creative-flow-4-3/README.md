@@ -52,3 +52,23 @@ Screenshoty `home-*` a `portfolio-*` dokládají 390, 768 a 1440 px. `browser-re
 Preview má původní Vercel Authentication: pro otevření může být nutné přihlášení majitelky do Vercelu. Testování používá krátkodobý projektový OIDC token pouze v hlavičce konkrétního Preview originu. Ochrana deploymentu se nemění. Produkční doména není přiřazená a produkce se nenasazuje.
 
 Zdrojový commit ověřeného Preview: `c6d3945aeed70ca091cf75d93a438940b4574239`, větev `codex/creative-flow-4-3`. Commit s důkazy doplňuje jen dokumentaci, reporty a screenshoty.
+
+
+## Dokončení nabídky SEO a webů — 15. 10. 2026
+
+Aktuální aplikační revize je `8d3c58b`. Homepage a přehled služeb upřednostňují SEO a tvorbu webových stránek; aplikace a AI jsou navazující nabídka. Obě hlavní služby mají konkrétní výstupy, postup, odpovědi k ceně a spolupráci a kontextové odkazy. Blog propojuje existující obsah do tří témat. Homepage metadata a strukturovaná data odpovídají nové nabídce, služby mají BreadcrumbList. Původní URL se nemění. Výzkum a ověřená data jsou v `../seo-vyzkum-2026/`.
+
+[Aktuální Preview](https://linklady-ayqzlt8l1-pavlazimms-projects.vercel.app) je READY, deployment `dpl_5uFEJFB3EfeKaaNac6vaA3j7LfTX`, projekt `linklady`, prostředí preview. GitHub potvrzuje úspěšný Vercel status pro commit `8d3c58b1be3d5dddc644dc909bc7f7d6e53a7f4f`. Produkční web se nemění.
+
+Ověření této revize:
+
+- Build, lint a TypeScript prošly; Vitest 33/33.
+- Opakovaný existující browser audit: 34 URL, 34 interních cílů, canonical adresy, jedna H1/main, přetečení při 320/390/768/1440 px, menu, Escape a portfolio filtry prošly. Axe: 54 auditů bez nálezů; žádné page errors.
+- Kontaktní formulář: simulovaný úspěch a výpadek se záložním e-mailem. Skutečný neplatný požadavek odmítnut 400. Bez skutečného leadu nebo e-mailu.
+- Doplňková lokální kontrola tvorby webů: šířky 320/390/768/1440 px bez přetečení, rozbalení FAQ a CTA do formuláře. Simulovaná poptávka správně obsahuje službu „Tvorba webových stránek na míru“.
+- Vzdálený Preview: hlavní dvě služby vracejí 200 a aktuální obsah při autentizovaném HTTP přístupu. Vzdálený browser s lokálním OIDC tokenem skončil na Vercel přihlášení, proto jej nepovažujeme za úspěšný browser audit. Screenshoty a browser reporty v `../dokonceni-2026-10-15/` pocházejí z lokálního produkčního buildu.
+- Historické Lighthouse výsledky výše patří revizi ze 14. 10.; pro tuto obsahovou úpravu se měření neopakovalo.
+
+Při pokusu spustit browser kontrolu přes `vercel env run` CLI místo skriptu založilo samostatný testovací projekt `preview-check`. Projekt i jeho nasazení byly odstraněny přes `vercel project remove`; CLI potvrdilo úspěšné odstranění. Linklady ani jeho produkční domény tento vedlejší projekt nezměnil. Následná lokální kontrola se spouštěla přímo přes Node.
+
+Reprodukce: stejný build/lint/Vitest postup jako výše; stávající audit nyní `dokumenty/dokonceni-2026-10-15/browser-check.cjs`. Doplňková kontrola: `QA_URL=http://127.0.0.1:3103 node dokumenty/dokonceni-2026-10-15/service-check.cjs` s dostupným Playwright. Reálné odesílání e-mailu nebylo součástí testu.
