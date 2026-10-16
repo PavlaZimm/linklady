@@ -1,0 +1,12 @@
+import Navigation from '@/components/navigation'
+import SiteFooter from '@/components/site-footer'
+import { pageMetadata } from '@/lib/creative-metadata'
+export const metadata = pageMetadata('/soukromi', 'Soukromí a údaje', 'Jak Linklady pracuje s údaji z poptávkového formuláře a s volbou analytického měření.')
+export default function PrivacyPage() {
+  return <><Navigation /><main id="main-content"><header className="cf-page-hero"><div className="cf-wrap"><h1>Soukromí a údaje</h1><p>Informace o poptávkovém formuláři a měření návštěvnosti.</p></div></header><div className="cf-wrap cf-section cf-service-body">
+    <section><h2>Kdo web provozuje</h2><p>Pavla Zimmermannová, IČO 04352041, Linklady.cz. S dotazy k údajům nebo žádostí o jejich opravu či odstranění mi napište na <a className="cf-text-link" href="mailto:zimmermannovap@gmail.com">zimmermannovap@gmail.com</a>.</p></section>
+    <section><h2>Když pošlete poptávku</h2><p>Jméno, e-mail a zprávu používám pro vyřízení vašeho dotazu a navazující domluvu. Telefon a adresu současného webu vyplňujete dobrovolně. Do zprávy neposílejte hesla ani jiné přístupové údaje.</p><p>Formulář zpracovává hosting Vercel a e-mailovou zprávu odesílá Resend. Pro ochranu před zneužitím používá server omezení počtu požadavků. Obsah poptávky se neposílá do analytických událostí. Pokud automatické odeslání nefunguje, web nabídne odeslání vaším e-mailovým programem a upozorní, že přijetí zprávy nebylo potvrzeno.</p><p>Odeslání poptávky vás nepřihlašuje k newsletteru. Pokud potřebujete informace o konkrétní zprávě nebo jejím uchování, kontaktujte mě na uvedeném e-mailu.</p></section>
+    <section><h2>Volitelné měření návštěvnosti</h2><p>Google Analytics a Ahrefs Analytics načítám až po vašem souhlasu. Pomáhají sledovat návštěvy a používání stránek. Události formuláře rozlišují zahájení, chybu a přijatou poptávku; neobsahují jméno, e-mail ani text zprávy.</p><p>Volba se ukládá v tomto prohlížeči do localStorage nejvýše na 180 dní. Bez analytiky fungují stránky i poptávkový formulář. Volbu lze změnit pomocí tlačítka Nastavení analytiky v patičce. Při vypnutí již načtené analytiky se stránka obnoví, proto nejdříve dokončete rozepsaný formulář.</p><p className="mt-4">Další informace: <a href="https://policies.google.com/privacy" className="cf-text-link">Google</a> a <a href="https://ahrefs.com/privacy-policy" className="cf-text-link">Ahrefs</a>.</p></section>
+    <p>Aktualizováno 16. 10. 2026.</p>
+  </div></main><SiteFooter /></>
+}

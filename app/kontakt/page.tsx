@@ -113,9 +113,9 @@ export default function ContactPage() {
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Sídlo</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Působnost</h3>
               <p className="text-gray-600">
-                Vedena na FÚ Bílina<br />
+                Bílina · spolupráce také online<br />
                 IČO: 04352041
               </p>
             </div>
@@ -169,8 +169,8 @@ export default function ContactPage() {
                 Jak fungují AI agenti?
               </h3>
               <p className="text-gray-600">
-                <Link href="/vibecoding" className="text-primary font-semibold hover:underline">AI agenti</Link> automatizují analýzu webu, sledování pozic, generování reportů a další
-                rutinní úkoly. Šetří čas a poskytují přesnější data než ruční zpracování.
+                <Link href="/ai-agent" className="text-primary font-semibold hover:underline">AI agenti</Link> automatizují analýzu webu, sledování pozic, generování reportů a další
+                rutinní úkoly. Mohou usnadnit zpracování dat; správnost výstupů je potřeba ověřovat.
               </p>
             </div>
           </div>

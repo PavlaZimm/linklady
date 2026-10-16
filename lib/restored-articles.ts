@@ -50,7 +50,7 @@ export function restoredArticleMetadata(article: RestoredArticle): Metadata {
       type: 'article', locale: 'cs_CZ', siteName: 'Linklady.cz',
       title: article.title, description: article.description, url: articleUrl(article),
       publishedTime: article.published, modifiedTime: articleUpdated,
-      images: [{ url: '/profile.jpg', width: 500, height: 600, alt: 'Pavla Zimmermannová, autorka Linklady' }],
+      images: [{ url: '/profile.jpg', width: 665, height: 1000, alt: 'Pavla Zimmermannová, autorka Linklady' }],
     },
     twitter: { card: 'summary_large_image', title: article.title, description: article.description, images: ['/profile.jpg'] },
   }

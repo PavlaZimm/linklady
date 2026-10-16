@@ -172,7 +172,7 @@ export default function AutomatizacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">HR a onboarding</h3>
-                <p className="text-gray-700">Nový zaměstnanec nastoupí a automaticky dostane přístupy, uvítací materiály, rozplánované schůzky. <strong>Automatizace HR</strong> procesů ušetří personalistům desítky hodin měsíčně.</p>
+                <p className="text-gray-700">Nový zaměstnanec nastoupí a automaticky dostane přístupy, uvítací materiály, rozplánované schůzky. <strong>Automatizace HR</strong> procesů může omezit opakované ruční zadávání. Přidělení citlivých přístupů musí mít jasná pravidla a kontrolu.</p>
               </div>
             </div>
 
@@ -204,7 +204,7 @@ export default function AutomatizacePage() {
                 <a href="https://www.make.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Make.com</a> (dříve Integromat)
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Můj hlavní nástroj. Make má vizuální editor, kde doslova vidíte, jak data tečou mezi aplikacemi. Podporuje stovky integrací – od Google Sheets přes Shopify až po Fakturoid. Oproti konkurenci nabízí výrazně víc flexibility za rozumnou cenu. Bezplatný plán zvládne 1 000 operací měsíčně, což na rozjezd bohatě stačí.
+                Můj hlavní nástroj. Make má vizuální editor, kde doslova vidíte, jak data tečou mezi aplikacemi. Podporuje stovky integrací – od Google Sheets přes Shopify až po Fakturoid. Oproti konkurenci nabízí výrazně víc flexibility za rozumnou cenu. Výběr tarifu závisí na četnosti běhů a funkcích scénáře; aktuální limity je potřeba ověřit u dodavatele.
               </p>
             </div>
 
@@ -282,7 +282,7 @@ export default function AutomatizacePage() {
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Samozřejmě existují situace, kdy se trocha kódu hodí – třeba u pokročilejších transformací dat nebo napojení na nestandardní API. Ale 90 % běžných automatizací zvládnete čistě vizuálně. A pokud si na to netroufáte sami, ráda vám s tím pomůžu.
+            Samozřejmě existují situace, kdy se trocha kódu hodí – třeba u pokročilejších transformací dat nebo napojení na nestandardní API. Řadu běžných propojení lze sestavit vizuálně; možnosti závisejí na konkrétních aplikacích. A pokud si na to netroufáte sami, ráda vám s tím pomůžu.
           </p>
 
           {/* Section: Jak to vypadá v praxi */}
@@ -386,7 +386,7 @@ export default function AutomatizacePage() {
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Kolik stojí automatizace pro malou firmu?</h3>
-              <p className="text-gray-700">Jsou to dvě různé částky. Nástroj: Make.com má bezplatný plán s&nbsp;1 000 operacemi měsíčně, placené začínají kolem 250&nbsp;Kč měsíčně. A moje práce na nastavení: 1&nbsp;200&nbsp;Kč za hodinu. Jednoduchá automatizace bývá hotová za dvě až čtyři hodiny, takže se vejdete do pěti tisíc i s&nbsp;prvním rokem provozu nástroje.</p>
+              <p className="text-gray-700">Jsou to dvě různé částky. Nástroj: tarif Make.com závisí na spotřebě a zvolených funkcích. A moje práce na nastavení: 1&nbsp;200&nbsp;Kč za hodinu. Rozsah práce a průběžné provozní náklady odhadnu podle konkrétního scénáře před zahájením.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">

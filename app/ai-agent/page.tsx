@@ -275,7 +275,7 @@ export default function AiAgentPage() {
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Čísla mluví jasně: jen v&nbsp;první polovině roku 2025 vzrostl počet firem vyvíjejících vlastní AI agenty o&nbsp;<strong>119 %</strong>. Průměrný počet zákaznických konverzací vedených AI agentem se zvýšil <strong>22&times;</strong>. Kdo teď nezačne, bude za rok dohánět konkurenci.
+            O přínosu rozhoduje konkrétní úkol. Před nasazením porovnejte čas potřebný k ruční práci s náklady na provoz, kontrolu výsledků a řešení chyb. Začněte malým ověřitelným scénářem.
           </p>
 
           {/* AI agent v marketingu */}
@@ -374,7 +374,7 @@ export default function AiAgentPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Iterujte a rozšiřujte</h3>
-                <p className="text-gray-700">Sledujte výsledky, sbírejte zpětnou vazbu a postupně vylepšujte. AI agenti se učí a zlepšují – čím víc dat a zkušeností mají, tím lépe pracují.</p>
+                <p className="text-gray-700">Sledujte výsledky, sbírejte zpětnou vazbu a postupně vylepšujte. Zlepšení vyžaduje vyhodnocení chyb a úpravy zadání, nástrojů nebo podkladů. Samotný provoz automaticky nezaručuje učení ani vyšší přesnost.</p>
               </div>
             </div>
           </div>

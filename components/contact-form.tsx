@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 import { trackEvent } from '@/lib/analytics'
 
 type Props = {
@@ -19,6 +20,7 @@ type Poptavka = {
   message: string
   phone?: string
   service?: string
+  websiteUrl?: string
   web?: string
   requestId?: string
 }
@@ -65,6 +67,7 @@ export default function ContactForm(props: Props) {
           `E-mail: ${d.email}`,
           d.phone ? `Telefon: ${d.phone}` : null,
           d.service ? `Co potřebuje: ${d.service}` : null,
+          d.websiteUrl ? `Současný web: ${d.websiteUrl}` : null,
           '',
           d.message,
         ]
@@ -112,6 +115,7 @@ function Formular({
         message: (f.get('message') as string).trim(),
         phone: ((f.get('phone') as string) || '').trim() || undefined,
         service: service || ((f.get('service') as string) || undefined),
+        websiteUrl: ((f.get('websiteUrl') as string) || '').trim() || undefined,
         web: ((f.get('web') as string) || '').trim(),
       }
       const fingerprint = JSON.stringify(payload)
@@ -221,6 +225,10 @@ function Formular({
         </div>
 
         <div>
+          <label htmlFor="cf-website" className="block text-sm font-medium text-gray-800 mb-1.5">Adresa současného webu <span className="font-normal">(nepovinné)</span></label>
+          <input id="cf-website" name="websiteUrl" type="url" maxLength={2048} autoComplete="url" placeholder="https://vas-web.cz" className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30" />
+        </div>
+        <div>
           <label htmlFor="cf-message" className="block text-sm font-medium text-gray-800 mb-1.5">
             Co řešíte <span className="text-primary">*</span>
           </label>
@@ -276,7 +284,7 @@ function Formular({
         </button>
 
         <p className="text-sm text-gray-500">
-          Údaje použiju k vyřízení vaší poptávky. Formulář technicky zpracovává Vercel a e-mail odesílá Resend.
+          Údaje použiju k vyřízení vaší poptávky. Podrobnosti najdete na stránce <Link href="/soukromi" className="underline">Soukromí a údaje</Link>.
         </p>
       </form>
     </div>

@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     description: 'Pět skutečných realizací a další nápady, kde může webová aplikace odstranit ruční práci.',
     images: [{
       url: '/profile.jpg',
-      width: 500,
-      height: 600,
+      width: 665,
+      height: 1000,
       alt: 'Webové aplikace – příklady z praxe od Pavly Zimmermannové',
     }],
   },

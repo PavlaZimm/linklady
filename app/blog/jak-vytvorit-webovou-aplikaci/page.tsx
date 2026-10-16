@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     description: 'Praktický postup od prvního zadání přes prototyp a testování až po spuštění webové aplikace.',
     images: [{
       url: '/profile.jpg',
-      width: 500,
-      height: 600,
+      width: 665,
+      height: 1000,
       alt: 'Jak vytvořit webovou aplikaci – průvodce od Pavly Zimmermannové',
     }],
   },

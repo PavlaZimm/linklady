@@ -7,6 +7,10 @@ export const contactSchema = z.object({
   message: z.string().trim().min(1, 'Napište, s čím potřebujete pomoci.').max(5000),
   phone: z.string().trim().max(20).optional(),
   service: z.string().trim().max(100).optional(),
+  websiteUrl: z.string().trim().max(2048).refine(value => {
+    if (!value) return true
+    try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password } catch { return false }
+  }, 'Zadejte adresu webu včetně https://.').optional(),
   web: z.string().max(200).optional(),
   requestId: z.string().uuid().optional(),
 })

@@ -43,6 +43,11 @@ export const services: Service[] = [
         text: "Společně vybereme změny, které mají pro váš web největší smysl. U každého úkolu bude jasné, které stránky se týká a co je potřeba udělat. Výsledky posuzujeme podle dostupných dat a vašich obchodních cílů.",
         items: ["Prioritizovaný plán oprav a obsahu", "Zadání pro vývojáře nebo úpravy po domluvě", "Vyhodnocení dotazů a stránek v Google Search Console", "Sledování poptávek při dostupném měření"],
       },
+      {
+        title: "Co dostanete a jak se stanoví cena",
+        text: "Jednorázový SEO audit začíná od 5 000 Kč, průběžná SEO správa od 8 000 Kč měsíčně. Jde o orientační výchozí ceny; konkrétní rozsah a cenu si potvrdíme před zahájením. Úvodní rozhovor slouží k upřesnění zadání, nenahrazuje placený audit.",
+        items: ["Přehled konkrétních URL, nálezů a doporučených oprav", "Priority podle dopadu a náročnosti", "Domluvený rozsah implementace a způsob předání", "Výchozí měření a termín společného vyhodnocení"],
+      },
     ],
     related: "tvorba-webu",
     questions: [
@@ -51,6 +56,7 @@ export const services: Service[] = [
       { question: "Kolik stojí SEO a kdy se projeví výsledky?", answer: "Cena závisí na velikosti a stavu webu, konkurenci i rozsahu spolupráce. Po úvodním probrání zadání připravím nabídku. Změny ve vyhledávání vyhodnocujeme průběžně; konkrétní pozici ani termín jejího dosažení nelze slíbit." },
     ],
     reading: [
+      { href: "/blog/co-obsahuje-seo-audit", label: "Co obsahuje SEO audit a jak vypadají nálezy" },
       { href: "/sluzby/linkbuilding", label: "Linkbuilding jako součást SEO" },
       { href: "/11-tipu-jak-ziskat-validni-zpetny-odkaz/", label: "Jak získávat relevantní zpětné odkazy" },
     ],
@@ -116,6 +122,11 @@ export const services: Service[] = [
         text: "Pokud už web máte, nejdřív zmapuji jeho stránky a obsah. U redesignu připravíme návaznost původních a nových adres, aby návštěvníci i vyhledávače našli správný obsah.",
         items: ["Přehled současných URL a návrh jejich zachování", "Přesměrování změněných adres podle migrační mapy", "Kontrola indexovatelnosti a interních odkazů", "Domluva správy obsahu a podpory po spuštění"],
       },
+      {
+        title: "Rozpočet, předání a další provoz",
+        text: "Jednoduchý prezentační web začíná od 9 000 Kč, firemní web s více stránkami od 25 000 Kč a e-shop od 40 000 Kč. Jsou to orientační výchozí ceny. Konečnou nabídku připravím podle obsahu, funkcí a způsobu správy.",
+        items: ["Předem upřesníme, kdo dodá texty, fotografie a další podklady", "Domluvíme administraci, přístupy a způsob předání", "Oddělíme cenu realizace od domény, hostingu a placených nástrojů", "Vyjasníme podporu po spuštění a nacenění pozdějších změn"],
+      },
     ],
     questions: [
       { question: "Kolik stojí tvorba webových stránek?", answer: "Záleží na počtu a typu stránek, připravenosti textů a fotografií, správě obsahu a potřebných funkcích. Po upřesnění zadání dostanete nabídku s rozsahem práce. Hosting, doménu a případné další provozní náklady si vyjasníme předem." },
@@ -132,7 +143,7 @@ export const services: Service[] = [
   },
   {
     slug: "webove-aplikace",
-    title: "Webové aplikace na míru.",
+    title: "Webové aplikace na míru",
     intro: "Když potřebujete nástroj, který umí víc než představit vaši firmu.",
     legacy: "/webova-aplikace",
     legacyLabel: "Webové aplikace a příklady z praxe",
@@ -160,7 +171,8 @@ export const services: Service[] = [
   },
   {
     slug: "ai-automatizace",
-    title: "Méně rutiny. Více prostoru.",
+    title: "AI a automatizace pro firmy",
+    seoTitle: "AI automatizace pro firmy",
     intro: "AI a automatizace pro konkrétní úkoly ve vašem podnikání.",
     legacy: "/automatizace",
     legacyLabel: "Automatizace procesů a Make.com",
