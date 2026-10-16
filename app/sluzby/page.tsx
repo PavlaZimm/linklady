@@ -17,9 +17,9 @@ export default function Services() {
           <div className="cf-wrap">
             <p className="cf-eyebrow">SLUŽBY / LINKLADY</p>
             <h1>
-              Jeden digitální svět.
+              SEO služby a tvorba
               <br />
-              <em>Spousta možností.</em>
+              <em>webových stránek.</em>
             </h1>
             <p>
               SEO a tvorba webů jsou základ mé práce. Podle vašeho zadání

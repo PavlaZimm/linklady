@@ -1,3 +1,4 @@
+import BlogList, { type BlogItem } from '@/components/blog-list'
 import { restoredArticles } from '@/lib/restored-articles'
 import Navigation from '@/components/navigation'
 import Link from 'next/link'
@@ -41,6 +42,17 @@ const jsonLd = {
   ],
 }
 
+const articles: BlogItem[] = [
+  { href: '/blog/co-obsahuje-seo-audit', title: 'Co obsahuje SEO audit: postup a ukázky nálezů', description: 'Jak poznat použitelný audit, určit priority a ověřit opravy. S příklady z kontroly Linklady.', topic: 'SEO', date: '2026-10-16', dateLabel: '16. 10. 2026' },
+  ...restoredArticles.map(article => ({ href: `/${article.slug}/`, title: article.title, description: article.description, topic: (article.category === 'Spolupráce' ? 'Další' : 'SEO') as BlogItem['topic'], date: '2026-09-19', dateLabel: 'Aktualizováno 19. 9. 2026' })),
+  { href: '/blog/jak-vytvorit-webovou-aplikaci', title: 'Jak vytvořit webovou aplikaci krok za krokem', description: 'Zadání, návrh, realizace a testování první verze aplikace.', topic: 'Weby', date: '2026-09-13', dateLabel: '13. 9. 2026' },
+  { href: '/blog/webove-aplikace-priklady', title: 'Webové aplikace: příklady a využití ve firmách', description: 'Kdy dává smysl poptávkový systém, evidence nebo klientský portál.', topic: 'Weby', date: '2026-09-14', dateLabel: '14. 9. 2026' },
+  { href: '/ai-agent', title: 'AI agent: jak funguje a kdy ho využít', description: 'Průvodce možnostmi, cenovými faktory a kontrolou AI agentů.', topic: 'AI' },
+  { href: '/automatizace', title: 'Automatizace pro malé firmy', description: 'Jak vybrat proces k automatizaci a ověřit, zda se změna vyplatí.', topic: 'AI' },
+  { href: '/vibecoding', title: 'Vibecoding: tvorba s pomocí AI', description: 'Nástroje, pracovní postup a limity vývoje s pomocí AI.', topic: 'AI' },
+  { href: '/blog/prodej-firmy-strategicky-krok', title: 'Prodej firmy jako strategický krok', description: 'Přehled témat, která provázejí přípravu na změnu vlastníka firmy.', topic: 'Další', date: '2026-02-27', dateLabel: '27. 2. 2026' },
+]
+
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -49,7 +61,7 @@ export default function BlogPage() {
       <main id="main-content">
       
       {/* Hero Section */}
-      <header className="cf-page-hero">
+      <header className="cf-page-hero cf-blog-hero">
         <div className="cf-wrap">
           <p className="cf-eyebrow">LINKLADY / BLOG</p>
           <h1>Blog</h1>
@@ -59,116 +71,7 @@ export default function BlogPage() {
         </div>
       </header>
 
-      <section className="cf-wrap cf-section" aria-labelledby="blog-topics">
-        <h2 id="blog-topics">Kde chcete začít?</h2>
-        <div className="cf-service-grid">
-          <article className="cf-service">
-            <h3>SEO a obsah</h3>
-            <p>Zpětné odkazy, obsah a viditelnost webu ve vyhledávání.</p>
-            <Link className="cf-text-link" href="/11-tipu-jak-ziskat-validni-zpetny-odkaz/">Jak získávat odkazy ↗</Link>
-            <Link className="cf-text-link" href="/sluzby/seo">Potřebuji pomoc se SEO ↗</Link>
-          </article>
-          <article className="cf-service">
-            <h3>Weby a aplikace</h3>
-            <p>Od zadání a struktury až po funkce, které usnadní práci.</p>
-            <Link className="cf-text-link" href="/blog/jak-vytvorit-webovou-aplikaci">Jak vzniká webová aplikace ↗</Link>
-            <Link className="cf-text-link" href="/sluzby/tvorba-webu">Potřebuji nový web ↗</Link>
-          </article>
-          <article className="cf-service">
-            <h3>AI v praxi</h3>
-            <p>Průvodci AI agenty a tvorbou s pomocí umělé inteligence.</p>
-            <Link className="cf-text-link" href="/ai-agent">AI agenti a asistenti ↗</Link>
-            <Link className="cf-text-link" href="/vibecoding">Co je vibecoding ↗</Link>
-          </article>
-        </div>
-      </section>
-
-      {/* Blog Articles */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8">
-            {restoredArticles.map(article => (
-              <Link key={article.slug} href={`/${article.slug}/`} className="group block">
-                <article className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow">
-                  <p className="text-sm text-primary font-semibold mb-3">{article.category}</p>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary">{article.title}</h2>
-                  <p className="text-gray-600 leading-relaxed mb-4">{article.description}</p>
-                  <p className="text-sm text-gray-500">Pavla Zimmermannová · Aktualizováno <time dateTime="2026-09-19">19. 9. 2026</time></p>
-                </article>
-              </Link>
-            ))}
-
-
-            <Link href="/blog/webove-aplikace-priklady" className="group block">
-              <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
-                <div className="p-8">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Webové aplikace</span>
-                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Příklady z praxe</span>
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
-                    Webové aplikace: příklady a využití ve firmách
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Poptávkový systém, živá data, správa obsahu, e-shop i další nápady, kde aplikace nahrazuje ruční práci.
-                  </p>
-                  <div className="flex items-center text-sm text-gray-500">
-                    <time dateTime="2026-09-14">14. září 2026</time>
-                    <span className="mx-2">|</span>
-                    <span>Pavla Zimmermannová</span>
-                  </div>
-                </div>
-              </article>
-            </Link>
-
-            <Link href="/blog/jak-vytvorit-webovou-aplikaci" className="group block">
-              <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
-                <div className="p-8">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Webové aplikace</span>
-                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Praktický návod</span>
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
-                    Jak vytvořit webovou aplikaci krok za krokem
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Od prvního zadání přes prototyp a testování až po spuštění. Co musí být v zadání, jak vybrat způsob vývoje a čemu se vyhnout.
-                  </p>
-                  <div className="flex items-center text-sm text-gray-500">
-                    <time dateTime="2026-09-13">13. září 2026</time>
-                    <span className="mx-2">|</span>
-                    <span>Pavla Zimmermannová</span>
-                  </div>
-                </div>
-              </article>
-            </Link>
-
-            {/* Article Card */}
-            <Link href="/blog/prodej-firmy-strategicky-krok" className="group block">
-              <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
-                <div className="p-8">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Business</span>
-                    <span className="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">M&amp;A</span>
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
-                    Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    Prodej vybudovaného podniku je pro většinu majitelů jedním z nejdůležitějších životních rozhodnutí. Jak probíhá proces M&amp;A a na co si dát pozor?
-                  </p>
-                  <div className="flex items-center text-sm text-gray-500">
-                    <time dateTime="2026-02-27">27. února 2026</time>
-                    <span className="mx-2">|</span>
-                    <span>Pavla Zimmermannová</span>
-                  </div>
-                </div>
-              </article>
-            </Link>
-
-          </div>
-        </div>
-      </section>
+      <BlogList articles={articles} />
 
       {/* Další krok pro čtenáře. Skutečný newsletter zatím není napojený,
           proto tu není formulář, který by e-mail nikam neodeslal. */}

@@ -1,3 +1,4 @@
+import { readAnalyticsConsent } from './analytics-consent'
 type AnalyticsWindow = Window & {
   gtag?: (command: string, name: string, parameters: Record<string, string>) => void
   dataLayer?: unknown[]
@@ -5,6 +6,7 @@ type AnalyticsWindow = Window & {
 
 export function trackEvent(name: string, parameters: Record<string, string> = {}) {
   if (typeof window === 'undefined' || !['www.linklady.cz', 'linklady.cz'].includes(window.location.hostname)) return
+  if (readAnalyticsConsent() !== true) return
   const target = window as AnalyticsWindow
   if (target.gtag) target.gtag('event', name, parameters)
   else {

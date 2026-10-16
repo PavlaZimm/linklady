@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AnalyticsSettings } from "./analytics-consent";
 export default function SiteFooter() {
   return (
     <>
@@ -36,6 +37,8 @@ export default function SiteFooter() {
               <Link href="/blog">Blog</Link>
               <Link href="/kontakt">Kontakt</Link>
               <Link href="/ebook">E-book</Link>
+              <Link href="/soukromi">Soukromí a údaje</Link>
+              <AnalyticsSettings />
             </nav>
             <nav aria-label="Specializace">
               <Link href="/seo-konzultant-usti-nad-labem">

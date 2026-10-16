@@ -85,3 +85,14 @@ describe('Resend production route', () => {
     expect((await send(valid)).status).toBe(status); expect(mutation).not.toHaveBeenCalled()
   })
 })
+
+it('includes the optional website in the delivered message, not the honeypot', async () => {
+ vi.stubEnv('RESEND_API_KEY', 'test-key');mail.mockResolvedValue('accepted')
+ expect((await send({...valid,websiteUrl:'https://example.cz',web:''})).status).toBe(200)
+ expect(mail.mock.calls[0][0].message).toContain('Současný web: https://example.cz')
+ expect(mail.mock.calls[0][0]).not.toHaveProperty('websiteUrl')
+})
+it('rejects oversized combined website and message without truncation', async () => {
+ expect((await send({...valid,message:'x'.repeat(4990),websiteUrl:'https://example.cz'})).status).toBe(400)
+ expect(mail).not.toHaveBeenCalled()
+})

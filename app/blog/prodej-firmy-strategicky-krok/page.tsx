@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/profile.jpg",
-        width: 500,
-        height: 600,
+        width: 665,
+        height: 1000,
         alt: "Prodej firmy – průvodce M&A procesem od Pavly Zimmermannové",
       },
     ],

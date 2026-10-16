@@ -106,7 +106,7 @@ export default function EbookPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Podnikatelé a freelanceři</h3>
               <p className="text-gray-600 leading-relaxed">
-                Ušetřete hodiny práce. Naučte se AI zadat úkoly tak, aby výstup byl použitelný na první pokus.
+                Ušetřete hodiny práce. Naučte se AI zadat úkoly tak, aby odpověď lépe odpovídala vašemu záměru. Výstup vždy zkontrolujte.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -232,7 +232,7 @@ export default function EbookPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <span className="inline-block bg-[#FF795E]/20 text-[#A4EDD6] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-yellow-400/30">
-              E-book ke stažení
+              Průvodce promptováním
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Začněte promptovat <span className="text-[#A4EDD6]">jako profík</span>
@@ -350,7 +350,7 @@ export default function EbookPage() {
             <div className="bg-white p-6 rounded-2xl shadow-sm">
               <h3 className="text-lg font-bold text-gray-900 mb-2">V jakém formátu e-book dostanu?</h3>
               <p className="text-gray-600 leading-relaxed">
-                E-book je ve formátu PDF, který si přečtete na počítači, tabletu i mobilu. Po zaplacení ho dostanete okamžitě ke stažení.
+                E-book je ve formátu PDF, který si přečtete na počítači, tabletu i mobilu. Dostupnost, cenu a způsob doručení vám potvrdím před objednáním.
               </p>
             </div>
             <div className="bg-white p-6 rounded-2xl shadow-sm">
@@ -376,7 +376,7 @@ export default function EbookPage() {
               <span className="text-[#2946cf]">začněte promptovat</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-4">
-              Investice do dovednosti, která vám ušetří desítky hodin měsíčně.
+              Praktické postupy pro přípravu zadání a kontrolu odpovědí AI.
             </p>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed mb-10">
               Chcete jít ještě dál? Podívejte se na <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link> – tvorbu aplikací pomocí AI.

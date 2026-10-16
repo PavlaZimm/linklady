@@ -167,7 +167,7 @@ export default function TvorbaWebuBilinaPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Responzivní design</h3>
               <p className="text-gray-600 leading-relaxed">
-                Web se perfektně zobrazí na mobilu, tabletu i počítači. Přes 70 % návštěvníků dnes přichází z mobilu – váš web na to bude připravený.
+                Web se perfektně zobrazí na mobilu, tabletu i počítači. Rozložení i hlavní funkce ověřím pro malé obrazovky.
               </p>
             </div>
 
@@ -193,7 +193,7 @@ export default function TvorbaWebuBilinaPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Rychlost načítání</h3>
               <p className="text-gray-600 leading-relaxed">
-                Používám moderní technologie (Next.js, React) pro bleskově rychlé weby. Rychlý web = lepší pozice v Googlu a více konverzí.
+                Používám moderní technologie (Next.js, React) pro bleskově rychlé weby. Rychlé načítání usnadňuje používání webu. Pozice a poptávky ovlivňuje také obsah, nabídka a konkurence.
               </p>
             </div>
 
@@ -259,7 +259,7 @@ export default function TvorbaWebuBilinaPage() {
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Autoškola Jana</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Web pro lokální autoškolu. Přehledná prezentace služeb, ceník, online přihláška a optimalizace pro lokální vyhledávání. Web přivádí nové žáky z Googlu.
+                  Web pro lokální autoškolu. Přehledná prezentace služeb, ceník, online přihláška a optimalizace pro lokální vyhledávání. Zájemci zde najdou informace potřebné k výběru kurzu.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="bg-blue-100 text-primary text-sm px-3 py-1 rounded-full">Webdesign</span>
@@ -493,7 +493,7 @@ export default function TvorbaWebuBilinaPage() {
                 Budou moje webové stránky optimalizované pro mobily?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Ano, každý web stavím jako responzivní – perfektně se zobrazí na mobilu, tabletu i počítači. Responzivní design je dnes základ a Google ho vyžaduje pro dobré pozice ve vyhledávání.
+                Ano, každý web stavím jako responzivní – perfektně se zobrazí na mobilu, tabletu i počítači. Responzivní design pomáhá návštěvníkům používat web na různých zařízeních; sám o sobě nezaručuje pozice ve vyhledávání.
               </p>
             </div>
 

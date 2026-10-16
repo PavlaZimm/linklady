@@ -9,6 +9,7 @@ const manrope = Manrope({
 import { headers } from "next/headers";
 import type { Metadata } from "next";
 import JsonLd from "@/components/json-ld";
+import AnalyticsConsent from "@/components/analytics-consent";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.linklady.cz"),
@@ -49,8 +50,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/profile.jpg",
-        width: 500,
-        height: 600,
+        width: 665,
+        height: 1000,
         alt: "Pavla Zimmermannová – online marketing specialistka",
       },
     ],
@@ -183,41 +184,57 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
                 (function () {
-                  function loadAnalytics() {
-                    if (!['www.linklady.cz', 'linklady.cz'].includes(window.location.hostname)) return;
+                  var enabled = false;
+                  var loaded = false;
+                  function readChoice() {
+                    try {
+                      var v = JSON.parse(localStorage.getItem('linklady-analytics-v1') || 'null');
+                      return !!(v && v.accepted === true && typeof v.savedAt === 'number' && v.savedAt <= Date.now() && Date.now() - v.savedAt < 15552000000);
+                    } catch (_) { return false; }
+                  }
+                  function apply(accepted) {
+                    enabled = accepted;
+                    window['ga-disable-G-FXX3CY3CHM'] = !accepted;
+                    if (!accepted) {
+                      if (loaded && window.gtag) window.gtag('consent', 'update', {analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+                        document.cookie.split(';').forEach(function (entry) {
+                          var name = entry.split('=')[0].trim();
+                          if (name === '_ga' || name.indexOf('_ga_') === 0) {
+                            ['', '; domain=' + location.hostname, '; domain=.linklady.cz'].forEach(function (domain) {
+                              document.cookie = name + '=; Max-Age=0; path=/' + domain + '; SameSite=Lax; Secure';
+                            });
+                          }
+                        });
+                        if (loaded) location.reload();
+                      return;
+                    }
+                    if (loaded || !['www.linklady.cz', 'linklady.cz'].includes(location.hostname)) return;
+                    loaded = true;
                     window.dataLayer = window.dataLayer || [];
-                    window.gtag = function () { window.dataLayer.push(arguments); };
+                    window.gtag = function () { if (enabled || arguments[0] === 'consent') window.dataLayer.push(arguments); };
+                    window.gtag('consent', 'default', {analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
                     window.gtag('js', new Date());
                     window.gtag('config', 'G-FXX3CY3CHM');
-
                     var googleScript = document.createElement('script');
                     googleScript.async = true;
                     googleScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-FXX3CY3CHM';
                     document.head.appendChild(googleScript);
-
                     var ahrefsScript = document.createElement('script');
                     ahrefsScript.async = true;
                     ahrefsScript.src = 'https://analytics.ahrefs.com/analytics.js';
                     ahrefsScript.setAttribute('data-key', 'bq++w6F/akp3AQs/1X59sw');
                     document.head.appendChild(ahrefsScript);
                   }
-
-                  function scheduleAnalytics() {
-                    window.setTimeout(loadAnalytics, 5000);
-                  }
-
-                  if (document.readyState === 'complete') {
-                    scheduleAnalytics();
-                  } else {
-                    window.addEventListener('load', scheduleAnalytics, { once: true });
-                  }
+                  window.addEventListener('linklady:analytics-choice', function (event) { apply(event.detail === true); });
+                  window.addEventListener('storage', function (event) { if (event.key === 'linklady-analytics-v1') apply(readChoice()); });
+                  apply(readChoice());
                 })();
               `,
           }}
         />
         <JsonLd data={jsonLd} />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased"><AnalyticsConsent />{children}</body>
     </html>
   );
 }

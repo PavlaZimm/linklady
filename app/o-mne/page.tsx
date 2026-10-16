@@ -92,7 +92,7 @@ export default function AboutPage() {
           <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
           <h1>Pavla Zimmermannová</h1>
           <p>
-                10 let v online marketingu. Od SEO strategií po AI automatizace.
+                V online marketingu od roku 2015. Od SEO strategií po AI automatizace.
               </p>
         </div>
       </header>
@@ -192,7 +192,7 @@ export default function AboutPage() {
                 </svg>
               </div>
               <Link href="/vibecoding" className="text-xl font-semibold text-gray-900 mb-2 hover:text-primary block">AI agenti</Link>
-              <p className="text-gray-600">Automatizace, která šetří desítky hodin měsíčně</p>
+              <p className="text-gray-600">Pomoc s opakovanými úkoly a kontrolou výstupů</p>
             </div>
             
             <div className="text-center">
@@ -202,7 +202,7 @@ export default function AboutPage() {
                 </svg>
               </div>
               <Link href="/automatizace" className="text-xl font-semibold text-gray-900 mb-2 hover:text-primary block">Automatizace</Link>
-              <p className="text-gray-600">Make.com workflow pro bezchybný provoz</p>
+              <p className="text-gray-600">Propojení nástrojů a kontrola chyb v procesech</p>
             </div>
           </div>
           

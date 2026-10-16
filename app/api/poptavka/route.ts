@@ -25,8 +25,10 @@ export async function POST(req: Request) {
   if (!parsed.success) {
     return NextResponse.json({ ok: false, duvod: 'udaje', message: 'Zkontrolujte povinná pole, e-mail a délku zprávy (nejvýše 5 000 znaků).' }, { status: 400 })
   }
-  const { web, ...data } = parsed.data
+  const { web, websiteUrl, ...data } = parsed.data
+  if (websiteUrl) data.message = `${data.message}\n\nSoučasný web: ${websiteUrl}`
   if (web) return NextResponse.json({ ok: true, accepted: false })
+  if (data.message.length > 5000) return NextResponse.json({ ok: false, message: 'Zkraťte zprávu: zpráva a adresa webu mohou mít dohromady nejvýše 5 000 znaků.' }, { status: 400 })
   if (process.env.RESEND_API_KEY) {
     const outcome = await sendContactEmail({ ...data, requestId: data.requestId || randomUUID() }, req)
     if (outcome === 'limited') return NextResponse.json({ ok: false, duvod: 'limit', message: 'Dosáhli jsme limitu odesílání. Zkuste to prosím později nebo napište e-mailem.' }, { status: 429 })

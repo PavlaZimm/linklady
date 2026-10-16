@@ -1,0 +1,146 @@
+[
+  [
+    "P1",
+    "E-book: slíbené stažení neodpovídá cestě",
+    "/ebook",
+    "Nadpis nabízí e-book ke stažení a FAQ okamžité stažení po zaplacení. Aktuální CTA „Mám zájem o e-book“ vede na /kontakt.",
+    "Buď dokončit reálný prodej a doručení PDF, nebo odstranit slib okamžitého stažení a jasně popsat poptávku. Doplnit cenu, ukázku a skutečné podmínky až podle nabídky.",
+    "Tlačítko, popis a FAQ popisují stejný proces; ověřená cesta k získání e-booku."
+  ],
+  [
+    "P1",
+    "Staré články vedou na obecnou lokální službu",
+    "Historické URL",
+    "/linkbuilding-je/, /ziskejte-zpetne-odkazy-pet-tipu-ktere-pomohou-kazdemu/ a /seo-copywriting-ma-vubec-vliv/ směřují na /seo-konzultant-usti-nad-labem. Technicky fungují, účel obsahu se ale mění.",
+    "Sestavit přesnou mapu podle původního obsahu, odkazů a GSC. Pro tipy na odkazy zvážit existující článek 11 tipů; pro definici relevantní vysvětlující článek. Copywriting obnovit, pokud má vlastní hodnotu. Neměnit plošně bez kontroly.",
+    "Každá cenná stará URL má nejbližší obsahový ekvivalent a jediný trvalý redirect."
+  ],
+  [
+    "P1",
+    "Nabídka a ceny nejsou sjednocené",
+    "/sluzby/seo · /sluzby/tvorba-webu · lokální stránky",
+    "Bílina uvádí web od 9 000 Kč, firemní web od 25 000 Kč a e-shop od 40 000 Kč. Ústí audit od 5 000 Kč a správu od 8 000 Kč. Hlavní služby uvádějí pouze individuální cenu.",
+    "Nejde o prokázaný rozpor cen, ale o rozdílnou informovanost návštěvníka. Potvrdit platnost částek, rozsah, provozní náklady a daňový režim. Platné ceny a podmínky udržovat v jednom zdroji. Vymezit bezplatný úvodní rozhovor oproti placené konzultaci/auditu.",
+    "Stejná služba má všude stejné podmínky; klient ví, co je zahrnuto a co navíc."
+  ],
+  [
+    "P1",
+    "Doložit a zpřesnit marketingová tvrzení",
+    "/o-mne · /kontakt · /ai-agent · /automatizace · /tvorba-webu-bilina",
+    "Na webu jsou tvrzení „10 let“ vedle „od roku 2015“, úspory desítek hodin, 70 % mobilních návštěv, 90 % vizuálně řešitelných automatizací, růst agentů o 119 % a „přesnější data než ruční zpracování“. U čísel nejsou v kontrolovaném obsahu dohledatelné zdroje.",
+    "Použít „od roku 2015“, statistiky doložit zdrojem, datem a vymezením nebo odstranit. Zmírnit absolutní sliby o bezchybnosti a SEO. U nástrojových cen provést ověření u dodavatele. Výsledky konkrétního klienta publikovat pouze s podklady.",
+    "Každý číselný výsledek má důkaz; obecné výhody nejsou prezentovány jako jistota."
+  ],
+  [
+    "P1",
+    "Měření a souhlasy potřebují samostatnou kontrolu",
+    "app/layout.tsx · lib/analytics.ts",
+    "GA4 a Ahrefs se v kódu spouštějí 5 sekund po load bez větvení podle volby uživatele. Formulář eviduje form_start, form_error a generate_lead; potvrzení jejich příjmu v GA4 chybí.",
+    "Zkontrolovat požadované chování souhlasů a implementovat odpovídající volby návštěvníka. Ověřit Consent Mode, SPA page_view, události a zdroj služby v GA4 DebugView. Zpoždění může ztrácet krátké návštěvy; změnu měřit, ne jen posunout časovač. Doplnit srozumitelný odkaz na informace o zpracování údajů.",
+    "Volba návštěvníka skutečně řídí tagy; jeden přijatý lead je jedna událost. Jde o technický nález, ne právní posudek."
+  ],
+  [
+    "P1",
+    "Z portfolia vytvořit důkazy o práci",
+    "/projekty/*",
+    "Osm indexovatelných detailů má přibližně 93–111 slov hlavního textu. Popisují hlavně zaměření webu; chybí přesná role, zadání, postup, skutečné screenshoty a vyhodnocení. ČSZ má 65 slov a správně noindex.",
+    "Začít Autoškolou Jana a jedním obsahovým projektem. Popsat problém → vlastní práce → ukázky → způsob ověření → výsledek. Rozlišit vlastní projekty a klientské zakázky. Výsledky bez dat nenahrazovat odhady. ČSZ dokončit, nebo zatím nenabízet jako hotovou realizaci.",
+    "Dvě důkladné případové studie použitelné na službách. Počet slov je diagnostika, nikoli požadavek Googlu."
+  ],
+  [
+    "P1",
+    "Konkrétnější nabídka hlavních služeb",
+    "/sluzby/seo · /sluzby/tvorba-webu",
+    "Služby mají jasný úvod, FAQ a formulář, ale chybí ukázka výstupu, detail předání a důkazy blízko rozhodování.",
+    "SEO: ukázka auditu, priorit a reportu. Weby: zadání, obsah, administrace, vlastnictví, hosting, údržba, co se předává a jak se oceňují změny. Přidat relevantní případovou studii a recenzi přímo k nabídce.",
+    "Návštěvník pozná, co kupuje, pro koho služba je a co následuje po odeslání."
+  ],
+  [
+    "P2",
+    "Popsat službu už v titulku",
+    "/sluzby/ai-automatizace · / · /sluzby",
+    "AI služba má title „Méně rutiny. Více prostoru. | Linklady.cz“. Homepage title postrádá značku; přehled služeb má pouze slogan v H1.",
+    "AI title: „AI automatizace pro firmy | Linklady.cz“, H1 „AI a automatizace pro firmy“. Homepage title doplnit značkou. Schválený hlavní slogan homepage ponechat; konkrétní nabídka už je v úvodním odstavci. U /sluzby dát popisný nadpis, slogan může zůstat doplňkem.",
+    "Titulek každé vstupní stránky srozumitelně vyjadřuje její obsah; bez mechanického opakování KW."
+  ],
+  [
+    "P2",
+    "Rozdělit záměr průvodců a služeb",
+    "/webova-aplikace ↔ /sluzby/webove-aplikace; /automatizace ↔ /sluzby/ai-automatizace",
+    "Starší dlouhé průvodce obsahují i ceníky a poptávky; nové služby jsou stručné. Témata a obchodní role se překrývají.",
+    "Vymezit komerční URL a informační průvodce, propojit je. Rozhodnout podle GSC, které stávající stránky už přivádějí relevantní návštěvy. Nepřesměrovávat pouze kvůli hezčí struktuře.",
+    "Každý hlavní záměr má určenou preferovanou URL. Škodlivá kanibalizace zatím není prokázána."
+  ],
+  [
+    "P2",
+    "Blog má vést k článkům rychleji",
+    "/blog",
+    "V horní části je velký hero blok a tematické rozcestí; vlastní seznam článků je až níže. Témata odkazují na jednotlivé články a služby, nejde o skutečné filtrované rubriky.",
+    "Zmenšit úvodní svislé mezery a ukázat první články dříve. Přidat jednoduchý filtr SEO / Weby / AI s výchozím Vše. Indexovatelné rubriky založit až s dostatkem vlastního obsahu a popisem. Nyní není nutný vyhledávač ani složitá taxonomie.",
+    "Na mobilu jsou články snadno dostupné; filtr funguje klávesnicí a nevytváří zbytečné indexovatelné kombinace."
+  ],
+  [
+    "P2",
+    "Priorita obsahu: SEO a firemní weby",
+    "Blog a plán KW",
+    "SEO články se soustředí na odkazy. Chybí hlavní rozhodovací témata ceny webu, zadání, SEO auditu a analýzy KW. Předchozí průzkum MM z 15. 10. tyto okruhy již navrhuje.",
+    "První čtyři zadání: cena webu a provozu; co obsahuje SEO audit s ukázkou; zadání webu včetně migrace; analýza KW na vlastním projektu. Poté AI v SEO s ověřeným postupem. Část kapacity ponechat na aktualizace místo nových URL.",
+    "Každý článek odpovídá konkrétnímu záměru, má vlastní příklad a navazuje na příslušnou službu."
+  ],
+  [
+    "P2",
+    "Revize článku mimo hlavní odbornost",
+    "/blog/prodej-firmy-strategicky-krok",
+    "Článek o prodeji firmy je tematicky vzdálený SEO a webům a odkazuje na arfin.cz bez sponsored/nofollow. Z auditu nevyplývá, zda jde o placené umístění.",
+    "Zjistit původ a přínos článku. Pokud jde o placený odkaz, správně označit rel=sponsored a obchodní spolupráci. Bez důkazu odkaz neoznačovat za placený. Před případným odstraněním vyhodnotit návštěvnost a odkazy.",
+    "Obsah má jasný účel a vztah k publiku; komerční odkazy jsou správně označené."
+  ],
+  [
+    "P2",
+    "Sitemap obsahuje stará data změn",
+    "/sitemap.xml",
+    "Homepage má lastmod 2026-08-25 a blog 2026-09-19, přestože jejich hlavní obsah byl výrazně upraven 15. 10. 2026.",
+    "Zapsat skutečné poslední významné změny a vést je u obsahových dat. Neaktualizovat všechny URL každým buildem.",
+    "lastmod odpovídá významné změně konkrétní stránky; Google doporučuje věrohodné hodnoty."
+  ],
+  [
+    "P2",
+    "Zjednodušit kontakt a posílit důvěru",
+    "/kontakt · formuláře",
+    "Formulář je přehledný a má nepovinný telefon. Pro SEO poptávku ale nemá skutečné pole pro URL webu: skryté pole web je honeypot. Kontakt uvádí pod „Sídlo“ pouze „Vedena na FÚ Bílina“.",
+    "Přidat volitelné pole websiteUrl oddělené od honeypotu; stručně říci, co přijde po odeslání. Upravit popis lokality podle skutečnosti, doplnit podklady o podnikateli. Potvrdit reálnost závazku odpovědi do 24 hodin a zda jde o pracovní dny.",
+    "Nové pole bezpečně prochází validací a e-mailem; odeslání není delší ani povinně složitější."
+  ],
+  [
+    "P2",
+    "Dlouhé průvodce zpřehlednit",
+    "/ai-agent · /vibecoding · /automatizace",
+    "AI agent má přibližně 1 720 a vibecoding 2 054 slov. Šířka na mobilu je v pořádku, ale témat je mnoho.",
+    "Přidat stručnou odpověď na začátku, klikací obsah, datum skutečné věcné revize a zdroje proměnlivých údajů. U AI příkladů popsat vstup, výstup, náklady a lidskou kontrolu. Nejde o povinné „chunkování pro AI“, ale o čitelnost.",
+    "Čtenář najde odpověď i konkrétní ukázku bez procházení celé stránky."
+  ],
+  [
+    "P2",
+    "Výkon ověřit čerstvými daty",
+    "Homepage · služba · článek",
+    "Nový PageSpeed API pokus v tomto auditu skončil 429 kvůli kvótě. Starší lokální testy nelze vydávat za aktuální Core Web Vitals produkce.",
+    "Změřit mobil/desktop v PSI nebo Lighthouse a oddělit laboratorní měření od CrUX/GSC. Zaměřit se na LCP, INP, CLS a TTFB podle nálezu, ne honit samotné skóre 100.",
+    "Uložené datum, URL, podmínky a výsledky; bez terénních dat neprohlašovat splnění CWV."
+  ],
+  [
+    "P3",
+    "Sdílecí obrázky a identita",
+    "app/layout.tsx · články · služby",
+    "Výchozí Open Graph obrázek používá portrét; metadata rozměrů uvádějí 500 × 600, zatímco zdrojový portrét má jiné rozměry podle předchozí implementace. Strukturovaná data stále odkazují na /logo.png.",
+    "Připravit relevantní OG obrázky služeb a článků, ověřit skutečné rozměry a zobrazení při sdílení. Ověřit, že business logo odpovídá nové značce. Značku spojit s ověřeným firemním profilem.",
+    "Sdílení má čitelný název a vizuál; metadata odpovídají skutečným souborům."
+  ],
+  [
+    "P3",
+    "Recenze udržovat aktuální",
+    "Homepage",
+    "Zobrazený stav je výslovně datovaný k 15. 10. 2026. Nejde o automatickou synchronizaci. Self-serving AggregateRating nebyl přidán.",
+    "Pravidelně ověřovat počet a hodnocení; využít relevantní ukázku i u služby. Nepřidávat schema vlastní firmy kvůli příslibu hvězdiček v organických výsledcích.",
+    "Viditelné hodnocení má správný zdroj a datum; žádná garance rozšířeného výsledku."
+  ]
+]
