@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-16",
+  "source": "Marketing Miner",
+  "market": "cs",
+  "results": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "keyword": "kolik stojí webové stránky",
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"kolik stojí webové stránky\", \"search_volume\": 180, \"cpc\": {\"value\": 31.65, \"text\": \"31.65 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": -19.0, \"peak_month\": \"2026-09-01\", \"monthly_sv\": {\"04\": 240, \"05\": 100, \"06\": 80, \"07\": 100, \"08\": 100, \"09\": 370, \"10\": 160, \"11\": 200, \"12\": 130, \"01\": 200, \"02\": 200, \"03\": 200}}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "keyword": "zadání webu",
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"status\": \"success\", \"data\": []}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "keyword": "analýza klíčových slov",
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"analýza klíčových slov\", \"search_volume\": 430, \"cpc\": {\"value\": 28.98, \"text\": \"28.98 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": -42.0, \"peak_month\": \"2026-09-01\", \"monthly_sv\": {\"04\": 900, \"05\": 250, \"06\": 110, \"07\": 140, \"08\": 110, \"09\": 1400, \"10\": 480, \"11\": 310, \"12\": 250, \"01\": 400, \"02\": 310, \"03\": 480}}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    }
+  ],
+  "briefKeyword": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"status\": \"success\", \"data\": [{\"keyword\": \"tvorba webu\", \"search_volume\": 830, \"cpc\": {\"value\": 51.84, \"text\": \"51.84 Kč\", \"currency_code\": \"CZK\"}, \"yoy_change\": -20.0, \"peak_month\": \"2026-04-01\", \"monthly_sv\": {\"04\": 950, \"05\": 840, \"06\": 840, \"07\": 680, \"08\": 950, \"09\": 950, \"10\": 840, \"11\": 680, \"12\": 560, \"01\": 840, \"02\": 950, \"03\": 950}}]}"
+      }
+    ],
+    "isError": false
+  },
+  "gsc": {
+    "status": "verified",
+    "method": "Existing Webx service-account connection; private GSC and GA4 snapshots stored outside repository.",
+    "note": "Marketing Miner OAuth failure did not prevent direct access."
+  },
+  "pagespeedApi": {
+    "status": 429
+  },
+  "pagespeed": {
+    "report": "https://pagespeed.web.dev/analysis/https-www-linklady-cz/z25hrqelr4?form_factor=mobile",
+    "measuredAt": "2026-10-16T09:50:00+02:00",
+    "performance": 97,
+    "accessibility": 96,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcpSeconds": 1.8,
+    "cls": 0.039,
+    "tbtMs": 0,
+    "crux": "No data",
+    "note": "Pre-change mobile lab run. Fixed skip-link overlap identified by accessibility audit."
+  }
+}

@@ -1,3 +1,4 @@
+import { guides } from '@/lib/editorial-guides';
 import { projects } from "@/lib/projects";
 import { services } from "@/lib/services";
 import { MetadataRoute } from "next";
@@ -26,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...pages,
+    ...guides.map(g => ({path:`/blog/${g.slug}`,lastModified:g.date})),
     { path: "/projekty", lastModified: "2026-10-14" },
     { path: "/sluzby", lastModified: "2026-10-16" },
     ...services.map((s) => ({

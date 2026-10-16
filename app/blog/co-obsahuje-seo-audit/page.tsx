@@ -84,6 +84,7 @@ export default function SeoAuditArticle() {
         </section>
         <section>
           <h2>Zdroje a další čtení</h2>
+          <p><Link href="/blog/analyza-klicovych-slov" className="underline">Analýza klíčových slov na příkladu Linklady</Link> propojuje dotazy zákazníků s konkrétními službami a články.</p>
           <ul>
             <li><a className="underline" href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">Google: tvorba užitečného a důvěryhodného obsahu</a></li>
             <li><a className="underline" href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">Google: sestavení sitemapy a údaj lastmod</a></li>
