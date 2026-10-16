@@ -78,6 +78,7 @@ export default function TvorbaWebuBilinaPage() {
       <Navigation />
       <main id="main-content">
 
+
       {/* JSON-LD */}
       <JsonLd data={jsonLd} />
 
@@ -97,6 +98,7 @@ export default function TvorbaWebuBilinaPage() {
               </Link></div>
         </div>
       </header>
+      <aside className="cf-wrap py-5"><p>Plánujete nový web? <Link href="/sluzby/tvorba-webu" className="underline">Prohlédněte si nabídku tvorby webových stránek</Link> a <Link href="/blog/kolik-stoji-webove-stranky" className="underline">rozpočet realizace a provozu</Link>.</p></aside>
 
       {/* Obsah stránky – kotvy */}
       <section className="py-12 bg-gradient-to-br from-gray-50 to-purple-50/30">

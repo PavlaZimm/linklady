@@ -1,3 +1,4 @@
+import { guides } from '@/lib/editorial-guides'
 import BlogList, { type BlogItem } from '@/components/blog-list'
 import { restoredArticles } from '@/lib/restored-articles'
 import Navigation from '@/components/navigation'
@@ -43,6 +44,7 @@ const jsonLd = {
 }
 
 const articles: BlogItem[] = [
+  ...guides.map(g => ({href:`/blog/${g.slug}`,title:g.title,description:g.description,topic:g.topic,date:g.date,dateLabel:'16. 10. 2026'})),
   { href: '/blog/co-obsahuje-seo-audit', title: 'Co obsahuje SEO audit: postup a ukázky nálezů', description: 'Jak poznat použitelný audit, určit priority a ověřit opravy. S příklady z kontroly Linklady.', topic: 'SEO', date: '2026-10-16', dateLabel: '16. 10. 2026' },
   ...restoredArticles.map(article => ({ href: `/${article.slug}/`, title: article.title, description: article.description, topic: (article.category === 'Spolupráce' ? 'Další' : 'SEO') as BlogItem['topic'], date: '2026-09-19', dateLabel: 'Aktualizováno 19. 9. 2026' })),
   { href: '/blog/jak-vytvorit-webovou-aplikaci', title: 'Jak vytvořit webovou aplikaci krok za krokem', description: 'Zadání, návrh, realizace a testování první verze aplikace.', topic: 'Weby', date: '2026-09-13', dateLabel: '13. 9. 2026' },

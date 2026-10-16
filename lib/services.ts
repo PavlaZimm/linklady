@@ -56,6 +56,7 @@ export const services: Service[] = [
       { question: "Kolik stojí SEO a kdy se projeví výsledky?", answer: "Cena závisí na velikosti a stavu webu, konkurenci i rozsahu spolupráce. Po úvodním probrání zadání připravím nabídku. Změny ve vyhledávání vyhodnocujeme průběžně; konkrétní pozici ani termín jejího dosažení nelze slíbit." },
     ],
     reading: [
+      { href: "/blog/analyza-klicovych-slov", label: "Analýza klíčových slov na příkladu Linklady" },
       { href: "/blog/co-obsahuje-seo-audit", label: "Co obsahuje SEO audit a jak vypadají nálezy" },
       { href: "/sluzby/linkbuilding", label: "Linkbuilding jako součást SEO" },
       { href: "/11-tipu-jak-ziskat-validni-zpetny-odkaz/", label: "Jak získávat relevantní zpětné odkazy" },
@@ -135,6 +136,8 @@ export const services: Service[] = [
       { question: "Můžete upravit i stávající web?", answer: "Ano. Nejdřív ověřím jeho technický stav a možnosti úprav. Podle toho doporučím úpravu jednotlivých stránek, doplnění funkcí nebo redesign. Termín stanovíme podle rozsahu a připravených podkladů." },
     ],
     reading: [
+      { href: "/blog/kolik-stoji-webove-stranky", label: "Kolik stojí webové stránky a jejich provoz" },
+      { href: "/blog/zadani-webu", label: "Jak připravit zadání webu" },
       { href: "/sluzby/seo", label: "SEO pro nový i stávající web" },
       { href: "/projekty/autoskola-jana", label: "Ukázka projektu: Autoškola Jana" },
       { href: "/blog/webove-aplikace-priklady", label: "Kdy firemní web doplnit webovou aplikací" },

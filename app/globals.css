@@ -378,12 +378,20 @@ textarea:focus-visible {
   left: 12px;
   background: white;
   color: var(--cf-navy);
-  padding: 12px;
-  transform: translateY(-200%);
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
   z-index: 20;
 }
 .cf-skip:focus {
-  transform: translateY(0);
+  padding: 12px;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip-path: none;
 }
 .cf-hero {
   background: var(--cf-navy);
