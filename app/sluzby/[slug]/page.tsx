@@ -110,7 +110,7 @@ export default async function Service({ params }: Props) {
           <section id="poptavka">
             <ContactForm
               service={s.title}
-              subtitle="Popište mi svůj záměr. Společně najdeme vhodný další krok."
+              subtitle={s.contactPrompt ?? "Popište mi svůj záměr. Společně najdeme vhodný další krok."}
             />
           </section>
         </div>
