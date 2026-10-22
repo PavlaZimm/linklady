@@ -276,7 +276,7 @@ export default function WeboveAplikacePrikladyPage() {
             </ul>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-12">
-              Pokud už máte konkrétní nápad, pokračujte návodem <Link href="/blog/jak-vytvorit-webovou-aplikaci" className="text-primary font-semibold hover:underline">jak vytvořit webovou aplikaci krok za krokem</Link>. Pomůže vám připravit zadání, rozdělit první verzi a vybrat vhodný způsob vývoje.
+              Pokud už máte konkrétní nápad, pokračujte návodem <Link href="/blog/jak-vytvorit-webovou-aplikaci" className="text-primary font-semibold hover:underline">jak vytvořit webovou aplikaci krok za krokem</Link>. Pomůže vám připravit zadání, rozdělit první verzi a vybrat vhodný způsob vývoje. Pokud hledáte pomoc s realizací, podívejte se na <Link href="/sluzby/webove-aplikace" className="text-primary font-semibold hover:underline">návrh a vývoj webové aplikace</Link>.
             </p>
 
             <aside className="bg-gradient-to-br from-purple-50 to-yellow-50 border border-blue-100 rounded-2xl p-8 md:p-10">

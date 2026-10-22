@@ -34,6 +34,6 @@ export default function LinkTypesArticle() {
     <p>Přehled odkazů v Search Console ukazuje vzorek, nikoli úplný seznam. Podrobnosti k rozsahu uvádí <a href="https://support.google.com/webmasters/answer/9049606">nápověda přehledu Odkazy</a>. Neberte počet řádků jako počet návštěvníků.</p>
     <p>Vyberte několik relevantních domén a prohlédněte si skutečné stránky. Pro návštěvnost otevřete analytiku a zdroje návštěv. Sledujte také návazné poptávky, ale počítejte s tím, že měření nemusí zachytit každou návštěvu ani celý rozhodovací proces zákazníka.</p>
     <p>Do jednoduché tabulky si zapište zdrojovou adresu, cíl, typ spolupráce, datum kontroly a zjištěný problém. Tak poznáte, které odkazy vedou na zaniklou stránku a kde stojí za to požádat o opravu. Nové příležitosti pak vybírejte podle <Link href="/11-tipu-jak-ziskat-validni-zpetny-odkaz/">praktických tipů na získávání odkazů</Link>.</p>
-    <p>Potřebujete určit, kterým odkazům a stránkám věnovat čas? V rámci <Link href="/seo-konzultant-usti-nad-labem">SEO konzultace</Link> můžeme projít konkrétní ukázky a sestavit pořadí úprav podle stavu vašeho webu.</p>
+    <p>Potřebujete určit, kterým odkazům a stránkám věnovat čas? Při <Link href="/sluzby/linkbuilding">posouzení odkazového profilu</Link> můžeme projít konkrétní ukázky a sestavit pořadí úprav podle stavu vašeho webu.</p>
   </>;
 }

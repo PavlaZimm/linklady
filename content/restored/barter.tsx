@@ -44,6 +44,6 @@ export default function BarterArticle() {
     <h2>A co výměna zpětných odkazů?</h2>
     <p>Google mezi odkazový spam řadí výměny zboží či služeb za odkazy určené k ovlivnění hodnocení a nadměrné výměny odkazů. Viz <a href="https://developers.google.com/search/docs/essentials/spam-policies#link-spam">pravidla odkazového spamu</a>. Barter proto nestavte na slibu lepších pozic.</p>
     <p>Reklamní odkaz má být označen atributem <code>rel="sponsored"</code>; Google připouští také <code>nofollow</code>. Podrobnosti uvádí <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links">dokumentace označování odkazů</a>. Rozdíly vysvětluje i článek o <Link href="/3-typy-zpetnych-odkazu-ktery-je-ten-spravny/">typech zpětných odkazů</Link>.</p>
-    <p>Máte konkrétní nabídku propagace a nevíte, zda může přivést zákazníky na váš web? <Link href="/kontakt">Pošlete mi její podmínky a adresu webu</Link>. Projdeme publikum, náklady a stránku, na kterou odkaz povede.</p>
+    <p>Máte konkrétní nabídku propagace a nevíte, zda může přivést zákazníky na váš web? <Link href="/kontakt">Pošlete mi její podmínky a adresu webu</Link>. Projdeme publikum, náklady a stránku, na kterou odkaz povede; s <Link href="/sluzby/linkbuilding">výběrem relevantních spoluprací</Link> vám pomůžu podle vašeho oboru, bez slibu přenosu SEO hodnoty.</p>
   </>;
 }

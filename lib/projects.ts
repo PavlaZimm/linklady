@@ -8,6 +8,7 @@ export type Project = {
   description: string;
   url: string;
   paragraphs: string[];
+  serviceContext?: { before: string; href: string; label: string; after: string };
   features: string[];
   source: string;
   pending?: boolean;
@@ -35,6 +36,7 @@ export const projects: Project[] = [
   },
   {
     slug: "spacelady",
+    serviceContext: { before: "Podobné propojení dat a interaktivních funkcí řeším při ", href: "/sluzby/webove-aplikace", label: "návrhu a vývoji webových aplikací", after: "." },
     art: "space",
     name: "SpaceLady.cz",
     category: "apps",
@@ -155,6 +157,7 @@ export const projects: Project[] = [
   },
   {
     slug: "autoskola-jana",
+    serviceContext: { before: "Pokud potřebujete podobně představit své služby, podívejte se, co zahrnuje ", href: "/sluzby/tvorba-webu", label: "tvorba firemního webu", after: "." },
     art: "jana",
     name: "Autoškola Jana",
     category: "other",

@@ -44,6 +44,6 @@ export default function TipyContent() {
 
     <h2>Vyberte první dva postupy a měřte výsledek</h2>
     <p>Ke každému získanému odkazu evidujte zdrojovou stránku, cílovou adresu a datum. Zvlášť sledujte návštěvy a relevantní poptávky. Samotný počet odkazů neříká, kolik lidí přišlo nebo nakoupilo. Pro práci s konkrétními weby navazuje <Link href="/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/">postup linkbuilding outreach</Link>.</p>
-    <p>Pokud nevíte, na kterou stránku lidi přivádět, začněte kontrolou její nabídky. V rámci <Link href="/seo-konzultant-usti-nad-labem">SEO konzultace</Link> můžeme určit, které podstránky mají obchodní smysl a jaké podklady jim chybí. Do <Link href="/kontakt">poptávky</Link> přidejte adresu webu a službu, pro kterou chcete získávat zákazníky.</p>
+    <p>Pokud nevíte, na kterou stránku lidi přivádět, začněte kontrolou její nabídky. V rámci <Link href="/seo-konzultant-usti-nad-labem">SEO konzultace</Link> můžeme určit, které podstránky mají obchodní smysl a jaké podklady jim chybí. Pokud hledáte <Link href="/sluzby/linkbuilding">pomoc s linkbuildingem</Link>, do <Link href="/kontakt">poptávky</Link> přidejte adresu webu a službu, pro kterou chcete získávat zákazníky.</p>
   </>;
 }

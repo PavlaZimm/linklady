@@ -81,9 +81,16 @@ export default async function ProjectPage({ params }: Props) {
           <div>
             <p className="cf-eyebrow">O PROJEKTU</p>
             <h2>{p.heading}</h2>
-            {p.paragraphs.map((t) => (
+            {p.paragraphs.map((t, index) => (
               <p className="cf-lede" key={t}>
                 {t}
+                {index === p.paragraphs.length - 1 && p.serviceContext && (
+                  <>
+                    {" "}{p.serviceContext.before}
+                    <Link className="cf-text-link" href={p.serviceContext.href}>{p.serviceContext.label}</Link>
+                    {p.serviceContext.after}
+                  </>
+                )}
               </p>
             ))}
             {p.features.length > 0 && (

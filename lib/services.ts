@@ -2,6 +2,7 @@ type Service = {
   slug: string;
   title: string;
   seoTitle?: string;
+  metaDescription?: string;
   intro: string;
   legacy: string;
   legacyLabel: string;
@@ -64,6 +65,7 @@ export const services: Service[] = [
   },
   {
     slug: "linkbuilding",
+    metaDescription: "Vyberu relevantní příležitosti pro odkazy a spolupráce. Připravím obsah, oslovení a přehled umístění podle vašeho oboru.",
     title: "Linkbuilding",
     intro: "Relevantní odkazy začínají užitečným obsahem a dobrými vztahy.",
     legacy:
@@ -146,6 +148,7 @@ export const services: Service[] = [
   },
   {
     slug: "webove-aplikace",
+    metaDescription: "Navrhnu webovou aplikaci pro vaše firemní procesy. Propojíme data, nastavíme přístupy a domluvíme předání i další správu.",
     title: "Webové aplikace na míru",
     intro: "Když potřebujete nástroj, který umí víc než představit vaši firmu.",
     legacy: "/webova-aplikace",
@@ -174,6 +177,7 @@ export const services: Service[] = [
   },
   {
     slug: "ai-automatizace",
+    metaDescription: "Propojím formuláře, CRM a reporting do funkční automatizace. Vybereme konkrétní proces, nastavíme kontrolu chyb a domluvíme správu.",
     title: "AI a automatizace pro firmy",
     seoTitle: "AI automatizace pro firmy",
     intro: "AI a automatizace pro konkrétní úkoly ve vašem podnikání.",
