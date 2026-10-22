@@ -30,3 +30,9 @@ it('only sends production conversion events after consent', () => {
  trackEvent('generate_lead', {form_name:'contact'})
  expect(gtag).toHaveBeenCalledExactlyOnceWith('event','generate_lead',{form_name:'contact'})
 })
+
+it('does not let a broken analytics client break form processing', () => {
+ localStorage.setItem(ANALYTICS_CONSENT_KEY,JSON.stringify({accepted:true,savedAt:Date.now()}))
+ vi.stubGlobal('window',{location:{hostname:'www.linklady.cz'},gtag:()=>{throw new Error('blocked')}})
+ expect(()=>trackEvent('generate_lead',{form_id:'contact'})).not.toThrow()
+})
