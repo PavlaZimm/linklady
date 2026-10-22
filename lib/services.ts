@@ -2,7 +2,9 @@ type Service = {
   slug: string;
   title: string;
   seoTitle?: string;
+  metaDescription?: string;
   intro: string;
+  contactPrompt?: string;
   legacy: string;
   legacyLabel: string;
   sections: { title: string; text: string; items: string[] }[];
@@ -39,9 +41,15 @@ export const services: Service[] = [
         ],
       },
       {
-        title: "Od doporučení k úpravám a měření",
-        text: "Společně vybereme změny, které mají pro váš web největší smysl. U každého úkolu bude jasné, které stránky se týká a co je potřeba udělat. Výsledky posuzujeme podle dostupných dat a vašich obchodních cílů.",
-        items: ["Prioritizovaný plán oprav a obsahu", "Zadání pro vývojáře nebo úpravy po domluvě", "Vyhodnocení dotazů a stránek v Google Search Console", "Sledování poptávek při dostupném měření"],
+        title: "Jak vypadá výstup SEO auditu",
+        text: "Připravím přehled nálezů, podle kterého se dá naplánovat práce a ověřit opravy. Uvedu také, co bez přístupů nebo dalších podkladů nešlo prověřit. Provedení oprav a případnou následnou kontrolu domluvíme zvlášť podle rozsahu spolupráce.",
+        items: [
+          "Zjištěný problém a konkrétní dotčená URL",
+          "Důkaz nebo postup, kterým lze problém ověřit",
+          "Dopad na web a priorita řešení",
+          "Doporučená oprava pro správce obsahu nebo vývojáře",
+          "Způsob kontroly po úpravě: co znovu projít nebo změřit",
+        ],
       },
       {
         title: "Co dostanete a jak se stanoví cena",
@@ -64,6 +72,7 @@ export const services: Service[] = [
   },
   {
     slug: "linkbuilding",
+    metaDescription: "Vyberu relevantní příležitosti pro odkazy a spolupráce. Připravím obsah, oslovení a přehled umístění podle vašeho oboru.",
     title: "Linkbuilding",
     intro: "Relevantní odkazy začínají užitečným obsahem a dobrými vztahy.",
     legacy:
@@ -146,57 +155,73 @@ export const services: Service[] = [
   },
   {
     slug: "webove-aplikace",
+    metaDescription: "Navrhnu webovou aplikaci pro vaše firemní procesy. Propojíme data, nastavíme přístupy a domluvíme předání i další správu.",
     title: "Webové aplikace na míru",
     intro: "Když potřebujete nástroj, který umí víc než představit vaši firmu.",
     legacy: "/webova-aplikace",
     legacyLabel: "Webové aplikace a příklady z praxe",
+    contactPrompt: "Napište mi, kdo bude aplikaci používat a jaký problém má vyřešit.",
     sections: [
       {
-        title: "Od procesu k nástroji",
-        text: "Zmapujeme, kdo bude aplikaci používat a s jakými daty pracuje. Vybereme funkce pro první použitelnou verzi.",
+        title: "Kdy dává aplikace na míru smysl",
+        text: "Pokud vám hotový nástroj pokryje potřebný postup, může stačit jeho nastavení. Aplikaci na míru navrhnu tam, kde potřebujete vlastní práci s daty, propojit více systémů nebo zpřístupnit různé funkce různým lidem. Nejdřív s vámi porovnám potřeby a možnosti dostupných řešení.",
+        items: ["Poptávkové a rezervační systémy", "Interní evidence a klientské portály", "Interaktivní nástroje nad externími daty"],
+      },
+      {
+        title: "Co spolu vyjasníme před návrhem",
+        text: "Projdeme konkrétní pracovní postup a vybereme rozsah první použitelné verze. Pomůže mi ukázka současné evidence a popis situací, ve kterých vám nestačí.",
         items: [
-          "Poptávkové a rezervační systémy",
-          "Interní evidence a klientské portály",
-          "Práce s externími daty",
+          "Kdo bude aplikaci používat a co v ní potřebuje dokončit",
+          "Jaká data potřebuje, odkud přicházejí a kam se předávají",
+          "Uživatelské role: kdo smí údaje vidět, měnit nebo schvalovat",
+          "Funkce první verze a to, co může počkat na později",
         ],
       },
       {
-        title: "Použitelnost a správa",
-        text: "Aplikace potřebuje jasné rozhraní i spolehlivé zpracování dat. Součástí návrhu jsou oprávnění, validace a způsob správy obsahu.",
-        items: [
-          "Přehledné uživatelské rozhraní",
-          "Napojení na API a databáze",
-          "Testování hlavních scénářů",
-        ],
+        title: "Ověření, předání a další správa",
+        text: "Předem domluvím, podle čeho společně poznáme, že aplikace plní zadání. Projdeme běžné použití i chybové situace. Způsob předání, provozní náklady a případnou další správu vyjasníme v nabídce podle konkrétního řešení.",
+        items: ["Ověření hlavních scénářů na počítači i telefonu", "Kontrola vstupních dat, přístupů a propojení", "Domluva, kdo bude spravovat obsah, přístupy a další změny"],
       },
+    ],
+    reading: [
+      { href: "/projekty/spacelady", label: "SpaceLady: ukázka interaktivní webové aplikace" },
     ],
     related: "ai-automatizace",
   },
   {
     slug: "ai-automatizace",
+    metaDescription: "Propojím formuláře, CRM a reporting do funkční automatizace. Vybereme konkrétní proces, nastavíme kontrolu chyb a domluvíme správu.",
     title: "AI a automatizace pro firmy",
     seoTitle: "AI automatizace pro firmy",
     intro: "AI a automatizace pro konkrétní úkoly ve vašem podnikání.",
     legacy: "/automatizace",
     legacyLabel: "Automatizace procesů a Make.com",
+    contactPrompt: "Popište mi úkol, který opakujete, a nástroje, ve kterých pracujete.",
     sections: [
       {
-        title: "Co se opakuje, můžeme zjednodušit",
-        text: "Začneme úkolem, který dnes děláte ručně. Ověříme dostupná data, napojení nástrojů i místa, kde je nutná lidská kontrola.",
-        items: [
-          "Propojení CRM, formulářů a e-mailu",
-          "Reporting a práce s daty",
-          "Make.com, n8n a navazující procesy",
-        ],
+        title: "Začneme jedním opakujícím se úkolem",
+        text: "Přijďte s postupem, při kterém opakovaně přepisujete údaje, předáváte požadavky nebo sestavujete přehledy. Nejlépe se posuzují úkoly s jasným vstupem, pravidly a očekávaným výstupem. Nejdřív s vámi projdu, jak práci děláte dnes a kde vznikají výjimky.",
+        items: ["Používané nástroje a dostupné přístupy", "Ukázka vstupních dat a požadovaného výsledku", "Četnost úkolu, objem dat a postup při výjimkách"],
       },
       {
-        title: "AI s jasnou rolí",
-        text: "Asistent může pomáhat s vyhledáváním informací, přípravou obsahu nebo podporou zákazníků. Jeho roli nastavíme podle dostupných podkladů a pravidel vašeho týmu.",
-        items: [
-          "AI asistenti a agenti",
-          "Práce s firemními podklady",
-          "Kontrola výstupů a řešení chyb",
-        ],
+        title: "Tři příklady možného řešení",
+        text: "Jde o příklady použití, nikoli o popis realizovaných zakázek. Dostupnost propojení závisí na konkrétních nástrojích, jejich možnostech a vašich přístupech.",
+        items: ["Předání poptávky z formuláře do evidence nebo CRM", "Upozornění na nový požadavek a jeho přiřazení", "Pravidelný přehled dat z propojených zdrojů"],
+      },
+      {
+        title: "Nejdřív ověřím proveditelnost",
+        text: "Prověřím možnosti propojení nástrojů, potřebná oprávnění a kvalitu vstupních dat. Na domluveném vzorku ověřím klíčový krok a chování při chybě. Podle výsledku navrhnu rozsah řešení; pokud některé propojení není dostupné, vysvětlím omezení před realizací.",
+        items: ["Dostupné integrace a jejich limity", "Zkouška předání dat a kontrola výsledku", "Postup při chybějících údajích nebo selhání propojení"],
+      },
+      {
+        title: "Kde zůstává lidská kontrola",
+        text: "AI zapojím jen tam, kde má jasnou roli a lze ověřit její výstup. Společně určíme kroky, které musí člověk schválit, a situace, které se vrátí k ručnímu zpracování. Citlivé údaje, oprávnění a odpovědnost za výsledek probereme předem.",
+        items: ["Kdo kontroluje výstupy a schvaluje další krok", "Jak se dozvíte o chybě a kdo ji řeší", "Jaká data smí řešení používat a komu jsou přístupná"],
+      },
+      {
+        title: "Cena a následný provoz",
+        text: "Cenu ovlivňuje počet a složitost kroků, dostupnost propojení, příprava dat i rozsah ověření. Vedle mé práce mohou vznikat průběžné náklady na nástroje a jejich používání. Před realizací s vámi domluvím přístupy, práci s daty, kontrolu chyb i odpovědnost za správu.",
+        items: ["Odhad nákladů podle tarifů, objemu dat a četnosti běhů", "Způsob předání a potřebné podklady k provozu", "Rozsah případné správy a podpory po domluvě"],
       },
     ],
     related: "webove-aplikace",

@@ -14,7 +14,7 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const s = services.find((s) => s.slug === slug);
-  return s ? pageMetadata(`/sluzby/${slug}`, s.seoTitle ?? s.title, s.intro) : {};
+  return s ? pageMetadata(`/sluzby/${slug}`, s.seoTitle ?? s.title, s.metaDescription ?? s.intro) : {};
 }
 export default async function Service({ params }: Props) {
   const { slug } = await params;
@@ -110,7 +110,7 @@ export default async function Service({ params }: Props) {
           <section id="poptavka">
             <ContactForm
               service={s.title}
-              subtitle="Popište mi svůj záměr. Společně najdeme vhodný další krok."
+              subtitle={s.contactPrompt ?? "Popište mi svůj záměr. Společně najdeme vhodný další krok."}
             />
           </section>
         </div>

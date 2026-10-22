@@ -282,7 +282,7 @@ export default function AutomatizacePage() {
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Samozřejmě existují situace, kdy se trocha kódu hodí – třeba u pokročilejších transformací dat nebo napojení na nestandardní API. Řadu běžných propojení lze sestavit vizuálně; možnosti závisejí na konkrétních aplikacích. A pokud si na to netroufáte sami, ráda vám s tím pomůžu.
+            Samozřejmě existují situace, kdy se trocha kódu hodí – třeba u pokročilejších transformací dat nebo napojení na nestandardní API. Řadu běžných propojení lze sestavit vizuálně; možnosti závisejí na konkrétních aplikacích. Pokud potřebujete pomoc, navrhnu pro vás <Link href="/sluzby/ai-automatizace" className="text-primary font-semibold hover:underline">automatizaci firemních procesů na míru</Link>.
           </p>
 
           {/* Section: Jak to vypadá v praxi */}

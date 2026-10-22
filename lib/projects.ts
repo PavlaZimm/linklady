@@ -8,7 +8,9 @@ export type Project = {
   description: string;
   url: string;
   paragraphs: string[];
+  serviceContext?: { before: string; href: string; label: string; after: string };
   features: string[];
+  screenshot?: { src: string; alt: string; caption: string; href: string };
   source: string;
   pending?: boolean;
 };
@@ -35,6 +37,7 @@ export const projects: Project[] = [
   },
   {
     slug: "spacelady",
+    serviceContext: { before: "Podobné propojení dat a interaktivních funkcí řeším při ", href: "/sluzby/webove-aplikace", label: "návrhu a vývoji webových aplikací", after: "." },
     art: "space",
     name: "SpaceLady.cz",
     category: "apps",
@@ -43,14 +46,23 @@ export const projects: Project[] = [
     description: "Průvodce oblohou, fázemi Měsíce a vesmírnými misemi.",
     url: "https://spacelady.cz/",
     paragraphs: [
-      "SpaceLady zpřístupňuje astronomii prostřednictvím přehledu oblohy a interaktivních nástrojů. Návštěvník si může vybrat místo a datum pozorování.",
-      "Web rozlišuje vypočtené údaje od skutečných podmínek pozorování. Součástí jsou informace o Měsíci, ISS a startech raket.",
+      "SpaceLady jsem vytvořila pod značkou LinkLady jako českého průvodce vesmírem. Projekt přibližuje noční oblohu lidem, kteří chtějí zjistit, kdy a kam se podívat, bez nutnosti orientovat se v odborných přehledech.",
+      "Návštěvník si v nástroji Obloha dnes vybere místo a datum. Dostane vypočtenou fázi Měsíce, časy východů a západů Slunce i Měsíce a přehled poloh planet. Předpověď oblačnosti se zobrazuje zvlášť pro nejbližší hodiny, nezávisle na zvoleném datu výpočtu.",
+      "Web rozlišuje výpočty od skutečných podmínek pozorování a uvádí jejich omezení. Počasí, okolní terén a překážky mohou výhled změnit. Vedle přehledu oblohy nabízí také informace o Měsíci, ISS a startech raket.",
     ],
     features: [
-      "Obloha pro místo a datum",
-      "Fáze Měsíce",
-      "ISS a vesmírné mise",
+      "Výběr místa a data pro výpočet oblohy",
+      "Fáze a osvětlení Měsíce, východy a západy",
+      "Směr a výška planet ve zvoleném čase přehledu",
+      "Předpověď oblačnosti oddělená od astronomického výpočtu",
+      "Přehledy ISS a vesmírných misí",
     ],
+    screenshot: {
+      src: "/projects/spacelady-obloha-2026-10-22.jpg",
+      alt: "Rozhraní SpaceLady s výběrem místa a data, vypočtenou fází Měsíce a časy východů a západů pro Bílinu.",
+      caption: "Skutečné rozhraní nástroje Obloha dnes, zachycené 22. 10. 2026. Údaje na snímku odpovídají okamžiku pořízení.",
+      href: "https://spacelady.cz/obloha-dnes",
+    },
     source: "https://spacelady.cz/",
   },
   {
@@ -155,6 +167,7 @@ export const projects: Project[] = [
   },
   {
     slug: "autoskola-jana",
+    serviceContext: { before: "Pokud potřebujete podobně představit své služby, podívejte se, co zahrnuje ", href: "/sluzby/tvorba-webu", label: "tvorba firemního webu", after: "." },
     art: "jana",
     name: "Autoškola Jana",
     category: "other",

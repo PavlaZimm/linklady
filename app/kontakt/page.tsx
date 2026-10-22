@@ -149,8 +149,7 @@ export default function ContactPage() {
                 Jak dlouho trvá SEO optimalizace?
               </h3>
               <p className="text-gray-600">
-                <Link href="/seo-konzultant-usti-nad-labem" className="text-primary font-semibold hover:underline">SEO</Link> je dlouhodobý proces. První výsledky jsou viditelné obvykle za 3-6 měsíců,
-                ale plný efekt se projeví za 6-12 měsíců v závislosti na konkurenci a stavu webu.
+                Záleží na stavu webu, konkurenci a rozsahu úprav. Technické opravy můžeme ověřit po nasazení, změny ve vyhledávání a poptávkách vyhodnocujeme průběžně podle dostupných dat. Konkrétní termín ani růst pozic předem neslibuji.
               </p>
             </div>
             
@@ -159,8 +158,7 @@ export default function ContactPage() {
                 Co všechno se dá automatizovat?
               </h3>
               <p className="text-gray-600">
-                <Link href="/automatizace" className="text-primary font-semibold hover:underline">Automatizovat</Link> se dá téměř cokoliv – od e-mailových sekvencí, přes CRM a fakturaci,
-                až po publikování na sociální sítě. Používám nástroje jako Make.com, n8n nebo Zapier.
+                <Link href="/automatizace" className="text-primary font-semibold hover:underline">Automatizace</Link> se hodí hlavně pro opakující se úkoly s jasnými pravidly, například předávání poptávek do CRM, upozornění nebo pravidelný reporting. Nejdřív ověřím dostupná data, možnosti propojení nástrojů a místa, kde musí zůstat lidská kontrola. Podle toho navrhnu vhodné řešení.
               </p>
             </div>
             

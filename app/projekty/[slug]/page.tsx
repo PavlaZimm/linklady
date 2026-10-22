@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Navigation from "@/components/navigation";
 import SiteFooter from "@/components/site-footer";
@@ -75,15 +76,33 @@ export default async function ProjectPage({ params }: Props) {
         </header>
         <section className="cf-wrap cf-section cf-project-detail">
           <div>
-            <ProjectArt project={p} />
-            <p className="cf-art-note">Tematická ilustrace projektu.</p>
+            {p.screenshot ? (
+              <figure>
+                <a href={p.screenshot.href} target="_blank" rel="noopener noreferrer">
+                  <Image src={p.screenshot.src} alt={p.screenshot.alt} width={1440} height={1000} sizes="(max-width: 900px) 100vw, 50vw" className="h-auto w-full rounded-2xl" />
+                </a>
+                <figcaption className="cf-art-note">{p.screenshot.caption}</figcaption>
+              </figure>
+            ) : (
+              <>
+                <ProjectArt project={p} />
+                <p className="cf-art-note">Tematická ilustrace projektu.</p>
+              </>
+            )}
           </div>
           <div>
             <p className="cf-eyebrow">O PROJEKTU</p>
             <h2>{p.heading}</h2>
-            {p.paragraphs.map((t) => (
+            {p.paragraphs.map((t, index) => (
               <p className="cf-lede" key={t}>
                 {t}
+                {index === p.paragraphs.length - 1 && p.serviceContext && (
+                  <>
+                    {" "}{p.serviceContext.before}
+                    <Link className="cf-text-link" href={p.serviceContext.href}>{p.serviceContext.label}</Link>
+                    {p.serviceContext.after}
+                  </>
+                )}
               </p>
             ))}
             {p.features.length > 0 && (
