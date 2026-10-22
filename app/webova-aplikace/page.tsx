@@ -458,7 +458,8 @@ export default function WebovaAplikacePage() {
             Chcete si nejdřív ujasnit zadání, technologie a jednotlivé fáze? Připravila jsem podrobný návod{' '}
             <Link href="/blog/jak-vytvorit-webovou-aplikaci" className="text-primary font-semibold hover:underline">
               jak vytvořit webovou aplikaci krok za krokem
-            </Link>.
+            </Link>. Pokud už řešíte konkrétní projekt, podívejte se, co zahrnuje{' '}
+            <Link href="/sluzby/webove-aplikace" className="text-primary font-semibold hover:underline">návrh a vývoj webové aplikace na míru</Link>.
           </p>
 
           <div className="space-y-6 mb-8">

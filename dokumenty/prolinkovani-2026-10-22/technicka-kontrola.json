@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://www.linklady.cz/sluzby/tvorba-webu",
+    "http": "HTTP/2 200 ",
+    "canonical": [
+      "https://www.linklady.cz/sluzby/tvorba-webu"
+    ],
+    "robots": [
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "name": "googlebot",
+        "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      }
+    ],
+    "x_robots_tag": [],
+    "robots_txt_googlebot": true,
+    "sitemap": true,
+    "hub_links": 1
+  },
+  {
+    "url": "https://www.linklady.cz/sluzby/linkbuilding",
+    "http": "HTTP/2 200 ",
+    "canonical": [
+      "https://www.linklady.cz/sluzby/linkbuilding"
+    ],
+    "robots": [
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "name": "googlebot",
+        "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+      }
+    ],
+    "x_robots_tag": [],
+    "robots_txt_googlebot": true,
+    "sitemap": true,
+    "hub_links": 1
+  }
+]

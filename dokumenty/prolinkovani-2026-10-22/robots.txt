@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://www.linklady.cz
+Sitemap: https://www.linklady.cz/sitemap.xml

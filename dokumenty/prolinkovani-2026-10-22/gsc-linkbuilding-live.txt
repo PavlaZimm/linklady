@@ -1,0 +1,53 @@
+- main:
+  - generic: "Testováno: 22. 10. 2026, 12:30"
+  - button "Otestovat adresu URL znovu":
+    - generic: 
+  - generic: check_circle
+  - generic: Adresa URL je Googlu dostupná
+  - text: Pokud ji indexujeme a vybereme jako kanonickou, může se zobrazovat ve výsledcích Vyhledávání Google se všemi relevantními vylepšeními.
+  - link "Další informace":
+    - /url: https://support.google.com/webmasters/answer/9012289#url_can_be_on_google
+  - button "Zobrazit testovanou stránku":
+    - generic: Zobrazit testovanou stránku
+  - generic: Změnila se stránka?
+  - button "Požádat o indexováníPožádat znovu":
+    - generic: Požádat o indexování
+  - button "Dostupnost stránky Stránku lze indexovat" [expanded] [active]:
+    - generic: check_circle
+    - generic: Dostupnost stránky
+    - generic: Stránku lze indexovat
+    - generic: 
+  - text: Adresa URL bude indexována, pouze pokud budou splněny
+  - link "určité podmínky":
+    - /url: https://support.google.com/webmasters/answer/9012289#will_i_be_indexed
+  - generic: Nalezení
+  - generic: V testech naživo se nekontroluje
+  - generic: Procházení
+  - generic: Čas
+  - generic: 22. 10. 2026 12:30:54
+  - generic: Prohledávač
+  - generic: Inspekční nástroj Google pro chytré telefony
+  - generic: Je povoleno procházení?
+  - generic: Ano
+  - generic: Načtení stránky
+  - generic: Úspěšné
+  - generic: Je povoleno indexování?
+  - generic: Ano
+  - generic: Indexování
+  - generic: Kanonická adresa URL uvedená uživatelem
+  - generic: https://www.linklady.cz/sluzby/linkbuilding
+  - generic: Kanonická adresa URL vybraná Googlem
+  - button "null":
+    - generic: 
+  - generic: Určuje se až po indexování
+  - link "Odkaz na podrobnější dokumentaci":
+    - /url: https://support.google.com/webmasters/answer/9012289#url_can_be_on_google
+    - generic: Další informace
+  - generic: Vylepšení a prostředí
+  - link "Navigační struktura Byla zjištěna 1 platná položka":
+    - /url: ./search-console/inspect/r/breadcrumbs?resource_id=https%3A%2F%2Fwww.linklady.cz%2F&id=yTP0UBx5BGM0aaPhYI2S6Q&alt_id=SQlwohmn2hqzLQwMwsh-xQ
+    - generic: check_circle
+    - generic: Navigační struktura
+    - generic: Byla zjištěna 1 platná položka
+    - generic: 
+- document
