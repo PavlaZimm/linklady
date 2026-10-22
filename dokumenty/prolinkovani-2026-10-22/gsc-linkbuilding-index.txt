@@ -1,0 +1,48 @@
+- main:
+  - generic: info
+  - generic: Adresa URL na Googlu není
+  - text: Tuto stránku nelze indexovat. Stránky, které nejsou indexovány, se na Googlu nemohou zobrazovat. Informace o tom, proč nebyla indexována, najdete v podrobnostech níže.
+  - link "Další informace":
+    - /url: https://support.google.com/webmasters/answer/9012289#url_not_on_google
+  - button "Zobrazit procházenou stránku" [disabled]:
+    - generic: Zobrazit procházenou stránku
+  - generic: Změnila se stránka?
+  - button "Požádat o indexováníPožádat znovu":
+    - generic: Požádat o indexování
+  - 'button "Indexování stránek Stránka není indexována: Google adresu URL nezná" [expanded]':
+    - generic: info
+    - generic: Indexování stránek
+    - generic: "Stránka není indexována: Google adresu URL nezná"
+    - generic: 
+  - generic: Nalezení
+  - generic: Soubory Sitemap
+  - generic: Nebyly zjištěny žádné odkazující soubory Sitemap
+  - generic: Odkazující stránka
+  - generic: Žádné nezjištěny
+  - generic: Adresa URL může být známá z jiných zdrojů, které v současné době v přehledech neuvádíme
+  - generic: Procházení
+  - generic: Poslední procházení
+  - generic: Není k dispozici
+  - generic: Prohledávač
+  - generic: Není k dispozici
+  - generic: Je povoleno procházení?
+  - generic: Není k dispozici
+  - generic: Načtení stránky
+  - generic: Není k dispozici
+  - generic: Je povoleno indexování?
+  - generic: info
+  - generic: Není k dispozici
+  - generic: Indexování
+  - generic: Kanonická adresa URL uvedená uživatelem
+  - generic: Není k dispozici
+  - generic: Kanonická adresa URL vybraná Googlem
+  - button "null":
+    - generic: 
+  - generic: Není k dispozici
+  - link "Odkaz na podrobnější dokumentaci":
+    - /url: https://support.google.com/webmasters/answer/9012289#url_unknown
+    - generic: Další informace
+  - generic: Vylepšení a prostředí
+  - generic: Vylepšení mohou mít pouze indexované adresy URL
+- document
+- generic: Kontrola adresy URL

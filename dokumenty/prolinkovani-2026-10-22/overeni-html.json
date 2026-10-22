@@ -1,0 +1,20 @@
+[
+  {
+    "source": "local-aplikace.html",
+    "link": {
+      "href": "/sluzby/webove-aplikace",
+      "text": "návrh a vývoj webové aplikace na míru"
+    },
+    "count": 1,
+    "target_http": 200
+  },
+  {
+    "source": "local-seo.html",
+    "link": {
+      "href": "/sluzby/seo",
+      "text": "rozsah SEO auditu a navazující spolupráce"
+    },
+    "count": 1,
+    "target_http": 200
+  }
+]

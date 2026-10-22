@@ -39,7 +39,10 @@ export async function POST(req: Request) {
   if (convexUrl) {
     try {
       const client = new ConvexHttpClient(convexUrl)
-      await client.mutation(api.contacts.submitContactForm, data)
+      // requestId belongs to the mail providers; the existing Convex mutation
+      // does not accept it. Keep this payload aligned with its validator.
+      const { requestId: _requestId, ...contact } = data
+      await client.mutation(api.contacts.submitContactForm, contact)
       return NextResponse.json({ ok: true, accepted: true, receipt: 'stored' })
     } catch (error) {
       if (error instanceof ConvexError && error.data === 'RATE_LIMIT') {

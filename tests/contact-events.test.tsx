@@ -18,7 +18,7 @@ it('sends exactly one lead event without personal data only after server accepta
  vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:true,status:200,json:async()=>({ok:true,accepted:true})}))
  fillAndSubmit()
  await screen.findByRole('heading',{name:'Poptávka je přijatá, děkuji'})
- expect(trackEvent).toHaveBeenCalledExactlyOnceWith('generate_lead',{form_location:'kontakt'})
+ expect(trackEvent).toHaveBeenCalledExactlyOnceWith('generate_lead',{form_id:'contact',form_location:'kontakt',page_path:'/'})
 })
 it('does not count a honeypot response as a lead', async () => {
  vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:true,status:200,json:async()=>({ok:true,accepted:false})}))
@@ -29,6 +29,14 @@ it('does not count a honeypot response as a lead', async () => {
 it('does not count mail fallback or a server rejection as a lead', async () => {
  vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:false,status:503,json:async()=>({ok:false})}))
  fillAndSubmit()
- await waitFor(()=>expect(trackEvent).toHaveBeenCalledWith('form_error',{form_location:'kontakt',reason:'delivery'}))
+ await waitFor(()=>expect(trackEvent).toHaveBeenCalledWith('form_error',{form_id:'contact',form_location:'kontakt',page_path:'/',reason:'delivery'}))
  expect(trackEvent).not.toHaveBeenCalledWith('generate_lead',expect.anything())
+})
+
+it('does not show success for an incomplete server acknowledgement', async () => {
+ vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:true,status:200,json:async()=>({ok:true})}))
+ fillAndSubmit()
+ await screen.findByRole('alert')
+ expect(screen.queryByRole('heading',{name:'Poptávka je přijatá, děkuji'})).toBeNull()
+ expect(screen.getByLabelText('Co řešíte *')).toHaveProperty('value','Soukromá zpráva')
 })

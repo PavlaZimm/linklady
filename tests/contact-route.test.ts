@@ -36,7 +36,8 @@ describe('contact receipt', () => {
   it('normalizes email before persistent rate limiting and preserves the whole message', async () => {
     vi.stubEnv('CONVEX_URL','https://example.convex.cloud');mutation.mockResolvedValue('id')
     const message='x'.repeat(5000), response=await send({...valid,message})
-    expect(mutation.mock.calls[0][1]).toMatchObject({email:'jana@example.com',message,requestId:valid.requestId})
+    expect(mutation.mock.calls[0][1]).toMatchObject({email:'jana@example.com',message})
+    expect(mutation.mock.calls[0][1]).not.toHaveProperty('requestId')
     expect(await response.json()).toMatchObject({ok:true,receipt:'stored'})
   })
   it('does not use a second writer after an uncertain database error', async () => {

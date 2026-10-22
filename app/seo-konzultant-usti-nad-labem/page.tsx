@@ -263,7 +263,8 @@ export default function SeoKonzultantUstiPage() {
                 <h3 className="text-2xl font-bold text-gray-900">SEO audit</h3>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Projdu technický stav webu, texty, zpětné odkazy a konkurenci. Dostanete seznam, co opravit a v jakém pořadí.
+                Projdu technický stav webu, texty, zpětné odkazy a konkurenci. Dostanete seznam, co opravit a v jakém pořadí. Podrobněji popisuji{' '}
+                <Link href="/sluzby/seo" className="text-primary font-semibold hover:underline">rozsah SEO auditu a navazující spolupráce</Link>.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">

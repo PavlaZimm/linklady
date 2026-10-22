@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { trackEvent } from '@/lib/analytics'
+import { contactSchema } from '@/lib/contact-validation'
 
 type Props = {
   /** Předvyplněná služba, ať se pozná, ze které stránky poptávka přišla. */
@@ -56,7 +57,7 @@ export default function ContactForm(props: Props) {
             signal: AbortSignal.timeout(15000),
           })
           const result = await r.json().catch(() => null)
-          if (r.ok && result?.ok === true) return { ok: true, accepted: result.accepted === true }
+          if (r.ok && result?.ok === true && typeof result.accepted === 'boolean') return { ok: true, accepted: result.accepted === true }
           if (r.status === 400 || r.status === 429) throw new Error(result?.message || 'Zkontrolujte vyplněné údaje.')
         } catch (error) {
           if (error instanceof Error && !['TimeoutError', 'AbortError', 'TypeError', 'SyntaxError'].includes(error.name)) throw error
@@ -99,6 +100,10 @@ function Formular({
   const sending = useRef(false)
   useEffect(() => { if (stav === 'hotovo') successRef.current?.focus() }, [stav])
 
+  function trackFormEvent(name: string, extra: Record<string, string> = {}) {
+    trackEvent(name, { form_id: 'contact', form_location: service ?? 'kontakt', page_path: window.location.pathname, ...extra })
+  }
+
   async function odeslat(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const f = new FormData(e.currentTarget)
@@ -118,20 +123,22 @@ function Formular({
         websiteUrl: ((f.get('websiteUrl') as string) || '').trim() || undefined,
         web: ((f.get('web') as string) || '').trim(),
       }
-      const fingerprint = JSON.stringify(payload)
+      const parsed = contactSchema.safeParse(payload)
+      if (!parsed.success) throw new Error(parsed.error.issues[0].message)
+      const fingerprint = JSON.stringify(parsed.data)
       if (requestRef.current.fingerprint !== fingerprint) requestRef.current = { fingerprint, id: crypto.randomUUID() }
-      const vysledek = await odeslatData({ ...payload, requestId: requestRef.current.id })
+      const vysledek = await odeslatData({ ...parsed.data, requestId: requestRef.current.id })
       if (!vysledek.ok) {
         setMailto(vysledek.mailto)
         setStav('zaloha')
-        trackEvent('form_error', { form_location: service ?? 'kontakt', reason: 'delivery' })
+        trackFormEvent('form_error', { reason: 'delivery' })
         return
       }
       setStav('hotovo')
-      if (vysledek.accepted) trackEvent('generate_lead', { form_location: service ?? 'kontakt' })
+      if (vysledek.accepted) trackFormEvent('generate_lead')
     } catch (err) {
       setStav('chyba')
-      trackEvent('form_error', { form_location: service ?? 'kontakt', reason: 'validation_or_limit' })
+      trackFormEvent('form_error', { reason: 'validation_or_limit' })
       setChyba(err instanceof Error ? err.message : 'Zprávu se nepodařilo odeslat.')
     } finally {
       sending.current = false
@@ -155,7 +162,7 @@ function Formular({
       <p className="text-gray-600 mb-8 text-lg">{subtitle}</p>
 
       <form onSubmit={odeslat} aria-busy={stav === 'posilam'} className="space-y-5" onFocus={() => {
-        if (!started.current) { started.current = true; trackEvent('form_start', { form_location: service ?? 'kontakt' }) }
+        if (!started.current) { started.current = true; trackFormEvent('form_start') }
       }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
@@ -267,7 +274,7 @@ function Formular({
             </p>
             <a
               href={mailto}
-              onClick={() => trackEvent('contact_email_click', { form_location: service ?? 'kontakt' })}
+              onClick={() => trackFormEvent('contact_email_click')}
               className="inline-flex mt-3 items-center justify-center bg-[#FF795E] text-[#151D32] px-5 py-2.5 rounded-full font-semibold hover:bg-[#ff927c] transition-colors"
             >
               Odeslat e-mailem

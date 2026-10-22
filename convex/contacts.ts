@@ -1,6 +1,6 @@
 import { mutation, query, action, internalMutation, internalQuery, internalAction } from "./_generated/server";
 import { internal } from "./_generated/api";
-import { v } from "convex/values";
+import { ConvexError, v } from "convex/values";
 import { Id } from "./_generated/dataModel";
 
 // --- Input validation constants ---
@@ -54,19 +54,20 @@ export const submitContactForm = mutation({
     if (!args.message.trim()) throw new Error("Zpráva je povinná.");
 
     // --- Rate limiting: max N submissions per email per hour ---
+    const email = args.email.trim().toLowerCase();
     const windowStart = Date.now() - RATE_LIMIT_WINDOW_MS;
     const recentByEmail = await ctx.db
       .query("contacts")
       .filter((q) =>
         q.and(
-          q.eq(q.field("email"), args.email),
+          q.eq(q.field("email"), email),
           q.gte(q.field("createdAt"), windowStart)
         )
       )
       .collect();
 
     if (recentByEmail.length >= MAX_SUBMISSIONS_PER_WINDOW) {
-      throw new Error("Příliš mnoho zpráv. Zkuste to znovu za hodinu.");
+      throw new ConvexError("RATE_LIMIT");
     }
 
     // --- Sanitize inputs ---
@@ -78,7 +79,7 @@ export const submitContactForm = mutation({
 
     const contactId = await ctx.db.insert("contacts", {
       name: sanitizedName,
-      email: args.email.trim().toLowerCase(),
+      email,
       subject: sanitizedSubject,
       message: sanitizedMessage,
       phone: sanitizedPhone,
