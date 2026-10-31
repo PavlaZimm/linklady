@@ -17,6 +17,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "flyqueens",
+    serviceContext: { before: "Propojení externích dat s vlastním rozhraním může být součástí ", href: "/sluzby/webove-aplikace", label: "vývoje webové aplikace", after: ". Pro konkrétní projekt nejdřív ověřím zdroje a potřebné funkce." },
     art: "fly",
     name: "FlyQueens.cz",
     category: "apps",
@@ -67,6 +68,7 @@ export const projects: Project[] = [
   },
   {
     slug: "attersee",
+    serviceContext: { before: "Pokud chcete sami publikovat články a rozvíjet podobně strukturovaný obsah, prohlédněte si nabídku ", href: "/sluzby/tvorba-webu-wordpress", label: "tvorby webových stránek ve WordPressu", after: "." },
     art: "attersee",
     name: "Attersee.cz",
     category: "content",

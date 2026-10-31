@@ -68,6 +68,22 @@ Ověření WordPress doplnění: produkční build prošel, stávající testy s
 
 ## Ověření změn
 
+### Doplnění interního prolinkování
+
+Na navazující zadání doplněno sedm relevantních odkazů v existujících datových strukturách a šablonách:
+
+| Zdroj | Cíl | Kontext |
+| --- | --- | --- |
+| /blog/kolik-stoji-webove-stranky | /sluzby/tvorba-webu-wordpress | Rozsah práce, licence a správa |
+| /blog/zadani-webu | /sluzby/tvorba-webu-wordpress | Vlastní editace obsahu |
+| /projekty/attersee | /sluzby/tvorba-webu-wordpress | Podobný obsahový projekt s vlastní správou |
+| /projekty/flyqueens | /sluzby/webove-aplikace | Propojení externích dat s rozhraním |
+| /sluzby/ai-automatizace | /sluzby/web-scraping | Získání vstupních dat |
+| /sluzby/ai-automatizace | /blog/reporting-a-dashboard | Reporting nad připravenými daty |
+| /sluzby/tvorba-webu-wordpress | /sluzby/seo | Navazující audit a rozvoj obsahu |
+
+Ověření finálního prolinkování: produkční build prošel; stávající testy směrování a integrity 8/8; HTTP kontrola 13 stránek, všech sedmi nových vazeb v jejich hlavním obsahu a 38 interních cílů prošla. Nové vazby nemění URL ani směrování. Formuláře se neodesílaly, vizuální browser kontrola neproběhla.
+
 - Produkční build Next.js prošel včetně sestavení nových tras a kontroly aplikačních typů.
 - Celá existující sada: 52/57 prošlo. Pět selhání v tests/contact-flow.test.tsx se identicky opakuje na nezměněném main (68670a8), v odděleném checkoutu se stejnými závislostmi. Formulář ani API se touto změnou nemění.
 - Samostatné tsc --noEmit hlásí existující TS18046 v tests/contact-convex.test.ts:34; není důsledkem změny obsahu. Produkční build tuto chybu nehlásí.

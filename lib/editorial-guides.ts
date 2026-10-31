@@ -125,6 +125,7 @@ export const guides: Guide[] = [
           'U e-shopu si nechte vyjasnit také vložení produktů, varianty, způsob dopravy a plateb a případné propojení se skladovým systémem. Samotné označení „e-shop“ neříká, které z těchto úkolů nabídka pokrývá. Do zadání patří i člověk, který bude obsah schvalovat, a termín dodání podkladů.',
           'Když je rozpočet napjatý, rozdělte zadání na první verzi a pozdější rozšíření. Například poptávkový formulář může být součástí první verze, zatímco zákaznická sekce počká. Toto rozdělení musí odpovídat tomu, co vaši zákazníci potřebují při objednávce.',
         ],
+        links: [{ href: '/sluzby/tvorba-webu-wordpress', label: 'Web ve WordPressu: rozsah tvorby, licence a následná správa' }],
       },
       {
         id: 'porovnani-nabidek',
@@ -206,6 +207,7 @@ export const guides: Guide[] = [
           'Když posíláte cizí web jako inspiraci, označte konkrétní věc: čitelnost ceníku, způsob výběru služby nebo přehled kontaktů. Samotné „ať je to podobné“ může znamenat barvy, strukturu i funkce. Cizí texty a fotografie nepřebírejte bez oprávnění.',
           'Zapište i požadavky na vlastní editaci. Potřebujete měnit telefon a cenu, nebo pravidelně publikovat celé články? Při ukázce administrace si nechte předvést právě tuto činnost. Obecný slib snadného ovládání ji nenahradí.',
         ],
+        links: [{ href: '/sluzby/tvorba-webu-wordpress', label: 'Tvorba WordPress webu s vlastní správou obsahu' }],
       },
       {
         id: 'migrace',

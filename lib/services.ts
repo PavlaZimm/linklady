@@ -221,6 +221,7 @@ export const services: Service[] = [
   },
   {
     slug: "ai-automatizace",
+    updated: "2026-10-31",
     metaDescription: "Propojím formuláře, CRM a reporting do funkční automatizace. Vybereme konkrétní proces, nastavíme kontrolu chyb a domluvíme správu.",
     title: "AI a automatizace pro firmy",
     seoTitle: "AI automatizace pro firmy",
@@ -254,6 +255,10 @@ export const services: Service[] = [
         text: "Cenu ovlivňuje počet a složitost kroků, dostupnost propojení, příprava dat i rozsah ověření. Vedle mé práce mohou vznikat průběžné náklady na nástroje a jejich používání. Před realizací s vámi domluvím přístupy, práci s daty, kontrolu chyb i odpovědnost za správu.",
         items: ["Odhad nákladů podle tarifů, objemu dat a četnosti běhů", "Způsob předání a potřebné podklady k provozu", "Rozsah případné správy a podpory po domluvě"],
       },
+    ],
+    reading: [
+      { href: "/sluzby/web-scraping", label: "Web scraping: získání a příprava vstupních dat" },
+      { href: "/blog/reporting-a-dashboard", label: "Reporting a dashboard: od dat k použitelnému přehledu" },
     ],
     related: "webove-aplikace",
   },
@@ -353,6 +358,7 @@ export const services: Service[] = [
       { href: "/blog/zadani-webu", label: "Jak připravit zadání pro nový web" },
       { href: "/blog/kolik-stoji-webove-stranky", label: "Kolik stojí webové stránky a jejich provoz" },
       { href: "/projekty/attersee", label: "Obsahový projekt Attersee: struktura průvodce a článků" },
+      { href: "/sluzby/seo", label: "SEO audit a další rozvoj obsahu WordPress webu" },
       { href: "/sluzby/webove-aplikace", label: "Kdy potřebujete vlastní webovou aplikaci" },
     ],
     related: "tvorba-webu",
