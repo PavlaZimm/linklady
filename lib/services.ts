@@ -103,6 +103,7 @@ export const services: Service[] = [
   },
   {
     slug: "tvorba-webu",
+    updated: "2026-10-31",
     title: "Tvorba webových stránek na míru",
     seoTitle: "Tvorba webových stránek na míru",
     intro:
@@ -146,6 +147,7 @@ export const services: Service[] = [
       { question: "Můžete upravit i stávající web?", answer: "Ano. Nejdřív ověřím jeho technický stav a možnosti úprav. Podle toho doporučím úpravu jednotlivých stránek, doplnění funkcí nebo redesign. Termín stanovíme podle rozsahu a připravených podkladů." },
     ],
     reading: [
+      { href: "/sluzby/tvorba-webu-wordpress", label: "Tvorba webových stránek ve WordPressu s vlastní správou obsahu" },
       { href: "/blog/kolik-stoji-webove-stranky", label: "Kolik stojí webové stránky a jejich provoz" },
       { href: "/blog/zadani-webu", label: "Jak připravit zadání webu" },
       { href: "/sluzby/seo", label: "SEO pro nový i stávající web" },
@@ -297,6 +299,63 @@ export const services: Service[] = [
       { href: "/blog/reporting-a-dashboard", label: "Reporting a dashboard: jak připravit použitelný přehled" },
     ],
     related: "webove-aplikace",
+  },
+  {
+    slug: "tvorba-webu-wordpress",
+    updated: "2026-10-31",
+    title: "Tvorba webových stránek ve WordPressu",
+    seoTitle: "Tvorba webových stránek WordPress na míru",
+    metaDescription: "Vytvořím web ve WordPressu, který si zvládnete upravovat. Struktura, vzhled, SEO základ, formuláře a předání administrace. Domluvíme také provoz a správu.",
+    intro: "Chcete firemní web, na kterém si sami změníte cenu, přidáte článek nebo upravíte nabídku služeb? Navrhnu a vytvořím webové stránky ve WordPressu podle vašeho obsahu a způsobu práce. Provedu vás zadáním, přípravou webu i správou obsahu po spuštění.",
+    legacy: "/sluzby/tvorba-webu",
+    legacyLabel: "Tvorba webových stránek: celá nabídka a orientační ceny",
+    contactPrompt: "Napište, jaký web potřebujete, kdo bude měnit obsah a zda už máte doménu, hosting nebo současné stránky. Přiložte seznam požadovaných funkcí.",
+    sections: [
+      {
+        title: "Kdy je WordPress vhodný pro váš web",
+        text: "WordPress dává smysl pro firemní prezentaci, magazín nebo web, jehož obsah potřebujete průběžně měnit. Při návrhu řeším také to, kdo bude s administrací pracovat. Pokud potřebujete hlavně vlastní procesy, složitější oprávnění nebo aplikaci nad více datovými zdroji, probereme vhodné řešení podle zadání.",
+        items: ["Firemní web s nabídkou služeb, referencemi a kontaktem", "Články, aktuality a obsahové sekce s kategoriemi", "Stránky s ceníkem nebo termíny, které si upravujete sami", "Poptávkové formuláře a další dohodnuté funkce"],
+      },
+      {
+        title: "Nejdřív struktura a obsah, potom šablona",
+        text: "Začneme vašimi zákazníky: co na webu hledají a co jim pomůže poslat poptávku. Připravíme přehled stránek, jejich obsah a cestu ke kontaktu. Pak zvolím způsob zpracování vzhledu a administrace. Každý doplněk má řešit konkrétní potřebu a mít jasný důvod pro použití.",
+        items: ["Struktura služeb, navigace a srozumitelné výzvy k akci", "Domluva textů, fotografií a podkladů před realizací", "Vzhled a čitelnost na telefonu i počítači", "Výběr potřebné šablony, editoru a pluginů podle zadání"],
+      },
+      {
+        title: "Co zahrnuje tvorba WordPress webu",
+        text: "Přesný rozsah potvrdíme v nabídce. Vedle vzhledu řeším nastavení stránek, formuláře a technický SEO základ. Před předáním projdu odkazy, zobrazení na mobilu a domluvené formuláře. U důležitých akcí ověřím celý postup, například přijetí testovací poptávky na správném místě.",
+        items: ["Implementace dohodnutých stránek a vložení připraveného obsahu", "Nadpisy, titulky, popisy stránek a nastavení indexovatelnosti", "Interní odkazy, sitemap a kontrola dostupnosti obsahu", "Kontrola velikosti obrázků a načítání důležitých stránek", "Ověření funkcí a přehled přístupů při předání"],
+      },
+      {
+        title: "Vlastní úpravy obsahu bez hledání v kódu",
+        text: "Při předání si vyzkoušíte činnosti, které budete dělat běžně: změnu ceny, vložení fotografie nebo publikaci článku. Domluvíme, které části budete upravovat sami a které zásahy je vhodné nejdřív probrat. Rozsah administrace a zaškolení patří do zadání stejně jako vzhled webu.",
+        items: ["Uživatelské účty a přístupy podle rolí v týmu", "Ukázka editace konkrétní stránky nebo článku", "Předání domluvených návodů a přístupů", "Vyjasnění, kdo bude řešit další technické změny"],
+      },
+      {
+        title: "Redesign stávajícího WordPress webu",
+        text: "Pokud už web máte, nejdřív zmapuji obsah, adresy a používané funkce. Rozhodneme, co zůstane, co upravit a které části přesunout. Při změně URL připravím přesměrování na odpovídající obsah. Po spuštění zkontroluji důležité adresy, interní odkazy a formuláře.",
+        items: ["Přehled původních stránek a plán zachování obsahu", "Záloha a domluvený postup úprav před změnou webu", "Kontrola závislostí na šabloně a pluginech", "Mapa přesměrování u změněných adres a kontrola po spuštění"],
+      },
+      {
+        title: "Cena tvorby a následná správa WordPressu",
+        text: "Cenu ovlivní počet a typ stránek, připravenost obsahu, způsob editace a požadované funkce. Po probrání zadání připravím nabídku s výstupy. Doménu, hosting, případné placené licence a pravidelnou správu oddělím od jednorázové tvorby, abyste znali také náklady na další provoz.",
+        items: ["Rozsah první verze, termín a počet kol připomínek", "Ceny licencí a podmínky jejich prodlužování", "Domluva aktualizací, záloh a odpovědnosti za provoz", "Podmínky podpory a nacenění pozdějších úprav"],
+      },
+    ],
+    questions: [
+      { question: "Budu si moci web sama nebo sám upravovat?", answer: "Ano, způsob vlastní editace vyjasníme při zadání. Při předání si ukážeme konkrétní úpravy textů, obrázků nebo článků. Změny struktury, napojení či technického nastavení mohou vyžadovat další práci podle rozsahu." },
+      { question: "Musím si předem koupit šablonu nebo pluginy?", answer: "Nejdřív společně vybereme vhodné řešení podle požadovaných funkcí. Pokud bude potřeba placený nástroj, předem si potvrdíme cenu, vlastníka licence a podmínky obnovy. Samotný nákup šablony ještě neřeší obsah ani hotový web." },
+      { question: "Můžete upravit můj současný WordPress web?", answer: "Ano, nejdřív ale ověřím jeho stav, dostupné přístupy a možnosti šablony i doplňků. Podle výsledku navrhnu konkrétní úpravy nebo redesign. Pro první posouzení pošlete adresu webu a popis toho, co vám na něm nevyhovuje." },
+      { question: "Je součástí i SEO?", answer: "Součástí domluvené realizace je technický SEO základ, například struktura nadpisů, titulky, popisy, indexovatelnost a interní odkazy. Podrobnou analýzu klíčových slov, rozsáhlejší tvorbu textů nebo pravidelnou SEO správu naceníme podle potřeb webu. Samotná instalace SEO pluginu nezaručuje pozice." },
+      { question: "Kdo se stará o aktualizace a zálohy?", answer: "Odpovědnost si určíme před spuštěním. Správu můžete řešit sami, se svým dodavatelem nebo se mnou v dohodnutém rozsahu. V nabídce oddělíme tvorbu od pravidelné údržby a vyjasníme postup při problému." },
+    ],
+    reading: [
+      { href: "/blog/zadani-webu", label: "Jak připravit zadání pro nový web" },
+      { href: "/blog/kolik-stoji-webove-stranky", label: "Kolik stojí webové stránky a jejich provoz" },
+      { href: "/projekty/attersee", label: "Obsahový projekt Attersee: struktura průvodce a článků" },
+      { href: "/sluzby/webove-aplikace", label: "Kdy potřebujete vlastní webovou aplikaci" },
+    ],
+    related: "tvorba-webu",
   },
 ];
 

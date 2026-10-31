@@ -7,6 +7,7 @@ Zdroj: Marketing Miner, český trh, získáno 31. 10. 2026. Hledanost je odhad 
 | Potřeba | URL | Rozsah změny |
 | --- | --- | --- |
 | Najít dodavatele aplikace | /sluzby/webove-aplikace | H1 a metadata pro „vývoj webové aplikace“, zadání, proces, vlastní dashboard, cenové faktory, FAQ a návazné odkazy |
+| Najít dodavatele WordPress webu | /sluzby/tvorba-webu-wordpress | Samostatná specializovaná služba: editace obsahu, rozsah dodávky, redesign, SEO základ, cena, licence, správa a FAQ |
 | Poptat získání dat | /sluzby/web-scraping | Nová služba: zdroje, vzorek, čištění, export, pravidelné běhy, provozní náklady a předání |
 | Zorientovat se v reportingu a dashboardech | /blog/reporting-a-dashboard | Nový článek ve stávající šabloně, modelový příklad agentury, datové zdroje, význam ukazatelů, vizualizace a zadání |
 | Pochopit postup tvorby aplikace | /blog/jak-vytvorit-webovou-aplikaci | Zachovaný návod; závěrečný odkaz nově vede na službu |
@@ -56,6 +57,14 @@ První kandidáti: Liberec pro nižší naměřenou obtížnost; České Budějo
 Nová městská stránka zatím není vytvořena: zadání zde žádá průzkum. Případná nabídka pro Liberec musí pravdivě popisovat vzdálenou spolupráci z Bíliny. Nevymýšlet kancelář, lokální reference ani adresu. Nevyrábět sérii kopií s přepsaným názvem města. Nejdřív připravit jednu užitečnou stránku s reálným rozsahem, ukázkami, průběhem spolupráce a odkazy na hlavní službu.
 
 Mimo městské dotazy je zajímavý kandidát „tvorba webových stránek wordpress“: 120 hledání, obtížnost 15. Je to samostatná službová příležitost, protože WordPress je součást skutečné nabídky. Neznamená to, že kombinace WordPress + město má stejné skóre.
+
+### Realizace WordPress služby
+
+Po navazujícím zadání je připravená /sluzby/tvorba-webu-wordpress. Marketing Miner znovu 31. 10. 2026 potvrdil přesný dotaz „tvorba webových stránek wordpress“: 120 hledání, obtížnost 15, CPC 20,34 Kč. Výzkum výsledků ukázal vedle nabídek dodavatelů také kurzy a návody; hledanost tedy není čistým počtem potenciálních zakázek. Konkrétní příklady služeb: https://www.wplama.cz/sluzby/tvorba-webu/ a https://wpdistro.cz/tvorba-webovych-stranek-wordpress/ . Je to důvod pro nabídku služby s jasným rozsahem, nikoli další obecný návod na instalaci.
+
+Nová stránka se zaměřuje na redakční systém, samostatnou editaci, šablony a doplňky, technický SEO základ, migraci, předání a údržbu. Obecná /sluzby/tvorba-webu zůstává hlavním přehledem nabídky a na WordPress odkazuje. Nová služba se automaticky zařadí do přehledu a sitemap, má vlastní canonical a Service/BreadcrumbList přes existující šablonu. Neuvádí nepotvrzené WordPress ceny, garance pozic ani smyšlené klientské výsledky. Odkaz na Attersee je ukázkou obsahu a struktury, nikoli tvrzením o konkrétní technologické dodávce.
+
+Ověření WordPress doplnění: produkční build prošel, stávající testy směrování a integrity obsahu 8/8. HTTP kontrola osmi tras a 37 interních cílů prošla, včetně nové stránky, její H1, canonical, JSON-LD, pěti FAQ, přítomnosti formuláře, zařazení do přehledu služeb a sitemap. Vizuální kontrola v prohlížeči ani skutečné odeslání poptávky neproběhly.
 
 ## Ověření změn
 
