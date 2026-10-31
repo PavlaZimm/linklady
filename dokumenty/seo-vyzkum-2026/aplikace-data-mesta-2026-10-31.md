@@ -68,6 +68,12 @@ Ověření WordPress doplnění: produkční build prošel, stávající testy s
 
 ## Ověření změn
 
+### Příprava vydání po autorizaci nasazení
+
+Původních pět selhání testů formuláře je vyřešeno. Simulovaný fetch předával AbortSignal z jsdom do serverového Request z Node; odlišné implementace způsobily chybu ještě před obsluhou API. Testovací adaptér nyní odděluje klientský timeout od simulovaného serverového požadavku. Produkční formulář, API i poskytovatel odesílání zůstávají stejné. V testu Convexu je explicitní ověření typu chyby, aby TypeScript mohl bezpečně přistoupit k její vlastnosti data.
+
+Finální kontrola: Vitest 57/57, samostatné tsc --noEmit i produkční build prošly. Starší záznamy o selhání níže popisují stav před touto opravou testovacího prostředí. Žádná skutečná poptávka ani e-mail se v testech neodesílá.
+
 ### Doplnění interního prolinkování
 
 Na navazující zadání doplněno sedm relevantních odkazů v existujících datových strukturách a šablonách:

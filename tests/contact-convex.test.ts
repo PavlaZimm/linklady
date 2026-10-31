@@ -31,6 +31,7 @@ it('returns the typed rate-limit signal expected by the API without inserting or
  const {ctx,definition,insert,runAfter}=setup(Array(5).fill({}))
  const error=await definition.handler(ctx,input).catch(error=>error)
  expect(error).toBeInstanceOf(ConvexError)
+ if (!(error instanceof ConvexError)) throw new Error('Expected a ConvexError rate-limit response')
  expect(error.data).toBe('RATE_LIMIT')
  expect(insert).not.toHaveBeenCalled();expect(runAfter).not.toHaveBeenCalled()
 })
