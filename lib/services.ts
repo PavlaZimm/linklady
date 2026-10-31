@@ -2,6 +2,7 @@ type Service = {
   slug: string;
   title: string;
   seoTitle?: string;
+  updated?: string;
   metaDescription?: string;
   intro: string;
   contactPrompt?: string;
@@ -102,6 +103,7 @@ export const services: Service[] = [
   },
   {
     slug: "tvorba-webu",
+    updated: "2026-10-31",
     title: "Tvorba webových stránek na míru",
     seoTitle: "Tvorba webových stránek na míru",
     intro:
@@ -145,6 +147,7 @@ export const services: Service[] = [
       { question: "Můžete upravit i stávající web?", answer: "Ano. Nejdřív ověřím jeho technický stav a možnosti úprav. Podle toho doporučím úpravu jednotlivých stránek, doplnění funkcí nebo redesign. Termín stanovíme podle rozsahu a připravených podkladů." },
     ],
     reading: [
+      { href: "/sluzby/tvorba-webu-wordpress", label: "Tvorba webových stránek ve WordPressu s vlastní správou obsahu" },
       { href: "/blog/kolik-stoji-webove-stranky", label: "Kolik stojí webové stránky a jejich provoz" },
       { href: "/blog/zadani-webu", label: "Jak připravit zadání webu" },
       { href: "/sluzby/seo", label: "SEO pro nový i stávající web" },
@@ -155,9 +158,11 @@ export const services: Service[] = [
   },
   {
     slug: "webove-aplikace",
-    metaDescription: "Navrhnu webovou aplikaci pro vaše firemní procesy. Propojíme data, nastavíme přístupy a domluvíme předání i další správu.",
-    title: "Webové aplikace na míru",
-    intro: "Když potřebujete nástroj, který umí víc než představit vaši firmu.",
+    updated: "2026-10-31",
+    metaDescription: "Vývoj webové aplikace na míru: vlastní dashboard, interní evidence nebo klientský portál. Navrhnu první verzi, propojím data a domluvíme cenu i provoz.",
+    seoTitle: "Vývoj webové aplikace na míru",
+    title: "Vývoj webové aplikace na míru",
+    intro: "Vytvořím webovou aplikaci, která vám pomůže s evidencí, reportingem nebo předáváním dat. Od zadání a první funkční verze přes napojení systémů až po otestování a předání. Funguje v prohlížeči na počítači i telefonu.",
     legacy: "/webova-aplikace",
     legacyLabel: "Webové aplikace a příklady z praxe",
     contactPrompt: "Napište mi, kdo bude aplikaci používat a jaký problém má vyřešit.",
@@ -165,7 +170,12 @@ export const services: Service[] = [
       {
         title: "Kdy dává aplikace na míru smysl",
         text: "Pokud vám hotový nástroj pokryje potřebný postup, může stačit jeho nastavení. Aplikaci na míru navrhnu tam, kde potřebujete vlastní práci s daty, propojit více systémů nebo zpřístupnit různé funkce různým lidem. Nejdřív s vámi porovnám potřeby a možnosti dostupných řešení.",
-        items: ["Poptávkové a rezervační systémy", "Interní evidence a klientské portály", "Interaktivní nástroje nad externími daty"],
+        items: ["Poptávkové systémy a konfigurátory", "Interní evidence a klientské portály", "Vlastní dashboardy a přehledy dat", "Interaktivní nástroje napojené na externí zdroje"],
+      },
+      {
+        title: "Vlastní dashboard místo ručního skládání přehledů",
+        text: "Potřebujete na jednom místě vidět stav zakázek, výsledky webů nebo údaje z několika nástrojů? Navrhnu vlastní webový dashboard podle toho, co potřebujete rozhodovat. Předem ověřím dostupnost dat, význam jednotlivých ukazatelů a četnost aktualizace.",
+        items: ["Přehledy s filtry, tabulkami a grafy podle potřeb týmu", "Napojení na dohodnutá API, databáze nebo exporty", "Zobrazení času poslední aktualizace a informace při výpadku zdroje", "Přístupy a exporty podle domluveného rozsahu"],
       },
       {
         title: "Co spolu vyjasníme před návrhem",
@@ -178,18 +188,40 @@ export const services: Service[] = [
         ],
       },
       {
+        title: "Jak probíhá vývoj webové aplikace",
+        text: "Začneme jedním konkrétním úkolem a návrhem obrazovek. Na první funkční verzi si vyzkoušíte celý postup se vzorkem dat. Teprve podle zpětné vazby doplníme další funkce. Změny rozsahu průběžně posoudíme podle dopadu na cenu a termín.",
+        items: ["Zadání, datové zdroje a vymezení první verze", "Prototyp a společné ověření pracovního postupu", "Vývoj funkcí, napojení dat a kontrola oprávnění", "Testování běžných úkolů i chybových situací před spuštěním"],
+      },
+      {
+        title: "Kolik stojí vývoj webové aplikace",
+        text: "Cenu připravím podle rozsahu funkcí, uživatelských rolí, stavu dat a potřebných napojení. Před zahájením si potvrdíme odhad práce, výstupy první verze a způsob schvalování změn. Hosting, databáze a placené služby mají vlastní provozní náklady, které oddělím od ceny vývoje.",
+        items: ["Rozsah první verze a odhad práce před realizací", "Náklady na externí data, API a další nástroje", "Způsob předání kódu, účtů a přístupů", "Podpora a rozvoj po spuštění podle dohody"],
+      },
+      {
         title: "Ověření, předání a další správa",
         text: "Předem domluvím, podle čeho společně poznáme, že aplikace plní zadání. Projdeme běžné použití i chybové situace. Způsob předání, provozní náklady a případnou další správu vyjasníme v nabídce podle konkrétního řešení.",
         items: ["Ověření hlavních scénářů na počítači i telefonu", "Kontrola vstupních dat, přístupů a propojení", "Domluva, kdo bude spravovat obsah, přístupy a další změny"],
       },
     ],
+    questions: [
+      { question: "Co potřebuji připravit pro nacenění?", answer: "Popište, kdo bude aplikaci používat, co dnes řešíte ručně a jak má vypadat hotový výstup. Přiložte anonymizovanou ukázku tabulky nebo současné evidence, seznam používaných nástrojů a funkce, bez kterých se první verze neobejde. Přístupy a citlivá data vyřešíme až dohodnutým způsobem." },
+      { question: "Jak dlouho vývoj webové aplikace trvá?", answer: "Termín závisí na rozsahu, dostupnosti dat a připravenosti podkladů. Po upřesnění zadání navrhnu jednotlivé fáze a termín první použitelné verze. Dashboard nad jedním zdrojem má jiný rozsah než portál s několika rolemi a napojením na více systémů." },
+      { question: "Lze propojit aplikaci s nástroji, které už používáme?", answer: "Nejdřív ověřím, zda mají použitelné API, export nebo jiný dostupný způsob předání dat. Pak domluvíme, co a jak často přenášet a co má aplikace udělat při chybě. Propojení nelze slíbit bez prověření konkrétního systému." },
+      { question: "Můžeme začít jen menším dashboardem nebo prototypem?", answer: "Ano. Vybereme jeden pracovní postup, potřebné ukazatele a dostupný zdroj dat. První verze má ověřit užitek v praxi. Rozšíření o další zdroje, role nebo automatizace můžeme naplánovat podle skutečného používání." },
+    ],
     reading: [
       { href: "/projekty/spacelady", label: "SpaceLady: ukázka interaktivní webové aplikace" },
+      { href: "/projekty/flyqueens", label: "FlyQueens: práce s externími leteckými daty" },
+      { href: "/blog/jak-vytvorit-webovou-aplikaci", label: "Jak vytvořit webovou aplikaci: postup od zadání po spuštění" },
+      { href: "/blog/webove-aplikace-priklady", label: "Webové aplikace: příklady a využití ve firmách" },
+      { href: "/sluzby/web-scraping", label: "Web scraping: sběr a příprava dat pro aplikaci" },
+      { href: "/blog/reporting-a-dashboard", label: "Reporting a dashboard: co připravit před návrhem" },
     ],
     related: "ai-automatizace",
   },
   {
     slug: "ai-automatizace",
+    updated: "2026-10-31",
     metaDescription: "Propojím formuláře, CRM a reporting do funkční automatizace. Vybereme konkrétní proces, nastavíme kontrolu chyb a domluvíme správu.",
     title: "AI a automatizace pro firmy",
     seoTitle: "AI automatizace pro firmy",
@@ -224,7 +256,112 @@ export const services: Service[] = [
         items: ["Odhad nákladů podle tarifů, objemu dat a četnosti běhů", "Způsob předání a potřebné podklady k provozu", "Rozsah případné správy a podpory po domluvě"],
       },
     ],
+    reading: [
+      { href: "/sluzby/web-scraping", label: "Web scraping: získání a příprava vstupních dat" },
+      { href: "/blog/reporting-a-dashboard", label: "Reporting a dashboard: od dat k použitelnému přehledu" },
+    ],
     related: "webove-aplikace",
+  },
+  {
+    slug: "web-scraping",
+    updated: "2026-10-31",
+    title: "Web scraping a automatizovaný sběr dat",
+    seoTitle: "Web scraping: sběr dat z webu pro vaše podnikání",
+    metaDescription: "Připravím web scraping pro sběr dat z dohodnutých webů. Vyčištění, export do tabulky nebo napojení na vlastní dashboard. Nejdřív ověřím zdroje a vzorek.",
+    intro: "Potřebujete pravidelně získávat údaje z webů a přestat je kopírovat po jednom? Připravím sběr dat přes Apify, jejich vyčištění a předání do tabulky nebo aplikace. Začneme konkrétním zdrojem a ukázkou výstupu.",
+    legacy: "/sluzby/webove-aplikace",
+    legacyLabel: "Vývoj webové aplikace nad získanými daty",
+    contactPrompt: "Pošlete adresy zdrojů, požadované údaje a ukázku výsledné tabulky. Napište také objem a četnost aktualizace.",
+    sections: [
+      {
+        title: "Co může sběr dat vyřešit",
+        text: "Web scraping převádí údaje z webových stránek do strukturovaného výstupu. Hodí se pro jednorázový průzkum i opakované aktualizace. Následující možnosti jsou příklady zadání; dostupnost ověřím podle konkrétního zdroje.",
+        items: ["Podklady pro monitoring cen konkurence: produkt, dostupnost, cena a datum kontroly", "Přehled veřejných nabídek, akcí nebo dalších záznamů podle zadaných polí", "Kontrola názvů, metadat a odkazů na vašem webu", "Průběžné doplňování dat pro vlastní přehled nebo dashboard"],
+      },
+      {
+        title: "Nejdřív zdroj a vzorek, potom celý sběr",
+        text: "Prověřím, odkud lze požadované údaje získat a zda zdroj nabízí vhodné API nebo export. U scrapingu ověřím dostupnost polí, způsob načítání a možnosti použití dat. Na malém vzorku zkontrolujeme, zda výstup odpovídá vašemu zadání.",
+        items: ["Konkrétní URL a seznam potřebných údajů", "Počet záznamů, stránkování a četnost aktualizace", "Kontrola chybějících polí, duplicit a formátů", "Domluvený vzorek a pravidla pro přijetí výsledku"],
+      },
+      {
+        title: "Co dostanete a kam data předám",
+        text: "Nestačí stáhnout text stránky. Domluvíme jednotné sloupce, identifikaci záznamů a zacházení s neúplnými údaji. K výstupu lze přidat zdrojovou adresu a čas sběru, abyste věděli, odkud údaje pocházejí a jak jsou aktuální.",
+        items: ["CSV, JSON nebo předání do Google Sheets podle dohody", "Vyčištění formátů, odstranění duplicit a označení chybějících hodnot", "Napojení na databázi nebo vlastní webovou aplikaci", "U pravidelného sběru domluvený plán běhů a kontrola neúspěšných aktualizací"],
+      },
+      {
+        title: "Cena a údržba scrapingu",
+        text: "Cena závisí na dostupnosti webu, složitosti sběru, objemu dat a četnosti běhů. Přípravu a kontrolu výstupu nacením zvlášť od provozu Apify a dalších nástrojů. Když se zdrojový web změní, může být potřeba sběr upravit; rozsah údržby si proto domluvíme předem.",
+        items: ["Ověření proveditelnosti a návrh prvního výstupu", "Odhad nákladů na běh nástrojů podle objemu a frekvence", "Rozsah jednorázové dodávky nebo pravidelné spolupráce", "Postup při změně webu, výpadku nebo neúplných datech"],
+      },
+    ],
+    questions: [
+      { question: "Můžete získat data z libovolného webu?", answer: "To nejde slíbit předem. Záleží na dostupnosti údajů, podmínkách zdroje i technickém řešení. Pošlete konkrétní adresy a požadovaná pole; nejdřív ověřím proveditelnost a možnosti použití dat. Pokud je dostupné vhodné API nebo export, může být lepší použít je." },
+      { question: "Může se sběr dat opakovat automaticky?", answer: "Ano, pokud to zdroj a navržené řešení umožní. Domluvíme četnost, limity nákladů a kontrolu výsledků. Při výpadku potřebujete rozlišit starší údaje od čerstvě získaných dat, proto řešíme také čas posledního úspěšného běhu." },
+      { question: "Lze získaná data zobrazit v dashboardu?", answer: "Ano. Sběr připraví strukturovaná data a vlastní webový dashboard je může zobrazit pomocí filtrů, tabulek a grafů. Vývoj rozhraní, ukládání historie a přístupy uživatelů domluvíme jako konkrétní rozsah aplikace." },
+    ],
+    reading: [
+      { href: "/sluzby/ai-automatizace", label: "Automatizace předávání a zpracování dat" },
+      { href: "/blog/reporting-a-dashboard", label: "Reporting a dashboard: jak připravit použitelný přehled" },
+    ],
+    related: "webove-aplikace",
+  },
+  {
+    slug: "tvorba-webu-wordpress",
+    updated: "2026-10-31",
+    title: "Tvorba webových stránek ve WordPressu",
+    seoTitle: "Tvorba webových stránek WordPress na míru",
+    metaDescription: "Vytvořím web ve WordPressu, který si zvládnete upravovat. Struktura, vzhled, SEO základ, formuláře a předání administrace. Domluvíme také provoz a správu.",
+    intro: "Chcete firemní web, na kterém si sami změníte cenu, přidáte článek nebo upravíte nabídku služeb? Navrhnu a vytvořím webové stránky ve WordPressu podle vašeho obsahu a způsobu práce. Provedu vás zadáním, přípravou webu i správou obsahu po spuštění.",
+    legacy: "/sluzby/tvorba-webu",
+    legacyLabel: "Tvorba webových stránek: celá nabídka a orientační ceny",
+    contactPrompt: "Napište, jaký web potřebujete, kdo bude měnit obsah a zda už máte doménu, hosting nebo současné stránky. Přiložte seznam požadovaných funkcí.",
+    sections: [
+      {
+        title: "Kdy je WordPress vhodný pro váš web",
+        text: "WordPress dává smysl pro firemní prezentaci, magazín nebo web, jehož obsah potřebujete průběžně měnit. Při návrhu řeším také to, kdo bude s administrací pracovat. Pokud potřebujete hlavně vlastní procesy, složitější oprávnění nebo aplikaci nad více datovými zdroji, probereme vhodné řešení podle zadání.",
+        items: ["Firemní web s nabídkou služeb, referencemi a kontaktem", "Články, aktuality a obsahové sekce s kategoriemi", "Stránky s ceníkem nebo termíny, které si upravujete sami", "Poptávkové formuláře a další dohodnuté funkce"],
+      },
+      {
+        title: "Nejdřív struktura a obsah, potom šablona",
+        text: "Začneme vašimi zákazníky: co na webu hledají a co jim pomůže poslat poptávku. Připravíme přehled stránek, jejich obsah a cestu ke kontaktu. Pak zvolím způsob zpracování vzhledu a administrace. Každý doplněk má řešit konkrétní potřebu a mít jasný důvod pro použití.",
+        items: ["Struktura služeb, navigace a srozumitelné výzvy k akci", "Domluva textů, fotografií a podkladů před realizací", "Vzhled a čitelnost na telefonu i počítači", "Výběr potřebné šablony, editoru a pluginů podle zadání"],
+      },
+      {
+        title: "Co zahrnuje tvorba WordPress webu",
+        text: "Přesný rozsah potvrdíme v nabídce. Vedle vzhledu řeším nastavení stránek, formuláře a technický SEO základ. Před předáním projdu odkazy, zobrazení na mobilu a domluvené formuláře. U důležitých akcí ověřím celý postup, například přijetí testovací poptávky na správném místě.",
+        items: ["Implementace dohodnutých stránek a vložení připraveného obsahu", "Nadpisy, titulky, popisy stránek a nastavení indexovatelnosti", "Interní odkazy, sitemap a kontrola dostupnosti obsahu", "Kontrola velikosti obrázků a načítání důležitých stránek", "Ověření funkcí a přehled přístupů při předání"],
+      },
+      {
+        title: "Vlastní úpravy obsahu bez hledání v kódu",
+        text: "Při předání si vyzkoušíte činnosti, které budete dělat běžně: změnu ceny, vložení fotografie nebo publikaci článku. Domluvíme, které části budete upravovat sami a které zásahy je vhodné nejdřív probrat. Rozsah administrace a zaškolení patří do zadání stejně jako vzhled webu.",
+        items: ["Uživatelské účty a přístupy podle rolí v týmu", "Ukázka editace konkrétní stránky nebo článku", "Předání domluvených návodů a přístupů", "Vyjasnění, kdo bude řešit další technické změny"],
+      },
+      {
+        title: "Redesign stávajícího WordPress webu",
+        text: "Pokud už web máte, nejdřív zmapuji obsah, adresy a používané funkce. Rozhodneme, co zůstane, co upravit a které části přesunout. Při změně URL připravím přesměrování na odpovídající obsah. Po spuštění zkontroluji důležité adresy, interní odkazy a formuláře.",
+        items: ["Přehled původních stránek a plán zachování obsahu", "Záloha a domluvený postup úprav před změnou webu", "Kontrola závislostí na šabloně a pluginech", "Mapa přesměrování u změněných adres a kontrola po spuštění"],
+      },
+      {
+        title: "Cena tvorby a následná správa WordPressu",
+        text: "Cenu ovlivní počet a typ stránek, připravenost obsahu, způsob editace a požadované funkce. Po probrání zadání připravím nabídku s výstupy. Doménu, hosting, případné placené licence a pravidelnou správu oddělím od jednorázové tvorby, abyste znali také náklady na další provoz.",
+        items: ["Rozsah první verze, termín a počet kol připomínek", "Ceny licencí a podmínky jejich prodlužování", "Domluva aktualizací, záloh a odpovědnosti za provoz", "Podmínky podpory a nacenění pozdějších úprav"],
+      },
+    ],
+    questions: [
+      { question: "Budu si moci web sama nebo sám upravovat?", answer: "Ano, způsob vlastní editace vyjasníme při zadání. Při předání si ukážeme konkrétní úpravy textů, obrázků nebo článků. Změny struktury, napojení či technického nastavení mohou vyžadovat další práci podle rozsahu." },
+      { question: "Musím si předem koupit šablonu nebo pluginy?", answer: "Nejdřív společně vybereme vhodné řešení podle požadovaných funkcí. Pokud bude potřeba placený nástroj, předem si potvrdíme cenu, vlastníka licence a podmínky obnovy. Samotný nákup šablony ještě neřeší obsah ani hotový web." },
+      { question: "Můžete upravit můj současný WordPress web?", answer: "Ano, nejdřív ale ověřím jeho stav, dostupné přístupy a možnosti šablony i doplňků. Podle výsledku navrhnu konkrétní úpravy nebo redesign. Pro první posouzení pošlete adresu webu a popis toho, co vám na něm nevyhovuje." },
+      { question: "Je součástí i SEO?", answer: "Součástí domluvené realizace je technický SEO základ, například struktura nadpisů, titulky, popisy, indexovatelnost a interní odkazy. Podrobnou analýzu klíčových slov, rozsáhlejší tvorbu textů nebo pravidelnou SEO správu naceníme podle potřeb webu. Samotná instalace SEO pluginu nezaručuje pozice." },
+      { question: "Kdo se stará o aktualizace a zálohy?", answer: "Odpovědnost si určíme před spuštěním. Správu můžete řešit sami, se svým dodavatelem nebo se mnou v dohodnutém rozsahu. V nabídce oddělíme tvorbu od pravidelné údržby a vyjasníme postup při problému." },
+    ],
+    reading: [
+      { href: "/blog/zadani-webu", label: "Jak připravit zadání pro nový web" },
+      { href: "/blog/kolik-stoji-webove-stranky", label: "Kolik stojí webové stránky a jejich provoz" },
+      { href: "/projekty/attersee", label: "Obsahový projekt Attersee: struktura průvodce a článků" },
+      { href: "/sluzby/seo", label: "SEO audit a další rozvoj obsahu WordPress webu" },
+      { href: "/sluzby/webove-aplikace", label: "Kdy potřebujete vlastní webovou aplikaci" },
+    ],
+    related: "tvorba-webu",
   },
 ];
 

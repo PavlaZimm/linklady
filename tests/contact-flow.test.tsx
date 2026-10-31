@@ -24,7 +24,12 @@ beforeEach(() => {
  Object.assign(window,{gtag});consent(true)
  vi.stubGlobal('fetch',vi.fn(async (url: string, options?: RequestInit) => {
   requests.push({url,options})
-  if(url==='/api/poptavka') return POST(new Request('https://www.linklady.cz/api/poptavka',{...options,headers:{'Content-Type':'application/json',origin:'https://www.linklady.cz','x-vercel-forwarded-for':'192.0.2.1'}}))
+  // jsdom's AbortSignal is not accepted by Node's Request. The browser timeout
+  // belongs to the client boundary; the simulated server request has its own.
+  if(url==='/api/poptavka') {
+   const {signal: _clientSignal, ...serverOptions}=options ?? {}
+   return POST(new Request('https://www.linklady.cz/api/poptavka',{...serverOptions,headers:{'Content-Type':'application/json',origin:'https://www.linklady.cz','x-vercel-forwarded-for':'192.0.2.1'}}))
+  }
   if(url==='https://redis.example') return Response.json({result:limit})
   if(url==='https://api.resend.com/emails') return provider()
   throw new Error('Unexpected network access')

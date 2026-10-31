@@ -41,7 +41,7 @@ const jsonLd = {
       description: 'Praktický postup vytvoření webové aplikace od zadání přes prototyp, vývoj a testování až po spuštění.',
       url: 'https://www.linklady.cz/blog/jak-vytvorit-webovou-aplikaci',
       datePublished: '2026-09-13',
-      dateModified: '2026-09-13',
+      dateModified: '2026-10-31',
       author: { '@id': 'https://www.linklady.cz/#person' },
       publisher: { '@id': 'https://www.linklady.cz/#business' },
       isPartOf: { '@id': 'https://www.linklady.cz/blog/#webpage' },
@@ -261,8 +261,8 @@ export default function JakVytvoritWebovouAplikaciPage() {
               <p className="text-gray-700 leading-relaxed mb-6">
                 Napište mi, kdo ji bude používat a co má vyřešit. Do 24 hodin vám řeknu, co patří do první verze, jaký postup dává smysl a kolik hodin přibližně zabere.
               </p>
-              <Link href="/kontakt" className="inline-block bg-primary text-white px-7 py-3.5 rounded-lg font-bold hover:bg-blue-800 transition-colors">
-                Chci nezávazný odhad
+              <Link href="/sluzby/webove-aplikace" className="inline-block bg-primary text-white px-7 py-3.5 rounded-lg font-bold hover:bg-blue-800 transition-colors">
+                Probrat vývoj webové aplikace
               </Link>
             </aside>
           </div>
