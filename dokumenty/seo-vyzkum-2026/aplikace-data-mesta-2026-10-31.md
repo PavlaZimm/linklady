@@ -1,0 +1,66 @@
+# Aplikace, scraping, dashboardy a větší města
+
+Zdroj: Marketing Miner, český trh, získáno 31. 10. 2026. Hledanost je odhad měsíčních vyhledávání, nikoli počet zájemců ani návštěvnost LinkLady. Obtížnost je metrika nástroje 0–100; nižší skóre neznamená garantované pozice. Chybějící obtížnost není nulová. Blízké varianty nesčítáme. Původní odpovědi k hlavním okruhům jsou v sousedním JSON souboru; jejich limity omezují počet vrácených řádků.
+
+## Obsahové rozhodnutí a realizace
+
+| Potřeba | URL | Rozsah změny |
+| --- | --- | --- |
+| Najít dodavatele aplikace | /sluzby/webove-aplikace | H1 a metadata pro „vývoj webové aplikace“, zadání, proces, vlastní dashboard, cenové faktory, FAQ a návazné odkazy |
+| Poptat získání dat | /sluzby/web-scraping | Nová služba: zdroje, vzorek, čištění, export, pravidelné běhy, provozní náklady a předání |
+| Zorientovat se v reportingu a dashboardech | /blog/reporting-a-dashboard | Nový článek ve stávající šabloně, modelový příklad agentury, datové zdroje, význam ukazatelů, vizualizace a zadání |
+| Pochopit postup tvorby aplikace | /blog/jak-vytvorit-webovou-aplikaci | Zachovaný návod; závěrečný odkaz nově vede na službu |
+
+URL původních stránek zůstávají. Nevzniká další článek na stejný hlavní komerční dotaz. Nabídka dashboardů zůstává součástí vlastního vývoje; Power BI nenabízíme. Modelový příklad není vydáván za realizaci. Nový obsah používá existující typografii, barvy, tabulky a komponenty. Opravené formátování data umožňuje novému článku zobrazit skutečné datum publikace; staré články mají původní datum.
+
+## Data, reporting a longtail
+
+| Fráze | Hledanost/měsíc | Obtížnost | Interpretace |
+| --- | ---: | ---: | --- |
+| vývoj webové aplikace | 120 | neověřena | Samostatně ověřený objem pro singulár; skóre plurálu mu nepřiřazujeme |
+| reporting | 1100 | 8 | Nižší skóre, široký informační záměr; článek musí návštěvníka dovést ke konkrétnímu řešení |
+| vizualizace dat | 50 | 30 | Nižší skóre než „dashboard“; téma součástí článku |
+| scraping | 340 | 36 | Nižší skóre než „web scraping“, ale široký pojem |
+| web scraping | 360 | 47 | Hlavní téma služby, nikoli potvrzená snadná příležitost |
+| dashboard | 2500 | 59 | Široké a poměrně náročné; v návrzích i navigace a nesouvisející témata |
+| SEO reporting | 240 | neznámá | Blízko skutečné nabídce; modelový scénář v článku |
+| KPI dashboard | 40 | neznámá | Konkrétnější potřeba, nelze prohlásit za nízkou konkurenci |
+| automatizovaný sběr dat | 30 | neznámá | Longtail na stránce scrapingu; prověřit také průmyslový a školský záměr |
+| monitoring cen konkurence | 10 | neznámá | Konkrétní scénář služby, omezený objem |
+| sledování cen konkurence | 10 | neznámá | Blízká varianta, nesčítat automaticky |
+| web scraping service | 10 | neznámá | Anglická fráze v českém trhu; není prioritou českého webu |
+
+U „dashboard na míru“, „tvorba dashboardu“, „tvorba dashboardů“ a „automatizace reportingu“ nebyla při ověření vrácena data. Neznamená to nulovou poptávku. Nebyla nalezena konkrétní obchodní longtailová fráze s doloženým skóre nižším než 20, kterou by bylo poctivé označit za snadnou zakázkovou příležitost. „Reporting“ má nízké skóre, ale širší záměr. „Dashboard překlad“ má skóre 10, avšak není vhodným obchodním cílem.
+
+## Tvorba webů a větší města
+
+Uživatelka chce větší město než Bílina; existující stránka Bíliny se nemění. Zde je přesné znění každého ověřeného dotazu, nikoli součet variant:
+
+| Fráze | Hledanost/měsíc | Obtížnost |
+| --- | ---: | ---: |
+| tvorba webových stránek liberec | 30 | 35 |
+| tvorba webových stránek české budějovice | 90 | 39 |
+| tvorba webových stránek praha | 150 | 42 |
+| tvorba webových stránek plzeň | 40 | 42 |
+| tvorba webových stránek brno | 100 | 46 |
+| tvorba webových stránek pardubice | 30 | 53 |
+| tvorba webových stránek ostrava | 80 | 67 |
+| tvorba webových stránek olomouc | 200 | 83 |
+| tvorba webových stránek hradec králové | 60 | neznámá |
+| tvorba webových stránek karlovy vary | 120 | neznámá |
+
+Objemy Liberce a Českých Budějovic z návrhů byly potvrzeny samostatným keyword_search_volume. Varianta „tvorba webů liberec“ má odhad 200, ale její obtížnost je neznámá a sezónní data jsou značně kolísavá. Nepřiřazujeme jí skóre 35 jiné fráze ani nesčítáme objemy jako nezávislé zákazníky.
+
+První kandidáti: Liberec pro nižší naměřenou obtížnost; České Budějovice pro vyšší objem při jen o málo vyšším skóre. Jde o relativně příznivější výsledky než obecná tvorba webových stránek (56), nikoli prokázanou nízkou konkurenci. V prohlédnutém vyhledávání na Liberec jsou lokální dodavatelé i specializované stránky jiných studií: https://www.semtix.cz/tvorba-webu/tvorba-webovych-stranek-liberec/ a https://pajskr.cz/tvorba-webovych-stranek-liberec/ . To potvrzuje existující konkurenci; vyhledávání není přesným měřením lokálního Google SERPu.
+
+Nová městská stránka zatím není vytvořena: zadání zde žádá průzkum. Případná nabídka pro Liberec musí pravdivě popisovat vzdálenou spolupráci z Bíliny. Nevymýšlet kancelář, lokální reference ani adresu. Nevyrábět sérii kopií s přepsaným názvem města. Nejdřív připravit jednu užitečnou stránku s reálným rozsahem, ukázkami, průběhem spolupráce a odkazy na hlavní službu.
+
+Mimo městské dotazy je zajímavý kandidát „tvorba webových stránek wordpress“: 120 hledání, obtížnost 15. Je to samostatná službová příležitost, protože WordPress je součást skutečné nabídky. Neznamená to, že kombinace WordPress + město má stejné skóre.
+
+## Ověření změn
+
+- Produkční build Next.js prošel včetně sestavení nových tras a kontroly aplikačních typů.
+- Celá existující sada: 52/57 prošlo. Pět selhání v tests/contact-flow.test.tsx se identicky opakuje na nezměněném main (68670a8), v odděleném checkoutu se stejnými závislostmi. Formulář ani API se touto změnou nemění.
+- Samostatné tsc --noEmit hlásí existující TS18046 v tests/contact-convex.test.ts:34; není důsledkem změny obsahu. Produkční build tuto chybu nehlásí.
+- git diff --check prošel. Žádné změny závislostí, migrace ani externí odeslání formuláře.
+- HTTP kontrola lokálního produkčního sestavení: šest hlavních tras vrací 200, každá má jednu H1, jeden main, vlastní canonical, popis a platné JSON-LD. Ověřeno 34 interních cílů, zařazení novinek do blogu/služeb i sitemap a datum nového článku 31. října 2026. Render formuláře a FAQ ověřen, skutečná poptávka neodeslána. Vizuální kontrola v prohlížeči nebyla provedena.

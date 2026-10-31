@@ -42,7 +42,7 @@ export default function Services() {
             </article>
           ))}
           <article>
-            <p className="cf-eyebrow">06</p>
+            <p className="cf-eyebrow">{String(orderedServices.length + 1).padStart(2, "0")}</p>
             <h2>Obsah & video</h2>
             <p>
               Články, obsah pro sociální sítě a střih videa jako součást vaší

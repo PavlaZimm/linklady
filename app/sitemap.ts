@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     { path: "", lastModified: "2026-10-16" },
     { path: "/o-mne", lastModified: "2026-10-16" },
-    { path: "/blog", lastModified: "2026-10-16" },
+    { path: "/blog", lastModified: "2026-10-31" },
     { path: "/ebook", lastModified: "2026-10-16" },
     { path: "/tvorba-webu-bilina", lastModified: "2026-10-16" },
     { path: "/automatizace", lastModified: "2026-10-16" },
@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/ai-agent", lastModified: "2026-10-16" },
     { path: "/webova-aplikace", lastModified: "2026-09-14" },
     { path: "/blog/prodej-firmy-strategicky-krok", lastModified: "2026-02-27" },
-    { path: "/blog/jak-vytvorit-webovou-aplikaci", lastModified: "2026-09-13" },
+    { path: "/blog/jak-vytvorit-webovou-aplikaci", lastModified: "2026-10-31" },
     { path: "/blog/webove-aplikace-priklady", lastModified: "2026-09-14" },
     { path: "/blog/co-obsahuje-seo-audit", lastModified: "2026-10-16" },
     { path: "/soukromi", lastModified: "2026-10-16" },
@@ -29,10 +29,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...pages,
     ...guides.map(g => ({path:`/blog/${g.slug}`,lastModified:g.date})),
     { path: "/projekty", lastModified: "2026-10-14" },
-    { path: "/sluzby", lastModified: "2026-10-16" },
+    { path: "/sluzby", lastModified: "2026-10-31" },
     ...services.map((s) => ({
       path: `/sluzby/${s.slug}`,
-      lastModified: "2026-10-16",
+      lastModified: s.updated ?? "2026-10-16",
     })),
     ...projects
       .filter((p) => !p.pending)

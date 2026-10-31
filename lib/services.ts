@@ -2,6 +2,7 @@ type Service = {
   slug: string;
   title: string;
   seoTitle?: string;
+  updated?: string;
   metaDescription?: string;
   intro: string;
   contactPrompt?: string;
@@ -155,9 +156,11 @@ export const services: Service[] = [
   },
   {
     slug: "webove-aplikace",
-    metaDescription: "Navrhnu webovou aplikaci pro vaše firemní procesy. Propojíme data, nastavíme přístupy a domluvíme předání i další správu.",
-    title: "Webové aplikace na míru",
-    intro: "Když potřebujete nástroj, který umí víc než představit vaši firmu.",
+    updated: "2026-10-31",
+    metaDescription: "Vývoj webové aplikace na míru: vlastní dashboard, interní evidence nebo klientský portál. Navrhnu první verzi, propojím data a domluvíme cenu i provoz.",
+    seoTitle: "Vývoj webové aplikace na míru",
+    title: "Vývoj webové aplikace na míru",
+    intro: "Vytvořím webovou aplikaci, která vám pomůže s evidencí, reportingem nebo předáváním dat. Od zadání a první funkční verze přes napojení systémů až po otestování a předání. Funguje v prohlížeči na počítači i telefonu.",
     legacy: "/webova-aplikace",
     legacyLabel: "Webové aplikace a příklady z praxe",
     contactPrompt: "Napište mi, kdo bude aplikaci používat a jaký problém má vyřešit.",
@@ -165,7 +168,12 @@ export const services: Service[] = [
       {
         title: "Kdy dává aplikace na míru smysl",
         text: "Pokud vám hotový nástroj pokryje potřebný postup, může stačit jeho nastavení. Aplikaci na míru navrhnu tam, kde potřebujete vlastní práci s daty, propojit více systémů nebo zpřístupnit různé funkce různým lidem. Nejdřív s vámi porovnám potřeby a možnosti dostupných řešení.",
-        items: ["Poptávkové a rezervační systémy", "Interní evidence a klientské portály", "Interaktivní nástroje nad externími daty"],
+        items: ["Poptávkové systémy a konfigurátory", "Interní evidence a klientské portály", "Vlastní dashboardy a přehledy dat", "Interaktivní nástroje napojené na externí zdroje"],
+      },
+      {
+        title: "Vlastní dashboard místo ručního skládání přehledů",
+        text: "Potřebujete na jednom místě vidět stav zakázek, výsledky webů nebo údaje z několika nástrojů? Navrhnu vlastní webový dashboard podle toho, co potřebujete rozhodovat. Předem ověřím dostupnost dat, význam jednotlivých ukazatelů a četnost aktualizace.",
+        items: ["Přehledy s filtry, tabulkami a grafy podle potřeb týmu", "Napojení na dohodnutá API, databáze nebo exporty", "Zobrazení času poslední aktualizace a informace při výpadku zdroje", "Přístupy a exporty podle domluveného rozsahu"],
       },
       {
         title: "Co spolu vyjasníme před návrhem",
@@ -178,13 +186,34 @@ export const services: Service[] = [
         ],
       },
       {
+        title: "Jak probíhá vývoj webové aplikace",
+        text: "Začneme jedním konkrétním úkolem a návrhem obrazovek. Na první funkční verzi si vyzkoušíte celý postup se vzorkem dat. Teprve podle zpětné vazby doplníme další funkce. Změny rozsahu průběžně posoudíme podle dopadu na cenu a termín.",
+        items: ["Zadání, datové zdroje a vymezení první verze", "Prototyp a společné ověření pracovního postupu", "Vývoj funkcí, napojení dat a kontrola oprávnění", "Testování běžných úkolů i chybových situací před spuštěním"],
+      },
+      {
+        title: "Kolik stojí vývoj webové aplikace",
+        text: "Cenu připravím podle rozsahu funkcí, uživatelských rolí, stavu dat a potřebných napojení. Před zahájením si potvrdíme odhad práce, výstupy první verze a způsob schvalování změn. Hosting, databáze a placené služby mají vlastní provozní náklady, které oddělím od ceny vývoje.",
+        items: ["Rozsah první verze a odhad práce před realizací", "Náklady na externí data, API a další nástroje", "Způsob předání kódu, účtů a přístupů", "Podpora a rozvoj po spuštění podle dohody"],
+      },
+      {
         title: "Ověření, předání a další správa",
         text: "Předem domluvím, podle čeho společně poznáme, že aplikace plní zadání. Projdeme běžné použití i chybové situace. Způsob předání, provozní náklady a případnou další správu vyjasníme v nabídce podle konkrétního řešení.",
         items: ["Ověření hlavních scénářů na počítači i telefonu", "Kontrola vstupních dat, přístupů a propojení", "Domluva, kdo bude spravovat obsah, přístupy a další změny"],
       },
     ],
+    questions: [
+      { question: "Co potřebuji připravit pro nacenění?", answer: "Popište, kdo bude aplikaci používat, co dnes řešíte ručně a jak má vypadat hotový výstup. Přiložte anonymizovanou ukázku tabulky nebo současné evidence, seznam používaných nástrojů a funkce, bez kterých se první verze neobejde. Přístupy a citlivá data vyřešíme až dohodnutým způsobem." },
+      { question: "Jak dlouho vývoj webové aplikace trvá?", answer: "Termín závisí na rozsahu, dostupnosti dat a připravenosti podkladů. Po upřesnění zadání navrhnu jednotlivé fáze a termín první použitelné verze. Dashboard nad jedním zdrojem má jiný rozsah než portál s několika rolemi a napojením na více systémů." },
+      { question: "Lze propojit aplikaci s nástroji, které už používáme?", answer: "Nejdřív ověřím, zda mají použitelné API, export nebo jiný dostupný způsob předání dat. Pak domluvíme, co a jak často přenášet a co má aplikace udělat při chybě. Propojení nelze slíbit bez prověření konkrétního systému." },
+      { question: "Můžeme začít jen menším dashboardem nebo prototypem?", answer: "Ano. Vybereme jeden pracovní postup, potřebné ukazatele a dostupný zdroj dat. První verze má ověřit užitek v praxi. Rozšíření o další zdroje, role nebo automatizace můžeme naplánovat podle skutečného používání." },
+    ],
     reading: [
       { href: "/projekty/spacelady", label: "SpaceLady: ukázka interaktivní webové aplikace" },
+      { href: "/projekty/flyqueens", label: "FlyQueens: práce s externími leteckými daty" },
+      { href: "/blog/jak-vytvorit-webovou-aplikaci", label: "Jak vytvořit webovou aplikaci: postup od zadání po spuštění" },
+      { href: "/blog/webove-aplikace-priklady", label: "Webové aplikace: příklady a využití ve firmách" },
+      { href: "/sluzby/web-scraping", label: "Web scraping: sběr a příprava dat pro aplikaci" },
+      { href: "/blog/reporting-a-dashboard", label: "Reporting a dashboard: co připravit před návrhem" },
     ],
     related: "ai-automatizace",
   },
@@ -223,6 +252,49 @@ export const services: Service[] = [
         text: "Cenu ovlivňuje počet a složitost kroků, dostupnost propojení, příprava dat i rozsah ověření. Vedle mé práce mohou vznikat průběžné náklady na nástroje a jejich používání. Před realizací s vámi domluvím přístupy, práci s daty, kontrolu chyb i odpovědnost za správu.",
         items: ["Odhad nákladů podle tarifů, objemu dat a četnosti běhů", "Způsob předání a potřebné podklady k provozu", "Rozsah případné správy a podpory po domluvě"],
       },
+    ],
+    related: "webove-aplikace",
+  },
+  {
+    slug: "web-scraping",
+    updated: "2026-10-31",
+    title: "Web scraping a automatizovaný sběr dat",
+    seoTitle: "Web scraping: sběr dat z webu pro vaše podnikání",
+    metaDescription: "Připravím web scraping pro sběr dat z dohodnutých webů. Vyčištění, export do tabulky nebo napojení na vlastní dashboard. Nejdřív ověřím zdroje a vzorek.",
+    intro: "Potřebujete pravidelně získávat údaje z webů a přestat je kopírovat po jednom? Připravím sběr dat přes Apify, jejich vyčištění a předání do tabulky nebo aplikace. Začneme konkrétním zdrojem a ukázkou výstupu.",
+    legacy: "/sluzby/webove-aplikace",
+    legacyLabel: "Vývoj webové aplikace nad získanými daty",
+    contactPrompt: "Pošlete adresy zdrojů, požadované údaje a ukázku výsledné tabulky. Napište také objem a četnost aktualizace.",
+    sections: [
+      {
+        title: "Co může sběr dat vyřešit",
+        text: "Web scraping převádí údaje z webových stránek do strukturovaného výstupu. Hodí se pro jednorázový průzkum i opakované aktualizace. Následující možnosti jsou příklady zadání; dostupnost ověřím podle konkrétního zdroje.",
+        items: ["Podklady pro monitoring cen konkurence: produkt, dostupnost, cena a datum kontroly", "Přehled veřejných nabídek, akcí nebo dalších záznamů podle zadaných polí", "Kontrola názvů, metadat a odkazů na vašem webu", "Průběžné doplňování dat pro vlastní přehled nebo dashboard"],
+      },
+      {
+        title: "Nejdřív zdroj a vzorek, potom celý sběr",
+        text: "Prověřím, odkud lze požadované údaje získat a zda zdroj nabízí vhodné API nebo export. U scrapingu ověřím dostupnost polí, způsob načítání a možnosti použití dat. Na malém vzorku zkontrolujeme, zda výstup odpovídá vašemu zadání.",
+        items: ["Konkrétní URL a seznam potřebných údajů", "Počet záznamů, stránkování a četnost aktualizace", "Kontrola chybějících polí, duplicit a formátů", "Domluvený vzorek a pravidla pro přijetí výsledku"],
+      },
+      {
+        title: "Co dostanete a kam data předám",
+        text: "Nestačí stáhnout text stránky. Domluvíme jednotné sloupce, identifikaci záznamů a zacházení s neúplnými údaji. K výstupu lze přidat zdrojovou adresu a čas sběru, abyste věděli, odkud údaje pocházejí a jak jsou aktuální.",
+        items: ["CSV, JSON nebo předání do Google Sheets podle dohody", "Vyčištění formátů, odstranění duplicit a označení chybějících hodnot", "Napojení na databázi nebo vlastní webovou aplikaci", "U pravidelného sběru domluvený plán běhů a kontrola neúspěšných aktualizací"],
+      },
+      {
+        title: "Cena a údržba scrapingu",
+        text: "Cena závisí na dostupnosti webu, složitosti sběru, objemu dat a četnosti běhů. Přípravu a kontrolu výstupu nacením zvlášť od provozu Apify a dalších nástrojů. Když se zdrojový web změní, může být potřeba sběr upravit; rozsah údržby si proto domluvíme předem.",
+        items: ["Ověření proveditelnosti a návrh prvního výstupu", "Odhad nákladů na běh nástrojů podle objemu a frekvence", "Rozsah jednorázové dodávky nebo pravidelné spolupráce", "Postup při změně webu, výpadku nebo neúplných datech"],
+      },
+    ],
+    questions: [
+      { question: "Můžete získat data z libovolného webu?", answer: "To nejde slíbit předem. Záleží na dostupnosti údajů, podmínkách zdroje i technickém řešení. Pošlete konkrétní adresy a požadovaná pole; nejdřív ověřím proveditelnost a možnosti použití dat. Pokud je dostupné vhodné API nebo export, může být lepší použít je." },
+      { question: "Může se sběr dat opakovat automaticky?", answer: "Ano, pokud to zdroj a navržené řešení umožní. Domluvíme četnost, limity nákladů a kontrolu výsledků. Při výpadku potřebujete rozlišit starší údaje od čerstvě získaných dat, proto řešíme také čas posledního úspěšného běhu." },
+      { question: "Lze získaná data zobrazit v dashboardu?", answer: "Ano. Sběr připraví strukturovaná data a vlastní webový dashboard je může zobrazit pomocí filtrů, tabulek a grafů. Vývoj rozhraní, ukládání historie a přístupy uživatelů domluvíme jako konkrétní rozsah aplikace." },
+    ],
+    reading: [
+      { href: "/sluzby/ai-automatizace", label: "Automatizace předávání a zpracování dat" },
+      { href: "/blog/reporting-a-dashboard", label: "Reporting a dashboard: jak připravit použitelný přehled" },
     ],
     related: "webove-aplikace",
   },
