@@ -66,16 +66,13 @@ export default function AutomatizacePage() {
       <section className="py-10 bg-amber-50 border-y border-amber-200">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-lg text-gray-900 font-semibold mb-2">
-            Žádní roboti ve výrobě.
+            Automatizace administrativy
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Když se dneska hledá automatizace pro malou firmu, vyskočí
-            robotické rameno a články o&nbsp;robotizaci průmyslu. Tahle
-            stránka je o&nbsp;něčem jiném: o&nbsp;administrativě, která vám
-            každý týden sežere odpoledne. Faktury, které přepisujete ručně.
-            E-maily, které chodí pořád stejné. Data, která přenášíte
-            z&nbsp;jednoho místa na&nbsp;druhé. Na tohle nepotřebujete
-            výrobní halu ani programátora.
+            Pomáhám automatizovat administrativu malých firem: ruční
+            přepisování faktur, opakující se e-maily a přenos dat
+            mezi nástroji. Řeším tedy kancelářskou práci, nikoli
+            robotizaci výroby.
           </p>
         </div>
       </section>
@@ -98,24 +95,24 @@ export default function AutomatizacePage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Ruku na srdce – kolik času denně trávíte věcmi, které by za vás klidně mohl dělat software? Přepisování dat z formulářů do tabulky. Ruční posílání e-mailů novým zákazníkům. Kopírování faktur do účetního systému. Každý ten úkon zabere pár minut, ale dohromady vám sežerou hodiny.
+            Přepisování dat z formulářů do tabulky, posílání e-mailů novým zákazníkům a kopírování faktur do účetního systému zabere jednotlivě pár minut. Pokud se úkoly opakují každý den, nasčítají se hodiny práce.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Přesně tohle řeší <strong>procesní automatizace</strong>. Není to žádná sci-fi a nepotřebujete k tomu tým programátorů. Stačí správně propojit nástroje, které už pravděpodobně používáte – a nechat je pracovat za vás.
+            Procesní automatizace propojí nástroje, které používáte, aby si data předávaly automaticky. Řadu takových propojení lze nastavit bez týmu programátorů.
           </p>
 
           {/* Section: Co je automatizace */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Co je automatizace procesů a proč ji řešit teď
+            Co je automatizace procesů
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Automatizace procesů v praxi znamená jednoduchou věc: vezmete úkon, který děláte pořád dokola, a nastavíte ho tak, aby proběhl sám. Přijde objednávka? Systém automaticky vytvoří fakturu, pošle potvrzení zákazníkovi a zapíše vše do vaší tabulky. Nový lead vyplní formulář? CRM ho založí, pošle uvítací e-mail a přiřadí obchodníkovi.
+            Automatizace procesů v praxi znamená jednoduchou věc: vezmete úkon, který děláte pořád dokola, a nastavíte ho tak, aby proběhl sám. Přijde objednávka? Systém podle nastavených pravidel vytvoří fakturu, pošle potvrzení zákazníkovi a zapíše vše do vaší tabulky. Nový lead vyplní formulář? CRM ho založí, pošle uvítací e-mail a přiřadí obchodníkovi.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Nejde přitom jen o velké korporáty. <strong>Automatizace malých firem</strong> dává obrovský smysl právě proto, že malé týmy nemají lidi nazbyt. Když jste ve firmě tři a jeden z vás tráví půl dne administrativou, je to problém. Automatizace ten čas vrátí zpátky do byznysu.
+            V malé firmě je čas strávený administrativou citelný. Když jste ve firmě tři a jeden z vás jí věnuje půl dne, vyplatí se projít, které úkoly může převzít software.
           </p>
 
           {/* Section: Jaké procesy automatizovat */}
@@ -124,7 +121,7 @@ export default function AutomatizacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Tady je stručný přehled oblastí, kde automatizace funguje nejlíp. Není to vyčerpávající seznam – spíš inspirace, co všechno je možné:
+            Automatizaci můžete využít například v těchto oblastech:
           </p>
 
           <div className="space-y-6 mb-8">
@@ -136,7 +133,7 @@ export default function AutomatizacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Marketing a e-mailing</h3>
-                <p className="text-gray-700">Automatické uvítací sekvence, follow-upy po nákupu, segmentace kontaktů, publikování příspěvků na sociální sítě. Tohle je oblast, kde automatizace šetří nejvíc času – a zároveň přináší peníze.</p>
+                <p className="text-gray-700">Automatické uvítací sekvence, follow-upy po nákupu, segmentace kontaktů, publikování příspěvků na sociální sítě.</p>
               </div>
             </div>
 
@@ -148,7 +145,7 @@ export default function AutomatizacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">CRM a obchod</h3>
-                <p className="text-gray-700">Automatická tvorba kontaktů, přiřazení obchodníků, notifikace o nových leadech, připomínky follow-upů. <strong>Automatizace CRM</strong> znamená, že vám žádný potenciální zákazník nepropadne sítem.</p>
+                <p className="text-gray-700">Automatická tvorba kontaktů, přiřazení obchodníků, notifikace o nových leadech, připomínky follow-upů. Připomínky pomáhají hlídat, komu se ještě potřebujete ozvat.</p>
               </div>
             </div>
 
@@ -160,7 +157,7 @@ export default function AutomatizacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Fakturace a administrativa</h3>
-                <p className="text-gray-700">Generování faktur z objednávek, odesílání upomínek, zápis do účetního softwaru. Tohle je přesně ta nudná práce, na kterou nikdo nemá náladu – a přitom se dá kompletně automatizovat.</p>
+                <p className="text-gray-700">Generování faktur z objednávek, odesílání upomínek, zápis do účetního softwaru.</p>
               </div>
             </div>
 
@@ -172,7 +169,7 @@ export default function AutomatizacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">HR a onboarding</h3>
-                <p className="text-gray-700">Nový zaměstnanec nastoupí a automaticky dostane přístupy, uvítací materiály, rozplánované schůzky. <strong>Automatizace HR</strong> procesů může omezit opakované ruční zadávání. Přidělení citlivých přístupů musí mít jasná pravidla a kontrolu.</p>
+                <p className="text-gray-700">Nový zaměstnanec nastoupí a automaticky dostane přístupy, uvítací materiály, rozplánované schůzky. Automatizace HR procesů může omezit opakované ruční zadávání. Přidělení citlivých přístupů musí mít jasná pravidla a kontrolu.</p>
               </div>
             </div>
 
@@ -195,7 +192,7 @@ export default function AutomatizacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Na trhu existuje několik skvělých platforem pro automatizaci. Každá má své silné stránky a hodí se na trochu jiný typ úloh. Tady jsou ty, se kterými pracuji nejčastěji:
+            Nejčastěji pracuji s následujícími nástroji. Vybírám je podle potřebného propojení a složitosti úkolu:
           </p>
 
           <div className="space-y-8 mb-8">
@@ -204,7 +201,7 @@ export default function AutomatizacePage() {
                 <a href="https://www.make.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Make.com</a> (dříve Integromat)
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Můj hlavní nástroj. Make má vizuální editor, kde doslova vidíte, jak data tečou mezi aplikacemi. Podporuje stovky integrací – od Google Sheets přes Shopify až po Fakturoid. Oproti konkurenci nabízí výrazně víc flexibility za rozumnou cenu. Výběr tarifu závisí na četnosti běhů a funkcích scénáře; aktuální limity je potřeba ověřit u dodavatele.
+                Můj hlavní nástroj. Make má vizuální editor, kde doslova vidíte, jak data tečou mezi aplikacemi. Podporuje stovky integrací: od Google Sheets přes Shopify až po Fakturoid. Výběr tarifu závisí na četnosti běhů a funkcích scénáře; aktuální limity je potřeba ověřit u dodavatele.
               </p>
             </div>
 
@@ -213,7 +210,7 @@ export default function AutomatizacePage() {
                 <a href="https://n8n.io/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">n8n</a>
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Open-source alternativa, kterou si můžete hostovat sami. Ideální pro firmy, které chtějí mít data plně pod kontrolou, nebo pro technicky zdatnější uživatele. n8n se skvěle hodí na složitější scénáře, kde potřebujete vlastní logiku nebo napojení na interní systémy.
+                Alternativa s dostupným zdrojovým kódem, kterou si můžete hostovat sami. Hodí se pro technicky zdatnější uživatele a firmy, které chtějí spravovat vlastní provoz. V n8n můžete sestavit složitější scénáře s vlastní logikou nebo napojením na interní systémy.
               </p>
             </div>
 
@@ -222,7 +219,7 @@ export default function AutomatizacePage() {
                 <a href="https://zapier.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Zapier</a>
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Nejznámější automatizační platforma na světě. Zapier je nejjednodušší na naučení – pokud potřebujete rychle propojit dvě aplikace, je to otázka minut. Má největší knihovnu integrací (přes 6 000 aplikací). Nevýhoda? U složitějších scénářů je výrazně dražší než Make.
+                Zapier slouží k propojování aplikací a má knihovnu s více než 6 000 integracemi. Jednoduché propojení lze nastavit během minut. U složitějších scénářů porovnejte náklady s Make.
               </p>
             </div>
 
@@ -231,14 +228,14 @@ export default function AutomatizacePage() {
                 <a href="https://ecomail.cz/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Ecomail</a>
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Český nástroj na e-mail marketing s propracovanou automatizací. Pokud posíláte newslettery nebo potřebujete automatické e-mailové sekvence, Ecomail je skvělá volba – hlavně díky české podpoře, GDPR compliance a napojení na české e-shopy.
+                Český nástroj pro newslettery a automatické e-mailové sekvence. Má českou podporu, funkce pro práci se souhlasy podle GDPR a napojení na české e-shopy.
               </p>
             </div>
           </div>
 
           {/* Section: AI + automatizace */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            AI a automatizace: Když to spojíte, je to jiná liga
+            Jak zapojit AI do automatizace
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -246,43 +243,43 @@ export default function AutomatizacePage() {
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Právě tady přichází ke slovu <strong>AI automatizace</strong>. Propojením automatizačních nástrojů s <Link href="/vibecoding" className="text-primary font-semibold hover:underline">umělou inteligencí</Link> vznikají scénáře, které by ještě před pár lety zněly jako sci-fi:
+            Automatizační nástroje můžete propojit s <Link href="/vibecoding" className="text-primary font-semibold hover:underline">umělou inteligencí</Link> a využít je například k těmto úkolům:
           </p>
 
           <ul className="space-y-4 mb-8">
             <li className="flex items-start">
               <div className="w-2 h-2 bg-primary rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Automatická klasifikace příchozích zpráv</strong> – AI přečte e-mail, rozpozná záměr a přesměruje na správné oddělení</span>
+              <span className="text-gray-700">Automatická klasifikace příchozích zpráv: AI přečte e-mail, rozpozná záměr a přesměruje na správné oddělení</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-primary rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Generování personalizovaných odpovědí</strong> – zákazník dostane relevantní odpověď během sekund, ne hodin</span>
+              <span className="text-gray-700">Generování personalizovaných odpovědí: zákazník dostane relevantní odpověď během sekund, ne hodin</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-primary rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Analýza dat a reporting</strong> – AI zpracuje výsledky kampaní a připraví přehled s doporučeními</span>
+              <span className="text-gray-700">Analýza dat a reporting: AI zpracuje výsledky kampaní a připraví přehled s doporučeními</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-primary rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Tvorba obsahu</strong> – návrhy příspěvků na sociální sítě, popisky produktů, návrhy e-mailů</span>
+              <span className="text-gray-700">Tvorba obsahu: návrhy příspěvků na sociální sítě, popisky produktů, návrhy e-mailů</span>
             </li>
           </ul>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            V praxi to vypadá tak, že v <a href="https://www.make.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Make.com</a> napojíte modul s AI (třeba ChatGPT nebo Claude) do svého automatizačního scénáře. Funguje to překvapivě jednoduše a výsledky jsou často lepší, než byste čekali. Chcete se naučit s AI pracovat efektivněji? Podívejte se na můj <Link href="/ebook" className="text-primary font-semibold hover:underline">e-book o promptování AI</Link>.
+            V praxi to vypadá tak, že v <a href="https://www.make.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Make.com</a> napojíte modul s AI (třeba ChatGPT nebo Claude) do svého automatizačního scénáře. Chcete se naučit s AI pracovat efektivněji? Podívejte se na můj <Link href="/ebook" className="text-primary font-semibold hover:underline">e-book o promptování AI</Link>.
           </p>
 
           {/* Section: Bez programování */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Automatizace bez programování – jde to opravdu?
+            Automatizace bez programování: jde to opravdu?
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Ano, jde. A to je právě důvod, proč automatizace v posledních letech tak roste. Všechny nástroje, které jsem zmínila – Make.com, Zapier i Ecomail – fungují na principu vizuálního stavění scénářů. Přetahujete bloky, propojujete je a nastavujete podmínky. Žádný kód, žádný terminál.
+            Ano. Make.com, Zapier i Ecomail umožňují vizuální stavění scénářů. Přetahujete bloky, propojujete je a nastavujete podmínky.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Samozřejmě existují situace, kdy se trocha kódu hodí – třeba u pokročilejších transformací dat nebo napojení na nestandardní API. Řadu běžných propojení lze sestavit vizuálně; možnosti závisejí na konkrétních aplikacích. Pokud potřebujete pomoc, navrhnu pro vás <Link href="/sluzby/ai-automatizace" className="text-primary font-semibold hover:underline">automatizaci firemních procesů na míru</Link>.
+            Samozřejmě existují situace, kdy se trocha kódu hodí: třeba u pokročilejších transformací dat nebo napojení na nestandardní API. Řadu běžných propojení lze sestavit vizuálně; možnosti závisejí na konkrétních aplikacích. Pokud potřebujete pomoc, navrhnu pro vás <Link href="/sluzby/ai-automatizace" className="text-primary font-semibold hover:underline">automatizaci firemních procesů na míru</Link>.
           </p>
 
           {/* Section: Jak to vypadá v praxi */}
@@ -291,7 +288,7 @@ export default function AutomatizacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Neslibuji zázraky a neautomatizuji všechno najednou. Místo toho postupuji krok za krokem:
+            Začínám zmapováním práce a návrhem jednoho konkrétního postupu:
           </p>
 
           <div className="space-y-6 mb-8">
@@ -321,7 +318,7 @@ export default function AutomatizacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Nastavím a otestuji</h3>
-                <p className="text-gray-700">Scénáře postavím, důkladně otestuji na reálných datech a ujistím se, že vše běží spolehlivě. Žádné &bdquo;snad to bude fungovat&ldquo; – automatizace musí být stoprocentní.</p>
+                <p className="text-gray-700">Scénáře postavím, důkladně otestuji na reálných datech a ujistím se, že vše běží spolehlivě.</p>
               </div>
             </div>
 
@@ -331,7 +328,7 @@ export default function AutomatizacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Předám a zaškolím</h3>
-                <p className="text-gray-700">Dostanete kompletní dokumentaci a zaškolení, abyste rozuměli tomu, co se děje. Cílem je, abyste byli soběstační – ne závislí na mně.</p>
+                <p className="text-gray-700">Dostanete kompletní dokumentaci a zaškolení, abyste rozuměli tomu, co se děje. Díky tomu můžete automatizaci spravovat sami.</p>
               </div>
             </div>
           </div>
@@ -342,29 +339,29 @@ export default function AutomatizacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Automatizace v podnikání není jenom pro technologické firmy. Pracuji s klienty z různých oborů:
+            Pracuji s klienty z různých oborů:
           </p>
 
           <ul className="space-y-4 mb-8">
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">E-shopy</strong> – automatizace objednávek, fakturace, e-mailových kampaní</span>
+              <span className="text-gray-700">E-shopy: automatizace objednávek, fakturace, e-mailových kampaní</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Malé a střední firmy</strong> – automatizace administrativy, CRM, reportingu</span>
+              <span className="text-gray-700">Malé a střední firmy: automatizace administrativy, CRM, reportingu</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Marketingové agentury</strong> – automatizace publikování, klientského reportingu</span>
+              <span className="text-gray-700">Marketingové agentury: automatizace publikování, klientského reportingu</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Freelanceři a OSVČ</strong> – automatizace fakturace, follow-upů, plánování</span>
+              <span className="text-gray-700">Freelanceři a OSVČ: automatizace fakturace, follow-upů, plánování</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Personální agentury</strong> – automatizace HR procesů, onboardingu, komunikace s kandidáty</span>
+              <span className="text-gray-700">Personální agentury: automatizace HR procesů, onboardingu, komunikace s kandidáty</span>
             </li>
           </ul>
 
@@ -381,7 +378,7 @@ export default function AutomatizacePage() {
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Potřebuji k automatizaci umět programovat?</h3>
-              <p className="text-gray-700">Ne. Nástroje jako Make.com nebo <a href="https://zapier.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Zapier</a> fungují vizuálně – scénáře skládáte z bloků přetahováním myší. Žádný kód není potřeba.</p>
+              <p className="text-gray-700">Ne. Nástroje jako Make.com nebo <a href="https://zapier.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Zapier</a> fungují vizuálně: běžné scénáře skládáte z bloků přetahováním myší bez psaní kódu.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
@@ -391,12 +388,12 @@ export default function AutomatizacePage() {
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Jaké procesy se dají automatizovat?</h3>
-              <p className="text-gray-700">Prakticky cokoliv, co děláte opakovaně: e-mailový marketing, správa CRM, fakturace, reporting, publikování na sociální sítě, onboarding zaměstnanců, zpracování objednávek a mnoho dalšího.</p>
+              <p className="text-gray-700">Například tyto opakující se úkoly: e-mailový marketing, správa CRM, fakturace, reporting, publikování na sociální sítě, onboarding zaměstnanců, zpracování objednávek a mnoho dalšího.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Jak dlouho trvá zavedení automatizace?</h3>
-              <p className="text-gray-700">Záleží na složitosti. Jednoduchý scénář (propojení formuláře s e-mailem) trvá pár hodin. Komplexnější automatizace celého obchodního procesu může trvat týden nebo dva. Ale výsledek stojí za to.</p>
+              <p className="text-gray-700">Záleží na složitosti. Jednoduchý scénář (propojení formuláře s e-mailem) trvá pár hodin. Komplexnější automatizace celého obchodního procesu může trvat týden nebo dva.</p>
             </div>
           </div>
 
@@ -405,7 +402,7 @@ export default function AutomatizacePage() {
             <ContactForm
               service="Automatizace procesů"
               title="Co ve firmě děláte pořád ručně?"
-              subtitle="Napište mi to a já vám zdarma řeknu, kde vidím největší potenciál a kolik času to může ušetřit. Bez závazků."
+              subtitle="Popište mi opakující se úkol. Zdarma a nezávazně probereme, zda ho lze automatizovat a kolik času by to mohlo ušetřit."
             />
           </div>
         </div>

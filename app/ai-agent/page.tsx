@@ -15,8 +15,8 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://www.linklady.cz/ai-agent/#webpage",
       url: "https://www.linklady.cz/ai-agent",
-      name: "Co je AI agent? Kompletní průvodce",
-      description: "Srozumitelný průvodce světem AI agentů – co to je, jak funguje, typy agentů a praktické využití.",
+      name: "Co je AI agent a jak funguje",
+      description: "Srozumitelný průvodce světem AI agentů: co to je, jak funguje, typy agentů a praktické využití.",
       isPartOf: { "@id": "https://www.linklady.cz/#website" },
       about: {
         "@type": "Thing",
@@ -57,10 +57,10 @@ export default function AiAgentPage() {
         <div className="cf-wrap">
           <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
           <h1>
-              AI agent: Co to je, jak funguje a k&nbsp;čemu ho využijete
+              AI agent: co to je, jak funguje a k&nbsp;čemu ho využijete
             </h1>
           <p>
-              Srozumitelný průvodce světem AI agentů. Bez buzzwordů, bez hype – jen to, co potřebujete vědět a co můžete ve firmě reálně využít.
+              Jak AI agent pracuje s nástroji, kde ho využít ve firmě a co před nasazením ověřit.
             </p>
           <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link></div>
         </div>
@@ -71,11 +71,11 @@ export default function AiAgentPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Pokud sledujete dění kolem umělé inteligence, slovo <strong>&bdquo;AI agent&ldquo;</strong> jste v&nbsp;posledních měsících slyšeli všude. Jenže co to vlastně je? Je to jen vylepšený chatbot, nebo něco zásadně jiného? A hlavně – k&nbsp;čemu vám to může být v&nbsp;praxi?
+            AI agent dostane úkol a s pomocí dostupných nástrojů postupuje k jeho splnění. Může například prohledat web, porovnat údaje a připravit report.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            V&nbsp;tomhle článku vám vysvětlím, <strong>co je AI agent</strong>, jak funguje, jaké typy existují a kde se dá reálně využít. Česky, srozumitelně a bez zbytečného technického žargonu.
+            Při výběru agenta záleží na tom, jaký úkol mu svěříte a ke kterým nástrojům bude mít přístup.
           </p>
 
           {/* Co je AI agent */}
@@ -84,15 +84,15 @@ export default function AiAgentPage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            <strong>AI agent</strong> je autonomní softwarový systém postavený na <strong>umělé inteligenci</strong>, který dokáže samostatně plánovat, rozhodovat se a vykonávat úkoly. Na rozdíl od běžného chatbotu, který čeká na vaši otázku a odpoví, AI agent dostane cíl – a sám najde cestu, jak ho splnit.
+            AI agent je autonomní softwarový systém postavený na umělé inteligenci, který dokáže samostatně plánovat, rozhodovat se a vykonávat úkoly. Na rozdíl od běžného chatbotu, který čeká na vaši otázku a odpoví, AI agent dostane cíl a plánuje kroky k jeho splnění.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Představte si to jako rozdíl mezi kalkulačkou a účetním. Kalkulačka (chatbot) spočítá, na co se zeptáte. Účetní (AI agent) se podívá na vaše finance, identifikuje problémy, navrhne řešení a rovnou ho provede. Sám od sebe, bez toho, abyste ho krok za krokem vedli.
+            Agent může při práci s finančními podklady hledat problémy a navrhovat řešení. Jednotlivé kroky si plánuje podle zadání.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Jádrem každého AI agenta je velký jazykový model (LLM) – stejná technologie, která pohání ChatGPT nebo Claude. Ale zatímco chatbot je &bdquo;mozek v&nbsp;krabici&ldquo;, agent má k&nbsp;dispozici i &bdquo;ruce&ldquo; – nástroje, které mu umožňují skutečně jednat: prohledávat web, upravovat soubory, volat API, pracovat s&nbsp;databázemi.
+            Agenti založení na velkém jazykovém modelu (LLM) využívají stejný typ technologie jako ChatGPT nebo Claude. Připojené nástroje jim umožňují prohledávat web, upravovat soubory, volat API a pracovat s&nbsp;databázemi.
           </p>
 
           {/* Jak AI agent funguje */}
@@ -101,7 +101,7 @@ export default function AiAgentPage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Každý AI agent pracuje ve smyčce čtyř základních kroků. Opakuje je tak dlouho, dokud úkol nesplní:
+            Práci agenta lze popsat smyčkou čtyř kroků:
           </p>
 
           <div className="space-y-6 mb-8">
@@ -113,7 +113,7 @@ export default function AiAgentPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Vnímání</h3>
-                <p className="text-gray-700">Agent shromáždí informace o&nbsp;aktuální situaci – přečte e-mail, prozkoumá soubor, zkontroluje databázi. Rozumí kontextu, ve&nbsp;kterém pracuje.</p>
+                <p className="text-gray-700">Agent shromáždí informace o&nbsp;aktuální situaci: přečte e-mail, prozkoumá soubor, zkontroluje databázi. Rozumí kontextu, ve&nbsp;kterém pracuje.</p>
               </div>
             </div>
 
@@ -137,7 +137,7 @@ export default function AiAgentPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Akce</h3>
-                <p className="text-gray-700">Agent provede konkrétní akci – odešle e-mail, upraví dokument, zavolá API, vytvoří záznam v&nbsp;CRM. Používá k&nbsp;tomu nástroje, ke&nbsp;kterým má přístup.</p>
+                <p className="text-gray-700">Agent provede konkrétní akci: odešle e-mail, upraví dokument, zavolá API, vytvoří záznam v&nbsp;CRM. Používá k&nbsp;tomu nástroje, ke&nbsp;kterým má přístup.</p>
               </div>
             </div>
 
@@ -149,7 +149,7 @@ export default function AiAgentPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Vyhodnocení</h3>
-                <p className="text-gray-700">Agent zkontroluje výsledek. Podařilo se? Skvěle, jde na další krok. Nepodařilo? Zkusí jiný přístup. Takhle iteruje, dokud úkol nesplní.</p>
+                <p className="text-gray-700">Agent zkontroluje výsledek a podle něj pokračuje dalším krokem nebo zkusí jiný postup.</p>
               </div>
             </div>
           </div>
@@ -160,21 +160,21 @@ export default function AiAgentPage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            AI agenti nejsou všichni stejní. Podle toho, co dělají a jak pracují, je můžeme rozdělit do několika kategorií:
+            Podle zaměření a způsobu práce můžeme rozlišit několik typů agentů:
           </p>
 
           <div className="space-y-8 mb-8">
             <div className="border-l-4 border-primary pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Konverzační agenti</h3>
               <p className="text-gray-700 leading-relaxed">
-                Nejznámější typ – pokročilé chatboty pro zákaznickou podporu, prodejní asistenty nebo interní helpdesky. Rozumí kontextu konverzace, pamatují si předchozí zprávy a dokážou řešit složitější požadavky než klasický chatbot.
+                Pokročilé chatboty pro zákaznickou podporu, prodejní asistenty nebo interní helpdesky. Rozumí kontextu konverzace, pamatují si předchozí zprávy a dokážou řešit složitější požadavky než klasický chatbot.
               </p>
             </div>
 
             <div className="border-l-4 border-yellow-400 pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Kódovací agenti</h3>
               <p className="text-gray-700 leading-relaxed">
-                Agenti specializovaní na programování. Rozumí celému projektu, píšou kód, opravují chyby a testují výsledky. Patří sem nástroje jako Claude Code, Cursor nebo GitHub Copilot. Právě kódovací agenti stojí za fenoménem <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> – tvorby softwaru pomocí AI.
+                Agenti specializovaní na programování. Rozumí celému projektu, píšou kód, opravují chyby a testují výsledky. Patří sem nástroje jako Claude Code, Cursor nebo GitHub Copilot. Kódovací agenti se používají při <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link>, tedy tvorbě softwaru pomocí AI.
               </p>
             </div>
 
@@ -188,37 +188,33 @@ export default function AiAgentPage() {
             <div className="border-l-4 border-green-400 pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Analytičtí agenti</h3>
               <p className="text-gray-700 leading-relaxed">
-                Agenti zaměření na práci s&nbsp;daty. Analyzují tabulky, generují reporty, hledají trendy a anomálie. Hodí se pro marketing, finance i řízení projektů – všude, kde potřebujete z&nbsp;dat dostat smysluplné závěry.
+                Agenti zaměření na práci s&nbsp;daty. Analyzují tabulky, generují reporty, hledají trendy a anomálie. Využijete je například při vyhodnocování marketingu, financí nebo projektů.
               </p>
             </div>
 
             <div className="border-l-4 border-gray-300 pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Krypto AI agenti</h3>
               <p className="text-gray-700 leading-relaxed">
-                Specifická kategorie agentů pro svět kryptoměn. <strong>Krypto AI agenti</strong> analyzují trhy, provádějí on-chain analýzu, automatizují obchodování a monitorují DeFi protokoly. Jde o&nbsp;rychle rostoucí oblast, kde AI pomáhá orientovat se v&nbsp;obrovském množství dat v&nbsp;reálném čase.
+                Specifická kategorie agentů pro svět kryptoměn. Krypto AI agenti analyzují trhy, provádějí on-chain analýzu, automatizují obchodování a monitorují DeFi protokoly. Pracují s tržními daty v&nbsp;reálném čase.
               </p>
             </div>
           </div>
 
           {/* AI agent vs. chatbot */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            AI agent vs. chatbot – jaký je rozdíl
+            AI agent vs. chatbot: jaký je rozdíl
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Tohle je otázka, kterou dostávám nejčastěji. Rozdíl je zásadní, i&nbsp;když hranice se postupně stírá:
+            Rozdíl je především v tom, zda systém odpovídá na zprávy, nebo také plánuje a provádí další kroky:
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            <strong>Chatbot</strong> je reaktivní – čeká na váš vstup a odpovídá. Každá konverzace je v&nbsp;podstatě samostatná. Zeptáte se &bdquo;jaké bude počasí?&ldquo; a dostanete odpověď. To je celé.
+            Chatbot je reaktivní: čeká na váš vstup a odpovídá. Každá konverzace je v&nbsp;podstatě samostatná. Zeptáte se &bdquo;jaké bude počasí?&ldquo; a dostanete odpověď.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            <strong>AI agent</strong> je proaktivní – dostane cíl a sám si naplánuje cestu. Může použít desítky nástrojů, vrátit se a opravit chybu, požádat o&nbsp;upřesnění. Řeknete mu &bdquo;připrav mi analýzu konkurence&ldquo; a on prohledá weby, stáhne data, porovná je a připraví report. Sám.
-          </p>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Jinými slovy: chatbot je <strong>nástroj</strong>, AI agent je <strong>spolupracovník</strong>.
+            AI agent je proaktivní: dostane cíl a sám si naplánuje cestu. Může použít desítky nástrojů, vrátit se a opravit chybu, požádat o&nbsp;upřesnění. Řeknete mu &bdquo;připrav mi analýzu konkurence&ldquo; a on prohledá weby, stáhne data, porovná je a připraví report.
           </p>
 
           {/* K čemu se AI agenti používají */}
@@ -227,51 +223,51 @@ export default function AiAgentPage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            AI agenti už nejsou jen laboratorní experiment. Firmy po celém světě je nasazují do ostrého provozu. Tady jsou nejčastější oblasti využití:
+            Firmy používají AI agenty například v těchto oblastech:
           </p>
 
           <ul className="space-y-4 mb-8">
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Marketing a obsah</strong> – AI agenti analyzují kampaně, generují personalizovaný obsah, optimalizují reklamní rozpočty a připravují reporty</span>
+              <span className="text-gray-700">Marketing a obsah: AI agenti analyzují kampaně, generují personalizovaný obsah, optimalizují reklamní rozpočty a připravují reporty</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Zákaznická podpora</strong> – pokročilí chatboti, kteří rozumí kontextu, řeší reklamace, přesměrovávají na správné oddělení a eskalují složité případy</span>
+              <span className="text-gray-700">Zákaznická podpora: pokročilí chatboti, kteří rozumí kontextu, řeší reklamace, přesměrovávají na správné oddělení a eskalují složité případy</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Vývoj softwaru</strong> – kódovací agenti píšou, testují a nasazují kód. Právě proto roste <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link></span>
+              <span className="text-gray-700">Vývoj softwaru: kódovací agenti píšou, testují a nasazují kód. Právě proto roste <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link></span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">HR a nábor</strong> – screening životopisů, automatizace onboardingu, plánování pohovorů</span>
+              <span className="text-gray-700">HR a nábor: screening životopisů, automatizace onboardingu, plánování pohovorů</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Analýza dat</strong> – zpracování tabulek, hledání trendů, generování dashboardů a doporučení</span>
+              <span className="text-gray-700">Analýza dat: zpracování tabulek, hledání trendů, generování dashboardů a doporučení</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Finance a účetnictví</strong> – automatická fakturace, párování plateb, příprava podkladů pro daňové přiznání</span>
+              <span className="text-gray-700">Finance a účetnictví: automatická fakturace, párování plateb, příprava podkladů pro daňové přiznání</span>
             </li>
           </ul>
 
           {/* Proč právě teď */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Proč jsou AI agenti důležití právě teď
+            Propojení s nástroji a specializace
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Rok 2026 je &bdquo;rokem agentů&ldquo;. A není to jen marketing – stojí za tím reálné technologické posuny:
+            Při nasazení agenta pomáhá propojení s firemními nástroji a zaměření na konkrétní obor.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            <strong>Model Context Protocol (MCP)</strong> – nový standard, který umožňuje AI agentům přímo se napojit na firemní nástroje jako Slack, Google Drive, Notion nebo CRM. Bez MCP byl agent izolovaný. S&nbsp;MCP je to autonomní spolupracovník s&nbsp;přístupem k&nbsp;vašim systémům.
+            Model Context Protocol (MCP) je standard, který umožňuje AI agentům přímo se napojit na firemní nástroje jako Slack, Google Drive, Notion nebo CRM.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            <strong>Vertikální agenti</strong> – místo univerzálních &bdquo;umí všechno&ldquo; agentů přichází specializovaní agenti trénovaní na konkrétní obory. Agent pro účetnictví, agent pro e-commerce, agent pro HR. Každý rozumí svému oboru do hloubky.
+            Vertikální agenti se specializují na konkrétní obory, například účetnictví, e-commerce nebo HR.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -284,27 +280,24 @@ export default function AiAgentPage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Tohle není teorie z&nbsp;prezentace. Provozuju šest vlastních webů a agenta na nich používám denně. Popíšu tedy radši, co skutečně dělá, než co by teoreticky mohl.
+            Provozuju šest vlastních webů a agenta na nich používám denně. Pomáhá mi s daty ze Search Console i s kontrolou článků.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            <strong>Čte data místo mě.</strong> Agent si sáhne do Search Console na všechny weby najednou, srovná je meziročně a vrátí seznam stránek, kde se něco zlomilo. Ručně to trvá odpoledne, agentovi minutu. Důležitější je ale to, co se z&nbsp;toho dá vyčíst: na dvou mých webech nezávisle vyšlo, že <strong>dotazy typu &bdquo;kam na&ldquo; a &bdquo;co vidět&ldquo; klikají několikanásobně víc než dotazy na holý údaj</strong>, a to i&nbsp;při horší pozici. Bez agenta bych to nespočítala, protože by se mi do toho nechtělo.
+            Čte data místo mě. Agent si sáhne do Search Console na všechny weby najednou, srovná je meziročně a vrátí seznam stránek, kde se něco zlomilo. Ručně to trvá odpoledne, agentovi minutu. Důležitější je ale to, co se z&nbsp;toho dá vyčíst: na dvou mých webech nezávisle vyšlo, že dotazy typu &bdquo;kam na&ldquo; a &bdquo;co vidět&ldquo; klikají několikanásobně víc než dotazy na holý údaj, a to i&nbsp;při horší pozici. Bez agenta bych to nespočítala, protože by se mi do toho nechtělo.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            <strong>Ověřuje čísla u&nbsp;zdroje.</strong> Než se do článku dostane cena nebo otevírací doba, agent otevře oficiální web provozovatele a údaj přečte tam. Co nenajde, označí jako neověřené a do textu to nedá.
+            Ověřuje čísla u&nbsp;zdroje. Než se do článku dostane cena nebo otevírací doba, agent otevře oficiální web provozovatele a údaj přečte tam. Co nenajde, označí jako neověřené a do textu to nedá.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            <strong>Hlídá, co zestárlo.</strong> Ceníky a otevírací doby v&nbsp;článcích tichounce lžou už po pár měsících. Agent projde odkazy a údaje a nahlásí, co přestalo sedět.
+            Hlídá, co zestárlo. Ceníky a otevírací doby v&nbsp;článcích tichounce lžou už po pár měsících. Agent projde odkazy a údaje a nahlásí, co přestalo sedět.
           </p>
 
           <div className="bg-blue-50 border-l-4 border-primary rounded-r-lg p-6 mb-8">
-            <p className="text-lg text-gray-800 leading-relaxed mb-3">
-              <strong>A teď to nepříjemné, protože bez toho by to byla reklama.</strong>
-            </p>
             <p className="text-gray-700 leading-relaxed">
-              Agent si během té práce dvakrát domyslel údaj, který v&nbsp;žádném zdroji nebyl, a jednou dvě věci prohodil. Všechno se to našlo při kontrole, ale nenašlo by se to samo. <strong>AI agent bez člověka, který za výsledek ručí, je riziko, ne úspora.</strong> Kdo vám slibuje opak, buď to nezkoušel, nebo vám něco prodává.
+              Agent si během té práce dvakrát domyslel údaj, který v&nbsp;žádném zdroji nebyl, a jednou dvě věci prohodil. Všechno se to našlo při kontrole, ale nenašlo by se to samo. Výsledky proto kontroluju a za odevzdanou práci ručím.
             </p>
           </div>
 
@@ -318,10 +311,10 @@ export default function AiAgentPage() {
           </p>
 
           <ul className="space-y-3 mb-8 text-lg text-gray-700">
-            <li><strong>Kolik systémů má agent obsluhovat.</strong> Jeden nástroj je jednoduché. Pět propojených, kde si každý drží data po svém, je něco úplně jiného.</li>
-            <li><strong>Jestli existují data v&nbsp;použitelné podobě.</strong> Když jsou informace v&nbsp;PDF, v&nbsp;e-mailech a v&nbsp;hlavě jednoho kolegy, největší část práce je dostat je ven, ne postavit agenta.</li>
-            <li><strong>Co se stane, když se agent splete.</strong> U&nbsp;interní pomůcky se to opraví. U&nbsp;něčeho, co mluví se zákazníkem nebo hýbe penězi, se musí postavit kontroly, a to je násobek práce.</li>
-            <li><strong>Provoz, ne jen postavení.</strong> Agent není nábytek. Modely se mění, rozhraní se mění, a co dnes funguje, za půl roku nemusí.</li>
+            <li>Kolik systémů má agent obsluhovat. Napojit jeden nástroj bývá jednodušší. Pět propojených, kde si každý drží data po svém, je něco úplně jiného.</li>
+            <li>Jestli existují data v&nbsp;použitelné podobě. Když jsou informace v&nbsp;PDF, v&nbsp;e-mailech a v&nbsp;hlavě jednoho kolegy, největší část práce je dostat je ven, ne postavit agenta.</li>
+            <li>Co se stane, když se agent splete. U&nbsp;interní pomůcky se to opraví. U&nbsp;něčeho, co mluví se zákazníkem nebo hýbe penězi, se musí postavit kontroly, a to je násobek práce.</li>
+            <li>Následný provoz. Modely se mění, rozhraní se mění, a co dnes funguje, za půl roku nemusí.</li>
           </ul>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -380,7 +373,7 @@ export default function AiAgentPage() {
           </div>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Pokud si nevíte rady, kde začít, nebo chcete pomoct s&nbsp;výběrem a nastavením AI agenta, <Link href="/kontakt" className="text-primary font-semibold hover:underline">ozvěte se mi</Link>. Ráda vám pomůžu najít řešení na míru. Zajímá vás i&nbsp;jak efektivně promptovat AI? Podívejte se na můj <Link href="/ebook" className="text-primary font-semibold hover:underline">e-book o&nbsp;promptování</Link>.
+            Pokud si nevíte rady, kde začít, nebo chcete pomoct s&nbsp;výběrem a nastavením AI agenta, <Link href="/kontakt" className="text-primary font-semibold hover:underline">ozvěte se mi</Link>. Zajímá vás i&nbsp;jak efektivně promptovat AI? Podívejte se na můj <Link href="/ebook" className="text-primary font-semibold hover:underline">e-book o&nbsp;promptování</Link>.
           </p>
 
           {/* FAQ */}
@@ -391,27 +384,27 @@ export default function AiAgentPage() {
           <div className="space-y-6 mb-8">
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Co je AI agent?</h3>
-              <p className="text-gray-700">AI agent je autonomní softwarový systém postavený na umělé inteligenci, který dokáže samostatně plánovat, rozhodovat se a vykonávat úkoly. Na rozdíl od běžného chatbotu nepotřebuje neustálé vedení – stačí mu zadat cíl a on najde cestu, jak ho dosáhnout.</p>
+              <p className="text-gray-700">AI agent je softwarový systém postavený na umělé inteligenci. Podle zadaného cíle plánuje kroky a provádí úkoly pomocí nástrojů, které má k dispozici.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Jaký je rozdíl mezi AI agentem a chatbotem?</h3>
-              <p className="text-gray-700">Chatbot reaguje na jednotlivé zprávy – zeptáte se, odpoví. AI agent jde dál: dokáže si rozložit složitý úkol na kroky, použít nástroje (prohlížeč, databázi, API), učit se z&nbsp;výsledků a pracovat autonomně, dokud úkol nesplní.</p>
+              <p className="text-gray-700">Chatbot reaguje na jednotlivé zprávy: zeptáte se, odpoví. AI agent jde dál: dokáže si rozložit složitý úkol na kroky, použít nástroje (prohlížeč, databázi, API), vyhodnocovat výsledky a podle nich pokračovat v práci.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Jsou AI agenti bezpeční?</h3>
-              <p className="text-gray-700">Záleží na implementaci. Kvalitní AI agenti mají bezpečnostní vrstvy – omezená oprávnění, lidský dohled nad důležitými rozhodnutími a auditní záznamy. Důležité je nastavit jasné hranice toho, co agent smí a nesmí dělat.</p>
+              <p className="text-gray-700">Záleží na implementaci. Kvalitní AI agenti mají bezpečnostní vrstvy: omezená oprávnění, lidský dohled nad důležitými rozhodnutími a auditní záznamy. Důležité je nastavit jasné hranice toho, co agent smí a nesmí dělat.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Kolik stojí AI agent?</h3>
-              <p className="text-gray-700">Cena závisí na typu agenta. Jednoduchý chatbot pro zákaznickou podporu lze provozovat za stovky korun měsíčně. Složitější automatizační agenti stojí tisíce korun, ale typicky se investice vrátí díky ušetřenému času a zvýšené produktivitě.</p>
+              <p className="text-gray-700">Cena závisí na typu agenta. Jednoduchý chatbot pro zákaznickou podporu lze provozovat za stovky korun měsíčně. Složitější automatizační agenti stojí tisíce korun. Návratnost závisí na ušetřeném čase a přínosu pro práci.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Potřebuji k&nbsp;používání AI agenta umět programovat?</h3>
-              <p className="text-gray-700">Ne nutně. Existují platformy jako <a href="https://www.make.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Make.com</a> nebo <a href="https://zapier.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Zapier</a>, kde si AI agenta sestavíte vizuálně bez kódu. Pro pokročilejší scénáře se hodí základní technické znalosti, ale i ty se dají rychle naučit – například pomocí <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link>.</p>
+              <p className="text-gray-700">Ne nutně. Existují platformy jako <a href="https://www.make.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Make.com</a> nebo <a href="https://zapier.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Zapier</a>, kde si AI agenta sestavíte vizuálně bez kódu. Pro pokročilejší scénáře se hodí základní technické znalosti, které si můžete osvojit například při <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link>.</p>
             </div>
           </div>
 

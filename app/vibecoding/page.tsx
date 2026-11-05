@@ -15,20 +15,20 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://www.linklady.cz/vibecoding/#webpage",
       url: "https://www.linklady.cz/vibecoding",
-      name: "Vibecoding – Co je to a jak s ním začít | Linklady.cz",
-      description: "Vibecoding je nový způsob tvorby softwaru pomocí AI. Místo psaní kódu říkáte AI, co chcete – a ona to naprogramuje za vás. Školení vibecodingu pro firmy i jednotlivce.",
+      name: "Vibecoding: co je to a jak s ním začít | Linklady.cz",
+      description: "Vibecoding je nový způsob tvorby softwaru pomocí AI. Místo psaní kódu říkáte AI, co chcete, a ona to naprogramuje za vás. Školení vibecodingu pro firmy i jednotlivce.",
       isPartOf: { "@id": "https://www.linklady.cz/#website" },
       about: {
         "@type": "Thing",
         name: "Vibecoding",
-        description: "Programování pomocí AI – nový přístup k tvorbě softwaru, kde místo psaní kódu popisujete, co chcete, a AI vytvoří funkční aplikaci.",
+        description: "Programování pomocí AI: nový přístup k tvorbě softwaru, kde místo psaní kódu popisujete, co chcete, a AI vytvoří funkční aplikaci.",
       },
       inLanguage: "cs",
     },
     {
       "@type": "Course",
       "@id": "https://www.linklady.cz/vibecoding/#course",
-      name: "Školení vibecodingu – Tvorba aplikací pomocí AI",
+      name: "Školení vibecodingu: tvorba aplikací pomocí AI",
       description: "Praktické školení vibecodingu pro firmy a jednotlivce. Naučte se vytvářet weby, aplikace a automatizace pomocí AI nástrojů jako Claude Code, Cursor, Bolt a dalších.",
       provider: { "@id": "https://www.linklady.cz/#business" },
       educationalLevel: "Beginner to Intermediate",
@@ -82,7 +82,7 @@ export default function VibecodingPage() {
               <span className="text-[#A4EDD6]">Programování pomocí AI</span>
             </h1>
           <p>
-              Nejrychlejší způsob, jak dnes vytvořit funkční web nebo aplikaci. Místo psaní kódu říkáte AI, co chcete – a ona to naprogramuje za vás.
+              Při tvorbě webu nebo aplikace popisujete AI, co chcete vytvořit. Vygenerovaný kód pak zkoušíte a upravujete.
             </p>
           <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link><Link href="#poptavka" className="cf-button">
                 Chci školení vibecodingu
@@ -100,16 +100,16 @@ export default function VibecodingPage() {
           </div>
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              <strong>Vibecoding</strong> (anglicky <em>vibe coding</em>) je nový způsob tvorby softwaru, kde místo ručního psaní kódu <strong>popisujete v běžném jazyce</strong>, co chcete vytvořit – a AI nástroj to naprogramuje za vás.
+              Vibecoding (anglicky <em>vibe coding</em>) je nový způsob tvorby softwaru, kde místo ručního psaní kódu popisujete v běžném jazyce, co chcete vytvořit, a AI nástroj to naprogramuje za vás.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Termín zavedl <strong>Andrej Karpathy</strong>, spoluzakladatel OpenAI a bývalý šéf AI v Tesle, v roce 2025. Popsal to jednoduše: <em>&bdquo;Plně se odevzdáte vibám, přijmete exponenciálu a zapomenete, že kód vůbec existuje.&ldquo;</em>
+              Termín zavedl Andrej Karpathy, spoluzakladatel OpenAI a bývalý šéf AI v Tesle, v roce 2025. Popsal to jednoduše: <em>&bdquo;Plně se odevzdáte vibám, přijmete exponenciálu a zapomenete, že kód vůbec existuje.&ldquo;</em>
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              V praxi to znamená, že řeknete AI něco jako <strong>&bdquo;Vytvoř mi landing page pro kavárnu s kontaktním formulářem a galerií fotek&ldquo;</strong> – a AI vytvoří funkční web. Vy pak upřesňujete, ladíte a iterujete. Žádné učení programovacích jazyků, žádné hledání chyb v kódu.
+              V praxi to znamená, že řeknete AI něco jako &bdquo;Vytvoř mi landing page pro kavárnu s kontaktním formulářem a galerií fotek&ldquo; a AI vytvoří funkční web. Vy pak výsledek zkoušíte a upřesňujete zadání.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Vibecoding <strong>demokratizuje tvorbu softwaru</strong>. Už nemusíte být programátor, abyste vytvořili web, aplikaci nebo automatizaci. Stačí umět jasně popsat, co chcete.
+              S tvorbou webu, aplikace nebo automatizace můžete začít i bez programátorské praxe. Potřebujete jasně popsat, co má výsledek dělat.
             </p>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function VibecodingPage() {
               Můj vibecoding nástroj: <span className="text-primary">Claude Code</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Existují desítky vibecoding nástrojů. Já používám Claude Code od Anthropic – a mám k tomu dobrý důvod.
+              Z desítek nástrojů používám Claude Code od Anthropic.
             </p>
           </div>
 
@@ -137,14 +137,14 @@ export default function VibecodingPage() {
                   </div>
                   <div>
                     <h3 className="text-3xl font-bold">Claude Code</h3>
-                    <p className="text-[#A4EDD6] font-semibold">od Anthropic – můj hlavní nástroj</p>
+                    <p className="text-[#A4EDD6] font-semibold">od Anthropic: můj hlavní nástroj</p>
                   </div>
                 </div>
                 <p className="text-lg opacity-90 leading-relaxed mb-6">
-                  Claude Code je <strong>profesionální vibecoding nástroj</strong>, který pracuje přímo ve vašem terminálu. Rozumí celému projektu, upravuje desítky souborů najednou, řeší složité problémy a dokáže vytvořit kompletní produkční aplikaci.
+                  Claude Code je profesionální vibecoding nástroj, který pracuje přímo ve vašem terminálu. Rozumí celému projektu, upravuje desítky souborů najednou, řeší složité problémy a dokáže vytvořit kompletní produkční aplikaci.
                 </p>
                 <p className="text-lg opacity-90 leading-relaxed">
-                  Na rozdíl od webových nástrojů jako Bolt nebo Lovable, Claude Code dává <strong>plnou kontrolu nad kódem</strong>. Výsledek je čistý, profesionální a připravený na produkci. Tento web – linklady.cz – je kompletně vytvořen pomocí Claude Code.
+                  V Claude Code pracuji přímo se zdrojovým kódem a můžu kontrolovat jednotlivé změny. Web linklady.cz je kompletně vytvořen pomocí Claude Code.
                 </p>
               </div>
               <div>
@@ -154,16 +154,16 @@ export default function VibecodingPage() {
                     <p className="text-sm opacity-80">Vidí všechny soubory, chápe architekturu a dělá změny konzistentně napříč celou aplikací.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
-                    <h4 className="font-bold text-[#A4EDD6] mb-1">Produkční kvalita</h4>
-                    <p className="text-sm opacity-80">Generuje čistý, typově bezpečný kód s SEO, strukturovanými daty a best practices.</p>
+                    <h4 className="font-bold text-[#A4EDD6] mb-1">Práce s kódem</h4>
+                    <p className="text-sm opacity-80">Pomáhá psát typovaný kód, doplňovat SEO i strukturovaná data.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
                     <h4 className="font-bold text-[#A4EDD6] mb-1">Plná kontrola</h4>
-                    <p className="text-sm opacity-80">Kód je váš. Žádný vendor lock-in, žádné limity. Nasadíte kamkoliv – Vercel, vlastní server, cokoliv.</p>
+                    <p className="text-sm opacity-80">Kód je váš. Nasadit ho můžete například na Vercel nebo vlastní server.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
-                    <h4 className="font-bold text-[#A4EDD6] mb-1">Nejchytřejší AI model</h4>
-                    <p className="text-sm opacity-80">Claude Opus 4 je nejschopnější AI model pro programování. Řeší i problémy, kde jiné nástroje selhávají.</p>
+                    <h4 className="font-bold text-[#A4EDD6] mb-1">Model Claude</h4>
+                    <p className="text-sm opacity-80">Claude Opus 4 pomáhá s programováním a řešením složitějších úkolů.</p>
                   </div>
                 </div>
               </div>
@@ -176,7 +176,7 @@ export default function VibecodingPage() {
               Přehled vibecoding <span className="text-primary">nástrojů</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Každý nástroj má své místo. Tady je přehled těch nejlepších – seřazený podle toho, pro koho se hodí.
+              Nástroje níže jsem rozdělila podle zkušeností uživatele a způsobu práce.
             </p>
           </div>
 
@@ -220,11 +220,11 @@ export default function VibecodingPage() {
                   <h4 className="text-lg font-bold text-gray-900"><a href="https://lovable.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Lovable</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
-                  AI platforma zaměřená na tvorbu krásných webových aplikací. Skvělý design, Supabase integrace pro databáze a rychlé prototypování s vizuálním výstupem.
+                  AI platforma pro tvorbu webových aplikací s vizuálním návrhem a integrací Supabase pro databáze.
                 </p>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-start gap-2 text-green-700">
-                    <span className="font-bold">+</span> Krásný design out-of-the-box
+                    <span className="font-bold">+</span> Hotové návrhy vzhledu
                   </div>
                   <div className="flex items-start gap-2 text-green-700">
                     <span className="font-bold">+</span> Snadná práce s databází
@@ -248,7 +248,7 @@ export default function VibecodingPage() {
                 </p>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-start gap-2 text-green-700">
-                    <span className="font-bold">+</span> Vše v jednom – kód, hosting, databáze
+                    <span className="font-bold">+</span> Vše v jednom: kód, hosting, databáze
                   </div>
                   <div className="flex items-start gap-2 text-green-700">
                     <span className="font-bold">+</span> Okamžité nasazení
@@ -265,7 +265,7 @@ export default function VibecodingPage() {
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
               <span className="bg-blue-100 text-primary text-sm px-3 py-1 rounded-full">Pro pokročilé</span>
-              Chcete plnou kontrolu? Profesionální nástroje pro seriózní projekty
+              Nástroje pro práci přímo se zdrojovým kódem
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Claude Code */}
@@ -280,11 +280,11 @@ export default function VibecodingPage() {
                   <h4 className="text-lg font-bold text-gray-900"><a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Claude Code</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
-                  Profesionální CLI nástroj od Anthropic. Pracuje v terminálu, rozumí celému projektu a generuje produkční kód. Můj hlavní nástroj – tímhle jsem vytvořila linklady.cz.
+                  Profesionální CLI nástroj od Anthropic. Pracuje v terminálu, rozumí celému projektu a generuje produkční kód. Můj hlavní nástroj: tímhle jsem vytvořila linklady.cz.
                 </p>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-start gap-2 text-green-700">
-                    <span className="font-bold">+</span> Nejchytřejší AI pro kódování
+                    <span className="font-bold">+</span> AI pro práci s kódem
                   </div>
                   <div className="flex items-start gap-2 text-green-700">
                     <span className="font-bold">+</span> Plná kontrola, žádný lock-in
@@ -304,7 +304,7 @@ export default function VibecodingPage() {
                   <h4 className="text-lg font-bold text-gray-900"><a href="https://cursor.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Cursor</a></h4>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4 text-sm">
-                  AI-powered editor kódu postavený na VS Code. Autocomplete, inline chat, editace celých souborů. Skvělý pro vývojáře, kteří chtějí AI přímo v editoru.
+                  Editor kódu s AI postavený na VS Code. Autocomplete, inline chat, editace celých souborů. Hodí se pro vývojáře, kteří chtějí AI přímo v editoru.
                 </p>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-start gap-2 text-green-700">
@@ -356,7 +356,7 @@ export default function VibecodingPage() {
               8 důvodů, proč zvolit <span className="text-primary">profi nástroje</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Bolt.new a Lovable jsou skvělé na start. Ale pokud to myslíte vážně, profesionální nástroje jako Claude Code vám dají něco úplně jiného.
+              Při výběru nástroje zvažte, jak budete pracovat se soubory, jaký přístup ke kódu potřebujete a kam chcete aplikaci nasadit.
             </p>
           </div>
 
@@ -366,9 +366,9 @@ export default function VibecodingPage() {
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h4v4H7V7zm6 0h4v2h-4V7zm0 4h4v2h-4v-2zm-6 4h10v2H7v-2z"/></svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Vaše soubory, vaše pravidla</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Práce s vlastními soubory</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Pracujete přímo ve svých složkách a se svými soubory. Žádná cizí platforma, žádná závislost. Kód je váš od první chvíle.
+                Pracujete přímo ve svých složkách a se svými soubory. Kód je váš od první chvíle.
               </p>
             </div>
 
@@ -377,9 +377,9 @@ export default function VibecodingPage() {
               <div className="w-12 h-12 bg-[#ffe5db] rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-[#2946cf]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Bez limitu složitosti</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Různé typy projektů</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Jakkoliv složité projekty, jakýkoliv programovací jazyk. Webová appka, Python skript nebo mobilní aplikace – vše z jednoho nástroje.
+                V jednom nástroji můžete pracovat v různých programovacích jazycích na webové aplikaci, Python skriptu i mobilní aplikaci.
               </p>
             </div>
 
@@ -390,7 +390,7 @@ export default function VibecodingPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Od tvůrce AI modelu</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Claude Code pochází přímo od Anthropic – firmy, která vytvořila samotný AI model. Agent a model jsou laděné k sobě jako celek.
+                Claude Code pochází přímo od Anthropic, firmy, která vytvořila samotný AI model. Agent a model jsou laděné k sobě jako celek.
               </p>
             </div>
 
@@ -401,7 +401,7 @@ export default function VibecodingPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Přímo u zdroje</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Žádný prostředník, který přeprodává tokeny s přirážkou. Komunikujete přímo s API od tvůrce modelu – transparentní cena, plný výkon.
+                Můžete komunikovat přímo s API tvůrce modelu a platit podle jeho ceníku.
               </p>
             </div>
 
@@ -410,9 +410,9 @@ export default function VibecodingPage() {
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Nejlepší model bez omezení</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Přístup k modelu Claude Opus</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Přímý přístup ke Claude Opus – nejmocnějšímu modelu pro programování. Žádné uměle snížené limity, žádná degradace kvality.
+                Přímý přístup k modelu Claude Opus pro práci s kódem.
               </p>
             </div>
 
@@ -423,7 +423,7 @@ export default function VibecodingPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Chytré řízení kontextu</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Pomocí .md souborů elegantně řídíte, co AI ví o vašem projektu. Pravidla, styl kódu, architektura – vše na jednom místě.
+                Do .md souborů zapisujete pravidla projektu, styl kódu a popis architektury. AI je může při práci použít jako podklad.
               </p>
             </div>
 
@@ -432,9 +432,9 @@ export default function VibecodingPage() {
               <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Obrovský ekosystém</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Rozšíření nástroje</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Skills, pluginy, MCP servery – aktivní komunita neustále rozšiřuje možnosti. Co dnes nejde, zítra může být hotové díky komunitě.
+                Možnosti nástroje rozšiřují skills, pluginy a MCP servery.
               </p>
             </div>
 
@@ -443,16 +443,16 @@ export default function VibecodingPage() {
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Daleko víc než jen weby</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Další využití</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Desktopové aplikace, webové scrapery, hlasové nástroje, CLI skripty, automatizace – profi nástroje neznají hranice jednoho typu projektu.
+                Můžete vytvářet také desktopové aplikace, webové scrapery, hlasové nástroje, CLI skripty nebo automatizace.
               </p>
             </div>
           </div>
 
           <div className="text-center mt-12">
             <p className="text-gray-500 text-sm">
-              Webové nástroje (Bolt, Lovable) jsou ideální na rychlé prototypy. Pro reálné, škálovatelné projekty ale potřebujete profesionální nástroj.
+              Při prototypování můžete začít v prohlížeči v Boltu nebo Lovable. Pro další vývoj zvažte i způsob správy kódu a nasazení.
             </p>
           </div>
         </div>
@@ -466,7 +466,7 @@ export default function VibecodingPage() {
               Co se dá vytvořit <span className="text-primary">vibecodingem</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Vibecoding není jen hračka. Lidi s ním tvoří reálné produkty, které vydělávají peníze.
+              Pomocí vibecodingu vznikají například následující typy projektů.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -478,7 +478,7 @@ export default function VibecodingPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Webové stránky</h3>
               <p className="text-gray-600 leading-relaxed">
-                Landing pages, firemní weby, portfolia, blogy. Kompletní weby s responzivním designem a SEO – vytvořené za hodiny místo týdnů.
+                Landing pages, firemní weby, portfolia a blogy s responzivním designem a SEO. První verze může vzniknout za hodiny místo týdnů.
               </p>
               <div className="flex flex-col gap-2 mt-4">
                 <a href="https://kastrup.cz/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:text-primary font-medium text-sm transition-colors">
@@ -567,7 +567,7 @@ export default function VibecodingPage() {
               Školení <span className="text-primary">vibecodingu</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Naučte se vytvářet weby a aplikace pomocí AI. Praktické školení s reálnými projekty – ne jen teorie.
+              Naučte se vytvářet weby a aplikace pomocí AI. Na školení pracujeme na konkrétních projektech.
             </p>
           </div>
 
@@ -588,7 +588,7 @@ export default function VibecodingPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                  Jak správně promptovat AI pro nejlepší výsledky
+                  Jak AI zadávat úkoly a upřesňovat požadavky
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
@@ -614,7 +614,7 @@ export default function VibecodingPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-4">Firemní školení</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Školení pro váš tým. Marketéři, produktoví manažeři, HR – naučte své lidi vytvářet interní nástroje a automatizace pomocí AI.
+                Školení pro marketéry, produktové manažery i HR. Váš tým se naučí vytvářet interní nástroje a automatizace pomocí AI.
               </p>
               <ul className="space-y-3 text-gray-600 mb-8">
                 <li className="flex items-start gap-2">
@@ -654,7 +654,7 @@ export default function VibecodingPage() {
               Rizika a limity <span className="text-primary">vibecodingu</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Vibecoding není kouzelná hůlka. Abyste ho využili správně, musíte znát i jeho slabiny.
+              Před nasazením potřebujete zkontrolovat kvalitu kódu, bezpečnost i licence.
             </p>
           </div>
 
@@ -669,7 +669,7 @@ export default function VibecodingPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Technický dluh</h3>
               <p className="text-gray-600 leading-relaxed">
-                AI generuje kód, který funguje – ale ne vždy je čistý a udržitelný. Bez kontroly se snadno nahromadí technický dluh, který vás později stojí víc času, než jste ušetřili.
+                I funkční kód od AI může být nepřehledný a obtížně udržovatelný. Bez kontroly se snadno nahromadí technický dluh, který vás později stojí víc času, než jste ušetřili.
               </p>
             </div>
 
@@ -679,7 +679,7 @@ export default function VibecodingPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Bezpečnostní díry</h3>
               <p className="text-gray-600 leading-relaxed">
-                AI neřeší bezpečnost automaticky. Může vygenerovat kód zranitelný vůči SQL injection, XSS nebo úniku dat. Bez bezpečnostní kontroly nasazujete časovanou bombu.
+                AI neřeší bezpečnost automaticky. Může vygenerovat kód zranitelný vůči SQL injection, XSS nebo úniku dat. Před nasazením proto potřebujete bezpečnostní kontrolu.
               </p>
             </div>
 
@@ -699,7 +699,7 @@ export default function VibecodingPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Falešný pocit jistoty</h3>
               <p className="text-gray-600 leading-relaxed">
-                &bdquo;Funguje to, tak je to hotové&ldquo; – nejčastější past vibecodingu. Kód může fungovat na první pohled, ale skrývat chyby, které se projeví až v produkci. Testování je nutnost, ne luxus.
+                &bdquo;Funguje to, tak je to hotové&ldquo;: nejčastější past vibecodingu. Kód může fungovat na první pohled, ale skrývat chyby, které se projeví až v produkci. Kód je potřeba otestovat.
               </p>
             </div>
           </div>
@@ -709,7 +709,7 @@ export default function VibecodingPage() {
               Jak to řeším já?
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Právě proto používám profesionální nástroje jako Claude Code a důsledně kontroluji vygenerovaný kód. Na školení vás naučím, jak se těmto rizikům vyhnout – jak testovat, jak psát bezpečný kód a jak poznat, kdy AI udělala chybu. Vibecoding v rukou zkušeného člověka je silný nástroj. Bez kontroly je to rychlá jízdenka do technického dluhu.
+              Právě proto používám profesionální nástroje jako Claude Code a důsledně kontroluji vygenerovaný kód. Na školení vás naučím, jak se těmto rizikům vyhnout: jak testovat, jak psát bezpečný kód a jak poznat, kdy AI udělala chybu.
             </p>
           </div>
         </div>
@@ -723,41 +723,41 @@ export default function VibecodingPage() {
               Web a aplikace <span className="text-primary">na míru</span> vibecodingem
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Co se tím doopravdy mění pro cenu a pro termín. A co se nemění, i&nbsp;když se to slibuje.
+              Jak vibecoding ovlivňuje cenu a termín zakázky.
             </p>
           </div>
 
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Nejčastější otázka zní, jestli vibecodingem vznikne levnější web. Odpověď je: mění se to, za co platíte, ne nutně kolik.
+              Vibecoding mění rozložení práce na webu. Celková cena proto nemusí být nižší.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              <strong>Zkracuje se cesta od nápadu k&nbsp;něčemu, na co se dá kliknout.</strong> První použitelná verze vzniká v&nbsp;řádu hodin, ne týdnů. To je ta skutečná změna, protože o&nbsp;většině rozhodnutí se dřív dohadovalo nad obrázkem v&nbsp;prezentaci. Teď se dohadujeme nad věcí, která běží.
+              První použitelnou verzi můžu připravit v&nbsp;řádu hodin místo týdnů. Rozhodnutí pak probíráme nad fungujícím prototypem, který si můžete vyzkoušet.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              <strong>Nezkracuje se to, co přijde potom.</strong> Nasazení, rychlost, přístupnost, bezpečnost, měření, obsah. Tady vibecoding neušetří skoro nic a je poctivé to říct dopředu. Kdo tvrdí, že hotový web vznikne za odpoledne, mluví o&nbsp;prototypu, ne o&nbsp;webu, který má vydělávat.
+              Po prototypu zbývá nasazení, kontrola rychlosti, přístupnosti a bezpečnosti i příprava měření a obsahu. U těchto prací počítám s malou úsporou. Prototyp hotový za odpoledne tak ještě potřebuje dopracovat.
             </p>
 
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-lg p-6 my-8">
               <p className="text-gray-800 leading-relaxed">
-                <strong>Kde to dává největší smysl:</strong> vnitřní nástroje a věci, které si firma nikdy nenechala udělat, protože se to nevyplatilo. Kalkulačka, přehled, formulář, který někam zapisuje. Dřív to nestálo za projekt. Teď stojí.
+                Největší přínos vidím u menších interních nástrojů, jejichž vývoj se firmě dřív nevyplatil. Třeba u kalkulačky, přehledu dat nebo formuláře, který zapisuje do evidence.
               </p>
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              <strong>Kde bych do toho nešla:</strong> tam, kde jde o&nbsp;peníze zákazníků, citlivá data nebo o&nbsp;věc, na které stojí provoz firmy. Ne že by to nešlo. Ale kontrola a odpovědnost tam stojí víc než samotné napsání, takže úspora zmizí a riziko zůstane.
+              Sama bych touto cestou nešla u systémů, které spravují peníze zákazníků, citlivá data nebo celý provoz firmy. Kontrola a odpovědnost u nich mohou stát víc než samotné napsání kódu a převážit očekávanou úsporu.
             </p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
               Na co se ptát, než si někoho najmete
             </h3>
             <ul className="space-y-3 text-lg text-gray-700 mb-8">
-              <li><strong>Kdo bude umět ten kód změnit za rok?</strong> Když odpověď zní &bdquo;zase AI&ldquo;, zeptejte se, kdo pozná, že to udělala špatně.</li>
-              <li><strong>Co se stane, když to spadne v&nbsp;neděli večer?</strong></li>
-              <li><strong>Dostanu to celé, nebo to poběží u&nbsp;někoho, kdo mi to může vypnout?</strong></li>
-              <li><strong>Je v&nbsp;ceně měření?</strong> Web bez měření je hezký obrázek, ne nástroj.</li>
+              <li>Kdo bude umět ten kód změnit za rok? Když odpověď zní &bdquo;zase AI&ldquo;, zeptejte se, kdo pozná, že to udělala špatně.</li>
+              <li>Co se stane, když to spadne v&nbsp;neděli večer?</li>
+              <li>Dostanu to celé, nebo to poběží u&nbsp;někoho, kdo mi to může vypnout?</li>
+              <li>Je v&nbsp;ceně měření a jak poznáme, zda web plní svůj účel?</li>
             </ul>
 
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -775,7 +775,7 @@ export default function VibecodingPage() {
               Pro koho vibecoding <span className="text-primary">je a není</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Vibecoding má obrovský potenciál, ale není pro každého stejně. Tady je upřímné zhodnocení.
+              Vhodnost vibecodingu závisí na účelu projektu a na tom, kdo bude kontrolovat výsledek.
             </p>
           </div>
 
@@ -792,19 +792,19 @@ export default function VibecodingPage() {
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 font-bold mt-0.5">+</span>
-                  <span><strong className="text-gray-900">Máte nápad a chcete ho rychle otestovat</strong> – prototyp za hodiny místo týdnů</span>
+                  <span>Máte nápad a chcete ho rychle otestovat: prototyp za hodiny místo týdnů</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 font-bold mt-0.5">+</span>
-                  <span><strong className="text-gray-900">Jste podnikatel nebo marketér</strong> – potřebujete landing page, interní nástroj nebo automatizaci, ale nechcete čekat na vývojáře</span>
+                  <span>Jste podnikatel nebo marketér: potřebujete landing page, interní nástroj nebo automatizaci, ale nechcete čekat na vývojáře</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 font-bold mt-0.5">+</span>
-                  <span><strong className="text-gray-900">Chcete se naučit tvořit</strong> – vibecoding je nejpřístupnější vstup do světa tvorby softwaru</span>
+                  <span>Chcete si vyzkoušet tvorbu softwaru pomocí popisu v běžném jazyce</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 font-bold mt-0.5">+</span>
-                  <span><strong className="text-gray-900">Jste vývojář a chcete zrychlit</strong> – AI jako asistent pro rutinní úkoly, boilerplate a prototypy</span>
+                  <span>Jste vývojář a chcete zrychlit: AI jako asistent pro rutinní úkoly, boilerplate a prototypy</span>
                 </li>
               </ul>
             </div>
@@ -817,19 +817,19 @@ export default function VibecodingPage() {
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 font-bold mt-0.5">−</span>
-                  <span><strong className="text-gray-900">Stavíte kritickou aplikaci</strong> – bankovnictví, zdravotnictví nebo bezpečnostní systémy vyžadují ruční kontrolu každého řádku</span>
+                  <span>Stavíte kritickou aplikaci: bankovnictví, zdravotnictví nebo bezpečnostní systémy vyžadují ruční kontrolu každého řádku</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 font-bold mt-0.5">−</span>
-                  <span><strong className="text-gray-900">Nechcete rozumět výsledku</strong> – slepé kopírování AI kódu bez kontroly vede k problémům</span>
+                  <span>Nechcete rozumět výsledku: slepé kopírování AI kódu bez kontroly vede k problémům</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 font-bold mt-0.5">−</span>
-                  <span><strong className="text-gray-900">Očekáváte dokonalost na první pokus</strong> – vibecoding je iterativní proces, ne jednorázové kouzlo</span>
+                  <span>Očekáváte hotový výsledek na první pokus: počítejte s opakovanými úpravami a testováním</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 font-bold mt-0.5">−</span>
-                  <span><strong className="text-gray-900">Chcete nahradit celý vývojový tým</strong> – AI agent je skvělý spolupracovník, ale zatím ne náhrada za zkušeného <Link href="/ai-agent" className="text-primary hover:underline">AI agenta</Link> s lidským dohledem</span>
+                  <span>Chcete nahradit celý vývojový tým: práce s <Link href="/ai-agent" className="text-primary hover:underline">AI agentem</Link> vyžaduje člověka, který zkontroluje výsledek</span>
                 </li>
               </ul>
             </div>
@@ -844,7 +844,7 @@ export default function VibecodingPage() {
             Proč se naučit vibecoding právě teď?
           </h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Vibecoding je nejrychleji rostoucí trend v tech světě. Firmy, které ho adoptují první, získají obrovskou konkurenční výhodu – rychlejší prototypování, nižší náklady na vývoj a větší autonomii týmů.
+            Vibecoding můžete využít k rychlejšímu prototypování a k tvorbě menších nástrojů přímo v týmu. Na školení si vyzkoušíte, co pro váš projekt zvládnete sami.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -885,7 +885,7 @@ export default function VibecodingPage() {
                 Jaké nástroje se používají na vibecoding?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Mezi nejpopulárnější vibecoding nástroje patří Claude Code (Anthropic), Cursor, Bolt.new, Windsurf, Replit Agent, GitHub Copilot a Lovable. Každý se hodí na jiný typ projektu – od webů po komplexní aplikace.
+                K nástrojům pro vibecoding patří Claude Code (Anthropic), Cursor, Bolt.new, Windsurf, Replit Agent, GitHub Copilot a Lovable. Každý se hodí na jiný typ projektu: od webů po komplexní aplikace.
               </p>
             </div>
 
@@ -903,7 +903,7 @@ export default function VibecodingPage() {
                 Co se dá vytvořit pomocí vibecodingu?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Pomocí vibecodingu lze vytvořit webové stránky, webové aplikace, landing pages, interní firemní nástroje, automatizace, chatboty, dashboardy i jednoduché mobilní aplikace. Limity se posouvají každý měsíc – AI nástroje se zlepšují extrémně rychle.
+                Pomocí vibecodingu lze vytvořit webové stránky, webové aplikace, landing pages, interní firemní nástroje, automatizace, chatboty, dashboardy i jednoduché mobilní aplikace.
               </p>
             </div>
 
@@ -912,7 +912,7 @@ export default function VibecodingPage() {
                 Nabízíte školení vibecodingu?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Ano, nabízím individuální i skupinová školení vibecodingu pro firmy i jednotlivce. Školení probíhá online nebo osobně. Naučíte se pracovat s nejlepšími AI nástroji, správně promptovat a vytvářet funkční aplikace. Kontaktujte mě pro více informací.
+                Ano, nabízím individuální i skupinová školení vibecodingu pro firmy i jednotlivce. Školení probíhá online nebo osobně. Naučíte se pracovat s AI nástroji, správně promptovat a vytvářet funkční aplikace. Kontaktujte mě pro více informací.
               </p>
             </div>
           </div>
@@ -928,7 +928,7 @@ export default function VibecodingPage() {
               Začněte s vibecodingem ještě dnes
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto leading-relaxed mb-4">
-              Napište mi a domluvíme se na školení. Ukážu vám, jak vytvořit první projekt pomocí AI – rychle, prakticky a bez zbytečné teorie.
+              Napište mi a domluvíme se na školení. Ukážu vám, jak vytvořit první projekt pomocí AI na konkrétním zadání.
             </p>
             <p className="text-lg opacity-80 mb-10">
               Odpovídám do 24 hodin. Úvodní konzultace je zdarma.

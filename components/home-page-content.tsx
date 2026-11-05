@@ -11,19 +11,19 @@ export default function HomePageContent() {
         <section className="cf-hero">
           <div className="cf-wrap cf-hero-grid">
             <div className="cf-hero-copy">
-              <p className="cf-eyebrow">KREATIVITA × DATA × TECHNOLOGIE</p>
+              <p className="cf-eyebrow">PAVLA ZIMMERMANNOVÁ / LINKLADY</p>
               <h1>
-                Dobré nápady.
+                Weby pro firmy.
                 <br />
-                <em>Chytrá řešení.</em>
+                <em>SEO pro váš web.</em>
                 <span className="cf-star" aria-hidden="true">
                   ✳
                 </span>
               </h1>
               <p className="cf-hero-description">
-                Tvořím webové stránky a pomáhám firmám se SEO. Propojím
-                srozumitelnou nabídku, obsah a technologie, aby vás zákazníci
-                našli a snadno se vám ozvali.
+                Tvořím webové stránky a pomáhám firmám se SEO. Připravím
+                obsah a technické řešení tak, aby zákazníci našli vaši
+                nabídku, rozuměli jí a snadno se vám ozvali.
               </p>
               <div className="cf-buttons">
                 <Link href="/kontakt" className="cf-button">
@@ -38,11 +38,11 @@ export default function HomePageContent() {
               <div className="cf-orbit" />
               <div className="cf-browser">
                 <div className="cf-browser-bar">
-                  <span>● ● ●</span> LINKLADY / DIGITAL STUDIO
+                  <span>● ● ●</span> LINKLADY / WEBY A SEO
                 </div>
                 <h2>
-                  Od prvního nápadu
-                  <br />k výsledku.
+                  S čím vám
+                  <br />pomůžu.
                 </h2>
                 <div>
                   <b>01 ↗</b> SEO & obsah
@@ -54,9 +54,9 @@ export default function HomePageContent() {
                   <b>03 ✳</b> AI & automatizace
                 </div>
               </div>
-              <span className="cf-sticker">IDEAS INTO ACTION ↗</span>
+              <span className="cf-sticker">OD NÁPADU K WEBU</span>
               <span className="cf-sticker cf-sticker-lower">
-                CREATIVE TECH ✳
+                WEBY OD PAVLY
               </span>
             </div>
           </div>
@@ -76,9 +76,9 @@ export default function HomePageContent() {
         <section className="cf-section cf-wrap">
           <p className="cf-eyebrow">01 / CO PRO VÁS UMÍM</p>
           <h2>
-            Jeden digitální svět.
+            Tvorba webů
             <br />
-            Spousta možností.
+            a péče o ně.
           </h2>
           <p className="cf-lede">
             Potřebujete nový web, nebo chcete zlepšit ten současný?
@@ -116,7 +116,7 @@ export default function HomePageContent() {
           </div>
           <aside className="cf-supporting-services" aria-label="Navazující služby">
             <div>
-              <h3>Potřebujete jít o krok dál?</h3>
+              <h3>Potřebujete aplikaci nebo automatizaci?</h3>
               <p>Web můžeme doplnit aplikací nebo propojit s nástroji, které vám usnadní každodenní práci.</p>
             </div>
             <div className="cf-supporting-links">
@@ -131,9 +131,9 @@ export default function HomePageContent() {
               <div>
                 <p className="cf-eyebrow">02 / VYBRANÉ PROJEKTY</p>
                 <h2>
-                  Nápady, které žijí
+                  Weby a aplikace,
                   <br />
-                  vlastním životem.
+                  které jsem vytvořila.
                 </h2>
               </div>
               <Link className="cf-text-link" href="/projekty">
@@ -180,9 +180,9 @@ export default function HomePageContent() {
               věci fungují.
             </h2>
             <p className="cf-lede">
-              V online marketingu působím od roku 2015. Zkušenosti ze SEO,
-              obsahu a správy webů dnes propojuji s moderním vývojem a AI. Baví
-              mě tvořit a hledat řešení, která lidem pomáhají.
+              V online marketingu pracuji od roku 2015. Věnuji se SEO,
+              obsahu a správě webů, při vývoji používám také AI. Baví
+              mě vymýšlet a tvořit weby, které lidé využijí.
             </p>
             <Link className="cf-button cf-blue" href="/o-mne">
               Více o mně ↗
@@ -192,24 +192,24 @@ export default function HomePageContent() {
         <section className="cf-wrap cf-section cf-process">
           <p className="cf-eyebrow">04 / JAK SPOLUPRACUJI</p>
           <h2>
-            Od rozhovoru
-            <br />k funkčnímu řešení.
+            Jak se domluvíme
+            <br />a pustíme do práce.
           </h2>
           <div className="cf-service-grid">
             {[
               [
                 "01",
-                "Nejdřív porozumět",
+                "Probereme zadání",
                 "Probereme váš záměr, současný web i to, co potřebujete změnit.",
               ],
               [
                 "02",
-                "Najít směr",
+                "Domluvíme postup",
                 "Navrhnu postup a společně domluvíme rozsah práce i priority.",
               ],
               [
                 "03",
-                "Tvořit a ověřovat",
+                "Připravím a otestuji řešení",
                 "Řešení připravím, otestuji a projdeme si ho před spuštěním.",
               ],
             ].map(([n, t, d]) => (

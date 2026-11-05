@@ -15,7 +15,7 @@ const jsonLd = {
       "@type": "ContactPage",
       "@id": "https://www.linklady.cz/kontakt/#webpage",
       url: "https://www.linklady.cz/kontakt",
-      name: "Kontakt – Získejte konzultaci zdarma | Linklady.cz",
+      name: "Kontakt: konzultace zdarma | Linklady.cz",
       description: "Kontaktujte Pavlu Zimmermannovou pro konzultaci ohledně SEO, AI asistentů nebo automatizace.",
       isPartOf: { "@id": "https://www.linklady.cz/#website" },
       inLanguage: "cs",
@@ -40,7 +40,7 @@ const jsonLd = {
     {
       "@type": "ProfessionalService",
       "@id": "https://www.linklady.cz/#business",
-      name: "Linklady.cz – Pavla Zimmermannová",
+      name: "Linklady.cz | Pavla Zimmermannová",
       url: "https://www.linklady.cz",
       email: "zimmermannovap@gmail.com",
       taxID: "04352041",

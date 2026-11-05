@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       url: '/profile.jpg',
       width: 665,
       height: 1000,
-      alt: 'Webové aplikace – příklady z praxe od Pavly Zimmermannové',
+      alt: 'Webové aplikace: příklady z praxe od Pavly Zimmermannové',
     }],
   },
   twitter: {
@@ -129,7 +129,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Webové aplikace – příklady',
+          name: 'Webové aplikace: příklady',
           item: 'https://www.linklady.cz/blog/webove-aplikace-priklady',
         },
       ],
@@ -151,7 +151,7 @@ export default function WeboveAplikacePrikladyPage() {
               <li aria-hidden="true">/</li>
               <li><Link href="/blog" className="hover:text-[#A4EDD6]">Blog</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-[#A4EDD6]">Webové aplikace – příklady</li>
+              <li className="text-[#A4EDD6]">Webové aplikace: příklady</li>
             </ol>
           </nav>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
@@ -172,10 +172,10 @@ export default function WeboveAplikacePrikladyPage() {
         <article className="py-14 md:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-xl text-gray-800 leading-relaxed mb-6">
-              Mezi webové aplikace patří klientské portály, rezervační systémy, interní evidence, kalkulačky, e-shopy i nástroje pracující s živými daty. Společné mají jedno: uživatel na nich nečte jen obsah, ale zadává údaje, mění stav nebo získává výsledek podle svého vstupu.
+              Mezi webové aplikace patří klientské portály, rezervační systémy, interní evidence, kalkulačky, e-shopy i nástroje pracující s živými daty. Uživatel v nich zadává údaje, mění stav nebo získává výsledek podle svého vstupu.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-12">
-              Základní rozdíly, typy a technologie vysvětluje hlavní průvodce <Link href="/webova-aplikace" className="text-primary font-semibold hover:underline">co je webová aplikace</Link>. Tady ukazuji konkrétní příklady a rozhodnutí, která za nimi stojí.
+              Základní rozdíly, typy a technologie vysvětluje hlavní průvodce <Link href="/webova-aplikace" className="text-primary font-semibold hover:underline">co je webová aplikace</Link>.
             </p>
 
             <aside className="bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8 mb-14">
@@ -266,13 +266,13 @@ export default function WeboveAplikacePrikladyPage() {
               </table>
             </div>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-16 mb-6">Co si odnést z uvedených příkladů</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-16 mb-6">Na co myslet při návrhu vlastní aplikace</h2>
             <ul className="space-y-4 text-gray-700 mb-12">
-              <li><strong>Začněte jedním procesem.</strong> Poptávka, rezervace nebo evidence je lepší začátek než „digitalizovat celou firmu“.</li>
-              <li><strong>Pracujte se skutečnými daty.</strong> Reálné produkty, termíny a chybové stavy odhalí nedostatky prototypu.</li>
-              <li><strong>Myslete na správu.</strong> Obsah, přístupy a data musí jít měnit bez závislosti na každém zásahu programátora.</li>
-              <li><strong>Testujte na telefonu.</strong> Firemní nástroj může být technicky správně a přesto nepoužitelný v provozu.</li>
-              <li><strong>Nevymýšlejte funkce bez uživatelů.</strong> Další verze má vznikat podle používání první.</li>
+              <li>Začněte jedním procesem, třeba poptávkou, rezervací nebo evidencí. Zadání „digitalizovat celou firmu“ je pro první verzi příliš široké.</li>
+              <li>Vyzkoušejte prototyp na skutečných produktech, termínech a chybových stavech, abyste odhalili jeho nedostatky.</li>
+              <li>Domluvte způsob správy obsahu, přístupů a dat, aby jejich běžné změny nevyžadovaly zásah programátora.</li>
+              <li>Testujte na telefonu. I technicky funkční nástroj se může v provozu špatně ovládat.</li>
+              <li>Další funkce vybírejte podle toho, jak lidé používají první verzi.</li>
             </ul>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-12">

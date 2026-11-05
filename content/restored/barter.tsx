@@ -9,10 +9,10 @@ export default function BarterArticle() {
     <h2>Co si zjistit před prvním souhlasem</h2>
     <p>Začněte cílem. Chcete fotografie do nabídky, návštěvy konkrétní stránky, nebo objednávky? Každý z těchto výsledků vyžaduje jiný výstup i jiné vyhodnocení. „Větší povědomí“ si přeložte do něčeho, co dokážete po spolupráci zkontrolovat.</p>
     <ul>
-      <li><strong>Shoda publika:</strong> působí partner ve vašem oboru nebo regionu? Podívejte se na obsah a reakce, ne pouze na počet sledujících.</li>
-      <li><strong>Dosavadní práce:</strong> vyžádejte si ukázku podobného výstupu. U propagace také výsledky s obdobím a vysvětlením, co čísla znamenají.</li>
-      <li><strong>Kapacita:</strong> kolik času zabere příprava, komunikace a opravy? Neodsune výměna zakázku, kterou potřebujete dokončit?</li>
-      <li><strong>Použitelnost:</strong> budete moci fotografie nebo video zveřejnit i na vlastním webu? Na jak dlouho a s jakým uvedením autora?</li>
+      <li>Působí partner ve vašem oboru nebo regionu? Podívejte se na obsah a reakce, ne pouze na počet sledujících.</li>
+      <li>Vyžádejte si ukázku podobného výstupu. U propagace také výsledky s obdobím a vysvětlením, co čísla znamenají.</li>
+      <li>Kolik času zabere příprava, komunikace a opravy? Neodsune výměna zakázku, kterou potřebujete dokončit?</li>
+      <li>Budete moci fotografie nebo video zveřejnit i na vlastním webu? Na jak dlouho a s jakým uvedením autora?</li>
     </ul>
     <h2>Fiktivní příklad: kolik stojí barterová reklama</h2>
     <p>Představte si malý e-shop, který poskytne balíček za jeden příspěvek a tři příběhy. Následující částky jsou pouze modelový příklad, nikoli výsledky skutečné kampaně.</p>

@@ -137,10 +137,10 @@ export default function SeoKonzultantUstiPage() {
         <div className="max-w-4xl mx-auto px-5 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Co si odnesete z auditu</h2>
           <ul className="list-disc pl-6 space-y-4 text-lg text-gray-700">
-            <li><strong>Konkrétní nálezy:</strong> které stránky mají problém a jak se projevuje.</li>
-            <li><strong>Pořadí oprav:</strong> co řešit nejdřív a co může počkat.</li>
-            <li><strong>Doporučený postup:</strong> co změnit v textu, nastavení nebo technickém řešení webu.</li>
-            <li><strong>Způsob ověření:</strong> jak poznat, že je chyba opravená, a které údaje potom sledovat.</li>
+            <li>Které stránky mají problém a jak se projevuje.</li>
+            <li>Co opravit nejdřív a co může počkat.</li>
+            <li>Co změnit v textu, nastavení nebo technickém řešení webu.</li>
+            <li>Jak ověřit opravu chyby a které údaje potom sledovat.</li>
           </ul>
           <p className="mt-7 text-gray-700 leading-relaxed">Při vyhodnocení oddělíme zobrazení ve vyhledávání, návštěvy a skutečné poptávky. Pokud měření chybí nebo máme málo dat, uvedu to ve výstupu.</p>
         </div>
@@ -230,9 +230,9 @@ export default function SeoKonzultantUstiPage() {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Soupeříte jen s okolím</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Konkurence ve vašem okolí</h3>
               <p className="text-gray-600 leading-relaxed">
-                V lokálním vyhledávání se neměříte s celou republikou, jen s firmami ze svého okolí. Když mají slabé weby, dají se dohnat rychleji.
+                V lokálním vyhledávání porovnáváme váš web hlavně s firmami z okolí. Pokud mají weby s nedostatky, můžete je dohnat rychleji.
               </p>
             </div>
           </div>
@@ -297,7 +297,7 @@ export default function SeoKonzultantUstiPage() {
                 <h3 className="text-2xl font-bold text-gray-900">On-page SEO</h3>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Upravím titulky, popisky, nadpisy, obrázky a odkazy mezi stránkami. Tedy všechno, co ovlivňuje pozice přímo na vašem webu.
+                Na webu upravím titulky a popisky stránek, nadpisy, obrázky i odkazy mezi stránkami.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
@@ -363,7 +363,7 @@ export default function SeoKonzultantUstiPage() {
                 <h3 className="text-2xl font-bold text-gray-900">Lokální SEO Ústí nad Labem</h3>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Aby vás lidé z Ústí a okolí našli v mapách i v místních výsledcích. Nastavím firemní profil na Googlu, zápisy v katalozích (například Firmy.cz) a postup, jak sbírat recenze.
+                Nastavím firemní profil na Googlu a zápisy v katalozích, například Firmy.cz, aby vás lidé z Ústí a okolí našli v mapách i místních výsledcích. Domluvíme také postup, jak sbírat recenze.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
@@ -555,7 +555,7 @@ export default function SeoKonzultantUstiPage() {
               SEO nabízím firmám v <strong>Ústí nad Labem, Teplicích, Mostě, Děčíně, Litoměřicích, Chomutově</strong> i v dalších městech kraje. Ať máte kamenný obchod, službu nebo e-shop.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Každý projekt začínám <strong>úvodní konzultací zdarma</strong>. Podívám se na váš web a konkurenci v oboru a navrhnu, jak postupovat. Nic vám nebudu slibovat, dokud neuvidím data.
+              Každý projekt začínám <strong>úvodní konzultací zdarma</strong>. Podívám se na váš web a konkurenci v oboru a navrhnu, jak postupovat. Doporučení opřu o dostupná data.
             </p>
           </div>
 
@@ -614,7 +614,7 @@ export default function SeoKonzultantUstiPage() {
                 Děláte SEO i pro firmy mimo Ústí nad Labem?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Ano. Sídlím v Bílině a pracuji s klienty z celého Ústeckého kraje – Teplice, Most, Děčín, Litoměřice, Chomutov i dalších měst. Většinu práce řeším online, ale ráda se setkám i osobně.
+                Ano. Sídlím v Bílině a pracuji s klienty z celého Ústeckého kraje, z Teplic, Mostu, Děčína, Litoměřic, Chomutova i dalších měst. Většinu práce řeším online, ale ráda se setkám i osobně.
               </p>
             </div>
 
@@ -632,7 +632,7 @@ export default function SeoKonzultantUstiPage() {
                 Jaký je rozdíl mezi lokálním a celostátním SEO?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Lokální SEO se zaměřuje na zobrazení ve výsledcích pro vyhledávání s lokálním záměrem – například &bdquo;instalatér Ústí nad Labem&ldquo;. Zahrnuje optimalizaci Google Business profilu, lokálních citací a recenzí. Celostátní SEO cílí na obecnější klíčová slova bez lokálního omezení a vyžaduje silnější obsahovou strategii.
+                Lokální SEO se zaměřuje na zobrazení ve výsledcích pro vyhledávání s lokálním záměrem, například &bdquo;instalatér Ústí nad Labem&ldquo;. Zahrnuje optimalizaci Google Business profilu, lokálních citací a recenzí. Celostátní SEO cílí na obecnější klíčová slova bez lokálního omezení a vyžaduje silnější obsahovou strategii.
               </p>
             </div>
           </div>

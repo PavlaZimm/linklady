@@ -15,8 +15,8 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://www.linklady.cz/webova-aplikace/#webpage",
       url: "https://www.linklady.cz/webova-aplikace",
-      name: "Webová aplikace – co to je, jak funguje a kdy ji potřebujete",
-      description: "Srozumitelný průvodce webovými aplikacemi – co to je, typy, technologie a kdy se vyplatí.",
+      name: "Webová aplikace: co to je, jak funguje a kdy ji potřebujete",
+      description: "Srozumitelný průvodce webovými aplikacemi: co to je, typy, technologie a kdy se vyplatí.",
       isPartOf: { "@id": "https://www.linklady.cz/#website" },
       about: {
         "@type": "Thing",
@@ -73,7 +73,7 @@ export default function WebovaAplikacePage() {
             Kolik to stojí
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Většina firem cenu nezveřejní a&nbsp;pošle vás do&nbsp;formuláře. Tady je rovnou, ať víte, jestli si mě vůbec můžete dovolit.
+            Hodinová sazba je 1&nbsp;200&nbsp;Kč. Cenu aplikace odhadnu podle rozsahu práce.
           </p>
 
           <div className="overflow-x-auto mb-8">
@@ -98,10 +98,10 @@ export default function WebovaAplikacePage() {
           </div>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            U&nbsp;aplikace se cena odhaduje předem v&nbsp;hodinách, ne odhadem od&nbsp;oka. <strong>Napíšete, co potřebujete, a&nbsp;do&nbsp;24&nbsp;hodin víte, o&nbsp;kolik hodin práce jde.</strong> Když se v&nbsp;průběhu ukáže, že to chce něco navíc, dozvíte se to dřív, než to začnu dělat.
+            Cenu aplikace počítám podle předem odhadnutých hodin. Napíšete, co potřebujete, a&nbsp;do&nbsp;24&nbsp;hodin víte, o&nbsp;kolik hodin práce jde. Když se v&nbsp;průběhu ukáže, že to chce něco navíc, dozvíte se to dřív, než to začnu dělat.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Za&nbsp;9&nbsp;000&nbsp;Kč vznikne prezentační web, ne rezervační systém. Ať se nedivíte.
+            Cena od&nbsp;9&nbsp;000&nbsp;Kč platí pro prezentační web. Rezervační systém nacením podle zadání.
           </p>
         </div>
       </section>
@@ -124,7 +124,7 @@ export default function WebovaAplikacePage() {
                 </a>
               </h3>
               <p className="text-gray-700">
-                Formulář, ve&nbsp;kterém si zákazník naskládá produkty po&nbsp;značkách, zadá množství, termín dodání a&nbsp;podmínky. Dvojjazyčně, česky i&nbsp;anglicky. Tohle už není web, tohle je nástroj, který někdo denně používá.
+                Formulář, ve&nbsp;kterém si zákazník naskládá produkty po&nbsp;značkách, zadá množství, termín dodání a&nbsp;podmínky. Dvojjazyčně, česky i&nbsp;anglicky.
               </p>
             </div>
 
@@ -218,7 +218,7 @@ export default function WebovaAplikacePage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Používáte AI? Nenapíše to celé stroj?</h3>
               <p className="text-gray-700">
-                Používám, a&nbsp;říkám to nahlas. Díky tomu jde práce rychleji a&nbsp;proto můžu mít hodinovku 1&nbsp;200 a&nbsp;ne trojnásobek. <strong>Ale za&nbsp;výsledek ručím svým jménem</strong>, ne jménem nástroje. Každý řádek, který odevzdám, jsem si přečetla a&nbsp;otestovala.
+                Ano, používám AI. Díky tomu jde práce rychleji a&nbsp;proto můžu mít hodinovku 1&nbsp;200 a&nbsp;ne trojnásobek. Za&nbsp;výsledek ručím já. Každý řádek, který odevzdám, jsem si přečetla a&nbsp;otestovala.
               </p>
             </div>
 
@@ -232,21 +232,21 @@ export default function WebovaAplikacePage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Komu patří kód?</h3>
               <p className="text-gray-700">
-                Vám. Dostanete přístup do&nbsp;repozitáře i&nbsp;k&nbsp;hostingu. Kdybychom se rozešli, web běží dál a&nbsp;může na&nbsp;něm pracovat kdokoli jiný. Nikde vás nedržím.
+                Vám. Dostanete přístup do&nbsp;repozitáře i&nbsp;k&nbsp;hostingu. Kdybychom se rozešli, web běží dál a&nbsp;může na&nbsp;něm pracovat kdokoli jiný.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Pracujete sama? Co když onemocníte?</h3>
               <p className="text-gray-700">
-                Pracuju sama a&nbsp;je to jediná věc, kterou proti agentuře nemám. Zato víte, kdo váš projekt dělá, a&nbsp;mluvíte přímo s&nbsp;ním. U&nbsp;agentury se s&nbsp;programátorem nepotkáte. Termíny proto slibuju s&nbsp;rezervou, ne nejlepší možný scénář.
+                Pracuju sama, takže zadání i průběh práce řešíte přímo se mnou. Termíny domlouvám s rezervou i pro případ nemoci.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Co neberu</h3>
               <p className="text-gray-700">
-                Velké e-shopy s&nbsp;napojením na&nbsp;skladové systémy a&nbsp;mobilní aplikace do&nbsp;App Store. Na&nbsp;to jsou lepší lidi a&nbsp;nebudu se učit za&nbsp;vaše peníze.
+                Velké e-shopy s&nbsp;napojením na&nbsp;skladové systémy a&nbsp;mobilní aplikace do&nbsp;App Store. Tyto zakázky přenechávám specialistům.
               </p>
             </div>
           </div>
@@ -262,12 +262,10 @@ export default function WebovaAplikacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Gmail, Google Docs, internetové bankovnictví, Fakturoid, to všechno jsou <strong>webové aplikace</strong>. Vypadají jako běžné weby, ale dělají mnohem víc. Místo pouhého zobrazování informací vám umožňují pracovat, tedy psát, počítat, objednávat, komunikovat. A&nbsp;to všechno přímo v&nbsp;prohlížeči, bez instalace čehokoliv.
+            Gmail, Google Docs, internetové bankovnictví, Fakturoid, to všechno jsou webové aplikace. Vypadají jako běžné weby, ale dělají mnohem víc. Místo pouhého zobrazování informací vám umožňují pracovat, tedy psát, počítat, objednávat, komunikovat. A&nbsp;to všechno přímo v&nbsp;prohlížeči, bez instalace čehokoliv.
           </p>
 
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Zbytek stránky vysvětluje, <strong>co je webová aplikace</strong>, čím se liší od&nbsp;klasického webu, jaké typy existují a&nbsp;kdy dává smysl nechat si jednu vytvořit na&nbsp;míru.
-          </p>
+
 
           {/* Co je webová aplikace */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
@@ -275,11 +273,11 @@ export default function WebovaAplikacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            <strong>Webová aplikace</strong> je interaktivní software, který běží v&nbsp;prohlížeči. Na rozdíl od klasické webové stránky, která hlavně zobrazuje informace (texty, obrázky, videa), webová aplikace s&nbsp;daty aktivně pracuje – umožňuje vám se přihlásit, zadávat údaje, zpracovávat objednávky, generovat reporty nebo komunikovat s&nbsp;ostatními.
+            Webová aplikace je interaktivní software, který běží v&nbsp;prohlížeči. Na rozdíl od klasické webové stránky, která hlavně zobrazuje informace (texty, obrázky, videa), webová aplikace s&nbsp;daty aktivně pracuje: umožňuje vám se přihlásit, zadávat údaje, zpracovávat objednávky, generovat reporty nebo komunikovat s&nbsp;ostatními.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Jednoduchý příklad: firemní web s&nbsp;nabídkou služeb je <strong>webová stránka</strong>. Ale jakmile přidáte klientskou zónu, kde se zákazník přihlásí, vidí své objednávky a stahuje faktury – máte <strong>webovou aplikaci</strong>.
+            Jednoduchý příklad: firemní web s&nbsp;nabídkou služeb je webová stránka. Ale jakmile přidáte klientskou zónu, kde se zákazník přihlásí, vidí své objednávky a stahuje faktury, máte webovou aplikaci.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -288,7 +286,7 @@ export default function WebovaAplikacePage() {
 
           {/* Rozdíl mezi webem a webovou aplikací */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Webová stránka vs. webová aplikace – jaký je rozdíl
+            Webová stránka vs. webová aplikace: jaký je rozdíl
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -322,7 +320,7 @@ export default function WebovaAplikacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Webových aplikací existuje celá řada. Tady jsou nejčastější typy, se kterými se setkáte:
+            Webové aplikace se liší způsobem fungování i účelem:
           </p>
 
           <div className="space-y-8 mb-8">
@@ -336,28 +334,28 @@ export default function WebovaAplikacePage() {
             <div className="border-l-4 border-yellow-400 pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Progresivní webová aplikace (PWA)</h3>
               <p className="text-gray-700 leading-relaxed">
-                <strong>Progresivní webová aplikace</strong> kombinuje to nejlepší z&nbsp;webu a mobilních aplikací. Můžete si ji &bdquo;nainstalovat&ldquo; na telefon přímo z&nbsp;prohlížeče (bez App Store), funguje offline a posílá push notifikace. X (Twitter), Spotify i Starbucks používají PWA.
+                Progresivní webová aplikace spojuje možnosti webu a mobilní aplikace. Můžete si ji &bdquo;nainstalovat&ldquo; na telefon přímo z&nbsp;prohlížeče (bez App Store), funguje offline a posílá push notifikace. X (Twitter), Spotify i Starbucks používají PWA.
               </p>
             </div>
 
             <div className="border-l-4 border-blue-300 pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Webová aplikace na míru</h3>
               <p className="text-gray-700 leading-relaxed">
-                <strong>Webová aplikace na míru</strong> je řešení vytvořené přesně pro vaše potřeby. CRM systém, interní nástroj pro správu objednávek, klientský portál nebo kalkulačka služeb. Na rozdíl od krabicového softwaru dělá přesně to, co potřebujete – nic víc, nic míň.
+                Webová aplikace na míru je řešení vytvořené přesně pro vaše potřeby. CRM systém, interní nástroj pro správu objednávek, klientský portál nebo kalkulačka služeb. Její funkce se řídí dohodnutým zadáním.
               </p>
             </div>
 
             <div className="border-l-4 border-green-400 pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">E-commerce aplikace</h3>
               <p className="text-gray-700 leading-relaxed">
-                Internetové obchody jsou de facto webové aplikace – košík, platby, správa objednávek, uživatelské účty. Od jednoduchých Shopify obchodů po komplexní marketplace platformy.
+                Internetové obchody jsou webové aplikace s košíkem, platbami, správou objednávek a uživatelskými účty. Patří sem jednoduché obchody na Shopify i rozsáhlá online tržiště.
               </p>
             </div>
 
             <div className="border-l-4 border-gray-300 pl-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">SaaS (Software as a Service)</h3>
               <p className="text-gray-700 leading-relaxed">
-                Webové aplikace dostupné jako předplatné – Fakturoid, Slack, Notion, Figma. Neinstalujete nic, platíte měsíčně a přistupujete odkudkoliv přes prohlížeč.
+                Webové aplikace dostupné jako předplatné: Fakturoid, Slack, Notion, Figma. Neinstalujete nic, platíte měsíčně a přistupujete odkudkoliv přes prohlížeč.
               </p>
             </div>
           </div>
@@ -368,7 +366,7 @@ export default function WebovaAplikacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Nemusíte rozumět technickým detailům, ale základní princip je jednoduchý:
+            Aplikace obvykle zahrnuje uživatelské rozhraní, serverovou část a databázi:
           </p>
 
           <div className="space-y-6 mb-8">
@@ -380,7 +378,7 @@ export default function WebovaAplikacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Frontend (co vidíte)</h3>
-                <p className="text-gray-700">To, co vidíte v&nbsp;prohlížeči – tlačítka, formuláře, tabulky, grafy. Frontend je napsaný v&nbsp;technologiích jako React, Next.js nebo Vue.js a běží přímo ve&nbsp;vašem prohlížeči.</p>
+                <p className="text-gray-700">To, co vidíte v&nbsp;prohlížeči: tlačítka, formuláře, tabulky, grafy. Frontend je napsaný v&nbsp;technologiích jako React, Next.js nebo Vue.js a běží přímo ve&nbsp;vašem prohlížeči.</p>
               </div>
             </div>
 
@@ -404,13 +402,13 @@ export default function WebovaAplikacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Databáze (kde jsou data)</h3>
-                <p className="text-gray-700">Úložiště pro všechna data aplikace – uživatelské účty, objednávky, produkty, zprávy. Moderní webové aplikace používají cloudové databáze, které se automaticky škálují podle potřeby.</p>
+                <p className="text-gray-700">Úložiště pro všechna data aplikace: uživatelské účty, objednávky, produkty, zprávy. Moderní webové aplikace používají cloudové databáze, které se automaticky škálují podle potřeby.</p>
               </div>
             </div>
           </div>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Tento web – linklady.cz – je postavený na <strong>Next.js</strong> (frontend) a <strong>Convex</strong> (backend + databáze). Celý jsem ho vytvořila pomocí <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> s&nbsp;nástrojem Claude Code.
+            Web linklady.cz je postavený na Next.js (frontend) a Convex (backend + databáze). Celý jsem ho vytvořila pomocí <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> s&nbsp;nástrojem Claude Code.
           </p>
 
           {/* Kdy potřebujete webovou aplikaci */}
@@ -419,29 +417,29 @@ export default function WebovaAplikacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Ne každý potřebuje webovou aplikaci – někdy stačí dobrý web. Ale jsou situace, kdy je aplikace jasná volba:
+            Aplikaci zvažte, pokud potřebujete některou z těchto funkcí:
           </p>
 
           <ul className="space-y-4 mb-8">
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Potřebujete klientskou zónu</strong> – zákazníci se přihlašují, vidí své objednávky, stahují dokumenty</span>
+              <span className="text-gray-700">Potřebujete klientskou zónu: zákazníci se přihlašují, vidí své objednávky, stahují dokumenty</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Sbíráte a zpracováváte data</strong> – formuláře, průzkumy, objednávky, kalkulačky</span>
+              <span className="text-gray-700">Sbíráte a zpracováváte data: formuláře, průzkumy, objednávky, kalkulačky</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Chcete interní nástroj</strong> – dashboard, CRM, projektové řízení, reporting</span>
+              <span className="text-gray-700">Chcete interní nástroj: dashboard, CRM, projektové řízení, reporting</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Plánujete SaaS produkt</strong> – software jako služba s&nbsp;předplatným a uživatelskými účty</span>
+              <span className="text-gray-700">Plánujete SaaS produkt: software jako služba s&nbsp;předplatným a uživatelskými účty</span>
             </li>
             <li className="flex items-start">
               <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700"><strong className="text-gray-900">Běžný web nestačí</strong> – potřebujete real-time funkce, notifikace, platby nebo integraci s&nbsp;jinými systémy</span>
+              <span className="text-gray-700">Běžný web nestačí: potřebujete real-time funkce, notifikace, platby nebo integraci s&nbsp;jinými systémy</span>
             </li>
           </ul>
 
@@ -451,7 +449,7 @@ export default function WebovaAplikacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Díky <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> a <Link href="/ai-agent" className="text-primary font-semibold hover:underline">AI agentům</Link> dnes dokážu vytvořit funkční webovou aplikaci výrazně rychleji a levněji než tradiční vývojářský tým. Takhle to probíhá:
+            Pomocí <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> a <Link href="/ai-agent" className="text-primary font-semibold hover:underline">AI agentů</Link> vytvářím prototypy a postupně je dopracovávám podle zadání:
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -478,8 +476,8 @@ export default function WebovaAplikacePage() {
                 2
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Prototyp za dny, ne měsíce</h3>
-                <p className="text-gray-700">Pomocí AI nástrojů vytvořím funkční prototyp během dnů. Uvidíte reálnou aplikaci, ne jen wireframy – a můžete rovnou testovat a dávat zpětnou vazbu.</p>
+                <h3 className="font-semibold text-gray-900 mb-1">Funkční prototyp</h3>
+                <p className="text-gray-700">Pomocí AI nástrojů vytvořím funkční prototyp během dnů. Prototyp si můžete rovnou vyzkoušet a dát mi zpětnou vazbu.</p>
               </div>
             </div>
 
@@ -489,7 +487,7 @@ export default function WebovaAplikacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Iterace a vyladění</h3>
-                <p className="text-gray-700">Na základě zpětné vazby aplikaci vylepšuji. Přidáváme funkce, ladíme UX, řešíme edge cases. Vše transparentně a průběžně.</p>
+                <p className="text-gray-700">Na základě zpětné vazby aplikaci vylepšuji. Postupně doplňujeme funkce, upravujeme ovládání a řešíme i méně obvyklé situace.</p>
               </div>
             </div>
 
@@ -499,7 +497,7 @@ export default function WebovaAplikacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Nasazení a předání</h3>
-                <p className="text-gray-700">Aplikaci nasadím na produkci – na váš hosting nebo na server, který vám poradím vybrat. Zaškolím vás a předám kompletní dokumentaci. Kód je váš, nikde nezůstáváte přivázaní ke mně.</p>
+                <p className="text-gray-700">Aplikaci spustím na vašem hostingu nebo na serveru, který vám pomůžu vybrat. Zaškolím vás a předám kompletní dokumentaci. Kód patří vám.</p>
               </div>
             </div>
           </div>
@@ -510,7 +508,7 @@ export default function WebovaAplikacePage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Stavím na moderním, prověřeném stacku. Žádné experimentální technologie – jen to, co funguje spolehlivě v&nbsp;produkci:
+            Při vývoji používám tyto technologie a nástroje:
           </p>
 
           <div className="space-y-6 mb-8">
@@ -522,7 +520,7 @@ export default function WebovaAplikacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Next.js + React</h3>
-                <p className="text-gray-700">Framework pro rychlé webové aplikace, které navíc umí Google dobře přečíst. Používají ho Netflix, TikTok i&nbsp;Notion. Na tomhle stojí většina toho, co dělám nového.</p>
+                <p className="text-gray-700">Framework pro rychlé webové aplikace, které navíc umí Google dobře přečíst. Na tomhle stojí většina toho, co dělám nového.</p>
               </div>
             </div>
 
@@ -534,7 +532,7 @@ export default function WebovaAplikacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Convex / Supabase</h3>
-                <p className="text-gray-700">Cloudové databáze s&nbsp;real-time synchronizací, autentizací a automatickým škálováním. Žádná správa serverů – vše běží samo.</p>
+                <p className="text-gray-700">Cloudové databáze s&nbsp;real-time synchronizací, autentizací a automatickým škálováním.</p>
               </div>
             </div>
 
@@ -558,7 +556,7 @@ export default function WebovaAplikacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Claude Code</h3>
-                <p className="text-gray-700">Kód píšu s&nbsp;<a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Claude Code</a> od&nbsp;Anthropicu, tedy metodou, které se říká <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link>. Neznamená to, že za&nbsp;mě někdo myslí. Znamená to, že věci, které bych psala tři dny, mám za&nbsp;odpoledne, a&nbsp;vy to poznáte na&nbsp;počtu hodin ve&nbsp;faktuře.</p>
+                <p className="text-gray-700">Kód píšu s&nbsp;<a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Claude Code</a> od&nbsp;Anthropicu, tedy metodou, které se říká <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link>. Některé věci, které bych psala tři dny, mám s jeho pomocí za&nbsp;odpoledne. Úspora času se pak projeví v počtu účtovaných hodin.</p>
               </div>
             </div>
 
@@ -570,13 +568,13 @@ export default function WebovaAplikacePage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Make.com</h3>
-                <p className="text-gray-700">Vizuální platforma pro <Link href="/automatizace" className="text-primary font-semibold hover:underline">automatizaci procesů</Link> a propojení aplikací. Pomocí Make propojuji webové aplikace s&nbsp;externími službami – CRM, e-maily, fakturace, Google Sheets a stovky dalších integrací. Bez jediného řádku kódu.</p>
+                <p className="text-gray-700">Vizuální platforma pro <Link href="/automatizace" className="text-primary font-semibold hover:underline">automatizaci procesů</Link> a propojení aplikací. Pomocí Make propojuji webové aplikace s&nbsp;externími službami: CRM, e-maily, fakturace, Google Sheets a stovky dalších integrací. Bez jediného řádku kódu.</p>
               </div>
             </div>
           </div>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Stack vybírám podle projektu, ne podle toho, co je právě v&nbsp;módě. Chcete umět pracovat s&nbsp;AI podobně? Sepsala jsem to do&nbsp;<Link href="/ebook" className="text-primary font-semibold hover:underline">e-booku o&nbsp;promptování</Link>.
+            Technologie vybírám podle potřeb projektu. Chcete umět pracovat s&nbsp;AI podobně? Sepsala jsem to do&nbsp;<Link href="/ebook" className="text-primary font-semibold hover:underline">e-booku o&nbsp;promptování</Link>.
           </p>
 
           {/* FAQ */}
@@ -587,22 +585,22 @@ export default function WebovaAplikacePage() {
           <div className="space-y-6 mb-8">
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Co je webová aplikace?</h3>
-              <p className="text-gray-700">Webová aplikace je interaktivní software, který běží v&nbsp;prohlížeči a umožňuje uživatelům provádět konkrétní úkoly – od správy objednávek přes fakturaci až po komunikaci. Na rozdíl od běžného webu, který hlavně zobrazuje informace, webová aplikace s&nbsp;daty aktivně pracuje.</p>
+              <p className="text-gray-700">Webová aplikace je interaktivní software, který běží v&nbsp;prohlížeči a umožňuje uživatelům provádět konkrétní úkoly: od správy objednávek přes fakturaci až po komunikaci. Na rozdíl od běžného webu, který hlavně zobrazuje informace, webová aplikace s&nbsp;daty aktivně pracuje.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Jaký je rozdíl mezi webem a webovou aplikací?</h3>
-              <p className="text-gray-700">Web primárně zobrazuje informace – text, obrázky, videa. Webová aplikace umožňuje interakci: přihlášení, zadávání dat, zpracování objednávek, generování reportů. Gmail je webová aplikace, firemní prezentace je web.</p>
+              <p className="text-gray-700">Web primárně zobrazuje informace: text, obrázky, videa. Webová aplikace umožňuje interakci: přihlášení, zadávání dat, zpracování objednávek, generování reportů. Gmail je webová aplikace, firemní prezentace je web.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Co je progresivní webová aplikace (PWA)?</h3>
-              <p className="text-gray-700">Progresivní webová aplikace (PWA) se chová jako mobilní aplikace – lze ji nainstalovat na telefon, funguje offline a posílá notifikace. Kombinuje výhody webu (žádná instalace z&nbsp;App Store) s&nbsp;výhodami nativní aplikace (rychlost, offline režim).</p>
+              <p className="text-gray-700">Progresivní webová aplikace (PWA) se chová jako mobilní aplikace: lze ji nainstalovat na telefon, funguje offline a posílá notifikace. Kombinuje výhody webu (žádná instalace z&nbsp;App Store) s&nbsp;výhodami nativní aplikace (rychlost, offline režim).</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Kolik stojí webová aplikace na míru?</h3>
-              <p className="text-gray-700">Cena závisí na složitosti. Jednoduchá webová aplikace (formuláře, dashboard) začíná na tisících korun. Složitější systémy s&nbsp;databází, autentizací a API integrací stojí desetitisíce a více. Díky <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> a AI nástrojům se ale náklady výrazně snižují.</p>
+              <p className="text-gray-700">Cena závisí na složitosti. Jednoduchá webová aplikace (formuláře, dashboard) začíná na tisících korun. Složitější systémy s&nbsp;databází, autentizací a API integrací stojí desetitisíce a více. Pomocí <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> a AI nástrojů se ale náklady mohou snížit.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">

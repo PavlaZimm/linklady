@@ -15,7 +15,7 @@ const jsonLd = {
       "@type": "Service",
       "@id": "https://www.linklady.cz/tvorba-webu-bilina/#service",
       name: "Tvorba webových stránek Bílina",
-      description: "Profesionální tvorba webových stránek v Bílině a okolí. Moderní weby optimalizované pro vyhledávače, rychlé a responzivní. SEO od prvního řádku kódu.",
+      description: "Tvorba webových stránek pro firmy v Bílině a okolí. Při vývoji řeším SEO, rychlost načítání i zobrazení na mobilu.",
       provider: { "@id": "https://www.linklady.cz/#business" },
       areaServed: [
         {
@@ -91,7 +91,7 @@ export default function TvorbaWebuBilinaPage() {
               <span className="text-[#A4EDD6]">Bílina</span> a okolí
             </h1>
           <p>
-              Weby, které prodávají – ne jen vypadají. S SEO od prvního řádku kódu a transparentní cenou bez překvapení.
+              Vytvořím web, na kterém představíte své služby a zákazníci vás snadno kontaktují. SEO řeším už při návrhu. Cenu si domluvíme předem.
             </p>
           <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link><Link href="#poptavka" className="cf-button">
                 Chci konzultaci zdarma
@@ -156,7 +156,7 @@ export default function TvorbaWebuBilinaPage() {
               Co získáte s <span className="text-primary">novým webem</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Každý web stavím tak, aby vypadal skvěle, načítal se rychle a přiváděl vám zákazníky z Googlu i Seznamu.
+              Při tvorbě webu řeším vzhled i rychlost načítání. Stránky připravím také pro zákazníky, kteří vaše služby hledají na Googlu a Seznamu.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -169,7 +169,7 @@ export default function TvorbaWebuBilinaPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Responzivní design</h3>
               <p className="text-gray-600 leading-relaxed">
-                Web se perfektně zobrazí na mobilu, tabletu i počítači. Rozložení i hlavní funkce ověřím pro malé obrazovky.
+                Web přizpůsobím mobilu, tabletu i počítači. Rozložení i hlavní funkce ověřím pro malé obrazovky.
               </p>
             </div>
 
@@ -182,7 +182,7 @@ export default function TvorbaWebuBilinaPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3"><Link href="/seo-konzultant-usti-nad-labem" className="hover:text-primary">SEO od základu</Link></h3>
               <p className="text-gray-600 leading-relaxed">
-                Každý web stavím s myšlenkou na <Link href="/seo-konzultant-usti-nad-labem" className="text-primary font-semibold hover:underline">SEO</Link>. Správná struktura, rychlost načítání, meta tagy, strukturovaná data – vše pro lepší pozice ve vyhledávačích.
+                Každý web stavím s myšlenkou na <Link href="/seo-konzultant-usti-nad-labem" className="text-primary font-semibold hover:underline">SEO</Link>. Řeším strukturu stránek, rychlost načítání, meta tagy a strukturovaná data, které pomáhají vyhledávačům web zpracovat.
               </p>
             </div>
 
@@ -195,7 +195,7 @@ export default function TvorbaWebuBilinaPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Rychlost načítání</h3>
               <p className="text-gray-600 leading-relaxed">
-                Používám moderní technologie (Next.js, React) pro bleskově rychlé weby. Rychlé načítání usnadňuje používání webu. Pozice a poptávky ovlivňuje také obsah, nabídka a konkurence.
+                Weby stavím v Next.js a Reactu a hlídám rychlost načítání. Rychlé načítání usnadňuje používání webu. Pozice a poptávky ovlivňuje také obsah, nabídka a konkurence.
               </p>
             </div>
 
@@ -208,7 +208,7 @@ export default function TvorbaWebuBilinaPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Moderní technologie</h3>
               <p className="text-gray-600 leading-relaxed">
-                Žádné zastaralé šablony. Stavím na míru v Next.js a React – výsledek je web, který je rychlý, bezpečný a snadno rozšiřitelný.
+                V Next.js a Reactu stavím weby na míru. Při vývoji řeším bezpečnost, rychlost a možnost přidávat další funkce.
               </p>
             </div>
 
@@ -221,7 +221,7 @@ export default function TvorbaWebuBilinaPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Snadná správa</h3>
               <p className="text-gray-600 leading-relaxed">
-                Web navrhnu tak, abyste mohli snadno upravovat obsah. Nebo se o správu postarám za vás – jak vám to vyhovuje.
+                Web navrhnu tak, abyste mohli sami upravovat obsah. Pokud chcete, o správu se postarám za vás.
               </p>
             </div>
 
@@ -234,7 +234,7 @@ export default function TvorbaWebuBilinaPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Osobní přístup</h3>
               <p className="text-gray-600 leading-relaxed">
-                Nejsem velká agentura – jsem jeden člověk, který se vám věnuje osobně. Komunikujeme přímo, bez prostředníků. Jsem z Bíliny, takže se můžeme potkat i osobně.
+                Na webu pracuji sama a vše domlouváte přímo se mnou. Jsem z Bíliny, takže se můžeme potkat i osobně.
               </p>
             </div>
           </div>
@@ -290,7 +290,7 @@ export default function TvorbaWebuBilinaPage() {
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Bílinsko.cz</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Informační portál pro region Bílina a okolí. Přehled událostí, aktualit a zajímavostí z Bílinska. Web slouží místní komunitě a podporuje lokální dění.
+                  Na portálu Bílinsko.cz najdou místní obyvatelé události, aktuality a zajímavosti z Bíliny a okolí.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="bg-[#ffe5db] text-[#151D32] text-sm px-3 py-1 rounded-full">Portál</span>
@@ -318,10 +318,10 @@ export default function TvorbaWebuBilinaPage() {
       <section className="py-16 hero-gradient text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Chcete web, který vám přivede zákazníky?
+            Jaký web potřebujete?
           </h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-            Napište mi a do 24 hodin se ozvu. Probereme váš projekt a navrhnu řešení na míru – zdarma a nezávazně.
+            Napište mi a do 24 hodin se ozvu. Při bezplatné nezávazné konzultaci probereme váš projekt a navrhnu, jak postupovat.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -348,7 +348,7 @@ export default function TvorbaWebuBilinaPage() {
               Jak probíhá <span className="text-primary">spolupráce</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Celý proces je jednoduchý a transparentní. Vždy víte, co se děje a co bude následovat.
+              Nejdřív domluvíme rozsah a cenu. Pak vám ukážu návrh a průběžně budeme procházet hotové části webu.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -358,9 +358,9 @@ export default function TvorbaWebuBilinaPage() {
                 <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Úvodní schůzka – online nebo osobně</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Úvodní schůzka online nebo osobně</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Domluvíme se na schůzce – můžeme se sejít osobně v Bílině nebo okolí, nebo si zavoláme přes Google Meet / Zoom. Probereme vaše potřeby, představy, cíle a rozpočet. Schůzka je <strong className="text-primary">zdarma a nezávazná</strong>.
+                  Sejdeme se osobně v Bílině či okolí, nebo si zavoláme přes Google Meet / Zoom. Probereme vaše potřeby, představy, cíle a rozpočet. Schůzka je <strong className="text-primary">zdarma a nezávazná</strong>.
                 </p>
               </div>
             </div>
@@ -373,7 +373,7 @@ export default function TvorbaWebuBilinaPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Cenová nabídka a plán</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Na základě schůzky připravím cenovou nabídku a podrobný plán projektu. Dozvíte se přesně co, kdy a za kolik dostanete. Žádná skrytá překvapení.
+                  Po schůzce připravím cenovou nabídku a podrobný plán. Uvedu rozsah práce, termíny a cenu.
                 </p>
               </div>
             </div>
@@ -386,7 +386,7 @@ export default function TvorbaWebuBilinaPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Grafický návrh</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Připravím grafický návrh webu – vzhled, rozvržení, barvy, fonty. Vše konzultuji s vámi a upravuji, dokud nebudete spokojení. Odsouhlasíte finální podobu.
+                  Připravím grafický návrh s rozvržením stránek, barvami a písmem. Vše konzultuji s vámi a upravuji, dokud nebudete spokojení. Odsouhlasíte finální podobu.
                 </p>
               </div>
             </div>
@@ -445,7 +445,7 @@ export default function TvorbaWebuBilinaPage() {
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Živnostníci a OSVČ</h3>
               <p className="text-gray-600 leading-relaxed">
-                Potřebujete web, který vás představí a přivede zákazníky? Vytvořím profesionální prezentaci, která vám bude dělat reklamu 24/7.
+                Vytvořím web, na kterém si zákazníci mohou kdykoli přečíst o vašich službách a najít kontakt.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
@@ -495,7 +495,7 @@ export default function TvorbaWebuBilinaPage() {
                 Budou moje webové stránky optimalizované pro mobily?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Ano, každý web stavím jako responzivní – perfektně se zobrazí na mobilu, tabletu i počítači. Responzivní design pomáhá návštěvníkům používat web na různých zařízeních; sám o sobě nezaručuje pozice ve vyhledávání.
+                Ano, každý web přizpůsobím zobrazení na mobilu, tabletu i počítači. Responzivní design pomáhá návštěvníkům používat web na různých zařízeních; sám o sobě nezaručuje pozice ve vyhledávání.
               </p>
             </div>
 
@@ -529,7 +529,7 @@ export default function TvorbaWebuBilinaPage() {
               Připraveni na nový web?
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto leading-relaxed mb-4">
-              Pojďme si nezávazně promluvit o vašem projektu. Setkáme se online nebo osobně v Bílině – jak vám to vyhovuje.
+              Napište mi, co plánujete. Projekt probereme nezávazně online nebo osobně v Bílině, podle toho, co vám vyhovuje.
             </p>
             <p className="text-lg opacity-80 mb-10">
               Odpovídám do 24 hodin. Konzultace je zdarma.

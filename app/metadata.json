@@ -21,7 +21,7 @@
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "Pavla Zimmermannová – online marketing specialistka"
+          "alt": "Pavla Zimmermannová: online marketing specialistka"
         }
       ]
     }
@@ -48,14 +48,14 @@
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "Pavla Zimmermannová – SEO specialistka a online marketing"
+          "alt": "Pavla Zimmermannová: SEO specialistka a online marketing"
         }
       ]
     }
   },
   "/blog": {
     "title": "Blog: SEO tipy, AI nástroje a marketing",
-    "description": "Praktické tipy k SEO, AI nástrojům a marketingu pro malé firmy. Bez teorie a bez omáčky, jen to, co reálně funguje v praxi.",
+    "description": "Návody k SEO, AI nástrojům a marketingu pro malé firmy. Příklady a postupy pro práci s webem, obsahem a automatizací.",
     "keywords": [
       "SEO blog",
       "marketing tipy",
@@ -68,14 +68,14 @@
     },
     "openGraph": {
       "title": "Blog: SEO tipy, AI nástroje a marketing",
-      "description": "Praktické tipy k SEO, AI nástrojům a marketingu pro malé firmy. Bez teorie a bez omáčky, jen to, co reálně funguje v praxi.",
+      "description": "Návody k SEO, AI nástrojům a marketingu pro malé firmy. Příklady a postupy pro práci s webem, obsahem a automatizací.",
       "url": "https://www.linklady.cz/blog",
       "images": [
         {
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "Linklady.cz – blog o SEO a online marketingu"
+          "alt": "Linklady.cz: blog o SEO a online marketingu"
         }
       ]
     }
@@ -107,14 +107,14 @@
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "Tvorba webových stránek Bílina – webdesign na míru od Pavly Zimmermannové"
+          "alt": "Tvorba webových stránek Bílina: webdesign na míru od Pavly Zimmermannové"
         }
       ]
     }
   },
   "/ebook": {
     "title": "E-book: jak správně promptovat AI a šetřit čas",
-    "description": "Praktický e-book o promptování AI. Konkrétní postupy a příklady, které použijete hned první den. Ke stažení za e-mailovou adresu.",
+    "description": "E-book o promptování AI s příklady zadání a šablonami. Jak připravit prompt, upravit ho a zkontrolovat odpověď. Informace k objednání.",
     "keywords": [
       "promptování",
       "jak promptovat",
@@ -131,21 +131,21 @@
     },
     "openGraph": {
       "title": "E-book: jak správně promptovat AI a šetřit čas",
-      "description": "Praktický e-book o promptování AI. Konkrétní postupy a příklady, které použijete hned první den. Ke stažení za e-mailovou adresu.",
+      "description": "E-book o promptování AI s příklady zadání a šablonami. Jak připravit prompt, upravit ho a zkontrolovat odpověď. Informace k objednání.",
       "url": "https://www.linklady.cz/ebook",
       "images": [
         {
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "E-book Jak správně promptovat AI – průvodce promptováním"
+          "alt": "E-book Jak správně promptovat AI: průvodce promptováním"
         }
       ]
     }
   },
   "/automatizace": {
     "title": "Automatizace pro malé firmy: co se vyplatí a co ne",
-    "description": "Automatizace pro malé firmy bez robotů a bez programování. Nástroj od 250 Kč měsíčně, nastavení 1 200 Kč za hodinu. Co se vyplatí a co ne.",
+    "description": "Automatizace pro malé firmy bez programování. Nástroj od 250 Kč měsíčně, nastavení 1 200 Kč za hodinu. Příklady využití a náklady.",
     "keywords": [
       "automatizace",
       "procesní automatizace",
@@ -168,7 +168,7 @@
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "Automatizace procesů pro firmy – Make.com a n8n workflow"
+          "alt": "Automatizace procesů pro firmy: Make.com a n8n workflow"
         }
       ]
     }
@@ -198,7 +198,7 @@
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "SEO konzultant Ústí nad Labem – SEO specialistka Pavla Zimmermannová"
+          "alt": "SEO konzultant Ústí nad Labem: SEO specialistka Pavla Zimmermannová"
         }
       ]
     }
@@ -232,7 +232,7 @@
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "Vibecoding – školení tvorby aplikací pomocí AI nástrojů"
+          "alt": "Vibecoding: školení tvorby aplikací pomocí AI nástrojů"
         }
       ]
     }
@@ -258,7 +258,7 @@
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "Kontakt na Pavlu Zimmermannovou – SEO a online marketing"
+          "alt": "Kontakt na Pavlu Zimmermannovou: SEO a online marketing"
         }
       ]
     }
@@ -290,7 +290,7 @@
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "AI agent – průvodce od Pavly Zimmermannové"
+          "alt": "AI agent: průvodce od Pavly Zimmermannové"
         }
       ]
     }
@@ -321,7 +321,7 @@
           "url": "/profile.jpg",
           "width": 500,
           "height": 600,
-          "alt": "Webová aplikace – tvorba webových aplikací od Pavly Zimmermannové"
+          "alt": "Webová aplikace: tvorba webových aplikací od Pavly Zimmermannové"
         }
       ]
     }
