@@ -82,7 +82,7 @@ export const guides: Guide[] = [
         id: 'poptavka',
         title: 'Co poslat pro konkrétní nacenění',
         paragraphs: [
-          'Připravte adresu současného webu, seznam služeb, hlavní požadovanou akci návštěvníka a funkce, bez kterých se neobejdete. Napište také, které podklady už máte a jaký rozpočet chcete držet. Dodavatel pak může navrhnout odpovídající rozsah a označit položky, které bude potřeba upřesnit.',
+          'Připravte adresu současného webu a seznam služeb. Popište, co má návštěvník na webu udělat a které funkce k tomu potřebuje. Napište také, které podklady už máte a jaký rozpočet chcete držet. Dodavatel pak může navrhnout odpovídající rozsah a označit položky, které bude potřeba upřesnit.',
           'Pokud už nabídku máte, projděte ji podle tabulek výše. Nevyjasněné položky si nechte doplnit písemně ještě před objednávkou.',
         ],
         links: [{ href: '/blog/zadani-webu', label: 'Vzor zadání pro tvorbu webu' }, { href: '/kontakt', label: 'Poslat zadání Linklady' }],
@@ -140,7 +140,7 @@ export const guides: Guide[] = [
       },
       {
         id: 'predani',
-        title: 'Domluvte si kontrolu, kterou lze skutečně provést',
+        title: 'Domluvte si, jak hotový web zkontrolujete',
         paragraphs: [
           'Nahraďte neurčité „web bude fungovat“ seznamem konkrétních kontrol. U formuláře kontrolujte doručení zprávy na správnou adresu i chování při chybně vyplněných polích. Kontrolní zprávu si označte, aby se nepletla se skutečnou poptávkou.',
         ],
@@ -169,7 +169,7 @@ export const guides: Guide[] = [
     description: 'Jak převést analýzu klíčových slov do struktury webu a plánu obsahu. Konkrétní mapování služeb a článků na příkladu Linklady.',
     topic: 'SEO',
     date: '2026-10-16',
-    intro: 'Analýza klíčových slov zjišťuje, co lidé hledají v souvislosti s vaší nabídkou a jaké stránky k tomu potřebují. Použitelný výstup přiřadí témata ke konkrétním URL a určí další práci. Díky tomu víte, kterou službu doplnit, jaký článek připravit a co už na webu máte pokryté.',
+    intro: 'Analýza klíčových slov zjišťuje, co lidé hledají v souvislosti s vaší nabídkou a jaké stránky k tomu potřebují. Výstup přiřadí témata ke konkrétním URL. Ukáže, kterou službu doplnit, jaký článek připravit a co už na webu máte pokryté.',
     sections: [
       {
         id: 'nabidka',
@@ -233,7 +233,7 @@ export const guides: Guide[] = [
         title: 'Po úpravách sledujte jednotlivé stránky',
         paragraphs: [
           'Zapište datum a obsah provedené změny. V Search Console potom porovnávejte odpovídající období, dotazy a stránky. Při interpretaci počítejte se sezónností i s tím, že se výsledky vyhledávání mění. Samotná změna pozice neříká, zda přišly vhodné poptávky.',
-          'Vedle výsledků vyhledávání proto sledujte i plnění domluveného obchodního cíle, například relevantní poptávky. Když téma přivádí čtenáře s jinou potřebou, vraťte se k jeho záměru a přiřazené stránce. První praktický krok je projít vlastní nabídku a ke každé službě přiřadit jednu hlavní URL.',
+          'Vedle výsledků vyhledávání proto sledujte i plnění domluveného obchodního cíle, například relevantní poptávky. Když téma přivádí čtenáře s jinou potřebou, vraťte se k jeho záměru a přiřazené stránce. Projděte vlastní nabídku a ke každé službě přiřaďte jednu hlavní URL.',
         ],
         links: [{ href: '/kontakt', label: 'Probrat analýzu pro váš web' }],
       },

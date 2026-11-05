@@ -6,11 +6,11 @@ export default function SiteFooter() {
       <section className="cf-contact-band">
         <div className="cf-wrap cf-split">
           <div>
-            <p className="cf-eyebrow">MÁTE NÁPAD?</p>
+            <p className="cf-eyebrow">CHCETE PROBRAT SVŮJ WEB?</p>
             <h2>
-              Tak ho pojďme
+              Napište mi,
               <br />
-              rozjet. <span aria-hidden="true">✳</span>
+              co potřebujete. <span aria-hidden="true">✳</span>
             </h2>
           </div>
           <Link href="/kontakt" className="cf-button cf-navy">

@@ -18,13 +18,13 @@ export default function OutreachContent() {
     <p>Odkazy konkurence berte jako náměty k ověření. Nekopírujte automaticky všechny weby, na kterých se konkurent objevil. Nemusíte znát důvod jeho umístění ani to, zda mu přineslo návštěvníky.</p>
 
     <h2>Co můžete nabídnout redakci</h2>
-    <p>Užitečný návrh spojuje konkrétní místo v článku s konkrétním doplněním. Může jít o vlastní měření s metodikou, aktuální návod s obrázky, případovou studii se souhlasem zúčastněných nebo vyžádané odborné vysvětlení. Připravte také stručný popis zdroje, datum a informaci o tom, kdo za ním stojí.</p>
+    <p>V návrhu ukažte, kterou část článku váš podklad doplní. Může jít o vlastní měření s metodikou, aktuální návod s obrázky, případovou studii se souhlasem zúčastněných nebo vyžádané odborné vysvětlení. Připravte také stručný popis zdroje, datum a informaci o tom, kdo za ním stojí.</p>
     <p>Modelový příklad: redakce připravuje článek o zadání firemního webu a hledá praktické podklady. Máte veřejnou šablonu zadání, ve které je vyplněný příklad a vysvětlení jednotlivých polí. Můžete šablonu nabídnout redakci k posouzení. Nemůžete zaručit, že redakce šablonu použije nebo odkáže právě na vás.</p>
     <p>Vyhněte se podmínce „my odkážeme na vás, když vy odkážete na nás“. Rozsáhlé výměny zaměřené na manipulaci pozic patří podle <a href="https://developers.google.com/search/docs/essentials/spam-policies#link-spam">pravidel Googlu</a> mezi odkazový spam. Placenou či barterovou propagaci řešte transparentně a odděleně; souvislosti popisuje <Link href="/barterova-spoluprace-idealni-marketingovy-tah/">článek o barteru</Link>.</p>
 
     <h2>Kdy e-mail neposílat</h2>
     <p>Samotné zveřejnění e-mailové adresy není souhlasem s obchodními sděleními. Podle <a href="https://uoou.gov.cz/index.php/profesional/qa-otazky-a-odpovedi/obchodni-sdeleni">výkladu ÚOOÚ</a> může obchodní sdělení zahrnovat i nepřímou podporu služeb nebo image podnikatele. Označení zprávy za „redakční tip“ proto samo neřeší její povahu.</p>
-    <p>Podklady posílejte lidem, se kterými jste se na tom předem domluvili nebo kteří si je výslovně vyžádali a držte se dohodnutého účelu. Veřejná výzva má svůj rozsah: žádost o odborný komentář k jednomu tématu neznamená pozvání k pozdějším nabídkám vašich služeb. Při nejasnosti zprávu neposílejte a nehledejte obcházení přes jiný kanál.</p>
+    <p>Podklady posílejte lidem, se kterými jste se na tom předem domluvili nebo kteří si je výslovně vyžádali, a držte se dohodnutého účelu. Veřejná výzva má svůj rozsah: žádost o odborný komentář k jednomu tématu neznamená pozvání k pozdějším nabídkám vašich služeb. Při nejasnosti zprávu neposílejte a nehledejte obcházení přes jiný kanál.</p>
     <p>Ze seznamu vyřaďte provozovatele webů, kteří návrh odmítli, požádali o ukončení komunikace nebo požadují podmínky, se kterými nesouhlasíte. Nekupujte databáze kontaktů a nespouštějte automatickou sérii připomínek. Pokud nemáte vhodný podklad, vraťte se nejdřív k jeho přípravě.</p>
 
     <h2>Vzor pro předem domluvené zaslání podkladu</h2>

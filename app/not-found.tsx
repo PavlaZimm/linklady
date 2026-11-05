@@ -44,10 +44,10 @@ export default function NotFound() {
             </Link>
             <Link href="/automatizace" className="bg-blue-50 p-6 rounded-xl hover:shadow-lg transition-shadow">
               <h3 className="font-bold text-gray-900 mb-2">Automatizace</h3>
-              <p className="text-gray-600 text-sm">Ušetřete hodiny práce každý týden</p>
+              <p className="text-gray-600 text-sm">Propojení nástrojů pro opakující se úkoly</p>
             </Link>
             <Link href="/ai-agent" className="bg-blue-50 p-6 rounded-xl hover:shadow-lg transition-shadow">
-              <h3 className="font-bold text-gray-900 mb-2">AI Agent</h3>
+              <h3 className="font-bold text-gray-900 mb-2">AI agent</h3>
               <p className="text-gray-600 text-sm">Co to je a jak ho využít</p>
             </Link>
           </div>

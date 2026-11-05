@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         url: "/profile.jpg",
         width: 665,
         height: 1000,
-        alt: "Pavla Zimmermannová – online marketing specialistka",
+        alt: "Pavla Zimmermannová, specialistka na online marketing",
       },
     ],
   },
@@ -116,7 +116,7 @@ const jsonLd = {
     {
       "@type": "ProfessionalService",
       "@id": "https://www.linklady.cz/#business",
-      name: "Linklady.cz – Pavla Zimmermannová",
+      name: "Linklady.cz | Pavla Zimmermannová",
       url: "https://www.linklady.cz",
       logo: "https://www.linklady.cz/logo.png",
       image: "https://www.linklady.cz/profile.jpg",

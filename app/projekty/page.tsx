@@ -4,7 +4,7 @@ import ProjectFilter from "@/components/project-filter";
 import { pageMetadata } from "@/lib/creative-metadata";
 export const metadata = pageMetadata(
   "/projekty",
-  "Moje práce – weby, aplikace a obsah",
+  "Moje práce: weby, aplikace a obsah",
   "Devět projektů z oblasti webových aplikací, cestovatelského obsahu a firemních webů. Prohlédněte si portfolio Linklady.",
 );
 export default function Portfolio() {
@@ -16,9 +16,9 @@ export default function Portfolio() {
           <div className="cf-wrap">
             <p className="cf-eyebrow">MOJE PRÁCE</p>
             <h1>
-              Každý projekt.
+              Weby a aplikace
               <br />
-              <em>Jiný příběh.</em>
+              <em>z mé dílny.</em>
             </h1>
             <p>
               Od leteckých dat přes vesmír až po regionální weby a cestovatelské

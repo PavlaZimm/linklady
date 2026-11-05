@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       url: '/profile.jpg',
       width: 665,
       height: 1000,
-      alt: 'Jak vytvořit webovou aplikaci – průvodce od Pavly Zimmermannové',
+      alt: 'Jak vytvořit webovou aplikaci: průvodce od Pavly Zimmermannové',
     }],
   },
   twitter: {
@@ -70,8 +70,8 @@ const jsonLd = {
 
 const steps = [
   {
-    title: 'Popište problém, ne seznam funkcí',
-    text: 'Začněte jednou větou: kdo má aplikaci používat, co dnes dělá ručně a jak poznáte, že nové řešení funguje. Dobré zadání není „chci dashboard“, ale třeba „obchodník má do dvou minut zjistit stav objednávky bez hledání v e-mailech“.',
+    title: 'Popište problém, který má aplikace vyřešit',
+    text: 'Začněte jednou větou: kdo má aplikaci používat, co dnes dělá ručně a jak poznáte, že nové řešení funguje. Místo obecného „chci dashboard“ napište třeba „obchodník má do dvou minut zjistit stav objednávky bez hledání v e-mailech“.',
   },
   {
     title: 'Vyberte nejmenší použitelnou verzi',
@@ -120,7 +120,7 @@ export default function JakVytvoritWebovouAplikaciPage() {
             Jak vytvořit webovou aplikaci krok za krokem
           </h1>
           <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
-            Praktický postup od prvního nápadu přes prototyp a testování až po spuštění. Bez zbytečného technického žargonu.
+            Postup od zadání přes prototyp a testování až po spuštění webové aplikace.
           </p>
           <div className="mt-6 text-sm opacity-75">
             <time dateTime="2026-09-13">13. září 2026</time>
@@ -134,10 +134,10 @@ export default function JakVytvoritWebovouAplikaciPage() {
         <article className="py-14 md:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-xl text-gray-800 leading-relaxed mb-6">
-              Webovou aplikaci vytvoříte tak, že nejprve přesně vymezíte jeden problém, připravíte nejmenší použitelnou verzi, otestujete ji s reálnými uživateli a teprve potom přidáváte další funkce. Kód je až prostředek. Nejdůležitější je správně navržený proces.
+              Webovou aplikaci vytvoříte tak, že nejprve přesně vymezíte jeden problém, připravíte nejmenší použitelnou verzi, otestujete ji s reálnými uživateli a teprve potom přidáváte další funkce. Před psaním kódu proto navrhněte, jak bude uživatel postupovat.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-10">
-              Pokud si nejste jistí rozdílem mezi běžným webem a aplikací, začněte přehledem <Link href="/webova-aplikace" className="text-primary font-semibold hover:underline">co je webová aplikace, jak funguje a kolik stojí</Link>. Tady se zaměříme přímo na její vytvoření.
+              Pokud si nejste jistí rozdílem mezi běžným webem a aplikací, začněte přehledem <Link href="/webova-aplikace" className="text-primary font-semibold hover:underline">co je webová aplikace, jak funguje a kolik stojí</Link>.
             </p>
 
             <aside className="bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8 mb-12">
@@ -166,7 +166,7 @@ export default function JakVytvoritWebovouAplikaciPage() {
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-16 mb-6">Co musí být v zadání</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Pro první odhad nepotřebujete padesátistránkovou dokumentaci. Stačí odpovědět na následující otázky:
+              Pro první odhad rozsahu práce odpovězte na následující otázky:
             </p>
             <ul className="space-y-3 mb-12 text-gray-700">
               {[
@@ -243,17 +243,17 @@ export default function JakVytvoritWebovouAplikaciPage() {
             <p className="text-lg text-gray-700 leading-relaxed mb-12">
               Podrobnější rozbor těchto i dalších realizací najdete v přehledu{' '}
               <Link href="/blog/webove-aplikace-priklady" className="text-primary font-semibold hover:underline">
-                webové aplikace – příklady a využití ve firmách
+                webové aplikace: příklady a využití ve firmách
               </Link>.
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-16 mb-6">Nejčastější chyby</h2>
             <ul className="space-y-4 text-gray-700 mb-12">
-              <li><strong>Příliš velká první verze:</strong> vývoj se prodlužuje dřív, než cokoli otestuje první uživatel.</li>
-              <li><strong>Nejasný vlastník dat a kódu:</strong> předem musí být jasné, kdo má přístupy, repozitář a možnost změnit dodavatele.</li>
-              <li><strong>Testování jen na počítači:</strong> formulář, tabulka i navigace musí fungovat na reálném telefonu.</li>
-              <li><strong>Chybějící chybové stavy:</strong> aplikace musí srozumitelně reagovat i při výpadku připojení nebo špatně vyplněných datech.</li>
-              <li><strong>Spuštění bez měření:</strong> bez analytiky a logování nepoznáte, kde lidé končí a co je potřeba opravit.</li>
+              <li>Příliš velká první verze prodlužuje vývoj dřív, než cokoli otestuje první uživatel.</li>
+              <li>Předem vyjasněte vlastnictví dat a kódu: kdo má přístupy, repozitář a možnost změnit dodavatele.</li>
+              <li>Při testování jen na počítači přehlédnete problémy na telefonu. Vyzkoušejte na něm formulář, tabulku i navigaci.</li>
+              <li>Aplikace musí srozumitelně reagovat i při výpadku připojení nebo špatně vyplněných datech.</li>
+              <li>Bez analytiky a logování nepoznáte, kde lidé končí a co je potřeba opravit.</li>
             </ul>
 
             <aside className="bg-gradient-to-br from-purple-50 to-yellow-50 border border-blue-100 rounded-2xl p-8 md:p-10">

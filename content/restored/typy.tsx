@@ -23,11 +23,11 @@ export default function LinkTypesArticle() {
     <h2>Podle čeho poznat smysluplný odkaz</h2>
     <p>Při rychlé kontrole si otevřete zdrojovou i cílovou stránku a odpovězte na těchto pět otázek:</p>
     <ol>
-      <li><strong>Souvislost:</strong> doplňuje odkaz téma konkrétního textu?</li>
-      <li><strong>Publikum:</strong> může čtenář využít to, co nabízíte?</li>
-      <li><strong>Cíl:</strong> načte se správná stránka a splní očekávání vytvořené odkazem?</li>
-      <li><strong>Vznik:</strong> je jasné, zda jde o doporučení, reklamu, nebo uživatelský příspěvek?</li>
-      <li><strong>Přínos:</strong> máte důvod očekávat užitečné návštěvy a způsob, jak je vyhodnotit?</li>
+      <li>Doplňuje odkaz téma konkrétního textu?</li>
+      <li>Může čtenář využít to, co nabízíte?</li>
+      <li>Načte se správná stránka a splní očekávání vytvořené odkazem?</li>
+      <li>Je jasné, zda jde o doporučení, reklamu, nebo uživatelský příspěvek?</li>
+      <li>Máte důvod očekávat užitečné návštěvy a způsob, jak je vyhodnotit?</li>
     </ol>
     <p>Odkaz v patičce není automaticky špatný a odkaz uprostřed článku automaticky dobrý. Stejně tak firemní profil v relevantním oborovém seznamu posuzujte podle jeho využití, nikoli jen podle slova „katalog“. Samotná pozice odkazu nenahradí kontrolu obsahu.</p>
     <h2>Jak zkontrolovat odkazy, které už máte</h2>

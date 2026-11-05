@@ -33,7 +33,7 @@ export default function Navigation() {
         Přejít na obsah
       </a>
       <div className="cf-wrap cf-nav-row">
-        <Link href="/" className="cf-brand" aria-label="Linklady – úvod">
+        <Link href="/" className="cf-brand" aria-label="Linklady: úvod">
           linklady<span>.</span>
         </Link>
         <nav className="cf-desktop-nav" aria-label="Hlavní navigace">

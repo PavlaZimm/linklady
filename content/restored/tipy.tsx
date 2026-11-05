@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function TipyContent() {
   return <>
-    <p>Máte hotový web, ale mimo vaše vlastní kanály o něm skoro nikdo neví? Zpětný odkaz může přivést čtenáře z jiného webu. Aby na vás měl autor jiného webu důvod odkázat, nabídněte mu užitečný zdroj: užitečný návod, doloženou zkušenost, vlastní data nebo konkrétní službu pro čtenáře dané stránky.</p>
+    <p>Máte hotový web, ale mimo vaše vlastní kanály o něm skoro nikdo neví? Zpětný odkaz může přivést čtenáře z jiného webu. Aby na vás měl autor jiného webu důvod odkázat, nabídněte mu podklad: návod, doloženou zkušenost, vlastní data nebo konkrétní službu pro čtenáře dané stránky.</p>
     <p>Následujících jedenáct postupů můžete použít jako základ linkbuildingové strategie malé firmy. Nezkoušejte všechny najednou. Vyberte dva, pro které už máte podklady nebo existující vztahy, a zapisujte si, co vám skutečně přinesly.</p>
 
     <h2>1. Doplňte odkaz ke skutečné spolupráci</h2>
@@ -43,7 +43,7 @@ export default function TipyContent() {
     <p>U placeného umístění má vydavatel použít označení <code>rel="sponsored"</code>; Google připouští i <code>nofollow</code>. Viz <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links">označování externích odkazů</a>. Týká se to i protiplnění, které řeší článek o <Link href="/barterova-spoluprace-idealni-marketingovy-tah/">barterové spolupráci</Link>. Rozdíly vysvětluji v přehledu <Link href="/3-typy-zpetnych-odkazu-ktery-je-ten-spravny/">typů zpětných odkazů</Link>.</p>
 
     <h2>Vyberte první dva postupy a měřte výsledek</h2>
-    <p>Ke každému získanému odkazu evidujte zdrojovou stránku, cílovou adresu a datum. Zvlášť sledujte návštěvy a relevantní poptávky. Samotný počet odkazů neříká, kolik lidí přišlo nebo nakoupilo. Pro práci s konkrétními weby navazuje <Link href="/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/">postup linkbuilding outreach</Link>.</p>
+    <p>Ke každému získanému odkazu evidujte zdrojovou stránku, cílovou adresu a datum. Zvlášť sledujte návštěvy a relevantní poptávky. Samotný počet odkazů neříká, kolik lidí přišlo nebo nakoupilo. Práci s konkrétními weby popisuje <Link href="/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/">postup linkbuilding outreach</Link>.</p>
     <p>Pokud nevíte, na kterou stránku lidi přivádět, začněte kontrolou její nabídky. V rámci <Link href="/seo-konzultant-usti-nad-labem">SEO konzultace</Link> můžeme určit, které podstránky mají obchodní smysl a jaké podklady jim chybí. Pokud hledáte <Link href="/sluzby/linkbuilding">pomoc s linkbuildingem</Link>, do <Link href="/kontakt">poptávky</Link> přidejte adresu webu a službu, pro kterou chcete získávat zákazníky.</p>
   </>;
 }

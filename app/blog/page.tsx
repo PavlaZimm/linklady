@@ -17,7 +17,7 @@ const jsonLd = {
       "@type": "CollectionPage",
       "@id": "https://www.linklady.cz/blog/#webpage",
       url: "https://www.linklady.cz/blog",
-      name: "Blog – Marketing tipy, SEO trendy a AI nástroje",
+      name: "Blog: tipy pro marketing, SEO a AI nástroje",
       description: "Aktuální články o SEO strategiích, automatizaci a AI nástrojích pro online marketing.",
       isPartOf: { "@id": "https://www.linklady.cz/#website" },
       keywords: "SEO strategie, AI nástroje, automatizace procesů, lokální SEO",

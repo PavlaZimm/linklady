@@ -18,7 +18,7 @@ export const services: Service[] = [
     slug: "seo",
     title: "SEO pro váš web a podnikání",
     seoTitle: "SEO služby a konzultace pro firmy",
-    intro: "Pomůžu vám zjistit, co brání vašemu webu ve vyhledávání. Propojím SEO audit, analýzu klíčových slov a obsah do konkrétního plánu úprav pro vaše podnikání.",
+    intro: "Pomůžu vám zjistit, co brání vašemu webu ve vyhledávání. Z auditu a analýzy klíčových slov připravím plán technických úprav i práce na obsahu.",
     legacy: "/seo-konzultant-usti-nad-labem",
     legacyLabel: "SEO konzultace v Ústí nad Labem",
     sections: [
@@ -32,7 +32,7 @@ export const services: Service[] = [
         ],
       },
       {
-        title: "Obsah, který dává smysl",
+        title: "Obsah podle toho, co lidé hledají",
         text: "Navážu obsahovým plánem a úpravami stránek. Důležitá je srozumitelnost pro čtenáře i jasné zaměření jednotlivých URL.",
         items: [
           "Obsahové zadání a copywriting",
@@ -74,7 +74,7 @@ export const services: Service[] = [
     slug: "linkbuilding",
     metaDescription: "Vyberu relevantní příležitosti pro odkazy a spolupráce. Připravím obsah, oslovení a přehled umístění podle vašeho oboru.",
     title: "Linkbuilding",
-    intro: "Relevantní odkazy začínají užitečným obsahem a dobrými vztahy.",
+    intro: "Pomůžu vám získávat odkazy z webů, které souvisejí s vaším oborem. Připravím obsah a domluvím spolupráci s jejich provozovateli.",
     legacy:
       "/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/",
     legacyLabel: "Jak pracovat s linkbuildingem a outreachem",
@@ -89,7 +89,7 @@ export const services: Service[] = [
         ],
       },
       {
-        title: "Spolupráce a přehled",
+        title: "Domluva a kontrola odkazů",
         text: "Důležitá je kvalita umístění, transparentní domluva a přehled o získaných odkazech. Počet odkazů sám o sobě nevypovídá o přínosu.",
         items: [
           "Outreach a komunikace",
@@ -105,7 +105,7 @@ export const services: Service[] = [
     title: "Tvorba webových stránek na míru",
     seoTitle: "Tvorba webových stránek na míru",
     intro:
-      "Navrhnu a vytvořím firemní web, na kterém zákazníci pochopí vaši nabídku a snadno vás kontaktují. Od struktury a obsahu přes vzhled až po funkční web se SEO základem.",
+      "Navrhnu a vytvořím firemní web, na kterém zákazníci pochopí vaši nabídku a snadno vás kontaktují. Připravím strukturu, obsah i vzhled a při vývoji zahrnu základní SEO.",
     legacy: "/tvorba-webu-bilina",
     legacyLabel: "Tvorba webových stránek v Bílině",
     sections: [
@@ -128,7 +128,7 @@ export const services: Service[] = [
         ],
       },
       {
-        title: "Nový web i promyšlený redesign",
+        title: "Úpravy stávajícího webu a redesign",
         text: "Pokud už web máte, nejdřív zmapuji jeho stránky a obsah. U redesignu připravíme návaznost původních a nových adres, aby návštěvníci i vyhledávače našli správný obsah.",
         items: ["Přehled současných URL a návrh jejich zachování", "Přesměrování změněných adres podle migrační mapy", "Kontrola indexovatelnosti a interních odkazů", "Domluva správy obsahu a podpory po spuštění"],
       },
@@ -157,7 +157,7 @@ export const services: Service[] = [
     slug: "webove-aplikace",
     metaDescription: "Navrhnu webovou aplikaci pro vaše firemní procesy. Propojíme data, nastavíme přístupy a domluvíme předání i další správu.",
     title: "Webové aplikace na míru",
-    intro: "Když potřebujete nástroj, který umí víc než představit vaši firmu.",
+    intro: "Navrhnu aplikaci pro rezervace, firemní evidenci nebo práci s daty podle toho, co potřebujete vy a vaši zákazníci.",
     legacy: "/webova-aplikace",
     legacyLabel: "Webové aplikace a příklady z praxe",
     contactPrompt: "Napište mi, kdo bude aplikaci používat a jaký problém má vyřešit.",
@@ -193,7 +193,7 @@ export const services: Service[] = [
     metaDescription: "Propojím formuláře, CRM a reporting do funkční automatizace. Vybereme konkrétní proces, nastavíme kontrolu chyb a domluvíme správu.",
     title: "AI a automatizace pro firmy",
     seoTitle: "AI automatizace pro firmy",
-    intro: "AI a automatizace pro konkrétní úkoly ve vašem podnikání.",
+    intro: "Pomůžu vám automatizovat opakující se práci, například předávání poptávek nebo přípravu přehledů. AI zapojím tam, kde lze její výstupy kontrolovat.",
     legacy: "/automatizace",
     legacyLabel: "Automatizace procesů a Make.com",
     contactPrompt: "Popište mi úkol, který opakujete, a nástroje, ve kterých pracujete.",

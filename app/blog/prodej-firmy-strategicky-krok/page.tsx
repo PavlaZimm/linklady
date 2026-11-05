@@ -6,7 +6,7 @@ import SiteFooter from '@/components/site-footer'
 
 export const metadata: Metadata = {
   title: "Prodej firmy: průvodce M&A procesem",
-  description: "Prodej firmy je životní rozhodnutí. Zjistěte, jak probíhá M&A proces, na co si dát pozor a jak najít správného investora.",
+  description: "Jak probíhá prodej firmy: ocenění, výběr investora a uzavření transakce. Co si předem vyjasnit a na co si dát pozor.",
   authors: [{ name: "Pavla Zimmermannová", url: "https://www.linklady.cz/o-mne" }],
   keywords: [
     "prodej firmy",
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: "https://www.linklady.cz/blog/prodej-firmy-strategicky-krok",
     siteName: "Linklady.cz",
-    title: "▷ Prodej firmy jako strategický krok – Průvodce M&A procesem",
-    description: "Prodej firmy je životní rozhodnutí. Jak probíhá M&A proces a jak najít správného investora.",
+    title: "Prodej firmy: průvodce M&A procesem",
+    description: "Jak probíhá prodej firmy, ocenění podniku a výběr investora.",
     images: [
       {
         url: "/profile.jpg",
         width: 665,
         height: 1000,
-        alt: "Prodej firmy – průvodce M&A procesem od Pavly Zimmermannové",
+        alt: "Prodej firmy: průvodce M&A procesem od Pavly Zimmermannové",
       },
     ],
   },
@@ -51,8 +51,8 @@ const jsonLd = {
     {
       "@type": "Article",
       "@id": "https://www.linklady.cz/blog/prodej-firmy-strategicky-krok/#article",
-      headline: "Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu",
-      description: "Prodej vybudovaného podniku je jedním z nejdůležitějších rozhodnutí. Zjistěte, jak probíhá proces M&A, na co si dát pozor a jak najít správného investora.",
+      headline: "Prodej firmy: jak domluvit cenu a pokračování podniku",
+      description: "Jak probíhá prodej podniku, výběr investora a dohoda o ceně i dalším fungování firmy.",
       url: "https://www.linklady.cz/blog/prodej-firmy-strategicky-krok",
       datePublished: "2026-02-27",
       dateModified: "2026-02-27",
@@ -105,10 +105,10 @@ export default function ProdejFirmyArticle() {
         <div className="cf-wrap">
           <p className="cf-eyebrow">LINKLADY / BLOG</p>
           <h1>
-              Prodej firmy jako strategický krok: Jak zajistit kontinuitu a získat odpovídající cenu
+              Prodej firmy: jak domluvit cenu a pokračování podniku
             </h1>
           <p>
-              M&A proces krok za krokem – od ocenění přes výběr investora až po bezpečné uzavření transakce
+              M&A proces od ocenění přes výběr investora až po uzavření transakce
             </p>
           <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link><Link href="/blog" className="cf-button">Blog</Link></div>
         </div>
@@ -119,16 +119,16 @@ export default function ProdejFirmyArticle() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Prodej vybudovaného podniku je pro většinu majitelů jedním z nejdůležitějších životních rozhodnutí. Často k němu dochází po desetiletích usilovné práce, kdy se zakladatelé cítí unaveni nebo čelí situaci, kdy v rodině chybí přirozený nástupce. Proces označovaný jako <strong>M&A</strong> (fúze a akvizice) však není jen o finanční transakci, ale především o nalezení partnera, který dokáže na dosavadní vizi navázat.
+            Majitelé zvažují prodej firmy například kvůli únavě po desetiletích práce nebo proto, že v rodině nemají nástupce. Při procesu označovaném jako <strong>M&A</strong> (fúze a akvizice) řeší cenu i výběr partnera, který převezme podnik a naváže na jejich práci.
           </p>
 
           {/* Section: Více než jen čísla */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Více než jen čísla: Co určuje úspěšný prodej?
+            Co si vyjasnit před prodejem firmy
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Při úvahách o prodeji firmy je finanční polštář pro budoucí roky důležitým faktorem, ale zdaleka ne jediným. Majitelé si často kladou otázky, které přesahují rámec účetní závěrky:
+            Vedle finančního zajištění pro další roky majitelé řeší i to, co se s firmou po prodeji stane:
           </p>
 
           <ul className="space-y-4 mb-8">
@@ -156,7 +156,7 @@ export default function ProdejFirmyArticle() {
           </ul>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Správně nastavený proces prodeje by měl všechny tyto ambice zohlednit a propojit prodávajícího se seriózním zájemcem, který má o podnik skutečný strategický zájem.
+            Tyto požadavky si ujasněte před hledáním zájemce. Pomohou vám posoudit, zda jeho plány odpovídají vašim představám.
           </p>
 
           {/* Section: Fáze procesu */}
@@ -165,7 +165,7 @@ export default function ProdejFirmyArticle() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Prodej podílu nebo celé společnosti je komplexní disciplína plná formalit a potenciálních nástrah. Profesionální přístup k transakci obvykle zahrnuje:
+            Prodej podílu nebo celé společnosti obvykle zahrnuje tyto kroky:
           </p>
 
           <div className="space-y-6 mb-8">
@@ -174,8 +174,8 @@ export default function ProdejFirmyArticle() {
                 1
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Příprava a evaluace</h3>
-                <p className="text-gray-700">Definování reálné tržní ceny a vyjasnění priorit prodávajícího.</p>
+                <h3 className="font-semibold text-gray-900 mb-1">Příprava a ocenění</h3>
+                <p className="text-gray-700">Odhad tržní ceny a vyjasnění priorit prodávajícího.</p>
               </div>
             </div>
 
@@ -184,8 +184,8 @@ export default function ProdejFirmyArticle() {
                 2
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Identifikace protistrany</h3>
-                <p className="text-gray-700">Využití širokých databází a kontaktů k oslovení potenciálních investorů, kteří splňují daná kritéria.</p>
+                <h3 className="font-semibold text-gray-900 mb-1">Hledání kupujícího</h3>
+                <p className="text-gray-700">Výběr a oslovení potenciálních investorů z databází a kontaktů podle dohodnutých kritérií.</p>
               </div>
             </div>
 
@@ -194,8 +194,8 @@ export default function ProdejFirmyArticle() {
                 3
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Lidský faktor a příběh</h3>
-                <p className="text-gray-700">Každý podnik má svou historii. Právě pochopení příběhu firmy často pomáhá najít společnou řeč s budoucím majitelem.</p>
+                <h3 className="font-semibold text-gray-900 mb-1">Seznámení s historií firmy</h3>
+                <p className="text-gray-700">Seznámení s historií firmy pomáhá prodávajícímu a budoucímu majiteli domluvit se na jejím pokračování.</p>
               </div>
             </div>
 
@@ -205,22 +205,22 @@ export default function ProdejFirmyArticle() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Strukturování transakce</h3>
-                <p className="text-gray-700">Vyladění konkrétních kroků, od prověrky (due diligence) až po finální smluvní dokumentaci, aby vše proběhlo bezpečně pro obě strany.</p>
+                <p className="text-gray-700">Domluva konkrétních kroků od prověrky (due diligence) po smluvní dokumentaci s ohledem na rizika pro obě strany.</p>
               </div>
             </div>
           </div>
 
           {/* Section: Bezpečný odchod */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Bezpečný odchod z byznysu
+            Příprava na předání firmy
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Včasné plánování prodeje umožňuje majitelům odejít z kolotoče každodenního stresu s vědomím, že jejich dílo je v dobrých rukou. Ať už je cílem fúze více společností nebo prodej strategickému investorovi, klíčem k úspěchu je diskrétnost a precizní nastavení pravidel spolupráce.
+            Při včasném plánování mají majitelé prostor domluvit, jak a komu firmu předají a kdy ukončí svou každodenní práci. U fúze i prodeje strategickému investorovi je potřeba dohodnout pravidla spolupráce a zacházení s důvěrnými informacemi.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Pokud vás zajímá aktuální situace na trhu a možnosti, jak svou společnost zhodnotit, můžete prozkoumat podrobnější informace o tom, jak probíhá profesionální{' '}
+            Podrobnosti o situaci na trhu a možnostech prodeje najdete v informacích o tom, jak probíhá{' '}
             <a
               href="https://www.arfin.cz/"
               target="_blank"
@@ -237,7 +237,7 @@ export default function ProdejFirmyArticle() {
               Potřebujete pomoci s online prezentací vaší firmy?
             </h3>
             <p className="text-gray-700 mb-4">
-              Ať už prodáváte firmu, nebo ji chcete posunout dál - silná online přítomnost zvyšuje hodnotu vašeho podnikání. Pomohu vám se <Link href="/seo-konzultant-usti-nad-labem" className="text-primary font-semibold hover:underline">SEO</Link> i <Link href="/automatizace" className="text-primary font-semibold hover:underline">automatizací marketingu</Link>.
+              S online prezentací firmy vám pomohu při přípravě prodeje i při jejím dalším rozvoji. Nabízím pomoc se <Link href="/seo-konzultant-usti-nad-labem" className="text-primary font-semibold hover:underline">SEO</Link> i <Link href="/automatizace" className="text-primary font-semibold hover:underline">automatizací marketingu</Link>.
             </p>
             <Link
               href="/kontakt"

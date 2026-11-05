@@ -19,7 +19,7 @@ const jsonLd = {
       "@id": "https://www.linklady.cz/ebook/#webpage",
       url: "https://www.linklady.cz/ebook",
       name: "E-book: Jak správně promptovat AI",
-      description: "Praktický e-book o promptování AI – od základů po pokročilé techniky.",
+      description: "E-book o promptování AI od základů po pokročilé techniky.",
       isPartOf: { "@id": "https://www.linklady.cz/#website" },
       inLanguage: "cs",
     },
@@ -106,7 +106,7 @@ export default function EbookPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Podnikatelé a freelanceři</h3>
               <p className="text-gray-600 leading-relaxed">
-                Ušetřete hodiny práce. Naučte se AI zadat úkoly tak, aby odpověď lépe odpovídala vašemu záměru. Výstup vždy zkontrolujte.
+                Naučte se AI zadat úkol tak, aby odpověď odpovídala vašemu záměru a zkrátila vám práci. Výstup vždy zkontrolujte.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -117,7 +117,7 @@ export default function EbookPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Marketéři a copywriteři</h3>
               <p className="text-gray-600 leading-relaxed">
-                Tvořte lepší obsah rychleji. Prompty pro texty, sociální sítě, e-maily i reklamy.
+                Prompty pro přípravu textů na web, sociální sítě, e-maily i reklamy.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -126,7 +126,7 @@ export default function EbookPage() {
                   <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Každý, kdo chce ovládnout AI</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Začátečníci v práci s AI</h3>
               <p className="text-gray-600 leading-relaxed">
                 Žádné technické znalosti nepotřebujete. E-book je psaný srozumitelně a s praktickými příklady.
               </p>
@@ -152,7 +152,7 @@ export default function EbookPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">Základy promptování</h3>
-                    <p className="text-gray-600">Jak AI přemýšlí a proč na formulaci záleží víc, než si myslíte.</p>
+                    <p className="text-gray-600">Jak AI zpracovává zadání a jak formulace ovlivňuje odpověď.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -163,7 +163,7 @@ export default function EbookPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">Struktura efektivního promptu</h3>
-                    <p className="text-gray-600">Role, kontext, instrukce, formát – osvědčený framework pro spolehlivé výsledky.</p>
+                    <p className="text-gray-600">Jak do zadání zahrnout roli, kontext, instrukce a požadovaný formát.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -185,7 +185,7 @@ export default function EbookPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">Hotové šablony promptů</h3>
-                    <p className="text-gray-600">Kopíruj a použij – připravené prompty pro marketing, texty, analýzu dat a další.</p>
+                    <p className="text-gray-600">Připravené prompty pro marketing, psaní textů nebo analýzu dat si můžete zkopírovat a upravit.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -196,7 +196,7 @@ export default function EbookPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">Časté chyby a jak se jim vyhnout</h3>
-                    <p className="text-gray-600">Proč AI dává špatné odpovědi a jak to napravit jednou změnou v promptu.</p>
+                    <p className="text-gray-600">Jak rozpoznat chybu v zadání a upravit prompt, když odpověď nevyhovuje.</p>
                   </div>
                 </div>
               </div>
@@ -217,7 +217,7 @@ export default function EbookPage() {
                   <p className="text-gray-700 italic">&quot;Jsi zkušený copywriter. Napiš článek na blog (800 slov) o 5 SEO trendech pro rok 2026. Cílová skupina: majitelé malých e-shopů. Tón: profesionální, ale přístupný. Každý trend uveď s konkrétním příkladem.&quot;</p>
                 </div>
                 <p className="text-center text-gray-500 text-sm">
-                  Rozdíl? Kontext, role, formát a konkrétní zadání.
+                  Druhý prompt určuje téma, čtenáře, délku i podobu článku.
                 </p>
               </div>
             </div>
@@ -235,11 +235,10 @@ export default function EbookPage() {
               Průvodce promptováním
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Začněte promptovat <span className="text-[#A4EDD6]">jako profík</span>
+              Připravte AI <span className="text-[#A4EDD6]">srozumitelné zadání</span>
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto leading-relaxed mb-10">
-              Praktický e-book plný konkrétních příkladů, šablon a technik.
-              Žádná teorie navíc – jen to, co funguje.
+              V e-booku najdete příklady zadání i šablony, které můžete upravit pro svou práci.
             </p>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 max-w-lg mx-auto border border-white/20">
@@ -249,7 +248,7 @@ export default function EbookPage() {
                   <svg className="w-5 h-5 text-[#A4EDD6] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                   </svg>
-                  <span className="opacity-90">Kompletní průvodce promptováním</span>
+                  <span className="opacity-90">Průvodce promptováním</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#A4EDD6] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -312,7 +311,7 @@ export default function EbookPage() {
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Pavla Zimmermannová</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  V online marketingu působím od roku 2015. AI nástroje používám denně v praxi –
+                  V online marketingu působím od roku 2015. AI nástroje používám denně
                   pro tvorbu obsahu, analýzu dat, automatizaci i strategické plánování.
                   V tomto e-booku sdílím postupy, které mi reálně šetří hodiny práce.
                 </p>
@@ -338,7 +337,7 @@ export default function EbookPage() {
             <div className="bg-white p-6 rounded-2xl shadow-sm">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Pro jaké AI nástroje jsou prompty v e-booku?</h3>
               <p className="text-gray-600 leading-relaxed">
-                Principy fungují univerzálně – pro ChatGPT, Claude, Gemini i další. E-book se zaměřuje na techniky, které platí napříč nástroji.
+                E-book se zaměřuje na postupy, které můžete použít v ChatGPT, Claude, Gemini i dalších nástrojích.
               </p>
             </div>
             <div className="bg-white p-6 rounded-2xl shadow-sm">
@@ -356,7 +355,7 @@ export default function EbookPage() {
             <div className="bg-white p-6 rounded-2xl shadow-sm">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Můžu se na něco zeptat po přečtení?</h3>
               <p className="text-gray-600 leading-relaxed">
-                Samozřejmě! Napište mi na{' '}
+                Napište mi na{' '}
                 <a href="mailto:zimmermannovap@gmail.com" className="text-primary hover:text-primary font-semibold transition-colors">
                   zimmermannovap@gmail.com
                 </a>{' '}
@@ -372,14 +371,14 @@ export default function EbookPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Přestaňte hádat,<br />
-              <span className="text-[#2946cf]">začněte promptovat</span>
+              Chcete si vyzkoušet<br />
+              <span className="text-[#2946cf]">vlastní prompty?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-4">
               Praktické postupy pro přípravu zadání a kontrolu odpovědí AI.
             </p>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed mb-10">
-              Chcete jít ještě dál? Podívejte se na <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link> – tvorbu aplikací pomocí AI.
+              Pokud vás zajímá tvorba aplikací, podívejte se na <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link>, při kterém s programováním pomáhá AI.
             </p>
             <a
               href={ebookCtaHref}

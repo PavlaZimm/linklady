@@ -16,7 +16,7 @@ export function pageMetadata(
       url,
       title,
       description,
-      images: [{ url: "/profile.jpg", alt: "Pavla Zimmermannová – Linklady" }],
+      images: [{ url: "/profile.jpg", alt: "Pavla Zimmermannová | Linklady" }],
     },
     twitter: {
       card: "summary_large_image",

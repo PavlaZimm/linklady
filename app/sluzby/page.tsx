@@ -37,13 +37,13 @@ export default function Services() {
               <h2>{s.title}</h2>
               <p>{s.intro}</p>
               <Link href={`/sluzby/${s.slug}`} className="cf-text-link">
-                Prozkoumat službu ↗
+                Více o službě ↗
               </Link>
             </article>
           ))}
           <article>
             <p className="cf-eyebrow">06</p>
-            <h2>Obsah & video</h2>
+            <h2>Obsah a video</h2>
             <p>
               Články, obsah pro sociální sítě a střih videa jako součást vaší
               komunikace. Rozsah domluvíme podle konkrétního zadání.

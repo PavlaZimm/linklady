@@ -122,7 +122,7 @@ export default async function ProjectPage({ params }: Props) {
         </section>
         <section className="cf-wrap cf-section cf-related">
           <p className="cf-eyebrow">DALŠÍ PROJEKT</p>
-          <h2>Ještě jeden příběh.</h2>
+          <h2>Prohlédněte si další práci.</h2>
           <ProjectCard project={next} />
         </section>
       </main>
