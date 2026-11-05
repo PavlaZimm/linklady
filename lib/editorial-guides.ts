@@ -3,7 +3,7 @@ export type Guide = {
   title: string;
   description: string;
   topic: 'SEO' | 'Weby';
-  date: '2026-10-16';
+  date: string;
   intro: string;
   sections: {
     id: string;
@@ -17,6 +17,85 @@ export type Guide = {
 };
 
 export const guides: Guide[] = [
+  {
+    slug: 'reporting-a-dashboard',
+    title: 'Reporting a dashboard: jak mít firemní data pod kontrolou',
+    description: 'Jak připravit reporting a vlastní dashboard: výběr ukazatelů, datové zdroje, aktualizace a zadání. S modelovým příkladem přehledu pro malou agenturu.',
+    topic: 'Weby',
+    date: '2026-10-31',
+    intro: 'Reporting má odpovědět na otázku, podle které se dá rozhodnout. Dashboard zobrazí důležité ukazatele na jednom místě, ale samotné grafy ještě neřeknou, co se děje ve firmě. Nejdřív potřebujete určit význam čísel, jejich zdroj a člověka, který s přehledem bude pracovat.',
+    sections: [
+      {
+        id: 'reporting-a-dashboard',
+        title: 'Jaký je rozdíl mezi reportingem a dashboardem',
+        paragraphs: [
+          'Reporting je postup, kterým z dat připravujete pravidelnou zprávu nebo odpověď na konkrétní otázku. Může zahrnovat tabulku, komentář i doporučení dalšího kroku. Dashboard je rozhraní s vybranými přehledy, filtry a ukazateli. Může být součástí reportingu, nemusí ho ale celý nahradit.',
+          'Pro týdenní vyhodnocení může stačit tabulka s krátkým komentářem. Vlastní webový dashboard dává smysl, pokud více lidí potřebuje průběžně pracovat s několika zdroji, filtrovat záznamy nebo vidět stav konkrétních úkolů. Než začnete stavět, vyzkoušejte si potřebný výstup na malém vzorku dat.',
+        ],
+      },
+      {
+        id: 'ukazatele',
+        title: 'KPI dashboard začíná otázkami, ne grafy',
+        paragraphs: [
+          'Kdo přehled otevře a co podle něj udělá? Majitel e-shopu může potřebovat najít objednávky čekající na vyřízení. Agentura může chtít zkontrolovat, které klientské reporty nemají aktuální data. Každá otázka vede k jinému výběru ukazatelů i detailu zobrazení.',
+          'Ke každému ukazateli si napište, jak se počítá, z jakého systému pochází a za jaké období platí. Počet odeslaných formulářů není totéž co počet obchodních případů nebo zaplacených objednávek. Bez společné definice mohou dvě správně vypadající čísla znamenat úplně jinou věc.',
+        ],
+        bullets: [
+          'Rozhodnutí: co potřebuji zjistit a jaký krok bude následovat?',
+          'Zdroj: odkud údaj přichází a kdo má potřebný přístup?',
+          'Výpočet: co přesně počítáme a které záznamy vynecháváme?',
+          'Aktuálnost: kdy se data naposledy úspěšně obnovila?',
+        ],
+      },
+      {
+        id: 'priklad',
+        title: 'Modelový příklad: přehled pro malou agenturu',
+        paragraphs: [
+          'Představte si agenturu, která spravuje několik klientských webů. Každý týden otevírá Search Console, kontroluje tabulku dokončených úkolů a ručně skládá zprávu pro klienta. Následující návrh je modelový příklad, nikoli popis dokončené zakázky nebo doložené časové úspory.',
+          'První verze může obsahovat výběr klienta, porovnání dvou odpovídajících období a seznam dokončených změn. U každého zdroje bude datum aktualizace. SEO reporting přitom ponechá naměřené kliky ze Search Console oddělené od odhadů hledanosti z výzkumných nástrojů.',
+        ],
+        table: {
+          headers: ['Co potřebuje tým zjistit', 'Co ukáže přehled', 'Na co dát pozor'],
+          rows: [
+            ['Jak se mění výkon webu', 'Kliky a imprese za zvolená období', 'Stejná délka období, sezónnost a dostupnost dat'],
+            ['Co jsme na webu změnili', 'Dokončené úkoly a datum zásahu', 'Časová souvislost sama nedokazuje příčinu změny výkonu'],
+            ['Zda je report aktuální', 'Poslední úspěšná aktualizace každého zdroje', 'Výpadek nesmí vypadat jako nulový výkon'],
+          ],
+        },
+      },
+      {
+        id: 'zdroje',
+        title: 'Odkud se vezmou data a kdo zkontroluje chyby',
+        paragraphs: [
+          'Nejdřív ověřte dostupné API, databázi nebo export. U každého zdroje vyzkoušejte vzorek a zkontrolujte, zda obsahuje potřebné údaje. Pokud je nutný sběr z webových stránek, řešte jej jako samostatnou část dodávky: zdroj, požadovaná pole, četnost a kontrolu výsledku.',
+          'Domluvte také postup při vypršení přístupu, změně formátu nebo výpadku. Nula, chybějící hodnota a starší údaj mají jiný význam. Přehled je má odlišit a ukázat, kdy proběhla poslední úspěšná aktualizace. Někdo musí mít odpovědnost za opravu i za kontrolu jejího výsledku.',
+        ],
+        links: [{ href: '/sluzby/web-scraping', label: 'Web scraping a automatizovaný sběr dat' }],
+      },
+      {
+        id: 'vizualizace',
+        title: 'Vizualizace dat má usnadnit konkrétní úkol',
+        paragraphs: [
+          'Pro vývoj v čase se hodí graf, pro porovnání konkrétních záznamů tabulka s filtrem. U souhrnného čísla ponechte informaci o období a možnost zjistit jeho podklad. Všechny ukazatele nemusí být vidět najednou; uspořádejte je podle práce uživatele.',
+          'Vyzkoušejte přehled i na telefonu. Široká tabulka může potřebovat vodorovný posun nebo jednodušší mobilní zobrazení. Stav chyby označte textem, ne pouze barvou. Při kontrole nechte budoucího uživatele dokončit konkrétní úkol bez vysvětlování každého tlačítka.',
+        ],
+      },
+      {
+        id: 'zadani',
+        title: 'Co připravit pro návrh vlastního dashboardu',
+        paragraphs: [
+          'Pošlete anonymizovanou ukázku současného reportu, seznam zdrojů a tři otázky, na které potřebujete pravidelně odpověď. Přidejte počet uživatelů, požadovanou četnost aktualizace a případné rozdělení přístupů. Z toho lze vymezit první verzi a prověřit napojení.',
+          'Cenu rozdělte na přípravu dat, vývoj rozhraní a další provoz. Napojení několika různých systémů může být větší část práce než samotné grafy. U nabídky si proto nechte rozepsat také hosting, placené nástroje a údržbu integrací. U LinkLady můžeme začít menším dashboardem pro jeden konkrétní proces.',
+        ],
+        links: [{ href: '/sluzby/webove-aplikace', label: 'Vývoj webové aplikace a vlastního dashboardu' }],
+      },
+    ],
+    related: [
+      { href: '/sluzby/webove-aplikace', label: 'Vlastní webové aplikace a dashboardy' },
+      { href: '/sluzby/web-scraping', label: 'Sběr a příprava dat' },
+      { href: '/projekty/spacelady', label: 'SpaceLady: ukázka práce s daty a interaktivním rozhraním' },
+    ],
+  },
   {
     slug: 'kolik-stoji-webove-stranky',
     title: 'Kolik stojí webové stránky a co zahrnout do rozpočtu',
@@ -46,6 +125,7 @@ export const guides: Guide[] = [
           'U e-shopu si nechte vyjasnit také vložení produktů, varianty, způsob dopravy a plateb a případné propojení se skladovým systémem. Samotné označení „e-shop“ neříká, které z těchto úkolů nabídka pokrývá. Do zadání patří i člověk, který bude obsah schvalovat, a termín dodání podkladů.',
           'Když je rozpočet napjatý, rozdělte zadání na první verzi a pozdější rozšíření. Například poptávkový formulář může být součástí první verze, zatímco zákaznická sekce počká. Toto rozdělení musí odpovídat tomu, co vaši zákazníci potřebují při objednávce.',
         ],
+        links: [{ href: '/sluzby/tvorba-webu-wordpress', label: 'Web ve WordPressu: rozsah tvorby, licence a následná správa' }],
       },
       {
         id: 'porovnani-nabidek',
@@ -127,6 +207,7 @@ export const guides: Guide[] = [
           'Když posíláte cizí web jako inspiraci, označte konkrétní věc: čitelnost ceníku, způsob výběru služby nebo přehled kontaktů. Samotné „ať je to podobné“ může znamenat barvy, strukturu i funkce. Cizí texty a fotografie nepřebírejte bez oprávnění.',
           'Zapište i požadavky na vlastní editaci. Potřebujete měnit telefon a cenu, nebo pravidelně publikovat celé články? Při ukázce administrace si nechte předvést právě tuto činnost. Obecný slib snadného ovládání ji nenahradí.',
         ],
+        links: [{ href: '/sluzby/tvorba-webu-wordpress', label: 'Tvorba WordPress webu s vlastní správou obsahu' }],
       },
       {
         id: 'migrace',

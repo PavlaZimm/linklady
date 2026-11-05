@@ -34,7 +34,7 @@ export default async function GuidePage({params}:Props) {
       <Link href="/blog" className="cf-back">← Zpět na blog</Link>
       <p className="cf-eyebrow">{guide.topic} / LINKLADY</p><h1>{guide.title}</h1>
       <p>{guide.intro}</p>
-      <p className="text-sm"><Link href="/o-mne" className="underline">Pavla Zimmermannová</Link> · <time dateTime={guide.date}>16. října 2026</time></p>
+      <p className="text-sm"><Link href="/o-mne" className="underline">Pavla Zimmermannová</Link> · <time dateTime={guide.date}>{new Intl.DateTimeFormat('cs-CZ', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${guide.date}T12:00:00Z`))}</time></p>
     </div></header>
     <article className="cf-wrap cf-section cf-service-body">
       <nav aria-label="Obsah článku" className="rounded-2xl bg-slate-50 p-6"><h2>Obsah článku</h2><ul>{guide.sections.map(s => <li key={s.id}><a href={`#${s.id}`} className="underline">{s.title}</a></li>)}</ul></nav>
@@ -51,7 +51,7 @@ export default async function GuidePage({params}:Props) {
         </div>}
         {section.links?.map(link => <p key={link.href}><Link className="cf-text-link" href={link.href}>{link.label} ↗</Link></p>)}
       </section>)}
-      <section><h2>Navazující čtení a služby</h2><ul>{guide.related.map(link => <li key={link.href}><Link className="cf-text-link" href={link.href}>{link.label} ↗</Link></li>)}</ul><p>Autorka: <Link href="/o-mne" className="underline">Pavla Zimmermannová</Link>, SEO a tvorba webových stránek.</p><Link href="/kontakt" className="cf-button">Probrat můj web ↗</Link></section>
+      <section><h2>Navazující čtení a služby</h2><ul>{guide.related.map(link => <li key={link.href}><Link className="cf-text-link" href={link.href}>{link.label} ↗</Link></li>)}</ul><p>Autorka: <Link href="/o-mne" className="underline">Pavla Zimmermannová</Link>, SEO, tvorba webů a aplikací.</p><Link href="/kontakt" className="cf-button">Probrat vlastní projekt ↗</Link></section>
     </article>
   </main><SiteFooter /></>
 }
