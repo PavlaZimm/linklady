@@ -104,7 +104,7 @@ export default function WebovaAplikacePage() {
         <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 text-lg text-gray-700 leading-relaxed">
           <section className={sectionClass} aria-labelledby="rozdil">
             <h2 id="rozdil" className={headingClass}>Jaký je rozdíl mezi webem a webovou aplikací</h2>
-            <p className="mb-6">Na webu autoškoly si přečtete ceník a&nbsp;termíny kurzů. V&nbsp;rezervační aplikaci si vyberete volnou jízdu a&nbsp;rezervujete místo. Rozdíl poznáte podle toho, co na stránce můžete udělat.</p>
+            <p className="mb-6">Web autoškoly s&nbsp;ceníkem, popisem kurzů a&nbsp;kontakty je prezentační web. Pokud by autoškola měla také systém, ve kterém si žák vybere volnou jízdu a&nbsp;rovnou ji rezervuje, tato část by byla webovou aplikací.</p>
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="rounded-lg bg-gray-50 p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Prezentační web</h3>
@@ -124,13 +124,10 @@ export default function WebovaAplikacePage() {
             <h3 className="text-xl font-semibold text-gray-900 mb-3">Moje ukázka: poptávkový systém pro Yes.cz</h3>
             <p className="mb-6">Pro Yes.cz jsem vytvořila formulář pro poptávky produktů. Zákazník zadá specifikaci a&nbsp;počet kusů, může přidat další položky stejné značky a&nbsp;vybere požadovaný termín dodání. Formulář je dostupný česky i&nbsp;anglicky.</p>
             <figure className="mb-6">
-              <a href="https://yes-cz-rfq.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Otevřít ukázku poptávkového systému Yes.cz v nové kartě">
-                <Image src="/projects/yes-rfq-formular.jpg" alt="Formulář Yes.cz s výběrem značky, specifikací produktu, počtem kusů a tlačítkem pro přidání další položky" width={1440} height={710} sizes="(max-width: 768px) 100vw, 704px" className="w-full h-auto rounded-lg border border-gray-200" />
-              </a>
-              <figcaption className="text-sm mt-3">Výběr produktů ve veřejné ukázce formuláře Yes.cz.</figcaption>
+              <Image src="/projects/yes-rfq-formular.jpg" alt="Formulář Yes.cz s výběrem značky, specifikací produktu, počtem kusů a tlačítkem pro přidání další položky" width={1440} height={710} sizes="(max-width: 768px) 100vw, 704px" className="w-full h-auto rounded-lg border border-gray-200" />
+              <figcaption className="text-sm mt-3">Snímek obrazovky poptávkového formuláře Yes.cz: výběr produktů a&nbsp;zadání množství.</figcaption>
             </figure>
             <p className="mb-4">Poptávka má předem danou strukturu: položky s&nbsp;množstvím, termín dodání, čas pro zpracování nabídky a&nbsp;kontaktní údaje. Na tomto příkladu je vidět, jak se formulář přizpůsobuje konkrétnímu způsobu objednávání.</p>
-            <p><a href="https://yes-cz-rfq.vercel.app/" target="_blank" rel="noopener noreferrer" className={linkClass}>Otevřít ukázku Yes.cz</a></p>
             <p className="mt-6">Další realizace popisuji v&nbsp;článku <Link href="/blog/webove-aplikace-priklady" className={linkClass}>webové aplikace: příklady z praxe</Link>.</p>
           </section>
 
