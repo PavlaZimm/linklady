@@ -50,6 +50,39 @@ const sectionClass = "scroll-mt-28 py-10 border-b border-gray-200"
 const headingClass = "text-2xl md:text-3xl font-bold text-gray-900 mb-6"
 const linkClass = "text-primary font-semibold underline underline-offset-4"
 
+const developmentSteps = [
+  {
+    title: "Zjištění potřeb",
+    description: "Projdeme, jak dnes práci řešíte, kdo bude aplikaci používat a kde vznikají potíže. Ověříme také, jestli vám stačí hotový nástroj.",
+    result: "Sepíšeme, co má první verze řešit a co může počkat.",
+  },
+  {
+    title: "Návrh řešení",
+    description: "Rozkreslíme hlavní obrazovky a cestu uživatele. Domluvíme, jaká data aplikace potřebuje a kdo k nim bude mít přístup.",
+    result: "Nad návrhem si upřesníme rozsah a odhad práce.",
+  },
+  {
+    title: "Prototyp",
+    description: "Na prototypu si vyzkoušíte hlavní postup, třeba zadání objednávky. Ukáže se, co chybí nebo se špatně ovládá.",
+    result: "Připomínky zapracujeme před dokončením funkcí.",
+  },
+  {
+    title: "Vývoj aplikace",
+    description: "Postupně připravím domluvené funkce, práci s daty a potřebná propojení. Rozpracovanou aplikaci spolu průběžně procházíme.",
+    result: "Můžete si ověřit, jestli aplikace odpovídá vašemu zadání.",
+  },
+  {
+    title: "Testování",
+    description: "Ověříme běžné použití i chybové situace: neúplný formulář, přístup bez oprávnění nebo neúspěšné uložení. Zkontroluji také ovládání na mobilu.",
+    result: "Nalezené chyby opravíme a dotčené funkce znovu vyzkoušíme.",
+  },
+  {
+    title: "Spuštění a předání",
+    description: "Aplikaci nasadím a předám přístupy ke kódu i hostingu. Projdeme obsluhu a domluvíme, kdo zajistí provoz a údržbu.",
+    result: "Další úpravy plánujeme podle zkušeností z používání.",
+  },
+]
+
 export default function WebovaAplikacePage() {
   return (
     <div className="min-h-screen bg-white">
@@ -139,8 +172,25 @@ export default function WebovaAplikacePage() {
 
           <section className={sectionClass} aria-labelledby="postup">
             <h2 id="postup" className={headingClass}>Jak spolu připravíme aplikaci</h2>
-            <p className="mb-4">Projdeme, jak dnes práci řešíte a&nbsp;kdo bude aplikaci používat. Z&nbsp;toho sestavíme zadání první verze. Na prototypu si vyzkoušíte hlavní postup a&nbsp;připomínky zapracujeme před dokončením.</p>
-            <p className="mb-4">Technologie vybírám podle projektu i&nbsp;možností další správy. Při vývoji používám také AI nástroje; součástí práce je kontrola kódu a&nbsp;testování. Při předání dostanete přístup ke kódu a&nbsp;hostingu.</p>
+            <p className="mb-8">Od prvního zadání postupujeme po menších krocích. Testování probíhá i během vývoje; když při zkoušení něco nesedí, vrátíme se k návrhu a upravíme ho.</p>
+            <ol className="mb-8" aria-label="Postup přípravy webové aplikace">
+              {developmentSteps.map((step, index) => (
+                <li key={step.title} className="relative grid grid-cols-[2.5rem_minmax(0,1fr)] sm:grid-cols-[3rem_minmax(0,1fr)] gap-4 sm:gap-6 pb-8 last:pb-0">
+                  {index < developmentSteps.length - 1 && (
+                    <span aria-hidden="true" className="absolute left-5 sm:left-6 top-10 sm:top-12 bottom-0 border-l-2 border-gray-200" />
+                  )}
+                  <span aria-hidden="true" className="relative z-10 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#171d32] text-white text-base font-semibold">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+                    <p className="text-base sm:text-lg">{step.description}</p>
+                    <p className="mt-4 border-t border-gray-200 pt-4 text-base text-gray-700">{step.result}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <p className="mb-4">Technologie vybírám podle projektu i možností další správy. Při vývoji používám také AI nástroje; kód kontroluji a testuji.</p>
             <p>Jednotlivé fáze a&nbsp;přípravu zadání rozebírám v&nbsp;návodu <Link href="/blog/jak-vytvorit-webovou-aplikaci" className={linkClass}>jak vytvořit webovou aplikaci</Link>.</p>
           </section>
 
