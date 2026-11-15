@@ -1,6 +1,7 @@
 import Navigation from '@/components/navigation'
 import ContactForm from '@/components/contact-form'
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 import JsonLd from '@/components/json-ld'
 import SiteFooter from '@/components/site-footer'
@@ -15,7 +16,7 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://www.linklady.cz/webova-aplikace/#webpage",
       url: "https://www.linklady.cz/webova-aplikace",
-      name: "Webová aplikace: co to je, jak funguje a kdy ji potřebujete",
+      name: "Webová aplikace: co to je, příklady a vývoj na míru",
       description: "Srozumitelný průvodce webovými aplikacemi: co to je, typy, technologie a kdy se vyplatí.",
       isPartOf: { "@id": "https://www.linklady.cz/#website" },
       about: {
@@ -45,581 +46,118 @@ const jsonLd = {
   ],
 }
 
+const sectionClass = "scroll-mt-28 py-10 border-b border-gray-200"
+const headingClass = "text-2xl md:text-3xl font-bold text-gray-900 mb-6"
+const linkClass = "text-primary font-semibold underline underline-offset-4"
+
 export default function WebovaAplikacePage() {
   return (
     <div className="min-h-screen bg-white">
       <JsonLd data={jsonLd} />
       <Navigation />
       <main id="main-content">
-
-      {/* Hero Section */}
-      <header className="cf-page-hero">
-        <div className="cf-wrap">
-          <p className="cf-eyebrow">LINKLADY / SEO · WEBY · AI</p>
-          <h1>
-              Webová aplikace: co to je, příklady a&nbsp;vývoj na&nbsp;míru
-            </h1>
-          <p>
-              Webová aplikace je program, který běží v&nbsp;prohlížeči. Umožňuje se přihlásit, pracovat s&nbsp;daty, vyřizovat objednávky nebo automatizovat firemní procesy bez instalace do&nbsp;počítače.
-            </p>
-          <div className="cf-buttons"><Link href="/" className="cf-button">Úvod</Link></div>
-        </div>
-      </header>
-
-      {/* Ceny */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Kolik to stojí
-          </h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Hodinová sazba je 1&nbsp;200&nbsp;Kč. Cenu aplikace odhadnu podle rozsahu práce.
-          </p>
-
-          <div className="overflow-x-auto mb-8">
-            <table className="w-full border-collapse text-left">
-              <tbody>
-                <tr className="border-b border-gray-200">
-                  <td className="py-4 pr-4 font-semibold text-gray-900">Hodinová sazba</td>
-                  <td className="py-4 text-2xl font-bold text-primary whitespace-nowrap">1&nbsp;200&nbsp;Kč</td>
-                </tr>
-                <tr className="border-b border-gray-200">
-                  <td className="py-4 pr-4 font-semibold text-gray-900">Jednoduchý web</td>
-                  <td className="py-4 text-lg text-gray-800 whitespace-nowrap">od&nbsp;9&nbsp;000&nbsp;Kč</td>
-                </tr>
-                <tr className="border-b border-gray-200">
-                  <td className="py-4 pr-4 font-semibold text-gray-900">Webová aplikace</td>
-                  <td className="py-4 text-lg text-gray-800">
-                    počítá se po&nbsp;hodinách, rozsah stanovíme po&nbsp;konzultaci
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            Cenu aplikace počítám podle předem odhadnutých hodin. Napíšete, co potřebujete, a&nbsp;do&nbsp;24&nbsp;hodin víte, o&nbsp;kolik hodin práce jde. Když se v&nbsp;průběhu ukáže, že to chce něco navíc, dozvíte se to dřív, než to začnu dělat.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Cena od&nbsp;9&nbsp;000&nbsp;Kč platí pro prezentační web. Rezervační systém nacením podle zadání.
-          </p>
-        </div>
-      </section>
-
-      {/* Ukázky */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Co jsem udělala
-          </h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Všechno níž běží naživo, můžete si to rozklikat.
-          </p>
-
-          <div className="space-y-6">
-            <div className="bg-white rounded-lg p-6 border border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                <a href="https://yes-cz-rfq.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-primary/40">
-                  Poptávkový systém pro Yes.cz
-                </a>
-              </h3>
-              <p className="text-gray-700">
-                Formulář, ve&nbsp;kterém si zákazník naskládá produkty po&nbsp;značkách, zadá množství, termín dodání a&nbsp;podmínky. Dvojjazyčně, česky i&nbsp;anglicky.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6 border border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                <a href="https://autoskolajana.cz/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-primary/40">
-                  Autoškola Jana, Bílina
-                </a>
-              </h3>
-              <p className="text-gray-700">
-                Web autoškoly s&nbsp;ceníkem, termíny kurzů a&nbsp;aktualitami, které si škola spravuje sama. Postavené na&nbsp;Next.js s&nbsp;databází, takže se nic nemusí přepisovat v&nbsp;kódu.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6 border border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                <a href="https://www.flyqueens.cz/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-primary/40">
-                  FlyQueens
-                </a>
-              </h3>
-              <p className="text-gray-700">
-                Aplikace na&nbsp;sledování letů. Data se tahají z&nbsp;externího zdroje a&nbsp;zobrazují v&nbsp;reálném čase.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6 border border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                <a href="https://vsepromineraly.cz/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-primary/40">
-                  Vše pro minerály
-                </a>
-              </h3>
-              <p className="text-gray-700">
-                E-shop s&nbsp;krabičkami, vitrínami a&nbsp;podstavci pro sběratele minerálů.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6 border border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                <a href="https://kastrup.cz/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-primary/40">
-                  Kastrup.cz
-                </a>
-              </h3>
-              <p className="text-gray-700">
-                Obsahový průvodce Dánskem. Velký web s&nbsp;vlastní redakční částí, kde se články spravují bez zásahu do&nbsp;kódu.
-              </p>
+        <header className="cf-page-hero">
+          <div className="cf-wrap">
+            <p className="cf-eyebrow">LINKLADY / WEBOVÉ APLIKACE</p>
+            <h1>Webová aplikace: co to je, příklady a&nbsp;vývoj na&nbsp;míru</h1>
+            <p>Webová aplikace je program, který používáte v&nbsp;prohlížeči. Můžete v&nbsp;ní vyřídit objednávku, upravit dokument nebo sledovat stav zakázky. Mezi známé příklady patří Gmail, Google Docs a&nbsp;Fakturoid.</p>
+            <div className="cf-buttons">
+              <a href="#priklady" className="cf-button">Podívat se na příklady</a>
+              <a href="#poptavka-aplikace" className="inline-flex items-center min-h-11 text-white underline underline-offset-4 hover:text-orange-200">Probrat vlastní aplikaci</a>
             </div>
           </div>
-          <p className="text-lg text-gray-700 leading-relaxed mt-8">
-            Další ukázky, jejich zadání a použité principy najdete v článku{' '}
-            <Link href="/blog/webove-aplikace-priklady" className="text-primary font-semibold hover:underline">
-              webové aplikace: příklady z praxe a využití ve firmách
-            </Link>.
-          </p>
-        </div>
-      </section>
+        </header>
 
-      {/* Zkratka ke konzultaci.
-          Formulář je až na konci stránky, ale Search Console ukazuje, že sem
-          většina lidí přichází na dotaz „webová aplikace", tedy si nejdřív
-          čtou, co to vlastně je. K formuláři dole se nedostanou. */}
-      <section className="py-12 bg-gradient-to-br from-purple-50 to-white border-y border-blue-100">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="sm:flex sm:items-center sm:justify-between gap-6">
-            <div className="mb-5 sm:mb-0">
-              <p className="text-xl font-bold text-gray-900 mb-1">
-                Máte v&nbsp;hlavě konkrétní zadání?
-              </p>
-              <p className="text-gray-600">
-                Napište, co potřebujete. Do&nbsp;24&nbsp;hodin dostanete odhad
-                v&nbsp;hodinách a cenu, nezávazně a zdarma.
-              </p>
+        <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 text-lg text-gray-700 leading-relaxed">
+          <section className={sectionClass} aria-labelledby="rozdil">
+            <h2 id="rozdil" className={headingClass}>Jaký je rozdíl mezi webem a webovou aplikací</h2>
+            <p className="mb-6">Na webu autoškoly si přečtete ceník a&nbsp;termíny kurzů. V&nbsp;rezervační aplikaci si vyberete volnou jízdu a&nbsp;rezervujete místo. Rozdíl poznáte podle toho, co na stránce můžete udělat.</p>
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="rounded-lg bg-gray-50 p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Prezentační web</h3>
+                <p>Popisuje služby, ukazuje reference a&nbsp;uvádí kontakt. Pro firmu, která potřebuje představit svou nabídku, může stačit web s&nbsp;poptávkovým formulářem.</p>
+              </div>
+              <div className="rounded-lg bg-purple-50 p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Webová aplikace</h3>
+                <p>Zpracovává vaše zadání. Třeba spočítá cenu podle vybraných parametrů nebo zobrazí objednávky přihlášeného zákazníka.</p>
+              </div>
             </div>
-            <Link
-              href="/kontakt"
-              className="inline-block flex-shrink-0 bg-primary text-white px-7 py-3.5 rounded-lg font-bold hover:bg-blue-800 transition-colors"
-            >
-              Chci odhad ceny
-            </Link>
+            <p className="mt-6">Obojí může být součástí jednoho webu. Ani přihlášení není podmínkou: veřejnou kalkulačku můžete použít bez účtu.</p>
+          </section>
+
+          <section id="priklady" className={sectionClass} aria-labelledby="priklady-nadpis">
+            <h2 id="priklady-nadpis" className={headingClass}>Příklady webových aplikací</h2>
+            <p className="mb-6">V&nbsp;Google Docs upravujete dokument, ve Fakturoidu vystavujete faktury. Ve firmě může podobně fungovat klientský portál s&nbsp;doklady, evidence zakázek nebo rezervační systém.</p>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">Moje ukázka: poptávkový systém pro Yes.cz</h3>
+            <p className="mb-6">Pro Yes.cz jsem vytvořila formulář pro poptávky produktů. Zákazník zadá specifikaci a&nbsp;počet kusů, může přidat další položky stejné značky a&nbsp;vybere požadovaný termín dodání. Formulář je dostupný česky i&nbsp;anglicky.</p>
+            <figure className="mb-6">
+              <a href="https://yes-cz-rfq.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Otevřít ukázku poptávkového systému Yes.cz v nové kartě">
+                <Image src="/projects/yes-rfq-formular.jpg" alt="Formulář Yes.cz s výběrem značky, specifikací produktu, počtem kusů a tlačítkem pro přidání další položky" width={1440} height={710} sizes="(max-width: 768px) 100vw, 704px" className="w-full h-auto rounded-lg border border-gray-200" />
+              </a>
+              <figcaption className="text-sm mt-3">Výběr produktů ve veřejné ukázce formuláře Yes.cz.</figcaption>
+            </figure>
+            <p className="mb-4">Poptávka má předem danou strukturu: položky s&nbsp;množstvím, termín dodání, čas pro zpracování nabídky a&nbsp;kontaktní údaje. Na tomto příkladu je vidět, jak se formulář přizpůsobuje konkrétnímu způsobu objednávání.</p>
+            <p><a href="https://yes-cz-rfq.vercel.app/" target="_blank" rel="noopener noreferrer" className={linkClass}>Otevřít ukázku Yes.cz</a></p>
+            <p className="mt-6">Další realizace popisuji v&nbsp;článku <Link href="/blog/webove-aplikace-priklady" className={linkClass}>webové aplikace: příklady z praxe</Link>.</p>
+          </section>
+
+          <section className={sectionClass} aria-labelledby="vyber">
+            <h2 id="vyber" className={headingClass}>Kdy stačí hotový nástroj a kdy aplikace na míru</h2>
+            <p className="mb-6">Nejdřív si sepište, co má člověk v&nbsp;aplikaci vyřídit. U&nbsp;rezervací to může být výběr termínu, potvrzení a&nbsp;zrušení. Pak ověřte, jestli tento postup zvládne některá z&nbsp;hotových služeb.</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-base">
+                <caption className="sr-only">Volba řešení podle situace ve firmě</caption>
+                <thead><tr className="border-b border-gray-300"><th scope="col" className="py-3 pr-5">Co potřebujete</th><th scope="col" className="py-3">Co ověřit jako první</th></tr></thead>
+                <tbody>
+                  <tr className="border-b border-gray-200"><th scope="row" className="py-4 pr-5 font-medium">Představit služby a přijmout zprávu</th><td className="py-4">Běžný web s kontaktním formulářem.</td></tr>
+                  <tr className="border-b border-gray-200"><th scope="row" className="py-4 pr-5 font-medium">Rezervovat termíny nebo vystavovat faktury</th><td className="py-4">Hotovou službu, její cenu a možnosti nastavení.</td></tr>
+                  <tr className="border-b border-gray-200"><th scope="row" className="py-4 pr-5 font-medium">Přenášet údaje mezi používanými nástroji</th><td className="py-4">Možnosti jejich propojení. Někdy stačí automatizace.</td></tr>
+                  <tr><th scope="row" className="py-4 pr-5 font-medium">Vlastní postup schvalování nebo klientskou zónu s různými oprávněními</th><td className="py-4">Zda hotový nástroj pokryje celý postup. Chybějící funkce mohou být důvodem pro vývoj na míru.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-6">Při rozhodování počítejte i&nbsp;s&nbsp;provozem. U&nbsp;vlastní aplikace potřebujete zajistit údržbu, zálohování a&nbsp;další úpravy. U&nbsp;hotové služby si ověřte předplatné, omezení a&nbsp;možnost exportovat svá data.</p>
+            <p className="mt-4">Pokud dnes hlavně přepisujete údaje mezi systémy, podívejte se také na <Link href="/automatizace" className={linkClass}>automatizaci procesů</Link>.</p>
+          </section>
+
+          <section className={sectionClass} aria-labelledby="cena">
+            <h2 id="cena" className={headingClass}>Kolik stojí webová aplikace na míru</h2>
+            <p className="mb-4">Moje hodinová sazba je 1&nbsp;200&nbsp;Kč. Cenu aplikace odhaduji podle zadání a&nbsp;počtu hodin práce.</p>
+            <p className="mb-4">Rozsah ovlivňuje hlavně to, kolik různých uživatelů bude aplikaci používat, co smí každý z&nbsp;nich dělat a&nbsp;s&nbsp;jakými daty pracuje. Do odhadu patří také napojení na další systémy, testování a&nbsp;nasazení.</p>
+            <p className="mb-4">Nejdřív domluvíme funkce první verze. Když se zadání změní, řeknu vám předem, jak se změna projeví v&nbsp;odhadu. Hosting a&nbsp;placené externí služby je potřeba zahrnout do rozpočtu na provoz.</p>
+            <p>Podrobnosti spolupráce najdete na stránce <Link href="/sluzby/webove-aplikace" className={linkClass}>návrh a vývoj webových aplikací</Link>.</p>
+          </section>
+
+          <section className={sectionClass} aria-labelledby="fungovani">
+            <h2 id="fungovani" className={headingClass}>Jak webová aplikace funguje</h2>
+            <p className="mb-4">Když v&nbsp;rezervačním systému vyberete termín, prohlížeč odešle požadavek na server. Ten ověří dostupnost, uloží rezervaci do databáze a&nbsp;vrátí potvrzení. V&nbsp;prohlížeči pak uvidíte výsledek.</p>
+            <p className="mb-4">Rozhraní, které ovládáte, se označuje jako frontend. Zpracování na serveru zajišťuje backend. Konkrétní rozdělení práce mezi prohlížeč a&nbsp;server záleží na aplikaci.</p>
+            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Co znamenají SPA, PWA a SaaS</h3>
+            <p className="mb-4">SPA označuje způsob, kdy se obsah aplikace mění bez načítání celé nové stránky. PWA může nabídnout instalaci na zařízení nebo některé funkce bez připojení. Dostupné možnosti záleží na tom, co vývojář připraví a&nbsp;co podporuje zařízení.</p>
+            <p>SaaS znamená software poskytovaný jako služba, často za předplatné. Tato označení se mohou kombinovat. Samostatně neříkají, zda jde o&nbsp;rezervační systém, e-shop nebo jiný nástroj.</p>
+          </section>
+
+          <section className={sectionClass} aria-labelledby="postup">
+            <h2 id="postup" className={headingClass}>Jak spolu připravíme aplikaci</h2>
+            <p className="mb-4">Projdeme, jak dnes práci řešíte a&nbsp;kdo bude aplikaci používat. Z&nbsp;toho sestavíme zadání první verze. Na prototypu si vyzkoušíte hlavní postup a&nbsp;připomínky zapracujeme před dokončením.</p>
+            <p className="mb-4">Technologie vybírám podle projektu i&nbsp;možností další správy. Při vývoji používám také AI nástroje; součástí práce je kontrola kódu a&nbsp;testování. Při předání dostanete přístup ke kódu a&nbsp;hostingu.</p>
+            <p>Jednotlivé fáze a&nbsp;přípravu zadání rozebírám v&nbsp;návodu <Link href="/blog/jak-vytvorit-webovou-aplikaci" className={linkClass}>jak vytvořit webovou aplikaci</Link>.</p>
+          </section>
+
+          <section className={sectionClass} aria-labelledby="otazky">
+            <h2 id="otazky" className={headingClass}>Na co se ptáte před zadáním</h2>
+            <div className="space-y-6">
+              <div><h3 className="text-xl font-semibold text-gray-900 mb-2">Bude aplikace fungovat v telefonu?</h3><p>Webovou aplikaci můžete otevřít v&nbsp;mobilním prohlížeči. Ovládání a&nbsp;zobrazení je potřeba navrhnout a&nbsp;otestovat i&nbsp;pro menší obrazovky. Samostatná aplikace do App Store je jiný typ projektu.</p></div>
+              <div><h3 className="text-xl font-semibold text-gray-900 mb-2">Co když se zadání během práce změní?</h3><p>Účtuji po hodinách. Než se pustím do změny, domluvíme její rozsah a&nbsp;upravíme odhad práce.</p></div>
+              <div><h3 className="text-xl font-semibold text-gray-900 mb-2">Komu patří kód?</h3><p>Vám. Dostanete přístup do repozitáře i&nbsp;k&nbsp;hostingu, aby na práci mohl navázat další vývojář.</p></div>
+              <div><h3 className="text-xl font-semibold text-gray-900 mb-2">Jaké zakázky přijímáte?</h3><p>Zadání i&nbsp;průběh práce řešíte přímo se mnou. Velké e-shopy s&nbsp;napojením na skladové systémy a&nbsp;mobilní aplikace do App Store přenechávám specialistům. Termíny domlouvám s&nbsp;rezervou i&nbsp;pro případ nemoci.</p></div>
+            </div>
+          </section>
+
+          <div id="poptavka-aplikace" className="scroll-mt-28 mt-12">
+            <ContactForm service="Webová aplikace na míru" title="Proberme vaši aplikaci" subtitle="Popište, co dnes řešíte ručně a kdo bude aplikaci používat. Odpovím do 24 hodin. Konzultace je zdarma a nezávazná." />
           </div>
-        </div>
-      </section>
-
-      {/* Na co se lidi ptají, než zadají práci */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-            Co se ptáte, než něco zadáte
-          </h2>
-
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Používáte AI? Nenapíše to celé stroj?</h3>
-              <p className="text-gray-700">
-                Ano, používám AI. Díky tomu jde práce rychleji a&nbsp;proto můžu mít hodinovku 1&nbsp;200 a&nbsp;ne trojnásobek. Za&nbsp;výsledek ručím já. Každý řádek, který odevzdám, jsem si přečetla a&nbsp;otestovala.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Co když si v&nbsp;průběhu rozmyslím zadání?</h3>
-              <p className="text-gray-700">
-                To se stává skoro vždycky a&nbsp;je to v&nbsp;pořádku. Účtuju po&nbsp;hodinách, takže změna není drama, jen se posune odhad. Řeknu vám, kolik hodin to přidá, ještě než se do&nbsp;toho pustím.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Komu patří kód?</h3>
-              <p className="text-gray-700">
-                Vám. Dostanete přístup do&nbsp;repozitáře i&nbsp;k&nbsp;hostingu. Kdybychom se rozešli, web běží dál a&nbsp;může na&nbsp;něm pracovat kdokoli jiný.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Pracujete sama? Co když onemocníte?</h3>
-              <p className="text-gray-700">
-                Pracuju sama, takže zadání i průběh práce řešíte přímo se mnou. Termíny domlouvám s rezervou i pro případ nemoci.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Co neberu</h3>
-              <p className="text-gray-700">
-                Velké e-shopy s&nbsp;napojením na&nbsp;skladové systémy a&nbsp;mobilní aplikace do&nbsp;App Store. Tyto zakázky přenechávám specialistům.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Article Content */}
-      <article className="py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            A&nbsp;když si ještě nejste jistí, co vlastně potřebujete
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Gmail, Google Docs, internetové bankovnictví, Fakturoid, to všechno jsou webové aplikace. Vypadají jako běžné weby, ale dělají mnohem víc. Místo pouhého zobrazování informací vám umožňují pracovat, tedy psát, počítat, objednávat, komunikovat. A&nbsp;to všechno přímo v&nbsp;prohlížeči, bez instalace čehokoliv.
-          </p>
-
-
-
-          {/* Co je webová aplikace */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Co je webová aplikace
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Webová aplikace je interaktivní software, který běží v&nbsp;prohlížeči. Na rozdíl od klasické webové stránky, která hlavně zobrazuje informace (texty, obrázky, videa), webová aplikace s&nbsp;daty aktivně pracuje: umožňuje vám se přihlásit, zadávat údaje, zpracovávat objednávky, generovat reporty nebo komunikovat s&nbsp;ostatními.
-          </p>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Jednoduchý příklad: firemní web s&nbsp;nabídkou služeb je webová stránka. Ale jakmile přidáte klientskou zónu, kde se zákazník přihlásí, vidí své objednávky a stahuje faktury, máte webovou aplikaci.
-          </p>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Klíčový rozdíl je v&nbsp;interakci. Web čtete. Webovou aplikaci používáte.
-          </p>
-
-          {/* Rozdíl mezi webem a webovou aplikací */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Webová stránka vs. webová aplikace: jaký je rozdíl
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Hranice se dnes stírá, ale základní rozdíl je jasný:
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="font-bold text-gray-900 mb-3 text-lg">Webová stránka</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start"><div className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Zobrazuje informace</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Stejný obsah pro všechny</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Minimální interakce</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>Příklad: blog, portfolio, firemní web</li>
-              </ul>
-            </div>
-            <div className="bg-[#fff0eb] p-6 rounded-lg">
-              <h3 className="font-bold text-gray-900 mb-3 text-lg">Webová aplikace</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start"><div className="w-2 h-2 bg-[#FF795E] rounded-full mr-3 mt-2 flex-shrink-0"></div>Zpracovává data a úkoly</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-[#FF795E] rounded-full mr-3 mt-2 flex-shrink-0"></div>Personalizovaný obsah po přihlášení</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-[#FF795E] rounded-full mr-3 mt-2 flex-shrink-0"></div>Vysoká interakce (formuláře, dashboardy)</li>
-                <li className="flex items-start"><div className="w-2 h-2 bg-[#FF795E] rounded-full mr-3 mt-2 flex-shrink-0"></div>Příklad: Gmail, Fakturoid, Trello</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Typy webových aplikací */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Typy webových aplikací
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Webové aplikace se liší způsobem fungování i účelem:
-          </p>
-
-          <div className="space-y-8 mb-8">
-            <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">SPA (Single Page Application)</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Aplikace, která běží na jedné stránce a dynamicky mění obsah bez načítání. Gmail, Google Maps nebo Trello jsou SPA. Jsou rychlé a plynulé, protože prohlížeč nemusí pokaždé stahovat celou stránku znovu.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-yellow-400 pl-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Progresivní webová aplikace (PWA)</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Progresivní webová aplikace spojuje možnosti webu a mobilní aplikace. Můžete si ji &bdquo;nainstalovat&ldquo; na telefon přímo z&nbsp;prohlížeče (bez App Store), funguje offline a posílá push notifikace. X (Twitter), Spotify i Starbucks používají PWA.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-blue-300 pl-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Webová aplikace na míru</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Webová aplikace na míru je řešení vytvořené přesně pro vaše potřeby. CRM systém, interní nástroj pro správu objednávek, klientský portál nebo kalkulačka služeb. Její funkce se řídí dohodnutým zadáním.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-green-400 pl-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">E-commerce aplikace</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Internetové obchody jsou webové aplikace s košíkem, platbami, správou objednávek a uživatelskými účty. Patří sem jednoduché obchody na Shopify i rozsáhlá online tržiště.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-gray-300 pl-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">SaaS (Software as a Service)</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Webové aplikace dostupné jako předplatné: Fakturoid, Slack, Notion, Figma. Neinstalujete nic, platíte měsíčně a přistupujete odkudkoliv přes prohlížeč.
-              </p>
-            </div>
-          </div>
-
-          {/* Jak webová aplikace funguje */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Jak webová aplikace funguje
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Aplikace obvykle zahrnuje uživatelské rozhraní, serverovou část a databázi:
-          </p>
-
-          <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Frontend (co vidíte)</h3>
-                <p className="text-gray-700">To, co vidíte v&nbsp;prohlížeči: tlačítka, formuláře, tabulky, grafy. Frontend je napsaný v&nbsp;technologiích jako React, Next.js nebo Vue.js a běží přímo ve&nbsp;vašem prohlížeči.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Backend (co nevidíte)</h3>
-                <p className="text-gray-700">Server, který zpracovává požadavky, pracuje s&nbsp;databází a řídí logiku aplikace. Když se přihlásíte, backend ověří vaše heslo. Když odešlete objednávku, backend ji uloží a pošle potvrzení.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Databáze (kde jsou data)</h3>
-                <p className="text-gray-700">Úložiště pro všechna data aplikace: uživatelské účty, objednávky, produkty, zprávy. Moderní webové aplikace používají cloudové databáze, které se automaticky škálují podle potřeby.</p>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Web linklady.cz je postavený na Next.js (frontend) a Convex (backend + databáze). Celý jsem ho vytvořila pomocí <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> s&nbsp;nástrojem Claude Code.
-          </p>
-
-          {/* Kdy potřebujete webovou aplikaci */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Kdy potřebujete webovou aplikaci
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Aplikaci zvažte, pokud potřebujete některou z těchto funkcí:
-          </p>
-
-          <ul className="space-y-4 mb-8">
-            <li className="flex items-start">
-              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700">Potřebujete klientskou zónu: zákazníci se přihlašují, vidí své objednávky, stahují dokumenty</span>
-            </li>
-            <li className="flex items-start">
-              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700">Sbíráte a zpracováváte data: formuláře, průzkumy, objednávky, kalkulačky</span>
-            </li>
-            <li className="flex items-start">
-              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700">Chcete interní nástroj: dashboard, CRM, projektové řízení, reporting</span>
-            </li>
-            <li className="flex items-start">
-              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700">Plánujete SaaS produkt: software jako služba s&nbsp;předplatným a uživatelskými účty</span>
-            </li>
-            <li className="flex items-start">
-              <div className="w-2 h-2 bg-[#FF795E] rounded-full mr-4 mt-2.5 flex-shrink-0"></div>
-              <span className="text-gray-700">Běžný web nestačí: potřebujete real-time funkce, notifikace, platby nebo integraci s&nbsp;jinými systémy</span>
-            </li>
-          </ul>
-
-          {/* Jak vzniká webová aplikace na míru */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Jak vytvořím webovou aplikaci na míru
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Pomocí <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> a <Link href="/ai-agent" className="text-primary font-semibold hover:underline">AI agentů</Link> vytvářím prototypy a postupně je dopracovávám podle zadání:
-          </p>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Chcete si nejdřív ujasnit zadání, technologie a jednotlivé fáze? Připravila jsem podrobný návod{' '}
-            <Link href="/blog/jak-vytvorit-webovou-aplikaci" className="text-primary font-semibold hover:underline">
-              jak vytvořit webovou aplikaci krok za krokem
-            </Link>. Pokud už řešíte konkrétní projekt, podívejte se, co zahrnuje{' '}
-            <Link href="/sluzby/webove-aplikace" className="text-primary font-semibold hover:underline">návrh a vývoj webové aplikace na míru</Link>.
-          </p>
-
-          <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
-                1
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Zmapujeme požadavky</h3>
-                <p className="text-gray-700">Co má aplikace dělat? Kdo ji bude používat? Jaká data zpracovává? Společně definujeme rozsah a priority.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
-                2
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Funkční prototyp</h3>
-                <p className="text-gray-700">Pomocí AI nástrojů vytvořím funkční prototyp během dnů. Prototyp si můžete rovnou vyzkoušet a dát mi zpětnou vazbu.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
-                3
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Iterace a vyladění</h3>
-                <p className="text-gray-700">Na základě zpětné vazby aplikaci vylepšuji. Postupně doplňujeme funkce, upravujeme ovládání a řešíme i méně obvyklé situace.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mr-4">
-                4
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Nasazení a předání</h3>
-                <p className="text-gray-700">Aplikaci spustím na vašem hostingu nebo na serveru, který vám pomůžu vybrat. Zaškolím vás a předám kompletní dokumentaci. Kód patří vám.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Technologie */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Jaké technologie používám
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Při vývoji používám tyto technologie a nástroje:
-          </p>
-
-          <div className="space-y-6 mb-8">
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Next.js + React</h3>
-                <p className="text-gray-700">Framework pro rychlé webové aplikace, které navíc umí Google dobře přečíst. Na tomhle stojí většina toho, co dělám nového.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Convex / Supabase</h3>
-                <p className="text-gray-700">Cloudové databáze s&nbsp;real-time synchronizací, autentizací a automatickým škálováním.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">PHP</h3>
-                <p className="text-gray-700">Poptávkový systém pro Yes.cz a&nbsp;jeden z&nbsp;webů níž jsem psala v&nbsp;PHP. Běží na&nbsp;běžném hostingu, kde už firma nejspíš platí prostor, takže se nikam nemusí stěhovat. Když se do&nbsp;PHP hodí i&nbsp;váš projekt, řeknu to rovnou.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zM13 18h7v-2h-7v2z"/>
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Claude Code</h3>
-                <p className="text-gray-700">Kód píšu s&nbsp;<a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Claude Code</a> od&nbsp;Anthropicu, tedy metodou, které se říká <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecoding</Link>. Některé věci, které bych psala tři dny, mám s jeho pomocí za&nbsp;odpoledne. Úspora času se pak projeví v počtu účtovaných hodin.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start bg-blue-50 rounded-lg p-5">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Make.com</h3>
-                <p className="text-gray-700">Vizuální platforma pro <Link href="/automatizace" className="text-primary font-semibold hover:underline">automatizaci procesů</Link> a propojení aplikací. Pomocí Make propojuji webové aplikace s&nbsp;externími službami: CRM, e-maily, fakturace, Google Sheets a stovky dalších integrací. Bez jediného řádku kódu.</p>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Technologie vybírám podle potřeb projektu. Chcete umět pracovat s&nbsp;AI podobně? Sepsala jsem to do&nbsp;<Link href="/ebook" className="text-primary font-semibold hover:underline">e-booku o&nbsp;promptování</Link>.
-          </p>
-
-          {/* FAQ */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Časté otázky o&nbsp;webových aplikacích
-          </h2>
-
-          <div className="space-y-6 mb-8">
-            <div className="border border-gray-200 rounded-lg p-6">
-              <h3 className="font-semibold text-gray-900 mb-2">Co je webová aplikace?</h3>
-              <p className="text-gray-700">Webová aplikace je interaktivní software, který běží v&nbsp;prohlížeči a umožňuje uživatelům provádět konkrétní úkoly: od správy objednávek přes fakturaci až po komunikaci. Na rozdíl od běžného webu, který hlavně zobrazuje informace, webová aplikace s&nbsp;daty aktivně pracuje.</p>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-6">
-              <h3 className="font-semibold text-gray-900 mb-2">Jaký je rozdíl mezi webem a webovou aplikací?</h3>
-              <p className="text-gray-700">Web primárně zobrazuje informace: text, obrázky, videa. Webová aplikace umožňuje interakci: přihlášení, zadávání dat, zpracování objednávek, generování reportů. Gmail je webová aplikace, firemní prezentace je web.</p>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-6">
-              <h3 className="font-semibold text-gray-900 mb-2">Co je progresivní webová aplikace (PWA)?</h3>
-              <p className="text-gray-700">Progresivní webová aplikace (PWA) se chová jako mobilní aplikace: lze ji nainstalovat na telefon, funguje offline a posílá notifikace. Kombinuje výhody webu (žádná instalace z&nbsp;App Store) s&nbsp;výhodami nativní aplikace (rychlost, offline režim).</p>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-6">
-              <h3 className="font-semibold text-gray-900 mb-2">Kolik stojí webová aplikace na míru?</h3>
-              <p className="text-gray-700">Cena závisí na složitosti. Jednoduchá webová aplikace (formuláře, dashboard) začíná na tisících korun. Složitější systémy s&nbsp;databází, autentizací a API integrací stojí desetitisíce a více. Pomocí <Link href="/vibecoding" className="text-primary font-semibold hover:underline">vibecodingu</Link> a AI nástrojů se ale náklady mohou snížit.</p>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-6">
-              <h3 className="font-semibold text-gray-900 mb-2">Potřebuji programátora na tvorbu webové aplikace?</h3>
-              <p className="text-gray-700">Záleží na složitosti. Jednoduché aplikace lze dnes vytvořit pomocí no-code nástrojů nebo vibecodingu. Pro složitější projekty je programátor nebo vibecoding s&nbsp;AI nástrojem jako <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Claude Code</a> ideální volba.</p>
-            </div>
-          </div>
-
-          {/* Formulář */}
-          <div className="mt-12">
-            <ContactForm
-              service="Webová aplikace na míru"
-              title="Napište, co potřebujete"
-              subtitle="Do 24 hodin dostanete odhad v hodinách a cenu. Konzultace je zdarma a nezávazná."
-            />
-          </div>
-        </div>
-      </article>
-
+        </article>
       </main>
       <SiteFooter />
     </div>
