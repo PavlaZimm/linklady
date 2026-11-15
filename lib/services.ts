@@ -73,12 +73,18 @@ export const services: Service[] = [
   },
   {
     slug: "linkbuilding",
+    updated: "2026-11-15",
     metaDescription: "Vyberu relevantní příležitosti pro odkazy a spolupráce. Připravím obsah, oslovení a přehled umístění podle vašeho oboru.",
     title: "Linkbuilding",
     intro: "Pomůžu vám získávat odkazy z webů, které souvisejí s vaším oborem. Připravím obsah a domluvím spolupráci s jejich provozovateli.",
     legacy:
       "/linkbuilding-outreach-jak-budovat-zpetne-odkazy-a-posilit-autoritu-webu/",
     legacyLabel: "Jak pracovat s linkbuildingem a outreachem",
+    reading: [
+      { href: "/11-tipu-jak-ziskat-validni-zpetny-odkaz/", label: "11 tipů, jak získat relevantní zpětný odkaz" },
+      { href: "/3-typy-zpetnych-odkazu-ktery-je-ten-spravny/", label: "3 typy zpětných odkazů: jak vybrat vhodné umístění" },
+      { href: "/barterova-spoluprace-idealni-marketingovy-tah/", label: "Barterová spolupráce: jak domluvit podmínky a označit odkazy" },
+    ],
     sections: [
       {
         title: "Kde má odkaz smysl",
