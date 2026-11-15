@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/vibecoding", lastModified: "2026-09-13" },
     { path: "/seo-konzultant-usti-nad-labem", lastModified: "2026-10-02" },
     { path: "/ai-agent", lastModified: "2026-10-16" },
-    { path: "/webova-aplikace", lastModified: "2026-09-14" },
+    { path: "/webova-aplikace", lastModified: "2026-11-15" },
     { path: "/blog/prodej-firmy-strategicky-krok", lastModified: "2026-02-27" },
     { path: "/blog/jak-vytvorit-webovou-aplikaci", lastModified: "2026-10-31" },
     { path: "/blog/webove-aplikace-priklady", lastModified: "2026-09-14" },
