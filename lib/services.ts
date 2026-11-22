@@ -265,6 +265,8 @@ export const services: Service[] = [
     reading: [
       { href: "/sluzby/web-scraping", label: "Web scraping: získání a příprava vstupních dat" },
       { href: "/blog/reporting-a-dashboard", label: "Reporting a dashboard: od dat k použitelnému přehledu" },
+      { href: "/blog/automaticky-strih-videa", label: "Automatický střih videa: vlastní nástroj a možnosti automatizace" },
+      { href: "/blog/automaticka-sprava-socialnich-siti", label: "Automatická správa sociálních sítí s AI" },
     ],
     related: "webove-aplikace",
   },
