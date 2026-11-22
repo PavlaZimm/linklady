@@ -100,13 +100,13 @@ export default function VibecodingPage() {
           </div>
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Vibecoding (anglicky <em>vibe coding</em>) je nový způsob tvorby softwaru, kde místo ručního psaní kódu popisujete v běžném jazyce, co chcete vytvořit, a AI nástroj to naprogramuje za vás.
+              Vibecoding (anglicky <em>vibe coding</em>) je způsob tvorby softwaru, při kterém popisujete, co má program dělat, a AI vám pomáhá psát a upravovat kód. Výsledek ale nemusí být hned bezchybný. I tady je potřeba aplikaci vyzkoušet a opravit, co nefunguje.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Termín zavedl Andrej Karpathy, spoluzakladatel OpenAI a bývalý šéf AI v Tesle, v roce 2025. Popsal to jednoduše: <em>&bdquo;Plně se odevzdáte vibám, přijmete exponenciálu a zapomenete, že kód vůbec existuje.&ldquo;</em>
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              V praxi to znamená, že řeknete AI něco jako &bdquo;Vytvoř mi landing page pro kavárnu s kontaktním formulářem a galerií fotek&ldquo; a AI vytvoří funkční web. Vy pak výsledek zkoušíte a upřesňujete zadání.
+              Třeba zadáte: &bdquo;Vytvoř mi stránku pro kavárnu s kontaktním formulářem a galerií fotek.&ldquo; AI připraví první verzi. Vy ji otevřete, zjistíte, co nefunguje nebo chybí, a postupně zadání zpřesníte.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               S tvorbou webu, aplikace nebo automatizace můžete začít i bez programátorské praxe. Potřebujete jasně popsat, co má výsledek dělat.
@@ -141,7 +141,7 @@ export default function VibecodingPage() {
                   </div>
                 </div>
                 <p className="text-lg opacity-90 leading-relaxed mb-6">
-                  Claude Code je profesionální vibecoding nástroj, který pracuje přímo ve vašem terminálu. Rozumí celému projektu, upravuje desítky souborů najednou, řeší složité problémy a dokáže vytvořit kompletní produkční aplikaci.
+                  Claude Code pracuje v terminálu a umí upravovat kód v několika souborech projektu. Pomáhá mi připravit funkce, hledat chyby a navrhovat změny. Každou větší úpravu ale kontroluji a testuji. Vygenerovaný kód sám o sobě ještě neznamená, že je aplikace připravená pro ostrý provoz.
                 </p>
                 <p className="text-lg opacity-90 leading-relaxed">
                   V Claude Code pracuji přímo se zdrojovým kódem a můžu kontrolovat jednotlivé změny. Web linklady.cz je kompletně vytvořen pomocí Claude Code.
