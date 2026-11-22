@@ -134,7 +134,7 @@ export default function JakVytvoritWebovouAplikaciPage() {
         <article className="py-14 md:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-xl text-gray-800 leading-relaxed mb-6">
-              Webovou aplikaci vytvoříte tak, že nejprve přesně vymezíte jeden problém, připravíte nejmenší použitelnou verzi, otestujete ji s reálnými uživateli a teprve potom přidáváte další funkce. Před psaním kódu proto navrhněte, jak bude uživatel postupovat.
+              Nezačínejte seznamem všech funkcí, které by se jednou mohly hodit. Vyberte jeden problém, navrhněte, jak ho člověk v aplikaci vyřeší, a postavte nejmenší použitelnou verzi. Tu otestujte s reálnými uživateli. Teprve když víte, co jim funguje a co překáží, má smysl přidávat další funkce.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-10">
               Pokud si nejste jistí rozdílem mezi běžným webem a aplikací, začněte přehledem <Link href="/webova-aplikace" className="text-primary font-semibold hover:underline">co je webová aplikace, jak funguje a kolik stojí</Link>.

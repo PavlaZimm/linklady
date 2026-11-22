@@ -84,7 +84,7 @@ export default function AiAgentPage() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            AI agent je autonomní softwarový systém postavený na umělé inteligenci, který dokáže samostatně plánovat, rozhodovat se a vykonávat úkoly. Na rozdíl od běžného chatbotu, který čeká na vaši otázku a odpoví, AI agent dostane cíl a plánuje kroky k jeho splnění.
+            AI agent je software, kterému zadáte cíl a zpřístupníte nástroje potřebné k jeho splnění. Může si rozdělit úkol na kroky, pracovat s podklady a navrhovat další postup. Od běžného chatbotu se liší tím, že nejen odpovídá, ale podle nastavení také provádí akce. Důležité je určit, co smí udělat sám a co musí člověk schválit.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -113,7 +113,7 @@ export default function AiAgentPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Vnímání</h3>
-                <p className="text-gray-700">Agent shromáždí informace o&nbsp;aktuální situaci: přečte e-mail, prozkoumá soubor, zkontroluje databázi. Rozumí kontextu, ve&nbsp;kterém pracuje.</p>
+                <p className="text-gray-700">Agent si načte podklady, ke kterým má přístup: třeba e-mail, soubor nebo záznam v&nbsp;databázi. Jeho další postup závisí na kvalitě těchto údajů, proto je potřeba počítat i s chybějícími nebo chybnými informacemi.</p>
               </div>
             </div>
 

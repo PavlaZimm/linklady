@@ -29,7 +29,7 @@ export const guides: Guide[] = [
     description: 'Jak připravit reporting a vlastní dashboard: výběr ukazatelů, datové zdroje, aktualizace a zadání. S modelovým příkladem přehledu pro malou agenturu.',
     topic: 'Weby',
     date: '2026-10-31',
-    intro: 'Reporting má odpovědět na otázku, podle které se dá rozhodnout. Dashboard zobrazí důležité ukazatele na jednom místě, ale samotné grafy ještě neřeknou, co se děje ve firmě. Nejdřív potřebujete určit význam čísel, jejich zdroj a člověka, který s přehledem bude pracovat.',
+    intro: 'Můžete mít dashboard plný grafů a přesto nevědět, co máte ve firmě udělat dál. Dobrý reporting proto začíná otázkou, na kterou potřebujete odpověď. Teprve potom vybíráte čísla, jejich zdroje a podobu přehledu. Ukážu, jak si v tom udělat pořádek.',
     sections: [
       {
         id: 'reporting-a-dashboard',
@@ -182,7 +182,7 @@ export const guides: Guide[] = [
     description: 'Připravte zadání webu s použitelným vzorem. Ujasněte si obsah, rozpočet, přesun starých URL a konkrétní podmínky pro kontrolu hotového webu.',
     topic: 'Weby',
     date: '2026-10-16',
-    intro: 'Použitelné zadání webu popisuje, komu web pomáhá, co na něm má návštěvník udělat a co musí dodavatel předat. Na začátek stačí společný dokument. Technické řešení můžete doplnit po konzultaci; cíle, obsah a odpovědnosti by ale měly být srozumitelné ještě před naceněním.',
+    intro: 'Zadání nového webu nemusí mít dvacet stránek. Mělo by ale jasně říkat, pro koho web vzniká, co na něm návštěvník potřebuje udělat a co od dodavatele očekáváte. Stačí začít společným dokumentem. Technologie můžete vybrat později; cíle, obsah a odpovědnosti si ujasněte už před naceněním.',
     sections: [
       {
         id: 'cil',
@@ -256,7 +256,7 @@ export const guides: Guide[] = [
     description: 'Jak převést analýzu klíčových slov do struktury webu a plánu obsahu. Konkrétní mapování služeb a článků na příkladu Linklady.',
     topic: 'SEO',
     date: '2026-10-16',
-    intro: 'Analýza klíčových slov zjišťuje, co lidé hledají v souvislosti s vaší nabídkou a jaké stránky k tomu potřebují. Výstup přiřadí témata ke konkrétním URL. Ukáže, kterou službu doplnit, jaký článek připravit a co už na webu máte pokryté.',
+    intro: 'Zákazník často hledá službu jinými slovy, než používáte na webu vy. Analýza klíčových slov pomůže zjistit, na co se lidé ptají a které stránky jim mají odpovědět. Nestačí ale tabulka hledaných výrazů. Důležité je přiřadit témata ke konkrétním URL a rozhodnout, co na webu upravit, doplnit nebo zatím nechat být.',
     sections: [
       {
         id: 'nabidka',
