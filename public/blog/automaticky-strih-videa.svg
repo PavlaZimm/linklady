@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Automatizace střihu videa</title>
+<desc id="desc">Ilustrační workflow od zdrojového záběru přes zpracování po výstupy pro Reels a Shorts. Barvy LinkLady.</desc>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3656F5"/><stop offset="1" stop-color="#A4EDD6"/></linearGradient>
+<linearGradient id="sky2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF795E"/><stop offset="1" stop-color="#3656F5"/></linearGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="17" flood-color="#151D32" flood-opacity=".14"/></filter>
+</defs>
+<rect width="1200" height="630" rx="28" fill="#FAF9F5"/>
+<circle cx="1131" cy="-30" r="260" fill="#A4EDD6" opacity=".37"/>
+<circle cx="85" cy="620" r="220" fill="#FF795E" opacity=".12"/>
+<rect x="70" y="48" width="188" height="34" rx="17" fill="#A4EDD6"/>
+<text x="164" y="71" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#151D32">LINKLADY / AI</text>
+<text x="70" y="127" font-family="Arial,sans-serif" font-size="40" font-weight="800" fill="#151D32">Automatický střih videa</text>
+<text x="70" y="160" font-family="Arial,sans-serif" font-size="20" fill="#526176">Od surového záběru k přehlednému výstupu</text>
+<rect x="67" y="205" width="545" height="325" rx="25" fill="#151D32" filter="url(#shadow)"/>
+<rect x="90" y="229" width="500" height="205" rx="13" fill="url(#sky)"/>
+<circle cx="495" cy="278" r="35" fill="#FFCC99" opacity=".9"/>
+<path d="M90 405L213 309L292 369L393 286L527 409L590 365V434H90Z" fill="#151D32" opacity=".65"/>
+<path d="M90 419L215 348L313 408L413 347L532 419L590 397V434H90Z" fill="#3656F5" opacity=".7"/>
+<circle cx="343" cy="323" r="33" fill="#FAF9F5" opacity=".92"/>
+<path d="M336 306v34l26-17z" fill="#3656F5"/>
+<rect x="92" y="449" width="495" height="54" rx="11" fill="#253754"/>
+<path d="M106 477h6v-8h6v15h6v-22h6v28h6v-14h6v9h6v-27h6v37h6v-21h6v10h6v-17h6v25h6v-11h6v-8h6v21h6v-31h6v35h6v-21h6v13h6v-17h6v31h6v-22h6v12h6v-21h6v23h6v-14h6v9h6v-27h6v39h6v-32h6v22h6v-14h6v16h6v-25h6v31h6v-11h6v-23h6v31h6v-18h6v10h6v-23h6v31h6v-12h6v8h6v-28h6v39h6v-21h6v17h6v-22h6v24h6v-12h6v7h6v-24h6v32h6v-14h6v18h6v-19" stroke="#A4EDD6" stroke-width="3" fill="none" stroke-linejoin="round"/>
+<rect x="107" y="514" width="160" height="3" rx="2" fill="#FF795E"/>
+<text x="92" y="555" font-family="Arial,sans-serif" font-size="17" fill="#526176">VSTUPNÍ VIDEO</text>
+<circle cx="681" cy="359" r="42" fill="#FF795E" filter="url(#shadow)"/>
+<path d="M661 359h40m-17-17 17 17-17 17" stroke="#151D32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<rect x="756" y="209" width="365" height="329" rx="27" fill="#FFFFFF" filter="url(#shadow)"/>
+<rect x="780" y="231" width="142" height="237" rx="18" fill="#151D32"/>
+<rect x="794" y="244" width="114" height="208" rx="12" fill="url(#sky2)"/>
+<circle cx="878" cy="281" r="26" fill="#F9D39F" opacity=".9"/>
+<path d="M794 410l35-70 20 30 19-46 40 74v54H794Z" fill="#151D32" opacity=".85"/>
+<path d="M838 345l18 12-18 12z" fill="#FFFFFF"/>
+<rect x="946" y="246" width="142" height="190" rx="18" fill="#EFF3FF"/>
+<rect x="963" y="266" width="111" height="99" rx="11" fill="url(#sky)"/>
+<path d="M963 365l42-55 25 35 19-21 25 38v3z" fill="#151D32" opacity=".8"/>
+<rect x="968" y="379" width="79" height="9" rx="4" fill="#3656F5"/>
+<rect x="968" y="397" width="105" height="7" rx="3" fill="#A5AEC3"/>
+<rect x="781" y="484" width="308" height="33" rx="16" fill="#A4EDD6"/>
+<text x="935" y="506" font-family="Arial,sans-serif" font-weight="700" font-size="17" text-anchor="middle" fill="#151D32">REELS · SHORTS · FIREMNÍ VIDEO</text>
+<text x="758" y="559" font-family="Arial,sans-serif" font-size="17" fill="#526176">VÝSTUP K DOKONČENÍ A KONTROLE</text>
+<text x="70" y="601" font-family="Arial,sans-serif" font-size="14" fill="#526176">Ilustrační schéma · nejde o screenshot konkrétní aplikace</text>
+</svg>
