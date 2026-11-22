@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import Navigation from '@/components/navigation'
 import SiteFooter from '@/components/site-footer'
@@ -14,7 +15,7 @@ export async function generateMetadata({params}: Props) {
   const guide = guides.find(g => g.slug === slug)
   if (!guide) notFound()
   const meta = pageMetadata(`/blog/${slug}`,guide.title,guide.description)
-  return {...meta, authors:[{name:'Pavla Zimmermannová',url:'https://www.linklady.cz/o-mne'}], openGraph:{...meta.openGraph,type:'article',publishedTime:guide.date,modifiedTime:guide.date}}
+  return {...meta, authors:[{name:'Pavla Zimmermannová',url:'https://www.linklady.cz/o-mne'}], openGraph:{...meta.openGraph,type:'article',publishedTime:guide.date,modifiedTime:guide.date,...(guide.heroImage ? {images:[{url:guide.heroImage,width:1200,height:630,alt:guide.heroAlt ?? guide.title}]} : {})}, twitter:{...meta.twitter,...(guide.heroImage ? {images:[guide.heroImage]} : {})}}
 }
 export default async function GuidePage({params}:Props) {
   const {slug} = await params
@@ -23,7 +24,7 @@ export default async function GuidePage({params}:Props) {
   const url = `https://www.linklady.cz/blog/${slug}`
   return <><Navigation /><main id="main-content">
     <JsonLd data={{'@context':'https://schema.org','@graph':[
-      {'@type':'Article',headline:guide.title,description:guide.description,url,mainEntityOfPage:url,datePublished:guide.date,dateModified:guide.date,inLanguage:'cs',author:{'@id':'https://www.linklady.cz/#person'},publisher:{'@id':'https://www.linklady.cz/#business'}},
+      {'@type':'Article',headline:guide.title,description:guide.description,url,mainEntityOfPage:url,datePublished:guide.date,dateModified:guide.date,inLanguage:'cs',...(guide.heroImage ? {image:`https://www.linklady.cz${guide.heroImage}`} : {}),author:{'@id':'https://www.linklady.cz/#person'},publisher:{'@id':'https://www.linklady.cz/#business'}},
       {'@type':'BreadcrumbList',itemListElement:[
         {'@type':'ListItem',position:1,name:'Úvod',item:'https://www.linklady.cz'},
         {'@type':'ListItem',position:2,name:'Blog',item:'https://www.linklady.cz/blog'},
@@ -37,6 +38,7 @@ export default async function GuidePage({params}:Props) {
       <p className="text-sm"><Link href="/o-mne" className="underline">Pavla Zimmermannová</Link> · <time dateTime={guide.date}>{new Intl.DateTimeFormat('cs-CZ', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${guide.date}T12:00:00Z`))}</time></p>
     </div></header>
     <article className="cf-wrap cf-section cf-service-body">
+      {guide.heroImage && <figure className="mb-12"><Image src={guide.heroImage} alt={guide.heroAlt ?? guide.title} width={1200} height={630} priority className="w-full h-auto rounded-2xl border border-slate-200" /><figcaption className="mt-3 text-sm text-slate-600">Ilustrační schéma postupu, nikoli snímek konkrétní aplikace.</figcaption></figure>}
       <nav aria-label="Obsah článku" className="rounded-2xl bg-slate-50 p-6"><h2>Obsah článku</h2><ul>{guide.sections.map(s => <li key={s.id}><a href={`#${s.id}`} className="underline">{s.title}</a></li>)}</ul></nav>
       {guide.sections.map(section => <section key={section.id} id={section.id}>
         <h2>{section.title}</h2>
@@ -51,7 +53,7 @@ export default async function GuidePage({params}:Props) {
         </div>}
         {section.links?.map(link => <p key={link.href}><Link className="cf-text-link" href={link.href}>{link.label} ↗</Link></p>)}
       </section>)}
-      <section><h2>Navazující čtení a služby</h2><ul>{guide.related.map(link => <li key={link.href}><Link className="cf-text-link" href={link.href}>{link.label} ↗</Link></li>)}</ul><p>Autorka: <Link href="/o-mne" className="underline">Pavla Zimmermannová</Link>, SEO, tvorba webů a aplikací.</p><Link href="/kontakt" className="cf-button">Probrat vlastní projekt ↗</Link></section>
+      <section><h2>Navazující čtení a služby</h2><ul>{guide.related.map(link => <li key={link.href}><Link className="cf-text-link" href={link.href}>{link.label} ↗</Link></li>)}</ul><p>Autorka: <Link href="/o-mne" className="underline">Pavla Zimmermannová</Link>, SEO, tvorba webů a aplikací.</p><Link href="/kontakt" className="cf-button">{guide.ctaLabel ?? "Probrat vlastní projekt"} ↗</Link></section>
     </article>
   </main><SiteFooter /></>
 }

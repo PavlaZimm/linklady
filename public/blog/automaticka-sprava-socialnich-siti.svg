@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Automatizace správy sociálních sítí</title>
+<desc id="desc">Ilustrace automatizovaného obsahu: podklady z webu, AI návrhy, lidské schválení a plánovací kalendář v barvách LinkLady.</desc>
+<defs><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#151D32" flood-opacity=".13"/></filter><linearGradient id="wave" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3656F5"/><stop offset="1" stop-color="#A4EDD6"/></linearGradient></defs>
+<rect width="1200" height="630" rx="28" fill="#FAF9F5"/>
+<circle cx="-45" cy="620" r="245" fill="#A4EDD6" opacity=".3"/>
+<circle cx="1180" cy="40" r="220" fill="#FF795E" opacity=".12"/>
+<rect x="70" y="48" width="202" height="34" rx="17" fill="#A4EDD6"/>
+<text x="171" y="71" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#151D32">LINKLADY / AI</text>
+<text x="70" y="127" font-family="Arial,sans-serif" font-size="39" font-weight="800" fill="#151D32">Správa sociálních sítí s AI</text>
+<text x="70" y="160" font-family="Arial,sans-serif" font-size="20" fill="#526176">Obsah → návrh → schválení → publikace</text>
+<rect x="75" y="225" width="255" height="287" rx="24" fill="#FFFFFF" filter="url(#shadow)"/>
+<rect x="98" y="250" width="209" height="46" rx="12" fill="#E7EDFF"/>
+<text x="119" y="280" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#151D32">PODKLADY</text>
+<rect x="101" y="322" width="200" height="161" rx="13" fill="#FAF9F5" stroke="#E1E5E9" stroke-width="2"/>
+<rect x="119" y="345" width="98" height="10" rx="5" fill="#3656F5"/>
+<rect x="119" y="370" width="157" height="8" rx="4" fill="#9AA8C1"/>
+<rect x="119" y="389" width="147" height="8" rx="4" fill="#9AA8C1"/>
+<rect x="119" y="408" width="162" height="8" rx="4" fill="#9AA8C1"/>
+<rect x="119" y="444" width="163" height="21" rx="10" fill="#A4EDD6"/>
+<text x="201" y="459" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#151D32">ČLÁNEK / PRODUKT</text>
+<path d="M340 369h65m-20-20 20 20-20 20" stroke="#FF795E" stroke-width="7" stroke-linecap="round" fill="none"/>
+<rect x="419" y="225" width="286" height="287" rx="24" fill="#151D32" filter="url(#shadow)"/>
+<circle cx="562" cy="293" r="38" fill="url(#wave)"/>
+<path d="M555 276l6 12 13 4-13 6-6 12-6-12-13-6 13-4z" fill="#FFFFFF"/>
+<text x="562" y="363" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">AI NÁVRHY</text>
+<rect x="448" y="386" width="228" height="31" rx="12" fill="#FFFFFF" opacity=".12"/>
+<text x="562" y="408" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#FFFFFF">Instagram · Facebook</text>
+<rect x="448" y="429" width="228" height="31" rx="12" fill="#FFFFFF" opacity=".12"/>
+<text x="562" y="451" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#FFFFFF">Text · obrázek · video</text>
+<path d="M713 369h68m-20-20 20 20-20 20" stroke="#FF795E" stroke-width="7" stroke-linecap="round" fill="none"/>
+<rect x="792" y="225" width="335" height="287" rx="24" fill="#FFFFFF" filter="url(#shadow)"/>
+<rect x="817" y="248" width="285" height="53" rx="13" fill="#E7EDFF"/>
+<text x="835" y="281" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#151D32">OBSAHOVÝ KALENDÁŘ</text>
+<g stroke="#E1E5E9" stroke-width="2" fill="#FFFFFF"><rect x="825" y="323" width="62" height="66" rx="9"/><rect x="897" y="323" width="62" height="66" rx="9"/><rect x="969" y="323" width="62" height="66" rx="9"/><rect x="1041" y="323" width="62" height="66" rx="9"/><rect x="825" y="400" width="62" height="66" rx="9"/><rect x="897" y="400" width="62" height="66" rx="9"/><rect x="969" y="400" width="62" height="66" rx="9"/><rect x="1041" y="400" width="62" height="66" rx="9"/></g>
+<rect x="830" y="335" width="52" height="11" rx="5" fill="#3656F5"/><rect x="902" y="335" width="52" height="11" rx="5" fill="#A4EDD6"/><rect x="974" y="335" width="52" height="11" rx="5" fill="#FF795E"/><rect x="1046" y="412" width="52" height="11" rx="5" fill="#A4EDD6"/><rect x="974" y="412" width="52" height="11" rx="5" fill="#3656F5"/><rect x="830" y="412" width="52" height="11" rx="5" fill="#A4EDD6"/>
+<text x="959" y="492" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#526176">Před zveřejněním schvaluje člověk</text>
+<text x="70" y="567" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#151D32">Méně rutiny. Více prostoru pro skutečný obsah.</text>
+<text x="70" y="601" font-family="Arial,sans-serif" font-size="14" fill="#526176">Ilustrační schéma · možnost návrhu systému na míru</text>
+</svg>
