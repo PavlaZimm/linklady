@@ -1,8 +1,13 @@
+import { aiGuides } from './ai-editorial-guides'
+
 export type Guide = {
   slug: string;
   title: string;
   description: string;
-  topic: 'SEO' | 'Weby';
+  topic: 'SEO' | 'Weby' | 'AI';
+  heroImage?: string;
+  heroAlt?: string;
+  ctaLabel?: string;
   date: string;
   intro: string;
   sections: {
@@ -17,6 +22,7 @@ export type Guide = {
 };
 
 export const guides: Guide[] = [
+  ...aiGuides,
   {
     slug: 'reporting-a-dashboard',
     title: 'Reporting a dashboard: jak mít firemní data pod kontrolou',
