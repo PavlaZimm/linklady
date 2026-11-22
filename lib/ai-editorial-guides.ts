@@ -9,7 +9,7 @@ export const aiGuides: Guide[] = [
     description: 'Jak stavím video-studio s Google Antigravity a Remotion skills: střih videa ze složky, použité nástroje a plán automatického publikování.',
     topic: 'AI',
     date: '2026-11-22',
-    intro: 'Natočím vlastní materiál, vložím videa do složky a chci, aby se rutinní střih odehrál automaticky. Přesně takové video-studio začínám stavět na MacBooku pomocí Google Antigravity a specializovaných skills. Ukážu, jaké nástroje používám, proč jsem vybrala Antigravity i co je zatím jen plánovaným krokem.',
+    intro: 'Natočím záběry, přesunu je do složky a dál už chci nechat pracovat počítač. Na MacBooku proto stavím video-studio pomocí Google Antigravity a nainstalovaných skills. Střih teď zkouším a ladím, automatické publikování mám v plánu jako další krok. Tady ukážu, jak jsem se k tomu dostala a co používám.',
     heroImage: '/blog/automaticky-strih-videa.svg',
     heroAlt: 'Ilustrační schéma automatického střihu: zdrojové video, zpracování a krátká videa pro sociální sítě v barvách LinkLady.',
     ctaLabel: 'Chci automatizovat střih svých videí',
@@ -18,9 +18,9 @@ export const aiGuides: Guide[] = [
         id: 'proc-vlastni-nastroj',
         title: 'Proč jsem si vytvořila vlastní nástroj na střih videa',
         paragraphs: [
-          'Ve své práci propojuji obsahový marketing, webové aplikace a automatizaci. Při natáčení vlastního obsahu mě napadlo, že opakující se úpravy nemusím vždy dělat ručně. Začala jsem proto stavět pracovní postup, do kterého vložím video soubory ze složky a software podle připravených pravidel provede střih. Je to můj rozpracovaný projekt na počítači, nikoli veřejně dostupná aplikace.',
-          'Proč zrovna Google Antigravity? Mám k němu přístup v rámci svého placeného Google tarifu, ale dosud jsem ho téměř nevyužívala. Chtěla jsem proto ověřit, co s nástrojem, který už mám v předplatném, zvládnu vytvořit. Nevybírala jsem ho proto, že by musel být nejlepší pro každého. A neznamená to, že je Antigravity zdarma pro všechny nebo že nemohou vzniknout náklady na další služby.',
-          'Nechci tvrdit, že jeden program dokáže sám poznat nejlepší okamžik každého záběru. Smyslem automatizace je především odlehčit od rutinních operací. Závěrečnou kontrolu příběhu, návaznosti scén, hudby a toho, zda video dává divákovi smysl, bych stále ponechala člověku.',
+          'Při natáčení mě baví hledat dobré záběry. Méně už mě láká pokaždé opakovat stejné kroky při jejich zpracování. Tak vznikl nápad na vlastní video-studio: nahraju materiál do složky a připravený postup se postará o rutinní část střihu. Zatím si ho stavím a zkouším na vlastním počítači. Není to aplikace, kterou si dnes může kdokoliv stáhnout.',
+          'A proč právě Google Antigravity? Mám ji dostupnou v rámci placeného Google tarifu a skoro jsem ji nepoužívala. Tak jsem si řekla: místo pořizování dalšího nástroje zkusím nejdřív pořádně využít ten, který už mám. To ovšem neznamená, že je Antigravity zdarma pro všechny; dostupnost závisí na tarifu a další služby mohou být placené.',
+          'Automatizace mi má ubrat opakované klikání, ne rozhodovat o každém záběru místo mě. I když počítač připraví sestřih, chci si zkontrolovat návaznost scén, hudbu a to, jestli celé video divákovi něco říká.',
         ],
       },
       {
@@ -28,7 +28,7 @@ export const aiGuides: Guide[] = [
         title: 'Konkrétní technologie: video-studio, FFmpeg, Remotion a skills',
         paragraphs: [
           'Základem mého pracovního postupu je vlastní hlavní skill video-studio. Má řídit výrobu od prozkoumání složky se zdrojovými videi přes přípravu scénáře až po zpracování, animace, titulky a kontrolu podle Brand Kitu. Ve svém návrhu používám FFmpeg pro práci s reálnými klipy, Remotion pro programované video kompozice a počítám i s edge-tts pro český hlasový doprovod.',
-          'Na obrazovce mám také seznam oficiálního balíku 13 Remotion skills. Níže uvádím konkrétní názvy, které jsou z mého seznamu vidět. Samotné uvedení ve výčtu ovšem neznamená, že jsem již každou jednotlivou funkci otestovala na finálním videu.',
+          'Nainstalovala jsem si také balík 13 Remotion skills. Některé řeší titulky, jiné animované mapy nebo export. V tabulce jsou ty, které mám zachycené na screenshotu. Ne všechny už jsem stihla vyzkoušet na hotovém videu.',
         ],
         table: {
           headers: ['Skill nebo technologie', 'K čemu má sloužit'],
@@ -51,8 +51,8 @@ export const aiGuides: Guide[] = [
         id: 'video-ze-slozky-az-na-site',
         title: 'Co chci automatizovat: natočení, složka, sestřih a nakonec publikování',
         paragraphs: [
-          'Moje představa je jednoduchá. Já natočím záběry a vložím je do vybrané složky. Video-studio pak má samo vykonat opakované kroky střihu podle domluvených pravidel. Právě tuto část teď v Antigravity rozvíjím a zkouším na vlastních videích.',
-          'Další fází je automatické nahrávání hotového videa na sociální sítě. To zatím není hotová a ověřená integrace. Nejdřív potřebuji nastavit kontrolu výsledného videa, oprávnění účtů, dostupná oficiální rozhraní platforem a způsob hlášení případné chyby.',
+          'Chci se dostat do bodu, kdy po natáčení jen přesunu soubory do složky. Video-studio podle připraveného postupu sestříhá záběry a já zkontroluji výsledek. Právě tenhle krok teď v Antigravity stavím a testuji na vlastním materiálu.',
+          'Až bude střih spolehlivý, chtěla bych navázat automatickým nahráváním na sociální sítě. To ještě hotové nemám. Předtím musím vyřešit kontrolu videa, přístup k účtům, možnosti publikování přes oficiální API a také to, co se stane, když nahrání selže.',
         ],
         bullets: [
           '1. Natočím záběry a uložím je do připravené složky.',
@@ -195,7 +195,7 @@ export const aiGuides: Guide[] = [
     description: 'Jak automatizovat příspěvky na Instagram, Facebook a další sítě? Srovnání plánovačů, AI nástrojů a automatizace na míru včetně ukázky workflow.',
     topic: 'AI',
     date: '2026-11-22',
-    intro: 'Vymyslet příspěvek, připravit obrázek, upravit video, naplánovat zveřejnění a potom zkontrolovat výsledek. Správa sociálních sítí není jen kliknutí na Publikovat. Ukážu, co z této práce může převzít automatizace, kdy stačí hotový plánovač a kdy dává smysl vlastní AI nástroj připravený pro konkrétní firmu.',
+    intro: 'Video je sestříhané. Jenže práce nekončí: ještě napsat popisek, vybrat správný formát, naplánovat zveřejnění a zkontrolovat výsledek. Co z toho může udělat automatizace? Porovnám hotové plánovače s vlastním řešením a ukážu, proč chci střih časem propojit i s publikováním.',
     heroImage: '/blog/automaticka-sprava-socialnich-siti.svg',
     heroAlt: 'Ilustrační schéma správy sociálních sítí: návrhy příspěvků, schválení a publikační kalendář v barvách LinkLady.',
     ctaLabel: 'Chci vlastní automatizaci sociálních sítí',
@@ -204,15 +204,15 @@ export const aiGuides: Guide[] = [
         id: 'co-znamena-automaticka-sprava',
         title: 'Co je automatická správa sociálních sítí',
         paragraphs: [
-          'Pod automatickou správou sociálních sítí si lidé představují různé věci. Někdo chce naplánovat deset hotových příspěvků, jiný potřebuje, aby se z nového článku automaticky připravily návrhy textů pro Instagram, Facebook i LinkedIn. To jsou dvě odlišné úlohy. První obvykle zvládne plánovací nástroj, druhá může vyžadovat propojení více systémů.',
-          'AI může pomoci s návrhem textu, variantami titulku, shrnutím článku nebo převodem podkladů do jiného formátu. Automatizace pak předává data mezi nástroji, kontroluje stav a připravuje příspěvky ke schválení. O tom, co se skutečně zveřejní, by měl rozhodovat člověk nebo jasně schválená pravidla.',
+          'Pro někoho znamená automatická správa jen naplánovat deset hotových příspěvků. Jiný by chtěl vložit nový článek na web a za chvíli mít připravené texty pro Instagram, Facebook i LinkedIn. To už je jiná práce. S plánováním většinou pomůže hotový nástroj, u přípravy obsahu ze zdrojů firmy je často potřeba propojit víc systémů.',
+          'AI například připraví tři různé popisky k jednomu videu. Automatizace je uloží do kalendáře, označí jako návrhy a předá ke schválení. Člověk pak zkontroluje fakta, tón značky i použitý obrázek. Samotné zveřejnění se může spustit až po schválení nebo podle předem dohodnutých pravidel.',
         ],
       },
       {
         id: 'co-automatizovat',
         title: 'Které činnosti lze automatizovat a co ponechat člověku',
         paragraphs: [
-          'Základem je rozdělit proces na technické úkony a obsahová rozhodnutí. Generovat další a další posty bez ohledu na kvalitu nedává smysl. V tabulce je přehled možných kroků, které lze podle nástroje a dostupných rozhraní spojit do jednoho workflow.',
+          'Ne všechno bych nechala na automatu. Přesun souboru nebo plánování termínu je jiná věc než rozhodnutí, co má firma svým zákazníkům říkat. V tabulce je vidět, co může běžet podle pravidel a u čeho se vyplatí lidská kontrola.',
         ],
         table: {
           headers: ['Krok', 'Možná automatizace', 'Důležitá kontrola'],
@@ -250,7 +250,7 @@ export const aiGuides: Guide[] = [
         paragraphs: [
           'Představte si menší firmu, která na web každý týden publikuje jeden odborný článek. Dnes z něj správce ručně vybírá důležité informace, přepisuje text pro každou síť, dohledává fotografii, posílá návrh ke schválení a pak vše znovu vkládá do plánovače.',
           'Navržená automatizace může hlídat nový článek, vytvořit návrh krátkého příspěvku pro Facebook, výstižný text k obrázku na Instagram a odbornější verzi pro LinkedIn. Všechny návrhy se uloží do přehledu a čekají na schválení. Teprve schválené položky se předají podporovanému publikačnímu nástroji. Jde o příklad možného řešení, nikoli o již hotovou realizaci pro klienta.',
-          'Podobné propojení chci časem doplnit ke svému video-studiu. V Antigravity začínám automatizovat střih videí ze složky pomocí vlastního skillu a Remotion skills. Automatické odesílání hotových videí na sociální sítě je až další krok, který teprve plánuji.',
+          'Přesně tímto směrem chci pokračovat i u svého video-studia. V Antigravity teď řeším střih videí ze složky pomocí vlastního skillu a Remotion skills. Až bude fungovat spolehlivě, přijde na řadu napojení na sociální sítě. Publikování zatím automatické nemám.',
         ],
         bullets: [
           '1. Nový článek na webu spustí přípravu návrhů.',
