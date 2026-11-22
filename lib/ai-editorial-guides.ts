@@ -6,10 +6,10 @@ export const aiGuides: Guide[] = [
   {
     slug: 'automaticky-strih-videa',
     title: 'Automatický střih videa: vlastní nástroj a možnosti využití',
-    description: 'Jak funguje automatický střih videa, co zvládnou AI editory a kdy se vyplatí vlastní nástroj? Praktická ukázka přístupu LinkLady a automatizace na míru.',
+    description: 'Jak stavím video-studio s Google Antigravity a Remotion skills: střih videa ze složky, použité nástroje a plán automatického publikování.',
     topic: 'AI',
     date: '2026-11-22',
-    intro: 'Stříhat jedno video je zábava. Opakovat stejné kroky u desítek klipů už tolik ne. Proto jsem si pro práci na počítači vytvořila vlastní nástroj na automatizaci střihu videa. Ukážu, jak o podobném řešení přemýšlím, co se dá automatizovat a kdy má smysl postavit postup přímo pro vaše videa.',
+    intro: 'Natočím vlastní materiál, vložím videa do složky a chci, aby se rutinní střih odehrál automaticky. Přesně takové video-studio začínám stavět na MacBooku pomocí Google Antigravity a specializovaných skills. Ukážu, jaké nástroje používám, proč jsem vybrala Antigravity i co je zatím jen plánovaným krokem.',
     heroImage: '/blog/automaticky-strih-videa.svg',
     heroAlt: 'Ilustrační schéma automatického střihu: zdrojové video, zpracování a krátká videa pro sociální sítě v barvách LinkLady.',
     ctaLabel: 'Chci automatizovat střih svých videí',
@@ -18,9 +18,49 @@ export const aiGuides: Guide[] = [
         id: 'proc-vlastni-nastroj',
         title: 'Proč jsem si vytvořila vlastní nástroj na střih videa',
         paragraphs: [
-          'Ve své práci propojuji obsahový marketing, webové aplikace a automatizaci. Při zpracování videí jsem narazila na opakující se činnosti, které nemusejí pokaždé začínat ručním klikáním v editoru. Rozhodla jsem se proto vyzkoušet vlastní nástroj, který používám na počítači. Je to konkrétní pracovní projekt, ne veřejně dostupná aplikace pro každého.',
+          'Ve své práci propojuji obsahový marketing, webové aplikace a automatizaci. Při natáčení vlastního obsahu mě napadlo, že opakující se úpravy nemusím vždy dělat ručně. Začala jsem proto stavět pracovní postup, do kterého vložím video soubory ze složky a software podle připravených pravidel provede střih. Je to můj rozpracovaný projekt na počítači, nikoli veřejně dostupná aplikace.',
+          'Proč zrovna Google Antigravity? Mám k němu přístup v rámci svého placeného Google tarifu, ale dosud jsem ho téměř nevyužívala. Chtěla jsem proto ověřit, co s nástrojem, který už mám v předplatném, zvládnu vytvořit. Nevybírala jsem ho proto, že by musel být nejlepší pro každého. A neznamená to, že je Antigravity zdarma pro všechny nebo že nemohou vzniknout náklady na další služby.',
           'Nechci tvrdit, že jeden program dokáže sám poznat nejlepší okamžik každého záběru. Smyslem automatizace je především odlehčit od rutinních operací. Závěrečnou kontrolu příběhu, návaznosti scén, hudby a toho, zda video dává divákovi smysl, bych stále ponechala člověku.',
         ],
+      },
+      {
+        id: 'moje-video-studio',
+        title: 'Konkrétní technologie: video-studio, FFmpeg, Remotion a skills',
+        paragraphs: [
+          'Základem mého pracovního postupu je vlastní hlavní skill video-studio. Má řídit výrobu od prozkoumání složky se zdrojovými videi přes přípravu scénáře až po zpracování, animace, titulky a kontrolu podle Brand Kitu. Ve svém návrhu používám FFmpeg pro práci s reálnými klipy, Remotion pro programované video kompozice a počítám i s edge-tts pro český hlasový doprovod.',
+          'Na obrazovce mám také seznam oficiálního balíku 13 Remotion skills. Níže uvádím konkrétní názvy, které jsou z mého seznamu vidět. Samotné uvedení ve výčtu ovšem neznamená, že jsem již každou jednotlivou funkci otestovala na finálním videu.',
+        ],
+        table: {
+          headers: ['Skill nebo technologie', 'K čemu má sloužit'],
+          rows: [
+            ['video-studio', 'Vlastní hlavní produkční postup ze složky až po kontrolu výstupu'],
+            ['FFmpeg', 'Střih a zpracování skutečných video souborů'],
+            ['Remotion', 'Animace, grafika a skládání video kompozic'],
+            ['edge-tts', 'Případný český hlasový doprovod'],
+            ['remotion-best-practices', 'Pravidla a postupy pro tvorbu videí'],
+            ['remotion-create', 'Zakládání video projektů a kompozic'],
+            ['remotion-captions', 'Dynamické titulky se zvýrazňováním slov'],
+            ['remotion-maps', 'Cestovatelské mapy, trasy a body zájmu'],
+            ['remotion-multimedia', 'Práce se zvukem, hudbou, fotografiemi a videi'],
+            ['remotion-markup', 'Grafické karty, texty a informační boxy'],
+            ['remotion-render', 'Export MP4 videa a PNG obrázků'],
+          ],
+        },
+      },
+      {
+        id: 'video-ze-slozky-az-na-site',
+        title: 'Co chci automatizovat: natočení, složka, sestřih a nakonec publikování',
+        paragraphs: [
+          'Moje představa je jednoduchá. Já natočím záběry a vložím je do vybrané složky. Video-studio pak má samo vykonat opakované kroky střihu podle domluvených pravidel. Právě tuto část teď v Antigravity rozvíjím a zkouším na vlastních videích.',
+          'Další fází je automatické nahrávání hotového videa na sociální sítě. To zatím není hotová a ověřená integrace. Nejdřív potřebuji nastavit kontrolu výsledného videa, oprávnění účtů, dostupná oficiální rozhraní platforem a způsob hlášení případné chyby.',
+        ],
+        bullets: [
+          '1. Natočím záběry a uložím je do připravené složky.',
+          '2. Můj nástroj má z materiálu připravit sestřih a potřebné výstupy.',
+          '3. Zkontroluji obraz, zvuk, případné titulky, hudbu a výsledek.',
+          '4. V další fázi přidám schvalování, plánování a publikování tam, kde to platforma podporuje.',
+        ],
+        links: [{ href: '/blog/automaticka-sprava-socialnich-siti', label: 'Navazující téma: automatická správa sociálních sítí' }],
       },
       {
         id: 'co-je-automaticky-strih',
@@ -98,7 +138,7 @@ export const aiGuides: Guide[] = [
         id: 'technologie-a-dovednosti',
         title: 'Jaké dovednosti při vývoji využívám',
         paragraphs: [
-          'Při návrhu automatizace se opírám o zkušenosti s vývojem webových aplikací, prací s daty a online marketingem. Technologii nevybírám podle toho, co je zrovna populární. Volím ji podle vstupních souborů, cílového zařízení, požadavků na zabezpečení a toho, kdo má výsledný postup ovládat.',
+          'Při návrhu automatizace se opírám o zkušenosti s vývojem webových aplikací, prací s daty a online marketingem. Vlastní projekt mi umožňuje vyzkoušet Google Antigravity a Remotion skills, které jsem chtěla lépe využít. Pro klienta ale technologie vybírám podle vstupních souborů, zabezpečení, možností nástrojů a nákladů na provoz.',
         ],
         bullets: [
           'Vývoj vlastních nástrojů a webových aplikací.',
@@ -210,6 +250,7 @@ export const aiGuides: Guide[] = [
         paragraphs: [
           'Představte si menší firmu, která na web každý týden publikuje jeden odborný článek. Dnes z něj správce ručně vybírá důležité informace, přepisuje text pro každou síť, dohledává fotografii, posílá návrh ke schválení a pak vše znovu vkládá do plánovače.',
           'Navržená automatizace může hlídat nový článek, vytvořit návrh krátkého příspěvku pro Facebook, výstižný text k obrázku na Instagram a odbornější verzi pro LinkedIn. Všechny návrhy se uloží do přehledu a čekají na schválení. Teprve schválené položky se předají podporovanému publikačnímu nástroji. Jde o příklad možného řešení, nikoli o již hotovou realizaci pro klienta.',
+          'Podobné propojení chci časem doplnit ke svému video-studiu. V Antigravity začínám automatizovat střih videí ze složky pomocí vlastního skillu a Remotion skills. Automatické odesílání hotových videí na sociální sítě je až další krok, který teprve plánuji.',
         ],
         bullets: [
           '1. Nový článek na webu spustí přípravu návrhů.',
