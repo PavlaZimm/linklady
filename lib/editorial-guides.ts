@@ -119,7 +119,7 @@ export const guides: Guide[] = [
         ],
         table: {
           headers: ['Položka', 'Orientační cena Linklady'],
-          rows: [['Jednoduchý web', 'od 9 000 Kč'], ['Firemní web', 'od 25 000 Kč'], ['E-shop', 'od 40 000 Kč'], ['Hodinová sazba', '1 200 Kč']],
+          rows: [['Jednoduchý web', 'od 9 000 Kč'], ['Firemní web', 'od 25 000 Kč'], ['E-shop', 'od 40 000 Kč'], ['Hodinová sazba', '750 Kč/h']],
         },
         links: [{ href: '/sluzby/tvorba-webu', label: 'Tvorba webů: nabídka a průběh spolupráce' }],
       },

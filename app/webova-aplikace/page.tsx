@@ -152,7 +152,7 @@ export default function WebovaAplikacePage() {
 
           <section className={sectionClass} aria-labelledby="cena">
             <h2 id="cena" className={headingClass}>Kolik stojí webová aplikace na míru</h2>
-            <p className="mb-4">Moje hodinová sazba je 1&nbsp;200&nbsp;Kč. Cenu aplikace odhaduji podle zadání a&nbsp;počtu hodin práce.</p>
+            <p className="mb-4">Moje hodinová sazba je 750&nbsp;Kč/h. Cenu aplikace odhaduji podle zadání a&nbsp;počtu hodin práce.</p>
             <p className="mb-4">Rozsah ovlivňuje hlavně to, kolik různých uživatelů bude aplikaci používat, co smí každý z&nbsp;nich dělat a&nbsp;s&nbsp;jakými daty pracuje. Do odhadu patří také napojení na další systémy, testování a&nbsp;nasazení.</p>
             <p className="mb-4">Nejdřív domluvíme funkce první verze. Když se zadání změní, řeknu vám předem, jak se změna projeví v&nbsp;odhadu. Hosting a&nbsp;placené externí služby je potřeba zahrnout do rozpočtu na provoz.</p>
             <p>Podrobnosti spolupráce najdete na stránce <Link href="/sluzby/webove-aplikace" className={linkClass}>návrh a vývoj webových aplikací</Link>.</p>
