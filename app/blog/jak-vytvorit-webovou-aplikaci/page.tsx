@@ -222,7 +222,7 @@ export default function JakVytvoritWebovouAplikaciPage() {
               Cena se odvíjí hlavně od počtu uživatelských rolí, datového modelu, integrací a složitosti jednotlivých procesů. Proto je přesnější ocenit konkrétní funkce v hodinách než slibovat univerzální balíček.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-12">
-              Moje sazba je <strong>1 200 Kč za hodinu</strong>. Po krátkém zadání dostanete odhad rozsahu i ceny předem. První verzi držím co nejmenší, abyste neplatili za funkce, které nakonec nikdo nepoužije.
+              Moje sazba je <strong>750 Kč/h</strong>. Po krátkém zadání dostanete odhad rozsahu i ceny předem. První verzi držím co nejmenší, abyste neplatili za funkce, které nakonec nikdo nepoužije.
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-16 mb-6">Příklady z praxe</h2>

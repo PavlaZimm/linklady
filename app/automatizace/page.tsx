@@ -383,7 +383,7 @@ export default function AutomatizacePage() {
 
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Kolik stojí automatizace pro malou firmu?</h3>
-              <p className="text-gray-700">Jsou to dvě různé částky. Nástroj: tarif Make.com závisí na spotřebě a zvolených funkcích. A moje práce na nastavení: 1&nbsp;200&nbsp;Kč za hodinu. Rozsah práce a průběžné provozní náklady odhadnu podle konkrétního scénáře před zahájením.</p>
+              <p className="text-gray-700">Jsou to dvě různé částky. Nástroj: tarif Make.com závisí na spotřebě a zvolených funkcích. A moje práce na nastavení: 750&nbsp;Kč/h. Rozsah práce a průběžné provozní náklady odhadnu podle konkrétního scénáře před zahájením.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-6">
